@@ -1,0 +1,104 @@
+﻿#已接入
+namespace = OW_FRJQ_TanSuo_WeiZhi_YunShi
+OW_FRJQ_TanSuo_WeiZhi_YunShi.1 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_WeiZhi_YunShi.1.t
+    desc = OW_FRJQ_TanSuo_WeiZhi_YunShi.1.desc
+    option = {
+        name = OW_FRJQ_TanSuo_WeiZhi_YunShi.1.a
+		hidden_effect = {
+			add_prestige = -50 
+		}
+    }
+    option = {
+        name = OW_FRJQ_TanSuo_WeiZhi_YunShi.1.b
+        if = {
+            limit = { intrigue >= 10 }
+            trigger_event = OW_FRJQ_TanSuo_WeiZhi_YunShi.2
+        }
+        else = {
+            trigger_event = OW_FRJQ_TanSuo_WeiZhi_YunShi.3
+        }
+    }
+    option = {
+        name = OW_FRJQ_TanSuo_WeiZhi_YunShi.1.c
+        if = {
+            limit = { diplomacy >= 10 }
+            trigger_event = OW_FRJQ_TanSuo_WeiZhi_YunShi.4
+        }
+        else = {
+            trigger_event = OW_FRJQ_TanSuo_WeiZhi_YunShi.5
+        }
+    }
+    option = {
+        name = OW_FRJQ_TanSuo_WeiZhi_YunShi.1.d
+        if = {
+            limit = { learning >= 10 }
+            trigger_event = OW_FRJQ_TanSuo_WeiZhi_YunShi.6
+        }
+        else = {
+            trigger_event = OW_FRJQ_TanSuo_WeiZhi_YunShi.7
+        }
+    }
+}
+OW_FRJQ_TanSuo_WeiZhi_YunShi.2 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_WeiZhi_YunShi.1.t
+    desc = OW_FRJQ_TanSuo_WeiZhi_YunShi.2.desc
+    option = {
+        name = OW_FRJQ_TanSuo_WeiZhi_YunShi.2.a
+        add_prestige = 200
+    }
+}
+OW_FRJQ_TanSuo_WeiZhi_YunShi.3 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_WeiZhi_YunShi.1.t
+    desc = OW_FRJQ_TanSuo_WeiZhi_YunShi.3.desc
+    option = {
+        name = OW_FRJQ_TanSuo_WeiZhi_YunShi.3.a
+        add_prestige = -200 
+    }
+}
+OW_FRJQ_TanSuo_WeiZhi_YunShi.4 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_WeiZhi_YunShi.1.t
+    desc = OW_FRJQ_TanSuo_WeiZhi_YunShi.4.desc
+    option = {
+        name = OW_FRJQ_TanSuo_WeiZhi_YunShi.4.a
+        add_gold = 200
+    }
+}
+OW_FRJQ_TanSuo_WeiZhi_YunShi.5 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_WeiZhi_YunShi.1.t
+    desc = OW_FRJQ_TanSuo_WeiZhi_YunShi.5.desc
+    option = {
+        name = OW_FRJQ_TanSuo_WeiZhi_YunShi.5.a
+    }
+}
+OW_FRJQ_TanSuo_WeiZhi_YunShi.6 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_WeiZhi_YunShi.1.t
+    desc = OW_FRJQ_TanSuo_WeiZhi_YunShi.6.desc
+    option = {
+        name = OW_FRJQ_TanSuo_WeiZhi_YunShi.6.a
+		hidden_effect = {
+			add_OW_FRXZ_Random_XinXi_Random_Value = yes 
+		}
+    }
+}
+OW_FRJQ_TanSuo_WeiZhi_YunShi.7 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_WeiZhi_YunShi.1.t
+    desc = OW_FRJQ_TanSuo_WeiZhi_YunShi.7.desc
+    option = {
+        name = OW_FRJQ_TanSuo_WeiZhi_YunShi.7.a
+    }
+}

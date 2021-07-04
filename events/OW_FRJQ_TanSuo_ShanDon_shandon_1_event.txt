@@ -1,0 +1,66 @@
+﻿#已接入
+namespace = OW_FRJQ_TanSuo_ShanDon_shandon_1
+OW_FRJQ_TanSuo_ShanDon_shandon_1.1 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_ShanDon_shandon_1.1.t
+    desc = OW_FRJQ_TanSuo_ShanDon_shandon_1.1.desc
+    option = {
+        name = OW_FRJQ_TanSuo_ShanDon_shandon_1.1.a
+    }
+    option = {
+        name = OW_FRJQ_TanSuo_ShanDon_shandon_1.1.b
+        trigger_event = OW_FRJQ_TanSuo_ShanDon_shandon_1.2
+    }
+}
+OW_FRJQ_TanSuo_ShanDon_shandon_1.2 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_ShanDon_shandon_1.1.t
+    desc = OW_FRJQ_TanSuo_ShanDon_shandon_1.2.desc
+    option = {
+        name = OW_FRJQ_TanSuo_ShanDon_shandon_1.2.a
+        trigger_event = OW_FRJQ_TanSuo_ShanDon_shandon_1.3
+    }
+    option = {
+        name = OW_FRJQ_TanSuo_ShanDon_shandon_1.2.b
+        if = {
+            limit = { intrigue >= 10 }
+            trigger_event = OW_FRJQ_TanSuo_ShanDon_shandon_1.4
+        }
+        else = {
+            trigger_event = OW_FRJQ_TanSuo_ShanDon_shandon_1.5
+        }
+    }
+}
+OW_FRJQ_TanSuo_ShanDon_shandon_1.3 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_ShanDon_shandon_1.1.t
+    desc = OW_FRJQ_TanSuo_ShanDon_shandon_1.3.desc
+    option = {
+        name = OW_FRJQ_TanSuo_ShanDon_shandon_1.3.a
+    }
+}
+OW_FRJQ_TanSuo_ShanDon_shandon_1.4 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_ShanDon_shandon_1.1.t
+    desc = OW_FRJQ_TanSuo_ShanDon_shandon_1.4.desc
+    option = {
+        name = OW_FRJQ_TanSuo_ShanDon_shandon_1.4.a
+		hidden_effect = {
+			add_OW_FRXZ_Random_XinXi_Random_Value = yes 
+		}
+    }
+}
+OW_FRJQ_TanSuo_ShanDon_shandon_1.5 = {
+    type = character_event
+    theme = default 
+    title = OW_FRJQ_TanSuo_ShanDon_shandon_1.1.t
+    desc = OW_FRJQ_TanSuo_ShanDon_shandon_1.5.desc
+    option = {
+        name = OW_FRJQ_TanSuo_ShanDon_shandon_1.5.a
+        add_trait = wounded_2
+    }
+}

@@ -1,0 +1,767 @@
+﻿###########
+#石碑
+###########
+namespace = OW_FRJQ_ShiBei_Start
+OW_FRJQ_ShiBei_Start.1 = {
+	type = character_event
+	theme = hunting
+	hidden = yes
+	immediate = {
+		random_list = {
+			1 = { trigger_event = OW_FRJQ_ShiBei.01 }
+			1 = { trigger_event = OW_FRJQ_ShiBei.02 }
+		}
+	}
+}
+namespace = OW_FRJQ_ShiBei
+OW_FRJQ_ShiBei.99 = {
+	type = character_event
+	theme = hunting
+	title = OW_FRJQ_ShiBei.99.name
+	desc = OW_FRJQ_ShiBei.99.desc
+	immediate = {
+		if = {
+			limit = { has_variable = OW_FRJQ_ShiBei_Ci }
+			remove_variable = OW_FRJQ_ShiBei_Ci
+		}
+	}
+	option = {
+		name = OW_FRJQ_ShiBei.99.t
+	}
+}
+
+OW_FRJQ_ShiBei.01 = {
+	type = character_event
+	theme = hunting
+	title = OW_FRJQ_ShiBei.01.name
+	desc = OW_FRJQ_ShiBei.01.desc
+	option = {
+		name = OW_FRJQ_ShiBei.01.t1
+		trigger_event = OW_FRJQ_ShiBei.99
+	}
+	option = {
+		name = OW_FRJQ_ShiBei.01.t2
+		trigger = { NOT = { has_variable = OW_FRJQ_ShiBei_Ci } }
+		set_variable = { name = OW_FRJQ_ShiBei_Ci value = 1 }
+		if = {
+			limit = { 
+				has_variable = OW_FRJQ_ShiBei_Ci
+				var:OW_FRJQ_ShiBei_Ci = 1
+			}
+			trigger_event = OW_FRJQ_ShiBei.01
+		}
+		else = { trigger_event = OW_FRJQ_ShiBei.99 }
+	}
+	option = {
+		name = OW_FRJQ_ShiBei.01.t3
+		trigger_event = OW_FRJQ_ShiBei.99
+	}
+	option = {
+		name = OW_FRJQ_ShiBei.01.t4
+		trigger_event = OW_FRJQ_ShiBei.99
+	}
+	option = {
+		name = OW_FRJQ_ShiBei.01.t5
+		trigger = { 
+			OR = {
+				NOT = { has_variable = OW_FRJQ_ShiBei_Ci }
+				var:OW_FRJQ_ShiBei_Ci = 1
+				var:OW_FRJQ_ShiBei_Ci = 11
+				var:OW_FRJQ_ShiBei_Ci = 111
+				var:OW_FRJQ_ShiBei_Ci = 1111
+			}
+		}
+		change_variable = { name = OW_FRJQ_ShiBei_Ci add = 10000 }
+		if = {
+			limit = {
+				has_variable = OW_FRJQ_ShiBei_Ci
+				var:OW_FRJQ_ShiBei_Ci = 11111
+			}
+			remove_variable = OW_FRJQ_ShiBei_Ci
+			hidden_effect = {
+				random_list = {
+					5 = { OW_FRJQ_HuoQuXinXi_TanSuo = yes }
+					95 = { add_OW_FRXZ_Random_XinXi_Random_Value = yes }
+				}
+			}
+		}
+		else = { trigger_event = OW_FRJQ_ShiBei.99 }
+	}
+	option = {
+		name = OW_FRJQ_ShiBei.01.t6
+		trigger = { 
+			OR = {
+				NOT = { has_variable = OW_FRJQ_ShiBei_Ci }
+				var:OW_FRJQ_ShiBei_Ci = 1
+				var:OW_FRJQ_ShiBei_Ci = 11
+				var:OW_FRJQ_ShiBei_Ci = 111
+			}
+		}
+		change_variable = { name = OW_FRJQ_ShiBei_Ci add = 1000 }
+		if = {
+			limit = {
+				has_variable = OW_FRJQ_ShiBei_Ci
+				var:OW_FRJQ_ShiBei_Ci = 1111
+			}
+			trigger_event = OW_FRJQ_ShiBei.01
+		}
+		else = { trigger_event = OW_FRJQ_ShiBei.99 }
+	}
+	option = {
+		name = OW_FRJQ_ShiBei.01.t7
+		trigger = { 
+			OR = {
+				NOT = { has_variable = OW_FRJQ_ShiBei_Ci }
+				var:OW_FRJQ_ShiBei_Ci = 1
+			}
+		}
+		change_variable = { name = OW_FRJQ_ShiBei_Ci add = 10 }
+		if = {
+			limit = {
+				has_variable = OW_FRJQ_ShiBei_Ci
+				var:OW_FRJQ_ShiBei_Ci = 11
+			}
+			trigger_event = OW_FRJQ_ShiBei.01
+		}
+		else = { trigger_event = OW_FRJQ_ShiBei.99 }
+	}
+	option = {
+		name = OW_FRJQ_ShiBei.01.t8
+		trigger_event = OW_FRJQ_ShiBei.99
+	}
+	option = {
+		name = OW_FRJQ_ShiBei.01.t9
+		trigger = { 
+			OR = {
+				NOT = { has_variable = OW_FRJQ_ShiBei_Ci }
+				var:OW_FRJQ_ShiBei_Ci = 1
+				var:OW_FRJQ_ShiBei_Ci = 11
+			}
+		}
+		change_variable = { name = OW_FRJQ_ShiBei_Ci add = 100 }
+		if = {
+			limit = {
+				has_variable = OW_FRJQ_ShiBei_Ci
+				var:OW_FRJQ_ShiBei_Ci = 111
+			}
+			trigger_event = OW_FRJQ_ShiBei.01
+		}
+		else = { trigger_event = OW_FRJQ_ShiBei.99 }
+	}
+}
+
+OW_FRJQ_ShiBei.02 = {
+	type = character_event
+	theme = hunting
+	title = OW_FRJQ_ShiBei.02.name
+	desc = OW_FRJQ_ShiBei.02.desc
+	option = {#6
+		name = OW_FRJQ_ShiBei.02.t1
+		trigger = { 
+			OR = {
+				NOT = { has_variable = OW_FRJQ_ShiBei_Ci }
+				var:OW_FRJQ_ShiBei_Ci = 1
+				var:OW_FRJQ_ShiBei_Ci = 11
+				var:OW_FRJQ_ShiBei_Ci = 111
+				var:OW_FRJQ_ShiBei_Ci = 1111
+				var:OW_FRJQ_ShiBei_Ci = 11111
+			}
+		}
+		change_variable = { name = OW_FRJQ_ShiBei_Ci add = 100000 }
+		if = {
+			limit = {
+				has_variable = OW_FRJQ_ShiBei_Ci
+				var:OW_FRJQ_ShiBei_Ci = 111111
+			}
+			trigger_event = OW_FRJQ_ShiBei.02
+		}
+		else = { trigger_event = OW_FRJQ_ShiBei.99 }
+	}
+	option = {#5
+		name = OW_FRJQ_ShiBei.02.t2
+		trigger = { 
+			OR = {
+				NOT = { has_variable = OW_FRJQ_ShiBei_Ci }
+				var:OW_FRJQ_ShiBei_Ci = 1
+				var:OW_FRJQ_ShiBei_Ci = 11
+				var:OW_FRJQ_ShiBei_Ci = 111
+				var:OW_FRJQ_ShiBei_Ci = 1111
+			}
+		}
+		change_variable = { name = OW_FRJQ_ShiBei_Ci add = 10000 }
+		if = {
+			limit = {
+				has_variable = OW_FRJQ_ShiBei_Ci
+				var:OW_FRJQ_ShiBei_Ci = 11111
+			}
+			trigger_event = OW_FRJQ_ShiBei.02
+		}
+		else = { trigger_event = OW_FRJQ_ShiBei.99 }
+	}
+	option = {
+		name = OW_FRJQ_ShiBei.02.t3
+		trigger = { has_variable = OW_FRJQ_ShiBei_Ci }
+		trigger_event = OW_FRJQ_ShiBei.99
+	}
+	option = {#2
+		name = OW_FRJQ_ShiBei.02.t4
+		trigger = { 
+			OR = {
+				NOT = { has_variable = OW_FRJQ_ShiBei_Ci }
+				var:OW_FRJQ_ShiBei_Ci = 1
+			}
+		}
+		change_variable = { name = OW_FRJQ_ShiBei_Ci add = 10 }
+		if = {
+			limit = {
+				has_variable = OW_FRJQ_ShiBei_Ci
+				var:OW_FRJQ_ShiBei_Ci = 11
+			}
+			trigger_event = OW_FRJQ_ShiBei.02
+		}
+		else = { trigger_event = OW_FRJQ_ShiBei.99 }
+	}
+	option = {#7
+		name = OW_FRJQ_ShiBei.02.t5
+		trigger = { 
+			OR = {
+				NOT = { has_variable = OW_FRJQ_ShiBei_Ci }
+				var:OW_FRJQ_ShiBei_Ci = 1
+				var:OW_FRJQ_ShiBei_Ci = 11
+				var:OW_FRJQ_ShiBei_Ci = 111
+				var:OW_FRJQ_ShiBei_Ci = 1111
+				var:OW_FRJQ_ShiBei_Ci = 11111
+				var:OW_FRJQ_ShiBei_Ci = 111111
+			}
+		}
+		change_variable = { name = OW_FRJQ_ShiBei_Ci add = 1000000 }
+		if = {
+			limit = {
+				has_variable = OW_FRJQ_ShiBei_Ci
+				var:OW_FRJQ_ShiBei_Ci = 1111111
+			}
+			remove_variable = OW_FRJQ_ShiBei_Ci
+			hidden_effect = {
+				random_list = {
+					5 = { OW_FRJQ_HuoQuXinXi_TanSuo = yes }
+					95 = { add_OW_FRXZ_Random_XinXi_Random_Value = yes }
+				}
+			}
+		}
+		else = { trigger_event = OW_FRJQ_ShiBei.99 }
+	}
+	option = {
+		name = OW_FRJQ_ShiBei.02.t6
+		trigger_event = OW_FRJQ_ShiBei.99
+	}
+	option = {#1
+		name = OW_FRJQ_ShiBei.02.t7
+		trigger = { NOT = { has_variable = OW_FRJQ_ShiBei_Ci } }
+		set_variable = { name = OW_FRJQ_ShiBei_Ci value = 1 }
+		if = {
+			limit = {
+				has_variable = OW_FRJQ_ShiBei_Ci
+				var:OW_FRJQ_ShiBei_Ci = 1
+			}
+			trigger_event = OW_FRJQ_ShiBei.02
+		}
+		else = { trigger_event = OW_FRJQ_ShiBei.99 }
+	}
+	option = {
+		name = OW_FRJQ_ShiBei.02.t8
+		trigger = { has_variable = OW_FRJQ_ShiBei_Ci }
+		trigger_event = OW_FRJQ_ShiBei.99
+	}
+	option = {
+		name = OW_FRJQ_ShiBei.02.t9
+		trigger_event = OW_FRJQ_ShiBei.99
+	}
+	option = {#4
+		name = OW_FRJQ_ShiBei.02.t10
+		trigger = { 
+			OR = {
+				NOT = { has_variable = OW_FRJQ_ShiBei_Ci }
+				var:OW_FRJQ_ShiBei_Ci = 1
+				var:OW_FRJQ_ShiBei_Ci = 11
+				var:OW_FRJQ_ShiBei_Ci = 111
+			}
+		}
+		change_variable = { name = OW_FRJQ_ShiBei_Ci add = 1000 }
+		if = {
+			limit = {
+				has_variable = OW_FRJQ_ShiBei_Ci
+				var:OW_FRJQ_ShiBei_Ci = 1111
+			}
+			trigger_event = OW_FRJQ_ShiBei.02
+		}
+		else = { trigger_event = OW_FRJQ_ShiBei.99 }
+	}
+	option = {#3
+		name = OW_FRJQ_ShiBei.02.t11
+		trigger = { 
+			OR = {
+				NOT = { has_variable = OW_FRJQ_ShiBei_Ci }
+				var:OW_FRJQ_ShiBei_Ci = 1
+				var:OW_FRJQ_ShiBei_Ci = 11
+			}
+		}
+		change_variable = { name = OW_FRJQ_ShiBei_Ci add = 100 }
+		if = {
+			limit = {
+				has_variable = OW_FRJQ_ShiBei_Ci
+				var:OW_FRJQ_ShiBei_Ci = 111
+			}
+			trigger_event = OW_FRJQ_ShiBei.02
+		}
+		else = { trigger_event = OW_FRJQ_ShiBei.99 }
+	}
+	option = {
+		name = OW_FRJQ_ShiBei.02.t12
+		trigger_event = OW_FRJQ_ShiBei.99
+	}
+}
+
+#######################################酒馆
+namespace = OW_FRJQ_JiuGuan
+
+OW_FRJQ_JiuGuan.0001 = {#UI接口
+	type = character_event
+	theme = diplomacy
+	title = OW_FRJQ_JiuGuan.0001.name
+	desc = OW_FRJQ_JiuGuan.0001.desc
+	immediate = {
+	}
+	option = {
+		name = OW_FRJQ_JiuGuan.0001.t1
+		trigger_event = OW_FRJQ_JiuGuan.0100
+	}
+	option = {
+		name = OW_FRJQ_JiuGuan.0001.t2
+		trigger = { 
+			NOT = {
+				has_variable = OW_FRJQ_XiaoEr_Value_Zheng
+				has_variable = OW_FRJQ_XiaoEr_Value_Fan
+			}
+		}
+		trigger_event = OW_FRJQ_JiuGuan.0200
+	}
+	option = {
+		name = OW_FRJQ_JiuGuan.0001.t3
+		trigger_event = OW_FRJQ_JiuGuan.0300
+	}
+	option = {
+		name = OW_FRJQ_JiuGuan.0001.t4
+		trigger = { gold > 1000 }
+		trigger_event = OW_FRJQ_JiuGuan.0400
+	}
+	option = {
+		name = OW_FRJQ_JiuGuan.0001.end
+	}
+}
+
+OW_FRJQ_JiuGuan.9999 = {
+	type = character_event
+	theme = diplomacy
+	title = OW_FRJQ_JiuGuan.9999.name
+	desc = OW_FRJQ_JiuGuan.9999.desc
+	option = {
+		name = OW_FRJQ_JiuGuan.9999.t
+	}
+}
+
+OW_FRJQ_JiuGuan.0100 = {#掌柜
+	type = character_event
+	theme = diplomacy
+	title = OW_FRJQ_JiuGuan.0100.name
+	desc = OW_FRJQ_JiuGuan.0100.desc
+	option = {
+		name = OW_FRJQ_JiuGuan.0100.t1
+		random_list = {
+			25 = {
+				custom_tooltip = OW_FRJQ_JiuGuan_ZhenXiaoXi
+				hidden_effect = {
+					random_list = {
+						5 = { OW_FRJQ_HuoQuXinXi_TanSuo = yes }
+						95 = { add_OW_FRXZ_Random_XinXi_Random_Value = yes }
+					}
+				}
+				modifier = {
+					add = 5
+					has_character_flag = OW_XZ_XINXI11
+				}
+				modifier = {
+					add = 5
+					has_character_flag = OW_XZ_XINXI12
+				}
+				modifier = {
+					add = 5
+					has_character_flag = OW_XZ_XINXI13
+				}
+				modifier = {
+					add = 5
+					has_character_flag = OW_XZ_XINXI14
+				}
+				modifier = {
+					add = 5
+					has_character_flag = OW_XZ_XINXI15
+				}
+				modifier = {
+					add = 5
+					has_character_flag = OW_XZ_XINXI16
+				}
+				modifier = {
+					add = 5
+					has_character_flag = OW_XZ_XINXI17
+				}
+				modifier = {
+					add = 5
+					has_character_flag = OW_XZ_XINXI18
+				}
+				modifier = {
+					add = 5
+					has_character_flag = OW_XZ_XINXI19
+				}
+				modifier = {
+					add = 5
+					has_character_flag = OW_XZ_XINXI20
+				}
+			}
+			75 = {
+				custom_tooltip = OW_FRJQ_JiuGuan_JiaXiaoXi
+				trigger_event = OW_FRJQ_JiuGuan.9999
+				modifier = {
+					add = 15
+					AND = {
+						NOT = { has_character_flag = OW_XZ_XINXI1 }
+						NOT = { has_character_flag = OW_XZ_XINXI2 }
+						NOT = { has_character_flag = OW_XZ_XINXI3 }
+						NOT = { has_character_flag = OW_XZ_XINXI4 }
+						NOT = { has_character_flag = OW_XZ_XINXI5 }
+						NOT = { has_character_flag = OW_XZ_XINXI6 }
+						NOT = { has_character_flag = OW_XZ_XINXI7 }
+						NOT = { has_character_flag = OW_XZ_XINXI8 }
+						NOT = { has_character_flag = OW_XZ_XINXI9 }
+						NOT = { has_character_flag = OW_XZ_XINXI10 }
+					}
+				}
+				modifier = {
+					add = 1
+					NOT = { has_character_flag = OW_XZ_XINXI1 }
+				}
+				modifier = {
+					add = 1
+					NOT = { has_character_flag = OW_XZ_XINXI2 }
+				}
+				modifier = {
+					add = 1
+					NOT = { has_character_flag = OW_XZ_XINXI3 }
+				}
+				modifier = {
+					add = 1
+					NOT = { has_character_flag = OW_XZ_XINXI4 }
+				}
+				modifier = {
+					add = 1
+					NOT = { has_character_flag = OW_XZ_XINXI5 }
+				}
+				modifier = {
+					add = 1
+					NOT = { has_character_flag = OW_XZ_XINXI6 }
+				}
+				modifier = {
+					add = 1
+					NOT = { has_character_flag = OW_XZ_XINXI7 }
+				}
+				modifier = {
+					add = 1
+					NOT = { has_character_flag = OW_XZ_XINXI8 }
+				}
+				modifier = {
+					add = 1
+					NOT = { has_character_flag = OW_XZ_XINXI9 }
+				}
+				modifier = {
+					add = 1
+					NOT = { has_character_flag = OW_XZ_XINXI10 }
+				}
+			}
+		}
+	}
+	option = {
+		name = OW_FRJQ_JiuGuan.0100.t2
+		trigger = { gold > 500 }
+		remove_short_term_gold = OW_FRJQ_JiuGuan_Value
+		OW_FRJQ_HuoQuXinXi_JiuGuan = yes
+	}
+}
+######小二
+OW_FRJQ_JiuGuan.0200 = {
+	type = character_event
+	theme = diplomacy
+	title = OW_FRJQ_JiuGuan.0200.name
+	desc = OW_FRJQ_JiuGuan.0200.desc
+	option = {
+		name = OW_FRJQ_JiuGuan.0200.t1
+		trigger_event = OW_FRJQ_JiuGuan.0210
+	}
+	option = {
+		name = OW_FRJQ_JiuGuan.0200.t2
+		trigger_event = OW_FRJQ_JiuGuan.0220
+	}
+}
+OW_FRJQ_JiuGuan.0210 = {
+	type = character_event
+	theme = diplomacy
+	title = OW_FRJQ_JiuGuan.0210.name
+	desc = OW_FRJQ_JiuGuan.0210.desc
+	immediate = {
+		if = {
+			limit = {
+				NOT = {
+					has_variable = OW_FRJQ_XiaoEr_Value_Zheng
+					has_variable = OW_FRJQ_XiaoEr_Value_Fan
+				}
+			}
+			set_variable = { name = OW_FRJQ_XiaoEr_Value_Zheng value = 25 }
+			set_variable = { name = OW_FRJQ_XiaoEr_Value_Fan value = 75 }
+		}
+	}
+	option = {
+		name = OW_FRJQ_JiuGuan.0210.t1
+		hidden_effect = {
+			random_list = {
+				1 = {
+					remove_variable = OW_FRJQ_XiaoEr_Value_Zheng
+					remove_variable = OW_FRJQ_XiaoEr_Value_Fan
+					random_list = {
+						5 = { OW_FRJQ_HuoQuXinXi_TanSuo = yes }
+						95 = { add_OW_FRXZ_Random_XinXi_Random_Value = yes }
+					}
+					modifier = {
+						add = var:OW_FRJQ_XiaoEr_Value_Zheng
+						has_variable = OW_FRJQ_XiaoEr_Value_Zheng
+					}
+				}
+				1 = {
+					remove_variable = OW_FRJQ_XiaoEr_Value_Zheng
+					remove_variable = OW_FRJQ_XiaoEr_Value_Fan
+					trigger_event = OW_FRJQ_JiuGuan.9999
+					modifier = {
+						add = var:OW_FRJQ_XiaoEr_Value_Fan
+						has_variable = OW_FRJQ_XiaoEr_Value_Fan
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = OW_FRJQ_JiuGuan.0210.t2
+		custom_tooltip = OW_FRJQ_JiuGuan_TiShengChengGong
+		change_variable = { name = OW_FRJQ_XiaoEr_Value_Zheng add = { -10 20 } }
+		remove_variable = OW_FRJQ_XiaoEr_Value_Fan
+		set_variable = { name = OW_FRJQ_XiaoEr_Value_Fan value = 100 }
+		change_variable = { name = OW_FRJQ_XiaoEr_Value_Fan subtract = var:OW_FRJQ_XiaoEr_Value_Zheng }
+		trigger_event = {
+			id = OW_FRJQ_JiuGuan.0210
+			days = 1
+		}
+	}
+}
+
+OW_FRJQ_JiuGuan.0220 = {
+	type = character_event
+	theme = diplomacy
+	title = OW_FRJQ_JiuGuan.0220.name
+	desc = OW_FRJQ_JiuGuan.0220.desc
+	option = {
+		name = OW_FRJQ_JiuGuan.0220.t1
+		trigger = { gold > 2000 }
+		trigger_event = OW_FRJQ_JiuGuan.0221
+	}
+	option = {
+		name = OW_FRJQ_JiuGuan.0220.t2
+		trigger_event = OW_FRJQ_JiuGuan.0210
+	}
+}
+
+OW_FRJQ_JiuGuan.0221 = {
+	type = character_event
+	theme = diplomacy
+	title = OW_FRJQ_JiuGuan.0221.name
+	desc = OW_FRJQ_JiuGuan.0221.desc
+	immediate = {
+		if = {
+			limit = {
+				NOT = {
+					has_variable = OW_FRJQ_XiaoEr_TaoJia_Value
+					has_variable = OW_FRJQ_XiaoEr_CiShu_Value
+				}
+			}
+			set_variable = { name = OW_FRJQ_XiaoEr_TaoJia_Value value = 1000 }
+			set_variable = { name = OW_FRJQ_XiaoEr_CiShu_Value value = 0 }
+		}
+	}
+	option = {
+		name = OW_FRJQ_JiuGuan.0221.t1
+		remove_short_term_gold = var:OW_FRJQ_XiaoEr_TaoJia_Value
+		remove_variable = OW_FRJQ_XiaoEr_TaoJia_Value
+		remove_variable = OW_FRJQ_XiaoEr_CiShu_Value
+		hidden_effect = {
+			random_list = {
+				5 = { OW_FRJQ_HuoQuXinXi_TanSuo = yes }
+				95 = { add_OW_FRXZ_Random_XinXi_Random_Value = yes }
+			}
+		}
+	}
+	option = {
+		name = OW_FRJQ_JiuGuan.0221.t2
+		trigger = { var:OW_FRJQ_XiaoEr_CiShu_Value < 4 }
+		if = {
+			limit = { var:OW_FRJQ_XiaoEr_CiShu_Value >= 1 }
+			change_variable = { name = OW_FRJQ_XiaoEr_TaoJia_Value add = { -200 200 } }
+			change_variable = { name = OW_FRJQ_XiaoEr_CiShu_Value add = 1 }
+			trigger_event = OW_FRJQ_JiuGuan.0221
+		}
+		else = {
+			change_variable = { name = OW_FRJQ_XiaoEr_TaoJia_Value add = { -500 100 } }
+			change_variable = { name = OW_FRJQ_XiaoEr_CiShu_Value add = 1 }
+			trigger_event = OW_FRJQ_JiuGuan.0221
+		}
+	}
+}
+######酒鬼
+OW_FRJQ_JiuGuan.0300 = {
+	type = character_event
+	theme = diplomacy
+	title = OW_FRJQ_JiuGuan.0300.name
+	desc = OW_FRJQ_JiuGuan.0300.desc
+	immediate = {
+		if = {
+			limit = {
+				NOT = {
+					has_variable = OW_FRJQ_Ai_JiuLiang_Value
+					has_variable = OW_FRJQ_Player_JiuLiang_Value
+				}
+			}
+			set_variable = { name = OW_FRJQ_Ai_JiuLiang_Value value = 0 }
+			set_variable = { name = OW_FRJQ_Player_JiuLiang_Value value = 0 }
+		}
+	}
+	option = {
+		name = OW_FRJQ_JiuGuan.0300.t1
+		trigger = {
+			has_variable = OW_FRJQ_Player_JiuLiang_Value
+			var:OW_FRJQ_Player_JiuLiang_Value < 100
+			has_variable = OW_FRJQ_Ai_JiuLiang_Value
+			var:OW_FRJQ_Ai_JiuLiang_Value < 100
+		}
+		change_variable = { name = OW_FRJQ_Ai_JiuLiang_Value add = { 10 25 } }
+		change_variable = { name = OW_FRJQ_Player_JiuLiang_Value add = { 10 25 } }
+		trigger_event = OW_FRJQ_JiuGuan.0300
+	}
+	option = {
+		name = OW_FRJQ_JiuGuan.0300.t2
+		trigger = {
+			has_variable = OW_FRJQ_Player_JiuLiang_Value
+			var:OW_FRJQ_Player_JiuLiang_Value >= 100
+		}
+		remove_variable = OW_FRJQ_Ai_JiuLiang_Value
+		remove_variable = OW_FRJQ_Player_JiuLiang_Value
+		death = { death_reason = death_OW_ZHUISI }
+	}
+	option = {
+		name = OW_FRJQ_JiuGuan.0300.t3
+		trigger = {
+			has_variable = OW_FRJQ_Ai_JiuLiang_Value
+			var:OW_FRJQ_Ai_JiuLiang_Value >= 100
+		}
+		remove_variable = OW_FRJQ_Ai_JiuLiang_Value
+		remove_variable = OW_FRJQ_Player_JiuLiang_Value
+		hidden_effect = {
+			random_list = {
+				5 = { OW_FRJQ_HuoQuXinXi_TanSuo = yes }
+				95 = { add_OW_FRXZ_Random_XinXi_Random_Value = yes }
+			}
+		}
+	}
+	option = {
+		name = OW_FRJQ_JiuGuan.0300.t4
+		trigger = {
+			has_variable = OW_FRJQ_Player_JiuLiang_Value
+			var:OW_FRJQ_Player_JiuLiang_Value < 100
+			has_variable = OW_FRJQ_Ai_JiuLiang_Value
+			var:OW_FRJQ_Ai_JiuLiang_Value < 100
+		}
+		remove_variable = OW_FRJQ_Ai_JiuLiang_Value
+		remove_variable = OW_FRJQ_Player_JiuLiang_Value
+	}
+}
+
+######赌徒
+OW_FRJQ_JiuGuan.0400 = {
+	type = character_event
+	theme = diplomacy
+	title = OW_FRJQ_JiuGuan.0400.name
+	desc = OW_FRJQ_JiuGuan.0400.desc
+	immediate = {
+		remove_short_term_gold = 200
+		if = {
+			limit = {
+				NOT = {
+					has_variable = OW_FRJQ_Ai_DianShu_Value
+					has_variable = OW_FRJQ_Player_DianShu_Value
+				}
+			}
+			set_variable = { name = OW_FRJQ_Ai_DianShu_Value value = 0 }
+			set_variable = { name = OW_FRJQ_Player_DianShu_Value value = 0 }
+		}
+	}
+	option = {
+		name = OW_FRJQ_JiuGuan.0400.t1
+		trigger = {
+			has_variable = OW_FRJQ_Player_DianShu_Value
+			var:OW_FRJQ_Player_DianShu_Value < 100
+			has_variable = OW_FRJQ_Player_DianShu_Value
+			var:OW_FRJQ_Ai_DianShu_Value < 100
+		}
+		change_variable = { name = OW_FRJQ_Ai_DianShu_Value add = { 1 10 } }
+		change_variable = { name = OW_FRJQ_Player_DianShu_Value add = { 1 10 } }
+		trigger_event = OW_FRJQ_JiuGuan.0300
+	}
+	option = {
+		name = OW_FRJQ_JiuGuan.0400.t2
+		trigger = {
+			has_variable = OW_FRJQ_Player_DianShu_Value
+			var:OW_FRJQ_Player_DianShu_Value >= 24
+		}
+		remove_variable = OW_FRJQ_Ai_DianShu_Value
+		remove_variable = OW_FRJQ_Player_DianShu_Value
+		hidden_effect = {
+			random_list = {
+				5 = { OW_FRJQ_HuoQuXinXi_TanSuo = yes }
+				95 = { add_OW_FRXZ_Random_XinXi_Random_Value = yes }
+			}
+		}
+	}
+	option = {
+		name = OW_FRJQ_JiuGuan.0400.t3
+		trigger = {
+			has_variable = OW_FRJQ_Ai_DianShu_Value
+			var:OW_FRJQ_Ai_DianShu_Value >= 24
+		}
+		remove_variable = OW_FRJQ_Ai_DianShu_Value
+		remove_variable = OW_FRJQ_Player_DianShu_Value
+	}
+	option = {
+		name = OW_FRJQ_JiuGuan.0400.t4
+		trigger = {
+			has_variable = OW_FRJQ_Player_DianShu_Value
+			var:OW_FRJQ_Player_DianShu_Value < 100
+			has_variable = OW_FRJQ_Ai_DianShu_Value
+			var:OW_FRJQ_Ai_DianShu_Value < 100
+		}
+		remove_variable = OW_FRJQ_Ai_DianShu_Value
+		remove_variable = OW_FRJQ_Player_DianShu_Value
+		add_gold = 200
+	}
+}

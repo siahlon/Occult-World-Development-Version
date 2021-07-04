@@ -1,0 +1,1470 @@
+﻿#随即10个低级门派的修真之路剧情线
+#by狗子  2020/11/15
+#################################################################
+######################起始#######################################
+#################################################################
+#################################################################
+namespace = OW_JB_XZ_qishi
+OW_JB_XZ_qishi.9999 = {
+	hidden = yes
+	type = character_event
+
+	immediate = {
+		random_list = {
+			10 = { trigger_event = OW_JB_XZ_qishi.0001 }
+			10 = { trigger_event = OW_JB_XZ_qishi.0002 }
+			10 = { trigger_event = OW_JB_XZ_qishi.0003 }
+			10 = { trigger_event = OW_JB_XZ_qishi.0004 }
+			10 = { trigger_event = OW_JB_XZ_qishi.0005 }
+		}
+	}
+}
+
+OW_JB_XZ_qishi.0001 = {
+	type = character_event
+	theme = default
+	title = OW_JB_XZ_qishi.0001.name
+	desc = OW_JB_XZ_qishi.0001.desc
+	left_portrait = {
+		character = scope:actor
+		animation = shock
+	}
+	option = {
+		name = OW_JB_XZ_qishi.0001.1.t
+		set_OW_months = { VALUE = 3 } 
+		#正数位绿色显示，负数为红色显示。
+		#此词条表示，将在文本中提示：下面的事件将在3个月后执行。
+		trigger_event = {
+			id = OW_JB_XZ_qishi_chuxing.9999
+			#开始修真之路——10个低级门派的剧情
+			months = 3
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+	option = {
+		name = OW_JB_XZ_qishi.0001.2.t
+		hidden_effect = {
+			scope:actor = {
+				add_intrigue_skill = { -2 2 }
+			}
+		}
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 1000
+				has_character_flag = OW_XZ_tizhi_0
+			}
+		}
+	}
+}
+
+OW_JB_XZ_qishi.0002 = {
+	type = character_event
+	theme = default
+	title = OW_JB_XZ_qishi.0002.name
+	desc = OW_JB_XZ_qishi.0002.desc
+	left_portrait = {
+		character = scope:actor
+		animation = shock
+	}
+	option = {
+		name = OW_JB_XZ_qishi.0002.1.t
+		set_OW_months = { VALUE = 3 } 
+		trigger_event = {
+			id = OW_JB_XZ_qishi_chuxing.9999
+			months = 3
+		}
+		ai_chance = {
+			base = 50
+		}
+	}
+	option = {
+		name = OW_JB_XZ_qishi.0002.2.t
+		hidden_effect = {
+			scope:actor = {
+				add_learning_skill = { -2 2 }
+			}
+		}
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 1000
+				has_character_flag = OW_XZ_tizhi_0
+			}
+		}
+	}
+}
+OW_JB_XZ_qishi.0003 = {
+	type = character_event
+	theme = default
+	title = OW_JB_XZ_qishi.0003.name
+	desc = OW_JB_XZ_qishi.0003.desc
+	left_portrait = {
+		character = scope:actor
+		animation = shock
+	}
+	option = {
+		name = OW_JB_XZ_qishi.0003.1.t
+		set_OW_months = { VALUE = 3 } 
+		trigger_event = {
+			id = OW_JB_XZ_qishi_chuxing.9999
+			months = 3
+		}
+		ai_chance = {
+			base = 50
+		}
+	}
+	option = {
+		name = OW_JB_XZ_qishi.0003.2.t
+		hidden_effect = {
+			scope:actor = {
+				add_prowess_skill = { -2 2 }
+			}
+		}
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 1000
+				has_character_flag = OW_XZ_tizhi_0
+			}
+		}
+	}
+}
+OW_JB_XZ_qishi.0004 = {
+	type = character_event
+	theme = default
+	title = OW_JB_XZ_qishi.0004.name
+	desc = OW_JB_XZ_qishi.0004.desc
+	left_portrait = {
+		character = scope:actor
+		animation = shock
+	}
+	option = {
+		name = OW_JB_XZ_qishi.0004.1.t
+		set_OW_months = { VALUE = 3 } 
+		trigger_event = {
+			id = OW_JB_XZ_qishi_chuxing.9999
+			months = 3
+		}
+		ai_chance = {
+			base = 50
+		}
+	}
+	option = {
+		name = OW_JB_XZ_qishi.0004.2.t
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 1000
+				has_character_flag = OW_XZ_tizhi_0
+			}
+		}
+	}
+}
+OW_JB_XZ_qishi.0005 = {
+	type = character_event
+	theme = default
+	title = OW_JB_XZ_qishi.0005.name
+	desc = OW_JB_XZ_qishi.0005.desc
+	left_portrait = {
+		character = scope:actor
+		animation = shock
+	}
+	option = {
+		name = OW_JB_XZ_qishi.0005.1.t
+		set_OW_months = { VALUE = 3 } 
+		trigger_event = {
+			id = OW_JB_XZ_qishi_chuxing.9999
+			months = 3
+		}
+		ai_chance = {
+			base = 50
+		}
+	}
+	option = {
+		name = OW_JB_XZ_qishi.0005.2.t
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 1000
+				has_character_flag = OW_XZ_tizhi_0
+			}
+		}
+	}
+}
+#################################################################
+######################出行#######################################
+#################################################################
+#################################################################
+namespace = OW_JB_XZ_qishi_chuxing
+OW_JB_XZ_qishi_chuxing.9999 = {
+	hidden = yes
+
+	immediate = {
+		random_list = {
+			10 = { trigger_event = OW_JB_XZ_qishi_chuxing.0001 }
+			10 = { trigger_event = OW_JB_XZ_qishi_chuxing.0002 }
+			10 = { trigger_event = OW_JB_XZ_qishi_chuxing.0003 }
+		}
+	}
+}
+OW_JB_XZ_qishi_chuxing.0001 = {
+	type = character_event
+	theme = default
+	title = OW_JB_XZ_qishi_chuxing.0001.name
+	desc = OW_JB_XZ_qishi_chuxing.0001.desc
+	left_portrait = {
+		character = scope:actor
+		animation = shock
+	}
+	option = {
+		name = OW_JB_XZ_qishi_chuxing.0001.1.t
+		set_OW_months = { VALUE = 3 } 
+		if = {
+			limit = {
+				gold > 10000
+			}
+			remove_short_term_gold = 5000
+		}
+		else_if = {
+			limit = {
+				gold > 5000
+			}
+			remove_short_term_gold = 2500
+		}
+		else_if = {
+			limit = {
+				gold > 2000
+			}
+			remove_short_term_gold = 1000
+		}
+		else_if = {
+			limit = {
+				gold > 1000
+			}
+			remove_short_term_gold = 500
+		}
+		else_if = {
+			limit = {
+				gold > 500
+			}
+			remove_short_term_gold = 250
+		}
+		else_if = {
+			limit = {
+				gold > 200
+			}
+			remove_short_term_gold = 100
+		}
+		else_if = {
+			limit = {
+				gold > 100
+			}
+			remove_short_term_gold = 50
+		}
+		else_if = {
+			limit = {
+				gold > 50
+			}
+			remove_short_term_gold = 25
+		}
+		else_if = {
+			limit = {
+				gold > 20
+			}
+			remove_short_term_gold = 10
+		}
+		else_if = {
+			limit = {
+				gold < 0
+			}
+			add_intrigue_skill = { -2 0 }
+			add_learning_skill = { -2 0 }
+			add_prowess_skill = { -2 0 }
+		}
+		else = {
+			remove_short_term_gold = 5
+		}
+		trigger_event = {
+			id = OW_JB_XZ_qishi_guocheng.9999
+			months = 3
+		}
+		ai_chance = {
+			base = 50
+		}
+	}
+	option = {
+		name = OW_JB_XZ_qishi_chuxing.0001.2.t
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 1000
+				has_character_flag = OW_XZ_tizhi_0
+			}
+		}
+	}
+}
+OW_JB_XZ_qishi_chuxing.0002 = {
+	type = character_event
+	theme = default
+	title = OW_JB_XZ_qishi_chuxing.0002.name
+	desc = OW_JB_XZ_qishi_chuxing.0002.desc
+	left_portrait = {
+		character = scope:actor
+		animation = shock
+	}
+	option = {
+		name = OW_JB_XZ_qishi_chuxing.0002.1.t
+		if = {
+			limit = {
+				gold > 10000
+			}
+			remove_short_term_gold = 5000
+		}
+		else_if = {
+			limit = {
+				gold > 5000
+			}
+			remove_short_term_gold = 2500
+		}
+		else_if = {
+			limit = {
+				gold > 2000
+			}
+			remove_short_term_gold = 1000
+		}
+		else_if = {
+			limit = {
+				gold > 1000
+			}
+			remove_short_term_gold = 500
+		}
+		else_if = {
+			limit = {
+				gold > 500
+			}
+			remove_short_term_gold = 250
+		}
+		else_if = {
+			limit = {
+				gold > 200
+			}
+			remove_short_term_gold = 100
+		}
+		else_if = {
+			limit = {
+				gold > 100
+			}
+			remove_short_term_gold = 50
+		}
+		else_if = {
+			limit = {
+				gold > 50
+			}
+			remove_short_term_gold = 25
+		}
+		else_if = {
+			limit = {
+				gold > 20
+			}
+			remove_short_term_gold = 10
+		}
+		else_if = {
+			limit = {
+				gold < 0
+			}
+			add_intrigue_skill = { -2 0 }
+			add_learning_skill = { -2 0 }
+			add_prowess_skill = { -2 0 }
+		}
+		else = {
+			remove_short_term_gold = 5
+		}
+		set_OW_months = { VALUE = 3 } 
+		trigger_event = {
+			id = OW_JB_XZ_qishi_guocheng.9999
+			months = 3
+		}
+		ai_chance = {
+			base = 50
+		}
+	}
+	option = {
+		name = OW_JB_XZ_qishi_chuxing.0002.2.t
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 1000
+				has_character_flag = OW_XZ_tizhi_0
+			}
+		}
+	}
+}
+OW_JB_XZ_qishi_chuxing.0003 = {
+	type = character_event
+	theme = default
+	title = OW_JB_XZ_qishi_chuxing.0003.name
+	desc = OW_JB_XZ_qishi_chuxing.0003.desc
+	left_portrait = {
+		character = scope:actor
+		animation = shock
+	}
+	option = {
+		name = OW_JB_XZ_qishi_chuxing.0003.1.t
+		if = {
+			limit = {
+				gold > 10000
+			}
+			remove_short_term_gold = 5000
+		}
+		else_if = {
+			limit = {
+				gold > 5000
+			}
+			remove_short_term_gold = 2500
+		}
+		else_if = {
+			limit = {
+				gold > 2000
+			}
+			remove_short_term_gold = 1000
+		}
+		else_if = {
+			limit = {
+				gold > 1000
+			}
+			remove_short_term_gold = 500
+		}
+		else_if = {
+			limit = {
+				gold > 500
+			}
+			remove_short_term_gold = 250
+		}
+		else_if = {
+			limit = {
+				gold > 200
+			}
+			remove_short_term_gold = 100
+		}
+		else_if = {
+			limit = {
+				gold > 100
+			}
+			remove_short_term_gold = 50
+		}
+		else_if = {
+			limit = {
+				gold > 50
+			}
+			remove_short_term_gold = 25
+		}
+		else_if = {
+			limit = {
+				gold > 20
+			}
+			remove_short_term_gold = 10
+		}
+		else_if = {
+			limit = {
+				gold < 0
+			}
+			add_intrigue_skill = { -2 0 }
+			add_learning_skill = { -2 0 }
+			add_prowess_skill = { -2 0 }
+		}
+		else = {
+			remove_short_term_gold = 5
+		}
+		set_OW_months = { VALUE = 3 } 
+		trigger_event = {
+			id = OW_JB_XZ_qishi_guocheng.9999
+			months = 3
+		}
+		ai_chance = {
+			base = 50
+		}
+	}
+	option = {
+		name = OW_JB_XZ_qishi_chuxing.0003.2.t
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 1000
+				has_character_flag = OW_XZ_tizhi_0
+			}
+		}
+	}
+}
+#################################################################
+######################过程#######################################
+#################################################################
+#################################################################
+namespace = OW_JB_XZ_qishi_guocheng
+OW_JB_XZ_qishi_guocheng.9999 = {
+	hidden = yes
+	type = character_event
+
+	immediate = {
+		random_list = {
+			10 = { trigger_event = OW_JB_XZ_qishi_guocheng_1.9999 }
+			10 = { trigger_event = OW_JB_XZ_qishi_guocheng_2.9999 }
+			10 = { trigger_event = OW_JB_XZ_qishi_guocheng_3.9999 }
+			10 = { trigger_event = OW_JB_XZ_qishi_guocheng_4.1 }
+		}
+	}
+}
+namespace = OW_JB_XZ_qishi_guocheng_1
+OW_JB_XZ_qishi_guocheng_1.9999 = {
+	type = character_event
+	theme = default
+	title = OW_JB_XZ_qishi.0001.name
+	desc = OW_JB_XZ_qishi.0001.desc
+	left_portrait = {
+		character = scope:actor
+		animation = shock
+	}
+	option = {
+		name = OW_JB_XZ_qishi_guocheng_1.9999.1.t
+		set_OW_months = { VALUE = 3 } 
+		trigger_event = {
+			id = OW_JB_XZ_qishi_shilian.9999
+			months = 3
+		}
+		ai_chance = {
+			base = 50
+		}
+	}
+	option = {
+		name = OW_JB_XZ_qishi_guocheng_1.9999.1.t
+		set_OW_months = { VALUE = 3 } 
+		trigger_event = {
+			id = OW_JB_XZ_qishi_shilian.9999
+			months = 3
+		}
+		ai_chance = {
+			base = 50
+		}
+	}
+	option = {
+		name = OW_JB_XZ_qishi_guocheng_1.9999.1.t
+		set_OW_months = { VALUE = 3 } 
+		trigger_event = {
+			id = OW_JB_XZ_qishi_shilian.9999
+			months = 3
+		}
+		ai_chance = {
+			base = 50
+		}
+	}
+}
+namespace = OW_JB_XZ_qishi_guocheng_2
+OW_JB_XZ_qishi_guocheng_2.9999 = {
+	type = character_event
+	theme = default
+	title = OW_JB_XZ_qishi_guocheng_2.9999.name
+	desc = OW_JB_XZ_qishi_guocheng_2.9999.desc
+	left_portrait = {
+		character = scope:actor
+		animation = shock
+	}
+	option = {
+		name = OW_JB_XZ_qishi_guocheng_2.9999.1.t
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 25
+				prowess > 15
+			}
+			modifier = {
+				add = 25
+				has_trait = physique_good
+			}
+			modifier = {
+				add = -25
+				has_trait = physique_bad
+			}
+		}
+		random_list = {
+			10 = {
+				add_diplomacy_skill = { -1 2 }
+				add_martial_skill = { -1 2 }
+				add_stewardship_skill = { -1 2 }
+				add_intrigue_skill = { -1 2 }
+				add_learning_skill = { -1 2 }
+				add_prowess_skill = { -1 2 }
+				trigger_event = OW_JB_XZ_qishi_guocheng_2.1100
+				modifier = {
+					add = -1000
+					is_landed = no
+				}
+			}
+			10 = { 
+				random_list = {
+					30 = { add_trait = wounded_1 }
+					20 = { add_trait = wounded_2 }
+					10 = { add_trait = wounded_3 }
+					40 = { add_trait = typhus }
+				}
+				trigger_event = OW_JB_XZ_qishi_guocheng_2.1200
+				modifier = {
+					add = 1000
+					is_landed = no
+				}
+			}
+		}
+	}
+	option = {
+		name = OW_JB_XZ_qishi_guocheng_2.9999.2.t
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 25
+				intrigue > 15
+			}
+			modifier = {
+				add = 25
+				has_trait = intellect_good
+			}
+			modifier = {
+				add = -25
+				has_trait = intellect_bad
+			}
+		}
+		hidden_effect = {
+			random_list = {
+				10 = {
+					trigger_event = OW_JB_XZ_qishi_guocheng_2.2100
+					modifier = {
+						add = -1000
+						is_landed = no
+					}
+				}
+				10 = {
+					trigger_event = OW_JB_XZ_qishi_guocheng_2.2200
+					modifier = {
+						add = 1000
+						is_landed = no
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = OW_JB_XZ_qishi_guocheng_2.9999.3.t
+		ai_chance = {
+			base = 25
+			modifier = {
+				add = 1000
+				has_character_flag = OW_XZ_tizhi_0
+			}
+		}
+		set_OW_months = { VALUE = 3 } 
+		trigger_event = {
+			id = OW_JB_XZ_qishi_shilian.9999
+			months = 3
+		}
+	}
+}
+
+OW_JB_XZ_qishi_guocheng_2.1100 = {
+	type = character_event
+	theme = default
+	title = OW_JB_XZ_qishi_guocheng_2.1100.name
+	desc = OW_JB_XZ_qishi_guocheng_2.1100.desc
+	left_portrait = {
+		character = scope:actor
+	}
+	right_portrait = scope:YingEr
+	immediate = {
+		hidden_effect = {
+			random_list = {
+				10 = {
+					create_character = {
+						location = root.capital_province
+						age = { 1 3 }
+						random_traits = yes
+						gender_female_chance = 50
+						faith = root.faith
+						culture = root.culture
+						diplomacy = { 10 15 }
+						save_scope_as = YingEr
+					}
+				}
+				10 = {
+					create_character = {
+						location = root.capital_province
+						age = { 1 3 }
+						random_traits = yes
+						gender_female_chance = 50
+						faith = root.faith
+						culture = root.culture
+						martial = { 10 15 }
+						save_scope_as = YingEr
+					}
+				}
+				10 = {
+					create_character = {
+						location = root.capital_province
+						age = { 1 3 }
+						random_traits = yes
+						gender_female_chance = 50
+						faith = root.faith
+						culture = root.culture
+						stewardship = { 10 15 }
+						save_scope_as = YingEr
+					}
+				}
+				10 = {
+					create_character = {
+						location = root.capital_province
+						age = { 1 3 }
+						random_traits = yes
+						gender_female_chance = 50
+						faith = root.faith
+						culture = root.culture
+						learning = { 10 15 }
+						save_scope_as = YingEr
+					}
+				}
+				10 = {
+					create_character = {
+						location = root.capital_province
+						age = { 1 3 }
+						random_traits = yes
+						gender_female_chance = 50
+						faith = root.faith
+						culture = root.culture
+						intrigue = { 10 15 }
+						save_scope_as = YingEr
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = OW_JB_XZ_qishi_guocheng_2.1100.1.t
+		ai_chance = { base = 100 }
+		set_OW_months = { VALUE = 3 } 
+		trigger_event = {
+			id = OW_JB_XZ_qishi_shilian.9999
+			months = 3
+		}
+		add_courtier = scope:YingEr
+	}
+}
+
+OW_JB_XZ_qishi_guocheng_2.1200 = {
+	type = character_event
+	theme = default
+	title = OW_JB_XZ_qishi_guocheng_2.1200.name
+	desc = OW_JB_XZ_qishi_guocheng_2.1200.desc
+	left_portrait = {
+		character = scope:actor
+	}
+	option = {
+		name = OW_JB_XZ_qishi_guocheng_2.1200.1.t
+		ai_chance = { base = 100 }
+		set_OW_months = { VALUE = 3 } 
+		trigger_event = {
+			id = OW_JB_XZ_qishi_shilian.9999
+			months = 3
+		}
+	}
+}
+
+OW_JB_XZ_qishi_guocheng_2.2100 = {
+	type = character_event
+	theme = default
+	title = OW_JB_XZ_qishi_guocheng_2.2100.name
+	desc = OW_JB_XZ_qishi_guocheng_2.2100.desc
+	left_portrait = {
+		character = scope:actor
+	}
+	right_portrait = scope:YingEr
+	immediate = {
+		hidden_effect = {
+			random_list = {
+				10 = {
+					create_character = {
+						location = root.capital_province
+						age = { 1 3 }
+						random_traits = yes
+						gender_female_chance = 50
+						faith = root.faith
+						culture = root.culture
+						diplomacy = { 10 15 }
+						save_scope_as = YingEr
+					}
+				}
+				10 = {
+					create_character = {
+						location = root.capital_province
+						age = { 1 3 }
+						random_traits = yes
+						gender_female_chance = 50
+						faith = root.faith
+						culture = root.culture
+						martial = { 10 15 }
+						save_scope_as = YingEr
+					}
+				}
+				10 = {
+					create_character = {
+						location = root.capital_province
+						age = { 1 3 }
+						random_traits = yes
+						gender_female_chance = 50
+						faith = root.faith
+						culture = root.culture
+						stewardship = { 10 15 }
+						save_scope_as = YingEr
+					}
+				}
+				10 = {
+					create_character = {
+						location = root.capital_province
+						age = { 1 3 }
+						random_traits = yes
+						gender_female_chance = 50
+						faith = root.faith
+						culture = root.culture
+						learning = { 10 15 }
+						save_scope_as = YingEr
+					}
+				}
+				10 = {
+					create_character = {
+						location = root.capital_province
+						age = { 1 3 }
+						random_traits = yes
+						gender_female_chance = 50
+						faith = root.faith
+						culture = root.culture
+						intrigue = { 10 15 }
+						save_scope_as = YingEr
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = OW_JB_XZ_qishi_guocheng_2.2100.1.t
+		ai_chance = { base = 100 }
+		set_OW_months = { VALUE = 3 } 
+		trigger_event = {
+			id = OW_JB_XZ_qishi_shilian.9999
+			months = 3
+		}
+		add_courtier = scope:YingEr
+	}
+}
+
+OW_JB_XZ_qishi_guocheng_2.2200 = {
+	type = character_event
+	theme = default
+	title = OW_JB_XZ_qishi_guocheng_2.2200.name
+	desc = OW_JB_XZ_qishi_guocheng_2.2200.desc
+	left_portrait = {
+		character = scope:actor
+	}
+	option = {
+		name = OW_JB_XZ_qishi_guocheng_2.2200.1.t
+		ai_chance = { base = 100 }
+		set_OW_months = { VALUE = 3 } 
+		trigger_event = {
+			id = OW_JB_XZ_qishi_shilian.9999
+			months = 3
+		}
+	}
+}
+namespace = OW_JB_XZ_qishi_guocheng_3
+OW_JB_XZ_qishi_guocheng_3.9999 = {
+	type = character_event
+	theme = default
+	title = OW_JB_XZ_qishi_guocheng_3.9999.name
+	desc = OW_JB_XZ_qishi_guocheng_3.9999.desc
+	left_portrait = {
+		character = scope:actor
+	}
+	option = {
+		name = OW_JB_XZ_qishi_guocheng_3.9999.1.t
+		ai_chance = {
+			base = 50
+		}
+		hidden_effect = {
+			random_list = {
+				10 = { trigger_event = OW_JB_XZ_qishi_guocheng_3.0001 }
+				10 = { trigger_event = OW_JB_XZ_qishi_guocheng_3.0002 }
+			}
+		}
+	}
+	option = {
+		name = OW_JB_XZ_qishi_guocheng_3.9999.2.t
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 1000
+				has_character_flag = OW_XZ_tizhi_0
+			}
+		}
+		set_OW_months = { VALUE = 3 } 
+		trigger_event = {
+			id = OW_JB_XZ_qishi_shilian.9999
+			months = 3
+		}
+	}
+}
+
+OW_JB_XZ_qishi_guocheng_3.0001 = {
+	type = character_event
+	theme = default
+	title = OW_JB_XZ_qishi_guocheng_3.0001.name
+	desc = OW_JB_XZ_qishi_guocheng_3.0001.desc
+	left_portrait = {
+		character = scope:actor
+	}
+	option = {
+		name = OW_JB_XZ_qishi_guocheng_3.0001.1.t
+		ai_chance = { base = 100 }
+		add_diplomacy_skill = { -2 2 }
+		add_martial_skill = { -2 2 }
+		add_stewardship_skill = { -2 2 }
+		add_intrigue_skill = { -2 2 }
+		add_learning_skill = { -2 2 }
+		add_prowess_skill = { -2 2 }
+		set_OW_months = { VALUE = 3 } 
+		trigger_event = {
+			id = OW_JB_XZ_qishi_shilian.9999
+			months = 3
+		}
+	}
+}
+
+OW_JB_XZ_qishi_guocheng_3.0002 = {
+	type = character_event
+	theme = default
+	title = OW_JB_XZ_qishi_guocheng_3.0002.name
+	desc = OW_JB_XZ_qishi_guocheng_3.0002.desc
+	left_portrait = {
+		character = scope:actor
+	}
+	option = {
+		name = OW_JB_XZ_qishi_guocheng_3.0002.1.t
+		ai_chance = { base = 100 }
+		random_list = {
+			10 = { add_trait = bleeder }
+			10 = { add_trait = albino }
+			10 = { add_trait = scaly }
+			10 = { add_trait = weak }
+			10 = { add_trait = infertile }
+			10 = { add_trait = blind }
+			10 = { add_trait = sickly }
+			10 = { add_trait = smallpox }
+			10 = { add_trait = bubonic_plague }
+			10 = { add_trait = cancer }
+			10 = { add_trait = leper }
+		}
+		set_OW_months = { VALUE = 3 } 
+		trigger_event = {
+			id = OW_JB_XZ_qishi_shilian.9999
+			months = 3
+		}
+	}
+}
+
+
+namespace = OW_JB_XZ_qishi_guocheng_4
+
+OW_JB_XZ_qishi_guocheng_4.1 = {
+    type = character_event
+    theme = default
+    title = OW_JB_XZ_qishi_guocheng_4.1.name
+    desc = OW_JB_XZ_qishi_guocheng_4.1.desc
+    left_portrait = {
+        character = scope:actor
+        animation = shock
+    }
+    #dumuqiao
+    option = {
+        name = OW_JB_XZ_qishi_guocheng_4.1.a
+        ai_chance = { base = 50 }
+        trigger_event = OW_JB_XZ_qishi_guocheng_4.2
+    }
+    #zuochuan
+    option = {
+        name = OW_JB_XZ_qishi_guocheng_4.1.b
+        ai_chance = { base = 50 }
+        trigger_event = OW_JB_XZ_qishi_guocheng_4.3
+    }
+    #youyong
+    option = {
+        name = OW_JB_XZ_qishi_guocheng_4.1.c
+        ai_chance = { base = 50 }
+        trigger_event = OW_JB_XZ_qishi_guocheng_4.4
+    }
+}#过河总线
+
+OW_JB_XZ_qishi_guocheng_4.2 = {
+    type = character_event
+    theme = default
+    title = OW_JB_XZ_qishi_guocheng_4.2a.name
+    desc = OW_JB_XZ_qishi_guocheng_4.2a.desc
+    left_portrait = {
+        character = scope:actor
+        animation = shock
+    }
+
+    #renzhen
+    option = {
+        name = OW_JB_XZ_qishi_guocheng_4.2.ab
+        ai_chance = { base = 50 }
+        random_list = {
+            70 = {
+                trigger_event = OW_JB_XZ_qishi_guocheng_4.22
+            }
+            30 = {
+                trigger_event = OW_JB_XZ_qishi_guocheng_4.23
+            }
+        }
+    }
+
+    #dayikan
+    option = {
+        name = OW_JB_XZ_qishi_guocheng_4.2.ac
+        ai_chance = { base = 50 }
+        random_list = {
+            30 = {
+                trigger_event = OW_JB_XZ_qishi_guocheng_4.22
+            }
+            70 = {
+                trigger_event = OW_JB_XZ_qishi_guocheng_4.23
+            }
+        }
+    }
+
+    #back
+    option = {
+        name =OW_JB_XZ_qishi_guocheng_4.2.d
+        ai_chance = { base = 50 }
+        trigger_event = OW_JB_XZ_qishi_guocheng_4.1
+    }
+}#走桥线
+
+OW_JB_XZ_qishi_guocheng_4.22 = {
+    type = character_event
+	theme = default
+	title = OW_JB_XZ_qishi_guocheng_4.2b.name
+	desc = OW_JB_XZ_qishi_guocheng_4.2b.desc
+	left_portrait = {
+		character = scope:actor
+		animation = shock
+	}
+    option = {
+        name = OW_JB_XZ_qishi_guocheng_4.2.b1
+        trigger_event = OW_JB_XZ_qishi_guocheng_4.88
+        ai_chance = { base = 50 }
+    }
+}#认真走路通过的
+
+OW_JB_XZ_qishi_guocheng_4.23 = {
+    type = character_event
+    theme = default
+    title = OW_JB_XZ_qishi_guocheng_4.2c.name
+    desc = OW_JB_XZ_qishi_guocheng_4.2c.desc
+    left_portrait = {
+        character = scope:actor
+        animation = shock
+    }
+    option = {
+        name = OW_JB_XZ_qishi_guocheng_4.2.c1
+        trigger_event = OW_JB_XZ_qishi_guocheng_4.99
+        ai_chance = {
+            base = 50
+        }
+    }
+}#风景好看掉河
+OW_JB_XZ_qishi_guocheng_4.3 = {
+    type = character_event
+    theme = default
+    title = OW_JB_XZ_qishi_guocheng_4.3.a.name
+    desc = OW_JB_XZ_qishi_guocheng_4.3.a.desc
+    left_portrait = {
+        character = scope:actor
+        animation = shock
+    }
+
+    #zhaochcuan
+    option = {
+        name = OW_JB_XZ_qishi_guocheng_4.3.ab
+        trigger_event = OW_JB_XZ_qishi_guocheng_4.321
+        ai_chance = { base = 40 }
+    }
+
+    #zijihuachuan
+    option = {
+        name = OW_JB_XZ_qishi_guocheng_4.3.ac
+        random_list = {
+            70 = {
+                trigger_event = OW_JB_XZ_qishi_guocheng_4.88
+            }
+            30 = {
+                trigger_event = OW_JB_XZ_qishi_guocheng_4.99
+            }
+        }
+        ai_chance = { base = 30 }
+    }
+    #back
+    option = {
+        name =OW_JB_XZ_qishi_guocheng_4.2.d
+        ai_chance = { base = 10 }
+        trigger_event = OW_JB_XZ_qishi_guocheng_4.1
+    }
+}#船总线
+
+OW_JB_XZ_qishi_guocheng_4.321 = {
+    type = character_event
+    theme = default 
+    title = OW_JB_XZ_qishi_guocheng_4.3.b1.name
+    desc = OW_JB_XZ_qishi_guocheng_4.3.b1.desc
+    left_portrait = {
+        character = scope:actor
+        animation = shock
+    }
+    #geiqian
+    option = {
+        name = OW_JB_XZ_qishi_guocheng_4.3.b1.a
+        ai_chance = { base = 100 }
+        trigger_event = OW_JB_XZ_qishi_guocheng_4.3211
+    }
+    #bugeiqian 
+    option = {
+        name = OW_JB_XZ_qishi_guocheng_4.3.b1.b
+        ai_chance = { base = 100 }
+        trigger_event = OW_JB_XZ_qishi_guocheng_4.3212
+    }
+}#坐船线
+#给钱了
+OW_JB_XZ_qishi_guocheng_4.3211 = {
+    type = character_event
+    theme = default
+    title = OW_JB_XZ_qishi_guocheng_4.3b1.a.name
+    desc = OW_JB_XZ_qishi_guocheng_4.3b1.a.desc
+    left_portrait = {
+        character = scope:actor
+        animation = shock
+    }
+    option = {
+        name = OW_JB_XZ_qishi_guocheng_4.3.b1.aa
+        ai_chance = { base = 100 }
+        trigger_event = OW_JB_XZ_qishi_guocheng_4.88
+    }
+}
+#没给钱
+OW_JB_XZ_qishi_guocheng_4.3212 = {
+    type = character_event
+    theme = default
+    title = OW_JB_XZ_qishi_guocheng_4.3b1.b.name
+    desc = OW_JB_XZ_qishi_guocheng_4.3b1.b.desc
+    left_portrait = {
+        character = scope:actor
+        animation = shock
+    }
+    option = {
+        name = OW_JB_XZ_qishi_guocheng_4.3.b1.ba
+        ai_chance = { base = 100 }
+        trigger_event = OW_JB_XZ_qishi_guocheng_4.99
+    }
+}
+OW_JB_XZ_qishi_guocheng_4.4 = {
+    type = character_event
+    theme = default
+    title = OW_JB_XZ_qishi_guocheng_4.4.a.name
+    desc = OW_JB_XZ_qishi_guocheng_4.4.a.desc
+    left_portrait = {
+        character = scope:actor
+        animation = shock
+    }
+    #conutie
+    option = {
+        name = OW_JB_XZ_qishi_guocheng_4.4.aa
+        ai_chance = { base = 40 }
+        trigger_event = OW_JB_XZ_qishi_guocheng_4.42
+    }
+    #back
+    option = {
+        name = OW_JB_XZ_qishi_guocheng_4.4.ab
+        ai_chance = { base = 10 }
+        trigger_event = OW_JB_XZ_qishi_guocheng_4.1
+    }
+}#游泳
+OW_JB_XZ_qishi_guocheng_4.42 = {
+    type = character_event
+    theme = default
+    title = OW_JB_XZ_qishi_guocheng_4.4.b.name
+    desc = OW_JB_XZ_qishi_guocheng_4.4.b.desc
+    left_portrait = {
+        character = scope:actor 
+        animation = shock
+    }
+    option = {
+        name = OW_JB_XZ_qishi_guocheng_4.4.ba
+        ai_chance = { base = 10 }
+        trigger_event = OW_JB_XZ_qishi_guocheng_4.99
+    }
+}#掉
+
+OW_JB_XZ_qishi_guocheng_4.88 = {
+    type = character_event
+    theme = default
+    title = OW_JB_XZ_qishi_guocheng_4.88.name
+    desc = OW_JB_XZ_qishi_guocheng_4.88.desc
+    left_portrait = {
+        character = scope:actor
+        animation = shock
+    }
+    option = {
+        name = OW_JB_XZ_qishi_guocheng_4.88.a
+		set_OW_months = { VALUE = 3 } 
+        ai_chance = { base = 10 }
+        trigger_event = OW_JB_XZ_qishi_guocheng.9999
+    }
+}
+
+OW_JB_XZ_qishi_guocheng_4.99 = {
+    type = character_event
+    theme = default
+    title = OW_JB_XZ_qishi_guocheng_4.99.name
+    desc = OW_JB_XZ_qishi_guocheng_4.99.desc
+    left_portrait = {
+        character = scope:actor
+        animation = shock
+    }
+    option = {
+        name = OW_JB_XZ_qishi_guocheng_4.99.a
+		set_OW_months = { VALUE = 3 } 
+        ai_chance = { base = 10 }
+        trigger_event = OW_JB_XZ_qishi_guocheng.9999
+    }
+}
+
+#################################################################
+######################试练脚本###################################
+#################################################################
+#################################################################
+namespace = OW_JB_XZ_qishi_shilian
+OW_JB_XZ_qishi_shilian.9999 = {
+	type = character_event
+	hidden = yes
+
+	immediate = {
+		random_list = {
+			10 = { trigger_event = OW_ShiLian_TianTi.01 }
+		}
+	}
+}
+
+#################################################################
+######################拜山#######################################
+#################################################################
+#################################################################
+namespace = OW_JB_XZ_qishi_baishan
+OW_JB_XZ_qishi_baishan.9999 = {
+	type = character_event
+	hidden = yes
+
+	immediate = {
+		random_list = {
+			10 = { trigger_event = OW_JB_XZ_qishi_baishan.0001 }
+			10 = { trigger_event = OW_JB_XZ_qishi_baishan.0002 }
+			10 = { trigger_event = OW_JB_XZ_qishi_baishan.0003 }
+			10 = { trigger_event = OW_JB_XZ_qishi_baishan.0004 }
+			10 = { trigger_event = OW_JB_XZ_qishi_baishan.0005 }
+		}
+	}
+}
+
+OW_JB_XZ_qishi_baishan.0001 = {
+	type = character_event
+	theme = default
+	title = OW_JB_XZ_qishi_baishan.0001.name
+	desc = OW_JB_XZ_qishi_baishan.0001.desc
+	left_portrait = {
+		character = scope:actor
+	}
+	option = {
+		name = OW_JB_XZ_qishi_baishan.0001.1.t
+		ai_chance = { base = 100 }
+		if = {
+			limit = { 
+				NOT = { has_character_flag = OW_XZ_tizhi_0 }
+			}
+			trigger_event = OW_JB_XZ_qishi_baishan_fankui.0001
+		}
+		else = {
+			trigger_event = OW_JB_XZ_qishi_baishan_fankui.9999
+		}
+	}
+}
+
+OW_JB_XZ_qishi_baishan.0002 = {
+	type = character_event
+	theme = default
+	title = OW_JB_XZ_qishi_baishan.0002.name
+	desc = OW_JB_XZ_qishi_baishan.0002.desc
+	left_portrait = {
+		character = scope:actor
+	}
+	option = {
+		name = OW_JB_XZ_qishi_baishan.0002.1.t
+		ai_chance = { base = 100 }
+		if = {
+			limit = { 
+				NOT = { has_character_flag = OW_XZ_tizhi_0 }
+			}
+			trigger_event = OW_JB_XZ_qishi_baishan_fankui.0001
+		}
+		else = {
+			trigger_event = OW_JB_XZ_qishi_baishan_fankui.9999
+		}
+	}
+}
+
+OW_JB_XZ_qishi_baishan.0003 = {
+	type = character_event
+	theme = default
+	title = OW_JB_XZ_qishi_baishan.0003.name
+	desc = OW_JB_XZ_qishi_baishan.0003.desc
+	left_portrait = {
+		character = scope:actor
+	}
+	option = {
+		name = OW_JB_XZ_qishi_baishan.0003.1.t
+		ai_chance = { base = 100 }
+		if = {
+			limit = { 
+				NOT = { has_character_flag = OW_XZ_tizhi_0 }
+			}
+			trigger_event = OW_JB_XZ_qishi_baishan_fankui.0001
+		}
+		else = {
+			trigger_event = OW_JB_XZ_qishi_baishan_fankui.9999
+		}
+	}
+}
+
+OW_JB_XZ_qishi_baishan.0004 = {
+	type = character_event
+	theme = default
+	title = OW_JB_XZ_qishi_baishan.0004.name
+	desc = OW_JB_XZ_qishi_baishan.0004.desc
+	left_portrait = {
+		character = scope:actor
+	}
+	option = {
+		name = OW_JB_XZ_qishi_baishan.0004.1.t
+		ai_chance = { base = 100 }
+		if = {
+			limit = { 
+				NOT = { has_character_flag = OW_XZ_tizhi_0 }
+			}
+			trigger_event = OW_JB_XZ_qishi_baishan_fankui.0001
+		}
+		else = {
+			trigger_event = OW_JB_XZ_qishi_baishan_fankui.9999
+		}
+	}
+}
+
+OW_JB_XZ_qishi_baishan.0005 = {
+	type = character_event
+	theme = default
+	title = OW_JB_XZ_qishi_baishan.0005.name
+	desc = OW_JB_XZ_qishi_baishan.0005.desc
+	left_portrait = {
+		character = scope:actor
+	}
+	option = {
+		name = OW_JB_XZ_qishi_baishan.0005.1.t
+		ai_chance = { base = 100 }
+		if = {
+			limit = { 
+				NOT = { has_character_flag = OW_XZ_tizhi_0 }
+			}
+			trigger_event = OW_JB_XZ_qishi_baishan_fankui.0001
+		}
+		else = {
+			trigger_event = OW_JB_XZ_qishi_baishan_fankui.9999
+		}
+	}
+}
+namespace = OW_JB_XZ_qishi_baishan_fankui
+OW_JB_XZ_qishi_baishan_fankui.0001 = {
+	type = character_event
+	theme = default
+	title = OW_JB_XZ_qishi_baishan_fankui.0001.name
+	desc = OW_JB_XZ_qishi_baishan_fankui.0001.desc
+	left_portrait = {
+		character = scope:actor
+	}
+	option = {
+		name = OW_JB_XZ_qishi_baishan_fankui.0001.1.t
+		ai_chance = { base = 100 }
+		add_character_flag = OW_xiuzhenzhe
+		OW_JB_XZ_shuxingshezhi = yes  #开启修真属性
+	}
+	after = { trigger_event = OW_JB_XZ_shuomingshu.02 }
+}
+OW_JB_XZ_qishi_baishan_fankui.9999 = {
+	type = character_event
+	theme = default
+	title = OW_JB_XZ_qishi_baishan_fankui.9999.name
+	desc = OW_JB_XZ_qishi_baishan_fankui.9999.desc
+	left_portrait = {
+		character = scope:actor
+	}
+	option = {
+		name = OW_JB_XZ_qishi_baishan_fankui.9999.1.t
+		ai_chance = { base = 100 }
+		add_character_flag = {
+			flag = OW_XZ_xiuzhenzhilu_CD
+			months = { 1 4 }
+		}
+	}
+}
+#################################################################
+######################说明书#####################################
+#################################################################
+#################################################################
+namespace = OW_JB_XZ_shuomingshu
+###修真说明
+OW_JB_XZ_shuomingshu.01 = {
+	type = character_event
+	theme = default
+	title = OW_JB_XZ_shuomingshu.01.name
+	desc = OW_JB_XZ_shuomingshu.01.desc
+	left_portrait = {
+		character = scope:actor
+	}
+	option = {
+		name = OW_JB_XZ_shuomingshu.01.1.t
+		ai_chance = { base = 100 }
+	}
+}
+###是否加入门派询问
+OW_JB_XZ_shuomingshu.02 = {
+	type = character_event
+	theme = default
+	title = OW_JB_XZ_shuomingshu.02.name
+	desc = OW_JB_XZ_shuomingshu.02.desc
+	left_portrait = {
+		character = scope:actor
+	}
+	option = {
+		name = OW_JB_XZ_shuomingshu.02.1.t
+		ai_chance = { base = 100 }
+	}
+	after = { trigger_event = OW_XZ_dijimenpai.01 }
+}

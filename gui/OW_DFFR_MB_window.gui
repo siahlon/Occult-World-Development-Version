@@ -1,0 +1,342 @@
+﻿####################
+################
+#凡人视窗
+#by：狗头
+################  
+window = {
+	name = "OW_DFFR_MB_window"
+	layer = middle
+	size = { 30% 100% }
+	movable = no
+	using = Window_Size_Sidebar
+	using = Window_Background_Sidebar
+	
+	datacontext = "[GetScriptedGui('OW_DFFR_GUI_KG')]"
+	visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+	state = {
+		name = _show
+		position = { 0 0 }
+		using = Animation_FadeIn_Quick
+		using = Sound_WindowShow_Standard
+		
+		on_start = "[GetVariableSystem.Set( 'OW_DFFR_left_window_open', 'true' )]"
+	}
+	state = {
+		name = _hide
+		position = { -60 0 }
+		using = Animation_FadeOut_Quick
+		using = Sound_WindowHide_Standard
+		
+		on_start = "[GetVariableSystem.Clear( 'OW_DFFR_left_window_open')]"
+	}
+	vbox = {
+		layoutpolicy_horizontal = expanding
+		layoutpolicy_vertical = expanding
+		using = Window_Margins_Sidebar
+		vbox = {
+			layoutpolicy_horizontal = expanding
+			header_pattern = {
+				name = "OW_DFFR_header"
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = fixed
+				blockoverride "size"
+				{
+					size = { 100% 100% }
+				}
+				blockoverride "header_text"
+				{
+					text = "OW_DFFR_TOP_TITLE"
+					using = tooltip_es
+					state = {
+						name = "OW_DFFR_faith_view_refresh"
+						using = Animation_Refresh_FadeOut
+					}
+					state = {
+						using = Animation_Refresh_FadeIn
+					}
+				}
+				blockoverride "button_close"
+				{
+					onclick = "[ExecuteConsoleCommand('gui.ClearWidgets OW_DFFR_MB_window')]"
+					onclick = "[GetVariableSystem.Toggle('OW_DFFR_MB_window_open')]"
+				}
+
+				blockoverride "button_back"
+				{
+					visible = "[HasViewHistory]"
+					onclick = "[OpenFromViewHistory]"
+					tooltip = "[GetViewHistoryTooltip]"
+					onclick = "[ExecuteConsoleCommand('gui.ClearWidgets OW_DFFR_MB_window')]"
+					onclick = "[GetVariableSystem.Toggle('OW_DFFR_MB_window_open')]"
+				}
+				blockoverride "button_me"
+				{
+					visible = "[Not(Character.IsLocalPlayer)]"
+					onclick = "[DefaultOnCharacterClick(GetPlayer.GetID)]"
+					onclick = "[ExecuteConsoleCommand('gui.ClearWidgets OW_DFFR_MB_window')]"
+					onclick = "[GetVariableSystem.Toggle('OW_DFFR_MB_window_open')]"
+				}
+			}
+			hbox = {
+				name = "OW_DFFR_tab"
+				text_single = {
+					text = "OW_XZ_TIZHI_TEXT"
+					fontsize = 22
+					default_format = "#low"
+					align = center|nobaseline
+				}
+			}
+		}
+		vbox = {
+			name = "WO_DFFR_tab_beliefs"
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = expanding
+			state = {
+				name = _show
+				using = Animation_FadeIn_Quick
+			}
+			state = {
+				name = _hide
+				alpha = 0
+			}
+			vbox = {
+				name = "OW_DFFR_MB_doctrines"
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = expanding
+				margin_top = 10
+				scrollbox = {
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = expanding                    
+					blockoverride "scrollbox_content"
+					{
+						spacing = 25
+						margin_top = -20
+
+						state = {
+							name = "OW_DFFR_MB_view_refresh"
+							using = Animation_Refresh_FadeOut
+						}
+
+						state = {
+							using = Animation_Refresh_FadeIn
+						}
+
+						divider = {
+							layoutpolicy_horizontal = expanding
+						}
+						vbox = {
+							text_single = {
+								layoutpolicy_horizontal = expanding
+								text = "OW_DFFR_MB_TITLE"
+								fontsize = 30
+								background = {
+									texture = "gfx/interface/icons/OW/OW_XZ3.dds"
+									margin = { 50 30 }
+								}
+							}
+						}
+						vbox = {
+							spacing = 5
+							button_standard = {
+								text = "OW_DFFR_XiuZhenZhiLu"
+								default_format = "#high"
+								fontsize = 50
+								tooltip= "OW_DFFR_XiuZhenZhiLu_TIP"  
+								size = { 550 200 }
+								background = {
+									texture = "gfx/interface/icons/OW/p05.dds"
+								}
+								datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_XiuZhenZhiLu')]"
+								enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+								visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+								onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							}
+							button_standard = {
+								text = "OW_DFFR_TANSUO"
+								default_format = "#high"
+								fontsize = 50
+								tooltip= "OW_DFFR_TANSUO_TIP"  
+								size = { 550 200 }
+								background = {
+									texture = "gfx/interface/icons/OW/OW_TanSuo.dds"
+								}
+								datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_TanSuo')]"
+								enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+								visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+								onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+								onclick = "[ExecuteConsoleCommand( Select_CString( GetVariableSystem.Exists('OW_FRXZ_TSCK_window_open'), 'gui.ClearWidgets OW_FRXZ_TSCK_window', 'gui.createwidget gui/OW_FRXZ_TSCK_window.gui OW_FRXZ_TSCK_window' ) )]"
+								onclick = "[GetVariableSystem.Toggle('OW_FRXZ_TSCK_window_open')]"
+							}
+						}
+						widget = {
+							name = "OW_DFFR_MB_es1"
+							layoutpolicy_horizontal = expanding
+							vbox = {
+								spacing = 20
+								vbox = {
+									text_single = {
+										text = "OW_DFFR_MB_XINXI"
+										fontsize = 30
+										background = {
+											texture = "gfx/interface/icons/OW/OW_XZ3.dds"
+											margin = { 50 30 }
+										}
+									}
+								}
+								vbox = {
+									text_single = {
+										text = "OW_DFFR_MB_XINXI_TIP"
+										fontsize = 16
+										default_format = "#low"
+									}
+								}
+								hbox = {
+									spacing = 50
+									vbox = {
+										text_single = {
+											text = "OW_DFFR_XZ_XinXi_1"
+											fontsize = 18
+											datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_1')]"
+											visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										}
+										text_single = {
+											text = "OW_DFFR_XZ_XinXi_2"
+											fontsize = 18
+											datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_2')]"
+											visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										}
+										text_single = {
+											text = "OW_DFFR_XZ_XinXi_3"
+											fontsize = 18
+											datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_3')]"
+											visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										}
+										text_single = {
+											text = "OW_DFFR_XZ_XinXi_4"
+											fontsize = 18
+											datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_4')]"
+											visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										}
+										text_single = {
+											text = "OW_DFFR_XZ_XinXi_5"
+											fontsize = 18
+											datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_5')]"
+											visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										}
+										text_single = {
+											text = "OW_DFFR_XZ_XinXi_6"
+											fontsize = 18
+											datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_6')]"
+											visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										}
+										text_single = {
+											text = "OW_DFFR_XZ_XinXi_7"
+											fontsize = 18
+											datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_7')]"
+											visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										}
+										text_single = {
+											text = "OW_DFFR_XZ_XinXi_8"
+											fontsize = 18
+											datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_8')]"
+											visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										}
+										text_single = {
+											text = "OW_DFFR_XZ_XinXi_9"
+											fontsize = 18
+											datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_9')]"
+											visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										}
+										text_single = {
+											text = "OW_DFFR_XZ_XinXi_10"
+											fontsize = 18
+											datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_10')]"
+											visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										}
+									}
+									vbox = {
+										text_single = {
+											text = "OW_DFFR_XZ_XinXi_11"
+											fontsize = 18
+											datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_11')]"
+											visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										}
+										text_single = {
+											text = "OW_DFFR_XZ_XinXi_12"
+											fontsize = 18
+											datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_12')]"
+											visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										}
+										text_single = {
+											text = "OW_DFFR_XZ_XinXi_13"
+											fontsize = 18
+											datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_13')]"
+											visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										}
+										text_single = {
+											text = "OW_DFFR_XZ_XinXi_14"
+											fontsize = 18
+											datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_14')]"
+											visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										}
+										text_single = {
+											text = "OW_DFFR_XZ_XinXi_15"
+											fontsize = 18
+											datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_15')]"
+											visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										}
+										text_single = {
+											text = "OW_DFFR_XZ_XinXi_16"
+											fontsize = 18
+											datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_16')]"
+											visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										}
+										text_single = {
+											text = "OW_DFFR_XZ_XinXi_17"
+											fontsize = 18
+											datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_17')]"
+											visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										}
+										text_single = {
+											text = "OW_DFFR_XZ_XinXi_18"
+											fontsize = 18
+											datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_18')]"
+											visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										}
+										text_single = {
+											text = "OW_DFFR_XZ_XinXi_19"
+											fontsize = 18
+											datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_19')]"
+											visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										}
+										text_single = {
+											text = "OW_DFFR_XZ_XinXi_20"
+											fontsize = 18
+											datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_20')]"
+											visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				hbox = {
+					button_standard = {
+						text = "OW_DFFR_JISHI"
+						default_format = "#high"
+						fontsize = 25
+						tooltip= "OW_DFFR_JISHI_TIP"  
+						size = { 550 100 }
+						background = {
+							texture = "gfx/interface/icons/OW/OW_JiShi.dds"
+						}
+						onclick = "[ExecuteConsoleCommand( Select_CString( GetVariableSystem.Exists('OW_DFFR_XXJY_window_open'), 'gui.ClearWidgets OW_DFFR_XXJY_window', 'gui.createwidget gui/OW_DFFR_XXJY_window.gui OW_DFFR_XXJY_window' ) )]"
+						onclick = "[GetVariableSystem.Toggle('OW_DFFR_XXJY_window_open')]"
+					}
+				}
+			}
+		}
+	}
+}

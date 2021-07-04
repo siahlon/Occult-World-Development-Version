@@ -1,0 +1,689 @@
+####################
+################
+#修真视窗
+#by：狗头
+################  
+	
+window = {
+	name = "OW_XZ_MB_window"
+	parentanchor = top|left
+	layer = middle
+	size = { 30% 100% }
+	movable = no
+	using = Window_Size_Sidebar
+	using = Window_Background_Sidebar
+	
+	datacontext = "[GetScriptedGui('OW_XZ_GUI_KG')]"
+	visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+	state = {
+		name = _show
+		position = { 0 0 }
+		using = Animation_FadeIn_Quick
+		using = Sound_WindowShow_Standard
+		
+		on_start = "[GetVariableSystem.Set( 'OW_XZ_left_window_open', 'true' )]"
+	}
+	state = {
+		name = _hide
+		position = { -60 0 }
+		using = Animation_FadeOut_Quick
+		using = Sound_WindowHide_Standard
+		
+		on_start = "[GetVariableSystem.Clear( 'OW_XZ_left_window_open')]"
+	}
+	vbox = {
+		layoutpolicy_horizontal = expanding
+		layoutpolicy_vertical = expanding
+		using = Window_Margins_Sidebar
+		vbox = {
+			spacing = 5
+			layoutpolicy_horizontal = expanding
+			background = {
+				texture = "gfx/interface/icons/OW/OW_XZ2.dds"
+				margin = { 5 30 }
+			}
+			header_pattern = {
+				name = "OW_XZ_header"
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = fixed
+				blockoverride "size"
+				{
+					size = { 100% 100% }
+				}
+				blockoverride "header_text"
+				{
+					text = "OW_XZ_MB_TOP_TITLE"
+					using = tooltip_es
+					background = {
+						texture = "gfx/interface/icons/OW/OW_XZ3.dds"
+						margin = { 100 30 }
+					}
+					state = {
+						name = "OW_XZ_faith_view_refresh"
+						using = Animation_Refresh_FadeOut
+					}
+
+					state = {
+						using = Animation_Refresh_FadeIn
+					}
+				}
+				blockoverride "button_close"
+				{
+					onclick = "[ExecuteConsoleCommand('gui.ClearWidgets OW_XZ_MB_window')]"
+					onclick = "[GetVariableSystem.Toggle('OW_XZ_MB_window_open')]"
+				}
+
+				blockoverride "button_back"
+				{
+					visible = "[HasViewHistory]"
+					onclick = "[OpenFromViewHistory]"
+					tooltip = "[GetViewHistoryTooltip]"
+					onclick = "[ExecuteConsoleCommand('gui.ClearWidgets OW_XZ_MB_window')]"
+					onclick = "[GetVariableSystem.Toggle('OW_XZ_MB_window_open')]"
+				}
+				blockoverride "button_me"
+				{
+					visible = "[Not(Character.IsLocalPlayer)]"
+					onclick = "[DefaultOnCharacterClick(GetPlayer.GetID)]"
+					onclick = "[ExecuteConsoleCommand('gui.ClearWidgets OW_XZ_MB_window')]"
+					onclick = "[GetVariableSystem.Toggle('OW_XZ_MB_window_open')]"
+				}
+			}
+			divider = { layoutpolicy_horizontal = expanding }
+			hbox = {
+				name = "OW_XZ_tab"
+				text_single = {
+					text = "OW_XZ_TIZHI_TEXT"
+					fontsize = 22
+					default_format = "#low"
+					align = center|nobaseline
+				}
+			}
+		}
+		vbox = {
+			name = "WO_XZ_tab_beliefs"
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = expanding
+
+			state = {
+				name = _show
+				using = Animation_FadeIn_Quick
+			}
+			state = {
+				name = _hide
+				alpha = 0
+			}
+			vbox = {
+				name = "OW_XZ_MB_doctrines"
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = expanding
+				margin_top = 10
+				scrollbox = {
+						
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = expanding                    
+					blockoverride "scrollbox_content"
+					{ 
+						spacing = 25
+						margin_top = -20
+
+						state = {
+							name = "OW_XZ_MB_view_refresh"
+							using = Animation_Refresh_FadeOut
+						}
+
+						state = {
+							using = Animation_Refresh_FadeIn
+						}
+
+						divider = {
+							layoutpolicy_horizontal = expanding
+						}
+						vbox = {
+							icon = {
+								name = "air1"
+								size = { 70 5 }
+								texture = "gfx/interface/icons/OW/air.dds"
+							}
+							text_single = {
+								layoutpolicy_horizontal = expanding
+								text = "OW_XZ_MB_SHUXING_TITLE"
+								fontsize = 30
+								background = {
+									texture = "gfx/interface/icons/OW/OW_XZ3.dds"
+									margin = { 50 30 }
+								}
+							}
+						}
+						widget = {
+							name = "OW_XZ_MB_es1"
+
+							layoutpolicy_vertical = expanding
+
+							vbox = {
+								###业障
+								button_primary = {#未实装
+									name = "OW_XZ_YEZHANG"
+									fontsize = 24
+									size = { 500 50 }
+									minimumsize = { 150 0 }
+									text = "OW_XZ_YEZHANG"
+									#onclick = "[ExecuteConsoleCommand( Select_CString( GetVariableSystem.Exists('OW_XZ_XZ_window_open'), 'gui.ClearWidgets OW_XZ_shuxingmianban_window', 'gui.createwidget gui/OW_XZ1_window.gui OW_XZ_shuxingmianban_window' ) )]"
+									#onclick = "[GetVariableSystem.Toggle('OW_XZ_XZ_window_open')]"
+									tooltip = "OW_XZ_YEZHANG_button"
+								}
+								divider = { layoutpolicy_horizontal = expanding }
+								####灵石
+								button_primary = {#未实装
+									name = "OW_XZ_LINGSHI"
+									fontsize = 24
+									size = { 500 50 }
+									minimumsize = { 150 0 }
+									text = "OW_XZ_LINGSHI"
+									#onclick = "[ExecuteConsoleCommand( Select_CString( GetVariableSystem.Exists('OW_XZ_XZ_window_open'), 'gui.ClearWidgets OW_XZ_shuxingmianban_window', 'gui.createwidget gui/OW_XZ1_window.gui OW_XZ_shuxingmianban_window' ) )]"
+									#onclick = "[GetVariableSystem.Toggle('OW_XZ_XZ_window_open')]"
+									tooltip = "OW_XZ_LINGSHI_button"
+								}
+								divider = { layoutpolicy_horizontal = expanding }
+								####悟性
+								button_primary = {
+									text = "OW_XZ_WUXING"
+									default_format = "#high"
+									fontsize = 24
+									visible = "[Not(GetVariableSystem.HasValue( 'OW_XZ_wuxing_view_expand', 'OW_XZ_wuxing_sites' ))]"
+									onclick = "[GetVariableSystem.Set( 'OW_XZ_wuxing_view_expand', 'OW_XZ_wuxing_sites' )]"
+									down = "[GetVariableSystem.HasValue( 'OW_XZ_wuxing_view_expand', 'OW_XZ_wuxing_sites' )]"
+									tooltip= "OW_XZ_WUXING_OPEN_tooltip"  
+									size = { 500 50 }
+								}
+								button_primary = {
+									text = "OW_XZ_WUXING"
+									default_format = "#high"
+									fontsize = 24
+									visible = "[GetVariableSystem.HasValue( 'OW_XZ_wuxing_view_expand', 'OW_XZ_wuxing_sites' )]"
+									onclick = "[GetVariableSystem.Clear( 'OW_XZ_wuxing_view_expand' )]"	
+									tooltip = "OW_XZ_WUXING_CLOSE_tooltip"
+									size = { 500 50 }
+								}
+								scrollbox = {
+									name = "OW_XZ_WUXING_sites"
+									visible = "[GetVariableSystem.HasValue( 'OW_XZ_wuxing_view_expand', 'OW_XZ_wuxing_sites' )]"
+									datacontext = "[GetPlayer]"
+									layoutpolicy_horizontal = expanding
+									layoutpolicy_vertical = expanding
+									datacontext = "[GetIllustration( 'religion_holding' )]"
+									blockoverride "scrollbox_content"
+									{
+										hbox = {
+											spacing = 50
+											vbox = {
+												spacing = 5
+												text_single = {
+													text = "OW_months_ganwu_exp_gui"
+													default_format = "#high"
+													fontsize = 18
+												}
+												text_single = {
+													text = "OW_months_lilian_exp_gui"
+													default_format = "#high"
+													fontsize = 18
+												}
+												text_single = {
+													text = "OW_months_duanti_exp_gui"
+													default_format = "#high"
+													fontsize = 18
+												}
+												text_single = {
+													text = "OW_months_shihai_exp_gui"
+													default_format = "#high"
+													fontsize = 18
+												}
+												text_single = {
+													text = "OW_months_shenshi_exp_gui"
+													default_format = "#high"
+													fontsize = 18
+												}
+											}
+											divider = {layoutpolicy_horizontal = expanding}	
+											vbox = {
+												spacing = 5
+												text_single = {					
+													text = "OW_years_ganwu_exp_gui"
+													default_format = "#high"
+													fontsize = 18
+												}
+												text_single = {					
+													text = "OW_years_lilian_exp_gui"
+													default_format = "#high"
+													fontsize = 18
+												}
+												text_single = {					
+													text = "OW_years_duanti_exp_gui"
+													default_format = "#high"
+													fontsize = 18
+												}
+												text_single = {					
+													text = "OW_years_shihai_exp_gui"
+													default_format = "#high"
+													fontsize = 18
+												}
+												text_single = {					
+													text = "OW_years_shenshi_exp_gui"
+													default_format = "#high"
+													fontsize = 18
+												}
+											}
+										}
+									}
+								}
+								divider = { layoutpolicy_horizontal = expanding }
+								####灵强
+								button_primary = {
+									text = "OW_XZ_LINGQIANG"
+									default_format = "#high"
+									fontsize = 24
+									visible = "[Not(GetVariableSystem.HasValue( 'OW_XZ_lingqiang_view_expand', 'OW_XZ_lingqiang_sites' ))]"
+									onclick = "[GetVariableSystem.Set( 'OW_XZ_lingqiang_view_expand', 'OW_XZ_lingqiang_sites' )]"
+									down = "[GetVariableSystem.HasValue( 'OW_XZ_lingqiang_view_expand', 'OW_XZ_lingqiang_sites' )]"
+									tooltip= "OW_XZ_LINGQIANG_OPEN_tooltip"  
+									size = { 500 50 }
+								}
+								button_primary = {
+									text = "OW_XZ_LINGQIANG"
+									default_format = "#high"
+									fontsize = 24
+									visible = "[GetVariableSystem.HasValue( 'OW_XZ_lingqiang_view_expand', 'OW_XZ_lingqiang_sites' )]"
+									onclick = "[GetVariableSystem.Clear( 'OW_XZ_lingqiang_view_expand' )]"	
+									tooltip = "OW_XZ_LINGQIANG_CLOSE_tooltip"
+									size = { 500 50 }
+								}
+								scrollbox = {
+									name = "OW_XZ_LINGQIANG_sites"
+									visible = "[GetVariableSystem.HasValue( 'OW_XZ_lingqiang_view_expand', 'OW_XZ_lingqiang_sites' )]"
+									datacontext = "[GetPlayer]"
+									layoutpolicy_horizontal = expanding
+									layoutpolicy_vertical = expanding
+									datacontext = "[GetIllustration( 'religion_holding' )]"
+									blockoverride "scrollbox_content"
+									{
+										vbox = {
+											spacing = 5
+											text_single = {
+												text = "OW_XZ_DUANTI"
+												default_format = "#high"
+												fontsize = 18
+											}
+											flowcontainer = {
+												layoutpolicy_horizontal = expanding
+												progressbar_standard = {
+													name = "OW_XZ_DUANTI_exp"
+													position = { 38 5 }	
+													size = { 200 15 }
+													min = 0
+													max = 10000
+													value = "[FixedPointToFloat(GetPlayer.MakeScope.Var('OW_duanti_exp').GetValue)]"	
+													tooltip = "OW_XZ_DUANTI_tooltip"
+												}
+											}
+										}
+										divider = {layoutpolicy_horizontal = expanding}	
+										vbox = {
+											spacing = 5
+											text_single = {					
+												text = "OW_XZ_SHENSHI"
+												default_format = "#high"
+												fontsize = 18
+											}
+											flowcontainer = {
+												layoutpolicy_horizontal = expanding
+												progressbar_standard = {
+													name = "OW_XZ_SHENSHI_exp"
+
+													position = { 38 5 }	
+													size = { 200 15 }
+													min = 0
+													max = 1000
+													value = "[FixedPointToFloat(GetPlayer.MakeScope.Var('OW_shenshi_exp').GetValue)]"	
+													tooltip = "OW_XZ_SHENSHI_tooltip"
+												}
+											}
+										}
+										divider = {layoutpolicy_horizontal = expanding}
+										vbox = {
+											spacing = 5
+											text_single = {
+												text = "OW_XZ_SHIHAI"
+												default_format = "#high"
+												fontsize = 18
+											}
+											flowcontainer = {
+												layoutpolicy_horizontal = expanding
+												progressbar_standard = {
+													name = "OW_XZ_SHIHAI_exp"
+
+													position = { 38 5 }
+													size = { 200 15 }
+													min = 0
+													max = 1000
+													value = "[FixedPointToFloat(GetPlayer.MakeScope.Var('OW_shihai_exp').GetValue)]"	
+													tooltip = "OW_XZ_SHIHAI_tooltip"
+												}
+											}
+										}
+									}
+								}
+								divider = { layoutpolicy_horizontal = expanding }
+								####命理
+								button_primary = {
+									text = "OW_XZ_MINGLI"
+									default_format = "#high"
+									fontsize = 24
+									visible = "[Not(GetVariableSystem.HasValue( 'OW_XZ_mingli_view_expand', 'OW_XZ_mingli_sites' ))]"
+									onclick = "[GetVariableSystem.Set( 'OW_XZ_mingli_view_expand', 'OW_XZ_mingli_sites' )]"
+									down = "[GetVariableSystem.HasValue( 'OW_XZ_mingli_view_expand', 'OW_XZ_mingli_sites' )]"
+									tooltip= "OW_XZ_MINGLI_OPEN_tooltip"  
+									size = { 500 50 }
+								}
+								button_primary = {
+									text = "OW_XZ_MINGLI"
+									default_format = "#high"
+									fontsize = 24
+									visible = "[GetVariableSystem.HasValue( 'OW_XZ_mingli_view_expand', 'OW_XZ_mingli_sites' )]"
+									onclick = "[GetVariableSystem.Clear( 'OW_XZ_mingli_view_expand' )]"	
+									tooltip = "OW_XZ_MINGLI_CLOSE_tooltip"
+									size = { 500 50 }
+								}
+								scrollbox = {
+									name = "OW_XZ_MINGLI_sites"
+									visible = "[GetVariableSystem.HasValue( 'OW_XZ_mingli_view_expand', 'OW_XZ_mingli_sites' )]"
+									datacontext = "[GetPlayer]"
+									layoutpolicy_horizontal = expanding
+									layoutpolicy_vertical = expanding
+									datacontext = "[GetIllustration( 'religion_holding' )]"
+									blockoverride "scrollbox_content"
+									{
+										hbox = {
+											spacing = 50
+											vbox = {
+												spacing = 5
+												text_single = {					
+													text = "OW_years_mingli_gui"
+													default_format = "#high"
+													fontsize = 18
+												}
+												text_single = {					
+													text = "OW_weizhi"
+													default_format = "#high"
+													fontsize = 18
+												}
+												text_single = {					
+													text = "OW_weizhi"
+													default_format = "#high"
+													fontsize = 18
+												}
+											}
+											divider = {layoutpolicy_horizontal = expanding}	
+											vbox = {
+												spacing = 5
+												text_single = {					
+													text = "OW_weizhi"
+													default_format = "#high"
+													fontsize = 18
+												}
+												text_single = {					
+													text = "OW_weizhi"
+													default_format = "#high"
+													fontsize = 18
+												}
+												text_single = {					
+													text = "OW_weizhi"
+													default_format = "#high"
+													fontsize = 18
+												}
+											}
+										}
+									}
+								}
+								divider = { layoutpolicy_horizontal = expanding }
+								####灵力
+								button_primary = {
+									text = "OW_XZ_LINGLI"
+									default_format = "#high"
+									fontsize = 24
+									visible = "[Not(GetVariableSystem.HasValue( 'OW_XZ_lingli_view_expand', 'OW_XZ_lingli_sites' ))]"
+									onclick = "[GetVariableSystem.Set( 'OW_XZ_lingli_view_expand', 'OW_XZ_lingli_sites' )]"
+									down = "[GetVariableSystem.HasValue( 'OW_XZ_lingli_view_expand', 'OW_XZ_lingli_sites' )]"
+									tooltip= "OW_XZ_LINGLI_OPEN_tooltip"  
+									size = { 500 50 }
+								}
+								button_primary = {
+									text = "OW_XZ_LINGLI"
+									default_format = "#high"
+									fontsize = 24
+									visible = "[GetVariableSystem.HasValue( 'OW_XZ_lingli_view_expand', 'OW_XZ_lingli_sites' )]"
+									onclick = "[GetVariableSystem.Clear( 'OW_XZ_lingli_view_expand' )]"	
+									tooltip = "OW_XZ_LINGLI_CLOSE_tooltip"
+									size = { 500 50 }
+								}
+								scrollbox = {
+									name = "OW_XZ_LINGLI_sites"
+									visible = "[GetVariableSystem.HasValue( 'OW_XZ_lingli_view_expand', 'OW_XZ_lingli_sites' )]"
+									datacontext = "[GetPlayer]"
+									layoutpolicy_horizontal = expanding
+									layoutpolicy_vertical = expanding
+									datacontext = "[GetIllustration( 'religion_holding' )]"
+									blockoverride "scrollbox_content"
+									{
+										hbox = {
+											spacing = 50
+											vbox = {
+												spacing = 5
+												text_single = {					
+													text = "OW_years_lingli_gui"
+													default_format = "#high"
+													fontsize = 18
+												}
+												text_single = {					
+													text = "OW_weizhi"
+													default_format = "#high"
+													fontsize = 18
+												}
+												text_single = {					
+													text = "OW_weizhi"
+													default_format = "#high"
+													fontsize = 18
+												}
+											}
+											divider = {layoutpolicy_horizontal = expanding}	
+											vbox = {
+												spacing = 5
+												text_single = {					
+													text = "OW_years_lingli_max_gui"
+													default_format = "#high"
+													fontsize = 18
+												}
+												text_single = {					
+													text = "OW_weizhi"
+													default_format = "#high"
+													fontsize = 18
+												}
+												text_single = {					
+													text = "OW_weizhi"
+													default_format = "#high"
+													fontsize = 18
+												}
+											}
+										}
+									}
+								}
+								icon = {
+									name = "OW_XZ_FENGGEFU"
+									tooltip = "OW_XZ_FENGGEFU"
+									size = { 500 20 }
+									texture = "gfx/interface/icons/OW/OW_XZ3.dds"
+								}
+								divider = { layoutpolicy_horizontal = expanding }
+								###其他
+								divider = { layoutpolicy_horizontal = expanding }
+								button_standard = {#纳戒新窗口，未实装
+									name = "OW_XZ_NAJIE"
+									fontsize = 18
+									size = { 300 30 }
+									minimumsize = { 150 0 }
+									text = "OW_XZ_NAJIE"
+									#onclick = "[ExecuteConsoleCommand( Select_CString( GetVariableSystem.Exists('OW_XZ_XZ_window_open'), 'gui.ClearWidgets OW_XZ_shuxingmianban_window', 'gui.createwidget gui/OW_XZ1_window.gui OW_XZ_shuxingmianban_window' ) )]"
+									#onclick = "[GetVariableSystem.Toggle('OW_XZ_XZ_window_open')]"
+									tooltip = "OW_XZ_NAJIE_button"
+								}
+								divider = { layoutpolicy_horizontal = expanding }
+								button_standard = {#新窗口，未实装
+									name = "OW_XZ_NEISHI"
+									fontsize = 18
+									size = { 300 30 }
+									minimumsize = { 150 0 }
+									text = "OW_XZ_NEISHI"
+									#onclick = "[ExecuteConsoleCommand( Select_CString( GetVariableSystem.Exists('OW_XZ_XZ_window_open'), 'gui.ClearWidgets OW_XZ_shuxingmianban_window', 'gui.createwidget gui/OW_XZ1_window.gui OW_XZ_shuxingmianban_window' ) )]"
+									#onclick = "[GetVariableSystem.Toggle('OW_XZ_XZ_window_open')]"
+									tooltip = "OW_XZ_NEISHI_button"
+								}
+								divider = { layoutpolicy_horizontal = expanding }
+								expand = {}			 
+							}
+						}
+						background = { texture = "gfx/interface/icons/OW/OW_XZ1.dds" }
+					}
+				}
+			}
+			vbox = {
+				name = "OW_XZ_character_head"
+				layoutpolicy_horizontal = expanding
+				margin = { 30 15 }
+				spacing = 10
+				state = {
+					name = "faith_view_refresh"
+					using = Animation_Refresh_FadeOut
+				}
+
+				state = {
+					using = Animation_Refresh_FadeIn
+				}
+                background = {
+				  texture = "gfx/interface/icons/OW/OW_XZ1.dds"
+				  margin = { 5 5 }				  
+			    }
+				text_label_center = {
+					text = "OW_XZ_JINGJIE_now_tooltip"
+					fontsize = 16
+					default_format = "#high" 
+					tooltip = "OW_XZ_JINGJIE_MIANBAN" 
+					fontsize_min = 12
+				}
+				divider = { layoutpolicy_horizontal = expanding }
+				hbox = {
+					background = {
+						texture = "gfx/interface/icons/OW/OW_XZ2.dds"
+						margin = { 100 25 }
+					}
+					name = "OW_XZ_current_hof"
+					layoutpolicy_vertical = expanding
+					spacing = 100
+                    datacontext = "[GetPlayer]"
+					vbox = {
+						layoutpolicy_horizontal = expanding
+						portrait_head = {
+							name = "OW_XZ_character_portrait"
+
+							blockoverride "coa" {}
+							blockoverride "opinion_box"{}
+							background = {
+								texture = "gfx/interface/icons/OW/bottom_ layer_01.dds"
+								margin = { 1 1 }
+							}
+						}
+					}
+					vbox = {
+						datacontext = "[GetPlayer]"
+						text_label_center = {
+							text = "[Character.GetFirstNameNoTooltip]"
+							default_format = "#high"
+							fontsize = 20
+							max_width = 388
+							fontsize_min = 16
+							background = {
+								texture = "gfx/interface/icons/OW/OW_XZ3.dds"
+								margin = { 25 20 }
+							}
+						}
+						layoutpolicy_vertical = expanding
+						spacing = 1
+						margin_top = -10
+						text_label_center = {
+							text = "OW_XZ_MENPAI"
+							fontsize = 22
+						}
+						text_single = {
+							text = "OW_XZ_menpai_ID"
+							fontsize = 20
+							tooltip = "OW_XZ_menpai_ID_tooltip"
+							align = left|nobaseline						
+						}
+					}
+				}
+				divider = {layoutpolicy_horizontal = expanding}
+				hbox = {
+					spacing = 50
+					vbox = {
+						text_single = {
+							text = "OW_XZ_GANWU"
+							default_format = "#high"
+							fontsize = 16
+							#tooltip = "OW_XZ_GANWU_tooltip"
+						}
+						flowcontainer = {
+							layoutpolicy_horizontal = expanding
+							progressbar_standard = {
+								name = "OW_XZ_progressbar_standard_ganwu_exp"
+								layoutpolicy_horizontal = expanding
+								position = { 38 5 }
+								size = { 250 15 }
+								min = 0
+								max = 1000
+								value = "[FixedPointToFloat(GetPlayer.MakeScope.Var('OW_ganwu_exp').GetValue)]"	
+								tooltip = "OW_XZ_GANWU_tooltip"
+							}
+						}
+					}
+					vbox = {
+						text_single = {
+							text = "OW_XZ_LILIAN"
+							fontsize = 16
+							default_format = "#high"
+							#tooltip = "OW_XZ_LILIAN_tooltip"
+						}
+						flowcontainer = {
+							layoutpolicy_horizontal = expanding
+							progressbar_standard = {
+								name = "OW_XZ_progressbar_standard_lilian_exp"
+								layoutpolicy_horizontal = expanding
+								position = { 38 5 }
+								size = { 250 15 }
+								min = 0 
+								max = 1000
+								value = "[FixedPointToFloat(GetPlayer.MakeScope.Var('OW_lilian_exp').GetValue)]"
+								tooltip = "OW_XZ_LILIAN_tooltip" 
+							}
+						}
+					}
+				}
+				expand = {}  		
+			}
+		}
+	}
+}
+types OW_XZ_shuxingmianban_window
+{
+}
+################
+	#修練視窗結束
+################

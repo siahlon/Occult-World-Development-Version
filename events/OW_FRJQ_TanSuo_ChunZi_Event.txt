@@ -1,0 +1,619 @@
+﻿#以接入
+namespace = OW_FRJQ_TanSuo_ChunZi 
+
+OW_FRJQ_TanSuo_ChunZi.1 = {
+    theme = default
+    type = character_event
+    title = OW_FRJQ_TanSuo_ChunZi.1.t
+    desc = OW_FRJQ_TanSuo_ChunZi.1.desc
+    option = {
+        name = OW_FRJQ_TanSuo_ChunZi.1.a
+    }
+}
+OW_FRJQ_TanSuo_ChunZi.2 = {
+    theme = default 
+    type = character_event
+    title = OW_FRJQ_TanSuo_ChunZi.2.t
+    desc = OW_FRJQ_TanSuo_ChunZi.2.desc
+    option = {
+        name = OW_FRJQ_TanSuo_ChunZi.2.a
+    }
+}
+OW_FRJQ_TanSuo_ChunZi.3 = {
+    theme = default
+    type = character_event
+    title = OW_FRJQ_TanSuo_ChunZi.3.t
+    desc = OW_FRJQ_TanSuo_ChunZi.3.desc
+    option = {
+        name = OW_FRJQ_TanSuo_ChunZi.3.a
+		hidden_effect = {
+			add_OW_FRXZ_Random_XinXi_Random_Value = yes ####给信息碎片###
+		}
+    }
+}
+OW_FRJQ_TanSuo_ChunZi.4 = {  ####给坏的buff###
+    title = OW_FRJQ_TanSuo_ChunZi.4.t
+    desc = OW_FRJQ_TanSuo_ChunZi.4.desc
+    type = character_event
+    theme = default
+    option = {
+        name = OW_FRJQ_TanSuo_ChunZi.4.a
+		if = {
+			limit = { has_trait = brave }
+			remove_trait = brave
+		}
+		else_if = {
+			limit = { has_trait = calm }
+			remove_trait = calm
+		}
+		else_if = {
+			limit = { has_trait = chaste }
+			remove_trait = chaste
+		}
+		else_if = {
+			limit = { has_trait = content }
+			remove_trait = content
+		}
+		else_if = {
+			limit = { has_trait = diligent }
+			remove_trait = diligent
+		}
+		else_if = {
+			limit = { has_trait = fickle }
+			remove_trait = fickle
+		}
+		else_if = {
+			limit = { has_trait = forgiving }
+			remove_trait = forgiving
+		}
+		else_if = {
+			limit = { has_trait = generous }
+			remove_trait = generous
+		}
+		else_if = {
+			limit = { has_trait = gregarious }
+			remove_trait = gregarious
+		}
+		else_if = {
+			limit = { has_trait = honest }
+			remove_trait = honest
+		}
+		else_if = {
+			limit = { has_trait = just }
+			remove_trait = just
+		}
+		else_if = {
+			limit = { has_trait = humble }
+			remove_trait = humble
+		}
+		else_if = {
+			limit = { has_trait = patient }
+			remove_trait = patient
+		}
+		else_if = {
+			limit = { has_trait = temperate }
+			remove_trait = temperate
+		}
+		else_if = {
+			limit = { has_trait = trusting }
+			remove_trait = zealous
+		}
+		else_if = {
+			limit = { has_trait = compassionate }
+			remove_trait = compassionate
+		}
+		else = {
+			random_list = {
+				1 = { add_trait = craven }
+				1 = { add_trait = wrathful }
+				1 = { add_trait = lustful }
+				1 = { add_trait = ambitious }
+				1 = { add_trait = lazy }
+				1 = { add_trait = stubborn }
+				1 = { add_trait = vengeful }
+				1 = { add_trait = greedy }
+				1 = { add_trait = shy }
+				1 = { add_trait = deceitful }
+				1 = { add_trait = arrogant }
+				1 = { add_trait = arbitrary }
+				1 = { add_trait = impatient }
+				1 = { add_trait = gluttonous }
+				1 = { add_trait = paranoid }
+				1 = { add_trait = cynical }
+				1 = { add_trait = callous }
+				1 = { add_trait = sadistic }
+			}
+		}
+    }
+}
+OW_FRJQ_TanSuo_ChunZi.5 = {   ###调理身体###
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_ChunZi.5.t
+    desc = OW_FRJQ_TanSuo_ChunZi.5.desc
+    option = {
+        name = OW_FRJQ_TanSuo_ChunZi.5.a
+		if = {
+			limit = {  has_trait = cancer }
+			remove_trait = cancer
+		}
+		else_if = {
+			limit = { has_trait = great_pox }
+			remove_trait = great_pox
+		}
+		else_if = {
+			limit = { has_trait = consumption }
+			remove_trait = consumption
+		}
+		else_if = {
+			limit = { has_trait = bubonic_plague }
+			remove_trait = bubonic_plague
+		}
+		else_if = {
+			limit = { has_trait = gout_ridden }
+			remove_trait = gout_ridden
+		}
+		else_if = {
+			limit = { has_trait = leper }
+			remove_trait = leper
+		}
+		else_if = {
+			limit = { has_trait = pneumonic }
+			remove_trait = pneumonic
+		}
+		else_if = {
+			limit = { has_trait = smallpox }
+			remove_trait = smallpox
+		}
+		else_if = {
+			limit = { has_trait = typhus }
+			remove_trait = typhus
+		}
+		else_if = {
+			limit = { has_trait = ill }
+			remove_trait = ill
+		}
+		else_if = {
+			limit = { has_trait = wounded_3 }
+			remove_trait = wounded_3
+		}
+		else_if = {
+			limit = { has_trait = wounded_2 }
+			remove_trait = wounded_2
+		}
+		else_if = {
+			limit = { has_trait = wounded_1 }
+			remove_trait = wounded_1
+		}
+		else_if = {
+			limit = { has_trait = infirm }
+			remove_trait = infirm
+		}
+		else_if = {
+			limit = { has_trait = sickly }
+			remove_trait = sickly
+		}
+		else_if = {
+			limit = { has_trait = infertile }
+			remove_trait = infertile
+		}
+		else_if = {
+			limit = { has_trait = hunchbacked }
+			remove_trait = hunchbacked
+		}
+    }
+}
+###成功的随机情况###
+OW_FRJQ_TanSuo_ChunZi.6 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_ChunZi.6.t
+    desc = OW_FRJQ_TanSuo_ChunZi.6.desc
+    option = {
+        name = OW_FRJQ_TanSuo_ChunZi.6.a
+		hidden_effect = {
+			random_list = {
+				1 = { trigger_event = OW_FRJQ_TanSuo_ChunZi.1 }
+				1 = { trigger_event = OW_FRJQ_TanSuo_ChunZi.2 }
+				1 = { trigger_event = OW_FRJQ_TanSuo_ChunZi.3 }
+				1 = { trigger_event = OW_FRJQ_TanSuo_ChunZi.4 }
+				1 = { trigger_event = OW_FRJQ_TanSuo_ChunZi.5 }
+			}
+		}
+    }
+}
+
+##下为事件本体#
+OW_FRJQ_TanSuo_ChunZi.7 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_ChunZi.7.t
+    desc = OW_FRJQ_TanSuo_ChunZi.7.desc
+    option = {
+        name = OW_FRJQ_TanSuo_ChunZi.7.a
+		hidden_effect = {
+			random_list = {
+				1 = { trigger_event = OW_FRJQ_TanSuo_ChunZi.8 }
+				1 = { trigger_event = OW_FRJQ_TanSuo_ChunZi.6 }
+			}
+		}
+    }
+    option = {
+        name = OW_FRJQ_TanSuo_ChunZi.7.b
+		hidden_effect = {
+			random_list = {
+				3 = { trigger_event = OW_FRJQ_TanSuo_ChunZi.8 }
+				1 = { trigger_event = OW_FRJQ_TanSuo_ChunZi.6 }
+			}
+		}
+    }
+    option = {
+        name = OW_FRJQ_TanSuo_ChunZi.7.c
+		hidden_effect = {
+			remove_short_term_gold = 5000
+			if = {
+				limit = {
+					AND = {
+						intrigue > 15 
+						learning > 15
+					}
+				}
+				random_list = {
+					1 = { trigger_event = OW_FRJQ_TanSuo_ChunZi.8 }
+					3 = { trigger_event = OW_FRJQ_TanSuo_ChunZi.6 }
+				}
+			}
+		}
+    }
+}
+####不成功事件##
+OW_FRJQ_TanSuo_ChunZi.8 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_ChunZi.8.t
+    desc = OW_FRJQ_TanSuo_ChunZi.8.desc
+    option = {
+        name = OW_FRJQ_TanSuo_ChunZi.8.a
+    }
+}
+
+####
+OW_FRJQ_TanSuo_ChunZi.9 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_ChunZi.9.t
+    desc = OW_FRJQ_TanSuo_ChunZi.9.desc
+    option = {
+        name = OW_FRJQ_TanSuo_ChunZi.9.a
+		if = {
+			limit = { has_trait = brave }
+			remove_trait = brave
+		}
+		else_if = {
+			limit = { has_trait = calm }
+			remove_trait = calm
+		}
+		else_if = {
+			limit = { has_trait = chaste }
+			remove_trait = chaste
+		}
+		else_if = {
+			limit = { has_trait = content }
+			remove_trait = content
+		}
+		else_if = {
+			limit = { has_trait = diligent }
+			remove_trait = diligent
+		}
+		else_if = {
+			limit = { has_trait = fickle }
+			remove_trait = fickle
+		}
+		else_if = {
+			limit = { has_trait = forgiving }
+			remove_trait = forgiving
+		}
+		else_if = {
+			limit = { has_trait = generous }
+			remove_trait = generous
+		}
+		else_if = {
+			limit = { has_trait = gregarious }
+			remove_trait = gregarious
+		}
+		else_if = {
+			limit = { has_trait = honest }
+			remove_trait = honest
+		}
+		else_if = {
+			limit = { has_trait = just }
+			remove_trait = just
+		}
+		else_if = {
+			limit = { has_trait = humble }
+			remove_trait = humble
+		}
+		else_if = {
+			limit = { has_trait = patient }
+			remove_trait = patient
+		}
+		else_if = {
+			limit = { has_trait = temperate }
+			remove_trait = temperate
+		}
+		else_if = {
+			limit = { has_trait = trusting }
+			remove_trait = zealous
+		}
+		else_if = {
+			limit = { has_trait = compassionate }
+			remove_trait = compassionate
+		}
+		else = {
+			random_list = {
+				1 = { add_trait = craven }
+				1 = { add_trait = wrathful }
+				1 = { add_trait = lustful }
+				1 = { add_trait = ambitious }
+				1 = { add_trait = lazy }
+				1 = { add_trait = stubborn }
+				1 = { add_trait = vengeful }
+				1 = { add_trait = greedy }
+				1 = { add_trait = shy }
+				1 = { add_trait = deceitful }
+				1 = { add_trait = arrogant }
+				1 = { add_trait = arbitrary }
+				1 = { add_trait = impatient }
+				1 = { add_trait = gluttonous }
+				1 = { add_trait = paranoid }
+				1 = { add_trait = cynical }
+				1 = { add_trait = callous }
+				1 = { add_trait = sadistic }
+			}
+		}
+    }
+}
+OW_FRJQ_TanSuo_ChunZi.10 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_ChunZi.10.t
+    desc = OW_FRJQ_TanSuo_ChunZi.10.desc
+    option = {
+        name = OW_FRJQ_TanSuo_ChunZi.10.a
+		if = {
+			limit = {  has_trait = cancer }
+			remove_trait = cancer
+		}
+		else_if = {
+			limit = { has_trait = great_pox }
+			remove_trait = great_pox
+		}
+		else_if = {
+			limit = { has_trait = consumption }
+			remove_trait = consumption
+		}
+		else_if = {
+			limit = { has_trait = bubonic_plague }
+			remove_trait = bubonic_plague
+		}
+		else_if = {
+			limit = { has_trait = gout_ridden }
+			remove_trait = gout_ridden
+		}
+		else_if = {
+			limit = { has_trait = leper }
+			remove_trait = leper
+		}
+		else_if = {
+			limit = { has_trait = pneumonic }
+			remove_trait = pneumonic
+		}
+		else_if = {
+			limit = { has_trait = smallpox }
+			remove_trait = smallpox
+		}
+		else_if = {
+			limit = { has_trait = typhus }
+			remove_trait = typhus
+		}
+		else_if = {
+			limit = { has_trait = ill }
+			remove_trait = ill
+		}
+		else_if = {
+			limit = { has_trait = wounded_3 }
+			remove_trait = wounded_3
+		}
+		else_if = {
+			limit = { has_trait = wounded_2 }
+			remove_trait = wounded_2
+		}
+		else_if = {
+			limit = { has_trait = wounded_1 }
+			remove_trait = wounded_1
+		}
+		else_if = {
+			limit = { has_trait = infirm }
+			remove_trait = infirm
+		}
+		else_if = {
+			limit = { has_trait = sickly }
+			remove_trait = sickly
+		}
+		else_if = {
+			limit = { has_trait = infertile }
+			remove_trait = infertile
+		}
+		else_if = {
+			limit = { has_trait = hunchbacked }
+			remove_trait = hunchbacked
+		}
+    }
+}
+OW_FRJQ_TanSuo_ChunZi.11 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_ChunZi.11.t
+    desc = OW_FRJQ_TanSuo_ChunZi.11.desc
+    option = {
+        name = OW_FRJQ_TanSuo_ChunZi.11.a
+		if = {
+			limit = { gold >= 1000 }
+			remove_short_term_gold = 1000
+		}
+		else = {
+			add_trait = wounded_2
+		}
+    }
+    option = {
+        name = OW_FRJQ_TanSuo_ChunZi.11.b
+		trigger = { prowess >= 20 }
+		add_trait = wounded_2
+    }
+}
+OW_FRJQ_TanSuo_ChunZi.12 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_ChunZi.12.t
+    desc = OW_FRJQ_TanSuo_ChunZi.12.desc
+    option = {
+        name = OW_FRJQ_TanSuo_ChunZi.12.a
+		hidden_effect = {
+			add_OW_FRXZ_Random_XinXi_Random_Value = yes 
+		}
+    }
+}
+#####
+OW_FRJQ_TanSuo_ChunZi.13 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_ChunZi.13.t
+    desc = OW_FRJQ_TanSuo_ChunZi.13.desc
+    option = {
+        name = OW_FRJQ_TanSuo_ChunZi.13.a
+		hidden_effect = {
+			random_list = {
+				1 = { trigger_event = OW_FRJQ_TanSuo_ChunZi.9 }
+				1 = { trigger_event = OW_FRJQ_TanSuo_ChunZi.10 }
+				1 = { trigger_event = OW_FRJQ_TanSuo_ChunZi.11 }
+				1 = { trigger_event = OW_FRJQ_TanSuo_ChunZi.12 }
+			}
+		}
+    }
+    option = {
+        name = OW_FRJQ_TanSuo_ChunZi.13.b
+    }
+}
+
+####3333333#####
+OW_FRJQ_TanSuo_ChunZi.14 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_ChunZi.14.t
+    desc = OW_FRJQ_TanSuo_ChunZi.14.desc
+    option = {
+        name = OW_FRJQ_TanSuo_ChunZi.14.a
+        set_variable = {
+            name = qigaijishugold
+            value = 100
+        }
+		hidden_effect = {
+			remove_short_term_gold = 100 
+		}
+    }
+    option = {
+        name = OW_FRJQ_TanSuo_ChunZi.14.b
+    }
+}
+OW_FRJQ_TanSuo_ChunZi.15 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_ChunZi.15.t
+    desc = OW_FRJQ_TanSuo_ChunZi.15.desc
+    immediate = {
+        if = {
+            limit = {
+                NOT = { has_variable = qigaijishutimes }
+            }
+            set_variable = { name = qigaijishutimes value = 1 }
+        }
+        else_if = {
+            limit = { has_variable = qigaijishutimes }
+            change_variable = { name = qigaijishutimes  add = 1 }
+        }
+    }
+    option = {
+        name = OW_FRJQ_TanSuo_ChunZi.15.a
+		hidden_effect = {
+			remove_short_term_gold = 100 
+			change_variable = { name = qigaijishugold  add = 100 }
+			if = {
+				limit = { var:qigaijishugold > 49 }
+				trigger_event = OW_FRJQ_TanSuo_ChunZi.16
+			}
+			else = {
+				trigger_event = OW_FRJQ_TanSuo_ChunZi.15
+			}
+		}
+    }
+    option = {
+        name = OW_FRJQ_TanSuo_ChunZi.15.b
+        trigger = {
+            var:qigaijishugold = 900
+        }
+		hidden_effect = {
+			remove_short_term_gold = 99
+			change_variable = { name = qigaijishugold  add = 99 }
+			trigger_event = OW_FRJQ_TanSuo_ChunZi.15
+		}
+    }
+    option = {
+        name = OW_FRJQ_TanSuo_ChunZi.15.c
+        if = {
+            limit = {
+                var:qigaijishugold = 999
+            }
+            trigger_event = OW_FRJQ_TanSuo_ChunZi.17
+        }
+        remove_variable = qigaijishugold
+        remove_variable = qigaijishutimes
+    }
+}
+OW_FRJQ_TanSuo_ChunZi.16 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_ChunZi.16.t
+    desc = OW_FRJQ_TanSuo_ChunZi.16.desc
+    option = {
+        name = OW_FRJQ_TanSuo_ChunZi.16.a
+		hidden_effect = {
+			add_OW_FRXZ_Random_XinXi_Random_Value = yes
+			random_list = {
+				1 = { add_gold = { 1  4900 } }
+				1 = { add_gold = var:qigaijishugold }
+			}
+			remove_variable = qigaijishugold
+			remove_variable = qigaijishutimes
+		}
+    }
+}
+OW_FRJQ_TanSuo_ChunZi.17 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_ChunZi.17.t
+    desc = OW_FRJQ_TanSuo_ChunZi.17.desc
+    option = {
+        name = OW_FRJQ_TanSuo_ChunZi.17.a
+		hidden_effect = {
+			add_OW_FRXZ_Random_XinXi_Random_Value = yes 
+			add_learning_skill = 1
+			add_martial_skill = 1
+			add_intrigue_skill = 1
+			add_prowess_skill = 1
+			add_stewardship_skill = 1
+			add_diplomacy_skill = 1
+			remove_variable = qigaijishugold
+			remove_variable = qigaijishutimes
+		}
+	}
+}

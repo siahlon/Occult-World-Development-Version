@@ -1,0 +1,832 @@
+﻿#by:鹿鹿鹿
+#by:狗头
+scripted_effect OW_FRJQ_TanSuo_Event_Effect = {
+	random_list = {
+		1 = { trigger_event = OW_FRJQ_TanSuo.0010 }
+		1 = { trigger_event = OW_FRJQ_TanSuo.0020 }
+		1 = { trigger_event = OW_FRJQ_TanSuo.0030 }
+		1 = { trigger_event = OW_FRJQ_TanSuo.0050 }
+	}
+}
+scripted_effect OW_FRJQ_TanSuo_Event_diplomacy = {
+	random_list = {
+		20 = { trigger_event = OW_FRJQ_TanSuo.9999	}
+		20 = {
+			OW_FRJQ_TanSuo_Event_Effect = yes
+			modifier = {
+				add = diplomacy
+				NOT = { has_character_flag = OW_xiuzhenzhe }
+			}
+		}
+	}
+}
+scripted_effect OW_FRJQ_TanSuo_Event_martial = {
+	random_list = {
+		20 = { trigger_event = OW_FRJQ_TanSuo.9999	}
+		20 = {
+			OW_FRJQ_TanSuo_Event_Effect = yes
+			modifier = {
+				add = diplomacy
+				NOT = { has_character_flag = OW_xiuzhenzhe }
+			}
+		}
+	}
+}
+scripted_effect OW_FRJQ_TanSuo_Event_stewardship = {
+	random_list = {
+		20 = { trigger_event = OW_FRJQ_TanSuo.9999	}
+		20 = {
+			OW_FRJQ_TanSuo_Event_Effect = yes
+			modifier = {
+				add = diplomacy
+				NOT = { has_character_flag = OW_xiuzhenzhe }
+			}
+		}
+	}
+}
+scripted_effect OW_FRJQ_TanSuo_Event_intrigue = {
+	random_list = {
+		20 = { trigger_event = OW_FRJQ_TanSuo.9999	}
+		20 = {
+			OW_FRJQ_TanSuo_Event_Effect = yes
+			modifier = {
+				add = diplomacy
+				NOT = { has_character_flag = OW_xiuzhenzhe }
+			}
+		}
+	}
+}
+scripted_effect OW_FRJQ_TanSuo_Event_learning = {
+	random_list = {
+		20 = { trigger_event = OW_FRJQ_TanSuo.9999	}
+		20 = {
+			OW_FRJQ_TanSuo_Event_Effect = yes
+			modifier = {
+				add = diplomacy
+				NOT = { has_character_flag = OW_xiuzhenzhe }
+			}
+		}
+	}
+}
+scripted_effect OW_FRJQ_TanSuo_Event_prowess = {
+	random_list = {
+		20 = { trigger_event = OW_FRJQ_TanSuo.9999	}
+		20 = {
+			OW_FRJQ_TanSuo_Event_Effect = yes
+			modifier = {
+				add = diplomacy
+				NOT = { has_character_flag = OW_xiuzhenzhe }
+			}
+		}
+	}
+}
+
+scripted_effect OW_FRJQ_HuoQuXinXi_TanSuo = {
+	random_list = {
+		1 = {
+			trigger_event = OW_FRJQ.01
+			trigger = { NOT = { has_character_flag = OW_XZ_XINXI1 } }
+		}
+		1 = {
+			trigger_event = OW_FRJQ.02
+			trigger = { NOT = { has_character_flag = OW_XZ_XINXI2 } }
+		}
+		1 = {
+			trigger_event = OW_FRJQ.03
+			trigger = { NOT = { has_character_flag = OW_XZ_XINXI3 } }
+		}
+		1 = {
+			trigger_event = OW_FRJQ.04
+			trigger = { NOT = { has_character_flag = OW_XZ_XINXI4 } }
+		}
+		1 = {
+			trigger_event = OW_FRJQ.05
+			trigger = { NOT = { has_character_flag = OW_XZ_XINXI5 } }
+		}
+		1 = {
+			trigger_event = OW_FRJQ.06
+			trigger = { NOT = { has_character_flag = OW_XZ_XINXI6 } }
+		}
+		1 = {
+			trigger_event = OW_FRJQ.07
+			trigger = { NOT = { has_character_flag = OW_XZ_XINXI7 } }
+		}
+		1 = {
+			trigger_event = OW_FRJQ.08
+			trigger = { NOT = { has_character_flag = OW_XZ_XINXI8 } }
+		}
+		1 = {
+			trigger_event = OW_FRJQ.09
+			trigger = { NOT = { has_character_flag = OW_XZ_XINXI9 } }
+		}
+		1 = {
+			trigger_event = OW_FRJQ.10
+			trigger = { NOT = { has_character_flag = OW_XZ_XINXI10 } }
+		}
+		1 = {
+			trigger_event = OW_FRJQ_TanSuo.9998
+		}
+	}
+}
+scripted_effect OW_FRJQ_HuoQuXinXi_JiuGuan = {
+	hidden_effect = {
+		random_list = {
+			1 = {
+				trigger_event = OW_FRJQ.11
+				trigger = { NOT = { has_character_flag = OW_XZ_XINXI11 } }
+			}
+			1 = {
+				trigger_event = OW_FRJQ.12
+				trigger = { NOT = { has_character_flag = OW_XZ_XINXI12 } }
+			}
+			1 = {
+				trigger_event = OW_FRJQ.13
+				trigger = { NOT = { has_character_flag = OW_XZ_XINXI13 } }
+			}
+			1 = {
+				trigger_event = OW_FRJQ.14
+				trigger = { NOT = { has_character_flag = OW_XZ_XINXI14 } }
+			}
+			1 = {
+				trigger_event = OW_FRJQ.15
+				trigger = { NOT = { has_character_flag = OW_XZ_XINXI15 } }
+			}
+			1 = {
+				trigger_event = OW_FRJQ.16
+				trigger = { NOT = { has_character_flag = OW_XZ_XINXI16 } }
+			}
+			1 = {
+				trigger_event = OW_FRJQ.17
+				trigger = { NOT = { has_character_flag = OW_XZ_XINXI17 } }
+			}
+			1 = {
+				trigger_event = OW_FRJQ.18
+				trigger = { NOT = { has_character_flag = OW_XZ_XINXI18 } }
+			}
+			1 = {
+				trigger_event = OW_FRJQ.19
+				trigger = { NOT = { has_character_flag = OW_XZ_XINXI19 } }
+			}
+			1 = {
+				trigger_event = OW_FRJQ.20
+				trigger = { NOT = { has_character_flag = OW_XZ_XINXI20 } }
+			}
+		}
+	}
+}
+#######################################探索
+namespace = OW_FRJQ_TanSuo
+
+OW_FRJQ_TanSuo.0001 = {#UI接口
+	type = character_event
+	theme = hunting
+	title = OW_FRJQ_TanSuo.0001.name
+	desc = OW_FRJQ_TanSuo.0001.desc
+	option = {
+		name = OW_FRJQ_TanSuo.0001.diplomacy#外交
+		trigger = { gold >= 100 }
+		hidden_effect = {
+			OW_FRJQ_TanSuo_Event_diplomacy = yes
+		}
+		remove_short_term_gold = 100
+	}
+	option = {
+		name = OW_FRJQ_TanSuo.0001.martial#军事
+		trigger = { gold >= 100 }
+		hidden_effect = {
+			OW_FRJQ_TanSuo_Event_martial = yes
+		}
+		remove_short_term_gold = 100
+	}
+	option = {
+		name = OW_FRJQ_TanSuo.0001.stewardship#管理
+		trigger = { gold >= 100 }
+		hidden_effect = {
+			OW_FRJQ_TanSuo_Event_stewardship = yes
+		}
+		remove_short_term_gold = 100
+	}
+	option = {
+		name = OW_FRJQ_TanSuo.0001.intrigue#谋略
+		trigger = { gold >= 100 }
+		hidden_effect = {
+			OW_FRJQ_TanSuo_Event_intrigue = yes
+		}
+		remove_short_term_gold = 100
+	}
+	option = {
+		name = OW_FRJQ_TanSuo.0001.learning#学识
+		trigger = { gold >= 100 }
+		hidden_effect = {
+			OW_FRJQ_TanSuo_Event_learning = yes
+		}
+		remove_short_term_gold = 100
+	}
+	option = {
+		name = OW_FRJQ_TanSuo.0001.prowess#勇武
+		trigger = { gold >= 100 }
+		hidden_effect = {
+			OW_FRJQ_TanSuo_Event_prowess = yes
+		}
+		remove_short_term_gold = 100
+	}
+	option = {
+		name = OW_FRJQ_TanSuo.0001.end
+		trigger = { gold < 100 }
+	}
+}
+
+OW_FRJQ_TanSuo.9999 = {
+	type = character_event
+	theme = hunting
+	title = OW_FRJQ_TanSuo.9999.name
+	desc = OW_FRJQ_TanSuo.9999.desc
+	option = {
+		name = OW_FRJQ_TanSuo.9999.t
+	}
+}
+OW_FRJQ_TanSuo.9998 = {
+	type = character_event
+	theme = hunting
+	title = OW_FRJQ_TanSuo.9998.name
+	desc = OW_FRJQ_TanSuo.9998.desc
+	option = {
+		name = OW_FRJQ_TanSuo.9998.t
+	}
+}
+
+#############
+#00010路遇劫匪
+#############
+OW_FRJQ_TanSuo.0010 = {
+	type = character_event
+	theme = hunting
+	title = OW_FRJQ_TanSuo.0010.name
+	desc = OW_FRJQ_TanSuo.0010.desc
+	option = {
+		name = OW_FRJQ_TanSuo.0010.t1
+		hidden_effect = {
+			random_list = {
+				75 = { 
+					random_list = {
+						5 = { OW_FRJQ_HuoQuXinXi_TanSuo = yes }
+						95 = { add_OW_FRXZ_Random_XinXi_Random_Value = yes }
+					}
+				}
+				24 = { trigger_event = OW_FRJQ_TanSuo.0011 }
+				1 = { trigger_event = OW_FRJQ_TanSuo.0011 }
+			}
+		}
+	}
+	option = {
+		name = OW_FRJQ_TanSuo.0010.t2
+	}
+}
+
+OW_FRJQ_TanSuo.0011 = {
+	type = character_event
+	theme = hunting
+	title = OW_FRJQ_TanSuo.0011.name
+	desc = OW_FRJQ_TanSuo.0011.desc
+	option = {
+		name = OW_FRJQ_TanSuo.0011.t
+		hidden_effect = {
+			random_list = {
+				1 = {
+					if = {
+						limit = { has_trait = wounded_1 }
+						change_trait_rank = {
+							trait = wounded
+							rank = 1
+						}
+					}
+					else_if = {
+						limit = { has_trait = wounded_2 }
+						change_trait_rank = {
+							trait = wounded
+							rank = 1
+						}
+					}
+					else = {
+						add_trait = wounded_1
+					}
+					trigger = {
+						OR = {
+							NOT = { has_trait = wounded }
+							has_trait = wounded_1
+							has_trait = wounded_2
+						}
+					}
+				}
+				1 = {
+					add_trait = maimed
+					trigger = { NOT = { has_trait = maimed } }
+				}
+				1 = {
+					add_trait = blind
+					trigger = { NOT = { has_trait = blind } }
+				}
+			}
+		}
+	}
+}
+OW_FRJQ_TanSuo.0012 = {
+	type = character_event
+	theme = hunting
+	title = OW_FRJQ_TanSuo.0012.name
+	desc = OW_FRJQ_TanSuo.0012.desc
+	option = {
+		name = OW_FRJQ_TanSuo.0012.t
+		death = { death_reason = death_OW_JIEFEI }
+	}
+}
+
+#############
+#00020路遇旅人
+#############
+OW_FRJQ_TanSuo.0020 = {
+	type = character_event
+	theme = hunting
+	title = OW_FRJQ_TanSuo.0020.name
+	desc = OW_FRJQ_TanSuo.0020.desc
+	option = {
+		name = OW_FRJQ_TanSuo.0020.t
+		hidden_effect = {
+			random_list = {
+				75 = {
+					random_list = {
+						5 = { OW_FRJQ_HuoQuXinXi_TanSuo = yes }
+						95 = { add_OW_FRXZ_Random_XinXi_Random_Value = yes }
+					}
+				}
+				24 = { trigger_event = OW_FRJQ_TanSuo.0021 }
+			}
+		}
+	}
+}
+OW_FRJQ_TanSuo.0021 = {
+	type = character_event
+	theme = hunting
+	title = OW_FRJQ_TanSuo.0021.name
+	desc = OW_FRJQ_TanSuo.0021.desc
+	option = {
+		name = OW_FRJQ_TanSuo.0021.t
+	}
+}
+
+###########
+#00030路遇修真者
+###########
+OW_FRJQ_TanSuo.0030 = {
+	type = character_event
+	theme = hunting
+	title = OW_FRJQ_TanSuo.0030.name
+	desc = OW_FRJQ_TanSuo.0030.desc
+	option = {
+		name = OW_FRJQ_TanSuo.0030.t
+		hidden_effect = {
+			random_list = {
+				60 = {
+					random_list = {
+						5 = { OW_FRJQ_HuoQuXinXi_TanSuo = yes }
+						95 = { add_OW_FRXZ_Random_XinXi_Random_Value = yes }
+					}
+				}
+				40 = { trigger_event = OW_FRJQ_TanSuo.0031 }
+			}
+		}
+	}
+}
+OW_FRJQ_TanSuo.0031 = {
+	type = character_event
+	theme = hunting
+	title = OW_FRJQ_TanSuo.0031.name
+	desc = OW_FRJQ_TanSuo.0031.desc
+	option = {
+		name = OW_FRJQ_TanSuo.0031.t
+	}
+}
+
+###########
+#00050路遇献祭台
+###########
+OW_FRJQ_TanSuo.0050 = {
+	type = character_event
+	theme = hunting
+	title = OW_FRJQ_TanSuo.0050.name
+	desc = OW_FRJQ_TanSuo.0050.desc
+	option = {
+		name = OW_FRJQ_TanSuo.0050.t1
+		trigger = { diplomacy > 0 }
+		hidden_effect = {
+			random_list = {
+				5 = { OW_FRJQ_HuoQuXinXi_TanSuo = yes }
+				95 = { add_OW_FRXZ_Random_XinXi_Random_Value = yes }
+			}
+		}
+		add_diplomacy_skill = -1
+	}
+	option = {
+		name = OW_FRJQ_TanSuo.0050.t2
+		trigger = { martial > 0 }
+		hidden_effect = {
+			random_list = {
+				5 = { OW_FRJQ_HuoQuXinXi_TanSuo = yes }
+				95 = { add_OW_FRXZ_Random_XinXi_Random_Value = yes }
+			}
+		}
+		add_martial_skill = -1
+	}
+	option = {
+		name = OW_FRJQ_TanSuo.0050.t3
+		trigger = { stewardship > 0 }
+		hidden_effect = {
+			random_list = {
+				5 = { OW_FRJQ_HuoQuXinXi_TanSuo = yes }
+				95 = { add_OW_FRXZ_Random_XinXi_Random_Value = yes }
+			}
+		}
+		add_stewardship_skill = -1
+	}
+	option = {
+		name = OW_FRJQ_TanSuo.0050.t4
+		trigger = { intrigue > 0 }
+		hidden_effect = {
+			random_list = {
+				5 = { OW_FRJQ_HuoQuXinXi_TanSuo = yes }
+				95 = { add_OW_FRXZ_Random_XinXi_Random_Value = yes }
+			}
+		}
+		add_intrigue_skill = -1
+	}
+	option = {
+		name = OW_FRJQ_TanSuo.0050.t5
+		trigger = { learning > 0 }
+		hidden_effect = {
+			random_list = {
+				5 = { OW_FRJQ_HuoQuXinXi_TanSuo = yes }
+				95 = { add_OW_FRXZ_Random_XinXi_Random_Value = yes }
+			}
+		}
+		add_learning_skill = -1
+	}
+	option = {
+		name = OW_FRJQ_TanSuo.0050.t6
+		trigger = { prowess > 0 }
+		hidden_effect = {
+			random_list = {
+				5 = { OW_FRJQ_HuoQuXinXi_TanSuo = yes }
+				95 = { add_OW_FRXZ_Random_XinXi_Random_Value = yes }
+			}
+		}
+		add_prowess_skill = -1
+	}
+	option = {
+		name = OW_FRJQ_TanSuo.0050.end
+	}
+}
+##########信息反馈
+namespace = OW_FRJQ
+OW_FRJQ.01 = {
+	type = character_event
+	theme = learning
+	title = OW_FRJQ.01.name
+	desc = OW_FRJQ.01.desc
+	option = {
+		name = OW_FRJQ.01.t
+		add_character_flag = OW_XZ_XINXI1
+	}
+}
+OW_FRJQ.02 = {
+	type = character_event
+	theme = learning
+	title = OW_FRJQ.02.name
+	desc = OW_FRJQ.02.desc
+	option = {
+		name = OW_FRJQ.02.t
+		add_character_flag = OW_XZ_XINXI2
+	}
+}
+OW_FRJQ.03 = {
+	type = character_event
+	theme = learning
+	title = OW_FRJQ.03.name
+	desc = OW_FRJQ.03.desc
+	option = {
+		name = OW_FRJQ.03.t
+		add_character_flag = OW_XZ_XINXI3
+	}
+}
+OW_FRJQ.04 = {
+	type = character_event
+	theme = learning
+	title = OW_FRJQ.04.name
+	desc = OW_FRJQ.04.desc
+	option = {
+		name = OW_FRJQ.04.t
+		add_character_flag = OW_XZ_XINXI4
+	}
+}
+OW_FRJQ.05 = {
+	type = character_event
+	theme = learning
+	title = OW_FRJQ.05.name
+	desc = OW_FRJQ.05.desc
+	option = {
+		name = OW_FRJQ.05.t
+		add_character_flag = OW_XZ_XINXI5
+	}
+}
+OW_FRJQ.06 = {
+	type = character_event
+	theme = learning
+	title = OW_FRJQ.06.name
+	desc = OW_FRJQ.06.desc
+	option = {
+		name = OW_FRJQ.06.t
+		add_character_flag = OW_XZ_XINXI6
+	}
+}
+OW_FRJQ.07 = {
+	type = character_event
+	theme = learning
+	title = OW_FRJQ.07.name
+	desc = OW_FRJQ.07.desc
+	option = {
+		name = OW_FRJQ.07.t
+		add_character_flag = OW_XZ_XINXI7
+	}
+}
+OW_FRJQ.08 = {
+	type = character_event
+	theme = learning
+	title = OW_FRJQ.08.name
+	desc = OW_FRJQ.08.desc
+	option = {
+		name = OW_FRJQ.08.t
+		add_character_flag = OW_XZ_XINXI8
+	}
+}
+OW_FRJQ.09 = {
+	type = character_event
+	theme = learning
+	title = OW_FRJQ.09.name
+	desc = OW_FRJQ.09.desc
+	option = {
+		name = OW_FRJQ.09.t
+		add_character_flag = OW_XZ_XINXI9
+	}
+}
+OW_FRJQ.10 = {
+	type = character_event
+	theme = learning
+	title = OW_FRJQ.10.name
+	desc = OW_FRJQ.10.desc
+	option = {
+		name = OW_FRJQ.10.t
+		add_character_flag = OW_XZ_XINXI10
+	}
+}
+OW_FRJQ.11 = {
+	type = character_event
+	theme = learning
+	title = OW_FRJQ.11.name
+	desc = OW_FRJQ.11.desc
+	option = {
+		name = OW_FRJQ.11.t
+		add_character_flag = OW_XZ_XINXI11
+	}
+}
+OW_FRJQ.12 = {
+	type = character_event
+	theme = learning
+	title = OW_FRJQ.12.name
+	desc = OW_FRJQ.12.desc
+	option = {
+		name = OW_FRJQ.12.t
+		add_character_flag = OW_XZ_XINXI12
+	}
+}
+OW_FRJQ.13 = {
+	type = character_event
+	theme = learning
+	title = OW_FRJQ.13.name
+	desc = OW_FRJQ.13.desc
+	option = {
+		name = OW_FRJQ.13.t
+		add_character_flag = OW_XZ_XINXI13
+	}
+}
+OW_FRJQ.14 = {
+	type = character_event
+	theme = learning
+	title = OW_FRJQ.14.name
+	desc = OW_FRJQ.14.desc
+	option = {
+		name = OW_FRJQ.14.t
+		add_character_flag = OW_XZ_XINXI14
+	}
+}
+OW_FRJQ.15 = {
+	type = character_event
+	theme = learning
+	title = OW_FRJQ.15.name
+	desc = OW_FRJQ.15.desc
+	option = {
+		name = OW_FRJQ.15.t
+		add_character_flag = OW_XZ_XINXI15
+	}
+}
+OW_FRJQ.16 = {
+	type = character_event
+	theme = learning
+	title = OW_FRJQ.16.name
+	desc = OW_FRJQ.16.desc
+	option = {
+		name = OW_FRJQ.16.t
+		add_character_flag = OW_XZ_XINXI16
+	}
+}
+OW_FRJQ.17 = {
+	type = character_event
+	theme = learning
+	title = OW_FRJQ.17.name
+	desc = OW_FRJQ.17.desc
+	option = {
+		name = OW_FRJQ.17.t
+		add_character_flag = OW_XZ_XINXI17
+	}
+}
+OW_FRJQ.18 = {
+	type = character_event
+	theme = learning
+	title = OW_FRJQ.18.name
+	desc = OW_FRJQ.18.desc
+	option = {
+		name = OW_FRJQ.18.t
+		add_character_flag = OW_XZ_XINXI18
+	}
+}
+OW_FRJQ.19 = {
+	type = character_event
+	theme = learning
+	title = OW_FRJQ.19.name
+	desc = OW_FRJQ.19.desc
+	option = {
+		name = OW_FRJQ.19.t
+		add_character_flag = OW_XZ_XINXI19
+	}
+}
+OW_FRJQ.20 = {
+	type = character_event
+	theme = learning
+	title = OW_FRJQ.20.name
+	desc = OW_FRJQ.20.desc
+	option = {
+		name = OW_FRJQ.20.t
+		add_character_flag = OW_XZ_XINXI20
+	}
+}
+
+##########信息反馈
+namespace = OW_FRJQ_XXSP_ADD_DESC
+OW_FRJQ_XXSP_ADD_DESC.01 = {
+	type = character_event
+	theme = learning
+	title = OW_FRJQ_XXSP_ADD_DESC.01.name
+	desc = OW_FRJQ_XXSP_ADD_DESC.01.desc
+	option = {
+		name = OW_FRJQ_XXSP_ADD_DESC.01.t
+		add_OW_FRXZ_XinXi_Random = {
+			OW_CT_KEY = OW_FRXZ_XinXi_1
+			MAX = 20
+			MIN = 1
+		}
+	}
+}
+OW_FRJQ_XXSP_ADD_DESC.02 = {
+	type = character_event
+	theme = learning
+	title = OW_FRJQ_XXSP_ADD_DESC.02.name
+	desc = OW_FRJQ_XXSP_ADD_DESC.02.desc
+	option = {
+		name = OW_FRJQ_XXSP_ADD_DESC.02.t
+		add_OW_FRXZ_XinXi_Random = {
+			OW_CT_KEY = OW_FRXZ_XinXi_2
+			MAX = 20
+			MIN = 1
+		}
+	}
+}
+OW_FRJQ_XXSP_ADD_DESC.03 = {
+	type = character_event
+	theme = learning
+	title = OW_FRJQ_XXSP_ADD_DESC.03.name
+	desc = OW_FRJQ_XXSP_ADD_DESC.03.desc
+	option = {
+		name = OW_FRJQ_XXSP_ADD_DESC.03.t
+		add_OW_FRXZ_XinXi_Random = {
+			OW_CT_KEY = OW_FRXZ_XinXi_3
+			MAX = 20
+			MIN = 1
+		}
+	}
+}
+OW_FRJQ_XXSP_ADD_DESC.04 = {
+	type = character_event
+	theme = learning
+	title = OW_FRJQ_XXSP_ADD_DESC.04.name
+	desc = OW_FRJQ_XXSP_ADD_DESC.04.desc
+	option = {
+		name = OW_FRJQ_XXSP_ADD_DESC.04.t
+		add_OW_FRXZ_XinXi_Random = {
+			OW_CT_KEY = OW_FRXZ_XinXi_4
+			MAX = 20
+			MIN = 1
+		}
+	}
+}
+OW_FRJQ_XXSP_ADD_DESC.05 = {
+	type = character_event
+	theme = learning
+	title = OW_FRJQ_XXSP_ADD_DESC.05.name
+	desc = OW_FRJQ_XXSP_ADD_DESC.05.desc
+	option = {
+		name = OW_FRJQ_XXSP_ADD_DESC.05.t
+		add_OW_FRXZ_XinXi_Random = {
+			OW_CT_KEY = OW_FRXZ_XinXi_5
+			MAX = 20
+			MIN = 1
+		}
+	}
+}
+OW_FRJQ_XXSP_ADD_DESC.06 = {
+	type = character_event
+	theme = learning
+	title = OW_FRJQ_XXSP_ADD_DESC.06.name
+	desc = OW_FRJQ_XXSP_ADD_DESC.06.desc
+	option = {
+		name = OW_FRJQ_XXSP_ADD_DESC.06.t
+		add_OW_FRXZ_XinXi_Random = {
+			OW_CT_KEY = OW_FRXZ_XinXi_6
+			MAX = 20
+			MIN = 1
+		}
+	}
+}
+OW_FRJQ_XXSP_ADD_DESC.07 = {
+	type = character_event
+	theme = learning
+	title = OW_FRJQ_XXSP_ADD_DESC.07.name
+	desc = OW_FRJQ_XXSP_ADD_DESC.07.desc
+	option = {
+		name = OW_FRJQ_XXSP_ADD_DESC.07.t
+		add_OW_FRXZ_XinXi_Random = {
+			OW_CT_KEY = OW_FRXZ_XinXi_7
+			MAX = 20
+			MIN = 1
+		}
+	}
+}
+OW_FRJQ_XXSP_ADD_DESC.08 = {
+	type = character_event
+	theme = learning
+	title = OW_FRJQ_XXSP_ADD_DESC.08.name
+	desc = OW_FRJQ_XXSP_ADD_DESC.08.desc
+	option = {
+		name = OW_FRJQ_XXSP_ADD_DESC.08.t
+		add_OW_FRXZ_XinXi_Random = {
+			OW_CT_KEY = OW_FRXZ_XinXi_8
+			MAX = 20
+			MIN = 1
+		}
+	}
+}
+OW_FRJQ_XXSP_ADD_DESC.09 = {
+	type = character_event
+	theme = learning
+	title = OW_FRJQ_XXSP_ADD_DESC.09.name
+	desc = OW_FRJQ_XXSP_ADD_DESC.09.desc
+	option = {
+		name = OW_FRJQ_XXSP_ADD_DESC.09.t
+		add_OW_FRXZ_XinXi_Random = {
+			OW_CT_KEY = OW_FRXZ_XinXi_9
+			MAX = 20
+			MIN = 1
+		}
+	}
+}
+OW_FRJQ_XXSP_ADD_DESC.10 = {
+	type = character_event
+	theme = learning
+	title = OW_FRJQ_XXSP_ADD_DESC.10.name
+	desc = OW_FRJQ_XXSP_ADD_DESC.10.desc
+	option = {
+		name = OW_FRJQ_XXSP_ADD_DESC.10.t
+		add_OW_FRXZ_XinXi_Random = {
+			OW_CT_KEY = OW_FRXZ_XinXi_10
+			MAX = 20
+			MIN = 1
+		}
+	}
+}

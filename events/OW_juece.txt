@@ -1,0 +1,707 @@
+﻿namespace = OW_XZ_tupofankui
+
+OW_XZ_tupofankui.0001 = {
+	type = character_event
+	hidden = yes
+	immediate = {
+		if = { 
+			limit = { var:OW_xinjing = 1 }
+			remove_variable = OW_xinjing
+			set_variable = { name = OW_xinjing value = 2 }
+		}
+		else_if = { 
+			limit = { var:OW_xinjing = 2 }
+			remove_variable = OW_xinjing
+			set_variable = { name = OW_xinjing value = 3 }
+		}
+		else_if = { 
+			limit = { var:OW_xinjing = 3 }
+			remove_variable = OW_xinjing
+			set_variable = { name = OW_xinjing value = 4 }
+		}
+		else_if = { 
+			limit = { var:OW_xinjing = 4 }
+			remove_variable = OW_xinjing
+			set_variable = { name = OW_xinjing value = 5 }
+		}
+		else_if = { 
+			limit = { var:OW_xinjing = 5 }
+			remove_variable = OW_xinjing
+			set_variable = { name = OW_xinjing value = 6 }
+		}
+		else_if = { 
+			limit = { var:OW_xinjing = 6 }
+			remove_variable = OW_xinjing
+			set_variable = { name = OW_xinjing value = 7 }
+		}
+		else_if = { 
+			limit = { var:OW_xinjing = 7 }
+			remove_variable = OW_xinjing
+			set_variable = { name = OW_xinjing value = 8 }
+		}
+		else_if = { 
+			limit = { var:OW_xinjing = 8 }
+			remove_variable = OW_xinjing
+			set_variable = { name = OW_xinjing value = 9 }
+		}
+		else_if = { 
+			limit = { var:OW_xinjing = 9 }
+			remove_variable = OW_xinjing
+			set_variable = { name = OW_xinjing value = 10 }
+		}
+		trigger_event = OW_XZ_tupofankui.0002
+	}
+}
+
+OW_XZ_tupofankui.0002 = {
+	type = character_event
+	theme = default
+	title = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { var:OW_xinjing = 2 }
+				desc = OW_XZ_tupofankui.0001.name_1
+			}
+			triggered_desc = {
+				trigger = { var:OW_xinjing = 3 }
+				desc = OW_XZ_tupofankui.0001.name_2
+			}
+			triggered_desc = {
+				trigger = { var:OW_xinjing = 4 }
+				desc = OW_XZ_tupofankui.0001.name_3
+			}
+			triggered_desc = {
+				trigger = { var:OW_xinjing = 5 }
+				desc = OW_XZ_tupofankui.0001.name_4
+			}
+			triggered_desc = {
+				trigger = { var:OW_xinjing = 6 }
+				desc = OW_XZ_tupofankui.0001.name_5
+			}
+			triggered_desc = {
+				trigger = { var:OW_xinjing = 7 }
+				desc = OW_XZ_tupofankui.0001.name_6
+			}
+			triggered_desc = {
+				trigger = { var:OW_xinjing = 8 }
+				desc = OW_XZ_tupofankui.0001.name_7
+			}
+			triggered_desc = {
+				trigger = { var:OW_xinjing = 9 }
+				desc = OW_XZ_tupofankui.0001.name_8
+			}
+			triggered_desc = {
+				trigger = { var:OW_xinjing = 10 }
+				desc = OW_XZ_tupofankui.0001.name_9
+			}
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { var:OW_xinjing = 2 }
+				desc = OW_XZ_tupofankui.0001.desc_1
+			}
+			triggered_desc = {
+				trigger = { var:OW_xinjing = 3 }
+				desc = OW_XZ_tupofankui.0001.desc_2
+			}
+			triggered_desc = {
+				trigger = { var:OW_xinjing = 4 }
+				desc = OW_XZ_tupofankui.0001.desc_3
+			}
+			triggered_desc = {
+				trigger = { var:OW_xinjing = 5 }
+				desc = OW_XZ_tupofankui.0001.desc_4
+			}
+			triggered_desc = {
+				trigger = { var:OW_xinjing = 6 }
+				desc = OW_XZ_tupofankui.0001.desc_5
+			}
+			triggered_desc = {
+				trigger = { var:OW_xinjing = 7 }
+				desc = OW_XZ_tupofankui.0001.desc_6
+			}
+			triggered_desc = {
+				trigger = { var:OW_xinjing = 8 }
+				desc = OW_XZ_tupofankui.0001.desc_7
+			}
+			triggered_desc = {
+				trigger = { var:OW_xinjing = 9 }
+				desc = OW_XZ_tupofankui.0001.desc_8
+			}
+			triggered_desc = {
+				trigger = { var:OW_xinjing = 10 }
+				desc = OW_XZ_tupofankui.0001.desc_9
+			}
+		}
+	}
+	left_portrait = {
+		character = scope:actor
+		animation = shock
+	}
+	immediate = {
+		if = { 
+			limit = { var:OW_xinjing = 2 }
+			remove_variable = OW_ganwu_tupo
+			remove_variable = OW_lilian_tupo
+			set_variable = { name = OW_ganwu_tupo value = OW_Base_ganwu_max_2 }
+			set_variable = { name = OW_lilian_tupo value = OW_Base_lilian_max_2 }
+		}
+		else_if = { 
+			limit = { var:OW_xinjing = 3 }
+			remove_variable = OW_ganwu_tupo
+			remove_variable = OW_lilian_tupo
+			set_variable = { name = OW_ganwu_tupo value = OW_Base_ganwu_max_3 }
+			set_variable = { name = OW_lilian_tupo value = OW_Base_lilian_max_3 }
+		}
+		else_if = { 
+			limit = { var:OW_xinjing = 4 }
+			remove_variable = OW_ganwu_tupo
+			remove_variable = OW_lilian_tupo
+			set_variable = { name = OW_ganwu_tupo value = OW_Base_ganwu_max_4 }
+			set_variable = { name = OW_lilian_tupo value = OW_Base_lilian_max_4 }
+		}
+		else_if = { 
+			limit = { var:OW_xinjing = 5 }
+			remove_variable = OW_ganwu_tupo
+			remove_variable = OW_lilian_tupo
+			set_variable = { name = OW_ganwu_tupo value = OW_Base_ganwu_max_5 }
+			set_variable = { name = OW_lilian_tupo value = OW_Base_lilian_max_5 }
+		}
+		else_if = { 
+			limit = { var:OW_xinjing = 6 }
+			remove_variable = OW_ganwu_tupo
+			remove_variable = OW_lilian_tupo
+			set_variable = { name = OW_ganwu_tupo value = OW_Base_ganwu_max_6 }
+			set_variable = { name = OW_lilian_tupo value = OW_Base_lilian_max_6 }
+		}
+		else_if = { 
+			limit = { var:OW_xinjing = 7 }
+			remove_variable = OW_ganwu_tupo
+			remove_variable = OW_lilian_tupo
+			set_variable = { name = OW_ganwu_tupo value = OW_Base_ganwu_max_7 }
+			set_variable = { name = OW_lilian_tupo value = OW_Base_lilian_max_7 }
+		}
+		else_if = { 
+			limit = { var:OW_xinjing = 8 }
+			remove_variable = OW_ganwu_tupo
+			remove_variable = OW_lilian_tupo
+			set_variable = { name = OW_ganwu_tupo value = OW_Base_ganwu_max_8 }
+			set_variable = { name = OW_lilian_tupo value = OW_Base_lilian_max_8 }
+		}
+		else_if = { 
+			limit = { var:OW_xinjing = 9 }
+			remove_variable = OW_ganwu_tupo
+			remove_variable = OW_lilian_tupo
+			set_variable = { name = OW_ganwu_tupo value = OW_Base_ganwu_max_9 }
+			set_variable = { name = OW_lilian_tupo value = OW_Base_lilian_max_9 }
+		}
+	}
+	option = {
+		name = OW_XZ_tupofankui.0001.t
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+OW_XZ_tupofankui.0003 = {
+	type = character_event
+	hidden = yes
+	immediate = {
+		if = {
+			limit = { var:OW_jingjie = 1 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 2 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 2 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 3 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 3 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 4 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 4 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 5 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 5 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 6 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 6 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 7 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 7 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 8 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 8 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 9 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 9 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 10 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 10 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 11 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 11 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 12 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 12 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 13 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 13 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 14 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 14 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 15 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 15 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 16 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 16 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 17 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 17 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 18 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 18 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 19 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 19 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 20 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 20 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 21 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 21 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 22 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 22 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 23 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 23 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 24 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 24 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 25 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 25 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 26 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 26 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 27 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 27 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 28 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 28 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 29 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 29 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 30 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 30 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 31 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 31 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 32 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 32 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 33 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 33 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 34 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 34 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 35 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 35 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 36 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 36 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 37 }
+		}
+		trigger_event = OW_XZ_tupofankui.0004
+	}
+}
+
+OW_XZ_tupofankui.0004 = {
+	type = character_event
+	theme = default
+	title = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 2 }
+				desc = OW_XZ_tupofankui.0004.name_1
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 3 }
+				desc = OW_XZ_tupofankui.0004.name_2
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 4 }
+				desc = OW_XZ_tupofankui.0004.name_3
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 5 }
+				desc = OW_XZ_tupofankui.0004.name_4
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 6 }
+				desc = OW_XZ_tupofankui.0004.name_5
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 7 }
+				desc = OW_XZ_tupofankui.0004.name_6
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 8 }
+				desc = OW_XZ_tupofankui.0004.name_7
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 9 }
+				desc = OW_XZ_tupofankui.0004.name_8
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 10 }
+				desc = OW_XZ_tupofankui.0004.name_9
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 11 }
+				desc = OW_XZ_tupofankui.0004.name_10
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 12 }
+				desc = OW_XZ_tupofankui.0004.name_11
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 13 }
+				desc = OW_XZ_tupofankui.0004.name_12
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 14 }
+				desc = OW_XZ_tupofankui.0004.name_13
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 15 }
+				desc = OW_XZ_tupofankui.0004.name_14
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 16 }
+				desc = OW_XZ_tupofankui.0004.name_15
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 17 }
+				desc = OW_XZ_tupofankui.0004.name_16
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 18 }
+				desc = OW_XZ_tupofankui.0004.name_17
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 19 }
+				desc = OW_XZ_tupofankui.0004.name_18
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 20 }
+				desc = OW_XZ_tupofankui.0004.name_19
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 21 }
+				desc = OW_XZ_tupofankui.0004.name_20
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 22 }
+				desc = OW_XZ_tupofankui.0004.name_21
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 23 }
+				desc = OW_XZ_tupofankui.0004.name_22
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 24 }
+				desc = OW_XZ_tupofankui.0004.name_23
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 25 }
+				desc = OW_XZ_tupofankui.0004.name_24
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 26 }
+				desc = OW_XZ_tupofankui.0004.name_25
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 27 }
+				desc = OW_XZ_tupofankui.0004.name_26
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 28 }
+				desc = OW_XZ_tupofankui.0004.name_27
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 29 }
+				desc = OW_XZ_tupofankui.0004.name_28
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 30 }
+				desc = OW_XZ_tupofankui.0004.name_29
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 31 }
+				desc = OW_XZ_tupofankui.0004.name_30
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 32 }
+				desc = OW_XZ_tupofankui.0004.name_31
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 33 }
+				desc = OW_XZ_tupofankui.0004.name_32
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 34 }
+				desc = OW_XZ_tupofankui.0004.name_33
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 35 }
+				desc = OW_XZ_tupofankui.0004.name_34
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 36 }
+				desc = OW_XZ_tupofankui.0004.name_35
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 37 }
+				desc = OW_XZ_tupofankui.0004.name_36
+			}
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 2 }
+				desc = OW_XZ_tupofankui.0004.desc_1
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 3 }
+				desc = OW_XZ_tupofankui.0004.desc_2
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 4 }
+				desc = OW_XZ_tupofankui.0004.desc_3
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 5 }
+				desc = OW_XZ_tupofankui.0004.desc_4
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 6 }
+				desc = OW_XZ_tupofankui.0004.desc_5
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 7 }
+				desc = OW_XZ_tupofankui.0004.desc_6
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 8 }
+				desc = OW_XZ_tupofankui.0004.desc_7
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 9 }
+				desc = OW_XZ_tupofankui.0004.desc_8
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 10 }
+				desc = OW_XZ_tupofankui.0004.desc_9
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 11 }
+				desc = OW_XZ_tupofankui.0004.desc_10
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 12 }
+				desc = OW_XZ_tupofankui.0004.desc_11
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 13 }
+				desc = OW_XZ_tupofankui.0004.desc_12
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 14 }
+				desc = OW_XZ_tupofankui.0004.desc_13
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 15 }
+				desc = OW_XZ_tupofankui.0004.desc_14
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 16 }
+				desc = OW_XZ_tupofankui.0004.desc_15
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 17 }
+				desc = OW_XZ_tupofankui.0004.desc_16
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 18 }
+				desc = OW_XZ_tupofankui.0004.desc_17
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 19 }
+				desc = OW_XZ_tupofankui.0004.desc_18
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 20 }
+				desc = OW_XZ_tupofankui.0004.desc_19
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 21 }
+				desc = OW_XZ_tupofankui.0004.desc_20
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 22 }
+				desc = OW_XZ_tupofankui.0004.desc_21
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 23 }
+				desc = OW_XZ_tupofankui.0004.desc_22
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 24 }
+				desc = OW_XZ_tupofankui.0004.desc_23
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 25 }
+				desc = OW_XZ_tupofankui.0004.desc_24
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 26 }
+				desc = OW_XZ_tupofankui.0004.desc_25
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 27 }
+				desc = OW_XZ_tupofankui.0004.desc_26
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 28 }
+				desc = OW_XZ_tupofankui.0004.desc_27
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 29 }
+				desc = OW_XZ_tupofankui.0004.desc_28
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 30 }
+				desc = OW_XZ_tupofankui.0004.desc_29
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 31 }
+				desc = OW_XZ_tupofankui.0004.desc_30
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 32 }
+				desc = OW_XZ_tupofankui.0004.desc_31
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 33 }
+				desc = OW_XZ_tupofankui.0004.desc_32
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 34 }
+				desc = OW_XZ_tupofankui.0004.desc_33
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 35 }
+				desc = OW_XZ_tupofankui.0004.desc_34
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 36 }
+				desc = OW_XZ_tupofankui.0004.desc_35
+			}
+			triggered_desc = {
+				trigger = { var:OW_jingjie = 37 }
+				desc = OW_XZ_tupofankui.0004.desc_36
+			}
+		}
+	}
+	left_portrait = {
+		character = scope:actor
+		animation = shock
+	}
+	option = {
+		name = OW_XZ_tupofankui.0004.t
+		ai_chance = {
+			base = 100
+		}
+		OW_XZ_Effect_jinjie = yes
+	}
+}

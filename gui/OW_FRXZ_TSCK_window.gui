@@ -1,0 +1,604 @@
+﻿window = {
+	name = "OW_FRXZ_TSCK_window"
+	layer = middle
+	parentanchor = center
+	size = { 45% 46% }
+	using = Window_Decoration_Spike
+	using = Window_Background_Popup
+
+	state = {
+		name = _show
+		position = { 0 0 }
+		using = Animation_FadeIn_Quick
+		using = Sound_WindowShow_Standard
+		
+		on_start = "[GetVariableSystem.Set( 'OW_FRXZ_TSCK_window_left_window_open', 'true' )]"
+	}
+	state = {
+		name = _hide
+		position = { -60 0 }
+		using = Animation_FadeOut_Quick
+		using = Sound_WindowHide_Standard
+		
+		on_start = "[GetVariableSystem.Clear( 'OW_FRXZ_TSCK_window_left_window_open')]"
+	}
+	vbox = {
+		header_pattern = {
+			name = "OW_FRXZ_TSCK_window_header"
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = fixed
+			blockoverride "size"
+			{
+				size = { 100% 100% }
+			}
+			blockoverride "header_text"
+			{
+				text = "OW_FRXZ_TSCK_window_TEXT"
+				using = tooltip_es
+				state = {
+					name = "OW_FRXZ_TSCK_window_faith_view_refresh"
+					using = Animation_Refresh_FadeOut
+				}
+				state = {
+					using = Animation_Refresh_FadeIn
+				}
+			}
+			blockoverride "button_close"
+			{
+				onclick = "[ExecuteConsoleCommand('gui.ClearWidgets OW_FRXZ_TSCK_window')]"
+				onclick = "[GetVariableSystem.Toggle('OW_FRXZ_TSCK_window_open')]"
+			}
+		}
+		scrollbox = {
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = expanding
+			blockoverride "scrollbox_content"
+			{
+				hbox = {
+					spacing = 15
+					###左
+					vbox = {
+						button_standard = {
+							text = "OW_FRXZ_TSCK_window_ShanDong"
+							default_format = "#high"
+							fontsize = 50
+							size = { 200 300 }
+							background = {
+								texture = "gfx/interface/icons/OW/p05.dds"
+							}
+							datacontext = "[GetScriptedGui('OW_FRXZ_TSCK_window_ZUO_KG_ShanDong')]"
+							enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ExecuteConsoleCommand('gui.ClearWidgets OW_FRXZ_TSCK_window')]"
+							onclick = "[GetVariableSystem.Toggle('OW_FRXZ_TSCK_window_open')]"
+						}
+						button_standard = {
+							text = "OW_FRXZ_TSCK_window_ShiBei"
+							default_format = "#high"
+							fontsize = 50
+							size = { 200 300 }
+							background = {
+								texture = "gfx/interface/icons/OW/p05.dds"
+							}
+							datacontext = "[GetScriptedGui('OW_FRXZ_TSCK_window_ZUO_KG_ShiBei')]"
+							enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ExecuteConsoleCommand('gui.ClearWidgets OW_FRXZ_TSCK_window')]"
+							onclick = "[GetVariableSystem.Toggle('OW_FRXZ_TSCK_window_open')]"
+						}
+						button_standard = {
+							text = "OW_FRXZ_TSCK_window_SenLin"
+							default_format = "#high"
+							fontsize = 50
+							size = { 200 300 }
+							background = {
+								texture = "gfx/interface/icons/OW/p05.dds"
+							}
+							datacontext = "[GetScriptedGui('OW_FRXZ_TSCK_window_ZUO_KG_SenLin')]"
+							enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ExecuteConsoleCommand('gui.ClearWidgets OW_FRXZ_TSCK_window')]"
+							onclick = "[GetVariableSystem.Toggle('OW_FRXZ_TSCK_window_open')]"
+						}
+						button_standard = {
+							text = "OW_FRXZ_TSCK_window_ChengZhen"
+							default_format = "#high"
+							fontsize = 50
+							size = { 200 300 }
+							background = {
+								texture = "gfx/interface/icons/OW/p05.dds"
+							}
+							datacontext = "[GetScriptedGui('OW_FRXZ_TSCK_window_ZUO_KG_ChengZhen')]"
+							enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ExecuteConsoleCommand('gui.createwidget gui/custom_windows/OW_FRXZ_JYCK_window.gui OW_FRXZ_JYCK_window')]"
+						}
+						button_standard = {
+							text = "OW_FRXZ_TSCK_window_ChunZi"
+							default_format = "#high"
+							fontsize = 50
+							size = { 200 300 }
+							background = {
+								texture = "gfx/interface/icons/OW/p05.dds"
+							}
+							datacontext = "[GetScriptedGui('OW_FRXZ_TSCK_window_ZUO_KG_ChunZi')]"
+							enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ExecuteConsoleCommand('gui.ClearWidgets OW_FRXZ_TSCK_window')]"
+							onclick = "[GetVariableSystem.Toggle('OW_FRXZ_TSCK_window_open')]"
+						}
+						button_standard = {
+							text = "OW_FRXZ_TSCK_window_JiuGuan"
+							default_format = "#high"
+							fontsize = 50
+							size = { 200 300 }
+							background = {
+								texture = "gfx/interface/icons/OW/p05.dds"
+							}
+							datacontext = "[GetScriptedGui('OW_FRXZ_TSCK_window_ZUO_KG_JiuGuan')]"
+							enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ExecuteConsoleCommand('gui.ClearWidgets OW_FRXZ_TSCK_window')]"
+							onclick = "[GetVariableSystem.Toggle('OW_FRXZ_TSCK_window_open')]"
+						}
+						button_standard = {
+							text = "OW_FRXZ_TSCK_window_WeiZhi"
+							default_format = "#high"
+							fontsize = 50
+							size = { 200 300 }
+							background = {
+								texture = "gfx/interface/icons/OW/p05.dds"
+							}
+							datacontext = "[GetScriptedGui('OW_FRXZ_TSCK_window_ZUO_KG_WeiZhi')]"
+							enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ExecuteConsoleCommand('gui.ClearWidgets OW_FRXZ_TSCK_window')]"
+							onclick = "[GetVariableSystem.Toggle('OW_FRXZ_TSCK_window_open')]"
+						}
+						text_single = {
+							text = "OW_FRXZ_TSCK_window_QIANWANG"
+							fontsize = 20
+							fontsize_min = 10
+							align = center|nobaseline
+						}
+					}
+					######前
+					vbox = {
+						button_standard = {
+							text = "OW_FRXZ_TSCK_window_ShanDong"
+							default_format = "#high"
+							fontsize = 50
+							size = { 200 300 }
+							background = {
+								texture = "gfx/interface/icons/OW/p05.dds"
+							}
+							datacontext = "[GetScriptedGui('OW_FRXZ_TSCK_window_QIAN_KG_ShanDong')]"
+							enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ExecuteConsoleCommand('gui.ClearWidgets OW_FRXZ_TSCK_window')]"
+							onclick = "[GetVariableSystem.Toggle('OW_FRXZ_TSCK_window_open')]"
+						}
+						button_standard = {
+							text = "OW_FRXZ_TSCK_window_ShiBei"
+							default_format = "#high"
+							fontsize = 50
+							size = { 200 300 }
+							background = {
+								texture = "gfx/interface/icons/OW/p05.dds"
+							}
+							datacontext = "[GetScriptedGui('OW_FRXZ_TSCK_window_QIAN_KG_ShiBei')]"
+							enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ExecuteConsoleCommand('gui.ClearWidgets OW_FRXZ_TSCK_window')]"
+							onclick = "[GetVariableSystem.Toggle('OW_FRXZ_TSCK_window_open')]"
+						}
+						button_standard = {
+							text = "OW_FRXZ_TSCK_window_SenLin"
+							default_format = "#high"
+							fontsize = 50
+							size = { 200 300 }
+							background = {
+								texture = "gfx/interface/icons/OW/p05.dds"
+							}
+							datacontext = "[GetScriptedGui('OW_FRXZ_TSCK_window_QIAN_KG_SenLin')]"
+							enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ExecuteConsoleCommand('gui.ClearWidgets OW_FRXZ_TSCK_window')]"
+							onclick = "[GetVariableSystem.Toggle('OW_FRXZ_TSCK_window_open')]"
+						}
+						button_standard = {
+							text = "OW_FRXZ_TSCK_window_ChengZhen"
+							default_format = "#high"
+							fontsize = 50
+							size = { 200 300 }
+							background = {
+								texture = "gfx/interface/icons/OW/p05.dds"
+							}
+							datacontext = "[GetScriptedGui('OW_FRXZ_TSCK_window_QIAN_KG_ChengZhen')]"
+							enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ExecuteConsoleCommand('gui.createwidget gui/OW_FRXZ_JYCK_window.gui OW_FRXZ_JYCK_window')]"
+						}
+						button_standard = {
+							text = "OW_FRXZ_TSCK_window_ChunZi"
+							default_format = "#high"
+							fontsize = 50
+							size = { 200 300 }
+							background = {
+								texture = "gfx/interface/icons/OW/p05.dds"
+							}
+							datacontext = "[GetScriptedGui('OW_FRXZ_TSCK_window_QIAN_KG_ChunZi')]"
+							enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ExecuteConsoleCommand('gui.ClearWidgets OW_FRXZ_TSCK_window')]"
+							onclick = "[GetVariableSystem.Toggle('OW_FRXZ_TSCK_window_open')]"
+						}
+						button_standard = {
+							text = "OW_FRXZ_TSCK_window_JiuGuan"
+							default_format = "#high"
+							fontsize = 50
+							size = { 200 300 }
+							background = {
+								texture = "gfx/interface/icons/OW/p05.dds"
+							}
+							datacontext = "[GetScriptedGui('OW_FRXZ_TSCK_window_QIAN_KG_JiuGuan')]"
+							enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ExecuteConsoleCommand('gui.ClearWidgets OW_FRXZ_TSCK_window')]"
+							onclick = "[GetVariableSystem.Toggle('OW_FRXZ_TSCK_window_open')]"
+						}
+						button_standard = {
+							text = "OW_FRXZ_TSCK_window_WeiZhi"
+							default_format = "#high"
+							fontsize = 50
+							size = { 200 300 }
+							background = {
+								texture = "gfx/interface/icons/OW/p05.dds"
+							}
+							datacontext = "[GetScriptedGui('OW_FRXZ_TSCK_window_QIAN_KG_WeiZhi')]"
+							enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ExecuteConsoleCommand('gui.ClearWidgets OW_FRXZ_TSCK_window')]"
+							onclick = "[GetVariableSystem.Toggle('OW_FRXZ_TSCK_window_open')]"
+						}
+						text_single = {
+							text = "OW_FRXZ_TSCK_window_QIANWANG"
+							fontsize = 20
+							fontsize_min = 10
+							align = center|nobaseline
+						}
+					}
+					######后
+					vbox = {
+						button_standard = {
+							text = "OW_FRXZ_TSCK_window_ShanDong"
+							default_format = "#high"
+							fontsize = 50
+							size = { 200 300 }
+							background = {
+								texture = "gfx/interface/icons/OW/p05.dds"
+							}
+							datacontext = "[GetScriptedGui('OW_FRXZ_TSCK_window_HOU_KG_ShanDong')]"
+							enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ExecuteConsoleCommand('gui.ClearWidgets OW_FRXZ_TSCK_window')]"
+							onclick = "[GetVariableSystem.Toggle('OW_FRXZ_TSCK_window_open')]"
+						}
+						button_standard = {
+							text = "OW_FRXZ_TSCK_window_ShiBei"
+							default_format = "#high"
+							fontsize = 50
+							size = { 200 300 }
+							background = {
+								texture = "gfx/interface/icons/OW/p05.dds"
+							}
+							datacontext = "[GetScriptedGui('OW_FRXZ_TSCK_window_HOU_KG_ShiBei')]"
+							enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ExecuteConsoleCommand('gui.ClearWidgets OW_FRXZ_TSCK_window')]"
+							onclick = "[GetVariableSystem.Toggle('OW_FRXZ_TSCK_window_open')]"
+						}
+						button_standard = {
+							text = "OW_FRXZ_TSCK_window_SenLin"
+							default_format = "#high"
+							fontsize = 50
+							size = { 200 300 }
+							background = {
+								texture = "gfx/interface/icons/OW/p05.dds"
+							}
+							datacontext = "[GetScriptedGui('OW_FRXZ_TSCK_window_HOU_KG_SenLin')]"
+							enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ExecuteConsoleCommand('gui.ClearWidgets OW_FRXZ_TSCK_window')]"
+							onclick = "[GetVariableSystem.Toggle('OW_FRXZ_TSCK_window_open')]"
+						}
+						button_standard = {
+							text = "OW_FRXZ_TSCK_window_ChengZhen"
+							default_format = "#high"
+							fontsize = 50
+							size = { 200 300 }
+							background = {
+								texture = "gfx/interface/icons/OW/p05.dds"
+							}
+							datacontext = "[GetScriptedGui('OW_FRXZ_TSCK_window_HOU_KG_ChengZhen')]"
+							enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ExecuteConsoleCommand('gui.createwidget gui/OW_FRXZ_JYCK_window.gui OW_FRXZ_JYCK_window')]"
+						}
+						button_standard = {
+							text = "OW_FRXZ_TSCK_window_ChunZi"
+							default_format = "#high"
+							fontsize = 50
+							size = { 200 300 }
+							background = {
+								texture = "gfx/interface/icons/OW/p05.dds"
+							}
+							datacontext = "[GetScriptedGui('OW_FRXZ_TSCK_window_HOU_KG_ChunZi')]"
+							enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ExecuteConsoleCommand('gui.ClearWidgets OW_FRXZ_TSCK_window')]"
+							onclick = "[GetVariableSystem.Toggle('OW_FRXZ_TSCK_window_open')]"
+						}
+						button_standard = {
+							text = "OW_FRXZ_TSCK_window_JiuGuan"
+							default_format = "#high"
+							fontsize = 50
+							size = { 200 300 }
+							background = {
+								texture = "gfx/interface/icons/OW/p05.dds"
+							}
+							datacontext = "[GetScriptedGui('OW_FRXZ_TSCK_window_HOU_KG_JiuGuan')]"
+							enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ExecuteConsoleCommand('gui.ClearWidgets OW_FRXZ_TSCK_window')]"
+							onclick = "[GetVariableSystem.Toggle('OW_FRXZ_TSCK_window_open')]"
+						}
+						button_standard = {
+							text = "OW_FRXZ_TSCK_window_WeiZhi"
+							default_format = "#high"
+							fontsize = 50
+							size = { 200 300 }
+							background = {
+								texture = "gfx/interface/icons/OW/p05.dds"
+							}
+							datacontext = "[GetScriptedGui('OW_FRXZ_TSCK_window_HOU_KG_WeiZhi')]"
+							enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ExecuteConsoleCommand('gui.ClearWidgets OW_FRXZ_TSCK_window')]"
+							onclick = "[GetVariableSystem.Toggle('OW_FRXZ_TSCK_window_open')]"
+						}
+						text_single = {
+							text = "OW_FRXZ_TSCK_window_QIANWANG"
+							fontsize = 20
+							fontsize_min = 10
+							align = center|nobaseline
+						}
+					}
+					######右
+					vbox = {
+						button_standard = {
+							text = "OW_FRXZ_TSCK_window_ShanDong"
+							default_format = "#high"
+							fontsize = 50
+							size = { 200 300 }
+							background = {
+								texture = "gfx/interface/icons/OW/p05.dds"
+							}
+							datacontext = "[GetScriptedGui('OW_FRXZ_TSCK_window_YOU_KG_ShanDong')]"
+							enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ExecuteConsoleCommand('gui.ClearWidgets OW_FRXZ_TSCK_window')]"
+							onclick = "[GetVariableSystem.Toggle('OW_FRXZ_TSCK_window_open')]"
+						}
+						button_standard = {
+							text = "OW_FRXZ_TSCK_window_ShiBei"
+							default_format = "#high"
+							fontsize = 50
+							size = { 200 300 }
+							background = {
+								texture = "gfx/interface/icons/OW/p05.dds"
+							}
+							datacontext = "[GetScriptedGui('OW_FRXZ_TSCK_window_YOU_KG_ShiBei')]"
+							enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ExecuteConsoleCommand('gui.ClearWidgets OW_FRXZ_TSCK_window')]"
+							onclick = "[GetVariableSystem.Toggle('OW_FRXZ_TSCK_window_open')]"
+						}
+						button_standard = {
+							text = "OW_FRXZ_TSCK_window_SenLin"
+							default_format = "#high"
+							fontsize = 50
+							size = { 200 300 }
+							background = {
+								texture = "gfx/interface/icons/OW/p05.dds"
+							}
+							datacontext = "[GetScriptedGui('OW_FRXZ_TSCK_window_YOU_KG_SenLin')]"
+							enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ExecuteConsoleCommand('gui.ClearWidgets OW_FRXZ_TSCK_window')]"
+							onclick = "[GetVariableSystem.Toggle('OW_FRXZ_TSCK_window_open')]"
+						}
+						button_standard = {
+							text = "OW_FRXZ_TSCK_window_ChengZhen"
+							default_format = "#high"
+							fontsize = 50
+							size = { 200 300 }
+							background = {
+								texture = "gfx/interface/icons/OW/p05.dds"
+							}
+							datacontext = "[GetScriptedGui('OW_FRXZ_TSCK_window_YOU_KG_ChengZhen')]"
+							enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ExecuteConsoleCommand('gui.createwidget gui/OW_FRXZ_JYCK_window.gui OW_FRXZ_JYCK_window')]"
+						}
+						button_standard = {
+							text = "OW_FRXZ_TSCK_window_ChunZi"
+							default_format = "#high"
+							fontsize = 50
+							size = { 200 300 }
+							background = {
+								texture = "gfx/interface/icons/OW/p05.dds"
+							}
+							datacontext = "[GetScriptedGui('OW_FRXZ_TSCK_window_YOU_KG_ChunZi')]"
+							enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ExecuteConsoleCommand('gui.ClearWidgets OW_FRXZ_TSCK_window')]"
+							onclick = "[GetVariableSystem.Toggle('OW_FRXZ_TSCK_window_open')]"
+						}
+						button_standard = {
+							text = "OW_FRXZ_TSCK_window_JiuGuan"
+							default_format = "#high"
+							fontsize = 50
+							size = { 200 300 }
+							background = {
+								texture = "gfx/interface/icons/OW/p05.dds"
+							}
+							datacontext = "[GetScriptedGui('OW_FRXZ_TSCK_window_YOU_KG_JiuGuan')]"
+							enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ExecuteConsoleCommand('gui.ClearWidgets OW_FRXZ_TSCK_window')]"
+							onclick = "[GetVariableSystem.Toggle('OW_FRXZ_TSCK_window_open')]"
+						}
+						button_standard = {
+							text = "OW_FRXZ_TSCK_window_WeiZhi"
+							default_format = "#high"
+							fontsize = 50
+							size = { 200 300 }
+							background = {
+								texture = "gfx/interface/icons/OW/p05.dds"
+							}
+							datacontext = "[GetScriptedGui('OW_FRXZ_TSCK_window_YOU_KG_WeiZhi')]"
+							enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onclick = "[ExecuteConsoleCommand('gui.ClearWidgets OW_FRXZ_TSCK_window')]"
+							onclick = "[GetVariableSystem.Toggle('OW_FRXZ_TSCK_window_open')]"
+						}
+						text_single = {
+							text = "OW_FRXZ_TSCK_window_QIANWANG"
+							fontsize = 20
+							fontsize_min = 10
+							align = center|nobaseline
+						}
+					}
+				}
+			}
+		}
+		scrollbox = {
+			layoutpolicy_horizontal = expanding
+			blockoverride "scrollbox_content"
+			{
+				vbox = {
+					hbox = {
+						spacing = 50
+						vbox = {
+							text_single = {
+								text = "OW_FRXZ_TSCK_ZS_TXT_1"
+								fontsize = 12
+								fontsize_min = 10
+								align = center|nobaseline
+							}
+							text_single = {
+								text = "OW_FRXZ_TSCK_ZS_TXT_2"
+								fontsize = 12
+								fontsize_min = 10
+								align = center|nobaseline
+							}
+						}
+						vbox = {
+							text_single = {
+								text = "OW_FRXZ_TSCK_ZS_TXT_3"
+								fontsize = 12
+								fontsize_min = 10
+								align = center|nobaseline
+							}
+							text_single = {
+								text = "OW_FRXZ_TSCK_ZS_TXT_4"
+								fontsize = 12
+								fontsize_min = 10
+								align = center|nobaseline
+							}
+						}
+						vbox = {
+							text_single = {
+								text = "OW_FRXZ_TSCK_ZS_TXT_5"
+								fontsize = 12
+								fontsize_min = 10
+								align = center|nobaseline
+							}
+							text_single = {
+								text = "OW_FRXZ_TSCK_ZS_TXT_6"
+								fontsize = 12
+								fontsize_min = 10
+								align = center|nobaseline
+							}
+						}
+						vbox = {
+							text_single = {
+								text = "OW_FRXZ_TSCK_ZS_TXT_7"
+								fontsize = 12
+								fontsize_min = 10
+								align = center|nobaseline
+							}
+							text_single = {
+								text = "OW_FRXZ_TSCK_ZS_TXT_8"
+								fontsize = 12
+								fontsize_min = 10
+								align = center|nobaseline
+							}
+						}
+						vbox = {
+							text_single = {
+								text = "OW_FRXZ_TSCK_ZS_TXT_9"
+								fontsize = 12
+								fontsize_min = 10
+								align = center|nobaseline
+							}
+							text_single = {
+								text = "OW_FRXZ_TSCK_ZS_TXT_10"
+								fontsize = 12
+								fontsize_min = 10
+								align = center|nobaseline
+							}
+						}
+					}
+					vbox = {
+						text_single = {
+							text = "OW_FRXZ_TSCK_window_BUSHU"
+							fontsize = 20
+							fontsize_min = 10
+							align = center|nobaseline
+						}
+					}
+				}
+			}
+		}
+	}
+}

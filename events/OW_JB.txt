@@ -1,0 +1,105 @@
+﻿namespace = OW_XZ_dijimenpai
+
+OW_XZ_dijimenpai.01 = {
+	type = character_event
+	hidden = yes
+	immediate = {
+		random_list = {
+			10 = {
+				add_character_flag = OW_XZ_shengliandian
+				add_character_flag = OW_XZ_MJ_ZengShaShu
+				add_character_flag = OW_XZ_GF_ZengShaShu
+			}
+			10 = {
+				add_character_flag = OW_XZ_xuanbingdao
+				add_character_flag = OW_XZ_MJ_ZengShaShu
+				add_character_flag = OW_XZ_GF_ZengShaShu
+			}
+			10 = {
+				add_character_flag = OW_XZ_hehuanmen
+				add_character_flag = OW_XZ_MJ_ZengShaShu
+				add_character_flag = OW_XZ_GF_ZengShaShu
+			}
+			10 = {
+				add_character_flag = OW_XZ_laoshanpai
+				add_character_flag = OW_XZ_MJ_ZengShaShu
+				add_character_flag = OW_XZ_GF_ZengShaShu
+			}
+			10 = {
+				add_character_flag = OW_XZ_qixianggong
+				add_character_flag = OW_XZ_MJ_ZengShaShu
+				add_character_flag = OW_XZ_GF_ZengShaShu
+			}
+			10 = {
+				add_character_flag = OW_XZ_heizemoku
+				add_character_flag = OW_XZ_MJ_ZengShaShu
+				add_character_flag = OW_XZ_GF_ZengShaShu
+			}
+			10 = {
+				add_character_flag = OW_XZ_baihuojiao
+				add_character_flag = OW_XZ_MJ_ZengShaShu
+				add_character_flag = OW_XZ_GF_ZengShaShu
+			}
+			10 = {
+				add_character_flag = OW_XZ_shenshuigong
+				add_character_flag = OW_XZ_MJ_ZengShaShu
+				add_character_flag = OW_XZ_GF_ZengShaShu
+			}
+			10 = {
+				add_character_flag = OW_XZ_yushoumen
+				add_character_flag = OW_XZ_MJ_ZengShaShu
+				add_character_flag = OW_XZ_GF_ZengShaShu
+			}
+			10 = {
+				add_character_flag = OW_XZ_luochadian
+				add_character_flag = OW_XZ_MJ_ZengShaShu
+				add_character_flag = OW_XZ_GF_ZengShaShu
+			}
+
+
+			##########以下为暂用，优化，并且清理BUG
+
+			10 = {
+				add_character_flag = OW_XZ_yinyangxuegong
+				add_character_flag = OW_XZ_MJ_ZengShaShu
+				add_character_flag = OW_XZ_GF_ZengShaShu
+			}
+			10 = {
+				add_character_flag = OW_XZ_guanqizhe
+				add_character_flag = OW_XZ_MJ_ZengShaShu
+				add_character_flag = OW_XZ_GF_ZengShaShu
+			}
+			10 = {
+				add_character_flag = OW_XZ_lingxiaogei
+				add_character_flag = OW_XZ_MJ_ZengShaShu
+				add_character_flag = OW_XZ_GF_ZengShaShu
+			}
+			10 = {
+				add_character_flag = OW_XZ_shengongmen
+				add_character_flag = OW_XZ_MJ_ZengShaShu
+				add_character_flag = OW_XZ_GF_ZengShaShu
+			}
+			10 = {
+				add_character_flag = OW_XZ_shushanpai
+				add_character_flag = OW_XZ_MJ_ZengShaShu
+				add_character_flag = OW_XZ_GF_ZengShaShu
+			}
+			10 = {
+				add_character_flag = OW_XZ_shenjige
+				add_character_flag = OW_XZ_MJ_ZengShaShu
+				add_character_flag = OW_XZ_GF_ZengShaShu
+			}
+			10 = {
+				add_character_flag = OW_XZ_zhenwuge
+				add_character_flag = OW_XZ_MJ_ZengShaShu
+				add_character_flag = OW_XZ_GF_ZengShaShu
+			}
+			10 = {
+				add_character_flag = OW_XZ_qingfengmen
+				add_character_flag = OW_XZ_MJ_ZengShaShu
+				add_character_flag = OW_XZ_GF_ZengShaShu
+			}
+		}
+	}
+	after = { trigger_event = OW_JB_XZ_shuomingshu.01 }
+}

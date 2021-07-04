@@ -1,0 +1,17 @@
+﻿#database (数据库) 2020-11-19 @inc comple
+##########################################################
+namespace = OW
+OW.0004 = {
+	type = character_event
+	title = PLAYER_XZjingjie.0001.t
+	desc = PLAYER_XZjingjie.0001.desc
+	theme = hunting
+#这个事件id，不能删除，这是接口id，往外延伸扩展，都可以从这里开始	
+#可以做冒险，寻宝，商店，练功，等等一系列的功能，都可以用事件或决策表现出来，其中事件的起始接口，就是这个id号。
+	left_portrait = {
+		character = scope:actor		
+	}
+	option = {
+		name = PLAYER_XZjingjie.0001.a	
+		     }	
+	} 

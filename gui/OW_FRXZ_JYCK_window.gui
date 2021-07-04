@@ -1,0 +1,492 @@
+﻿window = {
+	name = "OW_FRXZ_JYCK_window"
+	layer = top
+	parentanchor = center|hcenter
+	movable = no
+	filter_mouse = all
+	size = { 100% 100% }
+	using = Window_Decoration_Spike
+	using = Window_Background_Popup
+
+	state = {
+		name = _show
+		position = { 0 0 }
+		using = Animation_FadeIn_Quick
+		using = Sound_WindowShow_Standard
+		
+		on_start = "[GetVariableSystem.Set( 'OW_FRXZ_JYCK_window_left_window_open', 'true' )]"
+	}
+	state = {
+		name = _hide
+		position = { -60 0 }
+		using = Animation_FadeOut_Quick
+		using = Sound_WindowHide_Standard
+		
+		on_start = "[GetVariableSystem.Clear( 'OW_FRXZ_JYCK_window_left_window_open')]"
+	}
+	vbox = {
+		header_pattern = {
+			name = "OW_FRXZ_JYCK_window_window_header"
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = fixed
+			blockoverride "size"
+			{
+				size = { 100% 100% }
+			}
+			blockoverride "header_text"
+			{
+				text = "OW_FRXZ_JYCK_window_TEXT"
+				using = tooltip_es
+				state = {
+					name = "OW_FRXZ_JYCK_window_faith_view_refresh"
+					using = Animation_Refresh_FadeOut
+				}
+				state = {
+					using = Animation_Refresh_FadeIn
+				}
+			}
+			blockoverride "button_close"
+			{
+				datacontext = "[GetScriptedGui('OW_FRXZ_JYCK_window_KG_DEBUG')]"
+				onclick = "[ExecuteConsoleCommand('gui.ClearWidgets OW_FRXZ_JYCK_window')]"
+				onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+			}
+		}
+		hbox = {
+			layoutpolicy_vertical = expanding
+			spacing = 400
+			vbox = {
+				spacing = 30
+				text_single = {
+					text = "OW_FRXZ_JYCK_window_MR"
+					fontsize = 70
+					fontsize_min = 10
+					align = center|nobaseline
+					using = Window_Decoration_Spike
+				}
+				text_single = {
+					text = "OW_SUIPIANXINXITISHI"
+					fontsize = 15
+					fontsize_min = 10
+					align = center|nobaseline
+				}
+				vbox = {
+					button_standard = {
+						text = "OW_FRXZ_JYCK_window_1"
+						default_format = "#high"
+						fontsize = 20
+						size = { 250 35 }
+						datacontext = "[GetScriptedGui('OW_FRXZ_JYCK_window_KG_MR_1')]"
+						enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					}
+					text_single = {
+						text = "OW_FRXZ_JYCK_window_1_MR_txt"
+						fontsize = 15
+						fontsize_min = 10
+						align = center|nobaseline
+						datacontext = "[GetScriptedGui('OW_FRXZ_JYCK_window_KG_MR_1')]"
+						visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					}
+				}
+				vbox = {
+					button_standard = {
+						text = "OW_FRXZ_JYCK_window_2"
+						default_format = "#high"
+						fontsize = 20
+						size = { 250 35 }
+						datacontext = "[GetScriptedGui('OW_FRXZ_JYCK_window_KG_MR_2')]"
+						enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					}
+					text_single = {
+						text = "OW_FRXZ_JYCK_window_2_MR_txt"
+						fontsize = 15
+						fontsize_min = 10
+						align = center|nobaseline
+						datacontext = "[GetScriptedGui('OW_FRXZ_JYCK_window_KG_MR_2')]"
+						visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					}
+				}
+				vbox = {
+					button_standard = {
+						text = "OW_FRXZ_JYCK_window_3"
+						default_format = "#high"
+						fontsize = 20
+						size = { 250 35 }
+						datacontext = "[GetScriptedGui('OW_FRXZ_JYCK_window_KG_MR_3')]"
+						enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					}
+					text_single = {
+						text = "OW_FRXZ_JYCK_window_3_MR_txt"
+						fontsize = 15
+						fontsize_min = 10
+						align = center|nobaseline
+						datacontext = "[GetScriptedGui('OW_FRXZ_JYCK_window_KG_MR_3')]"
+						visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					}
+				}
+				vbox = {
+					button_standard = {
+						text = "OW_FRXZ_JYCK_window_4"
+						default_format = "#high"
+						fontsize = 20
+						size = { 250 35 }
+						datacontext = "[GetScriptedGui('OW_FRXZ_JYCK_window_KG_MR_4')]"
+						enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					}
+					text_single = {
+						text = "OW_FRXZ_JYCK_window_4_MR_txt"
+						fontsize = 15
+						fontsize_min = 10
+						align = center|nobaseline
+						datacontext = "[GetScriptedGui('OW_FRXZ_JYCK_window_KG_MR_4')]"
+						visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					}
+				}
+				vbox = {
+					button_standard = {
+						text = "OW_FRXZ_JYCK_window_5"
+						default_format = "#high"
+						fontsize = 20
+						size = { 250 35 }
+						datacontext = "[GetScriptedGui('OW_FRXZ_JYCK_window_KG_MR_5')]"
+						enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					}
+					text_single = {
+						text = "OW_FRXZ_JYCK_window_5_MR_txt"
+						fontsize = 15
+						fontsize_min = 10
+						align = center|nobaseline
+						datacontext = "[GetScriptedGui('OW_FRXZ_JYCK_window_KG_MR_5')]"
+						visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					}
+				}
+				vbox = {
+					button_standard = {
+						text = "OW_FRXZ_JYCK_window_6"
+						default_format = "#high"
+						fontsize = 20
+						size = { 250 35 }
+						datacontext = "[GetScriptedGui('OW_FRXZ_JYCK_window_KG_MR_6')]"
+						enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					}
+					text_single = {
+						text = "OW_FRXZ_JYCK_window_6_MR_txt"
+						fontsize = 15
+						fontsize_min = 10
+						align = center|nobaseline
+						datacontext = "[GetScriptedGui('OW_FRXZ_JYCK_window_KG_MR_6')]"
+						visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					}
+				}
+				vbox = {
+					button_standard = {
+						text = "OW_FRXZ_JYCK_window_7"
+						default_format = "#high"
+						fontsize = 20
+						size = { 250 35 }
+						datacontext = "[GetScriptedGui('OW_FRXZ_JYCK_window_KG_MR_7')]"
+						enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					}
+					text_single = {
+						text = "OW_FRXZ_JYCK_window_7_MR_txt"
+						fontsize = 15
+						fontsize_min = 10
+						align = center|nobaseline
+						datacontext = "[GetScriptedGui('OW_FRXZ_JYCK_window_KG_MR_7')]"
+						visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					}
+				}
+				vbox = {
+					button_standard = {
+						text = "OW_FRXZ_JYCK_window_8" 
+						default_format = "#high"
+						fontsize = 20
+						size = { 250 35 }
+						datacontext = "[GetScriptedGui('OW_FRXZ_JYCK_window_KG_MR_8')]"
+						enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					}
+					text_single = {
+						text = "OW_FRXZ_JYCK_window_8_MR_txt"
+						fontsize = 15
+						fontsize_min = 10
+						align = center|nobaseline
+						datacontext = "[GetScriptedGui('OW_FRXZ_JYCK_window_KG_MR_8')]"
+						visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					}
+				}
+				vbox = {
+					button_standard = {
+						text = "OW_FRXZ_JYCK_window_9"
+						default_format = "#high"
+						fontsize = 20
+						size = { 250 35 }
+						datacontext = "[GetScriptedGui('OW_FRXZ_JYCK_window_KG_MR_9')]"
+						enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					}
+					text_single = {
+						text = "OW_FRXZ_JYCK_window_9_MR_txt"
+						fontsize = 15
+						fontsize_min = 10
+						align = center|nobaseline
+						datacontext = "[GetScriptedGui('OW_FRXZ_JYCK_window_KG_MR_9')]"
+						visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					}
+				}
+				vbox = {
+					button_standard = {
+						text = "OW_FRXZ_JYCK_window_10"
+						default_format = "#high"
+						fontsize = 20
+						size = { 250 35 }
+						datacontext = "[GetScriptedGui('OW_FRXZ_JYCK_window_KG_MR_10')]"
+						enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					}
+					text_single = {
+						text = "OW_FRXZ_JYCK_window_10_MR_txt"
+						fontsize = 15
+						fontsize_min = 10
+						align = center|nobaseline
+						datacontext = "[GetScriptedGui('OW_FRXZ_JYCK_window_KG_MR_10')]"
+						visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					}
+				}
+			}
+			vbox = {
+				spacing = 30
+				text_single = {
+					text = "OW_FRXZ_JYCK_window_MC"
+					fontsize = 70
+					fontsize_min = 10
+					align = center|nobaseline
+					using = Window_Decoration_Spike
+				}
+				text_single = {
+					text = "OW_SUIPIANXINXITISHI"
+					fontsize = 15
+					fontsize_min = 10
+					align = center|nobaseline
+				}
+				vbox = {
+					button_standard = {
+						text = "OW_FRXZ_JYCK_window_1"
+						default_format = "#high"
+						fontsize = 20
+						size = { 250 35 }
+						datacontext = "[GetScriptedGui('OW_FRXZ_JYCK_window_KG_MC_1')]"
+						enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					}
+					text_single = {
+						text = "OW_FRXZ_JYCK_window_1_MC_txt"
+						fontsize = 15
+						fontsize_min = 10
+						align = center|nobaseline
+						datacontext = "[GetScriptedGui('OW_FRXZ_JYCK_window_KG_MC_1')]"
+						visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					}
+				}
+				vbox = {
+					button_standard = {
+						text = "OW_FRXZ_JYCK_window_2"
+						default_format = "#high"
+						fontsize = 20
+						size = { 250 35 }
+						datacontext = "[GetScriptedGui('OW_FRXZ_JYCK_window_KG_MC_2')]"
+						enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					}
+					text_single = {
+						text = "OW_FRXZ_JYCK_window_2_MC_txt"
+						fontsize = 15
+						fontsize_min = 10
+						align = center|nobaseline
+						datacontext = "[GetScriptedGui('OW_FRXZ_JYCK_window_KG_MC_2')]"
+						visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					}
+				}
+				vbox = {
+					button_standard = {
+						text = "OW_FRXZ_JYCK_window_3"
+						default_format = "#high"
+						fontsize = 20
+						size = { 250 35 }
+						datacontext = "[GetScriptedGui('OW_FRXZ_JYCK_window_KG_MC_3')]"
+						enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					}
+					text_single = {
+						text = "OW_FRXZ_JYCK_window_3_MC_txt"
+						fontsize = 15
+						fontsize_min = 10
+						align = center|nobaseline
+						datacontext = "[GetScriptedGui('OW_FRXZ_JYCK_window_KG_MC_3')]"
+						visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					}
+				}
+				vbox = {
+					button_standard = {
+						text = "OW_FRXZ_JYCK_window_4"
+						default_format = "#high"
+						fontsize = 20
+						size = { 250 35 }
+						datacontext = "[GetScriptedGui('OW_FRXZ_JYCK_window_KG_MC_4')]"
+						enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					}
+					text_single = {
+						text = "OW_FRXZ_JYCK_window_4_MC_txt"
+						fontsize = 15
+						fontsize_min = 10
+						align = center|nobaseline
+						datacontext = "[GetScriptedGui('OW_FRXZ_JYCK_window_KG_MC_4')]"
+						visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					}
+				}
+				vbox = {
+					button_standard = {
+						text = "OW_FRXZ_JYCK_window_5"
+						default_format = "#high"
+						fontsize = 20
+						size = { 250 35 }
+						datacontext = "[GetScriptedGui('OW_FRXZ_JYCK_window_KG_MC_5')]"
+						enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					}
+					text_single = {
+						text = "OW_FRXZ_JYCK_window_5_MC_txt"
+						fontsize = 15
+						fontsize_min = 10
+						align = center|nobaseline
+						datacontext = "[GetScriptedGui('OW_FRXZ_JYCK_window_KG_MC_5')]"
+						visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					}
+				}
+				vbox = {
+					button_standard = {
+						text = "OW_FRXZ_JYCK_window_6"
+						default_format = "#high"
+						fontsize = 20
+						size = { 250 35 }
+						datacontext = "[GetScriptedGui('OW_FRXZ_JYCK_window_KG_MC_6')]"
+						enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					}
+					text_single = {
+						text = "OW_FRXZ_JYCK_window_6_MC_txt"
+						fontsize = 15
+						fontsize_min = 10
+						align = center|nobaseline
+						datacontext = "[GetScriptedGui('OW_FRXZ_JYCK_window_KG_MC_6')]"
+						visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					}
+				}
+				vbox = {
+					button_standard = {
+						text = "OW_FRXZ_JYCK_window_7"
+						default_format = "#high"
+						fontsize = 20
+						size = { 250 35 }
+						datacontext = "[GetScriptedGui('OW_FRXZ_JYCK_window_KG_MC_7')]"
+						enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					}
+					text_single = {
+						text = "OW_FRXZ_JYCK_window_7_MC_txt"
+						fontsize = 15
+						fontsize_min = 10
+						align = center|nobaseline
+						datacontext = "[GetScriptedGui('OW_FRXZ_JYCK_window_KG_MC_7')]"
+						visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					}
+				}
+				vbox = {
+					button_standard = {
+						text = "OW_FRXZ_JYCK_window_8"
+						default_format = "#high"
+						fontsize = 20
+						size = { 250 35 }
+						datacontext = "[GetScriptedGui('OW_FRXZ_JYCK_window_KG_MC_8')]"
+						enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					}
+					text_single = {
+						text = "OW_FRXZ_JYCK_window_8_MC_txt"
+						fontsize = 15
+						fontsize_min = 10
+						align = center|nobaseline
+						datacontext = "[GetScriptedGui('OW_FRXZ_JYCK_window_KG_MC_8')]"
+						visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					}
+				}
+				vbox = {
+					button_standard = {
+						text = "OW_FRXZ_JYCK_window_9"
+						default_format = "#high"
+						fontsize = 20
+						size = { 250 35 }
+						datacontext = "[GetScriptedGui('OW_FRXZ_JYCK_window_KG_MC_9')]"
+						enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					}
+					text_single = {
+						text = "OW_FRXZ_JYCK_window_9_MC_txt"
+						fontsize = 15
+						fontsize_min = 10
+						align = center|nobaseline
+						datacontext = "[GetScriptedGui('OW_FRXZ_JYCK_window_KG_MC_9')]"
+						visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					}
+				}
+				vbox = {
+					button_standard = {
+						text = "OW_FRXZ_JYCK_window_10"
+						default_format = "#high"
+						fontsize = 20
+						size = { 250 35 }
+						datacontext = "[GetScriptedGui('OW_FRXZ_JYCK_window_KG_MC_10')]"
+						enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					}
+					text_single = {
+						text = "OW_FRXZ_JYCK_window_10_MC_txt"
+						fontsize = 15
+						fontsize_min = 10
+						align = center|nobaseline
+						datacontext = "[GetScriptedGui('OW_FRXZ_JYCK_window_KG_MC_10')]"
+						visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					}
+				}
+			}
+		}
+	}
+}

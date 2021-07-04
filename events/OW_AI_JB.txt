@@ -1,0 +1,478 @@
+﻿namespace = OW_AI_XZ_jingjietupo
+
+OW_AI_XZ_jingjietupo.0001 = {
+	type = character_event
+	hidden = yes
+	trigger = {
+		has_character_flag = OW_xiuzhenzhe
+		is_ai = yes
+		OR = {
+			AND = {
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_1
+				var:OW_xinjing > 1
+				var:OW_jingjie = 1
+			}
+			AND = {
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_2
+				var:OW_xinjing > 1
+				var:OW_jingjie = 2
+			}
+			AND = {
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_3
+				var:OW_xinjing > 1
+				var:OW_jingjie = 3
+			}
+			AND = {
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_4
+				var:OW_xinjing > 1
+				var:OW_jingjie = 4
+			}
+			AND = {
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_5
+				var:OW_xinjing > 2
+				var:OW_jingjie = 5
+			}
+			AND = {
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_6
+				var:OW_xinjing > 2
+				var:OW_jingjie = 6
+			}
+			AND = {
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_7
+				var:OW_xinjing > 2
+				var:OW_jingjie = 7
+			}
+			AND = {
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_8
+				var:OW_xinjing > 2
+				var:OW_jingjie = 8
+			}
+			AND = {
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_9
+				var:OW_xinjing > 3
+				var:OW_jingjie = 9
+			}
+			AND = {
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_10
+				var:OW_xinjing > 3
+				var:OW_jingjie = 10
+			}
+			AND = {
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_11
+				var:OW_xinjing > 3
+				var:OW_jingjie = 11
+			}
+			AND = {
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_12
+				var:OW_xinjing > 3
+				var:OW_jingjie = 12
+			}
+			AND = {
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_13
+				var:OW_xinjing > 4
+				var:OW_jingjie = 13
+			}
+			AND = {
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_14
+				var:OW_xinjing > 4
+				var:OW_jingjie = 14
+			}
+			AND = {
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_15
+				var:OW_xinjing > 4
+				var:OW_jingjie = 15
+			}
+			AND = {
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_16
+				var:OW_xinjing > 4
+				var:OW_jingjie = 16
+			}
+			AND = {
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_17
+				var:OW_xinjing > 5
+				var:OW_jingjie = 17
+			}
+			AND = {
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_18
+				var:OW_xinjing > 5
+				var:OW_jingjie = 18
+			}
+			AND = {
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_19
+				var:OW_xinjing > 5
+				var:OW_jingjie = 19
+			}
+			AND = {
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_20
+				var:OW_xinjing > 5
+				var:OW_jingjie = 20
+			}
+			AND = {
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_21
+				var:OW_xinjing > 6
+				var:OW_jingjie = 21
+			}
+			AND = {
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_22
+				var:OW_xinjing > 6
+				var:OW_jingjie = 22
+			}
+			AND = {
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_23
+				var:OW_xinjing > 6
+				var:OW_jingjie = 23
+			}
+			AND = {
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_24
+				var:OW_xinjing > 6
+				var:OW_jingjie = 24
+			}
+			AND = {
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_25
+				var:OW_xinjing > 7
+				var:OW_jingjie = 25
+			}
+			AND = {
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_26
+				var:OW_xinjing > 7
+				var:OW_jingjie = 26
+			}
+			AND = {
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_27
+				var:OW_xinjing > 7
+				var:OW_jingjie = 27
+			}
+			AND = {
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_28
+				var:OW_xinjing > 7
+				var:OW_jingjie = 28
+			}
+			AND = {
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_29
+				var:OW_xinjing > 8
+				var:OW_jingjie = 29
+			}
+			AND = {
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_30
+				var:OW_xinjing > 8
+				var:OW_jingjie = 30
+			}
+			AND = {
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_31
+				var:OW_xinjing > 8
+				var:OW_jingjie = 31
+			}
+			AND = {
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_32
+				var:OW_xinjing > 8
+				var:OW_jingjie = 32
+			}
+			AND = {
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_33
+				var:OW_xinjing > 9
+				var:OW_jingjie = 33
+			}
+			AND = {
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_34
+				var:OW_xinjing > 9
+				var:OW_jingjie = 34
+			}
+			AND = {
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_35
+				var:OW_xinjing > 9
+				var:OW_jingjie = 35
+			}
+			AND = {
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_36
+				var:OW_xinjing > 9
+				var:OW_jingjie = 36
+			}
+		}
+	}
+	immediate = {
+		if = { 
+			limit = { var:OW_jingjie = 1 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 2 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 2 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 3 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 3 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 4 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 4 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 5 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 5 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 6 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 6 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 7 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 7 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 8 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 8 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 9 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 9 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 10 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 10 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 11 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 11 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 12 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 12 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 13 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 13 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 14 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 14 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 15 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 15 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 16 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 16 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 17 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 17 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 18 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 18 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 19 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 19 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 20 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 20 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 21 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 21 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 22 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 22 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 23 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 23 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 24 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 24 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 25 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 25 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 26 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 26 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 27 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 27 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 28 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 28 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 29 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 29 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 30 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 30 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 31 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 31 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 32 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 32 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 33 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 33 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 34 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 34 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 35 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 35 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 36 }
+		}
+		else_if = { 
+			limit = { var:OW_jingjie = 36 }
+			remove_variable = OW_jingjie
+			set_variable = { name = OW_jingjie value = 37 }
+		}
+	}
+}
+
+namespace = OW_AI_XZ_xinjietupo
+OW_AI_XZ_xinjietupo.0001 = {
+	type = character_event
+	hidden = yes
+	trigger = {
+		has_character_flag = OW_xiuzhenzhe
+		is_ai = yes
+		OR = {
+			AND = {
+				var:OW_ganwu >= OW_Base_ganwu_max_1
+				var:OW_lilian >= OW_Base_lilian_max_1
+				var:OW_xinjing = 1
+			}
+			AND = {
+				var:OW_ganwu >= OW_Base_ganwu_max_2
+				var:OW_lilian >= OW_Base_lilian_max_2
+				var:OW_xinjing = 2
+			}
+			AND = {
+				var:OW_ganwu >= OW_Base_ganwu_max_3
+				var:OW_lilian >= OW_Base_lilian_max_3
+				var:OW_xinjing = 3
+			}
+			AND = {
+				var:OW_ganwu >= OW_Base_ganwu_max_4
+				var:OW_lilian >= OW_Base_lilian_max_4
+				var:OW_xinjing = 4
+			}
+			AND = {
+				var:OW_ganwu >= OW_Base_ganwu_max_5
+				var:OW_lilian >= OW_Base_lilian_max_5
+				var:OW_xinjing = 5
+			}
+			AND = {
+				var:OW_ganwu >= OW_Base_ganwu_max_6
+				var:OW_lilian >= OW_Base_lilian_max_6
+				var:OW_xinjing = 6
+			}
+			AND = {
+				var:OW_ganwu >= OW_Base_ganwu_max_7
+				var:OW_lilian >= OW_Base_lilian_max_7
+				var:OW_xinjing = 7
+			}
+			AND = {
+				var:OW_ganwu >= OW_Base_ganwu_max_8
+				var:OW_lilian >= OW_Base_lilian_max_8
+				var:OW_xinjing = 8
+			}
+			AND = {
+				var:OW_ganwu >= OW_Base_ganwu_max_9
+				var:OW_lilian >= OW_Base_lilian_max_9
+				var:OW_xinjing = 9
+			}
+		}
+	}
+	immediate = {
+		if = { 
+			limit = { var:OW_xinjing = 1 }
+			remove_variable = OW_xinjing
+			set_variable = { name = OW_xinjing value = 2 }
+		}
+		else_if = { 
+			limit = { var:OW_xinjing = 2 }
+			remove_variable = OW_xinjing
+			set_variable = { name = OW_xinjing value = 3 }
+		}
+		else_if = { 
+			limit = { var:OW_xinjing = 3 }
+			remove_variable = OW_xinjing
+			set_variable = { name = OW_xinjing value = 4 }
+		}
+		else_if = { 
+			limit = { var:OW_xinjing = 4 }
+			remove_variable = OW_xinjing
+			set_variable = { name = OW_xinjing value = 5 }
+		}
+		else_if = { 
+			limit = { var:OW_xinjing = 5 }
+			remove_variable = OW_xinjing
+			set_variable = { name = OW_xinjing value = 6 }
+		}
+		else_if = { 
+			limit = { var:OW_xinjing = 6 }
+			remove_variable = OW_xinjing
+			set_variable = { name = OW_xinjing value = 7 }
+		}
+		else_if = { 
+			limit = { var:OW_xinjing = 7 }
+			remove_variable = OW_xinjing
+			set_variable = { name = OW_xinjing value = 8 }
+		}
+		else_if = { 
+			limit = { var:OW_xinjing = 8 }
+			remove_variable = OW_xinjing
+			set_variable = { name = OW_xinjing value = 9 }
+		}
+		else_if = { 
+			limit = { var:OW_xinjing = 9 }
+			remove_variable = OW_xinjing
+			set_variable = { name = OW_xinjing value = 10 }
+		}
+	}
+}

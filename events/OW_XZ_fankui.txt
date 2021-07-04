@@ -1,0 +1,27 @@
+﻿namespace = OW_XZ_xiuzhenzhilu_send
+
+OW_XZ_xiuzhenzhilu_send.0001 = {
+	type = letter_event
+	opening = {
+		desc = OW_XZ_juemi
+	}
+	desc = OW_XZ_xiuzhenzhilu_send.0001.desc
+	sender = scope:recipient
+
+	option = {
+		name = OW_XZ_juemi_yiyue
+	}
+}
+
+OW_XZ_xiuzhenzhilu_send.0002 = {
+	type = letter_event
+	opening = {
+		desc = OW_XZ_juemi
+	}
+	desc = OW_XZ_xiuzhenzhilu_send.0002.desc
+	sender = scope:recipient
+
+	option = {
+		name = OW_XZ_juemi_yiyue
+	}
+}

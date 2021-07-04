@@ -1,0 +1,688 @@
+﻿namespace = OW_FRJQ_TanSuo_Event_shandong
+
+scripted_effect OW_FRXZ_XinXi_zonghe_random = {
+	hidden_effect = {
+		random_list = {
+			45 = {
+				add_OW_FRXZ_Random_XinXi_Random_Value = yes
+			}
+			30 = {
+				add_OW_FRXZ_Random_XinXi_Random_Value = yes
+				add_OW_FRXZ_Random_XinXi_Random_Value = yes
+			}
+			15 = {
+				add_OW_FRXZ_Random_XinXi_Random_Value = yes
+				add_OW_FRXZ_Random_XinXi_Random_Value = yes
+				add_OW_FRXZ_Random_XinXi_Random_Value = yes
+			}
+			8 = {
+				add_OW_FRXZ_Random_XinXi_Random_Value = yes
+				add_OW_FRXZ_Random_XinXi_Random_Value = yes
+				add_OW_FRXZ_Random_XinXi_Random_Value = yes
+				add_OW_FRXZ_Random_XinXi_Random_Value = yes
+			}
+			2 = {
+				add_OW_FRXZ_Random_XinXi_Random_Value = yes
+				add_OW_FRXZ_Random_XinXi_Random_Value = yes
+				add_OW_FRXZ_Random_XinXi_Random_Value = yes
+				add_OW_FRXZ_Random_XinXi_Random_Value = yes
+				add_OW_FRXZ_Random_XinXi_Random_Value = yes
+			}
+		}
+	}
+}
+
+scripted_effect OW_FRXZ_XinXI_zonghe = {
+	hidden_effect = {
+		add_OW_FRXZ_Random_XinXi_Random_Value = yes
+		add_OW_FRXZ_Random_XinXi_Random_Value = yes
+		add_OW_FRXZ_Random_XinXi_Random_Value = yes
+		add_OW_FRXZ_Random_XinXi_Random_Value = yes
+		add_OW_FRXZ_Random_XinXi_Random_Value = yes
+	}
+}
+
+OW_FRJQ_TanSuo_Event_shandong.1 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_Event_shandong.1.name
+    desc = OW_FRJQ_TanSuo_Event_shandong.1.desc
+
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.1.a
+        ai_chance = { base = 1 }
+        trigger_event = OW_FRJQ_TanSuo_Event_shandong.2
+    }
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.1.b
+        ai_chance = { base = 1 }
+    }
+}
+OW_FRJQ_TanSuo_Event_shandong.2 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_Event_shandong.2.name
+    desc = OW_FRJQ_TanSuo_Event_shandong.2.desc
+
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.2.a
+        ai_chance = { base = 1 }
+        trigger_event = OW_FRJQ_TanSuo_Event_shandong.3
+    }
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.2.b
+        ai_chance = { base = 1 }
+        trigger_event = OW_FRJQ_TanSuo_Event_shandong.4
+    }
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.2.c
+        ai_chance = { base = 1 }
+        trigger_event = OW_FRJQ_TanSuo_Event_shandong.4
+    }
+}
+OW_FRJQ_TanSuo_Event_shandong.3 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_Event_shandong.3.name
+    desc = OW_FRJQ_TanSuo_Event_shandong.3.desc
+
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.3.a
+        ai_chance = { base = 1 }
+		hidden_effect = {
+			OW_FRXZ_XinXi_zonghe_random = yes
+		}
+    }
+}
+OW_FRJQ_TanSuo_Event_shandong.4 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_Event_shandong.4.name
+    desc = OW_FRJQ_TanSuo_Event_shandong.4.desc
+
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.4.a
+        ai_chance = { base = 1 }
+    }
+}
+
+OW_FRJQ_TanSuo_Event_shandong.5 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_Event_shandong.5.name
+    desc = OW_FRJQ_TanSuo_Event_shandong.5.desc
+
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.5.a
+        ai_chance = { base =1 }
+        trigger_event = OW_FRJQ_TanSuo_Event_shandong.6
+    }
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.5.b
+        ai_chance = { base = 1 }
+        trigger_event = OW_FRJQ_TanSuo_Event_shandong.7
+    }
+}
+OW_FRJQ_TanSuo_Event_shandong.6 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_Event_shandong.6.name
+    desc = OW_FRJQ_TanSuo_Event_shandong.6.desc
+
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.6.a
+        ai_chance = { base = 1 } 
+        ####加个昏迷buff
+    }
+}
+OW_FRJQ_TanSuo_Event_shandong.7 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_Event_shandong.7.name
+    desc = OW_FRJQ_TanSuo_Event_shandong.7.desc
+
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.7.a
+        ai_chance = { base =1 }
+        trigger_event = OW_FRJQ_TanSuo_Event_shandong.8
+    }
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.7.b
+        ai_chance = { base =1 }
+    }
+}
+OW_FRJQ_TanSuo_Event_shandong.8 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_Event_shandong.8.name
+    desc = OW_FRJQ_TanSuo_Event_shandong.8.desc
+
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.8.a
+        ai_chance = { base = 1 }
+		hidden_effect = {
+			OW_FRXZ_XinXi_zonghe_random = yes ###给碎片
+		}
+    }
+}
+
+OW_FRJQ_TanSuo_Event_shandong.9 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_Event_shandong.9.name
+    desc = OW_FRJQ_TanSuo_Event_shandong.9.desc
+
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.9.a
+        ai_chance = { base = 1 }
+        trigger_event = OW_FRJQ_TanSuo_Event_shandong.10
+    }
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.9.b
+        ai_chance = { base = 1 }
+        trigger_event = OW_FRJQ_TanSuo_Event_shandong.11
+    }
+}
+OW_FRJQ_TanSuo_Event_shandong.10 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_Event_shandong.10.name
+    desc = OW_FRJQ_TanSuo_Event_shandong.10.desc
+
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.10.a
+        ai_chance = { base = 1 }
+		hidden_effect = {
+			OW_FRXZ_XinXi_zonghe_random = yes ####给碎片
+		}
+    }
+}
+OW_FRJQ_TanSuo_Event_shandong.11 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_Event_shandong.11.name
+    desc = OW_FRJQ_TanSuo_Event_shandong.11.desc
+
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.11.a
+        ai_chance = { base = 1 }
+        change_variable = { name = OW_FRXZ_BUSHU add = { 1 5 } }
+    }
+}
+
+########################
+########################################
+#######################山洞大事件#########
+OW_FRJQ_TanSuo_Event_shandong.12 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_Event_shandong.12.name
+    desc = OW_FRJQ_TanSuo_Event_shandong.12.desc
+
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.12.a
+        ai_chance = { base = 1 }
+        trigger_event = OW_FRJQ_TanSuo_Event_shandong.21
+    }
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.12.b
+        ai_chance = { base = 1 }
+    }
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.12.c
+        ai_chance = { base = 1 }
+        trigger_event = OW_FRJQ_TanSuo_Event_shandong.13
+    }
+}
+OW_FRJQ_TanSuo_Event_shandong.13 = {
+    type = character_event
+    theme =default
+    title = OW_FRJQ_TanSuo_Event_shandong.13.name
+    desc = OW_FRJQ_TanSuo_Event_shandong.13.desc
+    
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.13.a
+        ai_chance = { base = 1 }
+		hidden_effect = {
+			random_list = {
+				30 = { trigger_event = OW_FRJQ_TanSuo_Event_shandong.14 }
+				15 = { trigger_event = OW_FRJQ_TanSuo_Event_shandong.15 }
+				10 = { trigger_event = OW_FRJQ_TanSuo_Event_shandong.16 }
+				25 = { trigger_event = OW_FRJQ_TanSuo_Event_shandong.17 }
+				20 = { trigger_event = OW_FRJQ_TanSuo_Event_shandong.18 }
+			}
+		}
+    }
+}
+
+OW_FRJQ_TanSuo_Event_shandong.14 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_Event_shandong.14.name
+    desc = OW_FRJQ_TanSuo_Event_shandong.14.desc
+
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.14.a
+        ai_chance = { base = 1 }
+        trigger_event = OW_FRJQ_TanSuo_Event_shandong.36
+    }
+}
+OW_FRJQ_TanSuo_Event_shandong.15 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_Event_shandong.15.name
+    desc = OW_FRJQ_TanSuo_Event_shandong.15.desc
+
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.15.a
+        ai_chance = { base = 1 }
+        trigger_event = OW_FRJQ_TanSuo_Event_shandong.36
+        add_trait = wounded_1
+    }
+}
+OW_FRJQ_TanSuo_Event_shandong.16 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_Event_shandong.16.name
+    desc = OW_FRJQ_TanSuo_Event_shandong.16.desc
+
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.16.a
+        ai_chance = { base = 1 }
+		hidden_effect = {
+			random_list = {
+				50 = { trigger_event = OW_FRJQ_TanSuo_Event_shandong.19 }
+				50 = { trigger_event = OW_FRJQ_TanSuo_Event_shandong.20 }
+			}
+		}
+    }
+}
+OW_FRJQ_TanSuo_Event_shandong.17 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_Event_shandong.17.name
+    desc = OW_FRJQ_TanSuo_Event_shandong.17.desc
+
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.17.a
+        ai_chance = { base = 1 }
+        add_prowess_skill = 1 ####勇武
+        trigger_event = OW_FRJQ_TanSuo_Event_shandong.36
+    }
+}
+OW_FRJQ_TanSuo_Event_shandong.18 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_Event_shandong.18.name
+    desc = OW_FRJQ_TanSuo_Event_shandong.18.desc
+
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.18.a
+        ai_chance = { base = 1 }
+		hidden_effect = {
+			OW_FRXZ_XinXi_zonghe_random = yes
+		}
+        add_prowess_skill = 2 ###勇武
+        ###闪避
+        trigger_event = OW_FRJQ_TanSuo_Event_shandong.36
+    }
+}
+OW_FRJQ_TanSuo_Event_shandong.19 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_Event_shandong.19.name
+    desc = OW_FRJQ_TanSuo_Event_shandong.19.desc
+    option = {
+        ai_chance = {
+            base =1
+        }
+        name = OW_FRJQ_TanSuo_Event_shandong.19.a
+        add_trait = eunuch
+        trigger_event = OW_FRJQ_TanSuo_Event_shandong.36
+    }
+}
+OW_FRJQ_TanSuo_Event_shandong.20 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_Event_shandong.20.name
+    desc = OW_FRJQ_TanSuo_Event_shandong.20.desc
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.20.a
+        ai_chance = { base = 1 }
+        add_trait = eunuch
+        ###功法
+		hidden_effect = {
+			OW_FRXZ_XinXi_zonghe_random = yes
+		}
+        trigger_event = OW_FRJQ_TanSuo_Event_shandong.36
+    }
+}
+OW_FRJQ_TanSuo_Event_shandong.21 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_Event_shandong.21.name
+    desc = OW_FRJQ_TanSuo_Event_shandong.21.desc
+
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.21.a 
+        ai_chance = { base = 1 }
+    }
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.21.b
+        ai_chance = { base = 1 }
+        trigger_event = OW_FRJQ_TanSuo_Event_shandong.22
+    }
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.21.c
+        ai_chance = { base = 1 }
+        trigger_event = OW_FRJQ_TanSuo_Event_shandong.23
+    }
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.21.d
+        ai_chance = { base = 1 }
+        trigger_event = OW_FRJQ_TanSuo_Event_shandong.24
+    }
+}
+OW_FRJQ_TanSuo_Event_shandong.22 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_Event_shandong.22.name
+    desc = OW_FRJQ_TanSuo_Event_shandong.22.desc
+
+    immediate = {
+        set_variable = {
+            name = OW_xueshi
+            value = learning
+        }
+        change_variable = {
+            name = OW_xueshi
+            multiply = 5
+        }
+        set_variable = {
+            name = OW_xueshi2
+            value = var:OW_xueshi
+        }
+        change_variable = {
+            name = OW_xueshi2
+            multiply = -1
+        }
+    }
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.22.a
+        ai_chance = { base = 1 }
+        if = {
+            limit = {
+               learning > 19
+            }
+            trigger_event = OW_FRJQ_TanSuo_Event_shandong.27
+        }
+        else = {
+            random_list = {
+                101 = {
+                    trigger_event = OW_FRJQ_TanSuo_Event_shandong.26
+                    modifier = {
+                        add = var:OW_xueshi2
+                        NOT = { has_character_flag = OW_xiuzhenzhe }
+                    }
+                }
+                1 = {
+                    trigger_event = OW_FRJQ_TanSuo_Event_shandong.27
+                    modifier = {
+                        add = var:OW_xueshi 
+                        NOT = { has_character_flag = OW_xiuzhenzhe }
+                    }
+                }
+            }
+        }
+    }
+}
+
+OW_FRJQ_TanSuo_Event_shandong.26 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_Event_shandong.26.name
+    desc = OW_FRJQ_TanSuo_Event_shandong.26.desc
+
+    immediate = {
+        remove_variable = OW_xueshi
+        remove_variable = OW_xueshi2
+    }
+
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.26.a
+        ai_chance = { base = 1 }
+        trigger_event = OW_FRJQ_TanSuo_Event_shandong.30
+    }
+}
+OW_FRJQ_TanSuo_Event_shandong.27 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_Event_shandong.27.name
+    desc = OW_FRJQ_TanSuo_Event_shandong.27.desc
+
+    immediate = {
+        remove_variable = OW_xueshi
+        remove_variable = OW_xueshi2
+    }
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.27.a
+        ai_chance = { base = 1 }
+		hidden_effect = {
+			OW_FRXZ_XinXI_zonghe = yes
+		}
+		trigger_event = OW_FRJQ_TanSuo_Event_shandong.30
+    }
+}
+OW_FRJQ_TanSuo_Event_shandong.23 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_Event_shandong.23.name
+    desc = OW_FRJQ_TanSuo_Event_shandong.23.desc
+    
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.23.a
+        ai_chance = { base = 1 }
+		hidden_effect = {
+			OW_FRXZ_XinXi_zonghe_random = yes
+		}
+        trigger_event = OW_FRJQ_TanSuo_Event_shandong.30
+    }
+}
+OW_FRJQ_TanSuo_Event_shandong.24 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_Event_shandong.24.name
+    desc = OW_FRJQ_TanSuo_Event_shandong.24.desc
+    
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.24.a
+		hidden_effect = {
+			random_list = {
+				50 = {  }
+				40 = { trigger_event = OW_FRJQ_TanSuo_Event_shandong.28 }
+				10 = { trigger_event = OW_FRJQ_TanSuo_Event_shandong.29 } ##受伤
+			}
+		}
+    }
+}
+OW_FRJQ_TanSuo_Event_shandong.28 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_Event_shandong.28.name
+    desc = OW_FRJQ_TanSuo_Event_shandong.28.desc
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.28.a
+        ai_chance = { base = 1 }
+        #add_character_flag = OW_tianshu
+		hidden_effect = {
+			random_list = {
+				50 = {
+					ADD_OW_CT = {
+						OW_CT_KEY = OW_wuxing
+						VALUE = 3
+					}
+					add_learning_skill = 3
+					trigger_event = OW_FRJQ_TanSuo_Event_shandong.30
+					
+				}
+				50 = {
+					OW_FRXZ_XinXi_zonghe_random = yes
+					ADD_OW_CT = {
+						OW_CT_KEY = OW_wuxing
+						VALUE = 3
+					}
+					add_learning_skill = 3
+					####天书启悟
+					trigger_event = OW_FRJQ_TanSuo_Event_shandong.30
+				}
+			}
+		}
+    }
+}
+OW_FRJQ_TanSuo_Event_shandong.29 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_Event_shandong.29.name
+    desc = OW_FRJQ_TanSuo_Event_shandong.29.desc
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.29.a
+        ai_chance = { base = 1 }
+        add_trait = wounded_1
+        trigger_event = OW_FRJQ_TanSuo_Event_shandong.30
+    }
+}
+##############
+OW_FRJQ_TanSuo_Event_shandong.30 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_Event_shandong.30.name
+    desc = OW_FRJQ_TanSuo_Event_shandong.30.desc
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.30.a
+        ai_chance = { base = 1 }
+    }
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.30.b
+        ai_chance = { base = 1 }
+        trigger_event = OW_FRJQ_TanSuo_Event_shandong.31
+    }
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.30.c
+        ai_chance = { base = 1 }
+        trigger_event = OW_FRJQ_TanSuo_Event_shandong.32
+    }
+}
+OW_FRJQ_TanSuo_Event_shandong.31 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_Event_shandong.31.name
+    desc = OW_FRJQ_TanSuo_Event_shandong.31.desc
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.31.b
+        ai_chance = { base = 1 }
+		hidden_effect = {
+			random_list = {
+				1 = { trigger_event = OW_FRJQ_TanSuo_Event_shandong.33 }
+				1 = { trigger_event = OW_FRJQ_TanSuo_Event_shandong.34 }
+			}
+		}
+    }
+}
+OW_FRJQ_TanSuo_Event_shandong.32 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_Event_shandong.32.name
+    desc = OW_FRJQ_TanSuo_Event_shandong.32.desc
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.32.a
+        ai_chance = { base = 1 }
+		hidden_effect = {
+			random_list = {
+				1 = { trigger_event = OW_FRJQ_TanSuo_Event_shandong.37 }
+				1 = { trigger_event = OW_FRJQ_TanSuo_Event_shandong.38 }
+			}
+		}
+    }
+}
+OW_FRJQ_TanSuo_Event_shandong.37 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_Event_shandong.37.name
+    desc = OW_FRJQ_TanSuo_Event_shandong.37.desc
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.37.a
+        ai_chance = { base = 1 }
+        trigger_event = OW_FRJQ_TanSuo_Event_shandong.36
+
+    }
+}
+OW_FRJQ_TanSuo_Event_shandong.38 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_Event_shandong.38.name
+    desc = OW_FRJQ_TanSuo_Event_shandong.38.desc
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.38.a
+        ai_chance = { base = 1 }
+		hidden_effect = {
+			OW_FRXZ_XinXi_zonghe_random = yes
+		}
+        trigger_event = OW_FRJQ_TanSuo_Event_shandong.36
+    }
+}
+OW_FRJQ_TanSuo_Event_shandong.33 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_Event_shandong.33.name
+    desc = OW_FRJQ_TanSuo_Event_shandong.33.desc
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.33.a
+        ai_chance = { base = 1 }
+		hidden_effect = {
+			OW_FRXZ_XinXi_zonghe_random = yes 
+		}
+        trigger_event = OW_FRJQ_TanSuo_Event_shandong.36
+    }
+}
+OW_FRJQ_TanSuo_Event_shandong.34 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_Event_shandong.34.name
+    desc = OW_FRJQ_TanSuo_Event_shandong.34.desc
+
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.34.a
+        ai_chance = { base = 1 }
+        trigger_event = OW_FRJQ_TanSuo_Event_shandong.36
+    }
+}
+##########
+OW_FRJQ_TanSuo_Event_shandong.35 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_Event_shandong.35.name
+    desc = OW_FRJQ_TanSuo_Event_shandong.35.desc
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.35.a
+        ai_chance = { base = 1 }
+		hidden_effect = {
+			random_list = {
+				1 = {  }  ###丹药
+				1 = {  }  ###功法
+				1 = {  }  ###令牌
+				1 = {  }  ###其他
+			}
+		}
+    }
+}   ###宝物
+OW_FRJQ_TanSuo_Event_shandong.36 = {
+    type = character_event
+    theme = default
+    desc = OW_FRJQ_TanSuo_Event_shandong.36.desc
+    title = OW_FRJQ_TanSuo_Event_shandong.36.title
+    
+    option = {
+        name = OW_FRJQ_TanSuo_Event_shandong.36.a
+        ai_chance = { base = 1 }
+    }
+}  ###结束

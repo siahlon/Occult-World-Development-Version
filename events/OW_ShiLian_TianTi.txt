@@ -1,0 +1,1813 @@
+﻿namespace = OW_ShiLian_TianTi
+scripted_effect OW_ShiLian_TianTi_NextEvent = {
+	if = {
+		limit = {
+			var:OW_ShiLian_TianTi_times = 9
+		}
+		trigger_event = OW_ShiLian_TianTi.3000
+		change_variable = {
+			name = OW_ShiLian_TianTi_times
+			add = 1
+		}
+		change_variable = {
+			name = OW_ShiLian_TianTi_LoseCash_many
+			multiply = -1
+		}
+		change_variable = {
+			name = OW_ShiLian_TianTi_LosePrestige_many
+			multiply = -1
+		}
+	}
+	else = {
+		hidden_effect = {
+			if = {
+				limit = { exists = var:OW_ShiLian_TianTi_times }
+				random_list = {
+					10 = {
+						modifier = {
+							has_character_flag = OW_ShiLian_TianTi_fire_event_10
+							factor = 0
+						}
+						trigger_event = OW_ShiLian_TianTi.10
+						add_character_flag = OW_ShiLian_TianTi_fire_event_10
+						if = {
+							limit = { exists = var:OW_ShiLian_TianTi_times }
+							change_variable = {
+								name = OW_ShiLian_TianTi_times
+								add = 1
+							}
+						}
+					}
+					10 = {
+						modifier = {
+							has_character_flag = OW_ShiLian_TianTi_fire_event_20
+							factor = 0
+						}
+						trigger_event = OW_ShiLian_TianTi.20
+						add_character_flag = OW_ShiLian_TianTi_fire_event_20
+						if = {
+							limit = { exists = var:OW_ShiLian_TianTi_times }
+							change_variable = {
+								name = OW_ShiLian_TianTi_times
+								add = 1
+							}
+						}
+					}
+					10 = {
+						modifier = {
+							has_character_flag = OW_ShiLian_TianTi_fire_event_30
+							factor = 0
+						}
+						trigger_event = OW_ShiLian_TianTi.30
+						add_character_flag = OW_ShiLian_TianTi_fire_event_30
+						if = {
+							limit = { exists = var:OW_ShiLian_TianTi_times }
+							change_variable = {
+								name = OW_ShiLian_TianTi_times
+								add = 1
+							}
+						}
+					}
+					10 = {
+						modifier = {
+							has_character_flag = OW_ShiLian_TianTi_fire_event_40
+							factor = 0
+						}
+						trigger_event = OW_ShiLian_TianTi.40
+						add_character_flag = OW_ShiLian_TianTi_fire_event_40
+						if = {
+							limit = { exists = var:OW_ShiLian_TianTi_times }
+							change_variable = {
+								name = OW_ShiLian_TianTi_times
+								add = 1
+							}
+						}
+					}
+					10 = {
+						modifier = {
+							has_character_flag = OW_ShiLian_TianTi_fire_event_50
+							factor = 0
+						}
+						trigger_event = OW_ShiLian_TianTi.50
+						add_character_flag = OW_ShiLian_TianTi_fire_event_50
+						if = {
+							limit = { exists = var:OW_ShiLian_TianTi_times }
+							change_variable = {
+								name = OW_ShiLian_TianTi_times
+								add = 1
+							}
+						}
+					}
+					10 = {
+						modifier = {
+							has_character_flag = OW_ShiLian_TianTi_fire_event_60
+							factor = 0
+						}
+						trigger_event = OW_ShiLian_TianTi.60
+						add_character_flag = OW_ShiLian_TianTi_fire_event_60
+						if = {
+							limit = { exists = var:OW_ShiLian_TianTi_times }
+							change_variable = {
+								name = OW_ShiLian_TianTi_times
+								add = 1
+							}
+						}
+					}
+					10 = {
+						modifier = {
+							has_character_flag = OW_ShiLian_TianTi_fire_event_70
+							factor = 0
+						}
+						trigger_event = OW_ShiLian_TianTi.70
+						add_character_flag = OW_ShiLian_TianTi_fire_event_70
+						if = {
+							limit = { exists = var:OW_ShiLian_TianTi_times }
+							change_variable = {
+								name = OW_ShiLian_TianTi_times
+								add = 1
+							}
+						}
+					}
+					10 = {
+						modifier = {
+							has_character_flag = OW_ShiLian_TianTi_fire_event_80
+							factor = 0
+						}
+						trigger_event = OW_ShiLian_TianTi.80
+						add_character_flag = OW_ShiLian_TianTi_fire_event_80
+						if = {
+							limit = { exists = var:OW_ShiLian_TianTi_times }
+							change_variable = {
+								name = OW_ShiLian_TianTi_times
+								add = 1
+							}
+						}
+					}
+					10 = {
+						modifier = {
+							has_character_flag = OW_ShiLian_TianTi_fire_event_90
+							factor = 0
+						}
+						trigger_event = OW_ShiLian_TianTi.90
+						add_character_flag = OW_ShiLian_TianTi_fire_event_90
+						if = {
+							limit = { exists = var:OW_ShiLian_TianTi_times }
+							change_variable = {
+								name = OW_ShiLian_TianTi_times
+								add = 1
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+scripted_effect OW_ShiLian_TianTi_RemoveEffect = {
+	if = {
+		limit = {
+			var:OW_ShiLian_TianTi_times = 10
+		}
+		if = {
+			limit = {
+				has_character_flag = OW_ShiLian_TianTi_been_Wounded
+			}
+			change_trait_rank = {
+				trait = wounded
+				rank = -1
+			}
+		}
+		if = {
+			limit = {
+				has_character_flag = OW_ShiLian_TianTi_been_Physique_down
+			}
+			if = {
+				limit = {
+					has_trait_rank = {
+						trait = physique_bad
+						rank >= 1
+					}
+				}
+				change_trait_rank = {
+					trait = physique_bad
+					rank = -1
+				}
+			}
+			else_if = {
+				change_trait_rank = {
+					trait = physique_good
+					rank = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_character_flag = OW_ShiLian_TianTi_been_LosePrestige
+			}
+			add_gold = var:OW_ShiLian_TianTi_LoseCash_many
+		}
+		if = {
+			limit = {
+				has_character_flag = OW_ShiLian_TianTi_been_LoseCash
+			}
+			add_prestige = var:OW_ShiLian_TianTi_LosePrestige_many
+		}
+	}
+	remove_variable = OW_ShiLian_TianTi_times
+	remove_variable = OW_ShiLian_TianTi_LoseCash_many
+	remove_variable = OW_ShiLian_TianTi_LoseCash_little
+	remove_variable = OW_ShiLian_TianTi_LosePrestige_many
+	remove_variable = OW_ShiLian_TianTi_LosePrestige_little
+	remove_character_flag = OW_ShiLian_TianTi_fire_event_10
+	remove_character_flag = OW_ShiLian_TianTi_fire_event_20
+	remove_character_flag = OW_ShiLian_TianTi_fire_event_30
+	remove_character_flag = OW_ShiLian_TianTi_fire_event_40
+	remove_character_flag = OW_ShiLian_TianTi_fire_event_50
+	remove_character_flag = OW_ShiLian_TianTi_fire_event_60
+	remove_character_flag = OW_ShiLian_TianTi_fire_event_70
+	remove_character_flag = OW_ShiLian_TianTi_fire_event_80
+	remove_character_flag = OW_ShiLian_TianTi_fire_event_90
+	remove_character_flag = OW_ShiLian_TianTi_been_LoseCash
+	remove_character_flag = OW_ShiLian_TianTi_been_LosePrestige
+	remove_character_flag = OW_ShiLian_TianTi_been_Physique_down
+	remove_character_flag = OW_ShiLian_TianTi_been_Wounded
+}
+
+scripted_effect OW_ShiLian_TianTi_Failure = {
+	OW_ShiLian_TianTi_RemoveEffect = yes
+	trigger_event = OW_ShiLian_TianTi.02
+}
+
+scripted_effect OW_ShiLian_TianTi_TimesSetup = {
+	set_variable = {
+		name = OW_ShiLian_TianTi_times
+		value = 0
+	}
+}
+
+scripted_effect OW_ShiLian_TianTi_FindImportantOne = {
+	every_spouse = {
+		add_to_temporary_list = OW_ShiLian_TianTi_theimportants
+	}
+	every_child = {
+		add_to_temporary_list = OW_ShiLian_TianTi_theimportants
+	}
+	every_parent = {
+		add_to_temporary_list = OW_ShiLian_TianTi_theimportants
+	}
+	every_sibling = {
+		add_to_temporary_list = OW_ShiLian_TianTi_theimportants
+	}
+	every_relation = {
+		type = friend
+		add_to_temporary_list = OW_ShiLian_TianTi_theimportants
+	}
+	every_relation = {
+		type = best_friend
+		add_to_temporary_list = OW_ShiLian_TianTi_theimportants
+	}
+	every_relation = {
+		type = lover
+		add_to_temporary_list = OW_ShiLian_TianTi_theimportants
+	}
+	every_relation = {
+		type = soulmate
+		add_to_temporary_list = OW_ShiLian_TianTi_theimportants
+	}
+	random_in_list = {
+		list = OW_ShiLian_TianTi_theimportants
+		if = {
+			limit = {
+				is_alive = yes
+				opinion = {
+					target = root
+					value >= 60
+				}
+			}
+			save_scope_as = TheImportantOne
+		}
+	}
+}
+
+scripted_effect OW_ShiLian_TianTi_IncreaseWounedLevel = {
+	change_trait_rank = {
+		trait = wounded
+		rank = 1
+	}
+	add_character_flag = OW_ShiLian_TianTi_been_Wounded
+}
+
+scripted_effect OW_ShiLian_TianTi_LoseCashSetup = {
+	set_variable = {
+		name = OW_ShiLian_TianTi_LoseCash_many
+		value = {
+			add = root.gold
+			multiply = -1
+		}
+	}
+	set_variable = {
+		name = OW_ShiLian_TianTi_LoseCash_little
+		value = {
+			add = root.gold
+			multiply = -1
+		}
+	}
+	random_list = {
+		1 = {
+			change_variable = {
+				name = OW_ShiLian_TianTi_LoseCash_many
+				multiply = 0.8
+			}
+		}
+		1 = {
+			change_variable = {
+				name = OW_ShiLian_TianTi_LoseCash_many
+				multiply = 0.9
+			}
+		}
+	}
+	random_list = {
+		1 = {
+			change_variable = {
+				name = OW_ShiLian_TianTi_LoseCash_little
+				multiply = 0.2
+			}
+		}
+		1 = {
+			change_variable = {
+				name = OW_ShiLian_TianTi_LoseCash_little
+				multiply = 0.1
+			}
+		}
+	}
+}
+
+scripted_effect OW_ShiLian_TianTi_LosePrestigeSetup = {
+	set_variable = {
+		name = OW_ShiLian_TianTi_LosePrestige_many
+		value = {
+			add = root.prestige
+			multiply = -1
+		}
+	}
+	set_variable = {
+		name = OW_ShiLian_TianTi_LosePrestige_little
+		value = {
+			add = root.prestige
+			multiply = -1
+		}
+	}
+	random_list = {
+		1 = {
+			change_variable = {
+				name = OW_ShiLian_TianTi_LosePrestige_many
+				multiply = 0.8
+			}
+		}
+		1 = {
+			change_variable = {
+				name = OW_ShiLian_TianTi_LosePrestige_many
+				multiply = 0.9
+			}
+		}
+	}
+	random_list = {
+		1 = {
+			change_variable = {
+				name = OW_ShiLian_TianTi_LosePrestige_little
+				multiply = 0.2
+			}
+		}
+		1 = {
+			change_variable = {
+				name = OW_ShiLian_TianTi_LosePrestige_little
+				multiply = 0.1
+			}
+		}
+	}
+}
+scripted_effect OW_ShiLian_TianTi_DecreasePhysiqueTrait = {
+	if = {
+		limit = {
+			has_trait_rank = {
+				trait = physique_good
+				rank >= 1
+			}
+		}
+		change_trait_rank = {
+			trait = physique_good
+			rank = -1
+		}
+	}
+	else = {
+		change_trait_rank = {
+			trait = physique_bad
+			rank = 1
+		}
+	}
+	add_character_flag = OW_ShiLian_TianTi_been_Physique_down
+}
+scripted_effect OW_ShiLian_TianTi_StressGiveup = {
+	stress_impact = {
+		brave = medium_stress_impact_gain
+		ambitious = medium_stress_impact_gain
+	}
+}
+scripted_effect OW_ShiLian_TianTi_StressContinue = {
+	stress_impact = {
+		lazy = medium_stress_impact_gain
+		craven = medium_stress_impact_gain
+	}
+}
+#试炼开始
+OW_ShiLian_TianTi.01 = {
+	type = character_event
+	title = OW_ShiLian_TianTi.01.t
+	desc = OW_ShiLian_TianTi.01.desc
+	theme = realm
+	override_background = {
+		event_background = wilderness_mountains
+	}
+	left_portrait = root
+	trigger = {
+		always = yes
+	}
+	immediate = {
+		OW_ShiLian_TianTi_TimesSetup = yes
+	}
+	option = {
+		name = OW_ShiLian_TianTi.01.option.a
+		OW_ShiLian_TianTi_NextEvent = yes
+	}
+}
+
+#试炼失败
+OW_ShiLian_TianTi.02 = {
+	type = character_event
+	title = OW_ShiLian_TianTi_Failure_title
+	desc = OW_ShiLian_TianTi_Failure_desc
+	theme = realm
+	override_background = {
+		event_background = wilderness_mountains
+	}
+	left_portrait = {
+		character = root
+		animation = sadness
+	}
+	
+	trigger = {
+		always = yes
+	}
+	immediate = {
+	}
+	option = {
+		name = OW_ShiLian_TianTi_Failure_option
+	}
+}
+
+#试炼成功
+OW_ShiLian_TianTi.3000 = {
+	type = character_event
+	title = OW_ShiLian_TianTi_Success_title
+	desc = OW_ShiLian_TianTi_Success_desc
+	theme = realm
+	override_background = {
+		event_background = wilderness_mountains
+	}
+	left_portrait = {
+		character = root
+		animation = ecstasy
+	}
+	trigger = {
+		always = yes
+	}
+	immediate = {
+	}
+	option = {
+		name = OW_ShiLian_TianTi_Success_option
+		OW_ShiLian_TianTi_RemoveEffect = yes
+	}
+	after = { trigger_event = OW_JB_XZ_qishi_baishan.9999 }
+}
+
+#
+OW_ShiLian_TianTi.10 = {
+	type = character_event
+	title = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 1
+				}
+				desc = OW_ShiLian_TianTi_One
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 2
+				}
+				desc = OW_ShiLian_TianTi_Two
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 3
+				}
+				desc = OW_ShiLian_TianTi_Three
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 4
+				}
+				desc = OW_ShiLian_TianTi_Four
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 5
+				}
+				desc = OW_ShiLian_TianTi_Five
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 6
+				}
+				desc = OW_ShiLian_TianTi_Six
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 7
+				}
+				desc = OW_ShiLian_TianTi_Seven
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 8
+				}
+				desc = OW_ShiLian_TianTi_Eight
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 9
+				}
+				desc = OW_ShiLian_TianTi_Nine
+			}
+		}
+	}
+	desc = OW_ShiLian_TianTi_Context_1_desc
+	theme = realm
+	override_background = {
+		event_background = wilderness_mountains
+	}
+	left_portrait = root
+	trigger = {
+	}
+	immediate = {
+	}
+	#give up
+	option = {
+		name = OW_ShiLian_TianTi_Context_1_option_giveup
+		OW_ShiLian_TianTi_IncreaseWounedLevel = yes
+		OW_ShiLian_TianTi_StressGiveup = yes
+		OW_ShiLian_TianTi_Failure = yes
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 50
+				has_trait = lazy
+			}
+			modifier = {
+				add = 50
+				has_trait = craven
+			}
+		}
+	}
+	#continue
+	option = {
+		name = OW_ShiLian_TianTi_Context_1_option_continue
+		OW_ShiLian_TianTi_IncreaseWounedLevel = yes
+		OW_ShiLian_TianTi_StressContinue = yes
+		OW_ShiLian_TianTi_NextEvent = yes
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 50
+				has_trait = patient
+			}
+			modifier = {
+				add = 50
+				has_trait = brave
+			}
+			modifier = {
+				add = 50
+				has_trait = ambitious
+			}
+			modifier = {
+				add = 50
+				has_trait = stubborn
+			}
+			modifier = {
+				add = 50
+				has_trait_rank = {
+					trait = intellect_good
+					rank >= 1
+				}
+			}
+		}
+	}
+}
+
+#
+OW_ShiLian_TianTi.20 = {
+	type = character_event
+	title = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 1
+				}
+				desc = OW_ShiLian_TianTi_One
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 2
+				}
+				desc = OW_ShiLian_TianTi_Two
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 3
+				}
+				desc = OW_ShiLian_TianTi_Three
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 4
+				}
+				desc = OW_ShiLian_TianTi_Four
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 5
+				}
+				desc = OW_ShiLian_TianTi_Five
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 6
+				}
+				desc = OW_ShiLian_TianTi_Six
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 7
+				}
+				desc = OW_ShiLian_TianTi_Seven
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 8
+				}
+				desc = OW_ShiLian_TianTi_Eight
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 9
+				}
+				desc = OW_ShiLian_TianTi_Nine
+			}
+		}
+	}
+	desc = OW_ShiLian_TianTi_Context_2_desc
+	theme = realm
+	override_background = {
+		event_background = wilderness_mountains
+	}
+	left_portrait = root
+	trigger = {
+	}
+	immediate = {
+		OW_ShiLian_TianTi_LoseCashSetup = yes
+	}
+	#giveup -greedy
+	option = {
+		trigger = {
+			has_trait = greedy
+		}
+		name = OW_ShiLian_TianTi_Context_2_option_giveup_trait_greed
+		OW_ShiLian_TianTi_StressGiveup = yes
+		OW_ShiLian_TianTi_Failure = yes
+		if = {
+			limit = { exists = var:OW_ShiLian_TianTi_LoseCash_little}
+			add_gold = var:OW_ShiLian_TianTi_LoseCash_little
+		}
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 50
+				has_trait = lazy
+			}
+			modifier = {
+				add = 50
+				has_trait = craven
+			}
+			modifier = {
+				add = 100
+				has_trait = greedy
+			}
+		}
+	}
+	#giveup
+	option = {
+		name = OW_ShiLian_TianTi_Context_2_option_giveup
+		trigger = {
+			NOT = {
+				has_trait = greedy
+			}
+		}
+		OW_ShiLian_TianTi_Failure = yes
+		OW_ShiLian_TianTi_StressGiveup = yes
+		if = {
+			limit = { exists = var:OW_ShiLian_TianTi_LoseCash_little}
+			add_gold = var:OW_ShiLian_TianTi_LoseCash_little
+		}
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 50
+				has_trait = lazy
+			}
+			modifier = {
+				add = 50
+				has_trait = craven
+			}
+		}
+	}
+	#continue
+	option = {
+		name = OW_ShiLian_TianTi_Context_2_option_continue
+		if = {
+			limit = { exists = var:OW_ShiLian_TianTi_LoseCash_many}
+			add_gold = var:OW_ShiLian_TianTi_LoseCash_many
+		}
+		add_character_flag = OW_ShiLian_TianTi_been_LoseCash
+		OW_ShiLian_TianTi_StressContinue = yes
+		stress_impact = {
+			greedy = medium_stress_impact_gain
+		}
+		OW_ShiLian_TianTi_NextEvent = yes
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 50
+				has_trait = patient
+			}
+			modifier = {
+				add = 50
+				has_trait = brave
+			}
+			modifier = {
+				add = 50
+				has_trait = ambitious
+			}
+			modifier = {
+				add = 50
+				has_trait = stubborn
+			}
+			modifier = {
+				add = 50
+				has_trait_rank = {
+					trait = intellect_good
+					rank >= 1
+				}
+			}
+		}
+	}
+}
+
+#
+OW_ShiLian_TianTi.30 = {
+	type = character_event
+	title = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 1
+				}
+				desc = OW_ShiLian_TianTi_One
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 2
+				}
+				desc = OW_ShiLian_TianTi_Two
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 3
+				}
+				desc = OW_ShiLian_TianTi_Three
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 4
+				}
+				desc = OW_ShiLian_TianTi_Four
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 5
+				}
+				desc = OW_ShiLian_TianTi_Five
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 6
+				}
+				desc = OW_ShiLian_TianTi_Six
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 7
+				}
+				desc = OW_ShiLian_TianTi_Seven
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 8
+				}
+				desc = OW_ShiLian_TianTi_Eight
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 9
+				}
+				desc = OW_ShiLian_TianTi_Nine
+			}
+		}
+	}
+	desc = OW_ShiLian_TianTi_Context_3_desc
+	theme = realm
+	override_background = {
+		event_background = wilderness_mountains
+	}
+	left_portrait = root
+	trigger = {
+	}
+	immediate = {
+		OW_ShiLian_TianTi_LosePrestigeSetup = yes
+	}
+	#continue
+	option = {
+		name = OW_ShiLian_TianTi_Context_3_option_continue
+		add_prestige = var:OW_ShiLian_TianTi_LosePrestige_many
+		add_character_flag = OW_ShiLian_TianTi_been_LosePrestige
+		OW_ShiLian_TianTi_StressContinue = yes
+		OW_ShiLian_TianTi_NextEvent = yes
+		stress_impact = {
+			arrogant = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 50
+				has_trait = patient
+			}
+			modifier = {
+				add = 50
+				has_trait = brave
+			}
+			modifier = {
+				add = 50
+				has_trait = ambitious
+			}
+			modifier = {
+				add = 50
+				has_trait = stubborn
+			}
+			modifier = {
+				add = 50
+				has_trait_rank = {
+					trait = intellect_good
+					rank >= 1
+				}
+			}
+		}
+	}
+	#giveup
+	option = {
+		name = OW_ShiLian_TianTi_Context_3_option_giveup
+		add_prestige = var:OW_ShiLian_TianTi_LosePrestige_little
+		OW_ShiLian_TianTi_StressGiveup = yes
+		OW_ShiLian_TianTi_Failure = yes
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 50
+				has_trait = lazy
+			}
+			modifier = {
+				add = 50
+				has_trait = craven
+			}
+			modifier = {
+				add = 50
+				has_trait = arrogant
+			}
+			modifier = {
+				add = 50
+				has_trait = shy
+			}
+		}
+	}
+}
+
+OW_ShiLian_TianTi.40 = {
+	type = character_event
+	title = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 1
+				}
+				desc = OW_ShiLian_TianTi_One
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 2
+				}
+				desc = OW_ShiLian_TianTi_Two
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 3
+				}
+				desc = OW_ShiLian_TianTi_Three
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 4
+				}
+				desc = OW_ShiLian_TianTi_Four
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 5
+				}
+				desc = OW_ShiLian_TianTi_Five
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 6
+				}
+				desc = OW_ShiLian_TianTi_Six
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 7
+				}
+				desc = OW_ShiLian_TianTi_Seven
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 8
+				}
+				desc = OW_ShiLian_TianTi_Eight
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 9
+				}
+				desc = OW_ShiLian_TianTi_Nine
+			}
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					any_secret = {
+						secret_type = secret_non_believer
+					}
+				}
+				desc = OW_ShiLian_TianTi_Context_4_Second_desc
+			}
+			desc = OW_ShiLian_TianTi_Context_4_desc
+		}
+	}
+	theme = realm
+	override_background = {
+		event_background = wilderness_mountains
+	}
+	left_portrait = root
+	trigger = {
+	}
+	immediate = {
+	}
+	#continue
+	option = {
+		trigger = {
+			NOT = {
+				any_secret = {
+					secret_type = secret_non_believer
+				}
+			}
+		}
+		name = OW_ShiLian_TianTi_Context_4_option_continue
+		OW_ShiLian_TianTi_StressContinue = yes
+		OW_ShiLian_TianTi_NextEvent = yes
+		stress_impact = {
+			zealous = medium_stress_impact_gain
+		}
+		add_secret = {
+			type = secret_non_believer
+		}
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 50
+				has_trait = patient
+			}
+			modifier = {
+				add = 50
+				has_trait = brave
+			}
+			modifier = {
+				add = 50
+				has_trait = ambitious
+			}
+			modifier = {
+				add = 50
+				has_trait = stubborn
+			}
+			modifier = {
+				add = 50
+				has_trait = cynical
+			}
+			modifier = {
+				add = 50
+				has_trait_rank = {
+					trait = intellect_good
+					rank >= 1
+				}
+			}
+		}
+	}
+	#giveup
+	option = {
+		trigger = {
+			NOT = {
+				has_trait = zealous
+			}
+		}
+		name = OW_ShiLian_TianTi_Context_4_option_giveup
+		OW_ShiLian_TianTi_Failure = yes
+		OW_ShiLian_TianTi_StressGiveup = yes
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 50
+				has_trait = lazy
+			}
+			modifier = {
+				add = 50
+				has_trait = craven
+			}
+		}
+	}
+	#giveup -zealous
+	option = {
+		trigger = {
+			has_trait = zealous
+		}
+		name = OW_ShiLian_TianTi_Context_4_option_giveup_trait_zealous
+		OW_ShiLian_TianTi_Failure = yes
+		OW_ShiLian_TianTi_StressGiveup = yes
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 200
+				has_trait = zealous
+			}
+		}
+	}
+	#continue
+	option = {
+		trigger = {
+			any_secret = {
+				secret_type = secret_non_believer
+			}
+		}
+		name = OW_ShiLian_TianTi_Context_4_Second_option_continue
+		OW_ShiLian_TianTi_StressContinue = yes
+		OW_ShiLian_TianTi_NextEvent = yes
+	}
+}
+
+OW_ShiLian_TianTi.50 = {
+	type = character_event
+	title = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 1
+				}
+				desc = OW_ShiLian_TianTi_One
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 2
+				}
+				desc = OW_ShiLian_TianTi_Two
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 3
+				}
+				desc = OW_ShiLian_TianTi_Three
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 4
+				}
+				desc = OW_ShiLian_TianTi_Four
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 5
+				}
+				desc = OW_ShiLian_TianTi_Five
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 6
+				}
+				desc = OW_ShiLian_TianTi_Six
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 7
+				}
+				desc = OW_ShiLian_TianTi_Seven
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 8
+				}
+				desc = OW_ShiLian_TianTi_Eight
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 9
+				}
+				desc = OW_ShiLian_TianTi_Nine
+			}
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					exists = scope:TheImportantOne
+				}
+				desc = OW_ShiLian_TianTi_Context_5_desc
+			}
+			desc = OW_ShiLian_TianTi_Context_5_Second_desc
+		}
+	}
+	theme = realm
+	override_background = {
+		event_background = wilderness_mountains
+	}
+	left_portrait = {
+		character = root
+		animation = stress
+	}
+	right_portrait = scope:TheImportantOne
+	trigger = {
+	}
+	immediate = {
+		OW_ShiLian_TianTi_FindImportantOne = yes
+	}
+	#giveup
+	option = {
+		name = OW_ShiLian_TianTi_Context_5_option_giveup
+		trigger = {
+			exists = scope:TheImportantOne
+		}
+		OW_ShiLian_TianTi_Failure = yes
+		OW_ShiLian_TianTi_StressGiveup = yes
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 50
+				has_trait = lazy
+			}
+			modifier = {
+				add = 50
+				has_trait = craven
+			}
+			modifier = {
+				add = 50
+				has_trait = compassionate
+			}
+		}
+	}
+	#continue
+	option = {
+		name = OW_ShiLian_TianTi_Context_5_option_continue
+		trigger = {
+			exists = scope:TheImportantOne
+		}
+		OW_ShiLian_TianTi_NextEvent = yes
+		OW_ShiLian_TianTi_StressContinue = yes
+		stress_impact = {
+			compassionate = medium_stress_impact_gain
+		}
+		show_as_tooltip = {
+			scope:TheImportantOne = {
+				death = {
+					killer = root
+					death_reason = death_murder
+				}
+			}
+		}
+		hidden_effect = {
+			send_interface_toast = {
+				left_icon = root
+				right_icon = scope:TheImportantOne
+				title = OW_ShiLian_TianTi_Context_5_option_continue_toast_title
+				custom_tooltip = OW_ShiLian_TianTi_Context_5_option_continue_toast_desc
+			}
+		}
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 50
+				has_trait = patient
+			}
+			modifier = {
+				add = 50
+				has_trait = brave
+			}
+			modifier = {
+				add = 50
+				has_trait = ambitious
+			}
+			modifier = {
+				add = 50
+				has_trait = stubborn
+			}
+			modifier = {
+				add = 50
+				has_trait = callous
+			}
+			modifier = {
+				add = 50
+				has_trait = calm
+			}
+			modifier = {
+				add = 50
+				has_trait = paranoid
+			}
+			modifier = {
+				add = 50
+				has_trait_rank = {
+					trait = intellect_good
+					rank >= 1
+				}
+			}
+		}
+	}
+	#continue
+	option = {
+		trigger = {
+			NOT = {
+				exists = scope:TheImportantOne
+			}
+		}
+		name = OW_ShiLian_TianTi_Context_5_Second_option_continue
+		OW_ShiLian_TianTi_NextEvent = yes
+		OW_ShiLian_TianTi_StressContinue = yes
+	}
+}
+
+OW_ShiLian_TianTi.60 = {
+	type = character_event
+	title = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 1
+				}
+				desc = OW_ShiLian_TianTi_One
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 2
+				}
+				desc = OW_ShiLian_TianTi_Two
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 3
+				}
+				desc = OW_ShiLian_TianTi_Three
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 4
+				}
+				desc = OW_ShiLian_TianTi_Four
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 5
+				}
+				desc = OW_ShiLian_TianTi_Five
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 6
+				}
+				desc = OW_ShiLian_TianTi_Six
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 7
+				}
+				desc = OW_ShiLian_TianTi_Seven
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 8
+				}
+				desc = OW_ShiLian_TianTi_Eight
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 9
+				}
+				desc = OW_ShiLian_TianTi_Nine
+			}
+		}
+	}
+	desc = OW_ShiLian_TianTi_Context_6_desc
+	theme = realm
+	override_background = {
+		event_background = wilderness_mountains
+	}
+	left_portrait = root
+	trigger = {
+	}
+	immediate = {
+	}
+	#giveup
+	option = {
+		name = OW_ShiLian_TianTi_Context_6_option_giveup
+		OW_ShiLian_TianTi_Failure = yes
+		OW_ShiLian_TianTi_StressGiveup = yes
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 50
+				has_trait = lazy
+			}
+			modifier = {
+				add = 50
+				has_trait = craven
+			}
+			modifier = {
+				add = 50
+				has_trait = trusting
+			}
+		}
+	}
+	#continue
+	option = {
+		name = OW_ShiLian_TianTi_Context_6_option_continue
+		OW_ShiLian_TianTi_StressContinue = yes
+		OW_ShiLian_TianTi_NextEvent = yes
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 50
+				has_trait = patient
+			}
+			modifier = {
+				add = 50
+				has_trait = brave
+			}
+			modifier = {
+				add = 50
+				has_trait = ambitious
+			}
+			modifier = {
+				add = 50
+				has_trait = stubborn
+			}
+			modifier = {
+				add = 50
+				has_trait = calm
+			}
+			modifier = {
+				add = 50
+				has_trait = paranoid
+			}
+			modifier = {
+				add = 50
+				has_trait_rank = {
+					trait = intellect_good
+					rank >= 1
+				}
+			}
+		}
+	}
+}
+
+OW_ShiLian_TianTi.70 = {
+	type = character_event
+	title = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 1
+				}
+				desc = OW_ShiLian_TianTi_One
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 2
+				}
+				desc = OW_ShiLian_TianTi_Two
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 3
+				}
+				desc = OW_ShiLian_TianTi_Three
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 4
+				}
+				desc = OW_ShiLian_TianTi_Four
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 5
+				}
+				desc = OW_ShiLian_TianTi_Five
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 6
+				}
+				desc = OW_ShiLian_TianTi_Six
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 7
+				}
+				desc = OW_ShiLian_TianTi_Seven
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 8
+				}
+				desc = OW_ShiLian_TianTi_Eight
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 9
+				}
+				desc = OW_ShiLian_TianTi_Nine
+			}
+		}
+	}
+	desc = OW_ShiLian_TianTi_Context_7_desc
+	theme = realm
+	override_background = {
+		event_background = wilderness_mountains
+	}
+	left_portrait = root
+	trigger = {
+	}
+	immediate = {
+	}
+	#giveup
+	option = {
+		name = OW_ShiLian_TianTi_Context_7_option_giveup
+		show_as_tooltip = {
+			add_gold = 1000000
+		}
+		OW_ShiLian_TianTi_Failure = yes
+		OW_ShiLian_TianTi_StressGiveup = yes
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 50
+				has_trait = lazy
+			}
+			modifier = {
+				add = 50
+				has_trait = craven
+			}
+			modifier = {
+				add = 100
+				has_trait = greedy
+			}
+		}
+	}
+	#continue
+	option = {
+		name = OW_ShiLian_TianTi_Context_7_option_continue
+		OW_ShiLian_TianTi_NextEvent = yes
+		OW_ShiLian_TianTi_StressContinue = yes
+		stress_impact = {
+			greedy = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 50
+				has_trait = patient
+			}
+			modifier = {
+				add = 50
+				has_trait = brave
+			}
+			modifier = {
+				add = 50
+				has_trait = ambitious
+			}
+			modifier = {
+				add = 50
+				has_trait = stubborn
+			}
+			modifier = {
+				add = 50
+				has_trait = calm
+			}
+			modifier = {
+				add = 50
+				has_trait = paranoid
+			}
+			modifier = {
+				add = 50
+				has_trait_rank = {
+					trait = intellect_good
+					rank >= 1
+				}
+			}
+		}
+	}
+}
+
+OW_ShiLian_TianTi.80 = {
+	type = character_event
+	title = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 1
+				}
+				desc = OW_ShiLian_TianTi_One
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 2
+				}
+				desc = OW_ShiLian_TianTi_Two
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 3
+				}
+				desc = OW_ShiLian_TianTi_Three
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 4
+				}
+				desc = OW_ShiLian_TianTi_Four
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 5
+				}
+				desc = OW_ShiLian_TianTi_Five
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 6
+				}
+				desc = OW_ShiLian_TianTi_Six
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 7
+				}
+				desc = OW_ShiLian_TianTi_Seven
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 8
+				}
+				desc = OW_ShiLian_TianTi_Eight
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 9
+				}
+				desc = OW_ShiLian_TianTi_Nine
+			}
+		}
+	}
+	desc = OW_ShiLian_TianTi_Context_8_desc
+	theme = realm
+	override_background = {
+		event_background = wilderness_mountains
+	}
+	left_portrait = root
+	trigger = {
+	}
+	immediate = {
+	}
+	#giveup
+	option = {
+		name = OW_ShiLian_TianTi_Context_8_option_giveup
+		OW_ShiLian_TianTi_Failure = yes
+		OW_ShiLian_TianTi_StressGiveup = yes
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 50
+				has_trait = lazy
+			}
+			modifier = {
+				add = 100
+				has_trait = craven
+			}
+		}
+	}
+	#continue
+	option = {
+		name = OW_ShiLian_TianTi_Context_8_option_continue
+		OW_ShiLian_TianTi_DecreasePhysiqueTrait = yes
+		OW_ShiLian_TianTi_NextEvent = yes
+		OW_ShiLian_TianTi_StressContinue = yes
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 50
+				has_trait = patient
+			}
+			modifier = {
+				add = 50
+				has_trait = brave
+			}
+			modifier = {
+				add = 50
+				has_trait = ambitious
+			}
+			modifier = {
+				add = 50
+				has_trait = stubborn
+			}
+			modifier = {
+				add = 50
+				has_trait_rank = {
+					trait = intellect_good
+					rank >= 1
+				}
+			}
+		}
+	}
+}
+
+OW_ShiLian_TianTi.90 = {
+	type = character_event
+	title = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 1
+				}
+				desc = OW_ShiLian_TianTi_One
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 2
+				}
+				desc = OW_ShiLian_TianTi_Two
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 3
+				}
+				desc = OW_ShiLian_TianTi_Three
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 4
+				}
+				desc = OW_ShiLian_TianTi_Four
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 5
+				}
+				desc = OW_ShiLian_TianTi_Five
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 6
+				}
+				desc = OW_ShiLian_TianTi_Six
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 7
+				}
+				desc = OW_ShiLian_TianTi_Seven
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 8
+				}
+				desc = OW_ShiLian_TianTi_Eight
+			}
+			triggered_desc = {
+				trigger = {
+					var:OW_ShiLian_TianTi_times = 9
+				}
+				desc = OW_ShiLian_TianTi_Nine
+			}
+		}
+	}
+	desc = OW_ShiLian_TianTi_Context_9_desc
+	theme = realm
+	override_background = {
+		event_background = wilderness_mountains
+	}
+	left_portrait = root
+	trigger = {
+	}
+	immediate = {
+	}
+	#giveup
+	option = {
+		name = OW_ShiLian_TianTi_Context_9_option_giveup
+		OW_ShiLian_TianTi_Failure = yes
+		OW_ShiLian_TianTi_StressGiveup = yes
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 50
+				has_trait = lazy
+			}
+			modifier = {
+				add = 50
+				has_trait = craven
+			}
+		}
+	}
+	#continue
+	option = {
+		name = OW_ShiLian_TianTi_Context_9_option_continue
+		OW_ShiLian_TianTi_NextEvent = yes
+		OW_ShiLian_TianTi_StressContinue = yes
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 50
+				has_trait = patient
+			}
+			modifier = {
+				add = 50
+				has_trait = brave
+			}
+			modifier = {
+				add = 50
+				has_trait = ambitious
+			}
+			modifier = {
+				add = 50
+				has_trait = stubborn
+			}
+			modifier = {
+				add = 50
+				has_trait = calm
+			}
+			modifier = {
+				add = 50
+				has_trait = paranoid
+			}
+			modifier = {
+				add = 50
+				has_trait_rank = {
+					trait = intellect_good
+					rank >= 1
+				}
+			}
+		}
+	}
+}

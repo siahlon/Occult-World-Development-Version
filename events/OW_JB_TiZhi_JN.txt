@@ -1,0 +1,290 @@
+﻿
+###########44天谕
+namespace = OW_XZ_TZ_44_TianYu_perk_event
+OW_XZ_TZ_44_TianYu_perk_event.0001 = {
+	type = character_event
+	theme = realm
+	title = OW_XZ_TZ_44_TianYu_perk_event.0001.name
+	desc = OW_XZ_TZ_44_TianYu_perk_event.0001.desc
+	left_portrait = {
+		character = scope:actor
+	}
+	option = {
+		name = OW_XZ_TZ_44_TianYu_perk_event.0001.1.t
+		hidden_effect = {
+			random_list = {
+				50 = { trigger_event = OW_XZ_TZ_44_TianYu_perk_event.0002 }
+				50 = { trigger_event = OW_XZ_TZ_44_TianYu_perk_event.0003 }
+			}
+			set_variable = { name = OW_XZ_TZ_44_TianYu_perk_event_value value = 0 }
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+	option = {
+		name = OW_XZ_TZ_44_TianYu_perk_event.0001.2.t
+		hidden_effect = {
+			random_list = {
+				49 = { trigger_event = OW_XZ_TZ_44_TianYu_perk_event.0004 }
+				49 = { trigger_event = OW_XZ_TZ_44_TianYu_perk_event.0005 }
+				1 = { trigger_event = OW_XZ_TZ_44_TianYu_perk_event.0006 }
+				1 = { trigger_event = OW_XZ_TZ_44_TianYu_perk_event.0007 }
+			}
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+OW_XZ_TZ_44_TianYu_perk_event.0002 = {
+	type = character_event
+	theme = realm
+	title = OW_XZ_TZ_44_TianYu_perk_event.0002.name
+	desc = OW_XZ_TZ_44_TianYu_perk_event.0002.desc
+	left_portrait = {
+		character = scope:actor
+	}
+	immediate = {
+		if = {
+			limit = { exists = var:OW_XZ_TZ_44_TianYu_perk_event_value }
+			change_variable = { name = OW_XZ_TZ_44_TianYu_perk_event_value add = var:OW_lingli_max }
+			add_OW_lingli_max = { VALUE = var:OW_XZ_TZ_44_TianYu_perk_event_value }
+		}
+	}
+	option = {
+		name = OW_XZ_TZ_44_TianYu_perk_event.0002.t
+		remove_variable = OW_XZ_TZ_44_TianYu_perk_event_value
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+OW_XZ_TZ_44_TianYu_perk_event.0003 = {
+	type = character_event
+	theme = realm
+	title = OW_XZ_TZ_44_TianYu_perk_event.0003.name
+	desc = OW_XZ_TZ_44_TianYu_perk_event.0003.desc
+	left_portrait = {
+		character = scope:actor
+	}
+	immediate = {
+		if = {
+			limit = { exists = var:OW_XZ_TZ_44_TianYu_perk_event_value }
+			if = {
+				limit = { var:OW_mingli > 1000 }
+				change_variable = { name = OW_XZ_TZ_44_TianYu_perk_event_value subtract = var:OW_mingli }
+				change_variable = { name = OW_XZ_TZ_44_TianYu_perk_event_value divide = 2 }
+				add_OW_mingli = { VALUE = var:OW_XZ_TZ_44_TianYu_perk_event_value }
+			}
+			else = {
+				death = { death_reason = death_TianYu }
+			}
+		}
+	}
+	option = {
+		name = OW_XZ_TZ_44_TianYu_perk_event.0003.t
+		remove_variable = OW_XZ_TZ_44_TianYu_perk_event_value
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+OW_XZ_TZ_44_TianYu_perk_event.0004 = {
+	type = character_event
+	theme = realm
+	title = OW_XZ_TZ_44_TianYu_perk_event.0004.name
+	desc = OW_XZ_TZ_44_TianYu_perk_event.0004.desc
+	left_portrait = {
+		character = scope:actor
+	}
+	immediate = {
+		random_list = {
+			1 = { add_OW_lingli_max = { VALUE = 1 } }
+			1 = { add_OW_lingli = { VALUE = 1 } }
+			1 = { add_OW_mingli = { VALUE = 1 } }
+			1 = { add_OW_wuxing = { VALUE = 1 } }
+			1 = { add_OW_lingqiang = { VALUE = 1 } }
+			1 = { add_OW_lingshi = { VALUE = 1 } }
+			1 = { add_OW_lilian = { VALUE = 1 } }
+			1 = { add_OW_ganwu = { VALUE = 1 } }
+			1 = { add_OW_duanti = { VALUE = 1 } }
+			1 = { add_OW_shenshi = { VALUE = 1 } }
+			1 = { add_OW_shihai = { VALUE = 1 } }
+			1 = { add_OW_lilian_exp = { VALUE = 1 } }
+			1 = { add_OW_ganwu_exp = { VALUE = 1 } }
+			1 = { add_OW_years_lingli_max = { VALUE = 1 } }
+			1 = { add_OW_years_lingli = { VALUE = 1 } }
+			1 = { add_OW_years_mingli = { VALUE = 1 } }
+			1 = { add_OW_months_lilian_exp = { VALUE = 1 } }
+			1 = { add_OW_months_ganwu_exp = { VALUE = 1 } }
+			1 = { add_OW_years_lilian_exp = { VALUE = 1 } }
+			1 = { add_OW_years_ganwu_exp = { VALUE = 1 } }
+			1 = { add_OW_duanti_exp = { VALUE = 1 } }
+			1 = { add_OW_shenshi_exp = { VALUE = 1 } }
+			1 = { add_OW_shihai_exp = { VALUE = 1 } }
+			1 = { add_OW_months_duanti_exp = { VALUE = 1 } }
+			1 = { add_OW_months_shenshi_exp = { VALUE = 1 } }
+			1 = { add_OW_months_shihai_exp = { VALUE = 1 } }
+			1 = { add_OW_years_duanti_exp = { VALUE = 1 } }
+			1 = { add_OW_years_shenshi_exp = { VALUE = 1 } }
+			1 = { add_OW_years_shihai_exp = { VALUE = 1 } }
+		}
+	}
+	option = {
+		name = OW_XZ_TZ_44_TianYu_perk_event.0004.t
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+OW_XZ_TZ_44_TianYu_perk_event.0005 = {
+	type = character_event
+	theme = realm
+	title = OW_XZ_TZ_44_TianYu_perk_event.0005.name
+	desc = OW_XZ_TZ_44_TianYu_perk_event.0005.desc
+	left_portrait = {
+		character = scope:actor
+	}
+	immediate = {
+		random_list = {
+			1 = { add_OW_lingli_max = { VALUE = -1 } }
+			1 = { add_OW_lingli = { VALUE = -1 } }
+			1 = { add_OW_mingli = { VALUE = -1 } }
+			1 = { add_OW_wuxing = { VALUE = -1 } }
+			1 = { add_OW_lingqiang = { VALUE = -1 } }
+			1 = { add_OW_lingshi = { VALUE = -1 } }
+			1 = { add_OW_lilian = { VALUE = -1 } }
+			1 = { add_OW_ganwu = { VALUE = -1 } }
+			1 = { add_OW_duanti = { VALUE = -1 } }
+			1 = { add_OW_shenshi = { VALUE = -1 } }
+			1 = { add_OW_shihai = { VALUE = -1 } }
+			1 = { add_OW_lilian_exp = { VALUE = -1 } }
+			1 = { add_OW_ganwu_exp = { VALUE = -1 } }
+			1 = { add_OW_years_lingli_max = { VALUE = -1 } }
+			1 = { add_OW_years_lingli = { VALUE = -1 } }
+			1 = { add_OW_years_mingli = { VALUE = -1 } }
+			1 = { add_OW_months_lilian_exp = { VALUE = -1 } }
+			1 = { add_OW_months_ganwu_exp = { VALUE = -1 } }
+			1 = { add_OW_years_lilian_exp = { VALUE = -1 } }
+			1 = { add_OW_years_ganwu_exp = { VALUE = -1 } }
+			1 = { add_OW_duanti_exp = { VALUE = -1 } }
+			1 = { add_OW_shenshi_exp = { VALUE = -1 } }
+			1 = { add_OW_shihai_exp = { VALUE = -1 } }
+			1 = { add_OW_months_duanti_exp = { VALUE = -1 } }
+			1 = { add_OW_months_shenshi_exp = { VALUE = -1 } }
+			1 = { add_OW_months_shihai_exp = { VALUE = -1 } }
+			1 = { add_OW_years_duanti_exp = { VALUE = -1 } }
+			1 = { add_OW_years_shenshi_exp = { VALUE = -1 } }
+			1 = { add_OW_years_shihai_exp = { VALUE = -1 } }
+		}
+	}
+	option = {
+		name = OW_XZ_TZ_44_TianYu_perk_event.0005.t
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+OW_XZ_TZ_44_TianYu_perk_event.0006 = {
+	type = character_event
+	theme = realm
+	title = OW_XZ_TZ_44_TianYu_perk_event.0006.name
+	desc = OW_XZ_TZ_44_TianYu_perk_event.0006.desc
+	left_portrait = {
+		character = scope:actor
+	}
+	immediate = {
+		random_list = {
+			1 = { add_OW_lingli_max = { VALUE = 10 } }
+			1 = { add_OW_lingli = { VALUE = 10 } }
+			1 = { add_OW_mingli = { VALUE = 10 } }
+			1 = { add_OW_wuxing = { VALUE = 10 } }
+			1 = { add_OW_lingqiang = { VALUE = 10 } }
+			1 = { add_OW_lingshi = { VALUE = 10 } }
+			1 = { add_OW_lilian = { VALUE = 10 } }
+			1 = { add_OW_ganwu = { VALUE = 10 } }
+			1 = { add_OW_duanti = { VALUE = 10 } }
+			1 = { add_OW_shenshi = { VALUE = 10 } }
+			1 = { add_OW_shihai = { VALUE = 10 } }
+			1 = { add_OW_lilian_exp = { VALUE = 10 } }
+			1 = { add_OW_ganwu_exp = { VALUE = 10 } }
+			1 = { add_OW_years_lingli_max = { VALUE = 10 } }
+			1 = { add_OW_years_lingli = { VALUE = 10 } }
+			1 = { add_OW_years_mingli = { VALUE = 10 } }
+			1 = { add_OW_months_lilian_exp = { VALUE = 10 } }
+			1 = { add_OW_months_ganwu_exp = { VALUE = 10 } }
+			1 = { add_OW_years_lilian_exp = { VALUE = 10 } }
+			1 = { add_OW_years_ganwu_exp = { VALUE = 10 } }
+			1 = { add_OW_duanti_exp = { VALUE = 10 } }
+			1 = { add_OW_shenshi_exp = { VALUE = 10 } }
+			1 = { add_OW_shihai_exp = { VALUE = 10 } }
+			1 = { add_OW_months_duanti_exp = { VALUE = 10 } }
+			1 = { add_OW_months_shenshi_exp = { VALUE = 10 } }
+			1 = { add_OW_months_shihai_exp = { VALUE = 10 } }
+			1 = { add_OW_years_duanti_exp = { VALUE = 10 } }
+			1 = { add_OW_years_shenshi_exp = { VALUE = 10 } }
+			1 = { add_OW_years_shihai_exp = { VALUE = 10 } }
+		}
+	}
+	option = {
+		name = OW_XZ_TZ_44_TianYu_perk_event.0006.t
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+OW_XZ_TZ_44_TianYu_perk_event.0007 = {
+	type = character_event
+	theme = realm
+	title = OW_XZ_TZ_44_TianYu_perk_event.0007.name
+	desc = OW_XZ_TZ_44_TianYu_perk_event.0007.desc
+	left_portrait = {
+		character = scope:actor
+	}
+	immediate = {
+		random_list = {
+			1 = { add_OW_lingli_max = { VALUE = -10 } }
+			1 = { add_OW_lingli = { VALUE = -10 } }
+			1 = { add_OW_mingli = { VALUE = -10 } }
+			1 = { add_OW_wuxing = { VALUE = -10 } }
+			1 = { add_OW_lingqiang = { VALUE = -10 } }
+			1 = { add_OW_lingshi = { VALUE = -10 } }
+			1 = { add_OW_lilian = { VALUE = -10 } }
+			1 = { add_OW_ganwu = { VALUE = -10 } }
+			1 = { add_OW_duanti = { VALUE = -10 } }
+			1 = { add_OW_shenshi = { VALUE = -10 } }
+			1 = { add_OW_shihai = { VALUE = -10 } }
+			1 = { add_OW_lilian_exp = { VALUE = -10 } }
+			1 = { add_OW_ganwu_exp = { VALUE = -10 } }
+			1 = { add_OW_years_lingli_max = { VALUE = -10 } }
+			1 = { add_OW_years_lingli = { VALUE = -10 } }
+			1 = { add_OW_years_mingli = { VALUE = -10 } }
+			1 = { add_OW_months_lilian_exp = { VALUE = -10 } }
+			1 = { add_OW_months_ganwu_exp = { VALUE = -10 } }
+			1 = { add_OW_years_lilian_exp = { VALUE = -10 } }
+			1 = { add_OW_years_ganwu_exp = { VALUE = -10 } }
+			1 = { add_OW_duanti_exp = { VALUE = -10 } }
+			1 = { add_OW_shenshi_exp = { VALUE = -10 } }
+			1 = { add_OW_shihai_exp = { VALUE = -10 } }
+			1 = { add_OW_months_duanti_exp = { VALUE = -10 } }
+			1 = { add_OW_months_shenshi_exp = { VALUE = -10 } }
+			1 = { add_OW_months_shihai_exp = { VALUE = -10 } }
+			1 = { add_OW_years_duanti_exp = { VALUE = -10 } }
+			1 = { add_OW_years_shenshi_exp = { VALUE = -10 } }
+			1 = { add_OW_years_shihai_exp = { VALUE = -10 } }
+		}
+	}
+	option = {
+		name = OW_XZ_TZ_44_TianYu_perk_event.0007.t
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+####################

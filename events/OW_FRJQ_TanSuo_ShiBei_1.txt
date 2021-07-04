@@ -1,0 +1,117 @@
+﻿#已接入
+namespace = OW_FRJQ_TanSuo_ShiBei_1
+OW_FRJQ_TanSuo_ShiBei_1.1 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_ShiBei_1.1.t
+    desc = OW_FRJQ_TanSuo_ShiBei_1.1.desc
+    option = {
+        name = OW_FRJQ_TanSuo_ShiBei_1.1.a
+		hidden_effect = {
+			random_list = {
+				10 = { trigger_event = OW_FRJQ_TanSuo_ShiBei_1.2 }
+				40 = { trigger_event = OW_FRJQ_TanSuo_ShiBei_1.3 }
+			}
+		}
+    }
+    option = {
+        name = OW_FRJQ_TanSuo_ShiBei_1.1.b
+		hidden_effect = {
+			random_list = {
+				10 = { trigger_event = OW_FRJQ_TanSuo_ShiBei_1.2 }
+				40 = { trigger_event = OW_FRJQ_TanSuo_ShiBei_1.4 }
+			}
+		}
+    }
+    option = {
+        name = OW_FRJQ_TanSuo_ShiBei_1.1.c
+		hidden_effect = {
+			random_list = {
+				10 = { trigger_event = OW_FRJQ_TanSuo_ShiBei_1.2 }
+				40 = { trigger_event = OW_FRJQ_TanSuo_ShiBei_1.5 }
+			}
+		}
+    }
+    option = {
+        name = OW_FRJQ_TanSuo_ShiBei_1.1.d
+		hidden_effect = {
+			random_list = {
+				10 = { trigger_event = OW_FRJQ_TanSuo_ShiBei_1.2 }
+				40 = { trigger_event = OW_FRJQ_TanSuo_ShiBei_1.6 }
+			}
+		}
+    }
+    option = {
+        name = OW_FRJQ_TanSuo_ShiBei_1.1.e
+		hidden_effect = {
+			random_list = {
+				10 = { trigger_event = OW_FRJQ_TanSuo_ShiBei_1.2 }
+				40 = { trigger_event = OW_FRJQ_TanSuo_ShiBei_1.7 }
+			}
+		}
+    }
+}
+OW_FRJQ_TanSuo_ShiBei_1.2 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_ShiBei_1.1.t
+    desc = OW_FRJQ_TanSuo_ShiBei_1.2.desc
+    option = {
+        name = OW_FRJQ_TanSuo_ShiBei_1.2.a
+		hidden_effect = {
+			add_OW_FRXZ_Random_XinXi_Random_Value = yes 
+		}
+    }
+}
+OW_FRJQ_TanSuo_ShiBei_1.3 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_ShiBei_1.1.t
+    desc = OW_FRJQ_TanSuo_ShiBei_1.3.desc
+    option = {
+        name = OW_FRJQ_TanSuo_ShiBei_1.3.a
+        random_list = {
+            10 = { add_gold = 5 }
+            10 = { add_gold = 10 }
+            10 = { add_gold = 20 }
+        }
+    }
+}
+OW_FRJQ_TanSuo_ShiBei_1.4 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_ShiBei_1.1.t
+    desc = OW_FRJQ_TanSuo_ShiBei_1.4.desc
+    option = {
+        name = OW_FRJQ_TanSuo_ShiBei_1.4.a
+    }
+}
+OW_FRJQ_TanSuo_ShiBei_1.5 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_ShiBei_1.1.t
+    desc = OW_FRJQ_TanSuo_ShiBei_1.5.desc
+    option = {
+        name = OW_FRJQ_TanSuo_ShiBei_1.5.a
+        add_trait = ill
+    }
+}
+OW_FRJQ_TanSuo_ShiBei_1.6 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_ShiBei_1.1.t
+    desc = OW_FRJQ_TanSuo_ShiBei_1.6.desc
+    option = {
+        name = OW_FRJQ_TanSuo_ShiBei_1.6.a
+        add_trait = wounded_1
+    }
+}
+OW_FRJQ_TanSuo_ShiBei_1.7 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_ShiBei_1.1.t
+    desc = OW_FRJQ_TanSuo_ShiBei_1.7.desc
+    option = {
+        name = OW_FRJQ_TanSuo_ShiBei_1.7.a
+    }
+}

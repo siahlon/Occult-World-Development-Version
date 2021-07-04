@@ -1,0 +1,100 @@
+﻿#以接入
+namespace = OW_FRJQ_TanSuo_WeiZhi_ShenMiYiSheng
+OW_FRJQ_TanSuo_WeiZhi_ShenMiYiSheng.1 = {
+    type = character_event
+    title = OW_FRJQ_TanSuo_WeiZhi_ShenMiYiSheng.1.t
+    desc = OW_FRJQ_TanSuo_WeiZhi_ShenMiYiSheng.1.desc
+    theme = default
+    option = {
+        name = OW_FRJQ_TanSuo_WeiZhi_ShenMiYiSheng.1.a
+        trigger_event = OW_FRJQ_TanSuo_WeiZhi_ShenMiYiSheng.2
+    }
+    option = {
+        name = OW_FRJQ_TanSuo_WeiZhi_ShenMiYiSheng.1.b
+		hidden_effect = {
+			random_list = {
+				1 = { trigger_event = OW_FRJQ_TanSuo_WeiZhi_ShenMiYiSheng.3 }
+				1 = { trigger_event = OW_FRJQ_TanSuo_WeiZhi_ShenMiYiSheng.4 }
+			}
+		}
+    }
+}
+OW_FRJQ_TanSuo_WeiZhi_ShenMiYiSheng.2 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_WeiZhi_ShenMiYiSheng.2.t
+    desc = OW_FRJQ_TanSuo_WeiZhi_ShenMiYiSheng.2.desc
+    option = {
+        name = OW_FRJQ_TanSuo_WeiZhi_ShenMiYiSheng.2.a
+    }
+}
+OW_FRJQ_TanSuo_WeiZhi_ShenMiYiSheng.3 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_WeiZhi_ShenMiYiSheng.3.t
+    desc = OW_FRJQ_TanSuo_WeiZhi_ShenMiYiSheng.3.desc
+    option = {
+        name = OW_FRJQ_TanSuo_WeiZhi_ShenMiYiSheng.3.a
+        death = {
+            killer = ROOT
+            death_reason = death_murder
+        }
+    }
+}
+OW_FRJQ_TanSuo_WeiZhi_ShenMiYiSheng.4 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_WeiZhi_ShenMiYiSheng.4.t
+    desc = OW_FRJQ_TanSuo_WeiZhi_ShenMiYiSheng.4.desc
+    option = {
+        name = OW_FRJQ_TanSuo_WeiZhi_ShenMiYiSheng.4.a
+		hidden_effect = {
+			remove_short_term_gold = 200 
+			random_list = {
+				7 = { trigger_event= OW_FRJQ_TanSuo_WeiZhi_ShenMiYiSheng.5 }
+				3 = { trigger_event = OW_FRJQ_TanSuo_WeiZhi_ShenMiYiSheng.6 }
+			}
+		}
+    }
+    option = {
+        name = OW_FRJQ_TanSuo_WeiZhi_ShenMiYiSheng.4.b
+		hidden_effect = {
+			remove_short_term_gold = 100 
+			random_list = {
+				1 = { trigger_event = OW_FRJQ_TanSuo_WeiZhi_ShenMiYiSheng.5 }
+				1 = { trigger_event = OW_FRJQ_TanSuo_WeiZhi_ShenMiYiSheng.6 }
+			}
+		}
+    }
+    option = {
+        name = OW_FRJQ_TanSuo_WeiZhi_ShenMiYiSheng.4.c
+		hidden_effect = {
+			remove_short_term_gold = 50 
+			random_list = {
+				3 = { trigger_event = OW_FRJQ_TanSuo_WeiZhi_ShenMiYiSheng.5 }
+				7 = { trigger_event = OW_FRJQ_TanSuo_WeiZhi_ShenMiYiSheng.6 }
+			}
+		}
+    }
+}
+OW_FRJQ_TanSuo_WeiZhi_ShenMiYiSheng.5 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_WeiZhi_ShenMiYiSheng.5.t
+    desc = OW_FRJQ_TanSuo_WeiZhi_ShenMiYiSheng.5.desc
+    option = {
+        name = OW_FRJQ_TanSuo_WeiZhi_ShenMiYiSheng.5.a
+		hidden_effect = {
+			add_OW_FRXZ_Random_XinXi_Random_Value = yes 
+		}
+    }
+}
+OW_FRJQ_TanSuo_WeiZhi_ShenMiYiSheng.6 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_WeiZhi_ShenMiYiSheng.6.t
+    desc = OW_FRJQ_TanSuo_WeiZhi_ShenMiYiSheng.6.desc
+    option = {
+        name = OW_FRJQ_TanSuo_WeiZhi_ShenMiYiSheng.6.a
+    }
+}

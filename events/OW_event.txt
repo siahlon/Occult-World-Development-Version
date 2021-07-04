@@ -1,0 +1,102 @@
+﻿#database (数据库) 2020-11-19 @inc comple
+##########################################################
+namespace = OW
+OW.0001 = {
+	hidden = yes
+	immediate = {
+#只能一次初始化
+		if = {
+			limit = {
+				NOT = { has_character_flag = OW_xiuzhenzhe }
+			}
+			############
+			remove_character_flag = OW_XZ_tizhi_0
+			remove_character_flag = OW_XZ_tizhi_1
+			remove_character_flag = OW_XZ_tizhi_2
+			remove_character_flag = OW_XZ_tizhi_3
+			remove_character_flag = OW_XZ_tizhi_4
+			remove_character_flag = OW_XZ_tizhi_5
+			remove_character_flag = OW_XZ_tizhi_6
+			remove_character_flag = OW_XZ_tizhi_7
+			remove_character_flag = OW_XZ_tizhi_8
+			remove_character_flag = OW_XZ_tizhi_9
+			remove_character_flag = OW_XZ_tizhi_10
+			remove_character_flag = OW_XZ_tizhi_11
+			remove_character_flag = OW_XZ_tizhi_12
+			remove_character_flag = OW_XZ_tizhi_13
+			remove_character_flag = OW_XZ_tizhi_14
+			remove_character_flag = OW_XZ_tizhi_15
+			remove_character_flag = OW_XZ_tizhi_16
+			remove_character_flag = OW_XZ_tizhi_17
+			remove_character_flag = OW_XZ_tizhi_18
+			remove_character_flag = OW_XZ_tizhi_19
+			remove_character_flag = OW_XZ_tizhi_20
+			remove_character_flag = OW_XZ_tizhi_21
+			remove_character_flag = OW_XZ_tizhi_22
+			remove_character_flag = OW_XZ_tizhi_23
+			remove_character_flag = OW_XZ_tizhi_24
+			remove_character_flag = OW_XZ_tizhi_25
+			remove_character_flag = OW_XZ_tizhi_26
+			remove_character_flag = OW_XZ_tizhi_27
+			remove_character_flag = OW_XZ_tizhi_28
+			remove_character_flag = OW_XZ_tizhi_29
+			remove_character_flag = OW_XZ_tizhi_30
+			remove_character_flag = OW_XZ_tizhi_31
+			remove_character_flag = OW_XZ_tizhi_32
+			remove_character_flag = OW_XZ_tizhi_33
+			remove_character_flag = OW_XZ_tizhi_34
+			remove_character_flag = OW_XZ_tizhi_35
+			remove_character_flag = OW_XZ_tizhi_36
+			remove_character_flag = OW_XZ_tizhi_37
+			remove_character_flag = OW_XZ_tizhi_38
+			remove_character_flag = OW_XZ_tizhi_39
+			remove_character_flag = OW_XZ_tizhi_40
+			remove_character_flag = OW_XZ_tizhi_41
+			remove_character_flag = OW_XZ_tizhi_42
+			remove_character_flag = OW_XZ_tizhi_43
+			remove_character_flag = OW_XZ_tizhi_44
+			remove_character_flag = OW_XZ_tizhi_45
+			remove_character_flag = OW_XZ_tizhi_46
+			remove_character_flag = OW_XZ_tizhi_47
+			remove_character_flag = OW_XZ_tizhi_48
+			remove_character_flag = OW_XZ_tizhi_49
+			remove_character_flag = OW_XZ_tizhi_50
+			###################
+			add_character_flag = OW_XZ_tizhi_50
+			add_character_flag = OW_xiuzhenzhe
+			OW_JB_XZ_shuxingshezhi = yes
+			add_character_flag = OW_XZ_MJ_ZengShaShu
+			add_character_flag = OW_XZ_GF_ZengShaShu
+			add_character_flag = OW_XZ_luochadian
+			add_lifestyle_zengshashu_xp = 50
+			add_lifestyle_zengshashu_perk_points = 10
+		}
+	}
+}
+
+
+OW.0002 = {
+	type = character_event
+	theme = default
+	title = OW_JB_XZ_qishi.0001.name
+	desc = OW_JB_XZ_qishi.0001.desc
+	option = {
+		name = OW_JB_XZ_qishi.0001.1.t
+		ai_chance = {
+			base = 100
+		}
+		add_character_flag = OW_NO_GAME
+	}
+}
+OW.0003 = {
+	type = character_event
+	theme = default
+	title = OW_JB_XZ_qishi.0001.name
+	desc = OW_JB_XZ_qishi.0001.desc
+	option = {
+		name = OW_JB_XZ_qishi.0001.1.t
+		ai_chance = {
+			base = 100
+		}
+	}
+}

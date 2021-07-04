@@ -1,0 +1,130 @@
+﻿#以接入
+namespace = OW_FRJQ_TanSuo_SenLin_milinyeshou_event
+OW_FRJQ_TanSuo_SenLin_milinyeshou_event.1 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_SenLin_milinyeshou_event.1.t
+    desc = OW_FRJQ_TanSuo_SenLin_milinyeshou_event.1.desc
+    option = {
+        name = OW_FRJQ_TanSuo_SenLin_milinyeshou_event.1.a
+		hidden_effect = {
+			if = {
+				limit = { prowess >= 10 }
+				trigger_event = OW_FRJQ_TanSuo_SenLin_milinyeshou_event.2
+			}
+			else = {
+				trigger_event = OW_FRJQ_TanSuo_SenLin_milinyeshou_event.3
+			}
+		}
+    }
+    option = {
+        name  = OW_FRJQ_TanSuo_SenLin_milinyeshou_event.1.b
+		hidden_effect = {
+			random_list = {
+				30 = { trigger_event = OW_FRJQ_TanSuo_SenLin_milinyeshou_event.4 }
+				30 = { trigger_event = OW_FRJQ_TanSuo_SenLin_milinyeshou_event.5 }
+				30 = { trigger_event = OW_FRJQ_TanSuo_SenLin_milinyeshou_event.6 }
+			}
+		}
+    }
+}
+OW_FRJQ_TanSuo_SenLin_milinyeshou_event.2 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_SenLin_milinyeshou_event.2.t
+    desc = OW_FRJQ_TanSuo_SenLin_milinyeshou_event.2.desc
+    option = {
+        name = OW_FRJQ_TanSuo_SenLin_milinyeshou_event.2.a
+        add_gold = { 100  200 }
+    }
+}
+OW_FRJQ_TanSuo_SenLin_milinyeshou_event.3 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_SenLin_milinyeshou_event.3.t
+    desc = OW_FRJQ_TanSuo_SenLin_milinyeshou_event.3.desc
+    option = {
+        name = OW_FRJQ_TanSuo_SenLin_milinyeshou_event.3.a
+        death = {
+            killer = ROOT
+            death_reason = death_murder
+        }
+    }
+}
+OW_FRJQ_TanSuo_SenLin_milinyeshou_event.4 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_SenLin_milinyeshou_event.4.t
+    desc = OW_FRJQ_TanSuo_SenLin_milinyeshou_event.4.desc
+    option = {
+        name = OW_FRJQ_TanSuo_SenLin_milinyeshou_event.4.a
+        death = {
+            killer = root
+            death_reason = death_murder
+        }
+    }
+}
+OW_FRJQ_TanSuo_SenLin_milinyeshou_event.5 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_SenLin_milinyeshou_event.5.t
+    desc = OW_FRJQ_TanSuo_SenLin_milinyeshou_event.5.desc
+    option = {
+		name = OW_FRJQ_TanSuo_SenLin_milinyeshou_event.5.a
+		hidden_effect = {
+			trigger_event = OW_FRJQ_TanSuo_SenLin_milinyeshou_event.7
+		}
+    }
+}
+OW_FRJQ_TanSuo_SenLin_milinyeshou_event.6 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_SenLin_milinyeshou_event.6.t
+    desc = OW_FRJQ_TanSuo_SenLin_milinyeshou_event.6.desc
+    option = {
+        name = OW_FRJQ_TanSuo_SenLin_milinyeshou_event.6.a
+    }
+}
+OW_FRJQ_TanSuo_SenLin_milinyeshou_event.7 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_SenLin_milinyeshou_event.7.t
+    desc = OW_FRJQ_TanSuo_SenLin_milinyeshou_event.7.desc
+    option = {
+        name = OW_FRJQ_TanSuo_SenLin_milinyeshou_event.7.a
+		hidden_effect = {
+			trigger_event = OW_FRJQ_TanSuo_SenLin_milinyeshou_event.8
+		}
+    }
+    option = {
+        name = OW_FRJQ_TanSuo_SenLin_milinyeshou_event.7.b
+		hidden_effect = {
+			trigger_event = OW_FRJQ_TanSuo_SenLin_milinyeshou_event.9
+		}
+    }
+}
+OW_FRJQ_TanSuo_SenLin_milinyeshou_event.8 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_SenLin_milinyeshou_event.8.t
+    desc = OW_FRJQ_TanSuo_SenLin_milinyeshou_event.8.desc
+    option = {
+        name = OW_FRJQ_TanSuo_SenLin_milinyeshou_event.8.a
+		hidden_effect = {
+			add_OW_FRXZ_Random_XinXi_Random_Value = yes 
+			add_OW_FRXZ_Random_XinXi_Random_Value = yes 
+		}
+    }
+}
+OW_FRJQ_TanSuo_SenLin_milinyeshou_event.9 = {
+    type = character_event
+    theme = default
+    title = OW_FRJQ_TanSuo_SenLin_milinyeshou_event.9.t
+    desc = OW_FRJQ_TanSuo_SenLin_milinyeshou_event.9.desc
+    option = {
+        name = OW_FRJQ_TanSuo_SenLin_milinyeshou_event.9.a
+		hidden_effect = {
+			add_OW_FRXZ_Random_XinXi_Random_Value = yes 
+		}
+    }
+}

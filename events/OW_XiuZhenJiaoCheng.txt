@@ -1,0 +1,50 @@
+﻿#######修真教程#########
+#####by：H #############
+#####correct：狗头######
+#######2021/2/18 #######
+namespace = OW_JB_XZ_jiaocheng
+OW_JB_XZ_jiaocheng.01 = {
+	type = character_event
+	theme = default
+	title = OW_JB_XZ_jiaocheng.01.name
+	desc = OW_JB_XZ_jiaocheng.01.desc
+	trigger = {
+		is_ai = no
+	}
+	left_portrait = {
+		character = scope:actor
+		animation = shock
+	}
+	option = {
+		name = OW_JB_XZ_jiaocheng.01.t
+		trigger_event = OW_JB_XZ_jiaocheng.02
+	}
+}
+OW_JB_XZ_jiaocheng.02 = {
+	type = character_event
+	theme = default
+	title = OW_JB_XZ_jiaocheng.02.name
+	desc = OW_JB_XZ_jiaocheng.02.desc
+	left_portrait = {
+		character = scope:actor
+		animation = shock
+	}
+	option = {
+		name = OW_JB_XZ_jiaocheng.02.t
+		trigger_event = OW_JB_XZ_jiaocheng.03
+	}
+}
+OW_JB_XZ_jiaocheng.03 = {
+	type = character_event
+	theme = default
+	title = OW_JB_XZ_jiaocheng.03.name
+	desc = OW_JB_XZ_jiaocheng.03.desc
+	left_portrait = {
+		character = scope:actor
+		animation = shock
+	}
+	option = {
+		name = OW_JB_XZ_jiaocheng.03.t
+	}
+}
+

@@ -1,0 +1,934 @@
+﻿####################
+################
+#信息解析处
+#by：狗头
+################
+window = {
+	name = "OW_DFFR_XXJY_window"
+	layer = middle
+	parentanchor = center
+	size = { 35% 75% }
+	using = Window_Decoration_Spike
+	using = Window_Background_Popup
+
+	state = {
+		name = _show
+		position = { 0 0 }
+		using = Animation_FadeIn_Quick
+		using = Sound_WindowShow_Standard
+		
+		on_start = "[GetVariableSystem.Set( 'OW_DFFR_XXJY_window_left_window_open', 'true' )]"
+	}
+	state = {
+		name = _hide
+		position = { -60 0 }
+		using = Animation_FadeOut_Quick
+		using = Sound_WindowHide_Standard
+		
+		on_start = "[GetVariableSystem.Clear( 'OW_DFFR_XXJY_window_left_window_open')]"
+	}
+	vbox = {
+		header_pattern = {
+			name = "OW_DFFR_XXJY_window_header"
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = fixed
+			blockoverride "size"
+			{
+				size = { 100% 100% }
+			}
+			blockoverride "header_text"
+			{
+				text = "OW_DFFR_XXJY_TEXT"
+				using = tooltip_es
+				state = {
+					name = "OW_DFFR_XXJY_window_faith_view_refresh"
+					using = Animation_Refresh_FadeOut
+				}
+				state = {
+					using = Animation_Refresh_FadeIn
+				}
+			}
+			blockoverride "button_close"
+			{
+				datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_G_Var')]"
+				onclick = "[ExecuteConsoleCommand('gui.ClearWidgets OW_DFFR_XXJY_window')]"
+				onclick = "[GetVariableSystem.Toggle('OW_DFFR_XXJY_window_open')]"
+				onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+			}
+		}
+		scrollbox = {
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = expanding
+			blockoverride "scrollbox_content"
+			{
+				button_standard = {
+					text = "OW_DFFR_XXJY_MAICHU_TEXT"
+					default_format = "#high"
+					fontsize = 20
+					visible = "[Not(GetVariableSystem.HasValue( 'OW_DFFR_XXJY_window_FLAG', 'OW_DFFR_XXJY_window_KG' ))]"
+					onclick = "[GetVariableSystem.Set( 'OW_DFFR_XXJY_window_FLAG', 'OW_DFFR_XXJY_window_KG' )]"
+					tooltip= "OW_DFFR_XXJY_MAICHU_TEXT_TIP"  
+					size = { 400 40 }
+				}
+				button_standard = {
+					text = "OW_DFFR_XXJY_MAIRU_TEXT"
+					default_format = "#high"
+					fontsize = 20
+					visible = "[GetVariableSystem.HasValue( 'OW_DFFR_XXJY_window_FLAG', 'OW_DFFR_XXJY_window_KG' )]"
+					onclick = "[GetVariableSystem.Clear( 'OW_DFFR_XXJY_window_FLAG' )]"	
+					tooltip = "OW_DFFR_XXJY_MAIRU_TEXT_TIP"
+					size = { 400 40 }
+				}
+				text_single = {
+					text = "OW_SUIPIANXINXITISHI"
+					fontsize = 15
+					fontsize_min = 10
+					align = center|nobaseline
+				}
+				scrollbox = {
+					name = "OW_DFFR_XXJY_window_MC_WB"
+					visible = "[GetVariableSystem.HasValue( 'OW_DFFR_XXJY_window_FLAG', 'OW_DFFR_XXJY_window_KG' )]"
+					datacontext = "[GetPlayer]"
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = expanding
+					blockoverride "scrollbox_content"
+					{
+						hbox = {
+							spacing = 50
+
+							vbox = {
+								layoutpolicy_vertical = expanding  
+								spacing = 1
+								vbox = {
+									button_standard = {
+										text = "OW_DFFR_XZ_XinXi_1_J"
+										default_format = "#high"
+										fontsize = 18
+										size = { 250 25 }
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_1_MC')]"
+										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+									text_single = {
+										text = "OW_DFFR_XZ_XinXi_1_MC"
+										fontsize = 14
+										fontsize_min = 10
+										align = center|nobaseline
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_1_MC')]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+								}
+								vbox = {
+									button_standard = {
+										text = "OW_DFFR_XZ_XinXi_2_J"
+										default_format = "#high"
+										fontsize = 18
+										size = { 250 25 }
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_2_MC')]"
+										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+									text_single = {
+										text = "OW_DFFR_XZ_XinXi_2_MC"
+										fontsize = 14
+										fontsize_min = 10
+										align = center|nobaseline
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_2_MC')]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+								}
+								vbox = {
+									button_standard = {
+										text = "OW_DFFR_XZ_XinXi_3_J"
+										default_format = "#high"
+										fontsize = 18
+										size = { 250 25 }
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_3_MC')]"
+										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+									text_single = {
+										text = "OW_DFFR_XZ_XinXi_3_MC"
+										fontsize = 14
+										fontsize_min = 10
+										align = center|nobaseline
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_3_MC')]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+								}
+								vbox = {
+									button_standard = {
+										text = "OW_DFFR_XZ_XinXi_4_J"
+										default_format = "#high"
+										fontsize = 18
+										size = { 250 25 }
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_4_MC')]"
+										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+									text_single = {
+										text = "OW_DFFR_XZ_XinXi_4_MC"
+										fontsize = 14
+										fontsize_min = 10
+										align = center|nobaseline
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_4_MC')]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+								}
+								vbox = {
+									button_standard = {
+										text = "OW_DFFR_XZ_XinXi_5_J"
+										default_format = "#high"
+										fontsize = 18
+										size = { 250 25 }
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_5_MC')]"
+										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+									text_single = {
+										text = "OW_DFFR_XZ_XinXi_5_MC"
+										fontsize = 14
+										fontsize_min = 10
+										align = center|nobaseline
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_5_MC')]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+								}
+								vbox = {
+									button_standard = {
+										text = "OW_DFFR_XZ_XinXi_6_J"
+										default_format = "#high"
+										fontsize = 18
+										size = { 250 25 }
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_6_MC')]"
+										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+									text_single = {
+										text = "OW_DFFR_XZ_XinXi_6_MC"
+										fontsize = 14
+										fontsize_min = 10
+										align = center|nobaseline
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_6_MC')]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+								}
+								vbox = {
+									button_standard = {
+										text = "OW_DFFR_XZ_XinXi_7_J"
+										default_format = "#high"
+										fontsize = 18
+										size = { 250 25 }
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_7_MC')]"
+										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+									text_single = {
+										text = "OW_DFFR_XZ_XinXi_7_MC"
+										fontsize = 14
+										fontsize_min = 10
+										align = center|nobaseline
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_7_MC')]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+								}
+								vbox = {
+									button_standard = {
+										text = "OW_DFFR_XZ_XinXi_8_J"
+										default_format = "#high"
+										fontsize = 18
+										size = { 250 25 }
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_8_MC')]"
+										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+									text_single = {
+										text = "OW_DFFR_XZ_XinXi_8_MC"
+										fontsize = 14
+										fontsize_min = 10
+										align = center|nobaseline
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_8_MC')]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+								}
+								vbox = {
+									button_standard = {
+										text = "OW_DFFR_XZ_XinXi_9_J"
+										default_format = "#high"
+										fontsize = 18
+										size = { 250 25 }
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_9_MC')]"
+										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+									text_single = {
+										text = "OW_DFFR_XZ_XinXi_9_MC"
+										fontsize = 14
+										fontsize_min = 10
+										align = center|nobaseline
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_9_MC')]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+								}
+								vbox = {
+									button_standard = {
+										text = "OW_DFFR_XZ_XinXi_10_J"
+										default_format = "#high"
+										fontsize = 18
+										size = { 250 25 }
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_10_MC')]"
+										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+									text_single = {
+										text = "OW_DFFR_XZ_XinXi_10_MC"
+										fontsize = 14
+										fontsize_min = 10
+										align = center|nobaseline
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_10_MC')]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+								}
+							}
+							vbox = {
+								layoutpolicy_vertical = expanding  
+								spacing = 1
+								vbox = {
+									button_standard = {
+										text = "OW_DFFR_XZ_XinXi_11_J"
+										default_format = "#high"
+										fontsize = 18
+										size = { 250 25 }
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_11_MC')]"
+										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+									text_single = {
+										text = "OW_DFFR_XZ_XinXi_11_MC"
+										fontsize = 14
+										fontsize_min = 10
+										align = center|nobaseline
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_11_MC')]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+								}
+								vbox = {
+									button_standard = {
+										text = "OW_DFFR_XZ_XinXi_12_J"
+										default_format = "#high"
+										fontsize = 18
+										size = { 250 25 }
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_12_MC')]"
+										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+									text_single = {
+										text = "OW_DFFR_XZ_XinXi_12_MC"
+										fontsize = 14
+										fontsize_min = 10
+										align = center|nobaseline
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_12_MC')]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+								}
+								vbox = {
+									button_standard = {
+										text = "OW_DFFR_XZ_XinXi_13_J"
+										default_format = "#high"
+										fontsize = 18
+										size = { 250 25 }
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_13_MC')]"
+										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+									text_single = {
+										text = "OW_DFFR_XZ_XinXi_13_MC"
+										fontsize = 14
+										fontsize_min = 10
+										align = center|nobaseline
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_13_MC')]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+								}
+								vbox = {
+									button_standard = {
+										text = "OW_DFFR_XZ_XinXi_14_J"
+										default_format = "#high"
+										fontsize = 18
+										size = { 250 25 }
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_14_MC')]"
+										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+									text_single = {
+										text = "OW_DFFR_XZ_XinXi_14_MC"
+										fontsize = 14
+										fontsize_min = 10
+										align = center|nobaseline
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_14_MC')]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+								}
+								vbox = {
+									button_standard = {
+										text = "OW_DFFR_XZ_XinXi_15_J"
+										default_format = "#high"
+										fontsize = 18
+										size = { 250 25 }
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_15_MC')]"
+										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+									text_single = {
+										text = "OW_DFFR_XZ_XinXi_15_MC"
+										fontsize = 14
+										fontsize_min = 10
+										align = center|nobaseline
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_15_MC')]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+								}
+								vbox = {
+									button_standard = {
+										text = "OW_DFFR_XZ_XinXi_16_J"
+										default_format = "#high"
+										fontsize = 18
+										size = { 250 25 }
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_16_MC')]"
+										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+									text_single = {
+										text = "OW_DFFR_XZ_XinXi_16_MC"
+										fontsize = 14
+										fontsize_min = 10
+										align = center|nobaseline
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_16_MC')]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+								}
+								vbox = {
+									button_standard = {
+										text = "OW_DFFR_XZ_XinXi_17_J"
+										default_format = "#high"
+										fontsize = 18
+										size = { 250 25 }
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_17_MC')]"
+										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+									text_single = {
+										text = "OW_DFFR_XZ_XinXi_17_MC"
+										fontsize = 14
+										fontsize_min = 10
+										align = center|nobaseline
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_17_MC')]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+								}
+								vbox = {
+									button_standard = {
+										text = "OW_DFFR_XZ_XinXi_18_J"
+										default_format = "#high"
+										fontsize = 18
+										size = { 250 25 }
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_18_MC')]"
+										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+									text_single = {
+										text = "OW_DFFR_XZ_XinXi_18_MC"
+										fontsize = 14
+										fontsize_min = 10
+										align = center|nobaseline
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_18_MC')]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+								}
+								vbox = {
+									button_standard = {
+										text = "OW_DFFR_XZ_XinXi_19_J"
+										default_format = "#high"
+										fontsize = 18
+										size = { 250 25 }
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_19_MC')]"
+										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+									text_single = {
+										text = "OW_DFFR_XZ_XinXi_19_MC"
+										fontsize = 14
+										fontsize_min = 10
+										align = center|nobaseline
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_19_MC')]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+								}
+								vbox = {
+									button_standard = {
+										text = "OW_DFFR_XZ_XinXi_20_J"
+										default_format = "#high"
+										fontsize = 18
+										size = { 250 25 }
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_20_MC')]"
+										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+									text_single = {
+										text = "OW_DFFR_XZ_XinXi_20_MC"
+										fontsize = 14
+										fontsize_min = 10
+										align = center|nobaseline
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_20_MC')]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+								}
+							}
+						}
+					}
+				}
+				scrollbox = {
+					name = "OW_DFFR_XXJY_window_MR_WB"
+					visible = "[Not( GetVariableSystem.HasValue( 'OW_DFFR_XXJY_window_FLAG', 'OW_DFFR_XXJY_window_KG' ) )]"
+					datacontext = "[GetPlayer]"
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = expanding
+					blockoverride "scrollbox_content"
+					{
+						hbox = {
+							spacing = 50
+							vbox = {
+								layoutpolicy_vertical = expanding  
+								spacing = 1
+								vbox = {
+									button_standard = {
+										text = "OW_DFFR_XZ_XinXi_1_D"
+										default_format = "#high"
+										fontsize = 18
+										size = { 250 25 }
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_1_MR')]"
+										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+									text_single = {
+										text = "OW_DFFR_XZ_XinXi_1_MR"
+										fontsize = 14
+										fontsize_min = 10
+										align = center|nobaseline
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_1_MR')]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+								}
+								vbox = {
+									button_standard = {
+										text = "OW_DFFR_XZ_XinXi_2_D"
+										default_format = "#high"
+										fontsize = 18
+										size = { 250 25 }
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_2_MR')]"
+										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+									text_single = {
+										text = "OW_DFFR_XZ_XinXi_2_MR"
+										fontsize = 14
+										fontsize_min = 10
+										align = center|nobaseline
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_2_MR')]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+								}
+								vbox = {
+									button_standard = {
+										text = "OW_DFFR_XZ_XinXi_3_D" 
+										default_format = "#high"
+										fontsize = 18
+										size = { 250 25 }
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_3_MR')]"
+										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+									text_single = {
+										text = "OW_DFFR_XZ_XinXi_3_MR"
+										fontsize = 14
+										fontsize_min = 10
+										align = center|nobaseline
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_3_MR')]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+								}
+								vbox = {
+									button_standard = {
+										text = "OW_DFFR_XZ_XinXi_4_D"
+										default_format = "#high"
+										fontsize = 18
+										size = { 250 25 }
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_4_MR')]"
+										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+									text_single = {
+										text = "OW_DFFR_XZ_XinXi_4_MR"
+										fontsize = 14
+										fontsize_min = 10
+										align = center|nobaseline
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_4_MR')]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+								}
+								vbox = {
+									button_standard = {
+										text = "OW_DFFR_XZ_XinXi_5_D"
+										default_format = "#high"
+										fontsize = 18
+										size = { 250 25 }
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_5_MR')]"
+										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+									text_single = {
+										text = "OW_DFFR_XZ_XinXi_5_MR"
+										fontsize = 14
+										fontsize_min = 10
+										align = center|nobaseline
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_5_MR')]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+								}
+								vbox = {
+									button_standard = {
+										text = "OW_DFFR_XZ_XinXi_6_D"
+										default_format = "#high"
+										fontsize = 18
+										size = { 250 25 }
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_6_MR')]"
+										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+									text_single = {
+										text = "OW_DFFR_XZ_XinXi_6_MR"
+										fontsize = 14
+										fontsize_min = 10
+										align = center|nobaseline
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_6_MR')]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+								}
+								vbox = {
+									button_standard = {
+										text = "OW_DFFR_XZ_XinXi_7_D"
+										default_format = "#high"
+										fontsize = 18
+										size = { 250 25 }
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_7_MR')]"
+										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+									text_single = {
+										text = "OW_DFFR_XZ_XinXi_7_MR"
+										fontsize = 14
+										fontsize_min = 10
+										align = center|nobaseline
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_7_MR')]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+								}
+								vbox = {
+									button_standard = {
+										text = "OW_DFFR_XZ_XinXi_8_D"
+										default_format = "#high"
+										fontsize = 18
+										size = { 250 25 }
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_8_MR')]"
+										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+									text_single = {
+										text = "OW_DFFR_XZ_XinXi_8_MR"
+										fontsize = 14
+										fontsize_min = 10
+										align = center|nobaseline
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_8_MR')]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+								}
+								vbox = {
+									button_standard = {
+										text = "OW_DFFR_XZ_XinXi_9_D"
+										default_format = "#high"
+										fontsize = 18
+										size = { 250 25 }
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_9_MR')]"
+										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+									text_single = {
+										text = "OW_DFFR_XZ_XinXi_9_MR"
+										fontsize = 14
+										fontsize_min = 10
+										align = center|nobaseline
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_9_MR')]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+								}
+								vbox = {
+									button_standard = {
+										text = "OW_DFFR_XZ_XinXi_10_D"
+										default_format = "#high"
+										fontsize = 18
+										size = { 250 25 }
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_10_MR')]"
+										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+									text_single = {
+										text = "OW_DFFR_XZ_XinXi_10_MR"
+										fontsize = 14
+										fontsize_min = 10
+										align = center|nobaseline
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_10_MR')]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+								}
+							}
+							vbox = {
+								layoutpolicy_vertical = expanding  
+								spacing = 1
+								vbox = {
+									button_standard = {
+										text = "OW_DFFR_XZ_XinXi_11_D"
+										default_format = "#high"
+										fontsize = 18
+										size = { 250 25 }
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_11_MR')]"
+										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+									text_single = {
+										text = "OW_DFFR_XZ_XinXi_11_MR"
+										fontsize = 14
+										fontsize_min = 10
+										align = center|nobaseline
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_11_MR')]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+								}
+								vbox = {
+									button_standard = {
+										text = "OW_DFFR_XZ_XinXi_12_D"
+										default_format = "#high"
+										fontsize = 18
+										size = { 250 25 }
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_12_MR')]"
+										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+									text_single = {
+										text = "OW_DFFR_XZ_XinXi_12_MR"
+										fontsize = 14
+										fontsize_min = 10
+										align = center|nobaseline
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_12_MR')]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+								}
+								vbox = {
+									button_standard = {
+										text = "OW_DFFR_XZ_XinXi_13_D"
+										default_format = "#high"
+										fontsize = 18
+										size = { 250 25 }
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_13_MR')]"
+										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+									text_single = {
+										text = "OW_DFFR_XZ_XinXi_13_MR"
+										fontsize = 14
+										fontsize_min = 10
+										align = center|nobaseline
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_13_MR')]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+								}
+								vbox = {
+									button_standard = {
+										text = "OW_DFFR_XZ_XinXi_14_D"
+										default_format = "#high"
+										fontsize = 18
+										size = { 250 25 }
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_14_MR')]"
+										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+									text_single = {
+										text = "OW_DFFR_XZ_XinXi_14_MR"
+										fontsize = 14
+										fontsize_min = 10
+										align = center|nobaseline
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_14_MR')]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+								}
+								vbox = {
+									button_standard = {
+										text = "OW_DFFR_XZ_XinXi_15_D"
+										default_format = "#high"
+										fontsize = 18
+										size = { 250 25 }
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_15_MR')]"
+										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+									text_single = {
+										text = "OW_DFFR_XZ_XinXi_15_MR"
+										fontsize = 14
+										fontsize_min = 10
+										align = center|nobaseline
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_15_MR')]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+								}
+								vbox = {
+									button_standard = {
+										text = "OW_DFFR_XZ_XinXi_16_D"
+										default_format = "#high"
+										fontsize = 18
+										size = { 250 25 }
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_16_MR')]"
+										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+									text_single = {
+										text = "OW_DFFR_XZ_XinXi_16_MR"
+										fontsize = 14
+										fontsize_min = 10
+										align = center|nobaseline
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_16_MR')]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+								}
+								vbox = {
+									button_standard = {
+										text = "OW_DFFR_XZ_XinXi_17_D"
+										default_format = "#high"
+										fontsize = 18
+										size = { 250 25 }
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_17_MR')]"
+										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+									text_single = {
+										text = "OW_DFFR_XZ_XinXi_17_MR"
+										fontsize = 14
+										fontsize_min = 10
+										align = center|nobaseline
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_17_MR')]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+								}
+								vbox = {
+									button_standard = {
+										text = "OW_DFFR_XZ_XinXi_18_D"
+										default_format = "#high"
+										fontsize = 18
+										size = { 250 25 }
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_18_MR')]"
+										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+									text_single = {
+										text = "OW_DFFR_XZ_XinXi_18_MR"
+										fontsize = 14
+										fontsize_min = 10
+										align = center|nobaseline
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_18_MR')]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+								}
+								vbox = {
+									button_standard = {
+										text = "OW_DFFR_XZ_XinXi_19_D"
+										default_format = "#high"
+										fontsize = 18
+										size = { 250 25 }
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_19_MR')]"
+										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+									text_single = {
+										text = "OW_DFFR_XZ_XinXi_19_MR"
+										fontsize = 14
+										fontsize_min = 10
+										align = center|nobaseline
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_19_MR')]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+								}
+								vbox = {
+									button_standard = {
+										text = "OW_DFFR_XZ_XinXi_20_D"
+										default_format = "#high"
+										fontsize = 18
+										size = { 250 25 }
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_20_MR')]"
+										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+									text_single = {
+										text = "OW_DFFR_XZ_XinXi_20_MR"
+										fontsize = 14
+										fontsize_min = 10
+										align = center|nobaseline
+										datacontext = "[GetScriptedGui('OW_DFFR_XZ_XinXi_KG_20_MR')]"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
