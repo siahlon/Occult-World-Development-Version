@@ -1,0 +1,160 @@
+﻿l_english:
+ #10低级门派随即修真之路剧情
+ #开始部分
+ OW_JB_XZ_qishi.0001.name:0 "Ascension plot start"
+ OW_JB_XZ_qishi.0001.desc:0 "　　Winter to autumn, the passage of time, [ROOT.GetCharacter.GetFirstNameNoTooltip] can not help but lament the years are like a shuttle, Shaohua easy to pass. One day, an old man claiming to be a cultivator told [ROOT.GetCharacter.GetFirstNameNoTooltip] that there is an immortal family in the world, with endless immortal laws that can make people live forever and live with the mountains and rivers, but people who are destined to do so need to find it. To [ROOT.GetCharacter.GetFirstNameNoTooltip] then want to ask, the old man in the sound of laughter into a clear smoke, scattered and disappeared."
+ OW_JB_XZ_qishi.0001.1.t:0 "Weird!"
+ OW_JB_XZ_qishi.0001.2.t:0 "It's just a blindfold. (renunciation)"
+ 
+ OW_JB_XZ_qishi.0002.name:0 "Ascension plot start"
+ OW_JB_XZ_qishi.0002.desc:0 "　　[GetCharacter.GetFirstNameNoTooltip] was looking through his family's ancient tomes when he inadvertently found a difficult ancient book, [ROOT.GetCharacter.GetFirstNameNoTooltip] asked around the scholars, but could not come to a conclusion. [GetCharacter.GetFirstNameNoTooltip]This book is not a mortal thing, it is the law of the immortal family, to seek the true solution need to go to the immortal door to find. To [ROOT.GetCharacter.GetFirstNameNoTooltip] then want to ask, the old has been in the sound of laughter into a clear smoke, scattered and disappeared."
+ OW_JB_XZ_qishi.0002.1.t:0 "Could it be that the Ascension Sect really exists?"
+ OW_JB_XZ_qishi.0002.2.t:0 "It's just a book, you can study it yourself. (renunciation)"
+ 
+ OW_JB_XZ_qishi.0003.name:0 "Ascension plot start"
+ OW_JB_XZ_qishi.0003.desc:0 "　　Day after day of war and killing, let [ROOT.GetCharacter.GetFirstNameNoTooltip] feel more and more tired, but there is no invincible method in the world. The company's main business is to provide a wide range of products and services to the public."
+ OW_JB_XZ_qishi.0003.1.t:0 "Is there really an invincible method in the world?"
+ OW_JB_XZ_qishi.0003.2.t:0 "Their own exercise is enough!(renunciation)"
+ 
+ OW_JB_XZ_qishi.0004.name:0 "Ascension plot start"
+ OW_JB_XZ_qishi.0004.desc:0 "　　[ROOT.GetCharacter.GetFirstNameNoTooltip] in looking through the family's old notes, found that the inside recorded a place called cultivation, but is not very detailed, but there are easy to find the party, the notes and the road is the true meaning of those who have a destiny will be able to repair."
+ OW_JB_XZ_qishi.0004.1.t:0 "Is there really a place of ascension?"
+ OW_JB_XZ_qishi.0004.2.t:0 "What the fuck!(renunciation)"
+ 
+ OW_JB_XZ_qishi.0005.name:0 "Ascension plot start"
+ OW_JB_XZ_qishi.0005.desc:0 "　　[ROOT.GetCharacter.GetFirstNameNoTooltip] was organizing his doghouse when he found a compass-like object, but did not know what it was for. But at that moment, the light was so bright that a shadow appeared, telling the world of light."
+ OW_JB_XZ_qishi.0005.1.t:0 "Is this the stuff of immortals?"
+ OW_JB_XZ_qishi.0005.2.t:0 "Offer it up and insert an incense.(renunciation)"
+ 
+ OW_JB_XZ_qishi.0006.name:0 "The Fairy's Guide"
+ OW_JB_XZ_qishi.0006.desc:0 "　　At night while eating at the table, the window surprised the haze, colorful, astonishingly, no one can see except you, everyone has felt that you are looking at the eyes, you get up, leave the castle, riding a horse towards the haze. There, stood a crane-haired old man, who did not speak, but you heard his voice: “I've been waiting for you for a long time, you've finally come!” You jumped off your horse and went up to ......"
+ OW_JB_XZ_qishi.0006.1.t:0 "What! There are really cultivators in the world!"
+ OW_JB_XZ_qishi.0006.2.t:0 "Ridiculous! There is no such thing as a god in this world! (renunciation)"
+ 
+ OW_JB_XZ_qishi.0007.name:0 "Persuasion of friends"
+ OW_JB_XZ_qishi.0007.desc:0 "　　A banquet, one of your close friends took you to a remote place and quietly told you some things about cultivation, you did not believe at first, but his hand pinched the magic, chanting silently, but turned out a small fireball, at which point you ......"
+ OW_JB_XZ_qishi.0007.1.t:0 "What! There are really cultivators in the world!"
+ OW_JB_XZ_qishi.0007.2.t:0 "Ridiculous! There is no such thing as a god in this world! (renunciation)"
+ 
+ OW_JB_XZ_qishi.0008.name:0 "Persuasion from family members"
+ OW_JB_XZ_qishi.0008.desc:0 "　　Family gathering as usual, but today, one of your relatives took you to a remote place and quietly told you some things about cultivation, you did not believe at first, but he hand pinched the magic, silently chanting, but turned out a small fireball, at which point you ......"
+ OW_JB_XZ_qishi.0008.1.t:0 "What! There are really cultivators in the world!"
+ OW_JB_XZ_qishi.0008.2.t:0 "Ridiculous! There is no such thing as a god in this world! (renunciation)"
+ 
+ OW_JB_XZ_qishi.0009.name:0 "Quietly eavesdropping on conversations"
+ OW_JB_XZ_qishi.0009.desc:0 "　　You are strolling in the garden and suddenly you hear people talking in whispers, you go over to see, but you find that these people are holding fireballs and water balls and other supernatural things in their hands, at which point you ......"
+ OW_JB_XZ_qishi.0009.1.t:0 "What! There are really cultivators in the world!"
+ OW_JB_XZ_qishi.0009.2.t:0 "Ridiculous! There is no such thing as a god in this world! (renunciation)"
+ 
+ OW_JB_XZ_qishi.0010.name:0 "I happened to hear talk about"
+ OW_JB_XZ_qishi.0010.desc:0 "　　You are strolling in the garden, suddenly you hear people talking loudly, you go over to see, but you find that these people are holding fireballs and waterballs and other supernatural things in their hands, at this point you ......"
+ OW_JB_XZ_qishi.0010.1.t:0 "What! There are really cultivators in the world!"
+ OW_JB_XZ_qishi.0010.2.t:0 "Ridiculous! There is no such thing as a god in this world! (renunciation)"
+ 
+ #出行部分
+ OW_JB_XZ_qishi_chuxing.0001.name:0 "Ascension Decision"
+ OW_JB_XZ_qishi_chuxing.0001.desc:0 "　　Day after day, [ROOT.GetCharacter.GetFirstNameNoTooltip] cannot continue to wait. No matter what will happen in the future, [ROOT.GetCharacter.GetFirstNameNoTooltip] will definitely step on the three mountains and visit all the famous mountains to seek the legendary Ascension Sect."
+ OW_JB_XZ_qishi_chuxing.0001.1.t:0 "I have made up my mind!"
+ OW_JB_XZ_qishi_chuxing.0001.2.t:0 "It's all nonsense, I should focus on reality.(renunciation)"
+ 
+ OW_JB_XZ_qishi_chuxing.0002.name:0 "Ascension Decision"
+ OW_JB_XZ_qishi_chuxing.0002.desc:0 "　　This day [ROOT.GetCharacter.GetFirstNameNoTooltip] stood on the balcony facing the sunset, once again lamenting the flight of time, perhaps the mortal world is all a delusion, [ROOT.GetCharacter.GetFirstNameNoTooltip] should go in search of immortal treasures, seeking to achieve ascension."
+ OW_JB_XZ_qishi_chuxing.0002.1.t:0 "Immediate departure!"
+ OW_JB_XZ_qishi_chuxing.0002.2.t:0 "Taking over the world is really cool.(renunciation)"
+ 
+ OW_JB_XZ_qishi_chuxing.0003.name:0 "Ascension Decision"
+ OW_JB_XZ_qishi_chuxing.0003.desc:0 "　　Lying in bed, feeling the passage of time, bored in my mind, and suddenly I don't know what's going on, a voice prompted me, want to know another life?"
+ OW_JB_XZ_qishi_chuxing.0003.1.t:0 "I wanted to know, so I just followed to find out."
+ OW_JB_XZ_qishi_chuxing.0003.2.t:0 "I'm on the verge of becoming a psychopath.(renunciation)"
+ #过程部分
+ OW_JB_XZ_qishi_guocheng_1.9999.name:0 "Ascension process"
+ OW_JB_XZ_qishi_guocheng_1.9999.desc:0 "　　Walking in the foothills of the mountains, the woods are lush and the scenery is pleasant, and [ROOT.GetCharacter.GetFirstNameNoTooltip] can't help but stop to see and feel the world."
+ OW_JB_XZ_qishi_guocheng_1.9999.1.t:0 "All laws are empty, I am enlightened!！"
+ OW_JB_XZ_qishi_guocheng_1.9999.2.t:0 "My brain hurts from thinking about it, but I still can't come up with anything."
+ OW_JB_XZ_qishi_guocheng_1.9999.3.t:0 "I am the strongest in the world!"
+ 
+ OW_JB_XZ_qishi_guocheng_2.9999.name:0 "Ascension process"
+ OW_JB_XZ_qishi_guocheng_2.9999.desc:0 "　　After a rapid river, [ROOT.GetCharacter.GetFirstNameNoTooltip] saw a bamboo basket floating in the river downstream, with a baby in the frame, the baby kept crying and looked like it was about to sink into the heart of the river."
+ OW_JB_XZ_qishi_guocheng_2.9999.1.t:0 "He must be saved!"
+ OW_JB_XZ_qishi_guocheng_2.9999.2.t:0 "Quickly call people to come together to save!"
+ OW_JB_XZ_qishi_guocheng_2.9999.3.t:0 "Better forget it, your own life is important."
+ 
+ OW_JB_XZ_qishi_guocheng_2.1100.name:0 "He must be saved!"
+ OW_JB_XZ_qishi_guocheng_2.1100.desc:0 "　　[ROOT.GetCharacter.GetFirstNameNoTooltip] quickly rushed up, feeling that the river is not deep, directly pulled over the bamboo basket, picking up the baby in it, at this time the baby is not crying, [ROOT.GetCharacter.GetFirstNameNoTooltip] felt very close to his own."
+ OW_JB_XZ_qishi_guocheng_2.1100.1.t:0 "Take the baby home first, and then continue the search for ascension."
+ 
+ OW_JB_XZ_qishi_guocheng_2.1200.name:0 "He must be saved!"
+ OW_JB_XZ_qishi_guocheng_2.1200.desc:0 "　　[ROOT.GetCharacter.GetFirstNameNoTooltip] quickly rushed up, feeling that the river is too deep, jumped in and tossed half a day, he was also injured."
+ OW_JB_XZ_qishi_guocheng_2.1200.1.t:0 "Watching the bamboo basket sink into the heart of the river."
+ 
+ OW_JB_XZ_qishi_guocheng_2.2100.name:0 "Quickly call people to come together to save!"
+ OW_JB_XZ_qishi_guocheng_2.2100.desc:0 "　　[ROOT.GetCharacter.GetFirstNameNoTooltip] looked around for someone, and could not find someone not far away in the vicinity who had gone to look for the holy land of cultivation with himself to help save the baby together."
+ OW_JB_XZ_qishi_guocheng_2.2100.1.t:0 "Watching the bamboo basket sink into the heart of the river."
+ 
+ OW_JB_XZ_qishi_guocheng_2.2200.name:0 "Quickly call people to come together to save!"
+ OW_JB_XZ_qishi_guocheng_2.2200.desc:0 "　　[ROOT.GetCharacter.GetFirstNameNoTooltip] is looking for someone everywhere, how could there be anyone in the middle of nowhere, except for a fool like himself!!!"
+ OW_JB_XZ_qishi_guocheng_2.2200.1.t:0 "Watching the bamboo basket sink into the heart of the river."
+ 
+ OW_JB_XZ_qishi_guocheng_3.9999.name:0 "Ascension process"
+ OW_JB_XZ_qishi_guocheng_3.9999.desc:0 "　　During the visit, [ROOT.GetCharacter.GetFirstNameNoTooltip] accidentally rolled down the hillside and found a glowing blue spring deep in the mountains, surrounded by silence, seemingly without a living creature and without a single fish in the water."
+ OW_JB_XZ_qishi_guocheng_3.9999.1.t:0 "Drink this water."
+ OW_JB_XZ_qishi_guocheng_3.9999.2.t:0 "I don't drink the damn thing!"
+ 
+ OW_JB_XZ_qishi_guocheng_3.0001.name:0 "Drink this water."
+ OW_JB_XZ_qishi_guocheng_3.0001.desc:0 "　　[ROOT.GetCharacter.GetFirstNameNoTooltip] leaned over and looked at the ethereal blue glowing spring and tried it, no problem."
+ OW_JB_XZ_qishi_guocheng_3.0001.1.t:0 "Drink like crazy!"
+ 
+ OW_JB_XZ_qishi_guocheng_3.0002.name:0 "Drink this water."
+ OW_JB_XZ_qishi_guocheng_3.0002.desc:0 "　　[ROOT.GetCharacter.GetFirstNameNoTooltip] leaned down and looked at the blue glowing spring, tried it, no, this water is poisonous!"
+ OW_JB_XZ_qishi_guocheng_3.0002.1.t:0 "I'm dying!"
+ #####拜山
+ OW_JB_XZ_qishi_baishan_fankui.0001.name:0 "Visiting the Ascension Sect"
+ OW_JB_XZ_qishi_baishan_fankui.0001.desc:0 "　　The old Dao gazed at [ROOT.GetCharacter.GetFirstNameNoTooltip] for a while and nodded his head.\n\n　　「It seems that you are suitable for practicing my school's method, the poor Taoist Dharma name is Void Deacon, then from today, you are my disciple.」"
+ OW_JB_XZ_qishi_baishan_fankui.0001.1.t:0 "Master, please accept the apprentice's obeisance."
+ 
+ OW_JB_XZ_qishi_baishan_fankui.9999.name:0 "Visiting the Ascension Sect"
+ OW_JB_XZ_qishi_baishan_fankui.9999.desc:0 "　　The old Tao gazed at me for a moment and shook his head.\n\n　　「It seems that although you have an immortal destiny, but is not suitable for cultivation, no chance to practice our school's techniques, ah, please go back.」The old Taoist turned his back and walked straight out of the side hall."
+ OW_JB_XZ_qishi_baishan_fankui.9999.1.t:0 "No! Please give me one more chance! (No chance of ascension)"
+ 
+ OW_JB_XZ_qishi_baishan.0001.name:0 "Visiting the Ascension Sect"
+ OW_JB_XZ_qishi_baishan.0001.desc:0 "　　After the test of life and death, nine deaths [ROOT.GetCharacter.GetFirstNameNoTooltip] was brought into the side hall of [ROOT.char.Custom('OW_XZ_menpai')] by two [ROOT.char.Custom('OW_XZ_menpai')] disciples.A Daoist dressed in a Taoist robe with pale hair was meditating cross-legged on a futon, and when he saw [ROOT.GetCharacter.GetFirstNameNoTooltip] coming, he opened his eyes slightly and said:「Although for the name, but join [ROOT.char.Custom('OW_XZ_menpai')] also non-can make you in the mortal world reputation. But if you want to cut down demons and eliminate devils, for the righteous path, the establishment of chivalrous name, it is not inevitable. Then let the poor Tao first to see your qualifications.」The old Taoist priest stroked his beard."
+ OW_JB_XZ_qishi_baishan.0001.1.t:0 "Greetings, Elders!"
+ 
+ OW_JB_XZ_qishi_baishan.0002.name:0 "Visiting the Ascension Sect"
+ OW_JB_XZ_qishi_baishan.0002.desc:0 "　　After the test of life and death, nine deaths [ROOT.GetCharacter.GetFirstNameNoTooltip] was brought into the side hall of [ROOT.char.Custom('OW_XZ_menpai')] by two [ROOT.char.Custom('OW_XZ_menpai')] disciples.A Daoist dressed in a Taoist robe with pale hair was meditating cross-legged on a futon, and when he saw [ROOT.GetCharacter.GetFirstNameNoTooltip] coming, he opened his eyes slightly and said:「But all my Shu Shan disciples, all have to put down mundane thoughts, mortal interests are no longer useful to those who cultivate, [ROOT.char.Custom('OW_XZ_menpai')] has its own door rules here, then let the poor Tao first to see your qualifications.」"
+ OW_JB_XZ_qishi_baishan.0002.1.t:0 "Greetings, Elders!"
+ 
+ OW_JB_XZ_qishi_baishan.0003.name:0 "Visiting the Ascension Sect"
+ OW_JB_XZ_qishi_baishan.0003.desc:0 "　　After the test of life and death, nine deaths [ROOT.GetCharacter.GetFirstNameNoTooltip] was brought into the side hall of [ROOT.char.Custom('OW_XZ_menpai')] by two [ROOT.char.Custom('OW_XZ_menpai')] disciples.A Daoist dressed in a Taoist robe with pale hair was meditating cross-legged on a futon, and when he saw [ROOT.GetCharacter.GetFirstNameNoTooltip] coming, he opened his eyes slightly and said:「Since you understand this truth, you should understand that all the methods of seeking longevity are just delusions, even the immortals will eventually escape a death, so let the poor Tao first to see your qualifications."
+ OW_JB_XZ_qishi_baishan.0003.1.t:0 "Greetings, Elders!"
+ 
+ OW_JB_XZ_qishi_baishan.0004.name:0 "Visiting the Ascension Sect"
+ OW_JB_XZ_qishi_baishan.0004.desc:0 "　　After the test of life and death, nine deaths [ROOT.GetCharacter.GetFirstNameNoTooltip] was brought into the side hall of [ROOT.char.Custom('OW_XZ_menpai')] by two [ROOT.char.Custom('OW_XZ_menpai')] disciples.A Daoist dressed in a Taoist robe with pale hair was meditating cross-legged on a futon, and when he saw [ROOT.GetCharacter.GetFirstNameNoTooltip] coming, he opened his eyes slightly and said:「Since you are here for ascension and have such an immortal destiny, then you can join me [ROOT.char.Custom('OW_XZ_menpai')], but [ROOT.char.Custom('OW_XZ_menpai')] does not take in people who have no ascension physique. So let the poor Taoist take a look at your qualifications first.」The old Taoist priest stroked his beard."
+ OW_JB_XZ_qishi_baishan.0004.1.t:0 "Greetings, Elders!"
+ 
+ OW_JB_XZ_qishi_baishan.0005.name:0 "Visiting the Ascension Sect"
+ OW_JB_XZ_qishi_baishan.0005.desc:0 "　　After the test of life and death, nine deaths [ROOT.GetCharacter.GetFirstNameNoTooltip] was brought into the side hall of [ROOT.char.Custom('OW_XZ_menpai')] by two [ROOT.char.Custom('OW_XZ_menpai')] disciples.A Daoist dressed in a Taoist robe with pale hair was meditating cross-legged on a futon, and when he saw [ROOT.GetCharacter.GetFirstNameNoTooltip] coming, he opened his eyes slightly and said:「Since you are here for ascension and have such an immortal destiny, then you can join me [ROOT.char.Custom('OW_XZ_menpai')], but [ROOT.char.Custom('OW_XZ_menpai')] does not take in people who have no ascension physique. So let the poor Taoist take a look at your qualifications first.」The old Taoist priest stroked his beard."
+ OW_JB_XZ_qishi_baishan.0005.1.t:0 "Greetings, Elders!"
+ ###########修真说明书
+ OW_JB_XZ_shuomingshu.02.name:0 "Ascension instructions"
+ OW_JB_XZ_shuomingshu.02.desc:0 "　　You to cultivate and subsequently have a variety of events such as secret exploration, will be automatically generated.\n\n　　Feats can be viewed by opening the Life panel."
+ OW_JB_XZ_shuomingshu.02.1.t:0 "Agree and read with!"
+ 
+ OW_JB_XZ_shuomingshu.01.name:0 "Join the sect"
+ OW_JB_XZ_shuomingshu.01.desc:0 "　　You have passed the trial of [ROOT.char.Custom('OW_XZ_menpai')].\n\n　　Will you join the sect?"
+ OW_JB_XZ_shuomingshu.01.1.t:0 "Agree to join the sect"
+ 
+ 
+ ###########玄幻世界模组教程
+ OW_JB_XZ_jiaocheng.01.name:0 "Module Tutorial - Introduction"
+ OW_JB_XZ_jiaocheng.01.desc:0 "　　When [ROOT.GetCharacter.GetFirstNameNoTooltip] opened his eyes, [ROOT.GetCharacter.GetFirstNameNoTooltip] found an old man wearing a robe, human dog face leaning next to him, [ROOT.GetCharacter.GetFirstNameNoTooltip] was frightened and wanted to get up, but was a huge force suppressed dead can not get up, the old man waved his hand, [ROOT.GetCharacter.GetFirstNameNoTooltip] suddenly felt a burst of relief, slowly said.「I am a dog-headed immortal, I view your body has a vision, must be subscribed to the occult world module, this immortal is here to point out a couple of things with you.」"
+ OW_JB_XZ_jiaocheng.01.t:0 "？？？"
+ 
+ OW_JB_XZ_jiaocheng.02.name:0 "Module Tutorials - Physique"
+ OW_JB_XZ_jiaocheng.02.desc:0 "　　With the dog-headed Daxian's expression stormy, [ROOT.GetCharacter.GetFirstNameNoTooltip]'s doubts continue to rise, this dog-headed Daxian is actually what is the origin, actually able to enter and exit the palace in the forbidden like no one else.\n　　Still not waiting for [ROOT.GetCharacter.GetFirstNameNoTooltip] to make a sound, Dog Head Daxian slowly opened his eyes and slowly spoke, [ROOT.GetCharacter.GetFirstNameNoTooltip] looked at the old man's cloudy expression and did not know what to say.\n　　At this time, Dog Head Daxian slowly spoke:「So your physique is #P [ROOT.Char.Custom('OW_XZ_tizhi')]#! Ah!!! Physique is an innate characteristic of every person, which can hardly be changed by using any means, and it will bring different effects to each person. In the world of immortal cultivation, cultivators can realize the full potential of their physique and can give themselves extremely powerful gains. \n　　Let me tell you how to enter the world of immortal cultivation.」With that, he used his wrinkle-filled right hand to point at [ROOT.GetCharacter.GetFirstNameNoTooltip]'s spiritual platform, and a clear power went straight into [ROOT.GetCharacter.GetFirstNameNoTooltip]'s heart."
+ OW_JB_XZ_jiaocheng.02.t:0 "This ...... What power?"
+ 
+ OW_JB_XZ_jiaocheng.03.name:0 "Module Tutorial - Ascension"
+ OW_JB_XZ_jiaocheng.03.desc:0 "　　[ROOT.GetCharacter.GetFirstNameNoTooltip]'s brain flashed through many images that have not experienced, it seems to be the famous mountains and rivers of various places, there are secret places that they never knew, [ROOT.GetCharacter.GetFirstNameNoTooltip] was about to exclaim, only to see Dog Head Daxian smiling and stroking his beard, slowly speak:「Looks like you've seen some great images. This is the world where the ascended masters are. #N When you ascend, an ascension button will appear in the main screen. (ps: it's the big, big one anyway, so you can see it at a glance! #! But to enter the world of ascension is by no means easy, you have to open beforehand to find traces of the world of immortal cultivation, interact with themselves, choose to start ascension will go in search of those legendary deeds, and then participate in the trials of the sects, officially enter the path of cultivation. As for whether you can succeed, it depends on your own creation.」Dog-headed Daxian's voice gradually hollowed out.\n　　However, [ROOT.GetCharacter.GetFirstNameNoTooltip] found nothing to remember!\n　　#N Note： "凡体" is temporarily unable to become a cultivator. It will be judged to be untalented.Later will add the plot and system that can not become the role of the cultivator d can play.#!"
+ OW_JB_XZ_jiaocheng.03.t:0 "Come back and forget about it already!"
+ OW_JB_XZ_jiaocheng.03.t1:0 "Direct Ascension"

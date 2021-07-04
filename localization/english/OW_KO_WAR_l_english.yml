@@ -1,0 +1,247 @@
+﻿l_english:
+ ################
+ ###修真对决#####
+ ###框架文本#####
+ ################
+ OW_KO_WAR.0001.name:0 "Ascension duel"
+ OW_KO_WAR.0001.desc.a:0 "——#P [ROOT.Char.GetFirstNameNicknamedNoTooltip]#!——\n Destiny ：[ROOT.Var('OW_KO_WAR_player_mingli').GetValue|P0] / [ROOT.Var('OW_KO_WAR_player_mingli_max').GetValue|P0]\n Spiritual power ：[ROOT.Var('OW_KO_WAR_player_lingli').GetValue|P0] / [ROOT.Var('OW_KO_WAR_player_lingli_max').GetValue|P0]\n Spiritual Strength ：[ROOT.Var('OW_KO_WAR_player_lingqiang').GetValue|P0]\n\n#N VS#!\n\n——#P [recipient.GetFirstNameNicknamedNoTooltip]#!——\n Destiny ：Endangered \n Spiritual power ：unspecified \n Spiritual Strength ：Strong \n#N （Divine sense cannot break through the other party's sea of Consciousness）#!"
+ OW_KO_WAR.0001.desc.b:0 "——#P [ROOT.Char.GetFirstNameNicknamedNoTooltip]#!——\n Destiny ：[ROOT.Var('OW_KO_WAR_player_mingli').GetValue|P0] / [ROOT.Var('OW_KO_WAR_player_mingli_max').GetValue|P0]\n Spiritual power ：[ROOT.Var('OW_KO_WAR_player_lingli').GetValue|P0] / [ROOT.Var('OW_KO_WAR_player_lingli_max').GetValue|P0]\n Spiritual Strength ：[ROOT.Var('OW_KO_WAR_player_lingqiang').GetValue|P0]\n\n#N VS#!\n\n——#P [recipient.GetFirstNameNicknamedNoTooltip]#!——\n Destiny ：Endangered \n Spiritual power ：unspecified \n Spiritual Strength ：unspecified \n#N （Divine sense cannot break through the other party's sea of Consciousness）#!"
+ OW_KO_WAR.0001.desc.c:0 "——#P [ROOT.Char.GetFirstNameNicknamedNoTooltip]#!——\n Destiny ：[ROOT.Var('OW_KO_WAR_player_mingli').GetValue|P0] / [ROOT.Var('OW_KO_WAR_player_mingli_max').GetValue|P0]\n Spiritual power ：[ROOT.Var('OW_KO_WAR_player_lingli').GetValue|P0] / [ROOT.Var('OW_KO_WAR_player_lingli_max').GetValue|P0]\n Spiritual Strength ：[ROOT.Var('OW_KO_WAR_player_lingqiang').GetValue|P0]\n\n#N VS#!\n\n——#P [recipient.GetFirstNameNicknamedNoTooltip]#!——\n Destiny ：unspecified \n Spiritual power ：unspecified \n Spiritual Strength ：unspecified \n#N （Divine sense cannot break through the other party's sea of Consciousness）#!"
+ OW_KO_WAR.0001.desc.d:0 "——#P [ROOT.Char.GetFirstNameNicknamedNoTooltip]#!——\n Destiny ：[ROOT.Var('OW_KO_WAR_player_mingli').GetValue|P0] / [ROOT.Var('OW_KO_WAR_player_mingli_max').GetValue|P0]\n Spiritual power ：[ROOT.Var('OW_KO_WAR_player_lingli').GetValue|P0] / [ROOT.Var('OW_KO_WAR_player_lingli_max').GetValue|P0]\n Spiritual Strength ：[ROOT.Var('OW_KO_WAR_player_lingqiang').GetValue|P0]\n\n#N VS#!\n\n——#P [recipient.GetFirstNameNicknamedNoTooltip]#!——\n Destiny ：[ROOT.Var('OW_KO_WAR_ai_mingli').GetValue|P0] / [ROOT.Var('OW_KO_WAR_ai_mingli_max').GetValue|P0]\n Spiritual power ：[ROOT.Var('OW_KO_WAR_ai_lingli').GetValue|P0] / [ROOT.Var('OW_KO_WAR_ai_lingli_max').GetValue|P0]\n Spiritual Strength ：[ROOT.Var('OW_KO_WAR_ai_lingqiang').GetValue|P0]"
+ OW_KO_WAR.0003.name:0 "Ascension duel"
+ OW_KO_WAR.0003.desc.a:0 "　　#P [recipient.GetFirstNameNicknamedNoTooltip]#! duel #P [ROOT.Char.GetFirstNameNicknamedNoTooltip]#! Used [recipient.Custom('OW_KO_WAR_SHOW_ID')]"
+ OW_KO_WAR.0003.desc.b:0 "　　#P [recipient.GetFirstNameNicknamedNoTooltip]#! duel #P [ROOT.Char.GetFirstNameNicknamedNoTooltip]#! Used [recipient.Custom('OW_KO_WAR_SHOW_ID')]\n Cards ：[recipient.Custom('OW_KO_WAR_SHOW_ID')]\n Attack Value ：[ROOT.Var('OW_KO_WAR_GongJiZhi').GetValue|N0]\n Combo Rate ：[ROOT.Var('OW_KO_WAR_LianJiZhi_Zheng').GetValue|N0]#N %#!\n Hit Rate ：[ROOT.Var('OW_KO_WAR_MingZhongZhi_Zheng').GetValue|N0]#N %#!"
+
+ OW_KO_WAR.1000.name:0 "End of rounds"
+ OW_KO_WAR.1000.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! duel #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!Dealt [ROOT.Var('OW_KO_WAR_ShangHai').GetValue|N0] points of damage.During the attack on #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! the damage inflicted during， #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! sbreakage is frequent."
+ OW_KO_WAR.1003.name:0 "End of rounds"
+ OW_KO_WAR.1003.desc:0 "　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! Tried to escape, was #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! Knowledge Break."
+ OW_KO_WAR.1003.t:0 "Run? Think too much!"
+ OW_KO_WAR.1004.name:0 "End of rounds"
+ OW_KO_WAR.1004.desc:0 "　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! Run away, stay #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! froze up."
+ OW_KO_WAR.1004.t:0 "Crap! Run, run?"
+ OW_KO_WAR.1005.name:0 "End of rounds"
+ OW_KO_WAR.1005.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! didn't want to be in a position to take on #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! and prepared to retreat, only to have #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! was very angry and rose up to attack ！！！！"
+ OW_KO_WAR.1005.t:0 "Holy shit! What do you mean?"
+ OW_KO_WAR.1006.name:0 "End of rounds"
+ OW_KO_WAR.1006.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! didn't want to be in a position to take on #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! and prepared to retreat, #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! thought about it and felt that there was no deep hatred with #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! There was no deep hatred, so they went along with it."
+ OW_KO_WAR.1006.t:0 "Retreat"
+ OW_KO_WAR.1007.name:0 "End of rounds"
+ OW_KO_WAR.1007.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! didn't want to be in a position to take on #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! and prepared to retreat, #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! did not even notice #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! s actions and was still preparing to defend against #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!"
+ OW_KO_WAR.1007.t:0 "slip away quietly！"
+
+ OW_KO_WAR.2000.name:0 "End of rounds"
+ OW_KO_WAR.2000.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! duel #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! Deals [ROOT.Var('OW_KO_WAR_ShangHai').GetValue|N0] points of damage. During the attack on #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! in the process of being attacked by #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! discovers a breakage, perhaps #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! could possibly counterattack #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!"
+ OW_KO_WAR.2003.name:0 "End of rounds"
+ OW_KO_WAR.2003.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! was found to be broken and had to fight hard #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! \n\n　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! As a result, the kind heart thought, while the other party was not prepared, vanish away."
+ OW_KO_WAR.2003.t:0 "？？？"
+ OW_KO_WAR.2004.name:0 "End of rounds"
+ OW_KO_WAR.2004.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! Found broken, turned around and ran. \n\n　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! A dodge, approaching #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! !!"
+ OW_KO_WAR.2004.t:0 "Holy shit!"
+ OW_KO_WAR.2005.name:0 "End of rounds"
+ OW_KO_WAR.2005.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! Found broken, turned around and ran. \n\n　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! Spotted running away #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!!! Scoffs, 「Stupid dick!」"
+ OW_KO_WAR.2005.t:0 "Lives Matter!" 
+ 
+ OW_KO_WAR.3000.name:0 "End of rounds"
+ OW_KO_WAR.3000.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! duel #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! s attack was skillfully defused. In the process of #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! defusing the move, #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! discovered #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! 's breakthrough."
+ OW_KO_WAR.3003.name:0 "End of rounds"
+ OW_KO_WAR.3003.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! missed #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! and prepared to attack again #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! \n\n　　As a result #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! took advantage of the short time and slipped away!"
+ OW_KO_WAR.3003.t:0 "Holy shit!Can this even run?" 
+ OW_KO_WAR.3004.name:0 "End of rounds"
+ OW_KO_WAR.3004.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! missed #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! and prepared to attack again #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! \n\n　　ended up ready to insult #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! of #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! found that #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! had already attacked and it was too late to escape."
+ OW_KO_WAR.3004.t:0 "MMP，Death by talking too much!" 
+ OW_KO_WAR.3005.name:0 "End of rounds"
+ OW_KO_WAR.3005.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! missed #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! , ready to retreat! \n\n　　As a result, #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! who was preparing to retreat was attacked by #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! seized the opportunity to attack straight on. #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! It's too late to retreat."
+ OW_KO_WAR.3005.t:0 "Are you looking for death?" 
+ OW_KO_WAR.3006.name:0 "End of rounds"
+ OW_KO_WAR.3006.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! missed #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! , ready to retreat! \n\n　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! After a moment's reflection, he did not continue the pursuit and let him leave."
+ OW_KO_WAR.3006.t:0 "Retreat" 
+ OW_KO_WAR.3007.name:0 "End of rounds"
+ OW_KO_WAR.3007.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! missed #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! , ready to retreat! \n\n　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! Still on the defensive, he didn't notice that #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! has left!"
+ OW_KO_WAR.3007.t:0 "This is stupid, right!" 
+ 
+ OW_KO_WAR.4000.name:0 "End of rounds"
+ OW_KO_WAR.4000.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! duel #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! s attack was skillfully defused. During the #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! defused the move, #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! attacked by surprise as if to counter-attack the gesture."
+ OW_KO_WAR.4003.name:0 "End of rounds"
+ OW_KO_WAR.4003.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! was found to be broken and had to fight hard #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! \n\n　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! As a result, the kind heart thought, while the other party was not prepared, vanish away."
+ OW_KO_WAR.4003.t:0 "？？？"
+ OW_KO_WAR.4004.name:0 "End of rounds"
+ OW_KO_WAR.4004.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! Found broken, turned around and ran. \n\n　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! A dodge, approaching #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! !!"
+ OW_KO_WAR.4004.t:0 "Holy shit!"
+ OW_KO_WAR.4005.name:0 "End of rounds"
+ OW_KO_WAR.4005.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! Found broken, turned around and ran. \n\n　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! Spotted running away #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! !! Said,:「Stupid dick」" Then let it go."
+ OW_KO_WAR.4005.t:0 "Lives Matter!" 
+ 
+ OW_KO_WAR.5000.name:0 "End of rounds"
+ OW_KO_WAR.5000.desc:0 "　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! duel #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! Deals [ROOT.Var('OW_KO_WAR_ShangHai').GetValue|N0] points of damage. The damage caused #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! The breakers appear frequently, as if to launch a combo."
+ OW_KO_WAR.5003.name:0 "End of rounds"
+ OW_KO_WAR.5003.desc:0 "　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! hit #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! and #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! was defending against a possible attack by #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! for a possible next attack, only to find #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! got away!"
+ OW_KO_WAR.5003.t:0 "？？？"
+ OW_KO_WAR.5004.name:0 "End of rounds"
+ OW_KO_WAR.5004.desc:0 "　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! hit #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! and #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! turns around and runs! \n\n　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! A dodge, approaching #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! !!"
+ OW_KO_WAR.5004.t:0 "Holy shit!"
+ OW_KO_WAR.5005.name:0 "End of rounds"
+ OW_KO_WAR.5005.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! found the #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! broke, #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! turned around and ran. \n\n　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! Spotted the fleeing #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! !! Said:「Frakking hell!」"
+ OW_KO_WAR.5005.t:0 "You wait for me!" 
+   
+ OW_KO_WAR.6000.name:0 "End of rounds"
+ OW_KO_WAR.6000.desc:0 "　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! duel #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! Deals [ROOT.Var('OW_KO_WAR_ShangHai').GetValue|N0] points of damage. During the attack on #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! in the process of being attacked by #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! discovered the breakage."
+ OW_KO_WAR.6003.name:0 "End of rounds"
+ OW_KO_WAR.6003.desc:0 "　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! hit #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! and #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! found a flaw and immediately fought back, resulting in #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! turned around and fled, but was recognized by #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! recognized it."
+ OW_KO_WAR.6003.t:0 "Run? Think too much!"
+ OW_KO_WAR.6004.name:0 "End of rounds"
+ OW_KO_WAR.6004.desc:0 "　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! hit #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! and #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! found a flaw and immediately fought back, resulting in #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! took advantage of #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! took advantage of #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#'s counterattack and ran away, leaving #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! was confused ！！！！"
+ OW_KO_WAR.6004.t:0 "Holy shit!Run, run?"
+ OW_KO_WAR.6005.name:0 "End of rounds"
+ OW_KO_WAR.6005.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! didn't want to be in a position to take on #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! and prepared to retreat, only to have #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! was very angry and rose up to attack ！！！！"
+ OW_KO_WAR.6005.t:0 "Holy shit!What do you mean?"
+ OW_KO_WAR.6006.name:0 "End of rounds"
+ OW_KO_WAR.6006.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! didn't want to be in a position to take on #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! counterattacked, and prepared to retreat, #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! thought about it and felt that there was no deep hatred with #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! There was no deep hatred, so they let nature take its course."
+ OW_KO_WAR.6006.t:0 "Retreat"
+ OW_KO_WAR.6007.name:0 "End of rounds"
+ OW_KO_WAR.6007.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! didn't want to be in a position to take on #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! counterattacked, and prepared to retreat, #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! did not even notice #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! 's actions and was still preparing to defend against #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!"
+ OW_KO_WAR.6007.t:0 "Sneak away!"
+ 
+ OW_KO_WAR.7000.name:0 "End of rounds"
+ OW_KO_WAR.7000.desc:0 "　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! duel #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! s attack was skillfully defused. During the #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! defusing the move, #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! spotted #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! 's breakthrough, as if to launch a combo."
+ OW_KO_WAR.7003.name:0 "End of rounds"
+ OW_KO_WAR.7003.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! 's defensive moves were found to be broken and had no choice but to continue to fight hard #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! \n\n　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! seemed to have something else going on and had to stop paying attention to #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! and leave!"
+ OW_KO_WAR.7003.t:0 "Holy shit!Look down on me?"
+ OW_KO_WAR.7004.name:0 "End of rounds"
+ OW_KO_WAR.7004.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! 's defensive action was found to be broken and turned around and ran. \n\n　　Looking at #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! who is about to run, #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! , #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! A dodge, approaching #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!!!"
+ OW_KO_WAR.7004.t:0 "Holy shit!"
+ OW_KO_WAR.7005.name:0 "End of rounds"
+ OW_KO_WAR.7005.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! 's defensive action was found to be broken and turned around and ran. \n\n　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! Still dormant in the blunder, not even noticing that #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! had slipped away!"
+ OW_KO_WAR.7005.t:0 "Stupid dick, right?" 
+  
+ OW_KO_WAR.8000.name:0 "End of rounds"
+ OW_KO_WAR.8000.desc:0 "　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! duel #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! s attack was skillfully defused. During the #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! defusing the move revealed #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! 's blunder."
+ OW_KO_WAR.8003.name:0 "End of rounds"
+ OW_KO_WAR.8003.desc:0 "　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! Missed #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! , #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! ready to counterattack #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! \n\n　　As a result #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! wanted to prepare to insult #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! before escaping. and found that #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! had already attacked and it was too late to escape."
+ OW_KO_WAR.8003.t:0 "MMP，Death by talking too much!" 
+ OW_KO_WAR.8004.name:0 "End of rounds"
+ OW_KO_WAR.8004.desc:0 "　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! Missed #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! , #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! ready to counterattack #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! \n\n　　As a result #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! took advantage of the brief moment and slipped away!"
+ OW_KO_WAR.8004.t:0 "Holy shit!Can this even run?" 
+ OW_KO_WAR.8005.name:0 "End of rounds"
+ OW_KO_WAR.8005.desc:0 "　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! Missed #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! , #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! Prepare to retreat! \n\n　　As a result, #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! who was preparing to retreat was attacked by #P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! seized the opportunity to attack straight on. #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! It's too late to retreat."
+ OW_KO_WAR.8005.t:0 "Are you looking for death?" 
+ OW_KO_WAR.8006.name:0 "End of rounds"
+ OW_KO_WAR.8006.desc:0 "　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! Missed #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! , #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! Prepare to retreat! \n\n　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! After a moment's reflection, he didn't continue the pursuit and let it go."
+ OW_KO_WAR.8006.t:0 "Retreat" 
+ OW_KO_WAR.8007.name:0 "End of rounds"
+ OW_KO_WAR.8007.desc:0 "　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! Missed #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! , #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! Prepare to retreat! \n\n　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#! Still on the defensive, he didn't even notice that #P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#! has left!"
+ OW_KO_WAR.8007.t:0 "This is silly, right!" 
+ 
+ ################
+ ###秘境战斗#####
+ ###框架文本#####
+ ################
+ OW_MJ_WAR.0001.name:0 "Secret Battles"
+ OW_MJ_WAR.0001.desc:0 "——#P [ROOT.Char.GetFirstNameNicknamedNoTooltip]#!——\n Destiny ：[ROOT.Var('OW_MJ_WAR_player_mingli').GetValue|P0] / [ROOT.Var('OW_MJ_WAR_player_mingli_max').GetValue|P0]\n Spiritual power ：[ROOT.Var('OW_MJ_WAR_player_lingli').GetValue|P0] / [ROOT.Var('OW_MJ_WAR_player_lingli_max').GetValue|P0]\n Spiritual Strength ：[ROOT.Var('OW_MJ_WAR_player_lingqiang').GetValue|P0]\n#N VS#!\n——#P [ROOT.Char.Custom('OW_MJ_WAR_ai_name')]#!——\n Destiny ：[ROOT.Var('OW_MJ_WAR_ai_mingli').GetValue|P0] / [ROOT.Var('OW_MJ_WAR_ai_mingli_max').GetValue|P0]\n Spiritual power ：[ROOT.Var('OW_MJ_WAR_ai_lingli').GetValue|P0] / [ROOT.Var('OW_MJ_WAR_ai_lingli_max').GetValue|P0]\n Spiritual Strength ：[ROOT.Var('OW_MJ_WAR_ai_lingqiang').GetValue|P0]"
+ OW_MJ_WAR.0002.name:0 "Secret Battles"
+ OW_MJ_WAR.0002.desc:0 "——#P [ROOT.Char.GetFirstNameNicknamedNoTooltip]#!——\n Destiny ：[ROOT.Var('OW_MJ_WAR_player_mingli').GetValue|P0] / [ROOT.Var('OW_MJ_WAR_player_mingli_max').GetValue|P0]\n Spiritual power ：[ROOT.Var('OW_MJ_WAR_player_lingli').GetValue|P0] / [ROOT.Var('OW_MJ_WAR_player_lingli_max').GetValue|P0]\n Spiritual Strength ：[ROOT.Var('OW_MJ_WAR_player_lingqiang').GetValue|P0]\n#N VS#!\n——#P [ROOT.Char.Custom('OW_MJ_WAR_ai_name')]#!——\n Destiny ：[ROOT.Var('OW_MJ_WAR_ai_mingli').GetValue|P0] / [ROOT.Var('OW_MJ_WAR_ai_mingli_max').GetValue|P0]\n Spiritual power ：[ROOT.Var('OW_MJ_WAR_ai_lingli').GetValue|P0] / [ROOT.Var('OW_MJ_WAR_ai_lingli_max').GetValue|P0]\n Spiritual Strength ：[ROOT.Var('OW_MJ_WAR_ai_lingqiang').GetValue|P0]"
+ OW_MJ_WAR.1001.name:0 "Escape"
+ OW_MJ_WAR.1001.desc:0 "　　#P [ROOT.Char.GetFirstNameNicknamedNoTooltip]#! Flee!"
+ OW_MJ_WAR.1001.t:0 "End of battle"
+ OW_KO_WAR_DEATH.3.name:0 "Death"
+ OW_KO_WAR_DEATH.3.desc:0 "\n44444444444444444\n44             44\n444444444  444444\n44      4  4   44\n4444  444     444\n444     4   44444\n44  4  44  444444\n4444  444  444 44\\n44444444444444444\n444444   44444444\n44444444444444444\n44             44\n4444  44444444444\n4444  44444444444\n4444  44444444444\n4444  44444444444\n4444  44444444444\n4444         4444\n44444444444444444"
+ OW_KO_WAR_DEATH.3.t:0 "Determine"
+ OW_KO_WAR_DEATH.4.name:0 "Death"
+ OW_KO_WAR_DEATH.4.desc:0 "#P [ROOT.Char.GetFirstNameNicknamedNoTooltip]#! Killed #P [ROOT.Char.Custom('OW_MJ_WAR_ai_name')]#!。"
+ OW_KO_WAR_DEATH.4.t:0 "Determine"
+ 
+ 
+ OW_MJ_WAR_LJPD_MZ:0 "\n　　#P [ROOT.Char.GetFirstNameNicknamedNoTooltip]#! duel #P [ROOT.Char.Custom('OW_MJ_WAR_ai_name')]#! Dealt [ROOT.Var('OW_KO_WAR_ShangHai').GetValue|P0] points of damage."
+ OW_MJ_WAR_LJPD_WMZ:0 "\n　　#P [ROOT.Char.GetFirstNameNicknamedNoTooltip]#! duel #P [ROOT.Char.Custom('OW_MJ_WAR_ai_name')]#! The attack was #P [ROOT.Char.Custom('OW_MJ_WAR_ai_name')]#! defragmented."
+ OW_MJ_WAR_LJPD_MZ1:0 "\n　　#P [ROOT.Char.Custom('OW_MJ_WAR_ai_name')]#! duel #P [ROOT.Char.GetFirstNameNicknamedNoTooltip]#! Dealt [ROOT.Var('OW_KO_WAR_ShangHai').GetValue|P0] points of damage."
+ OW_MJ_WAR_LJPD_WMZ1:0 "\n　　#P [ROOT.Char.Custom('OW_MJ_WAR_ai_name')]#! duel #P [ROOT.Char.GetFirstNameNicknamedNoTooltip]#! The attack was #P [ROOT.Char.Custom('OW_MJ_WAR_ai_name')]#! defragmented."
+ OW_MJ_WAR_GW_KP_NAME_SHOW:0 "[ROOT.Char.Custom('OW_MJ_WAR_GW_KP_SHOW')]"
+ ################
+ ###秘境怪物#####
+ ###防御卡牌#####
+ ################
+ OW_MJ_WAR_GW_KP_1:0 "\n　　#P [ROOT.Char.Custom('OW_MJ_WAR_ai_name')]#! Defensive cards were used:\n　　■■■■■■■■■■■■\n　　　　『Dodge』\n　　　　defensive value ：[ROOT.Var('OW_MJ_WAR_FangYuZhi').GetValue|P0]\n　　　　Rebound rate ：[ROOT.Var('OW_MJ_WAR_FanJiZhi').GetValue|P0]#P %#!\n　　　　Dodge Rate ：[ROOT.Var('OW_MJ_WAR_ShanBiZhi').GetValue|P0]#P %#!\n　　■■■■■■■■■■■■"
+ OW_MJ_WAR_GW_KP_2:0 "\n　　#P [ROOT.Char.Custom('OW_MJ_WAR_ai_name')]#! Defensive cards were used:\n　　■■■■■■■■■■■■\n　　　　『Kill-green』\n　　　　defensive value ：[ROOT.Var('OW_MJ_WAR_FangYuZhi').GetValue|P0]\n　　　　Rebound rate ：[ROOT.Var('OW_MJ_WAR_FanJiZhi').GetValue|P0]#P %#!\n　　　　Dodge Rate ：[ROOT.Var('OW_MJ_WAR_ShanBiZhi').GetValue|P0]#P %#!\n　　■■■■■■■■■■■■"
+
+ ################
+ ###秘境怪物#####
+ ###攻击卡牌#####
+ ################
+ OW_MJ_WAR_GW_KP_100001:0 "\n　　#P [ROOT.Char.Custom('OW_MJ_WAR_ai_name')]#! Attack cards were used:\n　　■■■■■■■■■■■■\n　　　　『Bamboo spikes』\n　　　　 Attack Value ：[ROOT.Var('OW_MJ_WAR_GongJiZhi').GetValue|P0]\n　　　　 Combo Rate ：[ROOT.Var('OW_MJ_WAR_LianJiZhi').GetValue|P0]#P %#!\n　　　　 Hit Rate ：[ROOT.Var('OW_MJ_WAR_MingZhongZhi').GetValue|P0]#P %#!\n　　■■■■■■■■■■■■"
+ OW_MJ_WAR_GW_KP_100002:0 "\n　　#P [ROOT.Char.Custom('OW_MJ_WAR_ai_name')]#! Attack cards were used:\n　　■■■■■■■■■■■■\n　　　　『Bamboo and vine wrapping』\n　　　　 Attack Value ：[ROOT.Var('OW_MJ_WAR_GongJiZhi').GetValue|P0]\n　　　　 Combo Rate ：[ROOT.Var('OW_MJ_WAR_LianJiZhi').GetValue|P0]#P %#!\n　　　　 Hit Rate ：[ROOT.Var('OW_MJ_WAR_MingZhongZhi').GetValue|P0]#P %#!\n　　■■■■■■■■■■■■"
+ 
+ ################
+ ###秘境战斗#####
+ ###怪物名称#####
+ ################
+ OW_MJ_WAR_GW_ZhuYao_name:0 "Bamboo Demon"
+ 
+ ################
+ ###修真对决#####
+ ###特殊文本#####
+ ################
+ OW_KO_WAR_no_lingli_desc:0 "#N  If you don't have enough Spiritual power, use Destiny, which burns the same amount of consumption.#!"
+ 
+ ################
+ ###修真对决#####
+ ###死亡文本#####
+ ################
+ OW_KO_WAR_DEATH.1.name:0 "Death"
+ OW_KO_WAR_DEATH.1.desc:0 "\n44444444444444444\n44             44\n444444444  444444\n44      4  4   44\n4444  444     444\n444     4   44444\n44  4  44  444444\n4444  444  444 44\\n44444444444444444\n444444   44444444\n44444444444444444\n44             44\n4444  44444444444\n4444  44444444444\n4444  44444444444\n4444  44444444444\n4444  44444444444\n4444         4444\n44444444444444444"
+ OW_KO_WAR_DEATH.1.t:0 "Oky"
+ OW_KO_WAR_DEATH.2.name:0 "Death"
+ OW_KO_WAR_DEATH.2.desc:0 "[OW_KO_AI.GetFirstNameNicknamedNoTooltip] is dead."
+ OW_KO_WAR_DEATH.2.t:0 "Oky"
+ 
+ OW_KO_WAR_LianJi_name:0 "Combo"
+ OW_KO_WAR_FanJi_name:0 "Counterattack"
+ OW_KO_WAR_CheTui_name:0 "Retreat"
+ OW_KO_WAR_TaoPao_name:0 "Escape"
+ OW_KO_WAR_YingGang_name:0 "Rigid"
+ OW_KO_WAR_QiuRao_name:0 "beg forgiveness"
+ OW_KO_WAR_DEATH_name:0 "Oky"
+ 
+ ################
+ ###基础攻击#####
+ ################
+ OW_KO_WAR_GJ_RouBo1_name:0 "『Storing Meat』"
+ OW_KO_WAR_GJ_RouBo1_GongJiZhi_desc:0 " Attack Value :[SCOPE.ScriptValue('OW_KO_WAR_GJ_RouBo1_GongJiZhi')|P0]"
+ OW_KO_WAR_GJ_RouBo1_LianJiZhi_desc:0 " Combo Rate :[SCOPE.ScriptValue('OW_KO_WAR_GJ_RouBo1_LianJiZhi')|P0]#P %#!"
+ OW_KO_WAR_GJ_RouBo1_MingZhongZhi_desc:0 " Hit Rate :[SCOPE.ScriptValue('OW_KO_WAR_GJ_RouBo1_MingZhongZhi')|P0]#P %#!"
+ OW_KO_WAR_GJ_RouBo1_XiaoHaoZhi_desc:0 " Consumption value :[SCOPE.ScriptValue('OW_KO_WAR_GJ_RouBo1_XiaoHaoZhi')|P0]"
+ OW_KO_WAR_GJ_RouBo2_name:0 "『Wrestling Meat』"
+ OW_KO_WAR_GJ_RouBo2_GongJiZhi_desc:0 " Attack Value :[SCOPE.ScriptValue('OW_KO_WAR_GJ_RouBo2_GongJiZhi')|P0]"
+ OW_KO_WAR_GJ_RouBo2_LianJiZhi_desc:0 " Combo Rate :[SCOPE.ScriptValue('OW_KO_WAR_GJ_RouBo2_LianJiZhi')|P0]#P %#!"
+ OW_KO_WAR_GJ_RouBo2_MingZhongZhi_desc:0 " Hit Rate :[SCOPE.ScriptValue('OW_KO_WAR_GJ_RouBo2_MingZhongZhi')|P0]#P %#!"
+ OW_KO_WAR_GJ_RouBo2_XiaoHaoZhi_desc:0 " Consumption value :[SCOPE.ScriptValue('OW_KO_WAR_GJ_RouBo2_XiaoHaoZhi')|P0]"
+ OW_KO_WAR_GJ_RouBo3_name:0 "『Broken Meat』"
+ OW_KO_WAR_GJ_RouBo3_GongJiZhi_desc:0 " Attack Value :[SCOPE.ScriptValue('OW_KO_WAR_GJ_RouBo3_GongJiZhi')|P0]"
+ OW_KO_WAR_GJ_RouBo3_LianJiZhi_desc:0 " Combo Rate :[SCOPE.ScriptValue('OW_KO_WAR_GJ_RouBo3_LianJiZhi')|P0]#P %#!"
+ OW_KO_WAR_GJ_RouBo3_MingZhongZhi_desc:0 " Hit Rate :[SCOPE.ScriptValue('OW_KO_WAR_GJ_RouBo3_MingZhongZhi')|P0]#P %#!"
+ OW_KO_WAR_GJ_RouBo3_XiaoHaoZhi_desc:0 " Consumption value :[SCOPE.ScriptValue('OW_KO_WAR_GJ_RouBo3_XiaoHaoZhi')|P0]"
+ ################
+ ###神通攻击#####
+ ################
+
+ ################
+ ###基础防御#####
+ ################
+ OW_KO_WAR_FY_ZhaoJa_name:0 "『Recruiting』"
+ OW_KO_WAR_FY_ZhaoJa_FangYuZhi_desc:0 "defensive value :[SCOPE.ScriptValue('OW_KO_WAR_FY_ZhaoJa_FangYuZhi')|P0]"
+ OW_KO_WAR_FY_ZhaoJa_FanJiZhi_desc:0 "Rebound rate :[SCOPE.ScriptValue('OW_KO_WAR_FY_ZhaoJa_FanJiZhi')|P0]#P %#!"
+ OW_KO_WAR_FY_ZhaoJa_ShanBiZhi_desc:0 "Dodge Rate :[SCOPE.ScriptValue('OW_KO_WAR_FY_ZhaoJa_ShanBiZhi')|P0]#P %#!"
+ OW_KO_WAR_FY_ZhaoJa_XiaoHaoZhi_desc:0 " Consumption value :[SCOPE.ScriptValue('OW_KO_WAR_FY_ZhaoJa_XiaoHaoZhi')|P0]"
+ OW_KO_WAR_FY_ShanBi_name:0 "『Dodge』"
+ OW_KO_WAR_FY_ShanBi_FangYuZhi_desc:0 "defensive value :[SCOPE.ScriptValue('OW_KO_WAR_FY_ShanBi_FangYuZhi')|P0]"
+ OW_KO_WAR_FY_ShanBi_FanJiZhi_desc:0 "Rebound rate :[SCOPE.ScriptValue('OW_KO_WAR_FY_ShanBi_FanJiZhi')|P0]#P %#!"
+ OW_KO_WAR_FY_ShanBi_ShanBiZhi_desc:0 "Dodge Rate :[SCOPE.ScriptValue('OW_KO_WAR_FY_ShanBi_ShanBiZhi')|P0]#P %#!"
+ OW_KO_WAR_FY_ShanBi_XiaoHaoZhi_desc:0 " Consumption value :[SCOPE.ScriptValue('OW_KO_WAR_FY_ShanBi_XiaoHaoZhi')|P0]"
+ OW_KO_WAR_FY_FanKang_name:0 "『resist』"
+ OW_KO_WAR_FY_FanKang_FangYuZhi_desc:0 "defensive value :[SCOPE.ScriptValue('OW_KO_WAR_FY_FanKang_FangYuZhi')|P0]"
+ OW_KO_WAR_FY_FanKang_FanJiZhi_desc:0 "Rebound rate :[SCOPE.ScriptValue('OW_KO_WAR_FY_FanKang_FanJiZhi')|P0]#P %#!"
+ OW_KO_WAR_FY_FanKang_ShanBiZhi_desc:0 "Dodge Rate :[SCOPE.ScriptValue('OW_KO_WAR_FY_FanKang_ShanBiZhi')|P0]#P %#!"
+ OW_KO_WAR_FY_FanKang_XiaoHaoZhi_desc:0 " Consumption value :[SCOPE.ScriptValue('OW_KO_WAR_FY_FanKang_XiaoHaoZhi')|P0]"
+ 
+ ################
+ ###神通防御#####
+ ################

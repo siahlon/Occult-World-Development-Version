@@ -1,0 +1,164 @@
+﻿l_english:
+ OW_FRJQ_TanSuo_Event_shandong.1.name:0 "山洞"
+ OW_FRJQ_TanSuo_Event_shandong.1.desc:0 "你发现此处有个山洞，是否进去？"
+ OW_FRJQ_TanSuo_Event_shandong.1.a:0 "进入"
+ OW_FRJQ_TanSuo_Event_shandong.1.b:0 "还是离开为好"
+ 
+ OW_FRJQ_TanSuo_Event_shandong.2.name:0 "洞府"
+ OW_FRJQ_TanSuo_Event_shandong.2.desc:0 "此处像是上古修仙者开辟的洞府，你面前有几样的东西。你觉得可以拿走一件。"
+ OW_FRJQ_TanSuo_Event_shandong.2.a:0 "瓷瓶"
+ OW_FRJQ_TanSuo_Event_shandong.2.b:0 "古籍"
+ OW_FRJQ_TanSuo_Event_shandong.2.c:0 "石板"
+ 
+ OW_FRJQ_TanSuo_Event_shandong.3.desc:0 "你拿起古籍，当你想要翻动时，顿时整本古籍化成灰飞，而你手上只剩下一张用古怪字体书写的纸条"
+ OW_FRJQ_TanSuo_Event_shandong.3.name:0 "洞府"
+ OW_FRJQ_TanSuo_Event_shandong.3.a:0 "仔细查看"
+ 
+ OW_FRJQ_TanSuo_Event_shandong.4.name:0 "洞府"
+ OW_FRJQ_TanSuo_Event_shandong.4.desc:0 "你拿起那件物品，此时洞府瞬间坍塌，你慌忙的逃出山洞。"
+ OW_FRJQ_TanSuo_Event_shandong.4.a:0 "什么也没有得到"
+ 
+ OW_FRJQ_TanSuo_Event_shandong.5.name:0 "山洞"
+ OW_FRJQ_TanSuo_Event_shandong.5.desc:0 "你发现这里有一个山洞，是否进去？"
+ OW_FRJQ_TanSuo_Event_shandong.5.a:0 "进入"
+ OW_FRJQ_TanSuo_Event_shandong.5.b:0 "离开"
+ 
+ OW_FRJQ_TanSuo_Event_shandong.6.name:0 "山洞"
+ OW_FRJQ_TanSuo_Event_shandong.6.desc:0 "当你走进山洞时，你发现有只大虫正眈眈的看着你，而此时洞府外走来了一只硕大的猿型生物"
+ OW_FRJQ_TanSuo_Event_shandong.6.a:0 "（危）"
+ 
+ OW_FRJQ_TanSuo_Event_shandong.7.name:0 "洞府"
+ OW_FRJQ_TanSuo_Event_shandong.7.desc:0 "你前脚刚走出洞府，后头就传来打斗声，你一看是一只大虫和巨猿在打斗。"
+ OW_FRJQ_TanSuo_Event_shandong.7.a:0 "捡漏看看"
+ OW_FRJQ_TanSuo_Event_shandong.7.b:0 "快跑！！"
+ 
+ OW_FRJQ_TanSuo_Event_shandong.8.name:0 "洞府"
+ OW_FRJQ_TanSuo_Event_shandong.8.desc:0 "这两只恶兽打着打着，只见大虫承受不起巨猿多次的锤击，吃痛向外跑去，而巨猿紧跟在它后面。你发现在石洞内一张纸条"
+ OW_FRJQ_TanSuo_Event_shandong.8.a:0 "捡起纸条"
+ 
+ OW_FRJQ_TanSuo_Event_shandong.9.name:0 "山洞"
+ OW_FRJQ_TanSuo_Event_shandong.9.desc:0 "你走到山洞旁的时候，有汩汩的水声，你一看十一口泉。"
+ OW_FRJQ_TanSuo_Event_shandong.9.a:0 "洗脸"
+ OW_FRJQ_TanSuo_Event_shandong.9.b:0 "喝水"
+ 
+ OW_FRJQ_TanSuo_Event_shandong.10.name:0 "山泉"
+ OW_FRJQ_TanSuo_Event_shandong.10.desc:0 "你捧起一把泉水准备洗去脸上的浮尘，忽然你看到在泉水地下藏有一张写有古怪文字的纸条。"
+ OW_FRJQ_TanSuo_Event_shandong.10.a:0 "捡起看看"
+ 
+ OW_FRJQ_TanSuo_Event_shandong.11.name:0 "山泉"
+ OW_FRJQ_TanSuo_Event_shandong.11.desc:0 "你喝下一大口山泉水，水尤清冽，而且有一股大自然的甘甜，你喝下一口又一口。你感觉浑身充满力量。"
+ OW_FRJQ_TanSuo_Event_shandong.11.a:0 "奥利给！"
+ 
+ OW_FRJQ_TanSuo_Event_shandong.12.name:0 "山洞" 
+ OW_FRJQ_TanSuo_Event_shandong.12.desc:0 "命运指引你来到了一处山洞，从入口看去内部深不见底，外界的亮光逐渐被吞噬，洞穴里似乎有什么在呼唤着你。" 
+ OW_FRJQ_TanSuo_Event_shandong.12.a:0 "不入虎穴焉得虎子，一探究竟！(祸福难料)" 
+ OW_FRJQ_TanSuo_Event_shandong.12.c:0 " 往里扔一颗石子看看……（可能有惊喜）" 
+ OW_FRJQ_TanSuo_Event_shandong.12.b:0 " 还是回去算了……（无事发生）" 
+ 
+ OW_FRJQ_TanSuo_Event_shandong.13.name:0 "扔石子" 
+ OW_FRJQ_TanSuo_Event_shandong.13.desc:0 " 往里扔一颗石子看看……（可能有惊喜）" 
+ OW_FRJQ_TanSuo_Event_shandong.13.a:0 "走你！" 
+ 
+ OW_FRJQ_TanSuo_Event_shandong.14.name:0 "扔石子" 
+ OW_FRJQ_TanSuo_Event_shandong.14.desc:0 "石子扔进去后很久才听到回声，洞穴似乎很深……" 
+ OW_FRJQ_TanSuo_Event_shandong.14.a:0 "（无事发生）" 
+ 
+ OW_FRJQ_TanSuo_Event_shandong.15.name:0 "扔石子" 
+ OW_FRJQ_TanSuo_Event_shandong.15.desc:0 "石子竟从洞穴返还了回来，似乎洞穴里面有什么未知的存在将它扔了出来，重重砸在你的脑门上，你受伤了……" 
+ OW_FRJQ_TanSuo_Event_shandong.15.a:0 "（疼）" 
+ 
+ OW_FRJQ_TanSuo_Event_shandong.16.name:0 "扔石子" 
+ OW_FRJQ_TanSuo_Event_shandong.16.desc:0 "石子竟从洞穴返还了回来，似乎洞穴里面有什么未知的存在将它扔了出来" 
+ OW_FRJQ_TanSuo_Event_shandong.16.a:0 "来了" 
+ 
+ OW_FRJQ_TanSuo_Event_shandong.17.name:0 "扔石子" 
+ OW_FRJQ_TanSuo_Event_shandong.17.desc:0 "石子竟从洞穴返还了回来，似乎洞穴里面有什么未知的存在将它扔了出来，你灵巧地闪开了攻击，战斗的技艺似乎得到了提升，更精湛了" 
+ OW_FRJQ_TanSuo_Event_shandong.17.a:0 "还好我躲过了" 
+ 
+ OW_FRJQ_TanSuo_Event_shandong.18.name:0 "扔石子" 
+ OW_FRJQ_TanSuo_Event_shandong.18.desc:0 "石子竟从洞穴返还了回来，似乎洞穴里面有什么未知的存在将它扔了出来，你灵巧地闪开了攻击，战斗的技艺似乎得到了提升，更精湛了……然而，还没等你高兴，洞穴里突然又射出一颗石子，敏捷性又救了你一次，不及你思索，又是十数枚石子射了出来，你一一闪避。一番功夫后，攻击似乎停止，你这才注意到落在地上的石子似乎组成了某种异兽图案，这会是什么启示呢？获得修真界信息" 
+ OW_FRJQ_TanSuo_Event_shandong.18.a:0 "这是一个什么世界？" 
+ 
+ OW_FRJQ_TanSuo_Event_shandong.19.name:0 "扔石子" 
+ OW_FRJQ_TanSuo_Event_shandong.19.desc:0 "好巧不巧击中了你最脆弱的部位，你感到裆部一阵剧痛，一阵头晕目眩，昏死过去。你获得了阉割特质……" 
+ OW_FRJQ_TanSuo_Event_shandong.19.a:0 "上天就要这样子对我吗？" 
+ 
+ OW_FRJQ_TanSuo_Event_shandong.20.name:0 "扔石子" 
+ OW_FRJQ_TanSuo_Event_shandong.20.desc:0 "好巧不巧击中了你最脆弱的部位，你感到裆部一阵剧痛，一阵头晕目眩，昏死过去。你获得了阉割特质……等你醒来，发项地上出现了一本古册，上书“葵花宝典”四个大字，翻开第一页，“欲练神功，必先自宫”，你摸了摸裆部，痛感已经消除，但似乎也失了活力，变得麻木，看来是命运弄人。翻开第二页，“神功大成，玉柱再生”，你盯着这八个字，莫非练成后可以恢复成男人，现下也别无他法，只好试一试了……修炼成功后续文本：长久苦修，忍受不男不女的折磨，终于，这一天你感到胯下之物似乎恢复了生机，一股奇妙的力量运转周身，意识中似乎多了什么东西，你意识到这等异法绝非人力可为，葵花宝典莫非仙人所写？获得修真界信息……" 
+ OW_FRJQ_TanSuo_Event_shandong.20.a:0 "难道这就是天命？" 
+ 
+ OW_FRJQ_TanSuo_Event_shandong.21.name:0 "山洞" 
+ OW_FRJQ_TanSuo_Event_shandong.21.desc:0 "你鼓起勇气决定一探究竟，幸好外出探险时带了火把，你燃起一根进入了洞穴……洞穴入口较窄，但随着不断深入，通道渐渐宽敞起来，进入一段距离后，你注意到洞穴壁上有些奇怪的文字，你用火把照亮了它们……" 
+ OW_FRJQ_TanSuo_Event_shandong.21.a:0 "不管他" 
+ OW_FRJQ_TanSuo_Event_shandong.21.b:0 "尝试破解" 
+ OW_FRJQ_TanSuo_Event_shandong.21.c:0 "抄录下来回去破解" 
+ OW_FRJQ_TanSuo_Event_shandong.21.d:0 "抚摸这些文字" 
+ 
+ OW_FRJQ_TanSuo_Event_shandong.22.name:0 "尝试破解" 
+ OW_FRJQ_TanSuo_Event_shandong.22.desc:0 "你认真地看着这些文字，似乎他们之间有什么关系。" 
+ OW_FRJQ_TanSuo_Event_shandong.22.a:0 "结果如何" 
+ 
+ OW_FRJQ_TanSuo_Event_shandong.23.name:0 "抄录" 
+ OW_FRJQ_TanSuo_Event_shandong.23.desc:0 "你费了一点功夫将文字抄录下来。" 
+ OW_FRJQ_TanSuo_Event_shandong.23.a:0 "回去好好研究"
+ 
+ OW_FRJQ_TanSuo_Event_shandong.24.name:0 "抚摸文字。" 
+ OW_FRJQ_TanSuo_Event_shandong.24.desc:0 "你抚摸着文字。" 
+ OW_FRJQ_TanSuo_Event_shandong.24.a:0 "摸一摸" 
+ 
+ 
+ OW_FRJQ_TanSuo_Event_shandong.26.name:0 "结果" 
+ OW_FRJQ_TanSuo_Event_shandong.26.desc:0 "你尽力破解文字但是如何没有在其中看出关系" 
+ OW_FRJQ_TanSuo_Event_shandong.26.a:0 "算了" 
+ 
+ OW_FRJQ_TanSuo_Event_shandong.27.name:0 "结果" 
+ OW_FRJQ_TanSuo_Event_shandong.27.desc:0 "你尽力破解文字，一瞬间仿佛文字活了起来，他们飘进了你的大脑中" 
+ OW_FRJQ_TanSuo_Event_shandong.27.a:0 "这是一个怎么样的世界？" 
+ 
+ 
+ OW_FRJQ_TanSuo_Event_shandong.28.name:0 "抚摸" 
+ OW_FRJQ_TanSuo_Event_shandong.28.desc:0 "你感到这些文字仿佛有生命一样窜入了你的脑海" 
+ OW_FRJQ_TanSuo_Event_shandong.28.a:0 "文字若浮生" 
+ 
+ 
+ OW_FRJQ_TanSuo_Event_shandong.29.name:0 "" 
+ OW_FRJQ_TanSuo_Event_shandong.29.desc:0 "" 
+ OW_FRJQ_TanSuo_Event_shandong.29.a:0 "" 
+ 
+ OW_FRJQ_TanSuo_Event_shandong.30.name:0 "山洞" 
+ OW_FRJQ_TanSuo_Event_shandong.30.desc:0 "你继续前进，冥冥中似乎有一双眼睛在注视着你，你感到有些不安。越往深处走氧气越稀薄，火把也快要熄灭了，蓦然，一面墙壁出现在了你面前，洞穴似乎已经见底了。" 
+ OW_FRJQ_TanSuo_Event_shandong.30.a:0 "已经有收获了，返回吧。(结束探索)" 
+ OW_FRJQ_TanSuo_Event_shandong.30.b:0 "观察这面墙壁" 
+ OW_FRJQ_TanSuo_Event_shandong.30.c:0 "抚摸这面墙壁" 
+ 
+ OW_FRJQ_TanSuo_Event_shandong.31.name:0 "观察" 
+ OW_FRJQ_TanSuo_Event_shandong.31.desc:0 "你认真的盯着墙壁看了一会"
+ OW_FRJQ_TanSuo_Event_shandong.31.b:0 "等待" 
+ 
+ OW_FRJQ_TanSuo_Event_shandong.32.desc:0 "你摸了摸墙壁" 
+ OW_FRJQ_TanSuo_Event_shandong.32.name:0 "抚摸" 
+ OW_FRJQ_TanSuo_Event_shandong.32.a:0 "等待"  
+ 
+ OW_FRJQ_TanSuo_Event_shandong.33.name:0 "山洞" 
+ OW_FRJQ_TanSuo_Event_shandong.33.desc:0 "你盯着墙壁观察了一会儿，发项似乎有一条龙纹若隐若现，这必然是某种神秘力量所致" 
+ OW_FRJQ_TanSuo_Event_shandong.33.a:0 "……" 
+ 
+ OW_FRJQ_TanSuo_Event_shandong.34.desc:0 "你盯着墙壁观察了一会儿，始终没有看出什么特别的地方。一无所获" 
+ OW_FRJQ_TanSuo_Event_shandong.34.name:0 "山洞" 
+ OW_FRJQ_TanSuo_Event_shandong.34.a:0 "……" 
+ 
+ OW_FRJQ_TanSuo_Event_shandong.35.name:0 "山洞口" 
+ OW_FRJQ_TanSuo_Event_shandong.35.desc:0 "你看了看四周，似乎没有什么没有探索的了，回去吧……" 
+ OW_FRJQ_TanSuo_Event_shandong.35.a:0 "暂无" 
+ 
+ OW_FRJQ_TanSuo_Event_shandong.36.desc:0 "看来这就是全部了，该回去了……" 
+ OW_FRJQ_TanSuo_Event_shandong.36.title:0 "山洞口" 
+ OW_FRJQ_TanSuo_Event_shandong.36.a:0 "走吧" 
+ 
+ OW_FRJQ_TanSuo_Event_shandong.37.name:0 "抚摸" 
+ OW_FRJQ_TanSuo_Event_shandong.37.desc:0 "你摸了摸墙壁，洞穴里不见日光，阴寒之气深重，墙壁触感冰凉，你很快便将手缩了回来。无事发生" 
+ OW_FRJQ_TanSuo_Event_shandong.37.a:0 "……" 
+ 
+ OW_FRJQ_TanSuo_Event_shandong.38.name:0 "抚摸" 
+ OW_FRJQ_TanSuo_Event_shandong.38.desc:0 "你摸了摸墙壁，洞穴里不见日光，阴寒之气深重，墙壁本该触感冰凉，但当你把手放上去后，竟然开始灼热起来，随后一只朱红火禽图案浮现，你认出这是传说中的朱雀，这必然是某种神秘力量所致" 
+ OW_FRJQ_TanSuo_Event_shandong.38.a:0 "……" 

@@ -1,0 +1,6 @@
+﻿l_simp_chinese:
+ death_OW_XZ_WAR_KO:0 "在修真对决中被[TARGET_CHARACTER.GetUIName]击杀！"
+ death_OW_XZ_WAR_MJ:0 "惨死于秘境！"
+ death_TianYu:0 "在使用天谕神通时，被天道发现。"
+ death_OW_JIEFEI:0 "被劫匪锤死！"
+ death_OW_ZHUISI:0 "喝酒太多，猝死！"

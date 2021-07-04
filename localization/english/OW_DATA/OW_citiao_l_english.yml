@@ -1,0 +1,94 @@
+﻿l_english:
+ ADD_OW_lingshi_EFFECT:0"Spirit Stones#P +$VALUE|0$"
+ REMOVE_OW_lingshi_EFFECT:0"Spirit Stones#N -$VALUE|0$"
+
+ ADD_OW_yezhang_EFFECT:0"karma#P +$VALUE|0$"
+ REMOVE_OW_yezhang_EFFECT:0"karma#N -$VALUE|0$"
+
+ ADD_OW_lingli_EFFECT:0"Spiritual power#P +$VALUE|0$"
+ REMOVE_OW_lingli_EFFECT:0"Spiritual power#N -$VALUE|0$"
+
+ ADD_OW_lingli_max_EFFECT:0"Spiritual power max#P +$VALUE|0$"
+ REMOVE_OW_lingli_max_EFFECT:0"Spiritual power max#N -$VALUE|0$"
+
+ ADD_OW_mingli_EFFECT:0"Destiny#P +$VALUE|0$"
+ REMOVE_OW_mingli_EFFECT:0"Destiny#N -$VALUE|0$"
+
+ ADD_OW_lingqiang_EFFECT:0"Spiritual Strength#P +$VALUE|0$"
+ REMOVE_OW_lingqiang_EFFECT:0"Spiritual Strength#N -$VALUE|0$"
+
+ ADD_OW_ganwu_EFFECT:0"Perceptual#P +$VALUE|0$"
+ REMOVE_OW_ganwu_EFFECT:0"Perceptual#N -$VALUE|0$"
+
+ ADD_OW_lilian_EFFECT:0"Experience#P +$VALUE|0$"
+ REMOVE_OW_lilian_EFFECT:0"Experience#N -$VALUE|0$"
+
+ ADD_OW_ganwu_exp_EFFECT:0"Perceptual exp#P +$VALUE|0$"
+ REMOVE_OW_ganwu_exp_EFFECT:0"Perceptual exp#N -$VALUE|0$"
+
+ ADD_OW_lilian_exp_EFFECT:0"Experience exp#P +$VALUE|0$"
+ REMOVE_OW_lilian_exp_EFFECT:0"Experience exp#N -$VALUE|0$"
+
+ ADD_OW_wuxing_EFFECT:0"Enlightenment#P +$VALUE|0$"
+ REMOVE_OW_wuxing_EFFECT:0"Enlightenment#N -$VALUE|0$"
+
+ ADD_OW_years_lingli_EFFECT:0"Every year spiritual power#P +$VALUE|0$"
+ REMOVE_OW_years_lingli_EFFECT:0"Every year spiritual power#N -$VALUE|0$"
+
+ ADD_OW_years_lingli_max_EFFECT:0"Every year spiritual power max#P +$VALUE|0$"
+ REMOVE_OW_years_lingli_max_EFFECT:0"Every year spiritual power max#N -$VALUE|0$"
+
+ ADD_OW_years_mingli_EFFECT:0"Every year destiny#P +$VALUE|0$"
+ REMOVE_OW_years_mingli_EFFECT:0"Every year destiny#N -$VALUE|0$"
+
+ ADD_OW_months_ganwu_exp_EFFECT:0"Every month perceptual exp#P +$VALUE|0$"
+ REMOVE_OW_months_ganwu_exp_EFFECT:0"Every month perceptual exp#N -$VALUE|0$"
+
+ ADD_OW_months_lilian_exp_EFFECT:0"Every month experience exp#P +$VALUE|0$"
+ REMOVE_OW_months_lilian_exp_EFFECT:0"Every month experience exp#N -$VALUE|0$"
+
+ ADD_OW_years_ganwu_exp_EFFECT:0"Every year perceptual exp#P +$VALUE|0$"
+ REMOVE_OW_years_ganwu_exp_EFFECT:0"Every year perceptual exp#N -$VALUE|0$"
+
+ ADD_OW_years_lilian_exp_EFFECT:0"Every year experience exp#P +$VALUE|0$"
+ REMOVE_OW_years_lilian_exp_EFFECT:0"Every year experience exp#N -$VALUE|0$"
+
+ ADD_set_OW_months_EFFECT:0"Subsequent episodes will begin after $VALUE|+0$ months"
+ REMOVE_set_OW_months_EFFECT:0"Subsequent episodes will begin after $VALUE|+0$ months"
+
+ ADD_OW_duanti_EFFECT:0"Godhead#P +$VALUE|0$"
+ REMOVE_OW_duanti_EFFECT:0"Godhead#N -$VALUE|0$"
+
+ ADD_OW_shenshi_EFFECT:0"Divine sense#P +$VALUE|0$"
+ REMOVE_OW_shenshi_EFFECT:0"Divine sense#N -$VALUE|0$"
+
+ ADD_OW_shihai_EFFECT:0"Consciousness#P +$VALUE|0$"
+ REMOVE_OW_shihai_EFFECT:0"Consciousness#N -$VALUE|0$"
+
+ ADD_OW_duanti_exp_EFFECT:0"Godhead exp#P +$VALUE|0$"
+ REMOVE_OW_duanti_exp_EFFECT:0"Godhead exp#N -$VALUE|0$"
+
+ ADD_OW_shenshi_exp_EFFECT:0"Divine sense exp#P +$VALUE|0$"
+ REMOVE_OW_shenshi_exp_EFFECT:0"Divine sense exp#N -$VALUE|0$"
+
+ ADD_OW_shihai_exp_EFFECT:0"Consciousness exp#P +$VALUE|0$"
+ REMOVE_OW_shihai_exp_EFFECT:0"Consciousness exp#N -$VALUE|0$"
+
+ ADD_OW_months_duanti_exp_EFFECT:0"Every month godhead exp#P +$VALUE|0$"
+ REMOVE_OW_months_duanti_exp_EFFECT:0"Every month godhead exp#N -$VALUE|0$"
+
+ ADD_OW_years_duanti_exp_EFFECT:0"Every year godhead exp#P +$VALUE|0$"
+ REMOVE_OW_years_duanti_exp_EFFECT:0"Every year godhead exp#N -$VALUE|0$"
+
+ ADD_OW_months_shenshi_exp_EFFECT:0"Every month divine sense exp#P +$VALUE|0$"
+ REMOVE_OW_months_shenshi_exp_EFFECT:0"Every month divine sense exp#N -$VALUE|0$"
+
+ ADD_OW_years_shenshi_exp_EFFECT:0"Every year divine sense exp#P +$VALUE|0$"
+ REMOVE_OW_years_shenshi_exp_EFFECT:0"Every year divine sense exp#N -$VALUE|0$"
+
+ ADD_OW_months_shihai_exp_EFFECT:0"Every month consciousness exp#P +$VALUE|0$"
+ REMOVE_OW_months_shihai_exp_EFFECT:0"Every month consciousness exp#N -$VALUE|0$"
+
+ ADD_OW_years_shihai_exp_EFFECT:0"Every year consciousness exp#P +$VALUE|0$"
+ REMOVE_OW_years_shihai_exp_EFFECT:0"Every year consciousness exp#N -$VALUE|0$"
+

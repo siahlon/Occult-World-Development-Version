@@ -1,0 +1,160 @@
+﻿l_simp_chinese:
+ #10低级门派随即修真之路剧情
+ #开始部分
+ OW_JB_XZ_qishi.0001.name:0 "修真起始"
+ OW_JB_XZ_qishi.0001.desc:0 "　　冬去秋来，时光荏苒，[ROOT.GetCharacter.GetFirstNameNoTooltip]不禁感叹岁月如梭，韶华易逝。某天，一位自称修真者的老者，告诉[ROOT.GetCharacter.GetFirstNameNoTooltip]世上有仙家仙门，仙法无穷，可使人长生不老，与山川同寿，但需有缘之人去寻找。待[ROOT.GetCharacter.GetFirstNameNoTooltip]再欲细问，老者在笑声中化作清烟，散而不见。"
+ OW_JB_XZ_qishi.0001.1.t:0 "怪哉！"
+ OW_JB_XZ_qishi.0001.2.t:0 "不过是障眼法而已。（放弃）"
+ 
+ OW_JB_XZ_qishi.0002.name:0 "修真起始"
+ OW_JB_XZ_qishi.0002.desc:0 "　　[ROOT.GetCharacter.GetFirstNameNoTooltip]在家族古老的典籍中翻找的时候，无意间发现一本难解的古籍，[ROOT.GetCharacter.GetFirstNameNoTooltip]问遍周围的学者们，也都得不出一个结论。直到遇见一位自称修真者的老者，告诉[ROOT.GetCharacter.GetFirstNameNoTooltip]此典籍绝非凡间之物，乃是仙家之法，欲求真解需去仙门寻找。待[ROOT.GetCharacter.GetFirstNameNoTooltip]再欲细问，老已在笑声中化作清烟，散而不见。"
+ OW_JB_XZ_qishi.0002.1.t:0 "莫非修真门派真的存在？"
+ OW_JB_XZ_qishi.0002.2.t:0 "一本书而已，可以自己学习。（放弃）"
+ 
+ OW_JB_XZ_qishi.0003.name:0 "修真起始"
+ OW_JB_XZ_qishi.0003.desc:0 "　　日复一日的战争与杀伐，让[ROOT.GetCharacter.GetFirstNameNoTooltip]感觉日渐疲惫，奈何世间也没有无敌天下之法。直到某日在[ROOT.GetCharacter.GetFirstNameNoTooltip]休憩之时，一位自称修真者的老者告诉[ROOT.GetCharacter.GetFirstNameNoTooltip]凡人之躯不过尔尔，只有重塑仙体方可无敌于天下。[ROOT.GetCharacter.GetFirstNameNoTooltip]再欲细问，老已在笑声中化作清烟，散而不见。"
+ OW_JB_XZ_qishi.0003.1.t:0 "世界上真有无敌之法？"
+ OW_JB_XZ_qishi.0003.2.t:0 "自己锻炼就足够了！（放弃）"
+ 
+ OW_JB_XZ_qishi.0004.name:0 "修真起始"
+ OW_JB_XZ_qishi.0004.desc:0 "　　[ROOT.GetCharacter.GetFirstNameNoTooltip]在翻看家族中的旧笔记时，发现里面所记载了一种名为修真之地，但是却不是很详细，但是却有简易的寻找之方，笔记中还有道是有缘者便可修的真意。"
+ OW_JB_XZ_qishi.0004.1.t:0 "难道真的有修真之地？"
+ OW_JB_XZ_qishi.0004.2.t:0 "什么鬼玩意！（放弃）"
+ 
+ OW_JB_XZ_qishi.0005.name:0 "修真起始"
+ OW_JB_XZ_qishi.0005.desc:0 "　　[ROOT.GetCharacter.GetFirstNameNoTooltip]在整理自己的狗窝时，发现了一个罗盘一样的东西，却不知道是何用。却在这时，光芒大盛，一道虚影出现，诉说着这光怪陆离的世界。"
+ OW_JB_XZ_qishi.0005.1.t:0 "这难道是仙人之物？"
+ OW_JB_XZ_qishi.0005.2.t:0 "供起来，插个香。（放弃）"
+ 
+ OW_JB_XZ_qishi.0006.name:0 "仙人指路"
+ OW_JB_XZ_qishi.0006.desc:0 "夜晚在餐桌上进餐的时候，窗外惊现霞光，五彩缤纷，令人诧异的是，除了你之外没有人能够看见，大家纷纷觉得你是看花了眼，你起身，离开城堡，骑着马儿向着霞光奔去。在那里，站着一位鹤发童颜的老者，他虽然没有开口，但你却听到了他的声音：“我等你很久了，你终于来了！”你跳下马，走上前去......"
+ OW_JB_XZ_qishi.0006.1.t:0 "什么！世上真有修真法！？"
+ OW_JB_XZ_qishi.0006.2.t:0 "荒谬！这世上哪有什么神仙！（放弃）"
+ 
+ OW_JB_XZ_qishi.0007.name:0 "朋友的劝说"
+ OW_JB_XZ_qishi.0007.desc:0 "一场宴会上，你的一位知交朋友把你带到一个偏僻的地方，悄悄地告诉你一些关于修真的事情，你起初不信，但是他手掐法诀，默默念叨，竟然变出了一个小火球，这时你......"
+ OW_JB_XZ_qishi.0007.1.t:0 "什么！世上真有修真法！？"
+ OW_JB_XZ_qishi.0007.2.t:0 "荒谬！这世上哪有什么神仙！（放弃）"
+ 
+ OW_JB_XZ_qishi.0008.name:0 "家人的劝说"
+ OW_JB_XZ_qishi.0008.desc:0 "家庭聚会如同往常一样，但今天，你的一位亲族把你带到一个偏僻的地方，悄悄地告诉你一些关于修真的事情，你起初不信，但是他手掐法诀，默默念叨，竟然变出了一个小火球，这时你......"
+ OW_JB_XZ_qishi.0008.1.t:0 "什么！世上真有修真法！？"
+ OW_JB_XZ_qishi.0008.2.t:0 "荒谬！这世上哪有什么神仙！（放弃）"
+ 
+ OW_JB_XZ_qishi.0009.name:0 "悄悄偷听谈论"
+ OW_JB_XZ_qishi.0009.desc:0 "你漫步在花园中，突然听见有人在细声细语的谈论着，你走过去一瞧，竟然发现这些人手中虚托着火球和水球之类超自然的东西，这时你......"
+ OW_JB_XZ_qishi.0009.1.t:0 "什么！世上真有修真法！？"
+ OW_JB_XZ_qishi.0009.2.t:0 "荒谬！这世上哪有什么神仙！（放弃）"
+ 
+ OW_JB_XZ_qishi.0010.name:0 "偶然听到谈论"
+ OW_JB_XZ_qishi.0010.desc:0 "你漫步在花园中，突然听见有人在大声地谈论着，你走过去一瞧，竟然发现这些人手中虚托着火球和水球之类超自然的东西，这时你......"
+ OW_JB_XZ_qishi.0010.1.t:0 "什么！世上真有修真法！？"
+ OW_JB_XZ_qishi.0010.2.t:0 "荒谬！这世上哪有什么神仙！（放弃）"
+ 
+ #出行部分
+ OW_JB_XZ_qishi_chuxing.0001.name:0 "修真决定"
+ OW_JB_XZ_qishi_chuxing.0001.desc:0 "　　日复一日，[ROOT.GetCharacter.GetFirstNameNoTooltip]不能再继续等待。无论未来会发生什么，[ROOT.GetCharacter.GetFirstNameNoTooltip]定要踏碎三山五岳，遍访名山，去寻求传说中的修真门派。"
+ OW_JB_XZ_qishi_chuxing.0001.1.t:0 "我意已决！"
+ OW_JB_XZ_qishi_chuxing.0001.2.t:0 "都是胡思乱想，我应该着眼于现实。（放弃）"
+ 
+ OW_JB_XZ_qishi_chuxing.0002.name:0 "修真决定"
+ OW_JB_XZ_qishi_chuxing.0002.desc:0 "　　这天[ROOT.GetCharacter.GetFirstNameNoTooltip]站在阳台面对夕阳，再次感叹时间飞逝，或许凡尘皆为虚妄，[ROOT.GetCharacter.GetFirstNameNoTooltip]应该去寻找仙家宝地，寻求得道飞升。"
+ OW_JB_XZ_qishi_chuxing.0002.1.t:0 "即刻出发！"
+ OW_JB_XZ_qishi_chuxing.0002.2.t:0 "修仙哪有夺取天下痛快。（放弃）"
+ 
+ OW_JB_XZ_qishi_chuxing.0003.name:0 "修真决定"
+ OW_JB_XZ_qishi_chuxing.0003.desc:0 "　　躺在床上，感受着时间的流逝，心中烦闷，忽然不知道怎么回事，有一道声音提示自己，想知道另外的人生吗？"
+ OW_JB_XZ_qishi_chuxing.0003.1.t:0 "很想知道，我便跟随去寻找罢了。"
+ OW_JB_XZ_qishi_chuxing.0003.2.t:0 "我都快成神经病了。（放弃）"
+ #过程部分
+ OW_JB_XZ_qishi_guocheng_1.9999.name:0 "修真过程"
+ OW_JB_XZ_qishi_guocheng_1.9999.desc:0 "　　行走在山麓，山间树林繁茂，景色宜人，[ROOT.GetCharacter.GetFirstNameNoTooltip]不禁停下驻足观赏，感悟世间万象。\n\n　　【本次旅程消耗500金】"
+ OW_JB_XZ_qishi_guocheng_1.9999.1.t:0 "万法皆空，我悟了！"
+ OW_JB_XZ_qishi_guocheng_1.9999.2.t:0 "脑子都想疼了，还是没想出啥。"
+ OW_JB_XZ_qishi_guocheng_1.9999.3.t:0 "老子是世间最强！"
+ 
+ OW_JB_XZ_qishi_guocheng_2.9999.name:0 "修真过程"
+ OW_JB_XZ_qishi_guocheng_2.9999.desc:0 "　　经过一条湍急的河流时，[ROOT.GetCharacter.GetFirstNameNoTooltip]看到河中漂浮着一个竹筐顺流而下，框中放有一个婴儿，婴儿不停啼哭，眼看就要沉入河心。\n\n　　【本次旅程消耗500金】"
+ OW_JB_XZ_qishi_guocheng_2.9999.1.t:0 "一定要救他！"
+ OW_JB_XZ_qishi_guocheng_2.9999.2.t:0 "赶紧喊人一起来救！"
+ OW_JB_XZ_qishi_guocheng_2.9999.3.t:0 "还是算了，自己的命要紧。"
+ 
+ OW_JB_XZ_qishi_guocheng_2.1100.name:0 "一定要救他！"
+ OW_JB_XZ_qishi_guocheng_2.1100.desc:0 "　　[ROOT.GetCharacter.GetFirstNameNoTooltip]快速冲上去，感觉河不深，直接拉过竹筐，抱起其中的婴儿，此时婴儿不在哭泣，[ROOT.GetCharacter.GetFirstNameNoTooltip]感觉与自己非常有缘。"
+ OW_JB_XZ_qishi_guocheng_2.1100.1.t:0 "先把婴儿带回家，然后在继续寻找修真。"
+ 
+ OW_JB_XZ_qishi_guocheng_2.1200.name:0 "一定要救他！"
+ OW_JB_XZ_qishi_guocheng_2.1200.desc:0 "　　[ROOT.GetCharacter.GetFirstNameNoTooltip]快速冲上去，感觉河水太深，跳进去折腾半天，自己还受伤了。"
+ OW_JB_XZ_qishi_guocheng_2.1200.1.t:0 "眼睁睁的看着竹筐沉入河心。"
+ 
+ OW_JB_XZ_qishi_guocheng_2.2100.name:0 "赶紧喊人一起来救！"
+ OW_JB_XZ_qishi_guocheng_2.2100.desc:0 "　　[ROOT.GetCharacter.GetFirstNameNoTooltip]到处找人，好不容在附近不远处找到一个与自己一样去寻找修真圣地的人，帮忙一起救得婴儿。"
+ OW_JB_XZ_qishi_guocheng_2.2100.1.t:0 "先把婴儿带回家，然后在继续寻找修真。"
+ 
+ OW_JB_XZ_qishi_guocheng_2.2200.name:0 "赶紧喊人一起来救！"
+ OW_JB_XZ_qishi_guocheng_2.2200.desc:0 "　　[ROOT.GetCharacter.GetFirstNameNoTooltip]到处找人，这荒郊野岭的怎么可能有人，除了自己这种傻叉！！！"
+ OW_JB_XZ_qishi_guocheng_2.2200.1.t:0 "眼睁睁的看着竹筐沉入河心。"
+ 
+ OW_JB_XZ_qishi_guocheng_3.9999.name:0 "修真过程"
+ OW_JB_XZ_qishi_guocheng_3.9999.desc:0 "　　在探访XX的时候，[ROOT.GetCharacter.GetFirstNameNoTooltip]不小心从山坡上滚落，在山林深处发现一汪泛着幽蓝光芒的泉水，周围寂静无声，似乎没有一个活物，水中也没有一条鱼。\n\n　　【本次旅程消耗500金】"
+ OW_JB_XZ_qishi_guocheng_3.9999.1.t:0 "喝这个水。"
+ OW_JB_XZ_qishi_guocheng_3.9999.2.t:0 "才不喝这鬼东西！"
+ 
+ OW_JB_XZ_qishi_guocheng_3.0001.name:0 "喝这个水。"
+ OW_JB_XZ_qishi_guocheng_3.0001.desc:0 "　　[ROOT.GetCharacter.GetFirstNameNoTooltip]俯身看着幽蓝光芒的泉水，尝试了一下，没毛病。"
+ OW_JB_XZ_qishi_guocheng_3.0001.1.t:0 "疯狂的喝！"
+ 
+ OW_JB_XZ_qishi_guocheng_3.0002.name:0 "喝这个水。"
+ OW_JB_XZ_qishi_guocheng_3.0002.desc:0 "　　[ROOT.GetCharacter.GetFirstNameNoTooltip]俯身看着幽蓝光芒的泉水，尝试了一下，不对，这水有毒！"
+ OW_JB_XZ_qishi_guocheng_3.0002.1.t:0 "我要死啦！"
+ #####拜山
+ OW_JB_XZ_qishi_baishan_fankui.0001.name:0 "拜山"
+ OW_JB_XZ_qishi_baishan_fankui.0001.desc:0 "　　老道注视了[ROOT.GetCharacter.GetFirstNameNoTooltip]一会儿，点了点头。\n\n　　“看来你是适合修炼我派法门的，贫道法号为虚执，那么从今日起，你便是我门下弟子了。”"
+ OW_JB_XZ_qishi_baishan_fankui.0001.1.t:0 "师傅请受徒儿一拜。"
+ 
+ OW_JB_XZ_qishi_baishan_fankui.9999.name:0 "拜山"
+ OW_JB_XZ_qishi_baishan_fankui.9999.desc:0 "　　老道注视了我一会儿，摇了摇头。\n\n　　“看来阁下虽有仙缘，但是并不适合修真，无缘修炼我派功法啊，请回吧。”老道背过身去，径直走出了侧殿。"
+ OW_JB_XZ_qishi_baishan_fankui.9999.1.t:0 "不！请再给我一次机会！（无缘修真）"
+ 
+ OW_JB_XZ_qishi_baishan.0001.name:0 "拜山"
+ OW_JB_XZ_qishi_baishan.0001.desc:0 "　　经过生与死的考验，九死一生的[ROOT.GetCharacter.GetFirstNameNoTooltip]被两位[ROOT.char.Custom('OW_XZ_menpai')]门人带入了[ROOT.char.Custom('OW_XZ_menpai')]的侧殿，一位身着道袍，须发皆苍白的道人正在蒲团上盘腿打坐，看见[ROOT.GetCharacter.GetFirstNameNoTooltip]来了，微微睁开了眼睛道：“虽然为名而来，但是加入[ROOT.char.Custom('OW_XZ_menpai')]也非能让你在凡俗世间名声显赫。但如果想要斩妖除魔，为正道，立侠名，倒是无不可。那么让贫道先来看看你的资质。”老道抚摸着胡须。"
+ OW_JB_XZ_qishi_baishan.0001.1.t:0 "恭请长老！"
+ 
+ OW_JB_XZ_qishi_baishan.0002.name:0 "拜山"
+ OW_JB_XZ_qishi_baishan.0002.desc:0 "　　经过生与死的考验，九死一生的[ROOT.GetCharacter.GetFirstNameNoTooltip]被两位[ROOT.char.Custom('OW_XZ_menpai')]门人带入了[ROOT.char.Custom('OW_XZ_menpai')]的侧殿，一位身着道袍，须发皆苍白的道人正在蒲团上盘腿打坐，看见[ROOT.GetCharacter.GetFirstNameNoTooltip]来了，微微睁开了眼睛道：“但凡我蜀山弟子，皆要放下凡俗念头，凡间利益对修真之人皆已无用，[ROOT.char.Custom('OW_XZ_menpai')]自有门规在此，那么让贫道先来看看你的资质。"
+ OW_JB_XZ_qishi_baishan.0002.1.t:0 "恭请长老！"
+ 
+ OW_JB_XZ_qishi_baishan.0003.name:0 "拜山"
+ OW_JB_XZ_qishi_baishan.0003.desc:0 "　　经过生与死的考验，九死一生的[ROOT.GetCharacter.GetFirstNameNoTooltip]被两位[ROOT.char.Custom('OW_XZ_menpai')]门人带入了[ROOT.char.Custom('OW_XZ_menpai')]的侧殿，一位身着道袍，须发皆苍白的道人正在蒲团上盘腿打坐，看见[ROOT.GetCharacter.GetFirstNameNoTooltip]来了，微微睁开了眼睛道：“腾蛇乘雾，犹有竟时，既然你明白这个道理，更应该明白一切求长生之法不过虚妄，即使是仙家也终究难逃一死，那么让贫道先来看看你的资质。"
+ OW_JB_XZ_qishi_baishan.0003.1.t:0 "恭请长老！"
+ 
+ OW_JB_XZ_qishi_baishan.0004.name:0 "拜山"
+ OW_JB_XZ_qishi_baishan.0004.desc:0 "　　经过生与死的考验，九死一生的[ROOT.GetCharacter.GetFirstNameNoTooltip]被两位[ROOT.char.Custom('OW_XZ_menpai')]门人带入了[ROOT.char.Custom('OW_XZ_menpai')]的侧殿，一位身着道袍，须发皆苍白的道人正在蒲团上盘腿打坐，看见[ROOT.GetCharacter.GetFirstNameNoTooltip]来了，微微睁开了眼睛道：“既为证道而来，又有如此仙缘，那便可以入我[ROOT.char.Custom('OW_XZ_menpai')]，但是[ROOT.char.Custom('OW_XZ_menpai')]并不收留毫无修真体质之人。那么让贫道先来看看你的资质。”老道抚摸着胡须。"
+ OW_JB_XZ_qishi_baishan.0004.1.t:0 "恭请长老！"
+ 
+ OW_JB_XZ_qishi_baishan.0005.name:0 "拜山"
+ OW_JB_XZ_qishi_baishan.0005.desc:0 "　　经过生与死的考验，九死一生的[ROOT.GetCharacter.GetFirstNameNoTooltip]被两位[ROOT.char.Custom('OW_XZ_menpai')]门人带入了[ROOT.char.Custom('OW_XZ_menpai')]的侧殿，一位身着道袍，须发皆苍白的道人正在蒲团上盘腿打坐，看见[ROOT.GetCharacter.GetFirstNameNoTooltip]来了，微微睁开了眼睛道：“既为证道而来，又有如此仙缘，那便可以入我[ROOT.char.Custom('OW_XZ_menpai')]，但是[ROOT.char.Custom('OW_XZ_menpai')]并不收留毫无修真体质之人。那么让贫道先来看看你的资质。”老道抚摸着胡须。"
+ OW_JB_XZ_qishi_baishan.0005.1.t:0 "恭请长老！"
+ ###########修真说明书
+ OW_JB_XZ_shuomingshu.02.name:0 "修真说明"
+ OW_JB_XZ_shuomingshu.02.desc:0 "　　你以修真，后续拥有秘境探索等各种事件，为自动生成。\n\n　　功法可以打开生活面板查看。\n\n　　修真属性请点击人物头像右下角的阴阳八卦图标可进入修真面板。"
+ OW_JB_XZ_shuomingshu.02.1.t:0 "同意并以阅读！"
+ 
+ OW_JB_XZ_shuomingshu.01.name:0 "加入门派"
+ OW_JB_XZ_shuomingshu.01.desc:0 "　　你已经通过[ROOT.char.Custom('OW_XZ_menpai')]的试练。\n\n　　是否加入门派？"
+ OW_JB_XZ_shuomingshu.01.1.t:0 "同意加入门派"
+ 
+ 
+ ###########玄幻世界模组教程
+ OW_JB_XZ_jiaocheng.01.name:0 "玄幻世界模组教程——简介"
+ OW_JB_XZ_jiaocheng.01.desc:0 "　　当[ROOT.GetCharacter.GetFirstNameNoTooltip]睁开双眼时，[ROOT.GetCharacter.GetFirstNameNoTooltip]发现身边倚站着一位身穿长袍，人身狗面的老者，[ROOT.GetCharacter.GetFirstNameNoTooltip]惊恐地正欲起身，却被一股巨力压制死死起不了身，那老者挥了挥手，[ROOT.GetCharacter.GetFirstNameNoTooltip]突然感觉到一阵轻松，缓缓说道：“吾乃狗头大仙，吾观汝身有异象，必是订阅了玄幻世界模组，本仙特此来与你指点一二。”"
+ OW_JB_XZ_jiaocheng.01.t:0 "？？？"
+ 
+ OW_JB_XZ_jiaocheng.02.name:0 "玄幻世界模组教程——体质"
+ OW_JB_XZ_jiaocheng.02.desc:0 "　　随着狗头大仙的表情风云变幻，[ROOT.GetCharacter.GetFirstNameNoTooltip]的疑惑不断升起，这狗头大仙究竟是何来头，居然能够出入宫禁之中如无人之境。\n　　还不等[ROOT.GetCharacter.GetFirstNameNoTooltip]发声，狗头大仙便缓缓睁开了眼睛，缓缓开口道，[ROOT.GetCharacter.GetFirstNameNoTooltip]看着老者阴晴不定的表情，不知道该说什么。\n　　这时狗头大仙缓缓开口道：“原来你的体质是#P [ROOT.Char.Custom('OW_XZ_tizhi')]#!啊!!!体质是每个人与生俱来的特性，几乎无法使用任何手段来改变，它会给每个人带来不同的效果。在修仙世界中，修士们可以发挥自己体质的全部潜力，能够给自己带来极强的增益。\n　　我来告诉你如何进入修仙的世界吧。”随及用充满了皱纹的右手向[ROOT.GetCharacter.GetFirstNameNoTooltip]灵台一点，一股清明的力量直入[ROOT.GetCharacter.GetFirstNameNoTooltip]的内心。"
+ OW_JB_XZ_jiaocheng.02.t:0 "这是......什么力量？"
+ 
+ OW_JB_XZ_jiaocheng.03.name:0 "玄幻世界模组教程——修仙"
+ OW_JB_XZ_jiaocheng.03.desc:0 "　　[ROOT.GetCharacter.GetFirstNameNoTooltip]的脑内闪过了许多没有经历过的影像，似乎是各个地方的名山大川，还有自己从来都不知道的秘辛之地，[ROOT.GetCharacter.GetFirstNameNoTooltip]正要惊呼出口，只见狗头大仙笑着轻抚胡须，缓缓开口：“看来你看到了一些很棒的画面啊，这就是修真者所在的世界。#N 当你修真后，在主界面会出现一个修真按钮。（ps:反正就是很大很大的那个，反正就能一眼看出来！）#!但要进入修真的世界却绝非易事，你须要事先开启寻找修仙世界的痕迹，与自己本身互动，选择开始修真就会去寻找那些传说的事迹，进而参加门派的试炼，正式进入修真的路途。至于是否能够成功，那就看你自己造化了。”狗头大仙的声音逐渐空灵。\n　　然而，[ROOT.GetCharacter.GetFirstNameNoTooltip]发现什么都没有记住！\n　#N 注意：凡体暂时是无法修真的。会被判定为没有天赋。以后会在探索玩法上，设定一些必要凡人修仙传的内容。#!"
+ OW_JB_XZ_jiaocheng.03.t:0 "回过神来，已然忘却！"
+ OW_JB_XZ_jiaocheng.03.t1:0 "直接修真"

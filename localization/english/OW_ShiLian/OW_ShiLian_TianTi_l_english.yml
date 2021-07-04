@@ -1,0 +1,68 @@
+﻿l_english:
+
+ OW_ShiLian_TianTi.01.t:0"Mountain Road Trial"
+ OW_ShiLian_TianTi.01.desc:0"In a haze, you were brought to a plain-looking mountain path, and although you couldn't see the number of steps, the mountain gate that leads to immortality and longevity was already visible to the naked eye. At this point you hear the master say, \"Those who pass this gate will be initiated into the sect\". So you took the first step without hesitation."
+ OW_ShiLian_TianTi.01.option.a:0"What's so hard about this?"
+ 
+ OW_ShiLian_TianTi_Success_title:0"Trial success"
+ OW_ShiLian_TianTi_Success_desc:0"Unknowingly, you stepped through one ladder after another, crossing one difficulty and challenge after another. You finally came to the mountain gate, before entering, an immortal suddenly appeared and stopped you, said:\ "Do not hurry, since you can pass the trial, it shows that you have the minimum cultivation of the heart, meet is also fate, let me play the spiritual power, run the law to heal the injuries you suffered in the trial, and you throw away the money in the trial, caused by the turmoil later, I will go to set things right. \", you heard this, overjoyed, and so after the treatment you thanked this immortal, stepped into the mountain door."
+ OW_ShiLian_TianTi_Success_option:0"This is the immortal method I am going to learn"
+ 
+ OW_ShiLian_TianTi_Failure_title:0"Trial failure"
+ OW_ShiLian_TianTi_Failure_desc:0"Suddenly the world in front of you is spinning, you feel a burst of darkness, you can't help but close your eyes and stabilize your body. By the time you open your eyes again, you find that you are no longer on that mountain road. You searched along the way you came, trying to find the sect again, but how you searched, you never found the sect again. You had to return to your abode with your head down and had to admit that you had failed that trial."
+ OW_ShiLian_TianTi_Failure_option:0"I failed"
+ 
+ OW_ShiLian_TianTi_One:0"First Trial"
+ OW_ShiLian_TianTi_Two:0"Second Trial"
+ OW_ShiLian_TianTi_Three:0"Third Trial"
+ OW_ShiLian_TianTi_Four:0"Fourth Trial"
+ OW_ShiLian_TianTi_Five:0"Fifth Trial"
+ OW_ShiLian_TianTi_Six:0"sixth trial"
+ OW_ShiLian_TianTi_Seven:0"Seventh Trial"
+ OW_ShiLian_TianTi_Eight:0"eighth trial"
+ OW_ShiLian_TianTi_Nine:0"Ninth Trial"
+ 
+ OW_ShiLian_TianTi_Context_1_desc:0"When you step on this ladder for that one moment, great pain suddenly comes to you. Shaking your body, you can't help but have countless gold stars spinning in front of your eyes. This moment you feel as if you drank a cup of poisonous wine, or by the assassin behind the pierced heart, or by the chariot torture five horses, all you know the way to die in your thoughts, before you rise \ "I'm going to die \" thoughts, before you want to shout in pain, all this pain suddenly ended. \nYou slowed down, stabilized your posture, panting heavily, obviously just stepping up a ladder, but you feel like a life and death escape dripping with sweat. Unconsciously, you reached out and wiped your mouth and nose, but you discovered to your horror that your hands were covered with sticky blood. \nThis time, the only thing that reached your ears was a simple sentence: \"Spiritual power is not very human to practice. \""
+ OW_ShiLian_TianTi_Context_1_option_giveup:0"It seems that I do not have the talent to cultivate immortality, so let's give up."
+ OW_ShiLian_TianTi_Context_1_option_continue:0"I will never stop there!"
+
+ OW_ShiLian_TianTi_Context_2_desc:0"You get up, get ready and step on the next ladder. But the expected pain did not come, you naturally stepped on the second ladder, when you stand firmly on your feet, ready to continue to go forward, you suddenly feel yourself in a slow sinking, look down, you found that all your treasures are under your feet, this sinking feeling, gradually gushing out of the hot air, the red light from the gap, all of this makes you sure that, although it is not clear how to do of it, but your treasures are melting away! If you stop now, you might be able to save your treasure back ....."
+ OW_ShiLian_TianTi_Context_2_option_giveup_trait_greed:0"My gold!"
+ OW_ShiLian_TianTi_Context_2_option_continue:0"Even if I scatter my family's wealth, I will go to cultivate immortality"
+ OW_ShiLian_TianTi_Context_2_option_giveup:0"I can't stand such a big loss"
+ 
+ OW_ShiLian_TianTi_Context_3_desc:0"You lift your breath, take another step, and step into the next ladder. A sudden flash of light makes you close your eyes, and by the time you open them, you see again not the mountain gate from before, but a familiar blue sky. At the same time is a clamor of sound, you look around, a large swath of the population has gathered around to point at you. The chill from a light breeze that swept by and the feeling of emptiness all over your body have made you understand what has gone wrong. \n When you look back ahead again, you see the fourth step that appears out of thin air and fades away. There is no more time for you to hesitate, you choose to ......"
+ OW_ShiLian_TianTi_Context_3_option_continue:0"Take a step forward"
+ OW_ShiLian_TianTi_Context_3_option_giveup:0"Take a step backwards"
+ 
+ OW_ShiLian_TianTi_Context_4_desc:0"You step onto a new ladder. This time, you find the [ROOT.GetCharacter.GetFaith.HighGodName] you believe in appearing abruptly before you, looking at you silently. You panic in your heart, thinking it is a divine manifestation, involuntarily bowed your head, bent your knees, and knelt on the ground as usual worship. Time passes slowly and [ROOT.GetCharacter.GetFaith.HighGodName] still doesn't say anything. You gather the courage to look up, [ROOT.GetCharacter.GetFaith.HighGodName] is just looking at you quietly. You slowly learn that you can't move on if you don't set it aside, and although no one will know of your blasphemy, there is no doubt that if you do so, you won't be able to be as devout as you used to be on the table ......"
+ OW_ShiLian_TianTi_Context_4_option_continue:0"Even if I have to abandon my faith"
+ OW_ShiLian_TianTi_Context_4_option_giveup:0"I will not abandon my faith"
+ OW_ShiLian_TianTi_Context_4_option_giveup_trait_zealous:0"I can't stand this blasphemy!"
+ 
+ OW_ShiLian_TianTi_Context_4_Second_desc:0"You step onto the new ladder, ignoring the sudden appearance of [ROOT.GetCharacter.GetFaith.HighGodName], set him aside, and continue on without hesitation."
+ OW_ShiLian_TianTi_Context_4_Second_option_continue:0"I abandoned them long ago"
+ 
+ OW_ShiLian_TianTi_Context_5_desc:0"You brace yourself, get ready for anything, and step onto a new ladder. Out of nowhere you see your [TheImportantOne.GetName], with his back to you on the next step. \ "Hey, [TheImportantOne. \", [TheImportantOne.GetName] does not respond to you. You clench your hand, only to find a sword already firmly in your grasp. You want to go around [TheImportantOne.GetName], but you find that the whole mountain path has narrowed down to no position to pass, should you kill [TheImportantOne.GetName] here, here?"
+ OW_ShiLian_TianTi_Context_5_option_giveup:0"I'm not going to kill [TheImportantOne.GetName]."
+ OW_ShiLian_TianTi_Context_5_option_continue:0"No matter who it is, don't try to stop me from cultivating immortality!"
+ OW_ShiLian_TianTi_Context_5_option_continue_toast_title:0"false alarm"
+ OW_ShiLian_TianTi_Context_5_option_continue_toast_desc:0"A scarecrow becomes [TheImportantOne.GetName]"
+ OW_ShiLian_TianTi_Context_5_Second_desc:0"You brace yourself, get ready for anything, and step onto the new ladder. Nothing out of the ordinary happens."
+ OW_ShiLian_TianTi_Context_5_Second_option_continue:0"Then let's move on!"
+ 
+ OW_ShiLian_TianTi_Context_6_desc:0"You stepped on the new ladder, but this time, instead of standing firmly on the ladder, you slipped on your feet and fell involuntarily. When you were about to fall to the ground, an immortal appeared behind you, not knowing what spell he had transported, stabilized you and slowly put you back on the original ladder. \ "You have done well, already enough to join our sect, no need to continue. \"Hearing the immortal say so you ......"
+ OW_ShiLian_TianTi_Context_6_option_giveup:0"Breathed a sigh of relief and settled down."
+ OW_ShiLian_TianTi_Context_6_option_continue:0"Without hesitation, you get up and continue on your way."
+ 
+ OW_ShiLian_TianTi_Context_7_desc:0"You step onto a new ladder. While stepping on this ladder, you hear a constant clanking sound behind you. Curious, you turn around and look. It's gold! Just like the scene in the fairy tale replayed in reality, from nothing on the sky there are constantly gold suddenly appear, and then fall, at first is like the size of the rice grains of gold, after slowly become larger, and more and more down, almost like to rain a gold general. Before you can react, the dull sound of gold nuggets hitting the ground has stuffed your ears. \n just turn back a step, that full of gold will be yours, you will do the choice is ......"
+ OW_ShiLian_TianTi_Context_7_option_giveup:0"Gold!"
+ OW_ShiLian_TianTi_Context_7_option_continue:0"Only for long life, not for money."
+ 
+ OW_ShiLian_TianTi_Context_8_desc:0"You step onto a new ladder. But in the moment of stepping on it, an unprecedented feeling of weakness came over you. The general feeling of powerlessness hovered over your body as if you couldn't even lift your hand. The mind is heavy want to fall asleep, thoughts drowsy a point can not be drawn out to think. More than that, there was a feeling of emptiness of losing one's origin that was spinning in one's heart. \ "I drew out part of your origin essence blood to refine your meridians, but do not ensure that you are eligible to cultivate, and you may die, as long as you stop, there is now a chance of redemption ......\" a voice in your ears constantly so whispered ... ..."
+ OW_ShiLian_TianTi_Context_8_option_giveup:0"This is horrible, I don't want to continue ......."
+ OW_ShiLian_TianTi_Context_8_option_continue:0"Even if I have to sacrifice my origin, even if I have to face death"
+
+ OW_ShiLian_TianTi_Context_9_desc:0"You step onto a new ladder. Then you take another step, another new step, as if you were walking a normal mountain path, without any abnormal, unnatural phenomena like before. All you can feel is the hot sun, gradually tired body. The only thing that feels wrong is that this mountain path seems to be incomplete. Obviously it looks like there are only a few dozen steps and you will be able to finish it soon. But you feel as if you have walked hundreds of steps, but still did not finish the road. \nDo you choose to stop and turn back, or continue to walk, even if you vaguely feel that this ladder will never be finished the same ......"
+ OW_ShiLian_TianTi_Context_9_option_giveup:0"This is too tired, I give up it"
+ OW_ShiLian_TianTi_Context_9_option_continue:0"I won't stop."

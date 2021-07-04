@@ -1,0 +1,68 @@
+﻿l_simp_chinese:
+
+ OW_ShiLian_TianTi.01.t:0"山路试炼"
+ OW_ShiLian_TianTi.01.desc:0"朦胧中，你被带到了一个看上去普普通通的山路前，虽然看不清阶梯的数量，但那座通往长生与不朽的山门已经肉眼可见了。这时候你听见掌门说道，\"过此门者，即可入门派\"。于是你毫不犹豫地便迈出了第一步。"
+ OW_ShiLian_TianTi.01.option.a:0"这会有什么难的呢"
+ 
+ OW_ShiLian_TianTi_Success_title:0"试炼成功"
+ OW_ShiLian_TianTi_Success_desc:0"不知不觉间，你踏过了一个又一个的阶梯，跨越了一次又一次的困难与挑战。你终于来到了山门前，在进入之前，一个仙人忽然间出现并拦住了你，说道:\"莫急，既然能通过试炼，便说明你有起码的修炼之心，相遇也是缘分，让鄙人打出灵力，运转法门来治好你在试炼受的伤，并且你在试炼里丢弃的钱财，造成的动荡待会鄙人自会去摆平。\"，你听到此言，大喜过望，等治疗好后你谢过了这位仙人，踏入了山门。"
+ OW_ShiLian_TianTi_Success_option:0"这就是我将要前去学习的仙法"
+ 
+ OW_ShiLian_TianTi_Failure_title:0"试炼失败"
+ OW_ShiLian_TianTi_Failure_desc:0"忽然间你眼前的世界在旋转，你感到一阵天昏地暗，不由自主地闭上了双眼，稳住身形。等你再次打开双眼的时候，你发现你已经不在那片山路上了。你沿着来时的路一路寻找，想再次找到那个门派，但你怎么寻找，你再也没有找到那个门派了。你只好垂头丧气地回到你的居所，并不得不承认，你失败了，没有通过那个试炼。"
+ OW_ShiLian_TianTi_Failure_option:0"我失败了"
+ 
+ OW_ShiLian_TianTi_One:0"第一试炼"
+ OW_ShiLian_TianTi_Two:0"第二试炼"
+ OW_ShiLian_TianTi_Three:0"第三试炼"
+ OW_ShiLian_TianTi_Four:0"第四试炼"
+ OW_ShiLian_TianTi_Five:0"第五试炼"
+ OW_ShiLian_TianTi_Six:0"第六试炼"
+ OW_ShiLian_TianTi_Seven:0"第七试炼"
+ OW_ShiLian_TianTi_Eight:0"第八试炼"
+ OW_ShiLian_TianTi_Nine:0"第九试炼"
+ 
+ OW_ShiLian_TianTi_Context_1_desc:0"当你踏上这个阶梯的那一个瞬间，极大的痛楚突然就向你袭来。摇晃着身子，眼前不由得起了无数金星在旋转。这个一瞬间你感觉你好像饮下了一杯毒酒，或者是被身后的刺客穿刺了心脏，又或者是被车刑五马分尸一般，一切你所知道的死法在你念头里打转，在你升起\"我要死了\"的念头之前，在你疼痛地想要大声喊叫之前，这一切痛楚突然结束了。\n你缓过神来，稳住了身姿，大口地喘着气，明明只是踏上一个阶梯而已，但你感觉像经历了一场生死逃亡一般大汗淋漓。不自觉地便伸手擦了擦口鼻，但你惊恐地发现，手上沾满了黏稠的鲜血。\n这时候，传入你的耳朵的仅有简简单单的一句：\"灵力并非常人可练。\""
+ OW_ShiLian_TianTi_Context_1_option_giveup:0"看来我没有修仙的天赋，就此放弃吧。"
+ OW_ShiLian_TianTi_Context_1_option_continue:0"我绝不会止步于此！"
+
+ OW_ShiLian_TianTi_Context_2_desc:0"你打起精神，做好万分准备，踏上了下一个阶梯。但预想中的痛楚没有袭来，你很自然而然地便踏上了第二个阶梯，当你站稳脚跟，准备继续向前走的时候，突然感受的自己在缓慢的下沉，往下一看，你发现你全部的财宝都被你踩在了脚下，这个下沉的感觉，渐渐涌出的热气，间隙里透出的红光，这一切的一切都让你确信，虽然不清楚怎么做到的，但你的财宝都在不断地融化！如果现在停下来的话，或许还可以挽救回你的财宝….."
+ OW_ShiLian_TianTi_Context_2_option_giveup_trait_greed:0"我的金子！"
+ OW_ShiLian_TianTi_Context_2_option_continue:0"纵然散尽家财，我也要前往修仙"
+ OW_ShiLian_TianTi_Context_2_option_giveup:0"我不能忍受这么大的损失"
+ 
+ OW_ShiLian_TianTi_Context_3_desc:0"你提起一口气，又迈出了一步，踏入了下一个阶梯。一阵突如其来的闪光让你不由得闭上了眼睛，等到张开眼睛的时候，你再看到的不是之前的山门，而是一片熟悉的蓝天。与之同时的是一片喧嚣声的响起，你环顾四周，一大片的民众已经围起来对着你指指点点。掠过的一阵轻风所来的寒意与全身的空旷感已经让你明白发生了什么问题。\n再当你看回前方的时候，你看见了凭空出现，又渐渐消失的第四阶梯。已经没有你犹豫的时间了，你选择的是……"
+ OW_ShiLian_TianTi_Context_3_option_continue:0"向前踏一步"
+ OW_ShiLian_TianTi_Context_3_option_giveup:0"向后踏一步"
+ 
+ OW_ShiLian_TianTi_Context_4_desc:0"你踏上了新的阶梯。这一次，你发现你所信仰的[ROOT.GetCharacter.GetFaith.HighGodName]突兀地出现在你面前，静静地看着你。你心里一慌，以为是神灵显灵，不由自主地低下头，弯下膝盖，像往常礼拜一样跪在地上。时间慢慢地流逝着，[ROOT.GetCharacter.GetFaith.HighGodName]仍然没有说什么话。你鼓起勇气抬起头，[ROOT.GetCharacter.GetFaith.HighGodName]只是在静静地看着你。你慢慢地知道了，如果不拨开的话，你就无法继续前进，虽然没有人会知道你的亵渎行为，但毫无疑问，如果这样做的话，你无法在像以往一样表里如一的虔诚......"
+ OW_ShiLian_TianTi_Context_4_option_continue:0"哪怕要抛弃我的信仰也一样"
+ OW_ShiLian_TianTi_Context_4_option_giveup:0"我不会抛弃我的信仰"
+ OW_ShiLian_TianTi_Context_4_option_giveup_trait_zealous:0"我无法忍受这种亵渎！"
+ 
+ OW_ShiLian_TianTi_Context_4_Second_desc:0"你踏上了新的阶梯，无视着突兀出现的[ROOT.GetCharacter.GetFaith.HighGodName]，将祂一把拨开，毫不犹豫地继续向前。"
+ OW_ShiLian_TianTi_Context_4_Second_option_continue:0"我早已抛弃了它们"
+ 
+ OW_ShiLian_TianTi_Context_5_desc:0"你打起精神，做好万分准备，踏上了新的阶梯。恍惚间你看到的是你的[TheImportantOne.GetName]，在下一个阶梯背对着你，\"嘿，[TheImportantOne.GetName]，你怎么过来的，你在干什么？\"，[TheImportantOne.GetName]没有回应你。你握紧了手，却发现一柄宝剑已经被你牢牢握住。你想绕过[TheImportantOne.GetName]的时候，却发现整个山路已经狭窄地没有位置可以通过了，难道要在这里，杀了[TheImportantOne.GetName]吗?"
+ OW_ShiLian_TianTi_Context_5_option_giveup:0"我不会杀[TheImportantOne.GetName]的"
+ OW_ShiLian_TianTi_Context_5_option_continue:0"不管是谁，都别想阻止我的修仙路！"
+ OW_ShiLian_TianTi_Context_5_option_continue_toast_title:0"虚惊一场"
+ OW_ShiLian_TianTi_Context_5_option_continue_toast_desc:0"一个稻草人变成了[TheImportantOne.GetName]的样子"
+ OW_ShiLian_TianTi_Context_5_Second_desc:0"你打起精神，做好万分准备，踏上了新的阶梯。没有任何异常的事情发生。"
+ OW_ShiLian_TianTi_Context_5_Second_option_continue:0"那就继续前进吧！"
+ 
+ OW_ShiLian_TianTi_Context_6_desc:0"你踏上了新的阶梯，但这一次，你没稳稳地站在阶梯上，而是脚上一滑，不由自主地摔了下去，在你即将摔到地面上的时候，一个仙人出现在你背后，不知运了什么法术，将你稳住，缓缓地把你放回到原来的阶梯上。\"你做的很好，已经足够加入我们门派了，不用继续了。\"听到仙人如此这么说的你……"
+ OW_ShiLian_TianTi_Context_6_option_giveup:0"松了一口气，安坐了下来。"
+ OW_ShiLian_TianTi_Context_6_option_continue:0"你毫不犹豫地起身，继续向前走。"
+ 
+ OW_ShiLian_TianTi_Context_7_desc:0"你又踏上了新的阶梯。在踏稳这个阶梯的时候，你听到了背后不断有叮叮当当的声音响起。你好奇地转过身去一看。是金子！就像童话故事里的场景在现实中重现一样，从一无所有的天空上不断有金子突兀地出现，然后落下，一开始是像米粒一般大小的金粒，之后就慢慢变大，下的也越来越多，几乎像是要下一场金子雨一般。还没等你反应过来，金块砸到地上的沉闷的声音已经塞满了你的耳朵。\n只要回头一步，那满地的金子就会是你的了，你会做的选择是......"
+ OW_ShiLian_TianTi_Context_7_option_giveup:0"金子!"
+ OW_ShiLian_TianTi_Context_7_option_continue:0"只为长生，不为钱财。"
+ 
+ OW_ShiLian_TianTi_Context_8_desc:0"你踏上了新的阶梯。但在踏上的那一刹那，前所未有的虚弱感袭来。好似连手都抬不起的一般的无力感徘徊在身上。脑海更是沉沉地想要睡着，思绪昏昏地一分都抽不出来思考了。比起这些，更有一种失去本源的空虚感在心中转着。\"我抽出了你的部分本源精血来精炼你的经脉，但不确保能让你有资格修炼，而且你有可能会死，只要你停下来的话，现在还有挽回的机会……\"一个声音在你耳边不断这么低语着……"
+ OW_ShiLian_TianTi_Context_8_option_giveup:0"这太可怕了，我不想再继续了……."
+ OW_ShiLian_TianTi_Context_8_option_continue:0"哪怕献出我的本源，哪怕也面对死亡也一样"
+
+ OW_ShiLian_TianTi_Context_9_desc:0"你踏上了新的阶梯。然后再迈开步子，又踏上了一个新的阶梯，就好像走平常山路一般，没有任何不正常的，不自然的现象像之前那样出现。你所能感受的到的只是热辣辣的阳光，渐渐疲累的身体。唯一感觉到不对的就是这条山路好像走不完一般。明明看上去只有几十个阶梯，马上就能走完一样。但你感觉好像已经走了几百个阶梯，却还是没有走完这条路。\n你是选择停下来回头，还是继续走，哪怕你隐约地感受到这条阶梯永远也走不完一样......"
+ OW_ShiLian_TianTi_Context_9_option_giveup:0"这样实在太累了，我放弃吧"
+ OW_ShiLian_TianTi_Context_9_option_continue:0"我不会停下的"

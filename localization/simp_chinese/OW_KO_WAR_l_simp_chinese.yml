@@ -1,0 +1,247 @@
+﻿l_simp_chinese:
+ ################
+ ###修真对决#####
+ ###框架文本#####
+ ################
+ OW_KO_WAR.0001.name:0 "修真对决"
+ OW_KO_WAR.0001.desc.a:0 "——#P [ROOT.Char.GetFirstNameNicknamedNoTooltip]#!——\n命理：[ROOT.Var('OW_KO_WAR_player_mingli').GetValue|P0] / [ROOT.Var('OW_KO_WAR_player_mingli_max').GetValue|P0]\n灵力：[ROOT.Var('OW_KO_WAR_player_lingli').GetValue|P0] / [ROOT.Var('OW_KO_WAR_player_lingli_max').GetValue|P0]\n灵强：[ROOT.Var('OW_KO_WAR_player_lingqiang').GetValue|P0]\n\n#N VS#!\n\n——#P [recipient.GetFirstNameNicknamedNoTooltip]#!——\n命理：濒危\n灵力：不详\n灵强：强\n#N （神识无法突破对方的识海）#!"
+ OW_KO_WAR.0001.desc.b:0 "——#P [ROOT.Char.GetFirstNameNicknamedNoTooltip]#!——\n命理：[ROOT.Var('OW_KO_WAR_player_mingli').GetValue|P0] / [ROOT.Var('OW_KO_WAR_player_mingli_max').GetValue|P0]\n灵力：[ROOT.Var('OW_KO_WAR_player_lingli').GetValue|P0] / [ROOT.Var('OW_KO_WAR_player_lingli_max').GetValue|P0]\n灵强：[ROOT.Var('OW_KO_WAR_player_lingqiang').GetValue|P0]\n\n#N VS#!\n\n——#P [recipient.GetFirstNameNicknamedNoTooltip]#!——\n命理：濒危\n灵力：不详\n灵强：不详\n#N （神识无法突破对方的识海）#!"
+ OW_KO_WAR.0001.desc.c:0 "——#P [ROOT.Char.GetFirstNameNicknamedNoTooltip]#!——\n命理：[ROOT.Var('OW_KO_WAR_player_mingli').GetValue|P0] / [ROOT.Var('OW_KO_WAR_player_mingli_max').GetValue|P0]\n灵力：[ROOT.Var('OW_KO_WAR_player_lingli').GetValue|P0] / [ROOT.Var('OW_KO_WAR_player_lingli_max').GetValue|P0]\n灵强：[ROOT.Var('OW_KO_WAR_player_lingqiang').GetValue|P0]\n\n#N VS#!\n\n——#P [recipient.GetFirstNameNicknamedNoTooltip]#!——\n命理：不详\n灵力：不详\n灵强：不详\n#N （神识无法突破对方的识海）#!"
+ OW_KO_WAR.0001.desc.d:0 "——#P [ROOT.Char.GetFirstNameNicknamedNoTooltip]#!——\n命理：[ROOT.Var('OW_KO_WAR_player_mingli').GetValue|P0] / [ROOT.Var('OW_KO_WAR_player_mingli_max').GetValue|P0]\n灵力：[ROOT.Var('OW_KO_WAR_player_lingli').GetValue|P0] / [ROOT.Var('OW_KO_WAR_player_lingli_max').GetValue|P0]\n灵强：[ROOT.Var('OW_KO_WAR_player_lingqiang').GetValue|P0]\n\n#N VS#!\n\n——#P [recipient.GetFirstNameNicknamedNoTooltip]#!——\n命理：[ROOT.Var('OW_KO_WAR_ai_mingli').GetValue|P0] / [ROOT.Var('OW_KO_WAR_ai_mingli_max').GetValue|P0]\n灵力：[ROOT.Var('OW_KO_WAR_ai_lingli').GetValue|P0] / [ROOT.Var('OW_KO_WAR_ai_lingli_max').GetValue|P0]\n灵强：[ROOT.Var('OW_KO_WAR_ai_lingqiang').GetValue|P0]"
+ OW_KO_WAR.0003.name:0 "修真对决"
+ OW_KO_WAR.0003.desc.a:0 "　　#P [recipient.GetFirstNameNicknamedNoTooltip]#!对#P [ROOT.Char.GetFirstNameNicknamedNoTooltip]#!使用了[recipient.Custom('OW_KO_WAR_SHOW_ID')]"
+ OW_KO_WAR.0003.desc.b:0 "　　#P [recipient.GetFirstNameNicknamedNoTooltip]#!对#P [ROOT.Char.GetFirstNameNicknamedNoTooltip]#!使用了[recipient.Custom('OW_KO_WAR_SHOW_ID')]\n卡　牌：[recipient.Custom('OW_KO_WAR_SHOW_ID')]\n攻击值：[ROOT.Var('OW_KO_WAR_GongJiZhi').GetValue|N0]\n连击率：[ROOT.Var('OW_KO_WAR_LianJiZhi_Zheng').GetValue|N0]#N %#!\n命中率：[ROOT.Var('OW_KO_WAR_MingZhongZhi_Zheng').GetValue|N0]#N %#!"
+
+ OW_KO_WAR.1000.name:0 "回合结束"
+ OW_KO_WAR.1000.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!对#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!造成了[ROOT.Var('OW_KO_WAR_ShangHai').GetValue|N0]点伤害。在攻击#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!的过程中，伤害造成了#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!的破绽频现。"
+ OW_KO_WAR.1003.name:0 "回合结束"
+ OW_KO_WAR.1003.desc:0 "　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!想逃跑，被#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!识破。"
+ OW_KO_WAR.1003.t:0 "跑？想多了！"
+ OW_KO_WAR.1004.name:0 "回合结束"
+ OW_KO_WAR.1004.desc:0 "　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!跑了，留下#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!一脸懵逼！！！！"
+ OW_KO_WAR.1004.t:0 "卧槽！跑，跑了？"
+ OW_KO_WAR.1005.name:0 "回合结束"
+ OW_KO_WAR.1005.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!不想在对#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!下死手，便准备撤退，结果#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!非常愤怒，奋起直攻而来！！！！"
+ OW_KO_WAR.1005.t:0 "卧槽！几个意思？"
+ OW_KO_WAR.1006.name:0 "回合结束"
+ OW_KO_WAR.1006.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!不想在对#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!下死手，便准备撤退，#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!想了想，觉得与#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!没有什么深仇大恨，便顺其自然。"
+ OW_KO_WAR.1006.t:0 "撤退"
+ OW_KO_WAR.1007.name:0 "回合结束"
+ OW_KO_WAR.1007.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!不想在对#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!下死手，便准备撤退，#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!根本没有发现#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!的行为，还在准备防备#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!。"
+ OW_KO_WAR.1007.t:0 "悄悄溜走！"
+
+ OW_KO_WAR.2000.name:0 "回合结束"
+ OW_KO_WAR.2000.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!对#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!造成了[ROOT.Var('OW_KO_WAR_ShangHai').GetValue|N0]点伤害。在攻击#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!的过程中，被#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!发现了破绽，或许#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!有可能会反击#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!！"
+ OW_KO_WAR.2003.name:0 "回合结束"
+ OW_KO_WAR.2003.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!被发现破绽，只能硬刚#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!。\n\n　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!结果善心一念，趁着对方不备，遁走了。"
+ OW_KO_WAR.2003.t:0 "？？？"
+ OW_KO_WAR.2004.name:0 "回合结束"
+ OW_KO_WAR.2004.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!被发现破绽，转身就跑。\n\n　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!一个闪身，接近#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!！"
+ OW_KO_WAR.2004.t:0 "卧槽！"
+ OW_KO_WAR.2005.name:0 "回合结束"
+ OW_KO_WAR.2005.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!被发现破绽，转身就跑。\n\n　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!发现逃跑的#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!！嘲笑道：“傻屌！”"
+ OW_KO_WAR.2005.t:0 "命重要!" 
+ 
+ OW_KO_WAR.3000.name:0 "回合结束"
+ OW_KO_WAR.3000.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!对#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!的攻击，被巧妙的化解。在#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!化解招数的过程中，#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!发现了#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!的破绽。"
+ OW_KO_WAR.3003.name:0 "回合结束"
+ OW_KO_WAR.3003.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!没击中#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!，准备再次攻击#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!\n\n　　结果#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!趁着短暂的时间，溜了！"
+ OW_KO_WAR.3003.t:0 "卧槽，这都能跑？" 
+ OW_KO_WAR.3004.name:0 "回合结束"
+ OW_KO_WAR.3004.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!没击中#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!，准备再次攻击#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!\n\n　　结果准备侮辱#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!的#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!发现#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!已经攻了过来，来不及逃跑了。"
+ OW_KO_WAR.3004.t:0 "MMP，死于话多！" 
+ OW_KO_WAR.3005.name:0 "回合结束"
+ OW_KO_WAR.3005.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!没击中#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!，准备撤退！\n\n　　结果准备撤退的#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!被#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!抓住机会直面攻了过来。#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!来不及撤退了。"
+ OW_KO_WAR.3005.t:0 "找死是吧？" 
+ OW_KO_WAR.3006.name:0 "回合结束"
+ OW_KO_WAR.3006.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!没击中#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!，准备撤退！\n\n　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!思考了一翻，也没有继续追击，任其离开。"
+ OW_KO_WAR.3006.t:0 "撤退" 
+ OW_KO_WAR.3007.name:0 "回合结束"
+ OW_KO_WAR.3007.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!没击中#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!，准备撤退！\n\n　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!还在防备，跟本没注意到#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!已经离开了！"
+ OW_KO_WAR.3007.t:0 "这是憨货吧！" 
+ 
+ OW_KO_WAR.4000.name:0 "回合结束"
+ OW_KO_WAR.4000.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!对#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!的攻击，被巧妙的化解。在#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!化解招数的过程中，#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!出其不意攻其不备的好似要反攻的姿态。"
+ OW_KO_WAR.4003.name:0 "回合结束"
+ OW_KO_WAR.4003.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!被发现破绽，只能硬刚#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!。\n\n　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!结果善心一念，趁着对方不备，遁走了。"
+ OW_KO_WAR.4003.t:0 "？？？"
+ OW_KO_WAR.4004.name:0 "回合结束"
+ OW_KO_WAR.4004.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!被发现破绽，转身就跑。\n\n　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!一个闪身，接近#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!！"
+ OW_KO_WAR.4004.t:0 "卧槽！"
+ OW_KO_WAR.4005.name:0 "回合结束"
+ OW_KO_WAR.4005.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!被发现破绽，转身就跑。\n\n　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!发现逃跑的#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!！嘲笑道：“傻屌！”然后任其离开。"
+ OW_KO_WAR.4005.t:0 "命重要!" 
+ 
+ OW_KO_WAR.5000.name:0 "回合结束"
+ OW_KO_WAR.5000.desc:0 "　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!对#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!造成了[ROOT.Var('OW_KO_WAR_ShangHai').GetValue|N0]点伤害。伤害造成了#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!的破绽频现，好似要发动连击。"
+ OW_KO_WAR.5003.name:0 "回合结束"
+ OW_KO_WAR.5003.desc:0 "　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!击中了#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!，#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!正防备着#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!接下来可能的攻击，结果发现#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!跑了！"
+ OW_KO_WAR.5003.t:0 "？？？"
+ OW_KO_WAR.5004.name:0 "回合结束"
+ OW_KO_WAR.5004.desc:0 "　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!击中了#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!，#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!转身就跑！\n\n　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!一个闪身，接近#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!！"
+ OW_KO_WAR.5004.t:0 "卧槽！"
+ OW_KO_WAR.5005.name:0 "回合结束"
+ OW_KO_WAR.5005.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!发现了#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!破绽，#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!转身就跑。\n\n　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!发现逃跑的#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!！说了声：“煞笔！”"
+ OW_KO_WAR.5005.t:0 "你给我等着！" 
+   
+ OW_KO_WAR.6000.name:0 "回合结束"
+ OW_KO_WAR.6000.desc:0 "　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!对#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!造成了[ROOT.Var('OW_KO_WAR_ShangHai').GetValue|N0]点伤害。在攻击#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!的过程中，被#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!发现了破绽。"
+ OW_KO_WAR.6003.name:0 "回合结束"
+ OW_KO_WAR.6003.desc:0 "　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!击中了#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!，被#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!发现了破绽，立即反击，结果#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!转身就逃跑，但是被#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!识破。"
+ OW_KO_WAR.6003.t:0 "跑？想多了！"
+ OW_KO_WAR.6004.name:0 "回合结束"
+ OW_KO_WAR.6004.desc:0 "　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!击中了#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!，被#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!发现了破绽，立即反击，结果#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!趁#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!反击的空荡，跑了，留下#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!一脸懵逼！！！！"
+ OW_KO_WAR.6004.t:0 "卧槽！跑，跑了？"
+ OW_KO_WAR.6005.name:0 "回合结束"
+ OW_KO_WAR.6005.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!不想在对#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!反击，便准备撤退，结果#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!非常愤怒，奋起直攻而来！！！！"
+ OW_KO_WAR.6005.t:0 "卧槽！几个意思？"
+ OW_KO_WAR.6006.name:0 "回合结束"
+ OW_KO_WAR.6006.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!不想在对#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!反击，便准备撤退，#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!想了想，觉得与#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!没有什么深仇大恨，便顺其自然。"
+ OW_KO_WAR.6006.t:0 "撤退"
+ OW_KO_WAR.6007.name:0 "回合结束"
+ OW_KO_WAR.6007.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!不想在对#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!反击，便准备撤退，#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!根本没有发现#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!的行为，还在准备防备#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!。"
+ OW_KO_WAR.6007.t:0 "悄悄溜走！"
+ 
+ OW_KO_WAR.7000.name:0 "回合结束"
+ OW_KO_WAR.7000.desc:0 "　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!对#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!的攻击，被巧妙的化解。在#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!化解招数的过程中，#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!发现了#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!的破绽，好似要发动连击。"
+ OW_KO_WAR.7003.name:0 "回合结束"
+ OW_KO_WAR.7003.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!的防御动作被发现破绽，只能选择继续硬刚#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!。\n\n　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!好似有别的事情，只能不在关注#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!，离开了！"
+ OW_KO_WAR.7003.t:0 "卧槽，看不起我是怎么的？"
+ OW_KO_WAR.7004.name:0 "回合结束"
+ OW_KO_WAR.7004.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!的防御动作被发现破绽，转身就跑。\n\n　　看着要跑的#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!，#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!一个闪身，接近#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!！"
+ OW_KO_WAR.7004.t:0 "卧槽！"
+ OW_KO_WAR.7005.name:0 "回合结束"
+ OW_KO_WAR.7005.desc:0 "　　#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!的防御动作被发现破绽，转身就跑。\n\n　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!还沉寝在失误中，根本没有发现#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!已经溜之大吉！"
+ OW_KO_WAR.7005.t:0 "傻屌吧！" 
+  
+ OW_KO_WAR.8000.name:0 "回合结束"
+ OW_KO_WAR.8000.desc:0 "　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!对#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!的攻击，被巧妙的化解。在#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!化解招数的过程中发现了#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!的失误。"
+ OW_KO_WAR.8003.name:0 "回合结束"
+ OW_KO_WAR.8003.desc:0 "　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!没击中#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!，#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!准备反击#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!\n\n　　结果#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!想在逃跑前，准备侮辱#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!，发现#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!已经攻了过来，来不及逃跑了。"
+ OW_KO_WAR.8003.t:0 "MMP，死于话多！" 
+ OW_KO_WAR.8004.name:0 "回合结束"
+ OW_KO_WAR.8004.desc:0 "　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!没击中#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!，#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!准备反击#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!\n\n　　结果#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!趁着短暂的时间，溜了！"
+ OW_KO_WAR.8004.t:0 "卧槽，这都能跑？" 
+ OW_KO_WAR.8005.name:0 "回合结束"
+ OW_KO_WAR.8005.desc:0 "　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!没击中#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!，#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!准备撤退！\n\n　　结果准备撤退的#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!被#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!抓住机会直面攻了过来。#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!来不及撤退了。"
+ OW_KO_WAR.8005.t:0 "找死是吧？" 
+ OW_KO_WAR.8006.name:0 "回合结束"
+ OW_KO_WAR.8006.desc:0 "　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!没击中#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!，#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!准备撤退！\n\n　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!思考了一翻，也没有继续追击，任其离开。"
+ OW_KO_WAR.8006.t:0 "撤退" 
+ OW_KO_WAR.8007.name:0 "回合结束"
+ OW_KO_WAR.8007.desc:0 "　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!没击中#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!，#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!准备撤退！\n\n　　#P [OW_KO_AI.GetFirstNameNicknamedNoTooltip]#!还在防备，跟本没注意到#P [OW_KO_PLAYER.GetFirstNameNicknamedNoTooltip]#!已经离开了！"
+ OW_KO_WAR.8007.t:0 "这是憨货吧！" 
+ 
+ ################
+ ###秘境战斗#####
+ ###框架文本#####
+ ################
+ OW_MJ_WAR.0001.name:0 "秘境战斗"
+ OW_MJ_WAR.0001.desc:0 "——#P [ROOT.Char.GetFirstNameNicknamedNoTooltip]#!——\n命理：[ROOT.Var('OW_MJ_WAR_player_mingli').GetValue|P0] / [ROOT.Var('OW_MJ_WAR_player_mingli_max').GetValue|P0]\n灵力：[ROOT.Var('OW_MJ_WAR_player_lingli').GetValue|P0] / [ROOT.Var('OW_MJ_WAR_player_lingli_max').GetValue|P0]\n灵强：[ROOT.Var('OW_MJ_WAR_player_lingqiang').GetValue|P0]\n#N VS#!\n——#P [ROOT.Char.Custom('OW_MJ_WAR_ai_name')]#!——\n命理：[ROOT.Var('OW_MJ_WAR_ai_mingli').GetValue|P0] / [ROOT.Var('OW_MJ_WAR_ai_mingli_max').GetValue|P0]\n灵力：[ROOT.Var('OW_MJ_WAR_ai_lingli').GetValue|P0] / [ROOT.Var('OW_MJ_WAR_ai_lingli_max').GetValue|P0]\n灵强：[ROOT.Var('OW_MJ_WAR_ai_lingqiang').GetValue|P0]"
+ OW_MJ_WAR.0002.name:0 "秘境战斗"
+ OW_MJ_WAR.0002.desc:0 "——#P [ROOT.Char.GetFirstNameNicknamedNoTooltip]#!——\n命理：[ROOT.Var('OW_MJ_WAR_player_mingli').GetValue|P0] / [ROOT.Var('OW_MJ_WAR_player_mingli_max').GetValue|P0]\n灵力：[ROOT.Var('OW_MJ_WAR_player_lingli').GetValue|P0] / [ROOT.Var('OW_MJ_WAR_player_lingli_max').GetValue|P0]\n灵强：[ROOT.Var('OW_MJ_WAR_player_lingqiang').GetValue|P0]\n#N VS#!\n——#P [ROOT.Char.Custom('OW_MJ_WAR_ai_name')]#!——\n命理：[ROOT.Var('OW_MJ_WAR_ai_mingli').GetValue|P0] / [ROOT.Var('OW_MJ_WAR_ai_mingli_max').GetValue|P0]\n灵力：[ROOT.Var('OW_MJ_WAR_ai_lingli').GetValue|P0] / [ROOT.Var('OW_MJ_WAR_ai_lingli_max').GetValue|P0]\n灵强：[ROOT.Var('OW_MJ_WAR_ai_lingqiang').GetValue|P0]"
+ OW_MJ_WAR.1001.name:0 "逃跑"
+ OW_MJ_WAR.1001.desc:0 "　　#P [ROOT.Char.GetFirstNameNicknamedNoTooltip]#!落荒而逃！"
+ OW_MJ_WAR.1001.t:0 "战斗结束"
+ OW_KO_WAR_DEATH.3.name:0 "死亡"
+ OW_KO_WAR_DEATH.3.desc:0 "\n44444444444444444\n44             44\n444444444  444444\n44      4  4   44\n4444  444     444\n444     4   44444\n44  4  44  444444\n4444  444  444 44\\n44444444444444444\n444444   44444444\n44444444444444444\n44             44\n4444  44444444444\n4444  44444444444\n4444  44444444444\n4444  44444444444\n4444  44444444444\n4444         4444\n44444444444444444"
+ OW_KO_WAR_DEATH.3.t:0 "确定"
+ OW_KO_WAR_DEATH.4.name:0 "死亡"
+ OW_KO_WAR_DEATH.4.desc:0 "#P [ROOT.Char.GetFirstNameNicknamedNoTooltip]#!击杀了#P [ROOT.Char.Custom('OW_MJ_WAR_ai_name')]#!。"
+ OW_KO_WAR_DEATH.4.t:0 "确定"
+ 
+ 
+ OW_MJ_WAR_LJPD_MZ:0 "\n　　#P [ROOT.Char.GetFirstNameNicknamedNoTooltip]#!对#P [ROOT.Char.Custom('OW_MJ_WAR_ai_name')]#!造成了[ROOT.Var('OW_KO_WAR_ShangHai').GetValue|P0]点伤害。"
+ OW_MJ_WAR_LJPD_WMZ:0 "\n　　#P [ROOT.Char.GetFirstNameNicknamedNoTooltip]#!对#P [ROOT.Char.Custom('OW_MJ_WAR_ai_name')]#!的攻击，被#P [ROOT.Char.Custom('OW_MJ_WAR_ai_name')]#!化解了。"
+ OW_MJ_WAR_LJPD_MZ1:0 "\n　　#P [ROOT.Char.Custom('OW_MJ_WAR_ai_name')]#!对#P [ROOT.Char.GetFirstNameNicknamedNoTooltip]#!造成了[ROOT.Var('OW_KO_WAR_ShangHai').GetValue|P0]点伤害。"
+ OW_MJ_WAR_LJPD_WMZ1:0 "\n　　#P [ROOT.Char.Custom('OW_MJ_WAR_ai_name')]#!对#P [ROOT.Char.GetFirstNameNicknamedNoTooltip]#!的攻击，被#P [ROOT.Char.GetFirstNameNicknamedNoTooltip]#!化解了。"
+ OW_MJ_WAR_GW_KP_NAME_SHOW:0 "[ROOT.Char.Custom('OW_MJ_WAR_GW_KP_SHOW')]"
+ ################
+ ###秘境怪物#####
+ ###防御卡牌#####
+ ################
+ OW_MJ_WAR_GW_KP_1:0 "\n　　#P [ROOT.Char.Custom('OW_MJ_WAR_ai_name')]#!使用了防御卡片：\n　　■■■■■■■■■■■■\n　　　　『躲避』\n　　　　防御值：[ROOT.Var('OW_MJ_WAR_FangYuZhi').GetValue|P0]\n　　　　反击率：[ROOT.Var('OW_MJ_WAR_FanJiZhi').GetValue|P0]#P %#!\n　　　　闪避率：[ROOT.Var('OW_MJ_WAR_ShanBiZhi').GetValue|P0]#P %#!\n　　■■■■■■■■■■■■"
+ OW_MJ_WAR_GW_KP_2:0 "\n　　#P [ROOT.Char.Custom('OW_MJ_WAR_ai_name')]#!使用了防御卡片：\n　　■■■■■■■■■■■■\n　　　　『杀青』\n　　　　防御值：[ROOT.Var('OW_MJ_WAR_FangYuZhi').GetValue|P0]\n　　　　反击率：[ROOT.Var('OW_MJ_WAR_FanJiZhi').GetValue|P0]#P %#!\n　　　　闪避率：[ROOT.Var('OW_MJ_WAR_ShanBiZhi').GetValue|P0]#P %#!\n　　■■■■■■■■■■■■"
+
+ ################
+ ###秘境怪物#####
+ ###攻击卡牌#####
+ ################
+ OW_MJ_WAR_GW_KP_100001:0 "\n　　#P [ROOT.Char.Custom('OW_MJ_WAR_ai_name')]#!使用了攻击卡片：\n　　■■■■■■■■■■■■\n　　　　『竹刺』\n　　　　攻击值：[ROOT.Var('OW_MJ_WAR_GongJiZhi').GetValue|P0]\n　　　　连击率：[ROOT.Var('OW_MJ_WAR_LianJiZhi').GetValue|P0]#P %#!\n　　　　命中率：[ROOT.Var('OW_MJ_WAR_MingZhongZhi').GetValue|P0]#P %#!\n　　■■■■■■■■■■■■"
+ OW_MJ_WAR_GW_KP_100002:0 "\n　　#P [ROOT.Char.Custom('OW_MJ_WAR_ai_name')]#!使用了攻击卡片：\n　　■■■■■■■■■■■■\n　　　　『竹藤缠』\n　　　　攻击值：[ROOT.Var('OW_MJ_WAR_GongJiZhi').GetValue|P0]\n　　　　连击率：[ROOT.Var('OW_MJ_WAR_LianJiZhi').GetValue|P0]#P %#!\n　　　　命中率：[ROOT.Var('OW_MJ_WAR_MingZhongZhi').GetValue|P0]#P %#!\n　　■■■■■■■■■■■■"
+ 
+ ################
+ ###秘境战斗#####
+ ###怪物名称#####
+ ################
+ OW_MJ_WAR_GW_ZhuYao_name:0 "竹妖"
+ 
+ ################
+ ###修真对决#####
+ ###特殊文本#####
+ ################
+ OW_KO_WAR_no_lingli_desc:0 "#N 灵力不足，强行使用将燃烧等同量消耗值的命理。#!"
+ 
+ ################
+ ###修真对决#####
+ ###死亡文本#####
+ ################
+ OW_KO_WAR_DEATH.1.name:0 "死亡"
+ OW_KO_WAR_DEATH.1.desc:0 "\n44444444444444444\n44             44\n444444444  444444\n44      4  4   44\n4444  444     444\n444     4   44444\n44  4  44  444444\n4444  444  444 44\\n44444444444444444\n444444   44444444\n44444444444444444\n44             44\n4444  44444444444\n4444  44444444444\n4444  44444444444\n4444  44444444444\n4444  44444444444\n4444         4444\n44444444444444444"
+ OW_KO_WAR_DEATH.1.t:0 "确定"
+ OW_KO_WAR_DEATH.2.name:0 "死亡"
+ OW_KO_WAR_DEATH.2.desc:0 "[OW_KO_AI.GetFirstNameNicknamedNoTooltip]死了。"
+ OW_KO_WAR_DEATH.2.t:0 "确定"
+ 
+ OW_KO_WAR_LianJi_name:0 "连击"
+ OW_KO_WAR_FanJi_name:0 "反击"
+ OW_KO_WAR_CheTui_name:0 "撤退"
+ OW_KO_WAR_TaoPao_name:0 "逃跑"
+ OW_KO_WAR_YingGang_name:0 "硬刚"
+ OW_KO_WAR_QiuRao_name:0 "求饶"
+ OW_KO_WAR_DEATH_name:0 "确定"
+ 
+ ################
+ ###基础攻击#####
+ ################
+ OW_KO_WAR_GJ_RouBo1_name:0 "『蓄力肉搏』"
+ OW_KO_WAR_GJ_RouBo1_GongJiZhi_desc:0 "攻击值:[SCOPE.ScriptValue('OW_KO_WAR_GJ_RouBo1_GongJiZhi')|P0]"
+ OW_KO_WAR_GJ_RouBo1_LianJiZhi_desc:0 "连击率:[SCOPE.ScriptValue('OW_KO_WAR_GJ_RouBo1_LianJiZhi')|P0]#P %#!"
+ OW_KO_WAR_GJ_RouBo1_MingZhongZhi_desc:0 "命中率:[SCOPE.ScriptValue('OW_KO_WAR_GJ_RouBo1_MingZhongZhi')|P0]#P %#!"
+ OW_KO_WAR_GJ_RouBo1_XiaoHaoZhi_desc:0 "消耗值:[SCOPE.ScriptValue('OW_KO_WAR_GJ_RouBo1_XiaoHaoZhi')|P0]"
+ OW_KO_WAR_GJ_RouBo2_name:0 "『缠斗肉搏』"
+ OW_KO_WAR_GJ_RouBo2_GongJiZhi_desc:0 "攻击值:[SCOPE.ScriptValue('OW_KO_WAR_GJ_RouBo2_GongJiZhi')|P0]"
+ OW_KO_WAR_GJ_RouBo2_LianJiZhi_desc:0 "连击率:[SCOPE.ScriptValue('OW_KO_WAR_GJ_RouBo2_LianJiZhi')|P0]#P %#!"
+ OW_KO_WAR_GJ_RouBo2_MingZhongZhi_desc:0 "命中率:[SCOPE.ScriptValue('OW_KO_WAR_GJ_RouBo2_MingZhongZhi')|P0]#P %#!"
+ OW_KO_WAR_GJ_RouBo2_XiaoHaoZhi_desc:0 "消耗值:[SCOPE.ScriptValue('OW_KO_WAR_GJ_RouBo2_XiaoHaoZhi')|P0]"
+ OW_KO_WAR_GJ_RouBo3_name:0 "『破绽肉搏』"
+ OW_KO_WAR_GJ_RouBo3_GongJiZhi_desc:0 "攻击值:[SCOPE.ScriptValue('OW_KO_WAR_GJ_RouBo3_GongJiZhi')|P0]"
+ OW_KO_WAR_GJ_RouBo3_LianJiZhi_desc:0 "连击率:[SCOPE.ScriptValue('OW_KO_WAR_GJ_RouBo3_LianJiZhi')|P0]#P %#!"
+ OW_KO_WAR_GJ_RouBo3_MingZhongZhi_desc:0 "命中率:[SCOPE.ScriptValue('OW_KO_WAR_GJ_RouBo3_MingZhongZhi')|P0]#P %#!"
+ OW_KO_WAR_GJ_RouBo3_XiaoHaoZhi_desc:0 "消耗值:[SCOPE.ScriptValue('OW_KO_WAR_GJ_RouBo3_XiaoHaoZhi')|P0]"
+ ################
+ ###神通攻击#####
+ ################
+
+ ################
+ ###基础防御#####
+ ################
+ OW_KO_WAR_FY_ZhaoJa_name:0 "『招架』"
+ OW_KO_WAR_FY_ZhaoJa_FangYuZhi_desc:0 "防御值:[SCOPE.ScriptValue('OW_KO_WAR_FY_ZhaoJa_FangYuZhi')|P0]"
+ OW_KO_WAR_FY_ZhaoJa_FanJiZhi_desc:0 "反击率:[SCOPE.ScriptValue('OW_KO_WAR_FY_ZhaoJa_FanJiZhi')|P0]#P %#!"
+ OW_KO_WAR_FY_ZhaoJa_ShanBiZhi_desc:0 "闪避率:[SCOPE.ScriptValue('OW_KO_WAR_FY_ZhaoJa_ShanBiZhi')|P0]#P %#!"
+ OW_KO_WAR_FY_ZhaoJa_XiaoHaoZhi_desc:0 "消耗值:[SCOPE.ScriptValue('OW_KO_WAR_FY_ZhaoJa_XiaoHaoZhi')|P0]"
+ OW_KO_WAR_FY_ShanBi_name:0 "『闪避』"
+ OW_KO_WAR_FY_ShanBi_FangYuZhi_desc:0 "防御值:[SCOPE.ScriptValue('OW_KO_WAR_FY_ShanBi_FangYuZhi')|P0]"
+ OW_KO_WAR_FY_ShanBi_FanJiZhi_desc:0 "反击率:[SCOPE.ScriptValue('OW_KO_WAR_FY_ShanBi_FanJiZhi')|P0]#P %#!"
+ OW_KO_WAR_FY_ShanBi_ShanBiZhi_desc:0 "闪避率:[SCOPE.ScriptValue('OW_KO_WAR_FY_ShanBi_ShanBiZhi')|P0]#P %#!"
+ OW_KO_WAR_FY_ShanBi_XiaoHaoZhi_desc:0 "消耗值:[SCOPE.ScriptValue('OW_KO_WAR_FY_ShanBi_XiaoHaoZhi')|P0]"
+ OW_KO_WAR_FY_FanKang_name:0 "『反抗』"
+ OW_KO_WAR_FY_FanKang_FangYuZhi_desc:0 "防御值:[SCOPE.ScriptValue('OW_KO_WAR_FY_FanKang_FangYuZhi')|P0]"
+ OW_KO_WAR_FY_FanKang_FanJiZhi_desc:0 "反击率:[SCOPE.ScriptValue('OW_KO_WAR_FY_FanKang_FanJiZhi')|P0]#P %#!"
+ OW_KO_WAR_FY_FanKang_ShanBiZhi_desc:0 "闪避率:[SCOPE.ScriptValue('OW_KO_WAR_FY_FanKang_ShanBiZhi')|P0]#P %#!"
+ OW_KO_WAR_FY_FanKang_XiaoHaoZhi_desc:0 "消耗值:[SCOPE.ScriptValue('OW_KO_WAR_FY_FanKang_XiaoHaoZhi')|P0]"
+ 
+ ################
+ ###神通防御#####
+ ################
