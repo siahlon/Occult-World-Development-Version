@@ -1,0 +1,262 @@
+﻿###文本文件
+set_OW_months_desc = {
+	first_past = ADD_set_OW_months_EFFECT
+	first_past_neg = REMOVE_set_OW_months_EFFECT
+	global_past = ADD_set_OW_months_EFFECT
+	global_past_neg = REMOVE_set_OW_months_EFFECT
+	third_past = ADD_set_OW_months_EFFECT
+	third_past_neg = REMOVE_set_OW_months_EFFECT
+	first = ADD_set_OW_months_EFFECT
+	first_neg = REMOVE_set_OW_months_EFFECT
+	global = ADD_set_OW_months_EFFECT
+	global_neg = REMOVE_set_OW_months_EFFECT
+	third= ADD_set_OW_months_EFFECT
+	third_neg = REMOVE_set_OW_months_EFFECT
+}
+set_OW_perk_max_desc = {
+	first_past = ADD_set_OW_perk_max_EFFECT
+	first_past_neg = REMOVE_set_OW_perk_max_EFFECT
+	global_past = ADD_set_OW_perk_max_EFFECT
+	global_past_neg = REMOVE_set_OW_perk_max_EFFECT
+	third_past = ADD_set_OW_perk_max_EFFECT
+	third_past_neg = REMOVE_set_OW_perk_max_EFFECT
+	first = ADD_set_OW_perk_max_EFFECT
+	first_neg = REMOVE_set_OW_perk_max_EFFECT
+	global = ADD_set_OW_perk_max_EFFECT
+	global_neg = REMOVE_set_OW_perk_max_EFFECT
+	third= ADD_set_OW_perk_max_EFFECT
+	third_neg = REMOVE_set_OW_perk_max_EFFECT
+}
+set_OW_perk_min_desc = {
+	first_past = ADD_set_OW_perk_min_EFFECT
+	first_past_neg = REMOVE_set_OW_perk_min_EFFECT
+	global_past = ADD_set_OW_perk_min_EFFECT
+	global_past_neg = REMOVE_set_OW_perk_min_EFFECT
+	third_past = ADD_set_OW_perk_min_EFFECT
+	third_past_neg = REMOVE_set_OW_perk_min_EFFECT
+	first = ADD_set_OW_perk_min_EFFECT
+	first_neg = REMOVE_set_OW_perk_min_EFFECT
+	global = ADD_set_OW_perk_min_EFFECT
+	global_neg = REMOVE_set_OW_perk_min_EFFECT
+	third= ADD_set_OW_perk_min_EFFECT
+	third_neg = REMOVE_set_OW_perk_min_EFFECT
+}
+set_OW_perk_var_desc = {
+	first_past = ADD_set_OW_perk_var_EFFECT
+	first_past_neg = REMOVE_set_OW_perk_var_EFFECT
+	global_past = ADD_set_OW_perk_var_EFFECT
+	global_past_neg = REMOVE_set_OW_perk_var_EFFECT
+	third_past = ADD_set_OW_perk_var_EFFECT
+	third_past_neg = REMOVE_set_OW_perk_var_EFFECT
+	first = ADD_set_OW_perk_var_EFFECT
+	first_neg = REMOVE_set_OW_perk_var_EFFECT
+	global = ADD_set_OW_perk_var_EFFECT
+	global_neg = REMOVE_set_OW_perk_var_EFFECT
+	third= ADD_set_OW_perk_var_EFFECT
+	third_neg = REMOVE_set_OW_perk_var_EFFECT
+}
+set_OW_perk_desc = {
+	first_past = set_OW_perk_OK_EFFECT
+	first_past_neg = set_OW_perk_NO_EFFECT
+	global_past = set_OW_perk_OK_EFFECT
+	global_past_neg = set_OW_perk_NO_EFFECT
+	third_past = set_OW_perk_OK_EFFECT
+	third_past_neg = set_OW_perk_NO_EFFECT
+	first = set_OW_perk_OK_EFFECT
+	first_neg = set_OW_perk_NO_EFFECT
+	global = set_OW_perk_OK_EFFECT
+	global_neg = set_OW_perk_NO_EFFECT
+	third= set_OW_perk_OK_EFFECT
+	third_neg = set_OW_perk_NO_EFFECT
+}
+#####################文本
+OW_XZ_jingjie_0 ={
+	global = GLOBAL_OW_XZ_jingjie_0
+	first = FIRST_OW_XZ_jingjie_0
+	third = THIRD_OW_XZ_jingjie_0
+}
+OW_XZ_jingjie_1 ={
+	global = GLOBAL_OW_XZ_jingjie_1
+	first = FIRST_OW_XZ_jingjie_1
+	third = THIRD_OW_XZ_jingjie_1
+}
+OW_XZ_jingjie_2 ={
+	global = GLOBAL_OW_XZ_jingjie_2
+	first = FIRST_OW_XZ_jingjie_2
+	third = THIRD_OW_XZ_jingjie_2
+}
+OW_XZ_jingjie_3 ={
+	global = GLOBAL_OW_XZ_jingjie_3
+	first = FIRST_OW_XZ_jingjie_3
+	third = THIRD_OW_XZ_jingjie_3
+}
+OW_XZ_jingjie_4 ={
+	global = GLOBAL_OW_XZ_jingjie_4
+	first = FIRST_OW_XZ_jingjie_4
+	third = THIRD_OW_XZ_jingjie_4
+}
+OW_XZ_jingjie_5 ={
+	global = GLOBAL_OW_XZ_jingjie_5
+	first = FIRST_OW_XZ_jingjie_5
+	third = THIRD_OW_XZ_jingjie_5
+}
+OW_XZ_jingjie_6 ={
+	global = GLOBAL_OW_XZ_jingjie_6
+	first = FIRST_OW_XZ_jingjie_6
+	third = THIRD_OW_XZ_jingjie_6
+}
+OW_XZ_jingjie_7 ={
+	global = GLOBAL_OW_XZ_jingjie_7
+	first = FIRST_OW_XZ_jingjie_7
+	third = THIRD_OW_XZ_jingjie_7
+}
+OW_XZ_jingjie_8 ={
+	global = GLOBAL_OW_XZ_jingjie_8
+	first = FIRST_OW_XZ_jingjie_8
+	third = THIRD_OW_XZ_jingjie_8
+}
+OW_XZ_jingjie_9 ={
+	global = GLOBAL_OW_XZ_jingjie_9
+	first = FIRST_OW_XZ_jingjie_9
+	third = THIRD_OW_XZ_jingjie_9
+}
+OW_XZ_jingjie_10 ={
+	global = GLOBAL_OW_XZ_jingjie_10
+	first = FIRST_OW_XZ_jingjie_10
+	third = THIRD_OW_XZ_jingjie_10
+}
+OW_XZ_jingjie_11 ={
+	global = GLOBAL_OW_XZ_jingjie_11
+	first = FIRST_OW_XZ_jingjie_11
+	third = THIRD_OW_XZ_jingjie_11
+}
+OW_XZ_jingjie_12 ={
+	global = GLOBAL_OW_XZ_jingjie_12
+	first = FIRST_OW_XZ_jingjie_12
+	third = THIRD_OW_XZ_jingjie_12
+}
+OW_XZ_jingjie_13 ={
+	global = GLOBAL_OW_XZ_jingjie_13
+	first = FIRST_OW_XZ_jingjie_13
+	third = THIRD_OW_XZ_jingjie_13
+}
+OW_XZ_jingjie_14 ={
+	global = GLOBAL_OW_XZ_jingjie_14
+	first = FIRST_OW_XZ_jingjie_14
+	third = THIRD_OW_XZ_jingjie_14
+}
+OW_XZ_jingjie_15 ={
+	global = GLOBAL_OW_XZ_jingjie_15
+	first = FIRST_OW_XZ_jingjie_15
+	third = THIRD_OW_XZ_jingjie_15
+}
+OW_XZ_jingjie_16 ={
+	global = GLOBAL_OW_XZ_jingjie_16
+	first = FIRST_OW_XZ_jingjie_16
+	third = THIRD_OW_XZ_jingjie_16
+}
+OW_XZ_jingjie_17 ={
+	global = GLOBAL_OW_XZ_jingjie_17
+	first = FIRST_OW_XZ_jingjie_17
+	third = THIRD_OW_XZ_jingjie_17
+}
+OW_XZ_jingjie_18 ={
+	global = GLOBAL_OW_XZ_jingjie_18
+	first = FIRST_OW_XZ_jingjie_18
+	third = THIRD_OW_XZ_jingjie_18
+}
+OW_XZ_jingjie_19 ={
+	global = GLOBAL_OW_XZ_jingjie_19
+	first = FIRST_OW_XZ_jingjie_19
+	third = THIRD_OW_XZ_jingjie_19
+}
+OW_XZ_jingjie_20 ={
+	global = GLOBAL_OW_XZ_jingjie_20
+	first = FIRST_OW_XZ_jingjie_20
+	third = THIRD_OW_XZ_jingjie_20
+}
+OW_XZ_jingjie_21 ={
+	global = GLOBAL_OW_XZ_jingjie_21
+	first = FIRST_OW_XZ_jingjie_21
+	third = THIRD_OW_XZ_jingjie_21
+}
+OW_XZ_jingjie_22 ={
+	global = GLOBAL_OW_XZ_jingjie_22
+	first = FIRST_OW_XZ_jingjie_22
+	third = THIRD_OW_XZ_jingjie_22
+}
+OW_XZ_jingjie_23 ={
+	global = GLOBAL_OW_XZ_jingjie_23
+	first = FIRST_OW_XZ_jingjie_23
+	third = THIRD_OW_XZ_jingjie_23
+}
+OW_XZ_jingjie_24 ={
+	global = GLOBAL_OW_XZ_jingjie_24
+	first = FIRST_OW_XZ_jingjie_24
+	third = THIRD_OW_XZ_jingjie_24
+}
+OW_XZ_jingjie_25 ={
+	global = GLOBAL_OW_XZ_jingjie_25
+	first = FIRST_OW_XZ_jingjie_25
+	third = THIRD_OW_XZ_jingjie_25
+}
+OW_XZ_jingjie_26 ={
+	global = GLOBAL_OW_XZ_jingjie_26
+	first = FIRST_OW_XZ_jingjie_26
+	third = THIRD_OW_XZ_jingjie_26
+}
+OW_XZ_jingjie_27 ={
+	global = GLOBAL_OW_XZ_jingjie_27
+	first = FIRST_OW_XZ_jingjie_27
+	third = THIRD_OW_XZ_jingjie_27
+}
+OW_XZ_jingjie_28 ={
+	global = GLOBAL_OW_XZ_jingjie_28
+	first = FIRST_OW_XZ_jingjie_28
+	third = THIRD_OW_XZ_jingjie_28
+}
+OW_XZ_jingjie_29 ={
+	global = GLOBAL_OW_XZ_jingjie_29
+	first = FIRST_OW_XZ_jingjie_29
+	third = THIRD_OW_XZ_jingjie_29
+}
+OW_XZ_jingjie_30 ={
+	global = GLOBAL_OW_XZ_jingjie_30
+	first = FIRST_OW_XZ_jingjie_30
+	third = THIRD_OW_XZ_jingjie_30
+}
+OW_XZ_jingjie_31 ={
+	global = GLOBAL_OW_XZ_jingjie_31
+	first = FIRST_OW_XZ_jingjie_31
+	third = THIRD_OW_XZ_jingjie_31
+}
+OW_XZ_jingjie_32 ={
+	global = GLOBAL_OW_XZ_jingjie_32
+	first = FIRST_OW_XZ_jingjie_32
+	third = THIRD_OW_XZ_jingjie_32
+}
+OW_XZ_jingjie_33 ={
+	global = GLOBAL_OW_XZ_jingjie_33
+	first = FIRST_OW_XZ_jingjie_33
+	third = THIRD_OW_XZ_jingjie_33
+}
+OW_XZ_jingjie_34 ={
+	global = GLOBAL_OW_XZ_jingjie_34
+	first = FIRST_OW_XZ_jingjie_34
+	third = THIRD_OW_XZ_jingjie_34
+}
+OW_XZ_jingjie_35 ={
+	global = GLOBAL_OW_XZ_jingjie_35
+	first = FIRST_OW_XZ_jingjie_35
+	third = THIRD_OW_XZ_jingjie_35
+}
+OW_XZ_jingjie_36 ={
+	global = GLOBAL_OW_XZ_jingjie_36
+	first = FIRST_OW_XZ_jingjie_36
+	third = THIRD_OW_XZ_jingjie_36
+}
+OW_XZ_jingjie_37 ={
+	global = GLOBAL_OW_XZ_jingjie_37
+	first = FIRST_OW_XZ_jingjie_37
+	third = THIRD_OW_XZ_jingjie_37
+}

@@ -1,0 +1,198 @@
+﻿#####体质扩展包#########
+#####byH#####
+########################
+#1~4练气境
+#5~8筑基境
+#9~12结丹境
+#13~16金丹境
+#17~20元婴境
+#21~24出窍境
+#25~28分神境
+#29~32合体境
+#33~36大乘境
+#37地仙镜（渡劫期）
+
+OW_XZ_TZ_14_GongWuBuKe_perk = {
+	lifestyle = lifestyle_tizhi14
+	tree = mingge_tree_tizhi_14
+	position = { 0 0 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+		heavy_infantry_damage_add = 10
+	    pikemen_damage_add = 10
+		archers_damage_add = 10
+		light_cavalry_damage_add = 10
+		heavy_cavalry_damage_add = 10
+		skirmishers_damage_add = 10
+		siege_weapon_damage_add = 10
+	}
+	effect = {
+		SET_OW_XZ_TZ_EFFECT = {
+			OW_XZ_TZ_KEY = OW_XZ_TZ_14_GongWuBuKe_perk
+			OW_XZ_TZ_VALUE = 100
+		}
+	}
+}
+
+OW_XZ_TZ_14_MiLing_perk = {
+	lifestyle = lifestyle_tizhi14
+	tree = yunshi_tree_tizhi_14
+	position = { 0 3 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+	}
+	effect = {
+		add_OW_SkillPerk_AttributeEffect = { 
+			OW_XZ_TZ_KEY = OW_XZ_TZ_14_MiLing_perk
+			OW_XZ_CT_KEY = OW_lingli_max
+			OW_XZ_TZ_YUNSHI = 11
+			OW_XZ_TZ_VALUE = 2
+		}
+	}
+}
+
+OW_XZ_TZ_14_JiMieShenLi_perk = {
+	lifestyle = lifestyle_tizhi14
+	tree = yunshi_tree_tizhi_14
+	position = { 2 3 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+	}
+	effect = {
+		add_OW_SkillPerk_AttributeEffect = { 
+			OW_XZ_TZ_KEY = OW_XZ_TZ_14_JiMieShenLi_perk
+			OW_XZ_CT_KEY = OW_lingqiang
+			OW_XZ_TZ_YUNSHI = 11
+			OW_XZ_TZ_VALUE = 2
+		}
+	}
+}
+
+OW_XZ_TZ_14_JiMieYuanShi_perk = {
+	lifestyle = lifestyle_tizhi14
+	tree = yunshi_tree_tizhi_14
+	position = { 4 3 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+	}
+	effect = {
+		add_OW_SkillPerk_AttributeEffect = { 
+			OW_XZ_TZ_KEY = OW_XZ_TZ_14_JiMieYuanShi_perk
+			OW_XZ_CT_KEY = OW_shenshi
+			OW_XZ_TZ_YUNSHI = 11
+			OW_XZ_TZ_VALUE = 2
+		}
+	}
+}
+
+OW_XZ_TZ_14_YiMieDuanShi_perk = {
+	lifestyle = lifestyle_tizhi14
+	tree = yunshi_tree_tizhi_14
+	position = { 6 3 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+	}
+	effect = {
+		add_OW_SkillPerk_AttributeEffect = { 
+			OW_XZ_TZ_KEY = OW_XZ_TZ_14_YiMieDuanShi_perk
+			OW_XZ_CT_KEY = OW_shihai_exp
+			OW_XZ_TZ_YUNSHI = 11
+			OW_XZ_TZ_VALUE = 200
+		}
+	}
+}
+
+OW_XZ_TZ_14_RuJi_perk = {
+	lifestyle = lifestyle_tizhi14
+	tree = yunshi_tree_tizhi_14
+	position = { 8 3 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+	}
+	effect = {
+		add_OW_SkillPerk_AttributeEffect = { 
+			OW_XZ_TZ_KEY = OW_XZ_TZ_14_RuJi_perk
+			OW_XZ_CT_KEY = OW_years_mingli
+			OW_XZ_TZ_YUNSHI = 11
+			OW_XZ_TZ_VALUE = 20
+		}
+	}
+}
+
+OW_XZ_TZ_14_JiMieZhiDao_perk = {
+	lifestyle = lifestyle_tizhi14
+	tree = yunshi_tree_tizhi_14
+	position = { 10 3 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+	}
+	effect = {
+		add_OW_SkillPerk_AttributeEffect = { 
+			OW_XZ_TZ_KEY = OW_XZ_TZ_14_JiMieZhiDao_perk
+			OW_XZ_CT_KEY = OW_years_ganwu_exp
+			OW_XZ_TZ_YUNSHI = 11
+			OW_XZ_TZ_VALUE = 24
+		}
+	}
+}
+
+OW_XZ_TZ_14_JiMieShiKong_perk = {
+	lifestyle = lifestyle_tizhi14
+	tree = yunshi_tree_tizhi_14
+	position = { 12 3 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+	}
+	effect = {
+		add_OW_SkillPerk_AttributeEffect = { 
+			OW_XZ_TZ_KEY = OW_XZ_TZ_14_JiMieShiKong_perk
+			OW_XZ_CT_KEY = OW_years_lilian_exp
+			OW_XZ_TZ_YUNSHI = 11
+			OW_XZ_TZ_VALUE = 24
+		}
+	}
+}
+
+OW_XZ_TZ_14_MieTiChongSu_perk = {
+	lifestyle = lifestyle_tizhi14
+	tree = yunshi_tree_tizhi_14
+	position = { 14 3 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+	}
+	effect = {
+		add_OW_SkillPerk_AttributeEffect = { 
+			OW_XZ_TZ_KEY = OW_XZ_TZ_14_MieTiChongSu_perk
+			OW_XZ_CT_KEY = OW_years_duanti_exp
+			OW_XZ_TZ_YUNSHI = 11
+			OW_XZ_TZ_VALUE = 24
+		}
+	}
+}

@@ -1,0 +1,818 @@
+﻿OW_XZ_menpai = {
+	type = character
+	text = {
+		trigger = { has_character_flag = OW_XZ_yinyangxuegong }
+		localization_key = OW_XZ_yinyangxuegong_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_guanqizhe }
+		localization_key = OW_XZ_guanqizhe_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_lingxiaogei }
+		localization_key = OW_XZ_lingxiaogei_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_shengongmen }
+		localization_key = OW_XZ_shengongmen_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_shushanpai }
+		localization_key = OW_XZ_shushanpai_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_shenjige }
+		localization_key = OW_XZ_shenjige_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_zhenwuge }
+		localization_key = OW_XZ_zhenwuge_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_qingfengmen }
+		localization_key = OW_XZ_qingfengmen_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_luochadian }
+		localization_key = OW_XZ_luochadian_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_yushoumen }
+		localization_key = OW_XZ_yushoumen_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_shenshuigong }
+		localization_key = OW_XZ_shenshuigong_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_baihuojiao }
+		localization_key = OW_XZ_baihuojiao_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_heizemoku }
+		localization_key = OW_XZ_heizemoku_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_qixianggong }
+		localization_key = OW_XZ_qixianggong_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_laoshanpai }
+		localization_key = OW_XZ_laoshanpai_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_hehuanmen }
+		localization_key = OW_XZ_hehuanmen_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_xuanbingdao }
+		localization_key = OW_XZ_xuanbingdao_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_shengliandian }
+		localization_key = OW_XZ_shengliandian_name
+	}
+	text = {
+		localization_key = OW_XZ_sanxiu_name
+	}
+}
+
+OW_XZ_xinjing = {
+	type = character
+	text = {
+		trigger = { 
+			var:OW_xinjing = 0
+		}
+		localization_key = OW_XZ_wu_name
+	}
+	text = {
+		trigger = { 
+			var:OW_xinjing = 1
+		}
+		localization_key = OW_XZ_yiluan_name
+	}
+	text = {
+		trigger = { 
+			var:OW_xinjing = 2
+		}
+		localization_key = OW_XZ_lianshen_name
+	}
+	text = {
+		trigger = { 
+			var:OW_xinjing = 3
+		}
+		localization_key = OW_XZ_shenhe_name
+	}
+	text = {
+		trigger = { 
+			var:OW_xinjing = 4
+		}
+		localization_key = OW_XZ_wangyou_name
+	}
+	text = {
+		trigger = { 
+			var:OW_xinjing = 5
+		}
+		localization_key = OW_XZ_chufu_name
+	}
+	text = {
+		trigger = { 
+			var:OW_xinjing = 6
+		}
+		localization_key = OW_XZ_xichen_name
+	}
+	text = {
+		trigger = { 
+			var:OW_xinjing = 7
+		}
+		localization_key = OW_XZ_quzhi_name
+	}
+	text = {
+		trigger = { 
+			var:OW_xinjing = 8
+		}
+		localization_key = OW_XZ_wugou_name
+	}
+	text = {
+		trigger = { 
+			var:OW_xinjing = 9
+		}
+		localization_key = OW_XZ_mingjing_name
+	}
+	text = {
+		trigger = { 
+			var:OW_xinjing = 10
+		}
+		localization_key = OW_XZ_zizai_name
+	}
+}
+
+OW_XZ_jingjie = {
+	type = character
+	text = {
+		trigger = { 
+			var:OW_jingjie = 0
+		}
+		localization_key = OW_XZ_wu_name
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 1
+		}
+		localization_key = OW_XZ_lianqi_churu_name
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 2
+		}
+		localization_key = OW_XZ_lianqi_dacheng_name
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 3
+		}
+		localization_key = OW_XZ_lianqi_yuanman_name
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 4
+		}
+		localization_key = OW_XZ_lianqi_dayuanman_name
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 5
+		}
+		localization_key = OW_XZ_zhuji_churu_name
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 6
+		}
+		localization_key = OW_XZ_zhuji_dacheng_name
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 7
+		}
+		localization_key = OW_XZ_zhuji_yuanman_name
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 8
+		}
+		localization_key = OW_XZ_zhuji_dayuanman_name
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 9
+		}
+		localization_key = OW_XZ_jiedan_churu_name
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 10
+		}
+		localization_key = OW_XZ_jiedan_dacheng_name
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 11
+		}
+		localization_key = OW_XZ_jiedan_yuanman_name
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 12
+		}
+		localization_key = OW_XZ_jiedan_dayuanman_name
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 13
+		}
+		localization_key = OW_XZ_jindan_churu_name
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 14
+		}
+		localization_key = OW_XZ_jindan_dacheng_name
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 15
+		}
+		localization_key = OW_XZ_jindan_yuanman_name
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 16
+		}
+		localization_key = OW_XZ_jindan_dayuanman_name
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 17
+		}
+		localization_key = OW_XZ_yuanying_churu_name
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 18
+		}
+		localization_key = OW_XZ_yuanying_dacheng_name
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 19
+		}
+		localization_key = OW_XZ_yuanying_yuanman_name
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 20
+		}
+		localization_key = OW_XZ_yuanying_dayuanman_name
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 21
+		}
+		localization_key = OW_XZ_chuqiao_churu_name
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 22
+		}
+		localization_key = OW_XZ_chuqiao_dacheng_name
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 23
+		}
+		localization_key = OW_XZ_chuqiao_yuanman_name
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 24
+		}
+		localization_key = OW_XZ_chuqiao_dayuanman_name
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 25
+		}
+		localization_key = OW_XZ_fenshen_churu_name
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 26
+		}
+		localization_key = OW_XZ_fenshen_dacheng_name
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 27
+		}
+		localization_key = OW_XZ_fenshen_yuanman_name
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 28
+		}
+		localization_key = OW_XZ_fenshen_dayuanman_name
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 29
+		}
+		localization_key = OW_XZ_heti_churu_name
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 30
+		}
+		localization_key = OW_XZ_heti_dacheng_name
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 31
+		}
+		localization_key = OW_XZ_heti_yuanman_name
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 32
+		}
+		localization_key = OW_XZ_heti_dayuanman_name
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 33
+		}
+		localization_key = OW_XZ_dacheng_churu_name
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 34
+		}
+		localization_key = OW_XZ_dacheng_dacheng_name
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 35
+		}
+		localization_key = OW_XZ_dacheng_yuanman_name
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 36
+		}
+		localization_key = OW_XZ_dacheng_dayuanman_name
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 37
+		}
+		localization_key = OW_XZ_dujie_name
+	}
+}
+OW_XZ_MB_JINGJIE = {
+	type = character
+	text = {
+		trigger = { 
+			var:OW_jingjie = 0
+		}
+		localization_key = OW_XZ_wu_name_text
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 1
+		}
+		localization_key = OW_XZ_lianqi_churu_name_text
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 2
+		}
+		localization_key = OW_XZ_lianqi_dacheng_name_text
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 3
+		}
+		localization_key = OW_XZ_lianqi_yuanman_name_text
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 4
+		}
+		localization_key = OW_XZ_lianqi_dayuanman_name_text
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 5
+		}
+		localization_key = OW_XZ_zhuji_churu_name_text
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 6
+		}
+		localization_key = OW_XZ_zhuji_dacheng_name_text
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 7
+		}
+		localization_key = OW_XZ_zhuji_yuanman_name_text
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 8
+		}
+		localization_key = OW_XZ_zhuji_dayuanman_name_text
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 9
+		}
+		localization_key = OW_XZ_jiedan_churu_name_text
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 10
+		}
+		localization_key = OW_XZ_jiedan_dacheng_name_text
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 11
+		}
+		localization_key = OW_XZ_jiedan_yuanman_name_text
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 12
+		}
+		localization_key = OW_XZ_jiedan_dayuanman_name_text
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 13
+		}
+		localization_key = OW_XZ_jindan_churu_name_text
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 14
+		}
+		localization_key = OW_XZ_jindan_dacheng_name_text
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 15
+		}
+		localization_key = OW_XZ_jindan_yuanman_name_text
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 16
+		}
+		localization_key = OW_XZ_jindan_dayuanman_name_text
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 17
+		}
+		localization_key = OW_XZ_yuanying_churu_name_text
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 18
+		}
+		localization_key = OW_XZ_yuanying_dacheng_name_text
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 19
+		}
+		localization_key = OW_XZ_yuanying_yuanman_name_text
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 20
+		}
+		localization_key = OW_XZ_yuanying_dayuanman_name_text
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 21
+		}
+		localization_key = OW_XZ_chuqiao_churu_name_text
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 22
+		}
+		localization_key = OW_XZ_chuqiao_dacheng_name_text
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 23
+		}
+		localization_key = OW_XZ_chuqiao_yuanman_name_text
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 24
+		}
+		localization_key = OW_XZ_chuqiao_dayuanman_name_text
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 25
+		}
+		localization_key = OW_XZ_fenshen_churu_name_text
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 26
+		}
+		localization_key = OW_XZ_fenshen_dacheng_name_text
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 27
+		}
+		localization_key = OW_XZ_fenshen_yuanman_name_text
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 28
+		}
+		localization_key = OW_XZ_fenshen_dayuanman_name_text
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 29
+		}
+		localization_key = OW_XZ_heti_churu_name_text
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 30
+		}
+		localization_key = OW_XZ_heti_dacheng_name_text
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 31
+		}
+		localization_key = OW_XZ_heti_yuanman_name_text
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 32
+		}
+		localization_key = OW_XZ_heti_dayuanman_name_text
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 33
+		}
+		localization_key = OW_XZ_dacheng_churu_name_text
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 34
+		}
+		localization_key = OW_XZ_dacheng_dacheng_name_text
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 35
+		}
+		localization_key = OW_XZ_dacheng_yuanman_name_text
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 36
+		}
+		localization_key = OW_XZ_dacheng_dayuanman_name_text
+	}
+	text = {
+		trigger = { 
+			var:OW_jingjie = 37
+		}
+		localization_key = OW_XZ_dujie_name_text
+	}
+}
+OW_XZ_tizhi = {
+	type = character
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_0 }
+		localization_key = OW_XZ_tizhi_no0_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_1 }
+		localization_key = OW_XZ_tizhi_no1_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_2 }
+		localization_key = OW_XZ_tizhi_no2_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_3 }
+		localization_key = OW_XZ_tizhi_no3_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_4 }
+		localization_key = OW_XZ_tizhi_no4_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_5 }
+		localization_key = OW_XZ_tizhi_no5_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_6 }
+		localization_key = OW_XZ_tizhi_no6_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_7 }
+		localization_key = OW_XZ_tizhi_no7_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_8 }
+		localization_key = OW_XZ_tizhi_no8_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_9 }
+		localization_key = OW_XZ_tizhi_no9_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_10 }
+		localization_key = OW_XZ_tizhi_no10_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_11 }
+		localization_key = OW_XZ_tizhi_no11_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_12 }
+		localization_key = OW_XZ_tizhi_no12_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_13 }
+		localization_key = OW_XZ_tizhi_no13_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_14 }
+		localization_key = OW_XZ_tizhi_no14_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_15 }
+		localization_key = OW_XZ_tizhi_no15_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_16 }
+		localization_key = OW_XZ_tizhi_no16_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_17 }
+		localization_key = OW_XZ_tizhi_no17_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_18 }
+		localization_key = OW_XZ_tizhi_no18_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_19 }
+		localization_key = OW_XZ_tizhi_no19_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_20 }
+		localization_key = OW_XZ_tizhi_no20_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_21 }
+		localization_key = OW_XZ_tizhi_no21_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_22 }
+		localization_key = OW_XZ_tizhi_no22_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_23 }
+		localization_key = OW_XZ_tizhi_no23_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_24 }
+		localization_key = OW_XZ_tizhi_no24_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_25 }
+		localization_key = OW_XZ_tizhi_no25_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_26 }
+		localization_key = OW_XZ_tizhi_no26_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_27 }
+		localization_key = OW_XZ_tizhi_no27_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_28 }
+		localization_key = OW_XZ_tizhi_no28_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_29 }
+		localization_key = OW_XZ_tizhi_no29_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_30 }
+		localization_key = OW_XZ_tizhi_no30_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_31 }
+		localization_key = OW_XZ_tizhi_no31_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_32 }
+		localization_key = OW_XZ_tizhi_no32_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_33 }
+		localization_key = OW_XZ_tizhi_no33_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_34 }
+		localization_key = OW_XZ_tizhi_no34_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_35 }
+		localization_key = OW_XZ_tizhi_no35_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_36 }
+		localization_key = OW_XZ_tizhi_no36_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_37 }
+		localization_key = OW_XZ_tizhi_no37_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_38 }
+		localization_key = OW_XZ_tizhi_no38_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_39 }
+		localization_key = OW_XZ_tizhi_no39_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_40 }
+		localization_key = OW_XZ_tizhi_no40_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_41 }
+		localization_key = OW_XZ_tizhi_no41_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_42 }
+		localization_key = OW_XZ_tizhi_no42_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_43 }
+		localization_key = OW_XZ_tizhi_no43_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_44 }
+		localization_key = OW_XZ_tizhi_no44_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_45 }
+		localization_key = OW_XZ_tizhi_no45_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_46 }
+		localization_key = OW_XZ_tizhi_no46_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_47 }
+		localization_key = OW_XZ_tizhi_no47_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_48 }
+		localization_key = OW_XZ_tizhi_no48_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_49 }
+		localization_key = OW_XZ_tizhi_no49_name
+	}
+	text = {
+		trigger = { has_character_flag = OW_XZ_tizhi_50 }
+		localization_key = OW_XZ_tizhi_no50_name
+	}
+}

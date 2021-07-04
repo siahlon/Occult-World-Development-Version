@@ -1,0 +1,190 @@
+﻿#####体质扩展包#########
+#####byH#####
+########################
+#1~4练气境
+#5~8筑基境
+#9~12结丹境
+#13~16金丹境
+#17~20元婴境
+#21~24出窍境
+#25~28分神境
+#29~32合体境
+#33~36大乘境
+#37地仙镜（渡劫期）
+
+OW_XZ_TZ_22_ChunYangCui_perk = {
+	lifestyle = lifestyle_tizhi22
+	tree = mingge_tree_tizhi_22
+	position = { 0 0 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+		martial = 7.00
+	}
+	effect = {
+		SET_OW_XZ_TZ_EFFECT = {
+			OW_XZ_TZ_KEY = OW_XZ_TZ_22_ChunYangCui_perk
+			OW_XZ_TZ_VALUE = 26
+		}
+	}
+}
+
+OW_XZ_TZ_22_ZhiZu_perk = {
+	lifestyle = lifestyle_tizhi22
+	tree = mingge_tree_tizhi_22
+	position = { 2 0 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+		learning = 7.00
+	}
+	effect = {
+		SET_OW_XZ_TZ_EFFECT = {
+			OW_XZ_TZ_KEY = OW_XZ_TZ_22_ZhiZu_perk
+			OW_XZ_TZ_VALUE = 26
+		}
+	}
+}
+
+OW_XZ_TZ_22_XianHe_perk = {
+	lifestyle = lifestyle_tizhi22
+	tree = mingge_tree_tizhi_22
+	position = { 4 0 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+	}
+	effect = {
+		SET_OW_XZ_TZ_CUSTOM_EFFECT = {
+			OW_XZ_TZ_KEY = OW_XZ_TZ_22_XianHe_perk
+			OW_XZ_TZ_VALUE = 111
+			OW_XZ_TZ_EFFECT_KEY = OW_XZ_TZ_22_XianHe_Effect
+		}
+	}
+}
+
+OW_XZ_TZ_22_ChunYangZhang_perk = {
+	lifestyle = lifestyle_tizhi22
+	tree = yunshi_tree_tizhi_22
+	position = { 0 3 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+	}
+	effect = {
+		add_OW_SkillPerk_AttributeEffect = { 
+			OW_XZ_TZ_KEY = OW_XZ_TZ_22_ChunYangZhang_perk
+			OW_XZ_CT_KEY = OW_lingli_max
+			OW_XZ_TZ_YUNSHI = 7
+			OW_XZ_TZ_VALUE = 4
+		}
+	}
+}
+
+OW_XZ_TZ_22_ChunYangQi_perk = {
+	lifestyle = lifestyle_tizhi22
+	tree = yunshi_tree_tizhi_22
+	position = { 2 3 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+	}
+	effect = {
+		add_OW_SkillPerk_AttributeEffect = { 
+			OW_XZ_TZ_KEY = OW_XZ_TZ_22_ChunYangQi_perk
+			OW_XZ_CT_KEY = OW_years_lingli
+			OW_XZ_TZ_YUNSHI = 7
+			OW_XZ_TZ_VALUE = 4
+		}
+	}
+}
+
+OW_XZ_TZ_22_WeiGuang_perk = {
+	lifestyle = lifestyle_tizhi22
+	tree = yunshi_tree_tizhi_22
+	position = { 4 3 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+	}
+	effect = {
+		add_OW_SkillPerk_AttributeEffect = { 
+			OW_XZ_TZ_KEY = OW_XZ_TZ_22_WeiGuang_perk
+			OW_XZ_CT_KEY = OW_years_lilian_exp
+			OW_XZ_TZ_YUNSHI = 7
+			OW_XZ_TZ_VALUE = 48
+		}
+	}
+}
+
+OW_XZ_TZ_22_YangLi_perk = {
+	lifestyle = lifestyle_tizhi22
+	tree = yunshi_tree_tizhi_22
+	position = { 6 3 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+	}
+	effect = {
+		add_OW_SkillPerk_AttributeEffect = { 
+			OW_XZ_TZ_KEY = OW_XZ_TZ_22_YangLi_perk
+			OW_XZ_CT_KEY = OW_lingqiang
+			OW_XZ_TZ_YUNSHI = 7
+			OW_XZ_TZ_VALUE = 4
+		}
+	}
+}
+
+OW_XZ_TZ_22_ChunYi_perk = {
+	lifestyle = lifestyle_tizhi22
+	tree = yunshi_tree_tizhi_22
+	position = { 8 3 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+	}
+	effect = {
+		add_OW_SkillPerk_AttributeEffect = { 
+			OW_XZ_TZ_KEY = OW_XZ_TZ_22_ChunYi_perk
+			OW_XZ_CT_KEY = OW_years_ganwu_exp
+			OW_XZ_TZ_YUNSHI = 7
+			OW_XZ_TZ_VALUE = 4
+		}
+	}
+}
+
+OW_XZ_TZ_22_QuZa_perk = {
+	lifestyle = lifestyle_tizhi22
+	tree = yunshi_tree_tizhi_22
+	position = { 10 3 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+	}
+	effect = {
+		add_OW_SkillPerk_AttributeEffect = { 
+			OW_XZ_TZ_KEY = OW_XZ_TZ_22_QuZa_perk
+			OW_XZ_CT_KEY = OW_wuxing
+			OW_XZ_TZ_YUNSHI = 7
+			OW_XZ_TZ_VALUE = 0.4
+		}
+	}
+}

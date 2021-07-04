@@ -1,0 +1,130 @@
+﻿#####体质扩展包#########
+#####byH#####
+########################
+#1~4练气境
+#5~8筑基境
+#9~12结丹境
+#13~16金丹境
+#17~20元婴境
+#21~24出窍境
+#25~28分神境
+#29~32合体境
+#33~36大乘境
+#37地仙镜（渡劫期）
+
+OW_XZ_TZ_28_LeiYang_perk = {
+	lifestyle = lifestyle_tizhi28
+	tree = mingge_tree_tizhi_28
+	position = { 0 0 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+		scheme_discovery_chance_mult = 0.6
+	}
+	effect = {
+		SET_OW_XZ_TZ_EFFECT = {
+			OW_XZ_TZ_KEY = OW_XZ_TZ_28_LeiYang_perk
+			OW_XZ_TZ_VALUE = 41
+		}
+	}
+}
+
+OW_XZ_TZ_28_YangBu_perk = {
+	lifestyle = lifestyle_tizhi28
+	tree = mingge_tree_tizhi_28
+	position = { 2 0 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+		attraction_opinion = 5.00
+	}
+	effect = {
+		SET_OW_XZ_TZ_EFFECT = {
+			OW_XZ_TZ_KEY = OW_XZ_TZ_28_YangBu_perk
+			OW_XZ_TZ_VALUE = 26
+		}
+	}
+}
+
+OW_XZ_TZ_28_XueMing_perk = {
+	lifestyle = lifestyle_tizhi28
+	tree = mingge_tree_tizhi_28
+	position = { 4 0 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+		monthly_prestige_gain_mult = 2.5
+	}
+	effect = {
+		SET_OW_XZ_TZ_EFFECT = {
+			OW_XZ_TZ_KEY = OW_XZ_TZ_28_XueMing_perk
+			OW_XZ_TZ_VALUE = 26
+		}
+	}
+}
+
+OW_XZ_TZ_28_YangShen_perk = {
+	lifestyle = lifestyle_tizhi29
+	tree = yunshi_tree_tizhi_29
+	position = { 0 3 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+	}
+	effect = {
+		add_OW_SkillPerk_AttributeEffect = { 
+			OW_XZ_TZ_KEY = OW_XZ_TZ_28_YangShen_perk
+			OW_XZ_CT_KEY = OW_lingli_max
+			OW_XZ_TZ_YUNSHI = 5
+			OW_XZ_TZ_VALUE = 4
+		}
+	}
+}
+
+OW_XZ_TZ_28_TaiYangDao_perk = {
+	lifestyle = lifestyle_tizhi29
+	tree = yunshi_tree_tizhi_29
+	position = { 2 3 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+	}
+	effect = {
+		add_OW_SkillPerk_AttributeEffect = { 
+			OW_XZ_TZ_KEY = OW_XZ_TZ_28_TaiYangDao_perk
+			OW_XZ_CT_KEY = OW_shihai_exp
+			OW_XZ_TZ_YUNSHI = 5
+			OW_XZ_TZ_VALUE = 4
+		}
+	}
+}
+
+OW_XZ_TZ_28_YangYuan_perk = {
+	lifestyle = lifestyle_tizhi29
+	tree = yunshi_tree_tizhi_29
+	position = { 4 3 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+	}
+	effect = {
+		add_OW_SkillPerk_AttributeEffect = { 
+			OW_XZ_TZ_KEY = OW_XZ_TZ_28_YangYuan_perk
+			OW_XZ_CT_KEY = OW_years_lingli
+			OW_XZ_TZ_YUNSHI = 5
+			OW_XZ_TZ_VALUE = 4
+		}
+	}
+}

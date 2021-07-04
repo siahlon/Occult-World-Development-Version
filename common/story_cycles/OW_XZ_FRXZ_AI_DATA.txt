@@ -1,0 +1,927 @@
+﻿story_ai_fanren_xinxichuli = {
+	on_setup = {	
+	}
+	on_end = {
+	}
+	on_owner_death = {
+		end_story = yes
+	}
+	effect_group = {
+		days = { 15 30 }
+		triggered_effect = {
+			trigger = { always = yes }
+			effect = {
+				story_owner = {
+					random_list = {
+						1 = {#正常买卖
+							modifier = {
+								add = ai_boldness
+								ai_boldness >= 1
+							}
+							modifier = {
+								add = ai_sociability
+								ai_sociability >= 1
+							}
+							modifier = {
+								add = ai_rationality
+								ai_rationality >= 1
+							}
+							story_OW_FRXZ_XINXI_JIAOYI_MAIMAI_AI = {
+								OW_XZ_XINXIKEY = OW_XZ_XINXI1
+								OW_XZ_XINXIKEY1 = OW_XZ_XINXI11
+								OW_FRXZ_XinXi_KEY = OW_FRXZ_XinXi_1
+							}
+							story_OW_FRXZ_XINXI_JIAOYI_MAIMAI_AI = {
+								OW_XZ_XINXIKEY = OW_XZ_XINXI2
+								OW_XZ_XINXIKEY1 = OW_XZ_XINXI12
+								OW_FRXZ_XinXi_KEY = OW_FRXZ_XinXi_2
+							}
+							story_OW_FRXZ_XINXI_JIAOYI_MAIMAI_AI = {
+								OW_XZ_XINXIKEY = OW_XZ_XINXI3
+								OW_XZ_XINXIKEY1 = OW_XZ_XINXI13
+								OW_FRXZ_XinXi_KEY = OW_FRXZ_XinXi_3
+							}
+							story_OW_FRXZ_XINXI_JIAOYI_MAIMAI_AI = {
+								OW_XZ_XINXIKEY = OW_XZ_XINXI4
+								OW_XZ_XINXIKEY1 = OW_XZ_XINXI14
+								OW_FRXZ_XinXi_KEY = OW_FRXZ_XinXi_4
+							}
+							story_OW_FRXZ_XINXI_JIAOYI_MAIMAI_AI = {
+								OW_XZ_XINXIKEY = OW_XZ_XINXI5
+								OW_XZ_XINXIKEY1 = OW_XZ_XINXI15
+								OW_FRXZ_XinXi_KEY = OW_FRXZ_XinXi_5
+							}
+							story_OW_FRXZ_XINXI_JIAOYI_MAIMAI_AI = {
+								OW_XZ_XINXIKEY = OW_XZ_XINXI6
+								OW_XZ_XINXIKEY1 = OW_XZ_XINXI16
+								OW_FRXZ_XinXi_KEY = OW_FRXZ_XinXi_6
+							}
+							story_OW_FRXZ_XINXI_JIAOYI_MAIMAI_AI = {
+								OW_XZ_XINXIKEY = OW_XZ_XINXI7
+								OW_XZ_XINXIKEY1 = OW_XZ_XINXI17
+								OW_FRXZ_XinXi_KEY = OW_FRXZ_XinXi_7
+							}
+							story_OW_FRXZ_XINXI_JIAOYI_MAIMAI_AI = {
+								OW_XZ_XINXIKEY = OW_XZ_XINXI8
+								OW_XZ_XINXIKEY1 = OW_XZ_XINXI18
+								OW_FRXZ_XinXi_KEY = OW_FRXZ_XinXi_8
+							}
+							story_OW_FRXZ_XINXI_JIAOYI_MAIMAI_AI = {
+								OW_XZ_XINXIKEY = OW_XZ_XINXI9
+								OW_XZ_XINXIKEY1 = OW_XZ_XINXI19
+								OW_FRXZ_XinXi_KEY = OW_FRXZ_XinXi_9
+							}
+							story_OW_FRXZ_XINXI_JIAOYI_MAIMAI_AI = {
+								OW_XZ_XINXIKEY = OW_XZ_XINXI10
+								OW_XZ_XINXIKEY1 = OW_XZ_XINXI20
+								OW_FRXZ_XinXi_KEY = OW_FRXZ_XinXi_10
+							}
+						}
+						#0 = #{#做空
+							#modifier = #{
+							#	#add = ai_compassion
+							#	#ai_compassion >= 1
+							#}
+							#modifier = #{
+								#add = ai_energy
+								#ai_energy >= 1
+							#}
+							#modifier = #{
+							#	#add = ai_honor
+								#ai_honor >= 1
+							#}
+							#story_OW_FRXZ_XINXI_JIAOYI_ZUOKONG_AI_1 = yes
+							#story_OW_FRXZ_XINXI_JIAOYI_ZUOKONG_AI_2 = yes
+							#story_OW_FRXZ_XINXI_JIAOYI_ZUOKONG_AI_3 = yes
+							#story_OW_FRXZ_XINXI_JIAOYI_ZUOKONG_AI_4 = yes
+							#story_OW_FRXZ_XINXI_JIAOYI_ZUOKONG_AI_5 = yes
+							#story_OW_FRXZ_XINXI_JIAOYI_ZUOKONG_AI_6 = yes
+							#story_OW_FRXZ_XINXI_JIAOYI_ZUOKONG_AI_7 = yes
+							#story_OW_FRXZ_XINXI_JIAOYI_ZUOKONG_AI_8 = yes
+							#story_OW_FRXZ_XINXI_JIAOYI_ZUOKONG_AI_9 = yes
+							#story_OW_FRXZ_XINXI_JIAOYI_ZUOKONG_AI_10 = yes
+						#}
+						#0 = #{#回拢
+							#modifier = #{
+							#	add = ai_greed
+							#	ai_greed >= 1
+							#}
+							#modifier = #{
+							#	add = ai_vengefulness
+							#	ai_vengefulness >= 1
+							#}
+							#modifier = #{
+							#	add = ai_zeal
+							#	ai_zeal >= 1
+							#}
+							#story_OW_FRXZ_XINXI_JIAOYI_HUILONG_AI_1 = yes
+							#story_OW_FRXZ_XINXI_JIAOYI_HUILONG_AI_2 = yes
+							#story_OW_FRXZ_XINXI_JIAOYI_HUILONG_AI_3 = yes
+							#story_OW_FRXZ_XINXI_JIAOYI_HUILONG_AI_4 = yes
+							#story_OW_FRXZ_XINXI_JIAOYI_HUILONG_AI_5 = yes
+							#story_OW_FRXZ_XINXI_JIAOYI_HUILONG_AI_6 = yes
+							#story_OW_FRXZ_XINXI_JIAOYI_HUILONG_AI_7 = yes
+							#story_OW_FRXZ_XINXI_JIAOYI_HUILONG_AI_8 = yes
+							#story_OW_FRXZ_XINXI_JIAOYI_HUILONG_AI_9 = yes
+							#story_OW_FRXZ_XINXI_JIAOYI_HUILONG_AI_10 = yes
+						#}
+					}
+				}
+			}
+		}
+	}
+	effect_group = {
+		days = 120
+		triggered_effect = {
+			trigger = { always = yes }
+			effect = {
+				story_owner = {
+					random_list = {
+						1 = {
+							random_list = {
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_1
+										MAX = 120
+										MIN = 12
+									}	
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_2
+										MAX = 120
+										MIN = 12
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_3
+										MAX = 120
+										MIN = 12
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_4
+										MAX = 120
+										MIN = 12
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_5
+										MAX = 120
+										MIN = 12
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_6
+										MAX = 120
+										MIN = 12
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_7
+										MAX = 120
+										MIN = 12
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_8
+										MAX = 120
+										MIN = 12
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_9
+										MAX = 120
+										MIN = 12
+									}
+								}
+							}
+						}
+						1 = {
+							random_list = {
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_1
+										MAX = 12
+										MIN = 1
+									}	
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_2
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_3
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_4
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_5
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_6
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_7
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_8
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_9
+										MAX = 12
+										MIN = 1
+									}
+								}
+							}
+							random_list = {
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_1
+										MAX = 12
+										MIN = 1
+									}	
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_2
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_3
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_4
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_5
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_6
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_7
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_8
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_9
+										MAX = 12
+										MIN = 1
+									}
+								}
+							}
+							random_list = {
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_1
+										MAX = 12
+										MIN = 1
+									}	
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_2
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_3
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_4
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_5
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_6
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_7
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_8
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_9
+										MAX = 12
+										MIN = 1
+									}
+								}
+							}
+							random_list = {
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_1
+										MAX = 12
+										MIN = 1
+									}	
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_2
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_3
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_4
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_5
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_6
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_7
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_8
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_9
+										MAX = 12
+										MIN = 1
+									}
+								}
+							}
+							random_list = {
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_1
+										MAX = 12
+										MIN = 1
+									}	
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_2
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_3
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_4
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_5
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_6
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_7
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_8
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_9
+										MAX = 12
+										MIN = 1
+									}
+								}
+							}
+							random_list = {
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_1
+										MAX = 12
+										MIN = 1
+									}	
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_2
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_3
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_4
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_5
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_6
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_7
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_8
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_9
+										MAX = 12
+										MIN = 1
+									}
+								}
+							}
+							random_list = {
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_1
+										MAX = 12
+										MIN = 1
+									}	
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_2
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_3
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_4
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_5
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_6
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_7
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_8
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_9
+										MAX = 12
+										MIN = 1
+									}
+								}
+							}
+							random_list = {
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_1
+										MAX = 12
+										MIN = 1
+									}	
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_2
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_3
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_4
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_5
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_6
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_7
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_8
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_9
+										MAX = 12
+										MIN = 1
+									}
+								}
+							}
+							random_list = {
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_1
+										MAX = 12
+										MIN = 1
+									}	
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_2
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_3
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_4
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_5
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_6
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_7
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_8
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_9
+										MAX = 12
+										MIN = 1
+									}
+								}
+							}
+							random_list = {
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_1
+										MAX = 12
+										MIN = 1
+									}	
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_2
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_3
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_4
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_5
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_6
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_7
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_8
+										MAX = 12
+										MIN = 1
+									}
+								}
+								1 = {
+									add_OW_FRXZ_XinXi_Random = {
+										OW_CT_KEY = OW_FRXZ_XinXi_9
+										MAX = 12
+										MIN = 1
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	effect_group = {
+		days = 30
+		triggered_effect = {
+			trigger = {
+				story_owner = {
+					has_character_flag = OW_XZ_XINXI1
+					has_character_flag = OW_XZ_XINXI2
+					has_character_flag = OW_XZ_XINXI3
+					has_character_flag = OW_XZ_XINXI4
+					has_character_flag = OW_XZ_XINXI5
+					has_character_flag = OW_XZ_XINXI6
+					has_character_flag = OW_XZ_XINXI7
+					has_character_flag = OW_XZ_XINXI8
+					has_character_flag = OW_XZ_XINXI9
+					has_character_flag = OW_XZ_XINXI10
+					has_character_flag = OW_XZ_XINXI11
+					has_character_flag = OW_XZ_XINXI12
+					has_character_flag = OW_XZ_XINXI13
+					has_character_flag = OW_XZ_XINXI14
+					has_character_flag = OW_XZ_XINXI15
+					has_character_flag = OW_XZ_XINXI16
+					has_character_flag = OW_XZ_XINXI17
+					has_character_flag = OW_XZ_XINXI18
+					has_character_flag = OW_XZ_XINXI19
+					has_character_flag = OW_XZ_XINXI20
+				}
+			}
+			effect = {
+				story_owner = {
+					if = {
+						limit = { has_character_flag = OW_XZ_tizhi_0 }
+						remove_character_flag = OW_XZ_XINXI1
+						remove_character_flag = OW_XZ_XINXI2
+						remove_character_flag = OW_XZ_XINXI3
+						remove_character_flag = OW_XZ_XINXI4
+						remove_character_flag = OW_XZ_XINXI5
+						remove_character_flag = OW_XZ_XINXI6
+						remove_character_flag = OW_XZ_XINXI7
+						remove_character_flag = OW_XZ_XINXI8
+						remove_character_flag = OW_XZ_XINXI9
+						remove_character_flag = OW_XZ_XINXI10
+						remove_character_flag = OW_XZ_XINXI11
+						remove_character_flag = OW_XZ_XINXI12
+						remove_character_flag = OW_XZ_XINXI13
+						remove_character_flag = OW_XZ_XINXI14
+						remove_character_flag = OW_XZ_XINXI15
+						remove_character_flag = OW_XZ_XINXI16
+						remove_character_flag = OW_XZ_XINXI17
+						remove_character_flag = OW_XZ_XINXI18
+						remove_character_flag = OW_XZ_XINXI19
+						remove_character_flag = OW_XZ_XINXI20
+						remove_character_flag = OW_XZ_tizhi_0
+					}
+					else = {
+						add_character_flag = OW_xiuzhenzhe
+						OW_JB_XZ_shuxingshezhi = yes  #开启修真属性
+						trigger_event = OW_XZ_dijimenpai.01
+					}
+				}
+			}
+		}
+	}
+}
+

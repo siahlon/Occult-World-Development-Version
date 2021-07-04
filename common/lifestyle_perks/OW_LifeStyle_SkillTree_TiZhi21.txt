@@ -1,0 +1,166 @@
+﻿#####体质扩展包#########
+#####byH#####
+########################
+#1~4练气境
+#5~8筑基境
+#9~12结丹境
+#13~16金丹境
+#17~20元婴境
+#21~24出窍境
+#25~28分神境
+#29~32合体境
+#33~36大乘境
+#37地仙镜（渡劫期）
+
+OW_XZ_TZ_21_HunRanTi_perk = {
+	lifestyle = lifestyle_tizhi21
+	tree = mingge_tree_tizhi_21
+	position = { 0 0 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+		health = 3.00
+	}
+	effect = {
+		SET_OW_XZ_TZ_EFFECT = {
+			OW_XZ_TZ_KEY = OW_XZ_TZ_21_HunRanTi_perk
+			OW_XZ_TZ_VALUE = 22
+		}
+	}
+}
+
+OW_XZ_TZ_21_ChiCheng_perk = {
+	lifestyle = lifestyle_tizhi21
+	tree = mingge_tree_tizhi_21
+	position = { 2 0 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+		dynasty_house_opinion = 6.00
+	}
+	effect = {
+		SET_OW_XZ_TZ_EFFECT = {
+			OW_XZ_TZ_KEY = OW_XZ_TZ_21_ChiCheng_perk
+			OW_XZ_TZ_VALUE = 73
+		}
+	}
+}
+
+OW_XZ_TZ_21_QuXia_perk = {
+	lifestyle = lifestyle_tizhi21
+	tree = mingge_tree_tizhi_21
+	position = { 4 0 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+		negate_health_penalty_add = 3.00
+	}
+	effect = {
+		SET_OW_XZ_TZ_EFFECT = {
+			OW_XZ_TZ_KEY = OW_XZ_TZ_21_QuXia_perk
+			OW_XZ_TZ_VALUE = 22
+		}
+	}
+}
+
+OW_XZ_TZ_21_ShenYou_perk = {
+	lifestyle = lifestyle_tizhi21
+	tree = mingge_tree_tizhi_21
+	position = { 6 0 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+		defender_advantage = 3.00
+	}
+	effect = {
+		SET_OW_XZ_TZ_EFFECT = {
+			OW_XZ_TZ_KEY = OW_XZ_TZ_21_ShenYou_perk
+			OW_XZ_TZ_VALUE = 22
+		}
+	}
+}
+
+OW_XZ_TZ_21_GuCai_perk = {
+	lifestyle = lifestyle_tizhi21
+	tree = mingge_tree_tizhi_21
+	position = { 8 0 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+		build_gold_cost = -0.3
+	}
+	effect = {
+		SET_OW_XZ_TZ_EFFECT = {
+			OW_XZ_TZ_KEY = OW_XZ_TZ_21_GuCai_perk
+			OW_XZ_TZ_VALUE = 22
+		}
+	}
+}
+
+OW_XZ_TZ_21_WanBi_perk = {
+	lifestyle = lifestyle_tizhi21
+	tree = mingge_tree_tizhi_21
+	position = { 10 0 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+		fort_level = 3.00
+	}
+	effect = {
+		SET_OW_XZ_TZ_EFFECT = {
+			OW_XZ_TZ_KEY = OW_XZ_TZ_21_WanBi_perk
+			OW_XZ_TZ_VALUE = 22
+		}
+	}
+}
+
+OW_XZ_TZ_21_BiNan_perk = {
+	lifestyle = lifestyle_tizhi21
+	tree = mingge_tree_tizhi_21
+	position = { 12 0 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+		retreat_losses = -0.3
+	}
+	effect = {
+		SET_OW_XZ_TZ_EFFECT = {
+			OW_XZ_TZ_KEY = OW_XZ_TZ_21_BiNan_perk
+			OW_XZ_TZ_VALUE = 22
+		}
+	}
+}
+
+OW_XZ_TZ_21_BuMie_perk = {
+	lifestyle = lifestyle_tizhi21
+	tree = yunshi_tree_tizhi_21
+	position = { 0 3 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+	}
+	effect = {
+		add_OW_SkillPerk_AttributeEffect = { 
+			OW_XZ_TZ_KEY = OW_XZ_TZ_21_BuMie_perk
+			OW_XZ_CT_KEY = OW_mingli
+			OW_XZ_TZ_YUNSHI = 3
+			OW_XZ_TZ_VALUE = 800
+		}
+	}
+}

@@ -1,0 +1,24 @@
+﻿OW_lilian_exp_value_sjk = {
+	value = var:OW_lilian_exp
+	divide = 1000
+	multiply = 10
+}
+OW_ganwu_exp_value_sjk = {
+	value = var:OW_ganwu_exp
+	divide = 1000
+	multiply = 2
+}
+OW_duanti_exp_value_sjk = {
+	value = var:OW_duanti_exp
+	divide = 1000
+}
+
+OW_shenshi_exp_value_sjk = {
+	value = var:OW_shenshi_exp
+	divide = 1000
+}
+
+OW_shihai_exp_value_sjk = {
+	value = var:OW_shihai_exp
+	divide = 1000
+}

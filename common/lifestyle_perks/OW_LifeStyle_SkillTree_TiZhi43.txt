@@ -1,0 +1,71 @@
+﻿#####体质扩展包#########
+#####byH#####
+########################
+#1~4练气境
+#5~8筑基境
+#9~12结丹境
+#13~16金丹境
+#17~20元婴境
+#21~24出窍境
+#25~28分神境
+#29~32合体境
+#33~36大乘境
+#37地仙镜（渡劫期）
+
+OW_XZ_TZ_43_CanRen_perk = {
+	lifestyle = lifestyle_tizhi43
+	tree = mingge_tree_tizhi_43
+	position = { 0 0 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+		monthly_county_control_change_factor = 1.00
+	}
+	effect = {
+		SET_OW_XZ_TZ_EFFECT = {
+			OW_XZ_TZ_KEY = OW_XZ_TZ_43_CanRen_perk
+			OW_XZ_TZ_VALUE = 46
+		}
+	}
+}
+
+OW_XZ_TZ_43_YeMan_perk = {
+	lifestyle = lifestyle_tizhi43
+	tree = mingge_tree_tizhi_43
+	position = { 2 0 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+		monthly_prestige_gain_per_dread_mult = 0.5
+	}
+	effect = {
+		SET_OW_XZ_TZ_EFFECT = {
+			OW_XZ_TZ_KEY = OW_XZ_TZ_43_YeMan_perk
+			OW_XZ_TZ_VALUE = 27
+		}
+	}
+}
+
+OW_XZ_TZ_43_ManTi_perk = {
+	lifestyle = lifestyle_tizhi43
+	tree = yunshi_tree_tizhi_43
+	position = { 0 3 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+	}
+	effect = {
+		add_OW_SkillPerk_AttributeEffect = { 
+			OW_XZ_TZ_KEY = OW_XZ_TZ_43_ManTi_perk
+			OW_XZ_CT_KEY = OW_mingli
+			OW_XZ_TZ_YUNSHI = 1
+			OW_XZ_TZ_VALUE = 300
+		}
+	}
+}

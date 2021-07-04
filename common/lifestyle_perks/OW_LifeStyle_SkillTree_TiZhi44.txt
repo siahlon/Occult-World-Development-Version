@@ -1,0 +1,72 @@
+﻿#####体质扩展包#########
+#####byH#####
+########################
+#1~4练气境
+#5~8筑基境
+#9~12结丹境
+#13~16金丹境
+#17~20元婴境
+#21~24出窍境
+#25~28分神境
+#29~32合体境
+#33~36大乘境
+#37地仙镜（渡劫期）
+
+OW_XZ_TZ_44_QingTian_perk = {
+	lifestyle = lifestyle_tizhi44
+	tree = mingge_tree_tizhi_44
+	position = { 0 0 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+		monthly_county_control_change_add = 1.00
+	}
+	effect = {
+		SET_OW_XZ_TZ_EFFECT = {
+			OW_XZ_TZ_KEY = OW_XZ_TZ_44_QingTian_perk
+			OW_XZ_TZ_VALUE = 27
+		}
+	}
+}
+
+OW_XZ_TZ_44_XinLan_perk = {
+	lifestyle = lifestyle_tizhi44
+	tree = mingge_tree_tizhi_44
+	position = { 2 0 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+		same_faith_opinion = 3.00
+	}
+	effect = {
+		SET_OW_XZ_TZ_EFFECT = {
+			OW_XZ_TZ_KEY = OW_XZ_TZ_44_XinLan_perk
+			OW_XZ_TZ_VALUE = 65
+		}
+	}
+}
+
+OW_XZ_TZ_44_TianYu_perk = {
+	lifestyle = lifestyle_tizhi44
+	tree = yunshi_tree_tizhi_44
+	position = { 4 6 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = OW_XZ_TZ_44_TianYu_perk_effect
+		}
+		hidden_effect = {
+			trigger_event = OW_XZ_TZ_44_TianYu_perk_event.0001
+			remove_perk = OW_XZ_TZ_44_TianYu_perk
+		}
+	}
+}

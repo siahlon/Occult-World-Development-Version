@@ -1,0 +1,1022 @@
+﻿ghuu_value = 40
+
+OW_JINGJIE_MIN_MINGLI_DATA_1 = 25
+OW_JINGJIE_MIN_MINGLI_DATA_2 = 50
+OW_JINGJIE_MIN_MINGLI_DATA_3 = 75
+OW_JINGJIE_MIN_MINGLI_DATA_4 = 100
+OW_JINGJIE_MIN_MINGLI_DATA_5 = 200
+OW_JINGJIE_MIN_MINGLI_DATA_6 = 250
+OW_JINGJIE_MIN_MINGLI_DATA_7 = 300
+OW_JINGJIE_MIN_MINGLI_DATA_8 = 350
+OW_JINGJIE_MIN_MINGLI_DATA_9 = 700
+OW_JINGJIE_MIN_MINGLI_DATA_10 = 800
+OW_JINGJIE_MIN_MINGLI_DATA_11 = 900
+OW_JINGJIE_MIN_MINGLI_DATA_12 = 1000
+OW_JINGJIE_MIN_MINGLI_DATA_13 = 2000
+OW_JINGJIE_MIN_MINGLI_DATA_14 = 2250
+OW_JINGJIE_MIN_MINGLI_DATA_15 = 2500
+OW_JINGJIE_MIN_MINGLI_DATA_16 = 2750
+OW_JINGJIE_MIN_MINGLI_DATA_17 = 5500
+OW_JINGJIE_MIN_MINGLI_DATA_18 = 6000
+OW_JINGJIE_MIN_MINGLI_DATA_19 = 6500
+OW_JINGJIE_MIN_MINGLI_DATA_20 = 7000
+OW_JINGJIE_MIN_MINGLI_DATA_21 = 14000
+OW_JINGJIE_MIN_MINGLI_DATA_22 = 15000
+OW_JINGJIE_MIN_MINGLI_DATA_23 = 16000
+OW_JINGJIE_MIN_MINGLI_DATA_24 = 17000
+OW_JINGJIE_MIN_MINGLI_DATA_25 = 36000
+OW_JINGJIE_MIN_MINGLI_DATA_26 = 38500
+OW_JINGJIE_MIN_MINGLI_DATA_27 = 41000
+OW_JINGJIE_MIN_MINGLI_DATA_28 = 43500
+OW_JINGJIE_MIN_MINGLI_DATA_29 = 85000
+OW_JINGJIE_MIN_MINGLI_DATA_30 = 90000
+OW_JINGJIE_MIN_MINGLI_DATA_31 = 95000
+OW_JINGJIE_MIN_MINGLI_DATA_32 = 100000
+OW_JINGJIE_MIN_MINGLI_DATA_33 = 200000
+OW_JINGJIE_MIN_MINGLI_DATA_34 = 300000
+OW_JINGJIE_MIN_MINGLI_DATA_35 = 400000
+OW_JINGJIE_MIN_MINGLI_DATA_36 = 500000
+OW_JINGJIE_MIN_MINGLI_DATA_37 = 1000000
+
+OW_JINGJIE_MAX_MINGLI_DATA_1 = 50
+OW_JINGJIE_MAX_MINGLI_DATA_2 = 100
+OW_JINGJIE_MAX_MINGLI_DATA_3 = 150
+OW_JINGJIE_MAX_MINGLI_DATA_4 = 200
+OW_JINGJIE_MAX_MINGLI_DATA_5 = 400
+OW_JINGJIE_MAX_MINGLI_DATA_6 = 500
+OW_JINGJIE_MAX_MINGLI_DATA_7 = 600
+OW_JINGJIE_MAX_MINGLI_DATA_8 = 700
+OW_JINGJIE_MAX_MINGLI_DATA_9 = 1400
+OW_JINGJIE_MAX_MINGLI_DATA_10 = 1600
+OW_JINGJIE_MAX_MINGLI_DATA_11 = 1800
+OW_JINGJIE_MAX_MINGLI_DATA_12 = 2000
+OW_JINGJIE_MAX_MINGLI_DATA_13 = 4000
+OW_JINGJIE_MAX_MINGLI_DATA_14 = 4500
+OW_JINGJIE_MAX_MINGLI_DATA_15 = 5000
+OW_JINGJIE_MAX_MINGLI_DATA_16 = 5500
+OW_JINGJIE_MAX_MINGLI_DATA_17 = 11000
+OW_JINGJIE_MAX_MINGLI_DATA_18 = 12000
+OW_JINGJIE_MAX_MINGLI_DATA_19 = 13000
+OW_JINGJIE_MAX_MINGLI_DATA_20 = 14000
+OW_JINGJIE_MAX_MINGLI_DATA_21 = 28000
+OW_JINGJIE_MAX_MINGLI_DATA_22 = 30000
+OW_JINGJIE_MAX_MINGLI_DATA_23 = 32000
+OW_JINGJIE_MAX_MINGLI_DATA_24 = 34000
+OW_JINGJIE_MAX_MINGLI_DATA_25 = 72000
+OW_JINGJIE_MAX_MINGLI_DATA_26 = 77000
+OW_JINGJIE_MAX_MINGLI_DATA_27 = 82000
+OW_JINGJIE_MAX_MINGLI_DATA_28 = 87000
+OW_JINGJIE_MAX_MINGLI_DATA_29 = 170000
+OW_JINGJIE_MAX_MINGLI_DATA_30 = 180000
+OW_JINGJIE_MAX_MINGLI_DATA_31 = 190000
+OW_JINGJIE_MAX_MINGLI_DATA_32 = 200000
+OW_JINGJIE_MAX_MINGLI_DATA_33 = 400000
+OW_JINGJIE_MAX_MINGLI_DATA_34 = 600000
+OW_JINGJIE_MAX_MINGLI_DATA_35 = 800000
+OW_JINGJIE_MAX_MINGLI_DATA_36 = 1000000
+OW_JINGJIE_MAX_MINGLI_DATA_37 = 2000000
+
+OW_JINGJIE_MIN_AGE_MAX_DATA_1 = 1
+OW_JINGJIE_MIN_AGE_MAX_DATA_2 = 1
+OW_JINGJIE_MIN_AGE_MAX_DATA_3 = 1
+OW_JINGJIE_MIN_AGE_MAX_DATA_4 = 1
+OW_JINGJIE_MIN_AGE_MAX_DATA_5 = 3
+OW_JINGJIE_MIN_AGE_MAX_DATA_6 = 1
+OW_JINGJIE_MIN_AGE_MAX_DATA_7 = 1
+OW_JINGJIE_MIN_AGE_MAX_DATA_8 = 1
+OW_JINGJIE_MIN_AGE_MAX_DATA_9 = 5
+OW_JINGJIE_MIN_AGE_MAX_DATA_10 = 2
+OW_JINGJIE_MIN_AGE_MAX_DATA_11 = 2
+OW_JINGJIE_MIN_AGE_MAX_DATA_12 = 2
+OW_JINGJIE_MIN_AGE_MAX_DATA_13 = 15
+OW_JINGJIE_MIN_AGE_MAX_DATA_14 = 2
+OW_JINGJIE_MIN_AGE_MAX_DATA_15 = 2
+OW_JINGJIE_MIN_AGE_MAX_DATA_16 = 2
+OW_JINGJIE_MIN_AGE_MAX_DATA_17 = 20
+OW_JINGJIE_MIN_AGE_MAX_DATA_18 = 3
+OW_JINGJIE_MIN_AGE_MAX_DATA_19 = 3
+OW_JINGJIE_MIN_AGE_MAX_DATA_20 = 3
+OW_JINGJIE_MIN_AGE_MAX_DATA_21 = 25
+OW_JINGJIE_MIN_AGE_MAX_DATA_22 = 4
+OW_JINGJIE_MIN_AGE_MAX_DATA_23 = 4
+OW_JINGJIE_MIN_AGE_MAX_DATA_24 = 4
+OW_JINGJIE_MIN_AGE_MAX_DATA_25 = 30
+OW_JINGJIE_MIN_AGE_MAX_DATA_26 = 6
+OW_JINGJIE_MIN_AGE_MAX_DATA_27 = 6
+OW_JINGJIE_MIN_AGE_MAX_DATA_28 = 6
+OW_JINGJIE_MIN_AGE_MAX_DATA_29 = 40
+OW_JINGJIE_MIN_AGE_MAX_DATA_30 = 8
+OW_JINGJIE_MIN_AGE_MAX_DATA_31 = 8
+OW_JINGJIE_MIN_AGE_MAX_DATA_32 = 8
+OW_JINGJIE_MIN_AGE_MAX_DATA_33 = 50
+OW_JINGJIE_MIN_AGE_MAX_DATA_34 = 10
+OW_JINGJIE_MIN_AGE_MAX_DATA_35 = 10
+OW_JINGJIE_MIN_AGE_MAX_DATA_36 = 10
+OW_JINGJIE_MIN_AGE_MAX_DATA_37 = 500
+
+OW_JINGJIE_MAX_AGE_MAX_DATA_1 = 25
+OW_JINGJIE_MAX_AGE_MAX_DATA_2 = 2
+OW_JINGJIE_MAX_AGE_MAX_DATA_3 = 2
+OW_JINGJIE_MAX_AGE_MAX_DATA_4 = 2
+OW_JINGJIE_MAX_AGE_MAX_DATA_5 = 25
+OW_JINGJIE_MAX_AGE_MAX_DATA_6 = 3
+OW_JINGJIE_MAX_AGE_MAX_DATA_7 = 3
+OW_JINGJIE_MAX_AGE_MAX_DATA_8 = 3
+OW_JINGJIE_MAX_AGE_MAX_DATA_9 = 50
+OW_JINGJIE_MAX_AGE_MAX_DATA_10 = 4
+OW_JINGJIE_MAX_AGE_MAX_DATA_11 = 4
+OW_JINGJIE_MAX_AGE_MAX_DATA_12 = 4
+OW_JINGJIE_MAX_AGE_MAX_DATA_13 = 50
+OW_JINGJIE_MAX_AGE_MAX_DATA_14 = 5
+OW_JINGJIE_MAX_AGE_MAX_DATA_15 = 5
+OW_JINGJIE_MAX_AGE_MAX_DATA_16 = 5
+OW_JINGJIE_MAX_AGE_MAX_DATA_17 = 50
+OW_JINGJIE_MAX_AGE_MAX_DATA_18 = 6
+OW_JINGJIE_MAX_AGE_MAX_DATA_19 = 6
+OW_JINGJIE_MAX_AGE_MAX_DATA_20 = 6
+OW_JINGJIE_MAX_AGE_MAX_DATA_21 = 100
+OW_JINGJIE_MAX_AGE_MAX_DATA_22 = 8
+OW_JINGJIE_MAX_AGE_MAX_DATA_23 = 8
+OW_JINGJIE_MAX_AGE_MAX_DATA_24 = 8
+OW_JINGJIE_MAX_AGE_MAX_DATA_25 = 200
+OW_JINGJIE_MAX_AGE_MAX_DATA_26 = 10
+OW_JINGJIE_MAX_AGE_MAX_DATA_27 = 10
+OW_JINGJIE_MAX_AGE_MAX_DATA_28 = 10
+OW_JINGJIE_MAX_AGE_MAX_DATA_29 = 200
+OW_JINGJIE_MAX_AGE_MAX_DATA_30 = 12
+OW_JINGJIE_MAX_AGE_MAX_DATA_31 = 12
+OW_JINGJIE_MAX_AGE_MAX_DATA_32 = 12
+OW_JINGJIE_MAX_AGE_MAX_DATA_33 = 200
+OW_JINGJIE_MAX_AGE_MAX_DATA_34 = 15
+OW_JINGJIE_MAX_AGE_MAX_DATA_35 = 15
+OW_JINGJIE_MAX_AGE_MAX_DATA_36 = 20
+OW_JINGJIE_MAX_AGE_MAX_DATA_37 = 1000
+
+OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_1 = 0.5
+OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_2 = 0.5
+OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_3 = 0.5
+OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_4 = 0.5
+OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_5 = 0.5
+OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_6 = 0.5
+OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_7 = 0.5
+OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_8 = 0.5
+OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_9 = 0.5
+OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_10 = 0.5
+OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_11 = 0.5
+OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_12 = 0.5
+OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_13 = 0.4
+OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_14 = 0.4
+OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_15 = 0.4
+OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_16 = 0.4
+OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_17 = 0.3
+OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_18 = 0.3
+OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_19 = 0.3
+OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_20 = 0.3
+OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_21 = 0.3
+OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_22 = 0.3
+OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_23 = 0.3
+OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_24 = 0.3
+OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_25 = 0.1
+OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_26 = 0.1
+OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_27 = 0.1
+OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_28 = 0.1
+OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_29 = 0.05
+OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_30 = 0.05
+OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_31 = 0.05
+OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_32 = 0.05
+OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_33 = 0.02
+OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_34 = 0.02
+OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_35 = 0.02
+OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_36 = 0.02
+OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_37 = 0.01
+
+OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_1 = 10
+OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_2 = 20
+OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_3 = 30
+OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_4 = 40
+OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_5 = 67
+OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_6 = 83
+OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_7 = 100
+OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_8 = 117
+OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_9 = 200
+OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_10 = 229
+OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_11 = 257
+OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_12 = 286
+OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_13 = 500
+OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_14 = 563
+OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_15 = 625
+OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_16 = 688
+OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_17 = 1222
+OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_18 = 1333
+OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_19 = 1444
+OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_20 = 1555
+OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_21 = 2800
+OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_22 = 3000
+OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_23 = 3200
+OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_24 = 3400
+OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_25 = 6000
+OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_26 = 6417
+OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_27 = 6833
+OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_28 = 7250
+OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_29 = 11333
+OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_30 = 12000
+OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_31 = 12667
+OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_32 = 13333
+OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_33 = 20000
+OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_34 = 30000
+OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_35 = 40000
+OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_36 = 50000
+OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_37 = 40000
+
+
+OW_JINGJIE_MIN_MINGLI_DATA_VALUE = {
+	if = {
+		limit = { var:OW_jingjie = 1 }
+		value = OW_JINGJIE_MIN_MINGLI_DATA_1
+	}
+	if = {
+		limit = { var:OW_jingjie = 2 }
+		value = OW_JINGJIE_MIN_MINGLI_DATA_2
+	}
+	if = {
+		limit = { var:OW_jingjie = 3 }
+		value = OW_JINGJIE_MIN_MINGLI_DATA_3
+	}
+	if = {
+		limit = { var:OW_jingjie = 4 }
+		value = OW_JINGJIE_MIN_MINGLI_DATA_4
+	}
+	if = {
+		limit = { var:OW_jingjie = 5 }
+		value = OW_JINGJIE_MIN_MINGLI_DATA_5
+	}
+	if = {
+		limit = { var:OW_jingjie = 6 }
+		value = OW_JINGJIE_MIN_MINGLI_DATA_6
+	}
+	if = {
+		limit = { var:OW_jingjie = 7 }
+		value = OW_JINGJIE_MIN_MINGLI_DATA_7
+	}
+	if = {
+		limit = { var:OW_jingjie = 8 }
+		value = OW_JINGJIE_MIN_MINGLI_DATA_8
+	}
+	if = {
+		limit = { var:OW_jingjie = 9 }
+		value = OW_JINGJIE_MIN_MINGLI_DATA_9
+	}
+	if = {
+		limit = { var:OW_jingjie = 10 }
+		value = OW_JINGJIE_MIN_MINGLI_DATA_10
+	}
+	if = {
+		limit = { var:OW_jingjie = 11 }
+		value = OW_JINGJIE_MIN_MINGLI_DATA_11
+	}
+	if = {
+		limit = { var:OW_jingjie = 12 }
+		value = OW_JINGJIE_MIN_MINGLI_DATA_12
+	}
+	if = {
+		limit = { var:OW_jingjie = 13 }
+		value = OW_JINGJIE_MIN_MINGLI_DATA_13
+	}
+	if = {
+		limit = { var:OW_jingjie = 14 }
+		value = OW_JINGJIE_MIN_MINGLI_DATA_14
+	}
+	if = {
+		limit = { var:OW_jingjie = 15 }
+		value = OW_JINGJIE_MIN_MINGLI_DATA_15
+	}
+	if = {
+		limit = { var:OW_jingjie = 16 }
+		value = OW_JINGJIE_MIN_MINGLI_DATA_16
+	}
+	if = {
+		limit = { var:OW_jingjie = 17 }
+		value = OW_JINGJIE_MIN_MINGLI_DATA_17
+	}
+	if = {
+		limit = { var:OW_jingjie = 18 }
+		value = OW_JINGJIE_MIN_MINGLI_DATA_18
+	}
+	if = {
+		limit = { var:OW_jingjie = 19 }
+		value = OW_JINGJIE_MIN_MINGLI_DATA_19
+	}
+	if = {
+		limit = { var:OW_jingjie = 20 }
+		value = OW_JINGJIE_MIN_MINGLI_DATA_20
+	}
+	if = {
+		limit = { var:OW_jingjie = 21 }
+		value = OW_JINGJIE_MIN_MINGLI_DATA_21
+	}
+	if = {
+		limit = { var:OW_jingjie = 22 }
+		value = OW_JINGJIE_MIN_MINGLI_DATA_22
+	}
+	if = {
+		limit = { var:OW_jingjie = 23 }
+		value = OW_JINGJIE_MIN_MINGLI_DATA_23
+	}
+	if = {
+		limit = { var:OW_jingjie = 24 }
+		value = OW_JINGJIE_MIN_MINGLI_DATA_24
+	}
+	if = {
+		limit = { var:OW_jingjie = 25 }
+		value = OW_JINGJIE_MIN_MINGLI_DATA_25
+	}
+	if = {
+		limit = { var:OW_jingjie = 26 }
+		value = OW_JINGJIE_MIN_MINGLI_DATA_26
+	}
+	if = {
+		limit = { var:OW_jingjie = 27 }
+		value = OW_JINGJIE_MIN_MINGLI_DATA_27
+	}
+	if = {
+		limit = { var:OW_jingjie = 28 }
+		value = OW_JINGJIE_MIN_MINGLI_DATA_28
+	}
+	if = {
+		limit = { var:OW_jingjie = 29 }
+		value = OW_JINGJIE_MIN_MINGLI_DATA_29
+	}
+	if = {
+		limit = { var:OW_jingjie = 30 }
+		value = OW_JINGJIE_MIN_MINGLI_DATA_30
+	}
+	if = {
+		limit = { var:OW_jingjie = 31 }
+		value = OW_JINGJIE_MIN_MINGLI_DATA_31
+	}
+	if = {
+		limit = { var:OW_jingjie = 32 }
+		value = OW_JINGJIE_MIN_MINGLI_DATA_32
+	}
+	if = {
+		limit = { var:OW_jingjie = 33 }
+		value = OW_JINGJIE_MIN_MINGLI_DATA_33
+	}
+	if = {
+		limit = { var:OW_jingjie = 34 }
+		value = OW_JINGJIE_MIN_MINGLI_DATA_34
+	}
+	if = {
+		limit = { var:OW_jingjie = 35 }
+		value = OW_JINGJIE_MIN_MINGLI_DATA_35
+	}
+	if = {
+		limit = { var:OW_jingjie = 36 }
+		value = OW_JINGJIE_MIN_MINGLI_DATA_36
+	}
+	if = {
+		limit = { var:OW_jingjie = 37 }
+		value = OW_JINGJIE_MIN_MINGLI_DATA_37
+	}
+}
+
+OW_JINGJIE_MAX_MINGLI_DATA_VALUE = {
+	if = {
+		limit = { var:OW_jingjie = 1 }
+		value = OW_JINGJIE_MAX_MINGLI_DATA_1
+	}
+	if = {
+		limit = { var:OW_jingjie = 2 }
+		value = OW_JINGJIE_MAX_MINGLI_DATA_2
+	}
+	if = {
+		limit = { var:OW_jingjie = 3 }
+		value = OW_JINGJIE_MAX_MINGLI_DATA_3
+	}
+	if = {
+		limit = { var:OW_jingjie = 4 }
+		value = OW_JINGJIE_MAX_MINGLI_DATA_4
+	}
+	if = {
+		limit = { var:OW_jingjie = 5 }
+		value = OW_JINGJIE_MAX_MINGLI_DATA_5
+	}
+	if = {
+		limit = { var:OW_jingjie = 6 }
+		value = OW_JINGJIE_MAX_MINGLI_DATA_6
+	}
+	if = {
+		limit = { var:OW_jingjie = 7 }
+		value = OW_JINGJIE_MAX_MINGLI_DATA_7
+	}
+	if = {
+		limit = { var:OW_jingjie = 8 }
+		value = OW_JINGJIE_MAX_MINGLI_DATA_8
+	}
+	if = {
+		limit = { var:OW_jingjie = 9 }
+		value = OW_JINGJIE_MAX_MINGLI_DATA_9
+	}
+	if = {
+		limit = { var:OW_jingjie = 10 }
+		value = OW_JINGJIE_MAX_MINGLI_DATA_10
+	}
+	if = {
+		limit = { var:OW_jingjie = 11 }
+		value = OW_JINGJIE_MAX_MINGLI_DATA_11
+	}
+	if = {
+		limit = { var:OW_jingjie = 12 }
+		value = OW_JINGJIE_MAX_MINGLI_DATA_12
+	}
+	if = {
+		limit = { var:OW_jingjie = 13 }
+		value = OW_JINGJIE_MAX_MINGLI_DATA_13
+	}
+	if = {
+		limit = { var:OW_jingjie = 14 }
+		value = OW_JINGJIE_MAX_MINGLI_DATA_14
+	}
+	if = {
+		limit = { var:OW_jingjie = 15 }
+		value = OW_JINGJIE_MAX_MINGLI_DATA_15
+	}
+	if = {
+		limit = { var:OW_jingjie = 16 }
+		value = OW_JINGJIE_MAX_MINGLI_DATA_16
+	}
+	if = {
+		limit = { var:OW_jingjie = 17 }
+		value = OW_JINGJIE_MAX_MINGLI_DATA_17
+	}
+	if = {
+		limit = { var:OW_jingjie = 18 }
+		value = OW_JINGJIE_MAX_MINGLI_DATA_18
+	}
+	if = {
+		limit = { var:OW_jingjie = 19 }
+		value = OW_JINGJIE_MAX_MINGLI_DATA_19
+	}
+	if = {
+		limit = { var:OW_jingjie = 20 }
+		value = OW_JINGJIE_MAX_MINGLI_DATA_20
+	}
+	if = {
+		limit = { var:OW_jingjie = 21 }
+		value = OW_JINGJIE_MAX_MINGLI_DATA_21
+	}
+	if = {
+		limit = { var:OW_jingjie = 22 }
+		value = OW_JINGJIE_MAX_MINGLI_DATA_22
+	}
+	if = {
+		limit = { var:OW_jingjie = 23 }
+		value = OW_JINGJIE_MAX_MINGLI_DATA_23
+	}
+	if = {
+		limit = { var:OW_jingjie = 24 }
+		value = OW_JINGJIE_MAX_MINGLI_DATA_24
+	}
+	if = {
+		limit = { var:OW_jingjie = 25 }
+		value = OW_JINGJIE_MAX_MINGLI_DATA_25
+	}
+	if = {
+		limit = { var:OW_jingjie = 26 }
+		value = OW_JINGJIE_MAX_MINGLI_DATA_26
+	}
+	if = {
+		limit = { var:OW_jingjie = 27 }
+		value = OW_JINGJIE_MAX_MINGLI_DATA_27
+	}
+	if = {
+		limit = { var:OW_jingjie = 28 }
+		value = OW_JINGJIE_MAX_MINGLI_DATA_28
+	}
+	if = {
+		limit = { var:OW_jingjie = 29 }
+		value = OW_JINGJIE_MAX_MINGLI_DATA_29
+	}
+	if = {
+		limit = { var:OW_jingjie = 30 }
+		value = OW_JINGJIE_MAX_MINGLI_DATA_30
+	}
+	if = {
+		limit = { var:OW_jingjie = 31 }
+		value = OW_JINGJIE_MAX_MINGLI_DATA_31
+	}
+	if = {
+		limit = { var:OW_jingjie = 32 }
+		value = OW_JINGJIE_MAX_MINGLI_DATA_32
+	}
+	if = {
+		limit = { var:OW_jingjie = 33 }
+		value = OW_JINGJIE_MAX_MINGLI_DATA_33
+	}
+	if = {
+		limit = { var:OW_jingjie = 34 }
+		value = OW_JINGJIE_MAX_MINGLI_DATA_34
+	}
+	if = {
+		limit = { var:OW_jingjie = 35 }
+		value = OW_JINGJIE_MAX_MINGLI_DATA_35
+	}
+	if = {
+		limit = { var:OW_jingjie = 36 }
+		value = OW_JINGJIE_MAX_MINGLI_DATA_36
+	}
+	if = {
+		limit = { var:OW_jingjie = 37 }
+		value = OW_JINGJIE_MAX_MINGLI_DATA_37
+	}
+}
+
+OW_JINGJIE_MIN_AGE_MAX_DATA_VALUE = {
+	if = {
+		limit = { var:OW_jingjie = 1 }
+		value = OW_JINGJIE_MIN_AGE_MAX_DATA_1
+	}
+	if = {
+		limit = { var:OW_jingjie = 2 }
+		value = OW_JINGJIE_MIN_AGE_MAX_DATA_2
+	}
+	if = {
+		limit = { var:OW_jingjie = 3 }
+		value = OW_JINGJIE_MIN_AGE_MAX_DATA_3
+	}
+	if = {
+		limit = { var:OW_jingjie = 4 }
+		value = OW_JINGJIE_MIN_AGE_MAX_DATA_4
+	}
+	if = {
+		limit = { var:OW_jingjie = 5 }
+		value = OW_JINGJIE_MIN_AGE_MAX_DATA_5
+	}
+	if = {
+		limit = { var:OW_jingjie = 6 }
+		value = OW_JINGJIE_MIN_AGE_MAX_DATA_6
+	}
+	if = {
+		limit = { var:OW_jingjie = 7 }
+		value = OW_JINGJIE_MIN_AGE_MAX_DATA_7
+	}
+	if = {
+		limit = { var:OW_jingjie = 8 }
+		value = OW_JINGJIE_MIN_AGE_MAX_DATA_8
+	}
+	if = {
+		limit = { var:OW_jingjie = 9 }
+		value = OW_JINGJIE_MIN_AGE_MAX_DATA_9
+	}
+	if = {
+		limit = { var:OW_jingjie = 10 }
+		value = OW_JINGJIE_MIN_AGE_MAX_DATA_10
+	}
+	if = {
+		limit = { var:OW_jingjie = 11 }
+		value = OW_JINGJIE_MIN_AGE_MAX_DATA_11
+	}
+	if = {
+		limit = { var:OW_jingjie = 12 }
+		value = OW_JINGJIE_MIN_AGE_MAX_DATA_12
+	}
+	if = {
+		limit = { var:OW_jingjie = 13 }
+		value = OW_JINGJIE_MIN_AGE_MAX_DATA_13
+	}
+	if = {
+		limit = { var:OW_jingjie = 14 }
+		value = OW_JINGJIE_MIN_AGE_MAX_DATA_14
+	}
+	if = {
+		limit = { var:OW_jingjie = 15 }
+		value = OW_JINGJIE_MIN_AGE_MAX_DATA_15
+	}
+	if = {
+		limit = { var:OW_jingjie = 16 }
+		value = OW_JINGJIE_MIN_AGE_MAX_DATA_16
+	}
+	if = {
+		limit = { var:OW_jingjie = 17 }
+		value = OW_JINGJIE_MIN_AGE_MAX_DATA_17
+	}
+	if = {
+		limit = { var:OW_jingjie = 18 }
+		value = OW_JINGJIE_MIN_AGE_MAX_DATA_18
+	}
+	if = {
+		limit = { var:OW_jingjie = 19 }
+		value = OW_JINGJIE_MIN_AGE_MAX_DATA_19
+	}
+	if = {
+		limit = { var:OW_jingjie = 20 }
+		value = OW_JINGJIE_MIN_AGE_MAX_DATA_20
+	}
+	if = {
+		limit = { var:OW_jingjie = 21 }
+		value = OW_JINGJIE_MIN_AGE_MAX_DATA_21
+	}
+	if = {
+		limit = { var:OW_jingjie = 22 }
+		value = OW_JINGJIE_MIN_AGE_MAX_DATA_22
+	}
+	if = {
+		limit = { var:OW_jingjie = 23 }
+		value = OW_JINGJIE_MIN_AGE_MAX_DATA_23
+	}
+	if = {
+		limit = { var:OW_jingjie = 24 }
+		value = OW_JINGJIE_MIN_AGE_MAX_DATA_24
+	}
+	if = {
+		limit = { var:OW_jingjie = 25 }
+		value = OW_JINGJIE_MIN_AGE_MAX_DATA_25
+	}
+	if = {
+		limit = { var:OW_jingjie = 26 }
+		value = OW_JINGJIE_MIN_AGE_MAX_DATA_26
+	}
+	if = {
+		limit = { var:OW_jingjie = 27 }
+		value = OW_JINGJIE_MIN_AGE_MAX_DATA_27
+	}
+	if = {
+		limit = { var:OW_jingjie = 28 }
+		value = OW_JINGJIE_MIN_AGE_MAX_DATA_28
+	}
+	if = {
+		limit = { var:OW_jingjie = 29 }
+		value = OW_JINGJIE_MIN_AGE_MAX_DATA_29
+	}
+	if = {
+		limit = { var:OW_jingjie = 30 }
+		value = OW_JINGJIE_MIN_AGE_MAX_DATA_30
+	}
+	if = {
+		limit = { var:OW_jingjie = 31 }
+		value = OW_JINGJIE_MIN_AGE_MAX_DATA_31
+	}
+	if = {
+		limit = { var:OW_jingjie = 32 }
+		value = OW_JINGJIE_MIN_AGE_MAX_DATA_32
+	}
+	if = {
+		limit = { var:OW_jingjie = 33 }
+		value = OW_JINGJIE_MIN_AGE_MAX_DATA_33
+	}
+	if = {
+		limit = { var:OW_jingjie = 34 }
+		value = OW_JINGJIE_MIN_AGE_MAX_DATA_34
+	}
+	if = {
+		limit = { var:OW_jingjie = 35 }
+		value = OW_JINGJIE_MIN_AGE_MAX_DATA_35
+	}
+	if = {
+		limit = { var:OW_jingjie = 36 }
+		value = OW_JINGJIE_MIN_AGE_MAX_DATA_36
+	}
+	if = {
+		limit = { var:OW_jingjie = 37 }
+		value = OW_JINGJIE_MIN_AGE_MAX_DATA_37
+	}
+}
+OW_JINGJIE_MAX_AGE_MAX_DATA_VALUE = {
+	if = {
+		limit = { var:OW_jingjie = 1 }
+		value = OW_JINGJIE_MAX_AGE_MAX_DATA_1
+	}
+	if = {
+		limit = { var:OW_jingjie = 2 }
+		value = OW_JINGJIE_MAX_AGE_MAX_DATA_2
+	}
+	if = {
+		limit = { var:OW_jingjie = 3 }
+		value = OW_JINGJIE_MAX_AGE_MAX_DATA_3
+	}
+	if = {
+		limit = { var:OW_jingjie = 4 }
+		value = OW_JINGJIE_MAX_AGE_MAX_DATA_4
+	}
+	if = {
+		limit = { var:OW_jingjie = 5 }
+		value = OW_JINGJIE_MAX_AGE_MAX_DATA_5
+	}
+	if = {
+		limit = { var:OW_jingjie = 6 }
+		value = OW_JINGJIE_MAX_AGE_MAX_DATA_6
+	}
+	if = {
+		limit = { var:OW_jingjie = 7 }
+		value = OW_JINGJIE_MAX_AGE_MAX_DATA_7
+	}
+	if = {
+		limit = { var:OW_jingjie = 8 }
+		value = OW_JINGJIE_MAX_AGE_MAX_DATA_8
+	}
+	if = {
+		limit = { var:OW_jingjie = 9 }
+		value = OW_JINGJIE_MAX_AGE_MAX_DATA_9
+	}
+	if = {
+		limit = { var:OW_jingjie = 10 }
+		value = OW_JINGJIE_MAX_AGE_MAX_DATA_10
+	}
+	if = {
+		limit = { var:OW_jingjie = 11 }
+		value = OW_JINGJIE_MAX_AGE_MAX_DATA_11
+	}
+	if = {
+		limit = { var:OW_jingjie = 12 }
+		value = OW_JINGJIE_MAX_AGE_MAX_DATA_12
+	}
+	if = {
+		limit = { var:OW_jingjie = 13 }
+		value = OW_JINGJIE_MAX_AGE_MAX_DATA_13
+	}
+	if = {
+		limit = { var:OW_jingjie = 14 }
+		value = OW_JINGJIE_MAX_AGE_MAX_DATA_14
+	}
+	if = {
+		limit = { var:OW_jingjie = 15 }
+		value = OW_JINGJIE_MAX_AGE_MAX_DATA_15
+	}
+	if = {
+		limit = { var:OW_jingjie = 16 }
+		value = OW_JINGJIE_MAX_AGE_MAX_DATA_16
+	}
+	if = {
+		limit = { var:OW_jingjie = 17 }
+		value = OW_JINGJIE_MAX_AGE_MAX_DATA_17
+	}
+	if = {
+		limit = { var:OW_jingjie = 18 }
+		value = OW_JINGJIE_MAX_AGE_MAX_DATA_18
+	}
+	if = {
+		limit = { var:OW_jingjie = 19 }
+		value = OW_JINGJIE_MAX_AGE_MAX_DATA_19
+	}
+	if = {
+		limit = { var:OW_jingjie = 20 }
+		value = OW_JINGJIE_MAX_AGE_MAX_DATA_20
+	}
+	if = {
+		limit = { var:OW_jingjie = 21 }
+		value = OW_JINGJIE_MAX_AGE_MAX_DATA_21
+	}
+	if = {
+		limit = { var:OW_jingjie = 22 }
+		value = OW_JINGJIE_MAX_AGE_MAX_DATA_22
+	}
+	if = {
+		limit = { var:OW_jingjie = 23 }
+		value = OW_JINGJIE_MAX_AGE_MAX_DATA_23
+	}
+	if = {
+		limit = { var:OW_jingjie = 24 }
+		value = OW_JINGJIE_MAX_AGE_MAX_DATA_24
+	}
+	if = {
+		limit = { var:OW_jingjie = 25 }
+		value = OW_JINGJIE_MAX_AGE_MAX_DATA_25
+	}
+	if = {
+		limit = { var:OW_jingjie = 26 }
+		value = OW_JINGJIE_MAX_AGE_MAX_DATA_26
+	}
+	if = {
+		limit = { var:OW_jingjie = 27 }
+		value = OW_JINGJIE_MAX_AGE_MAX_DATA_27
+	}
+	if = {
+		limit = { var:OW_jingjie = 28 }
+		value = OW_JINGJIE_MAX_AGE_MAX_DATA_28
+	}
+	if = {
+		limit = { var:OW_jingjie = 29 }
+		value = OW_JINGJIE_MAX_AGE_MAX_DATA_29
+	}
+	if = {
+		limit = { var:OW_jingjie = 30 }
+		value = OW_JINGJIE_MAX_AGE_MAX_DATA_30
+	}
+	if = {
+		limit = { var:OW_jingjie = 31 }
+		value = OW_JINGJIE_MAX_AGE_MAX_DATA_31
+	}
+	if = {
+		limit = { var:OW_jingjie = 32 }
+		value = OW_JINGJIE_MAX_AGE_MAX_DATA_32
+	}
+	if = {
+		limit = { var:OW_jingjie = 33 }
+		value = OW_JINGJIE_MAX_AGE_MAX_DATA_33
+	}
+	if = {
+		limit = { var:OW_jingjie = 34 }
+		value = OW_JINGJIE_MAX_AGE_MAX_DATA_34
+	}
+	if = {
+		limit = { var:OW_jingjie = 35 }
+		value = OW_JINGJIE_MAX_AGE_MAX_DATA_35
+	}
+	if = {
+		limit = { var:OW_jingjie = 36 }
+		value = OW_JINGJIE_MAX_AGE_MAX_DATA_36
+	}
+	if = {
+		limit = { var:OW_jingjie = 37 }
+		value = OW_JINGJIE_MAX_AGE_MAX_DATA_37
+	}
+}
+
+OW_JINGJIE_MINGLI_SUANJIAN_DATA_VALUE = {
+	value = var:OW_mingli
+	if = {
+		limit = { var:OW_jingjie = 1 }
+		multiply = OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_1
+		add = OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_1
+	}
+	if = {
+		limit = { var:OW_jingjie = 2 }
+		multiply = OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_2
+		add = OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_2
+	}
+	if = {
+		limit = { var:OW_jingjie = 3 }
+		multiply = OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_3
+		add = OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_3
+	}
+	if = {
+		limit = { var:OW_jingjie = 4 }
+		multiply = OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_4
+		add = OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_4
+	}
+	if = {
+		limit = { var:OW_jingjie = 5 }
+		multiply = OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_5
+		add = OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_5
+	}
+	if = {
+		limit = { var:OW_jingjie = 6 }
+		multiply = OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_6
+		add = OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_6
+	}
+	if = {
+		limit = { var:OW_jingjie = 7 }
+		multiply = OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_7
+		add = OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_7
+	}
+	if = {
+		limit = { var:OW_jingjie = 8 }
+		multiply = OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_8
+		add = OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_8
+	}
+	if = {
+		limit = { var:OW_jingjie = 9 }
+		multiply = OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_9
+		add = OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_9
+	}
+	if = {
+		limit = { var:OW_jingjie = 10 }
+		multiply = OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_10
+		add = OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_10
+	}
+	if = {
+		limit = { var:OW_jingjie = 11 }
+		multiply = OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_11
+		add = OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_11
+	}
+	if = {
+		limit = { var:OW_jingjie = 12 }
+		multiply = OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_12
+		add = OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_12
+	}
+	if = {
+		limit = { var:OW_jingjie = 13 }
+		multiply = OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_13
+		add = OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_13
+	}
+	if = {
+		limit = { var:OW_jingjie = 14 }
+		multiply = OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_14
+		add = OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_14
+	}
+	if = {
+		limit = { var:OW_jingjie = 15 }
+		multiply = OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_15
+		add = OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_15
+	}
+	if = {
+		limit = { var:OW_jingjie = 16 }
+		multiply = OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_16
+		add = OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_16
+	}
+	if = {
+		limit = { var:OW_jingjie = 17 }
+		multiply = OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_17
+		add = OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_17
+	}
+	if = {
+		limit = { var:OW_jingjie = 18 }
+		multiply = OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_18
+		add = OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_18
+	}
+	if = {
+		limit = { var:OW_jingjie = 19 }
+		multiply = OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_19
+		add = OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_19
+	}
+	if = {
+		limit = { var:OW_jingjie = 20 }
+		multiply = OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_20
+		add = OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_20
+	}
+	if = {
+		limit = { var:OW_jingjie = 21 }
+		multiply = OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_21
+		add = OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_21
+	}
+	if = {
+		limit = { var:OW_jingjie = 22 }
+		multiply = OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_22
+		add = OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_22
+	}
+	if = {
+		limit = { var:OW_jingjie = 23 }
+		multiply = OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_23
+		add = OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_23
+	}
+	if = {
+		limit = { var:OW_jingjie = 24 }
+		multiply = OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_24
+		add = OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_24
+	}
+	if = {
+		limit = { var:OW_jingjie = 25 }
+		multiply = OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_25
+		add = OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_25
+	}
+	if = {
+		limit = { var:OW_jingjie = 26 }
+		multiply = OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_26
+		add = OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_26
+	}
+	if = {
+		limit = { var:OW_jingjie = 27 }
+		multiply = OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_27
+		add = OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_27
+	}
+	if = {
+		limit = { var:OW_jingjie = 28 }
+		multiply = OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_28
+		add = OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_28
+	}
+	if = {
+		limit = { var:OW_jingjie = 29 }
+		multiply = OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_29
+		add = OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_29
+	}
+	if = {
+		limit = { var:OW_jingjie = 30 }
+		multiply = OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_30
+		add = OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_30
+	}
+	if = {
+		limit = { var:OW_jingjie = 31 }
+		multiply = OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_31
+		add = OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_31
+	}
+	if = {
+		limit = { var:OW_jingjie = 32 }
+		multiply = OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_32
+		add = OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_32
+	}
+	if = {
+		limit = { var:OW_jingjie = 33 }
+		multiply = OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_33
+		add = OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_33
+	}
+	if = {
+		limit = { var:OW_jingjie = 34 }
+		multiply = OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_34
+		add = OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_34
+	}
+	if = {
+		limit = { var:OW_jingjie = 35 }
+		multiply = OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_35
+		add = OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_35
+	}
+	if = {
+		limit = { var:OW_jingjie = 36 }
+		multiply = OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_36
+		add = OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_36
+	}
+	if = {
+		limit = { var:OW_jingjie = 37 }
+		multiply = OW_JINGJIE_MINGLI_SUANJIAN_BEILV_DATA_37
+		add = OW_JINGJIE_MINGLI_MIN_SUANJIAN_DATA_37
+	}
+}

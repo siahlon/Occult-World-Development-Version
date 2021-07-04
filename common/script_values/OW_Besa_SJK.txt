@@ -1,0 +1,847 @@
+﻿#每年感悟
+OW_Base_ganwu_1 = 2
+OW_Base_ganwu_2 = 4
+OW_Base_ganwu_3 = 6
+OW_Base_ganwu_4 = 8
+OW_Base_ganwu_5 = 10
+OW_Base_ganwu_6 = 12
+OW_Base_ganwu_7 = 15
+OW_Base_ganwu_8 = 20
+OW_Base_ganwu_9 = 50
+#每年历练
+OW_Base_lilian_1 = 10
+OW_Base_lilian_2 = 20
+OW_Base_lilian_3 = 30
+OW_Base_lilian_4 = 40
+OW_Base_lilian_5 = 60
+OW_Base_lilian_6 = 80
+OW_Base_lilian_7 = 100
+OW_Base_lilian_8 = 120
+OW_Base_lilian_9 = 150
+#心境突破倍率
+OW_Base_xinjing_beilv_1 = 1
+OW_Base_xinjing_beilv_2 = 2
+OW_Base_xinjing_beilv_3 = 3
+OW_Base_xinjing_beilv_4 = 4
+OW_Base_xinjing_beilv_5 = 6
+OW_Base_xinjing_beilv_6 = 8
+OW_Base_xinjing_beilv_7 = 10
+OW_Base_xinjing_beilv_8 = 15
+OW_Base_xinjing_beilv_9 = 20
+#心境突破所需最低寿元
+OW_Base_xinjing_shouyuan_1 = 10
+OW_Base_xinjing_shouyuan_2 = 20
+OW_Base_xinjing_shouyuan_3 = 40
+OW_Base_xinjing_shouyuan_4 = 80
+OW_Base_xinjing_shouyuan_5 = 160
+OW_Base_xinjing_shouyuan_6 = 240
+OW_Base_xinjing_shouyuan_7 = 360
+OW_Base_xinjing_shouyuan_8 = 400
+OW_Base_xinjing_shouyuan_9 = 500
+
+
+#境界突破灵力上限基础值
+OW_Beas_lingli_1 = 10
+OW_Beas_lingli_2 = 12
+OW_Beas_lingli_3 = 15
+OW_Beas_lingli_4 = 20
+OW_Beas_lingli_5 = 40
+OW_Beas_lingli_6 = 42
+OW_Beas_lingli_7 = 45
+OW_Beas_lingli_8 = 50
+OW_Beas_lingli_9 = 100
+OW_Beas_lingli_10 = 120
+OW_Beas_lingli_11 = 150
+OW_Beas_lingli_12 = 200
+OW_Beas_lingli_13 = 400
+OW_Beas_lingli_14 = 420
+OW_Beas_lingli_15 = 450
+OW_Beas_lingli_16 = 500
+OW_Beas_lingli_17 = 1000
+OW_Beas_lingli_18 = 1200
+OW_Beas_lingli_19 = 1500
+OW_Beas_lingli_20 = 2000
+OW_Beas_lingli_21 = 4000
+OW_Beas_lingli_22 = 4200
+OW_Beas_lingli_23 = 4500
+OW_Beas_lingli_24 = 5000
+OW_Beas_lingli_25 = 10000
+OW_Beas_lingli_26 = 12000
+OW_Beas_lingli_27 = 15000
+OW_Beas_lingli_28 = 20000
+OW_Beas_lingli_29 = 30000
+OW_Beas_lingli_30 = 40000
+OW_Beas_lingli_31 = 50000
+OW_Beas_lingli_32 = 60000
+OW_Beas_lingli_33 = 70000
+OW_Beas_lingli_34 = 80000
+OW_Beas_lingli_35 = 90000
+OW_Beas_lingli_36 = 100000
+
+#每年修炼灵力上限
+OW_Beas_xiulian_lingli_1 = 1
+OW_Beas_xiulian_lingli_2 = 2
+OW_Beas_xiulian_lingli_3 = 3
+OW_Beas_xiulian_lingli_4 = 4
+OW_Beas_xiulian_lingli_5 = 5
+OW_Beas_xiulian_lingli_6 = 6
+OW_Beas_xiulian_lingli_7 = 7
+OW_Beas_xiulian_lingli_8 = 8
+OW_Beas_xiulian_lingli_9 = 9
+OW_Beas_xiulian_lingli_10 = 10
+OW_Beas_xiulian_lingli_11 = 11
+OW_Beas_xiulian_lingli_12 = 12
+OW_Beas_xiulian_lingli_13 = 13
+OW_Beas_xiulian_lingli_14 = 14
+OW_Beas_xiulian_lingli_15 = 15
+OW_Beas_xiulian_lingli_16 = 16
+OW_Beas_xiulian_lingli_17 = 17
+OW_Beas_xiulian_lingli_18 = 18
+OW_Beas_xiulian_lingli_19 = 19
+OW_Beas_xiulian_lingli_20 = 20
+OW_Beas_xiulian_lingli_21 = 21
+OW_Beas_xiulian_lingli_22 = 22
+OW_Beas_xiulian_lingli_23 = 23
+OW_Beas_xiulian_lingli_24 = 24
+OW_Beas_xiulian_lingli_25 = 26
+OW_Beas_xiulian_lingli_26 = 28
+OW_Beas_xiulian_lingli_27 = 30
+OW_Beas_xiulian_lingli_28 = 32
+OW_Beas_xiulian_lingli_29 = 35
+OW_Beas_xiulian_lingli_30 = 40
+OW_Beas_xiulian_lingli_31 = 45
+OW_Beas_xiulian_lingli_32 = 50
+OW_Beas_xiulian_lingli_33 = 55
+OW_Beas_xiulian_lingli_34 = 60
+OW_Beas_xiulian_lingli_35 = 75
+OW_Beas_xiulian_lingli_36 = 90
+OW_Beas_xiulian_lingli_37 = 100
+
+#每年心境提供灵力上限
+OW_Beas_xinjing_lingli_1 = 2
+OW_Beas_xinjing_lingli_2 = 4
+OW_Beas_xinjing_lingli_3 = 6
+OW_Beas_xinjing_lingli_4 = 8
+OW_Beas_xinjing_lingli_5 = 10
+OW_Beas_xinjing_lingli_6 = 12
+OW_Beas_xinjing_lingli_7 = 14
+OW_Beas_xinjing_lingli_8 = 16
+OW_Beas_xinjing_lingli_9 = 18
+OW_Beas_xinjing_lingli_10 = 20
+OW_Beas_xinjing_lingli_11 = 22
+OW_Beas_xinjing_lingli_12 = 24
+OW_Beas_xinjing_lingli_13 = 26
+OW_Beas_xinjing_lingli_14 = 28
+OW_Beas_xinjing_lingli_15 = 30
+OW_Beas_xinjing_lingli_16 = 32
+OW_Beas_xinjing_lingli_17 = 34
+OW_Beas_xinjing_lingli_18 = 36
+OW_Beas_xinjing_lingli_19 = 38
+OW_Beas_xinjing_lingli_20 = 40
+OW_Beas_xinjing_lingli_21 = 45
+OW_Beas_xinjing_lingli_22 = 50
+OW_Beas_xinjing_lingli_23 = 55
+OW_Beas_xinjing_lingli_24 = 60
+OW_Beas_xinjing_lingli_25 = 65
+OW_Beas_xinjing_lingli_26 = 70
+OW_Beas_xinjing_lingli_27 = 75
+OW_Beas_xinjing_lingli_28 = 80
+OW_Beas_xinjing_lingli_29 = 85
+OW_Beas_xinjing_lingli_30 = 90
+OW_Beas_xinjing_lingli_31 = 95
+OW_Beas_xinjing_lingli_32 = 100
+OW_Beas_xinjing_lingli_33 = 105
+OW_Beas_xinjing_lingli_34 = 110
+OW_Beas_xinjing_lingli_35 = 115
+OW_Beas_xinjing_lingli_36 = 120
+OW_Beas_xinjing_lingli_37 = 150
+
+#境界突破所需寿元
+OW_Beas_jingjie_shouyuan_1 = 2
+OW_Beas_jingjie_shouyuan_2 = 4
+OW_Beas_jingjie_shouyuan_3 = 6
+OW_Beas_jingjie_shouyuan_4 = 8
+OW_Beas_jingjie_shouyuan_5 = 10
+OW_Beas_jingjie_shouyuan_6 = 13
+OW_Beas_jingjie_shouyuan_7 = 16
+OW_Beas_jingjie_shouyuan_8 = 19
+OW_Beas_jingjie_shouyuan_9 = 22
+OW_Beas_jingjie_shouyuan_10 = 26
+OW_Beas_jingjie_shouyuan_11 = 30
+OW_Beas_jingjie_shouyuan_12 = 35
+OW_Beas_jingjie_shouyuan_13 = 40
+OW_Beas_jingjie_shouyuan_14 = 46
+OW_Beas_jingjie_shouyuan_15 = 51
+OW_Beas_jingjie_shouyuan_16 = 58
+OW_Beas_jingjie_shouyuan_17 = 66
+OW_Beas_jingjie_shouyuan_18 = 75
+OW_Beas_jingjie_shouyuan_19 = 85
+OW_Beas_jingjie_shouyuan_20 = 96
+OW_Beas_jingjie_shouyuan_21 = 108
+OW_Beas_jingjie_shouyuan_22 = 121
+OW_Beas_jingjie_shouyuan_23 = 135
+OW_Beas_jingjie_shouyuan_24 = 150
+OW_Beas_jingjie_shouyuan_25 = 166
+OW_Beas_jingjie_shouyuan_26 = 183
+OW_Beas_jingjie_shouyuan_27 = 201
+OW_Beas_jingjie_shouyuan_28 = 220
+OW_Beas_jingjie_shouyuan_29 = 240
+OW_Beas_jingjie_shouyuan_30 = 261
+OW_Beas_jingjie_shouyuan_31 = 283
+OW_Beas_jingjie_shouyuan_32 = 300
+OW_Beas_jingjie_shouyuan_33 = 350
+OW_Beas_jingjie_shouyuan_34 = 400
+OW_Beas_jingjie_shouyuan_35 = 450
+OW_Beas_jingjie_shouyuan_36 = 500
+
+#境界突破灵力上限附加值
+OW_Beas_jingjie_fujiazhi_1 = {	
+	value = OW_Beas_xiulian_lingli_1
+	multiply = OW_Beas_xinjing_lingli_1
+}
+OW_Beas_jingjie_fujiazhi_2 = {	
+	value = OW_Beas_xiulian_lingli_2
+	multiply = OW_Beas_xinjing_lingli_2
+}
+OW_Beas_jingjie_fujiazhi_3 = {	
+	value = OW_Beas_xiulian_lingli_3
+	multiply = OW_Beas_xinjing_lingli_3
+}
+OW_Beas_jingjie_fujiazhi_4 = {	
+	value = OW_Beas_xiulian_lingli_4
+	multiply = OW_Beas_xinjing_lingli_4
+}
+OW_Beas_jingjie_fujiazhi_5 = {	
+	value = OW_Beas_xiulian_lingli_5
+	multiply = OW_Beas_xinjing_lingli_5
+}
+OW_Beas_jingjie_fujiazhi_6 = {	
+	value = OW_Beas_xiulian_lingli_6
+	multiply = OW_Beas_xinjing_lingli_6
+}
+OW_Beas_jingjie_fujiazhi_7 = {	
+	value = OW_Beas_xiulian_lingli_7
+	multiply = OW_Beas_xinjing_lingli_7
+}
+OW_Beas_jingjie_fujiazhi_8 = {	
+	value = OW_Beas_xiulian_lingli_8
+	multiply = OW_Beas_xinjing_lingli_8
+}
+OW_Beas_jingjie_fujiazhi_9 = {	
+	value = OW_Beas_xiulian_lingli_9
+	multiply = OW_Beas_xinjing_lingli_9
+}
+OW_Beas_jingjie_fujiazhi_10 = {	
+	value = OW_Beas_xiulian_lingli_10
+	multiply = OW_Beas_xinjing_lingli_10
+}
+OW_Beas_jingjie_fujiazhi_11 = {	
+	value = OW_Beas_xiulian_lingli_11
+	multiply = OW_Beas_xinjing_lingli_11
+}
+OW_Beas_jingjie_fujiazhi_12 = {	
+	value = OW_Beas_xiulian_lingli_12
+	multiply = OW_Beas_xinjing_lingli_12
+}
+OW_Beas_jingjie_fujiazhi_13 = {	
+	value = OW_Beas_xiulian_lingli_13
+	multiply = OW_Beas_xinjing_lingli_13
+}
+OW_Beas_jingjie_fujiazhi_14 = {	
+	value = OW_Beas_xiulian_lingli_14
+	multiply = OW_Beas_xinjing_lingli_14
+}
+OW_Beas_jingjie_fujiazhi_15 = {	
+	value = OW_Beas_xiulian_lingli_15
+	multiply = OW_Beas_xinjing_lingli_15
+}
+OW_Beas_jingjie_fujiazhi_16 = {	
+	value = OW_Beas_xiulian_lingli_16
+	multiply = OW_Beas_xinjing_lingli_16
+}
+OW_Beas_jingjie_fujiazhi_17 = {	
+	value = OW_Beas_xiulian_lingli_17
+	multiply = OW_Beas_xinjing_lingli_17
+}
+OW_Beas_jingjie_fujiazhi_18 = {	
+	value = OW_Beas_xiulian_lingli_18
+	multiply = OW_Beas_xinjing_lingli_18
+}
+OW_Beas_jingjie_fujiazhi_19 = {	
+	value = OW_Beas_xiulian_lingli_19
+	multiply = OW_Beas_xinjing_lingli_19
+}
+OW_Beas_jingjie_fujiazhi_20 = {	
+	value = OW_Beas_xiulian_lingli_20
+	multiply = OW_Beas_xinjing_lingli_20
+}
+OW_Beas_jingjie_fujiazhi_21 = {	
+	value = OW_Beas_xiulian_lingli_21
+	multiply = OW_Beas_xinjing_lingli_21
+}
+OW_Beas_jingjie_fujiazhi_22 = {	
+	value = OW_Beas_xiulian_lingli_22
+	multiply = OW_Beas_xinjing_lingli_22
+}
+OW_Beas_jingjie_fujiazhi_23 = {	
+	value = OW_Beas_xiulian_lingli_23
+	multiply = OW_Beas_xinjing_lingli_23
+}
+OW_Beas_jingjie_fujiazhi_24 = {	
+	value = OW_Beas_xiulian_lingli_24
+	multiply = OW_Beas_xinjing_lingli_24
+}
+OW_Beas_jingjie_fujiazhi_25 = {	
+	value = OW_Beas_xiulian_lingli_25
+	multiply = OW_Beas_xinjing_lingli_25
+}
+OW_Beas_jingjie_fujiazhi_26 = {	
+	value = OW_Beas_xiulian_lingli_26
+	multiply = OW_Beas_xinjing_lingli_26
+}
+OW_Beas_jingjie_fujiazhi_27 = {	
+	value = OW_Beas_xiulian_lingli_27
+	multiply = OW_Beas_xinjing_lingli_27
+}
+OW_Beas_jingjie_fujiazhi_28 = {	
+	value = OW_Beas_xiulian_lingli_28
+	multiply = OW_Beas_xinjing_lingli_28
+}
+OW_Beas_jingjie_fujiazhi_29 = {	
+	value = OW_Beas_xiulian_lingli_29
+	multiply = OW_Beas_xinjing_lingli_29
+}
+OW_Beas_jingjie_fujiazhi_30 = {	
+	value = OW_Beas_xiulian_lingli_30
+	multiply = OW_Beas_xinjing_lingli_30
+}
+OW_Beas_jingjie_fujiazhi_31 = {	
+	value = OW_Beas_xiulian_lingli_31
+	multiply = OW_Beas_xinjing_lingli_31
+}
+OW_Beas_jingjie_fujiazhi_32 = {	
+	value = OW_Beas_xiulian_lingli_32
+	multiply = OW_Beas_xinjing_lingli_32
+}
+OW_Beas_jingjie_fujiazhi_33 = {	
+	value = OW_Beas_xiulian_lingli_33
+	multiply = OW_Beas_xinjing_lingli_33
+}
+OW_Beas_jingjie_fujiazhi_34 = {	
+	value = OW_Beas_xiulian_lingli_34
+	multiply = OW_Beas_xinjing_lingli_34
+}
+OW_Beas_jingjie_fujiazhi_35 = {	
+	value = OW_Beas_xiulian_lingli_35
+	multiply = OW_Beas_xinjing_lingli_35
+}
+OW_Beas_jingjie_fujiazhi_36 = {	
+	value = OW_Beas_xiulian_lingli_36
+	multiply = OW_Beas_xinjing_lingli_36
+}
+#境界突破所需灵力上限
+OW_Beas_jingjie_lingli_max_1 = {	
+	value = OW_Beas_lingli_1
+	add = {
+		value = OW_Beas_xiulian_lingli_1
+		add = OW_Beas_xinjing_lingli_1
+		multiply = OW_Beas_jingjie_shouyuan_1
+	}
+	add = OW_Beas_jingjie_fujiazhi_1
+}
+OW_Beas_jingjie_lingli_max_2 = {		
+	value = OW_Beas_xiulian_lingli_2	
+	add = OW_Beas_xinjing_lingli_2	
+	multiply = {	
+		value = OW_Beas_jingjie_shouyuan_2
+		subtract = OW_Beas_jingjie_shouyuan_1
+	}	
+	add = OW_Beas_jingjie_fujiazhi_2	
+	add = OW_Beas_lingli_2	
+	add = OW_Beas_jingjie_lingli_max_1	
+}
+OW_Beas_jingjie_lingli_max_3 = {		
+	value = OW_Beas_xiulian_lingli_3	
+	add = OW_Beas_xinjing_lingli_3	
+	multiply = {	
+		value = OW_Beas_jingjie_shouyuan_3
+		subtract = OW_Beas_jingjie_shouyuan_2
+	}	
+	add = OW_Beas_jingjie_fujiazhi_3	
+	add = OW_Beas_lingli_3	
+	add = OW_Beas_jingjie_lingli_max_2	
+}
+OW_Beas_jingjie_lingli_max_4 = {		
+	value = OW_Beas_xiulian_lingli_4	
+	add = OW_Beas_xinjing_lingli_4	
+	multiply = {	
+		value = OW_Beas_jingjie_shouyuan_4
+		subtract = OW_Beas_jingjie_shouyuan_3
+	}	
+	add = OW_Beas_jingjie_fujiazhi_4	
+	add = OW_Beas_lingli_4	
+	add = OW_Beas_jingjie_lingli_max_3	
+}
+OW_Beas_jingjie_lingli_max_5 = {		
+	value = OW_Beas_xiulian_lingli_5	
+	add = OW_Beas_xinjing_lingli_5	
+	multiply = {	
+		value = OW_Beas_jingjie_shouyuan_5
+		subtract = OW_Beas_jingjie_shouyuan_4
+	}	
+	add = OW_Beas_jingjie_fujiazhi_5	
+	add = OW_Beas_lingli_5	
+	add = OW_Beas_jingjie_lingli_max_4	
+}
+OW_Beas_jingjie_lingli_max_6 = {		
+	value = OW_Beas_xiulian_lingli_6	
+	add = OW_Beas_xinjing_lingli_6	
+	multiply = {	
+		value = OW_Beas_jingjie_shouyuan_6
+		subtract = OW_Beas_jingjie_shouyuan_5
+	}	
+	add = OW_Beas_jingjie_fujiazhi_6	
+	add = OW_Beas_lingli_6	
+	add = OW_Beas_jingjie_lingli_max_5	
+}
+OW_Beas_jingjie_lingli_max_7 = {		
+	value = OW_Beas_xiulian_lingli_7	
+	add = OW_Beas_xinjing_lingli_7	
+	multiply = {	
+		value = OW_Beas_jingjie_shouyuan_7
+		subtract = OW_Beas_jingjie_shouyuan_6
+	}	
+	add = OW_Beas_jingjie_fujiazhi_7	
+	add = OW_Beas_lingli_7	
+	add = OW_Beas_jingjie_lingli_max_6	
+}
+OW_Beas_jingjie_lingli_max_8 = {		
+	value = OW_Beas_xiulian_lingli_8	
+	add = OW_Beas_xinjing_lingli_8	
+	multiply = {	
+		value = OW_Beas_jingjie_shouyuan_8
+		subtract = OW_Beas_jingjie_shouyuan_7
+	}	
+	add = OW_Beas_jingjie_fujiazhi_8	
+	add = OW_Beas_lingli_8	
+	add = OW_Beas_jingjie_lingli_max_7	
+}
+OW_Beas_jingjie_lingli_max_9 = {		
+	value = OW_Beas_xiulian_lingli_9	
+	add = OW_Beas_xinjing_lingli_9	
+	multiply = {	
+		value = OW_Beas_jingjie_shouyuan_9
+		subtract = OW_Beas_jingjie_shouyuan_8
+	}	
+	add = OW_Beas_jingjie_fujiazhi_9	
+	add = OW_Beas_lingli_9	
+	add = OW_Beas_jingjie_lingli_max_8	
+}
+OW_Beas_jingjie_lingli_max_10 = {		
+	value = OW_Beas_xiulian_lingli_10	
+	add = OW_Beas_xinjing_lingli_10	
+	multiply = {	
+		value = OW_Beas_jingjie_shouyuan_10
+		subtract = OW_Beas_jingjie_shouyuan_9
+	}	
+	add = OW_Beas_jingjie_fujiazhi_10	
+	add = OW_Beas_lingli_10	
+	add = OW_Beas_jingjie_lingli_max_9	
+}
+OW_Beas_jingjie_lingli_max_11 = {		
+	value = OW_Beas_xiulian_lingli_11	
+	add = OW_Beas_xinjing_lingli_11	
+	multiply = {	
+		value = OW_Beas_jingjie_shouyuan_11
+		subtract = OW_Beas_jingjie_shouyuan_10
+	}	
+	add = OW_Beas_jingjie_fujiazhi_11	
+	add = OW_Beas_lingli_11	
+	add = OW_Beas_jingjie_lingli_max_10	
+}
+OW_Beas_jingjie_lingli_max_12 = {		
+	value = OW_Beas_xiulian_lingli_12	
+	add = OW_Beas_xinjing_lingli_12	
+	multiply = {	
+		value = OW_Beas_jingjie_shouyuan_12
+		subtract = OW_Beas_jingjie_shouyuan_11
+	}	
+	add = OW_Beas_jingjie_fujiazhi_12	
+	add = OW_Beas_lingli_12	
+	add = OW_Beas_jingjie_lingli_max_11	
+}
+OW_Beas_jingjie_lingli_max_13 = {		
+	value = OW_Beas_xiulian_lingli_13	
+	add = OW_Beas_xinjing_lingli_13	
+	multiply = {	
+		value = OW_Beas_jingjie_shouyuan_13
+		subtract = OW_Beas_jingjie_shouyuan_12
+	}	
+	add = OW_Beas_jingjie_fujiazhi_13	
+	add = OW_Beas_lingli_13	
+	add = OW_Beas_jingjie_lingli_max_12	
+}
+OW_Beas_jingjie_lingli_max_14 = {		
+	value = OW_Beas_xiulian_lingli_14	
+	add = OW_Beas_xinjing_lingli_14	
+	multiply = {	
+		value = OW_Beas_jingjie_shouyuan_14
+		subtract = OW_Beas_jingjie_shouyuan_13
+	}	
+	add = OW_Beas_jingjie_fujiazhi_14	
+	add = OW_Beas_lingli_14	
+	add = OW_Beas_jingjie_lingli_max_13	
+}
+OW_Beas_jingjie_lingli_max_15 = {		
+	value = OW_Beas_xiulian_lingli_15	
+	add = OW_Beas_xinjing_lingli_15	
+	multiply = {	
+		value = OW_Beas_jingjie_shouyuan_15
+		subtract = OW_Beas_jingjie_shouyuan_14
+	}	
+	add = OW_Beas_jingjie_fujiazhi_15	
+	add = OW_Beas_lingli_15	
+	add = OW_Beas_jingjie_lingli_max_14	
+}
+OW_Beas_jingjie_lingli_max_16 = {		
+	value = OW_Beas_xiulian_lingli_16	
+	add = OW_Beas_xinjing_lingli_16	
+	multiply = {	
+		value = OW_Beas_jingjie_shouyuan_16
+		subtract = OW_Beas_jingjie_shouyuan_15
+	}	
+	add = OW_Beas_jingjie_fujiazhi_16	
+	add = OW_Beas_lingli_16	
+	add = OW_Beas_jingjie_lingli_max_15	
+}
+OW_Beas_jingjie_lingli_max_17 = {		
+	value = OW_Beas_xiulian_lingli_17	
+	add = OW_Beas_xinjing_lingli_17	
+	multiply = {	
+		value = OW_Beas_jingjie_shouyuan_17
+		subtract = OW_Beas_jingjie_shouyuan_16
+	}	
+	add = OW_Beas_jingjie_fujiazhi_17	
+	add = OW_Beas_lingli_17	
+	add = OW_Beas_jingjie_lingli_max_16	
+}
+OW_Beas_jingjie_lingli_max_18 = {		
+	value = OW_Beas_xiulian_lingli_18	
+	add = OW_Beas_xinjing_lingli_18	
+	multiply = {	
+		value = OW_Beas_jingjie_shouyuan_18
+		subtract = OW_Beas_jingjie_shouyuan_17
+	}	
+	add = OW_Beas_jingjie_fujiazhi_18	
+	add = OW_Beas_lingli_18	
+	add = OW_Beas_jingjie_lingli_max_17	
+}
+OW_Beas_jingjie_lingli_max_19 = {		
+	value = OW_Beas_xiulian_lingli_19	
+	add = OW_Beas_xinjing_lingli_19	
+	multiply = {	
+		value = OW_Beas_jingjie_shouyuan_19
+		subtract = OW_Beas_jingjie_shouyuan_18
+	}	
+	add = OW_Beas_jingjie_fujiazhi_19
+	add = OW_Beas_lingli_19	
+	add = OW_Beas_jingjie_lingli_max_18	
+}
+OW_Beas_jingjie_lingli_max_20 = {		
+	value = OW_Beas_xiulian_lingli_20	
+	add = OW_Beas_xinjing_lingli_20	
+	multiply = {	
+		value = OW_Beas_jingjie_shouyuan_20
+		subtract = OW_Beas_jingjie_shouyuan_19
+	}	
+	add = OW_Beas_jingjie_fujiazhi_20	
+	add = OW_Beas_lingli_20	
+	add = OW_Beas_jingjie_lingli_max_19	
+}
+OW_Beas_jingjie_lingli_max_21 = {		
+	value = OW_Beas_xiulian_lingli_21	
+	add = OW_Beas_xinjing_lingli_21	
+	multiply = {	
+		value = OW_Beas_jingjie_shouyuan_21
+		subtract = OW_Beas_jingjie_shouyuan_20
+	}	
+	add = OW_Beas_jingjie_fujiazhi_21	
+	add = OW_Beas_lingli_21	
+	add = OW_Beas_jingjie_lingli_max_20	
+}
+OW_Beas_jingjie_lingli_max_22 = {		
+	value = OW_Beas_xiulian_lingli_22	
+	add = OW_Beas_xinjing_lingli_22	
+	multiply = {	
+		value = OW_Beas_jingjie_shouyuan_22
+		subtract = OW_Beas_jingjie_shouyuan_21
+	}	
+	add = OW_Beas_jingjie_fujiazhi_22	
+	add = OW_Beas_lingli_22	
+	add = OW_Beas_jingjie_lingli_max_21	
+}
+OW_Beas_jingjie_lingli_max_23 = {		
+	value = OW_Beas_xiulian_lingli_23	
+	add = OW_Beas_xinjing_lingli_23	
+	multiply = {	
+		value = OW_Beas_jingjie_shouyuan_23
+		subtract = OW_Beas_jingjie_shouyuan_22
+	}	
+	add = OW_Beas_jingjie_fujiazhi_23	
+	add = OW_Beas_lingli_23	
+	add = OW_Beas_jingjie_lingli_max_22	
+}
+OW_Beas_jingjie_lingli_max_24 = {		
+	value = OW_Beas_xiulian_lingli_24	
+	add = OW_Beas_xinjing_lingli_24	
+	multiply = {	
+		value = OW_Beas_jingjie_shouyuan_24
+		subtract = OW_Beas_jingjie_shouyuan_23
+	}	
+	add = OW_Beas_jingjie_fujiazhi_24	
+	add = OW_Beas_lingli_24	
+	add = OW_Beas_jingjie_lingli_max_23	
+}
+OW_Beas_jingjie_lingli_max_25 = {		
+	value = OW_Beas_xiulian_lingli_25	
+	add = OW_Beas_xinjing_lingli_25	
+	multiply = {	
+		value = OW_Beas_jingjie_shouyuan_25
+		subtract = OW_Beas_jingjie_shouyuan_24
+	}	
+	add = OW_Beas_jingjie_fujiazhi_25	
+	add = OW_Beas_lingli_25	
+	add = OW_Beas_jingjie_lingli_max_24	
+}
+OW_Beas_jingjie_lingli_max_26 = {		
+	value = OW_Beas_xiulian_lingli_26	
+	add = OW_Beas_xinjing_lingli_26	
+	multiply = {	
+		value = OW_Beas_jingjie_shouyuan_26
+		subtract = OW_Beas_jingjie_shouyuan_25
+	}	
+	add = OW_Beas_jingjie_fujiazhi_26	
+	add = OW_Beas_lingli_26	
+	add = OW_Beas_jingjie_lingli_max_25	
+}
+OW_Beas_jingjie_lingli_max_27 = {		
+	value = OW_Beas_xiulian_lingli_27	
+	add = OW_Beas_xinjing_lingli_27	
+	multiply = {	
+		value = OW_Beas_jingjie_shouyuan_27
+		subtract = OW_Beas_jingjie_shouyuan_26
+	}	
+	add = OW_Beas_jingjie_fujiazhi_27	
+	add = OW_Beas_lingli_27	
+	add = OW_Beas_jingjie_lingli_max_26	
+}
+OW_Beas_jingjie_lingli_max_28 = {		
+	value = OW_Beas_xiulian_lingli_28	
+	add = OW_Beas_xinjing_lingli_28	
+	multiply = {	
+		value = OW_Beas_jingjie_shouyuan_28
+		subtract = OW_Beas_jingjie_shouyuan_27
+	}	
+	add = OW_Beas_jingjie_fujiazhi_28	
+	add = OW_Beas_lingli_28	
+	add = OW_Beas_jingjie_lingli_max_27	
+}
+OW_Beas_jingjie_lingli_max_29 = {		
+	value = OW_Beas_xiulian_lingli_29	
+	add = OW_Beas_xinjing_lingli_29	
+	multiply = {	
+		value = OW_Beas_jingjie_shouyuan_29
+		subtract = OW_Beas_jingjie_shouyuan_28
+	}	
+	add = OW_Beas_jingjie_fujiazhi_29	
+	add = OW_Beas_lingli_29	
+	add = OW_Beas_jingjie_lingli_max_28	
+}
+OW_Beas_jingjie_lingli_max_30 = {		
+	value = OW_Beas_xiulian_lingli_30	
+	add = OW_Beas_xinjing_lingli_30	
+	multiply = {	
+		value = OW_Beas_jingjie_shouyuan_30
+		subtract = OW_Beas_jingjie_shouyuan_29
+	}	
+	add = OW_Beas_jingjie_fujiazhi_30	
+	add = OW_Beas_lingli_30	
+	add = OW_Beas_jingjie_lingli_max_29	
+}
+OW_Beas_jingjie_lingli_max_31 = {		
+	value = OW_Beas_xiulian_lingli_31	
+	add = OW_Beas_xinjing_lingli_31	
+	multiply = {	
+		value = OW_Beas_jingjie_shouyuan_31
+		subtract = OW_Beas_jingjie_shouyuan_30
+	}	
+	add = OW_Beas_jingjie_fujiazhi_31	
+	add = OW_Beas_lingli_31	
+	add = OW_Beas_jingjie_lingli_max_30	
+}
+OW_Beas_jingjie_lingli_max_32 = {		
+	value = OW_Beas_xiulian_lingli_32	
+	add = OW_Beas_xinjing_lingli_32	
+	multiply = {	
+		value = OW_Beas_jingjie_shouyuan_32
+		subtract = OW_Beas_jingjie_shouyuan_31
+	}	
+	add = OW_Beas_jingjie_fujiazhi_32	
+	add = OW_Beas_lingli_32	
+	add = OW_Beas_jingjie_lingli_max_31	
+}
+OW_Beas_jingjie_lingli_max_33 = {		
+	value = OW_Beas_xiulian_lingli_33	
+	add = OW_Beas_xinjing_lingli_33	
+	multiply = {	
+		value = OW_Beas_jingjie_shouyuan_33
+		subtract = OW_Beas_jingjie_shouyuan_32
+	}	
+	add = OW_Beas_jingjie_fujiazhi_33	
+	add = OW_Beas_lingli_33	
+	add = OW_Beas_jingjie_lingli_max_32	
+}
+OW_Beas_jingjie_lingli_max_34 = {		
+	value = OW_Beas_xiulian_lingli_34	
+	add = OW_Beas_xinjing_lingli_34	
+	multiply = {	
+		value = OW_Beas_jingjie_shouyuan_34
+		subtract = OW_Beas_jingjie_shouyuan_33
+	}	
+	add = OW_Beas_jingjie_fujiazhi_34	
+	add = OW_Beas_lingli_34	
+	add = OW_Beas_jingjie_lingli_max_33	
+}
+OW_Beas_jingjie_lingli_max_35 = {		
+	value = OW_Beas_xiulian_lingli_35	
+	add = OW_Beas_xinjing_lingli_35	
+	multiply = {	
+		value = OW_Beas_jingjie_shouyuan_35
+		subtract = OW_Beas_jingjie_shouyuan_34
+	}	
+	add = OW_Beas_jingjie_fujiazhi_35	
+	add = OW_Beas_lingli_35	
+	add = OW_Beas_jingjie_lingli_max_34	
+}
+OW_Beas_jingjie_lingli_max_36 = {		
+	value = OW_Beas_xiulian_lingli_36	
+	add = OW_Beas_xinjing_lingli_36	
+	multiply = {	
+		value = OW_Beas_jingjie_shouyuan_36
+		subtract = OW_Beas_jingjie_shouyuan_35
+	}	
+	add = OW_Beas_jingjie_fujiazhi_36	
+	add = OW_Beas_lingli_36	
+	add = OW_Beas_jingjie_lingli_max_35	
+}
+
+
+#心境所需感悟值
+OW_Base_ganwu_max_1 = {
+ value = OW_Base_ganwu_1
+ multiply = OW_Base_xinjing_beilv_1
+ multiply = OW_Base_xinjing_shouyuan_1
+}
+OW_Base_ganwu_max_2 = {
+ value = OW_Base_ganwu_2
+ multiply = OW_Base_xinjing_beilv_2
+ multiply = OW_Base_xinjing_shouyuan_2
+ add = OW_Base_ganwu_max_1
+}
+OW_Base_ganwu_max_3 = {
+ value = OW_Base_ganwu_3
+ multiply = OW_Base_xinjing_beilv_3
+ multiply = OW_Base_xinjing_shouyuan_3
+ add = OW_Base_ganwu_max_2
+}
+OW_Base_ganwu_max_4 = {
+ value = OW_Base_ganwu_4
+ multiply = OW_Base_xinjing_beilv_4
+ multiply = OW_Base_xinjing_shouyuan_4
+ add = OW_Base_ganwu_max_3
+}
+OW_Base_ganwu_max_5 = {
+ value = OW_Base_ganwu_5
+ multiply = OW_Base_xinjing_beilv_5
+ multiply = OW_Base_xinjing_shouyuan_5
+ add = OW_Base_ganwu_max_4
+}
+OW_Base_ganwu_max_6 = {
+ value = OW_Base_ganwu_6
+ multiply = OW_Base_xinjing_beilv_6
+ multiply = OW_Base_xinjing_shouyuan_6
+ add = OW_Base_ganwu_max_5
+}
+OW_Base_ganwu_max_7 = {
+ value = OW_Base_ganwu_7
+ multiply = OW_Base_xinjing_beilv_7
+ multiply = OW_Base_xinjing_shouyuan_7
+ add = OW_Base_ganwu_max_6
+}
+OW_Base_ganwu_max_8 = {
+ value = OW_Base_ganwu_8
+ multiply = OW_Base_xinjing_beilv_8
+ multiply = OW_Base_xinjing_shouyuan_8
+ add = OW_Base_ganwu_max_7
+}
+OW_Base_ganwu_max_9 = {
+ value = OW_Base_ganwu_9
+ multiply = OW_Base_xinjing_beilv_9
+ multiply = OW_Base_xinjing_shouyuan_9
+ add = OW_Base_ganwu_max_8
+}
+
+#心境所需历练值
+OW_Base_lilian_max_1 = {
+ value = OW_Base_lilian_1
+ multiply = OW_Base_xinjing_beilv_1
+ multiply = OW_Base_xinjing_shouyuan_1
+}
+OW_Base_lilian_max_2 = {
+ value = OW_Base_lilian_2
+ multiply = OW_Base_xinjing_beilv_2
+ multiply = OW_Base_xinjing_shouyuan_2
+ add = OW_Base_lilian_max_1
+}
+OW_Base_lilian_max_3 = {
+ value = OW_Base_lilian_3
+ multiply = OW_Base_xinjing_beilv_3
+ multiply = OW_Base_xinjing_shouyuan_3
+ add = OW_Base_lilian_max_2
+}
+OW_Base_lilian_max_4 = {
+ value = OW_Base_lilian_4
+ multiply = OW_Base_xinjing_beilv_4
+ multiply = OW_Base_xinjing_shouyuan_4
+ add = OW_Base_lilian_max_3
+}
+OW_Base_lilian_max_5 = {
+ value = OW_Base_lilian_5
+ multiply = OW_Base_xinjing_beilv_5
+ multiply = OW_Base_xinjing_shouyuan_5
+ add = OW_Base_lilian_max_4
+}
+OW_Base_lilian_max_6 = {
+ value = OW_Base_lilian_6
+ multiply = OW_Base_xinjing_beilv_6
+ multiply = OW_Base_xinjing_shouyuan_6
+ add = OW_Base_lilian_max_5
+}
+OW_Base_lilian_max_7 = {
+ value = OW_Base_lilian_7
+ multiply = OW_Base_xinjing_beilv_7
+ multiply = OW_Base_xinjing_shouyuan_7
+ add = OW_Base_lilian_max_6
+}
+OW_Base_lilian_max_8 = {
+ value = OW_Base_lilian_8
+ multiply = OW_Base_xinjing_beilv_8
+ multiply = OW_Base_xinjing_shouyuan_8
+ add = OW_Base_lilian_max_7
+}
+OW_Base_lilian_max_9 = {
+ value = OW_Base_lilian_9
+ multiply = OW_Base_xinjing_beilv_9
+ multiply = OW_Base_xinjing_shouyuan_9
+ add = OW_Base_lilian_max_8
+}

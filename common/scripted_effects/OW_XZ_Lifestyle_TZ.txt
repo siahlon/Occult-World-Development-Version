@@ -1,0 +1,204 @@
+﻿
+####################################################################################
+#####################体质特殊词条###############
+####################################################################################
+OW_XZ_TZ_22_XianHe_Effect = {
+	add_prestige = 1000
+}
+
+
+
+
+
+
+##########################底层代码
+#SET_OW_XZ_TZ_EFFECT = #{
+#	OW_XZ_TZ_KEY = 技能的名称
+#	OW_XZ_TZ_VALUE = 技能所需花费点数的值
+#}
+SET_OW_XZ_TZ_EFFECT = {
+	hidden_effect = {
+		if = {
+			limit = { has_variable = $OW_XZ_TZ_KEY$_CD }
+			if = {
+				limit = { var:$OW_XZ_TZ_KEY$_CD < $OW_XZ_TZ_VALUE$ }
+				remove_perk = $OW_XZ_TZ_KEY$
+			}
+		}
+		else = {
+			set_variable = { name = $OW_XZ_TZ_KEY$_CD value = 0 }
+			remove_perk = $OW_XZ_TZ_KEY$
+		}
+		change_variable = { name = $OW_XZ_TZ_KEY$_CD add = 1 }
+	}
+	if = {
+		limit = { has_variable = $OW_XZ_TZ_KEY$_CD }
+		if = {
+			limit = { var:$OW_XZ_TZ_KEY$_CD < $OW_XZ_TZ_VALUE$ }
+			set_OW_perk = { VALUE = -1 }
+			set_OW_perk_max = { VALUE = $OW_XZ_TZ_VALUE$ }
+			set_OW_perk_min = { VALUE = var:$OW_XZ_TZ_KEY$_CD }
+		}
+		else = {
+			set_OW_perk = { VALUE = 1 }
+			remove_variable = $OW_XZ_TZ_KEY$_CD 
+		}
+	}
+	else = { set_OW_perk = { VALUE = -1 } }
+}
+#SET_OW_XZ_TZ_CUSTOM_EFFECT = #{
+#	OW_XZ_TZ_KEY = 技能的名称
+#	OW_XZ_TZ_VALUE = 技能所需花费点数的值
+#	OW_XZ_TZ_EFFECT_KEY = 自定义效果的名称
+#}
+#汉化写法：自定义效果的名称_CUSTOM_TEXT = 自定义效果的汉化内容
+#自定效果写法：在scripetd_effect文件夹的OW_XZ_Lifestyle_TZ.txt文件写出效果。
+SET_OW_XZ_TZ_CUSTOM_EFFECT = {
+	hidden_effect = {
+		if = {
+			limit = { has_variable = $OW_XZ_TZ_KEY$_CD }
+			if = {
+				limit = { var:$OW_XZ_TZ_KEY$_CD < $OW_XZ_TZ_VALUE$ }
+				remove_perk = $OW_XZ_TZ_KEY$
+			}
+		}
+		else = {
+			set_variable = { name = $OW_XZ_TZ_KEY$_CD value = 0 }
+			remove_perk = $OW_XZ_TZ_KEY$
+		}
+		change_variable = { name = $OW_XZ_TZ_KEY$_CD add = 1 }
+	}
+	if = {
+		limit = { has_variable = $OW_XZ_TZ_KEY$_CD }
+		if = {
+			limit = { var:$OW_XZ_TZ_KEY$_CD < $OW_XZ_TZ_VALUE$ }
+			set_OW_perk = { VALUE = -1 }
+			set_OW_perk_max = { VALUE = $OW_XZ_TZ_VALUE$ }
+			set_OW_perk_min = { VALUE = var:$OW_XZ_TZ_KEY$_CD }
+		}
+		else = {
+			set_OW_perk = { VALUE = 1 }
+			remove_variable = $OW_XZ_TZ_KEY$_CD
+			hidden_effect = {
+				$OW_XZ_TZ_EFFECT_KEY$ = yes
+			}
+		}
+	}
+	else = { set_OW_perk = { VALUE = -1 } }
+	custom_description = {
+		text = $OW_XZ_TZ_EFFECT_KEY$_CUSTOM_TEXT
+	}
+}
+#add_OW_SkillPerk_AttributeEffect = #{ 
+#	OW_XZ_TZ_KEY = 技能名称
+#	OW_XZ_CT_KEY = 关键词条表
+#	OW_XZ_TZ_YUNSHI = 运势技能总数
+#	OW_XZ_TZ_VALUE = 基数
+#}
+add_OW_SkillPerk_AttributeEffect = {
+	if = {
+		limit = {
+			NOT = { has_variable = $OW_XZ_TZ_KEY$_CD }
+		}
+		set_variable = { name = $OW_XZ_TZ_KEY$_CD value = 0 }
+	}
+	if = {
+		limit = { has_variable = $OW_XZ_TZ_KEY$_CD }
+		set_OW_perk_var = { VALUE = var:$OW_XZ_TZ_KEY$_CD }
+	}
+	save_scope_value_as = {
+		name = $OW_XZ_CT_KEY$_SJK_VALUE
+		value = {
+			add = $OW_XZ_TZ_VALUE$
+			multiply = {
+				value = $OW_XZ_TZ_YUNSHI$
+				divide = 10
+				add = 1
+			}
+		}
+	}
+	if = {
+		limit = { exists = var:OW_jingjie }
+		if = {
+			limit = { var:OW_jingjie >= 1 }
+			ADD_OW_CT = {
+				OW_CT_KEY = $OW_XZ_CT_KEY$
+				VALUE = scope:$OW_XZ_CT_KEY$_SJK_VALUE
+			}
+			change_variable = { name = $OW_XZ_TZ_KEY$_CD add = scope:$OW_XZ_CT_KEY$_SJK_VALUE }
+		}
+		if = {
+			limit = { var:OW_jingjie >= 5 }
+			ADD_OW_CT = {
+				OW_CT_KEY = $OW_XZ_CT_KEY$
+				VALUE = scope:$OW_XZ_CT_KEY$_SJK_VALUE
+			}
+			change_variable = { name = $OW_XZ_TZ_KEY$_CD add = scope:$OW_XZ_CT_KEY$_SJK_VALUE }
+		}
+		if = {
+			limit = { var:OW_jingjie >= 9 }
+			ADD_OW_CT = {
+				OW_CT_KEY = $OW_XZ_CT_KEY$
+				VALUE = scope:$OW_XZ_CT_KEY$_SJK_VALUE
+			}
+			change_variable = { name = $OW_XZ_TZ_KEY$_CD add = scope:$OW_XZ_CT_KEY$_SJK_VALUE }
+		}
+		if = {
+			limit = { var:OW_jingjie >= 13 }
+			ADD_OW_CT = {
+				OW_CT_KEY = $OW_XZ_CT_KEY$
+				VALUE = scope:$OW_XZ_CT_KEY$_SJK_VALUE
+			}
+			change_variable = { name = $OW_XZ_TZ_KEY$_CD add = scope:$OW_XZ_CT_KEY$_SJK_VALUE }
+		}
+		if = {
+			limit = { var:OW_jingjie >= 17 }
+			ADD_OW_CT = {
+				OW_CT_KEY = $OW_XZ_CT_KEY$
+				VALUE = scope:$OW_XZ_CT_KEY$_SJK_VALUE
+			}
+			change_variable = { name = $OW_XZ_TZ_KEY$_CD add = scope:$OW_XZ_CT_KEY$_SJK_VALUE }
+		}
+		if = {
+			limit = { var:OW_jingjie >= 21 }
+			ADD_OW_CT = {
+				OW_CT_KEY = $OW_XZ_CT_KEY$
+				VALUE = scope:$OW_XZ_CT_KEY$_SJK_VALUE
+			}
+			change_variable = { name = $OW_XZ_TZ_KEY$_CD add = scope:$OW_XZ_CT_KEY$_SJK_VALUE }
+		}
+		if = {
+			limit = { var:OW_jingjie >= 25 }
+			ADD_OW_CT = {
+				OW_CT_KEY = $OW_XZ_CT_KEY$
+				VALUE = scope:$OW_XZ_CT_KEY$_SJK_VALUE
+			}
+			change_variable = { name = $OW_XZ_TZ_KEY$_CD add = scope:$OW_XZ_CT_KEY$_SJK_VALUE }
+		}
+		if = {
+			limit = { var:OW_jingjie >= 29 }
+			ADD_OW_CT = {
+				OW_CT_KEY = $OW_XZ_CT_KEY$
+				VALUE = scope:$OW_XZ_CT_KEY$_SJK_VALUE
+			}
+			change_variable = { name = $OW_XZ_TZ_KEY$_CD add = scope:$OW_XZ_CT_KEY$_SJK_VALUE }
+		}
+		if = {
+			limit = { var:OW_jingjie >= 33 }
+			ADD_OW_CT = {
+				OW_CT_KEY = $OW_XZ_CT_KEY$
+				VALUE = scope:$OW_XZ_CT_KEY$_SJK_VALUE
+			}
+			change_variable = { name = $OW_XZ_TZ_KEY$_CD add = scope:$OW_XZ_CT_KEY$_SJK_VALUE }
+		}
+		if = {
+			limit = { var:OW_jingjie >= 37 }
+			ADD_OW_CT = {
+				OW_CT_KEY = $OW_XZ_CT_KEY$
+				VALUE = scope:$OW_XZ_CT_KEY$_SJK_VALUE
+			}
+			change_variable = { name = $OW_XZ_TZ_KEY$_CD add = scope:$OW_XZ_CT_KEY$_SJK_VALUE }
+		}
+	}
+	hidden_effect = { remove_perk = $OW_XZ_TZ_KEY$ }
+}

@@ -1,0 +1,20 @@
+﻿####特殊内容####
+lifestyle_no_game = {
+	is_valid = {
+		has_character_flag = OW_NO_GAME
+	}
+	xp_per_level = 233
+}
+################
+
+#####功法内容##
+lifestyle_zengshashu = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_GF_ZengShaShu
+		has_character_flag = OW_XZ_MJ_ZengShaShu
+	}
+
+	xp_per_level = 440
+}

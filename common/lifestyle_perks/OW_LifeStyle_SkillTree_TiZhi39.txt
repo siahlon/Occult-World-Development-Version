@@ -1,0 +1,111 @@
+﻿#####体质扩展包#########
+#####byH#####
+########################
+#1~4练气境
+#5~8筑基境
+#9~12结丹境
+#13~16金丹境
+#17~20元婴境
+#21~24出窍境
+#25~28分神境
+#29~32合体境
+#33~36大乘境
+#37地仙镜（渡劫期）
+
+OW_XZ_TZ_39_HongChenJianShi_perk = {
+	lifestyle = lifestyle_tizhi39
+	tree = mingge_tree_tizhi_39
+	position = { 0 0 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+		development_growth_factor =  2
+	}
+	effect = {
+		SET_OW_XZ_TZ_EFFECT = {
+			OW_XZ_TZ_KEY = OW_XZ_TZ_39_HongChenJianShi_perk
+			OW_XZ_TZ_VALUE = 82
+		}
+	}
+}
+
+OW_XZ_TZ_39_GuLaiWangZi_perk = {
+	lifestyle = lifestyle_tizhi39
+	tree = mingge_tree_tizhi_39
+	position = { 2 0 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+		fertility = 1
+	}
+	effect = {
+		SET_OW_XZ_TZ_EFFECT = {
+			OW_XZ_TZ_KEY = OW_XZ_TZ_39_GuLaiWangZi_perk
+			OW_XZ_TZ_VALUE = 44
+		}
+	}
+}
+
+OW_XZ_TZ_39_JiaZuXingWang_perk = {
+	lifestyle = lifestyle_tizhi39
+	tree = mingge_tree_tizhi_39
+	position = { 4 0 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+		monthly_prestige = 2
+	}
+	effect = {
+		SET_OW_XZ_TZ_EFFECT = {
+			OW_XZ_TZ_KEY = OW_XZ_TZ_39_JiaZuXingWang_perk
+			OW_XZ_TZ_VALUE = 82
+		}
+	}
+}
+
+OW_XZ_TZ_39_BiShi_perk = {
+	lifestyle = lifestyle_tizhi39
+	tree = mingge_tree_tizhi_39
+	position = { 6 0 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+		monthly_war_income_mult = -100
+		monthly_income_mult = 2
+		army_maintenance_mult = 5
+	}
+	effect = {
+		SET_OW_XZ_TZ_EFFECT = {
+			OW_XZ_TZ_KEY = OW_XZ_TZ_39_BiShi_perk
+			OW_XZ_TZ_VALUE = 44
+		}
+	}
+}
+
+OW_XZ_TZ_39_GuXianTi_perk = {
+	lifestyle = lifestyle_tizhi39
+	tree = yunshi_tree_tizhi_39
+	position = { 0 3 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+	}
+	effect = {
+		add_OW_SkillPerk_AttributeEffect = { 
+			OW_XZ_TZ_KEY = OW_XZ_TZ_39_GuXianTi_perk
+			OW_XZ_CT_KEY = OW_lingli_max
+			OW_XZ_TZ_YUNSHI = 1
+			OW_XZ_TZ_VALUE = 5
+		}
+	}
+}

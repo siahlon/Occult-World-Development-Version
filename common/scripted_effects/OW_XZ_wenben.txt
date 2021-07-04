@@ -1,0 +1,39 @@
+﻿#######文本文件
+set_OW_months ={
+	custom_description = {
+		text = set_OW_months_desc
+		value = $VALUE$
+	}
+}
+set_OW_perk_max = {
+	custom_description = {
+		text = set_OW_perk_max_desc
+		value = $VALUE$
+	}
+}
+set_OW_perk_min = {
+	custom_description = {
+		text = set_OW_perk_min_desc
+		value = $VALUE$
+	}
+}
+set_OW_perk_var = {
+	custom_description_no_bullet = {
+		text = set_OW_perk_var_desc
+		value = $VALUE$
+	}
+}
+set_OW_perk = {
+	custom_description_no_bullet = {
+		text = set_OW_perk_desc
+		value = $VALUE$
+	}
+}
+
+
+
+################################
+OW_XZ_Effect_jinjie = {
+	add_OW_Age_Max = { MIN = OW_JINGJIE_MIN_AGE_MAX_DATA_VALUE MAX = OW_JINGJIE_MAX_AGE_MAX_DATA_VALUE }
+	ADD_OW_CT_RANDOM = { OW_CT_KEY = OW_mingli MIN = OW_JINGJIE_MIN_MINGLI_DATA_VALUE MAX = OW_JINGJIE_MAX_MINGLI_DATA_VALUE }
+}

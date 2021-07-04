@@ -1,0 +1,123 @@
+﻿on_birthday = {
+	on_actions = {
+		OW_years_actions #每年出生年触发器
+		OW_months_actions #每月触发器
+		OW_FRXZ_on_actions #凡人探索循环数据AI
+	}
+	effect = {
+		OW_JB_KaiJu_GetVar_Years = yes #开局数据库修正
+	}
+}
+
+on_game_start_after_lobby = {
+	on_actions = {
+		OW_on_game_start_after_lobby
+	}
+}
+OW_on_game_start_after_lobby = {
+	effect = {
+		OW_JB_KaiJu_GetVar_One = yes #开局数据库
+	}
+}
+
+OW_months_actions = {
+	on_actions = {
+		OW_XZ_months_actions #修真者一月触发事件集
+		OW_FR_months_actions #非修真者一月触发事件集
+		delay = { months = 1 } 
+		OW_XZ_months_actions #修真者二月触发事件集
+		OW_FR_months_actions #非修真者二月触发事件集
+		delay = { months = 2 } 
+		OW_XZ_months_actions #修真者三月触发事件集
+		OW_FR_months_actions #非修真者三月触发事件集
+		delay = { months = 3 } 
+		OW_XZ_months_actions #修真者四月触发事件集
+		OW_FR_months_actions #非修真者四月触发事件集
+		delay = { months = 4 } 
+		OW_XZ_months_actions #修真者五月触发事件集
+		OW_FR_months_actions #非修真者五月触发事件集
+		delay = { months = 5 } 
+		OW_XZ_months_actions #修真者六月触发事件集
+		OW_FR_months_actions #非修真者六月触发事件集
+		delay = { months = 6 } 
+		OW_XZ_months_actions #修真者七月触发事件集
+		OW_FR_months_actions #非修真者七月触发事件集
+		delay = { months = 7 } 
+		OW_XZ_months_actions #修真者八月触发事件集
+		OW_FR_months_actions #非修真者八月触发事件集
+		delay = { months = 8 } 
+		OW_XZ_months_actions #修真者九月触发事件集
+		OW_FR_months_actions #非修真者九月触发事件集
+		delay = { months = 9 } 
+		OW_XZ_months_actions #修真者十月触发事件集
+		OW_FR_months_actions #非修真者十月触发事件集
+		delay = { months = 10 }
+		OW_XZ_months_actions #修真者十一月触发事件集
+		OW_FR_months_actions #非修真者十一月触发事件集
+		delay = { months = 11 }
+		OW_XZ_months_actions #修真者十二月触发事件集
+		OW_FR_months_actions #非修真者十二月触发事件集
+	}
+}
+OW_FRXZ_on_actions = {
+	first_valid_on_action = {
+		OW_FRXZ_on_16th_set_AI #16岁开启信息AI
+	}
+}
+OW_FRXZ_on_16th_set_AI = {
+	trigger = { 
+		age = 16
+		is_ai = yes
+	}
+	effect = {
+		OW_MONTHS_AI_JYXX = yes
+	}
+}
+
+OW_years_actions = {
+	on_actions = {
+		OW_XZ_years_actions
+	}
+	effect = {
+		if = {
+			limit = {
+				is_ai = yes
+				age >= 16
+				is_alive = yes
+				is_imprisoned = no
+				NOT = { has_character_flag = OW_xiuzhenzhe }
+			}
+			OW_MONTHS_AI_JYXX = yes
+		}
+	}
+}
+OW_FR_months_actions = {
+	trigger = { NOT = { has_character_flag = OW_xiuzhenzhe } }
+	effect = {
+		OW_MONTHS_XINXISHIXIAO = yes
+	}
+}
+
+OW_XZ_months_actions = {
+	trigger = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	events = {
+		OW_AI_XZ_jingjietupo.0001 #AI境界突破脚本
+		OW_AI_XZ_xinjietupo.0001 #AI心界突破脚本
+	}
+	effect = {
+		OW_JB_XZ_months_jiacheng = yes #每月加成数据库
+		OW_JB_XZ_GF_shuangyunxing = yes #功法双运行系统
+		OW_JB_XZ_TZ_shuangyunxing = yes #体质双运行系统
+	}
+}
+OW_XZ_years_actions = {
+	trigger = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	effect = {
+		OW_JB_XZ_years_jiacheng = yes #每年给修真者的属性加成
+		OW_AGE_PanDuan_DATA = yes
+	}
+}

@@ -1,0 +1,1109 @@
+﻿OW_MONTHS_AI_JYXX = {
+	if = {
+		limit = { NOT = { owns_story_of_type = story_ai_fanren_xinxichuli } }
+		create_story = story_ai_fanren_xinxichuli
+	}
+}
+#########AI交易逻辑
+###############################################
+###############################################
+###############################################
+###############################################
+###############################################
+###############################################
+################正常交易
+###############################################
+###############################################
+###############################################
+###############################################
+###############################################
+###############################################
+#OW_XZ_XINXIKEY = OW_XZ_XINXI1
+#OW_XZ_XINXIKEY = OW_XZ_XINXI11
+#OW_FRXZ_XinXi_KEY = OW_FRXZ_XinXi_1
+story_OW_FRXZ_XINXI_JIAOYI_MAIMAI_AI = {
+	if = {
+		limit = {
+			OR = {
+				NOT = { has_character_flag = $OW_XZ_XINXIKEY$ }
+				NOT = { has_character_flag = $OW_XZ_XINXIKEY1$ }
+			}
+		}
+		if = {
+			limit = { gold >= 1000 }
+			set_variable = { name = $OW_FRXZ_XinXi_KEY$_AI_JiaoYi_JiSuan value = { 7 14 } }
+			while = {
+				limit = {
+					gold >= global_var:$OW_FRXZ_XinXi_KEY$_global_MR
+					has_variable = $OW_FRXZ_XinXi_KEY$_AI_JiaoYi_JiSuan
+				}
+				random_list = {
+					75 = {
+						if = {
+							limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MC = { compare_value >= global_var:$OW_FRXZ_XinXi_KEY$_global_MR } }
+							if = {
+								limit = { has_variable = $OW_FRXZ_XinXi_KEY$ }
+								change_variable = { name = $OW_FRXZ_XinXi_KEY$ add = -1 }
+								add_gold = global_var:$OW_FRXZ_XinXi_KEY$_global_MC
+								change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global add = 1 }
+								OW_FRXZ_XinXi_JiaGeChuLi = {
+									OW_FRXZ_XinXi_KEY = $OW_FRXZ_XinXi_KEY$
+								}
+							}
+						}
+						else = {
+							if = {
+								limit = { global_var:$OW_FRXZ_XinXi_KEY$_global = { compare_value >= 1 } }
+								if = {
+									limit = { has_variable = $OW_FRXZ_XinXi_KEY$ }
+									change_variable = { name = $OW_FRXZ_XinXi_KEY$ add = 1 }
+									remove_short_term_gold = global_var:$OW_FRXZ_XinXi_KEY$_global_MR
+									change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global add = -1 }
+									OW_FRXZ_XinXi_JiaGeChuLi = {
+										OW_FRXZ_XinXi_KEY = $OW_FRXZ_XinXi_KEY$
+									}
+									if = {
+										limit = { global_var:$OW_FRXZ_XinXi_KEY$_global = { compare_value <= 0 } }
+										set_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global value = 0 }
+									}
+								}
+								random_list = {
+									1 = {
+										story_OW_FRXZ_XINXI_CHULI = {
+											OW_XINXI_SUIPIAN = $OW_FRXZ_XinXi_KEY$
+											OW_XINXI_KEY = $OW_XZ_XINXIKEY$
+										}
+										trigger = { NOT = { has_character_flag = $OW_XZ_XINXIKEY$ } }
+									}
+									1 = {
+										story_OW_FRXZ_XINXI_CHULI = {
+											OW_XINXI_SUIPIAN = $OW_FRXZ_XinXi_KEY$
+											OW_XINXI_KEY = $OW_XZ_XINXIKEY1$
+										}
+										trigger = { NOT = { has_character_flag = $OW_XZ_XINXIKEY1$ } }
+									}
+								}
+							}
+							else = {
+								change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MC add = { 0.1 2 } }
+								change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MR add = { 0.1 2 } }
+								if = {
+									limit = { has_variable = $OW_FRXZ_XinXi_KEY$ }
+									change_variable = { name = $OW_FRXZ_XinXi_KEY$ add = -1 }
+									add_gold = global_var:$OW_FRXZ_XinXi_KEY$_global_MC
+									change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global add = 1 }
+									OW_FRXZ_XinXi_JiaGeChuLi = {
+										OW_FRXZ_XinXi_KEY = $OW_FRXZ_XinXi_KEY$
+									}
+								}
+								random_list = {
+									1 = {
+										story_OW_FRXZ_XINXI_CHULI = {
+											OW_XINXI_SUIPIAN = $OW_FRXZ_XinXi_KEY$
+											OW_XINXI_KEY = $OW_XZ_XINXIKEY$
+										}
+										trigger = { NOT = { has_character_flag = $OW_XZ_XINXIKEY$ } }
+									}
+									1 = {
+										story_OW_FRXZ_XINXI_CHULI = {
+											OW_XINXI_SUIPIAN = $OW_FRXZ_XinXi_KEY$
+											OW_XINXI_KEY = $OW_XZ_XINXIKEY1$
+										}
+										trigger = { NOT = { has_character_flag = $OW_XZ_XINXIKEY1$ } }
+									}
+								}
+							}
+						}
+					}
+					25 = {
+						if = {
+							limit = { has_variable = $OW_FRXZ_XinXi_KEY$ }
+							change_variable = { name = $OW_FRXZ_XinXi_KEY$ add = -1 }
+							add_gold = global_var:$OW_FRXZ_XinXi_KEY$_global_MC
+							change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global add = 1 }
+							OW_FRXZ_XinXi_JiaGeChuLi = {
+								OW_FRXZ_XinXi_KEY = $OW_FRXZ_XinXi_KEY$
+							}
+						}
+						random_list = {
+							1 = {
+								story_OW_FRXZ_XINXI_CHULI = {
+									OW_XINXI_SUIPIAN = $OW_FRXZ_XinXi_KEY$
+									OW_XINXI_KEY = $OW_XZ_XINXIKEY$
+								}
+								trigger = { NOT = { has_character_flag = $OW_XZ_XINXIKEY$ } }
+							}
+							1 = {
+								story_OW_FRXZ_XINXI_CHULI = {
+									OW_XINXI_SUIPIAN = $OW_FRXZ_XinXi_KEY$
+									OW_XINXI_KEY = $OW_XZ_XINXIKEY1$
+								}
+								trigger = { NOT = { has_character_flag = $OW_XZ_XINXIKEY1$ } }
+							}
+						}
+					}
+				}
+				change_variable = { name = $OW_FRXZ_XinXi_KEY$_AI_JiaoYi_JiSuan add = -1 }
+				if = {
+					limit = { var:$OW_FRXZ_XinXi_KEY$_AI_JiaoYi_JiSuan <= 0 }
+					remove_variable = $OW_FRXZ_XinXi_KEY$_AI_JiaoYi_JiSuan
+				}
+			}
+		}
+		else = {
+			set_variable = { name = $OW_FRXZ_XinXi_KEY$_AI_JiaoYi_JiSuan value = { 1 7 } } 
+			while = {
+				limit = {
+					gold >= global_var:$OW_FRXZ_XinXi_KEY$_global_MR
+					has_variable = $OW_FRXZ_XinXi_KEY$_AI_JiaoYi_JiSuan
+				}
+				random_list = {
+					50 = {
+						if = {
+							limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MC = { compare_value >= global_var:$OW_FRXZ_XinXi_KEY$_global_MR } }
+							if = {
+								limit = { has_variable = $OW_FRXZ_XinXi_KEY$ }
+								change_variable = { name = $OW_FRXZ_XinXi_KEY$ add = -1 }
+								add_gold = global_var:$OW_FRXZ_XinXi_KEY$_global_MC
+								change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global add = 1 }
+								OW_FRXZ_XinXi_JiaGeChuLi = {
+									OW_FRXZ_XinXi_KEY = $OW_FRXZ_XinXi_KEY$
+								}
+							}
+						}
+						else = {
+							if = {
+								limit = { global_var:$OW_FRXZ_XinXi_KEY$_global = { compare_value >= 1 } }
+								if = {
+									limit = { has_variable = $OW_FRXZ_XinXi_KEY$ }
+									change_variable = { name = $OW_FRXZ_XinXi_KEY$ add = 1 }
+									remove_short_term_gold = global_var:$OW_FRXZ_XinXi_KEY$_global_MR
+									change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global add = -1 }
+									OW_FRXZ_XinXi_JiaGeChuLi = {
+										OW_FRXZ_XinXi_KEY = $OW_FRXZ_XinXi_KEY$
+									}
+									if = {
+										limit = { global_var:$OW_FRXZ_XinXi_KEY$_global = { compare_value <= 0 } }
+										set_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global value = 0 }
+									}
+								}
+								random_list = {
+									1 = {
+										story_OW_FRXZ_XINXI_CHULI = {
+											OW_XINXI_SUIPIAN = $OW_FRXZ_XinXi_KEY$
+											OW_XINXI_KEY = $OW_XZ_XINXIKEY$
+										}
+										trigger = { NOT = { has_character_flag = $OW_XZ_XINXIKEY$ } }
+									}
+									1 = {
+										story_OW_FRXZ_XINXI_CHULI = {
+											OW_XINXI_SUIPIAN = $OW_FRXZ_XinXi_KEY$
+											OW_XINXI_KEY = $OW_XZ_XINXIKEY1$
+										}
+										trigger = { NOT = { has_character_flag = $OW_XZ_XINXIKEY1$ } }
+									}
+								}
+							}
+							else = {
+								change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MC add = { 0.1 2 } }
+								change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MR add = { 0.1 2 } }
+								if = {
+									limit = { has_variable = $OW_FRXZ_XinXi_KEY$ }
+									change_variable = { name = $OW_FRXZ_XinXi_KEY$ add = -1 }
+									add_gold = global_var:$OW_FRXZ_XinXi_KEY$_global_MC
+									change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global add = 1 }
+									OW_FRXZ_XinXi_JiaGeChuLi = {
+										OW_FRXZ_XinXi_KEY = $OW_FRXZ_XinXi_KEY$
+									}
+								}
+								random_list = {
+									1 = {
+										story_OW_FRXZ_XINXI_CHULI = {
+											OW_XINXI_SUIPIAN = $OW_FRXZ_XinXi_KEY$
+											OW_XINXI_KEY = $OW_XZ_XINXIKEY$
+										}
+										trigger = { NOT = { has_character_flag = $OW_XZ_XINXIKEY$ } }
+									}
+									1 = {
+										story_OW_FRXZ_XINXI_CHULI = {
+											OW_XINXI_SUIPIAN = $OW_FRXZ_XinXi_KEY$
+											OW_XINXI_KEY = $OW_XZ_XINXIKEY1$
+										}
+										trigger = { NOT = { has_character_flag = $OW_XZ_XINXIKEY1$ } }
+									}
+								}
+							}
+						}
+					}
+					50 = {
+						if = {
+							limit = { has_variable = $OW_FRXZ_XinXi_KEY$ }
+							change_variable = { name = $OW_FRXZ_XinXi_KEY$ add = -1 }
+							add_gold = global_var:$OW_FRXZ_XinXi_KEY$_global_MC
+							change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global add = 1 }
+							OW_FRXZ_XinXi_JiaGeChuLi = {
+								OW_FRXZ_XinXi_KEY = $OW_FRXZ_XinXi_KEY$
+							}
+						}
+						random_list = {
+							1 = {
+								story_OW_FRXZ_XINXI_CHULI = {
+									OW_XINXI_SUIPIAN = $OW_FRXZ_XinXi_KEY$
+									OW_XINXI_KEY = $OW_XZ_XINXIKEY$
+								}
+								trigger = { NOT = { has_character_flag = $OW_XZ_XINXIKEY$ } }
+							}
+							1 = {
+								story_OW_FRXZ_XINXI_CHULI = {
+									OW_XINXI_SUIPIAN = $OW_FRXZ_XinXi_KEY$
+									OW_XINXI_KEY = $OW_XZ_XINXIKEY1$
+								}
+								trigger = { NOT = { has_character_flag = $OW_XZ_XINXIKEY1$ } }
+							}
+						}
+					}
+				}
+				change_variable = { name = $OW_FRXZ_XinXi_KEY$_AI_JiaoYi_JiSuan add = -1 }
+				if = {
+					limit = { var:$OW_FRXZ_XinXi_KEY$_AI_JiaoYi_JiSuan <= 0 }
+					remove_variable = $OW_FRXZ_XinXi_KEY$_AI_JiaoYi_JiSuan
+				}
+			}
+		}
+	}
+	else = {
+		if = {
+			limit = { has_variable = $OW_FRXZ_XinXi_KEY$ }
+			change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global add = var:$OW_FRXZ_XinXi_KEY$ }
+			set_variable = {
+				name = $OW_FRXZ_XinXi_KEY$_HeQu_Mc_JiaGe
+				value = {
+					value = global_var:$OW_FRXZ_XinXi_KEY$_global_MC
+					multiply = 0.5
+					multiply = var:$OW_FRXZ_XinXi_KEY$
+				}
+			}
+			change_variable = { name = $OW_FRXZ_XinXi_KEY$ subtract = var:$OW_FRXZ_XinXi_KEY$ }
+			add_gold = var:$OW_FRXZ_XinXi_KEY$_HeQu_Mc_JiaGe
+			OW_FRXZ_XinXi_JiaGeChuLi = {
+				OW_FRXZ_XinXi_KEY = $OW_FRXZ_XinXi_KEY$
+			}
+		}
+		remove_variable = $OW_FRXZ_XinXi_KEY$_HeQu_Mc_JiaGe
+	}
+}
+
+###############################################
+###############################################
+###############################################
+###############################################
+###############################################
+###############################################
+################做空
+###############################################
+###############################################
+###############################################
+###############################################
+###############################################
+###############################################
+#story_OW_FRXZ_XINXI_JIAOYI_ZUOKONG_AI_1 = {
+#	set_variable = {
+#		name = Story_OW_FRXZ_XinXi_ZUOKONG_MR
+#		value = {
+#			value = global_var:OW_FRXZ_XinXi_1_global_MR
+#			multiply = global_var:OW_FRXZ_XinXi_1_global
+#		}
+#	}
+#	if = {
+#		limit = { gold >= var:Story_OW_FRXZ_XinXi_ZUOKONG_MR }
+#		add_OW_FRXZ_XinXi = {
+#			OW_CT_KEY = OW_FRXZ_XinXi_1
+#			VALUE = global_var:OW_FRXZ_XinXi_1_global
+#		}
+#		remove_short_term_gold = var:Story_OW_FRXZ_XinXi_ZUOKONG_MR
+#	}
+#	else = {
+#		set_variable = {
+#			name = Story_OW_FRXZ_XinXi_ZUOKONG_KEMAISHU
+#			value = {
+#				value = var:Story_OW_FRXZ_XinXi_ZUOKONG_MR
+#				divide = gold
+#				round = yes
+#			}
+#		}
+#		set_variable = {
+#			name = Story_OW_FRXZ_XinXi_ZUOKONG_KEMAISHUJIAGE
+#			value = {
+#				value = var:Story_OW_FRXZ_XinXi_ZUOKONG_KEMAISHU
+#				multiply = global_var:OW_FRXZ_XinXi_1_global_MR
+#			}
+#		}
+#		add_OW_FRXZ_XinXi = {
+#			OW_CT_KEY = OW_FRXZ_XinXi_1
+#			VALUE = var:Story_OW_FRXZ_XinXi_ZUOKONG_KEMAISHU
+#		}
+#		remove_short_term_gold = var:Story_OW_FRXZ_XinXi_ZUOKONG_KEMAISHUJIAGE
+#	}
+#}
+
+
+###############################################
+###############################################
+###############################################
+###############################################
+###############################################
+###############################################
+################回拢
+###############################################
+###############################################
+###############################################
+###############################################
+###############################################
+###############################################
+#story_OW_FRXZ_XINXI_JIAOYI_SHAOMAIDUOCHU_AI_1 = {
+#	if = {
+#		limit = { global_var:OW_FRXZ_XinXi_1_global = { compare_value <= 1000 } }
+#		story_OW_FRXZ_XINXI_JIAOYI_GOURU_AI_1 = yes
+#	}
+#	else = { story_OW_FRXZ_XINXI_JIAOYI_MAICHU_AI_1 = yes }
+#	random_list = {
+#		50 = { 
+#			story_OW_FRXZ_XINXI_JIAOYI_GOURU_AI_1 = yes
+#			trigger = { 
+#				global_var:OW_FRXZ_XinXi_1_global = { compare_value >= 1 }
+#				gold >= global_var:OW_FRXZ_XinXi_1_global_MR
+#			}
+#		}
+#		50 = {}
+#	}
+#}
+
+###############################################
+###############################################
+###############################################
+###############################################
+###############################################
+###############################################
+################AI兑换，解析
+###############################################
+###############################################
+###############################################
+###############################################
+###############################################
+###############################################
+#OW_XINXI_SUIPIAN = OW_FRXZ_XinXi_10
+#OW_XINXI_KEY = OW_XZ_XINXI20
+story_OW_FRXZ_XINXI_CHULI = {
+	if = {
+		limit = { 
+			has_variable = $OW_XINXI_SUIPIAN$
+			var:$OW_XINXI_SUIPIAN$ >= 500 
+		}
+		while = {
+			limit = {
+				var:$OW_XINXI_SUIPIAN$ >= 100 
+			}
+			random_list = {
+				80 = {
+					change_variable = { name = $OW_XINXI_SUIPIAN$ subtract = 100 }
+					add_character_flag = $OW_XINXI_KEY$
+				}
+				20 = {
+					change_variable = { name = $OW_XINXI_SUIPIAN$ subtract = 10 }
+					random_list = {
+						25 = {
+							add_character_flag = $OW_XINXI_KEY$
+							modifier = {
+								add = 3
+								diplomacy >= 20
+							}
+							modifier = {
+								add = 3
+								martial >= 20
+							}
+							modifier = {
+								add = 3
+								stewardship >= 20
+							}
+							modifier = {
+								add = 3
+								intrigue >= 20
+							}
+							modifier = {
+								add = 3
+								learning >= 20
+							}
+							modifier = {
+								add = 3
+								prowess >= 20
+							}
+							modifier = {
+								add = 2
+								diplomacy >= 15
+							}
+							modifier = {
+								add = 2
+								martial >= 15
+							}
+							modifier = {
+								add = 2
+								stewardship >= 15
+							}
+							modifier = {
+								add = 2
+								intrigue >= 15
+							}
+							modifier = {
+								add = 2
+								learning >= 15
+							}
+							modifier = {
+								add = 2
+								prowess >= 15
+							}
+						}
+						75 = {
+							modifier = {
+								add = -3
+								diplomacy >= 20
+							}
+							modifier = {
+								add = -3
+								martial >= 20
+							}
+							modifier = {
+								add = -3
+								stewardship >= 20
+							}
+							modifier = {
+								add = -3
+								intrigue >= 20
+							}
+							modifier = {
+								add = -3
+								learning >= 20
+							}
+							modifier = {
+								add = -3
+								prowess >= 20
+							}
+							modifier = {
+								add = -2
+								diplomacy >= 15
+							}
+							modifier = {
+								add = -2
+								martial >= 15
+							}
+							modifier = {
+								add = -2
+								stewardship >= 15
+							}
+							modifier = {
+								add = -2
+								intrigue >= 15
+							}
+							modifier = {
+								add = -2
+								learning >= 15
+							}
+							modifier = {
+								add = -2
+								prowess >= 15
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = { 
+			has_variable = $OW_XINXI_SUIPIAN$
+			var:$OW_XINXI_SUIPIAN$ >= 400 
+		}
+		random_list = {
+			60 = {
+				change_variable = { name = $OW_XINXI_SUIPIAN$ subtract = 100 }
+				add_character_flag = $OW_XINXI_KEY$
+			}
+			40 = {
+				change_variable = { name = $OW_XINXI_SUIPIAN$ subtract = 10 }
+				random_list = {
+					25 = {
+						add_character_flag = $OW_XINXI_KEY$
+						modifier = {
+							add = 3
+							diplomacy >= 20
+						}
+						modifier = {
+							add = 3
+							martial >= 20
+						}
+						modifier = {
+							add = 3
+							stewardship >= 20
+						}
+						modifier = {
+							add = 3
+							intrigue >= 20
+						}
+						modifier = {
+							add = 3
+							learning >= 20
+						}
+						modifier = {
+							add = 3
+							prowess >= 20
+						}
+						modifier = {
+							add = 2
+							diplomacy >= 15
+						}
+						modifier = {
+							add = 2
+							martial >= 15
+						}
+						modifier = {
+							add = 2
+							stewardship >= 15
+						}
+						modifier = {
+							add = 2
+							intrigue >= 15
+						}
+						modifier = {
+							add = 2
+							learning >= 15
+						}
+						modifier = {
+							add = 2
+							prowess >= 15
+						}
+					}
+					75 = {
+						modifier = {
+							add = -3
+							diplomacy >= 20
+						}
+						modifier = {
+							add = -3
+							martial >= 20
+						}
+						modifier = {
+							add = -3
+							stewardship >= 20
+						}
+						modifier = {
+							add = -3
+							intrigue >= 20
+						}
+						modifier = {
+							add = -3
+							learning >= 20
+						}
+						modifier = {
+							add = -3
+							prowess >= 20
+						}
+						modifier = {
+							add = -2
+							diplomacy >= 15
+						}
+						modifier = {
+							add = -2
+							martial >= 15
+						}
+						modifier = {
+							add = -2
+							stewardship >= 15
+						}
+						modifier = {
+							add = -2
+							intrigue >= 15
+						}
+						modifier = {
+							add = -2
+							learning >= 15
+						}
+						modifier = {
+							add = -2
+							prowess >= 15
+						}
+					}
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_variable = $OW_XINXI_SUIPIAN$
+			var:$OW_XINXI_SUIPIAN$ >= 300 
+		}
+		random_list = {
+			40 = {
+				change_variable = { name = $OW_XINXI_SUIPIAN$ subtract = 100 }
+				add_character_flag = $OW_XINXI_KEY$
+			}
+			60 = {
+				change_variable = { name = $OW_XINXI_SUIPIAN$ subtract = 10 }
+				random_list = {
+					25 = {
+						add_character_flag = $OW_XINXI_KEY$
+						modifier = {
+							add = 3
+							diplomacy >= 20
+						}
+						modifier = {
+							add = 3
+							martial >= 20
+						}
+						modifier = {
+							add = 3
+							stewardship >= 20
+						}
+						modifier = {
+							add = 3
+							intrigue >= 20
+						}
+						modifier = {
+							add = 3
+							learning >= 20
+						}
+						modifier = {
+							add = 3
+							prowess >= 20
+						}
+						modifier = {
+							add = 2
+							diplomacy >= 15
+						}
+						modifier = {
+							add = 2
+							martial >= 15
+						}
+						modifier = {
+							add = 2
+							stewardship >= 15
+						}
+						modifier = {
+							add = 2
+							intrigue >= 15
+						}
+						modifier = {
+							add = 2
+							learning >= 15
+						}
+						modifier = {
+							add = 2
+							prowess >= 15
+						}
+					}
+					75 = {
+						modifier = {
+							add = -3
+							diplomacy >= 20
+						}
+						modifier = {
+							add = -3
+							martial >= 20
+						}
+						modifier = {
+							add = -3
+							stewardship >= 20
+						}
+						modifier = {
+							add = -3
+							intrigue >= 20
+						}
+						modifier = {
+							add = -3
+							learning >= 20
+						}
+						modifier = {
+							add = -3
+							prowess >= 20
+						}
+						modifier = {
+							add = -2
+							diplomacy >= 15
+						}
+						modifier = {
+							add = -2
+							martial >= 15
+						}
+						modifier = {
+							add = -2
+							stewardship >= 15
+						}
+						modifier = {
+							add = -2
+							intrigue >= 15
+						}
+						modifier = {
+							add = -2
+							learning >= 15
+						}
+						modifier = {
+							add = -2
+							prowess >= 15
+						}
+					}
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = { 
+			has_variable = $OW_XINXI_SUIPIAN$
+			var:$OW_XINXI_SUIPIAN$ >= 200 
+		}
+		random_list = {
+			20 = {
+				change_variable = { name = $OW_XINXI_SUIPIAN$ subtract = 100 }
+				add_character_flag = $OW_XINXI_KEY$
+			}
+			80 = {
+				change_variable = { name = $OW_XINXI_SUIPIAN$ subtract = 10 }
+				random_list = {
+					25 = {
+						add_character_flag = $OW_XINXI_KEY$
+						modifier = {
+							add = 3
+							diplomacy >= 20
+						}
+						modifier = {
+							add = 3
+							martial >= 20
+						}
+						modifier = {
+							add = 3
+							stewardship >= 20
+						}
+						modifier = {
+							add = 3
+							intrigue >= 20
+						}
+						modifier = {
+							add = 3
+							learning >= 20
+						}
+						modifier = {
+							add = 3
+							prowess >= 20
+						}
+						modifier = {
+							add = 2
+							diplomacy >= 15
+						}
+						modifier = {
+							add = 2
+							martial >= 15
+						}
+						modifier = {
+							add = 2
+							stewardship >= 15
+						}
+						modifier = {
+							add = 2
+							intrigue >= 15
+						}
+						modifier = {
+							add = 2
+							learning >= 15
+						}
+						modifier = {
+							add = 2
+							prowess >= 15
+						}
+					}
+					75 = {
+						modifier = {
+							add = -3
+							diplomacy >= 20
+						}
+						modifier = {
+							add = -3
+							martial >= 20
+						}
+						modifier = {
+							add = -3
+							stewardship >= 20
+						}
+						modifier = {
+							add = -3
+							intrigue >= 20
+						}
+						modifier = {
+							add = -3
+							learning >= 20
+						}
+						modifier = {
+							add = -3
+							prowess >= 20
+						}
+						modifier = {
+							add = -2
+							diplomacy >= 15
+						}
+						modifier = {
+							add = -2
+							martial >= 15
+						}
+						modifier = {
+							add = -2
+							stewardship >= 15
+						}
+						modifier = {
+							add = -2
+							intrigue >= 15
+						}
+						modifier = {
+							add = -2
+							learning >= 15
+						}
+						modifier = {
+							add = -2
+							prowess >= 15
+						}
+					}
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = { 
+			has_variable = $OW_XINXI_SUIPIAN$
+			var:$OW_XINXI_SUIPIAN$ >= 100 
+		}
+		random_list = {
+			10 = {
+				change_variable = { name = $OW_XINXI_SUIPIAN$ subtract = 100 }
+				add_character_flag = $OW_XINXI_KEY$
+			}
+			90 = {
+				change_variable = { name = $OW_XINXI_SUIPIAN$ subtract = 10 }
+				random_list = {
+					25 = {
+						add_character_flag = $OW_XINXI_KEY$
+						modifier = {
+							add = 3
+							diplomacy >= 20
+						}
+						modifier = {
+							add = 3
+							martial >= 20
+						}
+						modifier = {
+							add = 3
+							stewardship >= 20
+						}
+						modifier = {
+							add = 3
+							intrigue >= 20
+						}
+						modifier = {
+							add = 3
+							learning >= 20
+						}
+						modifier = {
+							add = 3
+							prowess >= 20
+						}
+						modifier = {
+							add = 2
+							diplomacy >= 15
+						}
+						modifier = {
+							add = 2
+							martial >= 15
+						}
+						modifier = {
+							add = 2
+							stewardship >= 15
+						}
+						modifier = {
+							add = 2
+							intrigue >= 15
+						}
+						modifier = {
+							add = 2
+							learning >= 15
+						}
+						modifier = {
+							add = 2
+							prowess >= 15
+						}
+					}
+					75 = {
+						modifier = {
+							add = -3
+							diplomacy >= 20
+						}
+						modifier = {
+							add = -3
+							martial >= 20
+						}
+						modifier = {
+							add = -3
+							stewardship >= 20
+						}
+						modifier = {
+							add = -3
+							intrigue >= 20
+						}
+						modifier = {
+							add = -3
+							learning >= 20
+						}
+						modifier = {
+							add = -3
+							prowess >= 20
+						}
+						modifier = {
+							add = -2
+							diplomacy >= 15
+						}
+						modifier = {
+							add = -2
+							martial >= 15
+						}
+						modifier = {
+							add = -2
+							stewardship >= 15
+						}
+						modifier = {
+							add = -2
+							intrigue >= 15
+						}
+						modifier = {
+							add = -2
+							learning >= 15
+						}
+						modifier = {
+							add = -2
+							prowess >= 15
+						}
+					}
+				}
+			}
+		}
+	}
+	else = {
+		if = {
+			limit = { 
+				has_variable = $OW_XINXI_SUIPIAN$
+				var:$OW_XINXI_SUIPIAN$ >= 10 
+			}
+			random_list = {
+				95 = {}
+				5 = {
+					change_variable = { name = $OW_XINXI_SUIPIAN$ subtract = 10 }
+					random_list = {
+						25 = {
+							add_character_flag = $OW_XINXI_KEY$
+							modifier = {
+								add = 3
+								diplomacy >= 20
+							}
+							modifier = {
+								add = 3
+								martial >= 20
+							}
+							modifier = {
+								add = 3
+								stewardship >= 20
+							}
+							modifier = {
+								add = 3
+								intrigue >= 20
+							}
+							modifier = {
+								add = 3
+								learning >= 20
+							}
+							modifier = {
+								add = 3
+								prowess >= 20
+							}
+							modifier = {
+								add = 2
+								diplomacy >= 15
+							}
+							modifier = {
+								add = 2
+								martial >= 15
+							}
+							modifier = {
+								add = 2
+								stewardship >= 15
+							}
+							modifier = {
+								add = 2
+								intrigue >= 15
+							}
+							modifier = {
+								add = 2
+								learning >= 15
+							}
+							modifier = {
+								add = 2
+								prowess >= 15
+							}
+						}
+						75 = {
+							modifier = {
+								add = -3
+								diplomacy >= 20
+							}
+							modifier = {
+								add = -3
+								martial >= 20
+							}
+							modifier = {
+								add = -3
+								stewardship >= 20
+							}
+							modifier = {
+								add = -3
+								intrigue >= 20
+							}
+							modifier = {
+								add = -3
+								learning >= 20
+							}
+							modifier = {
+								add = -3
+								prowess >= 20
+							}
+							modifier = {
+								add = -2
+								diplomacy >= 15
+							}
+							modifier = {
+								add = -2
+								martial >= 15
+							}
+							modifier = {
+								add = -2
+								stewardship >= 15
+							}
+							modifier = {
+								add = -2
+								intrigue >= 15
+							}
+							modifier = {
+								add = -2
+								learning >= 15
+							}
+							modifier = {
+								add = -2
+								prowess >= 15
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

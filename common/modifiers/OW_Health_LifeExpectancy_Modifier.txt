@@ -1,0 +1,4 @@
+﻿OW_XZ_health = {
+	icon = health_positive
+	health = 99999
+}

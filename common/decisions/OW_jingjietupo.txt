@@ -1,0 +1,627 @@
+﻿OW_XZ_xinjing_tupo_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_recruitment.dds"
+	desc = OW_XZ_xinjing_tupo_decision_desc
+	major = yes
+	ai_check_interval = 0
+	is_shown = {
+		is_ai = no
+		has_character_flag = OW_xiuzhenzhe
+	}
+	is_valid = {
+		is_imprisoned = no
+		is_alive = yes
+		trigger_if = {
+			limit = { var:OW_xinjing = 1 }
+			custom_description = {
+				text = OW_XZ_xinjing_tupo_decision_ganwu1
+				VALUE = var:OW_ganwu
+				var:OW_ganwu >= OW_Base_ganwu_max_1
+			}
+			custom_description = {
+				text = OW_XZ_xinjing_tupo_decision_lilian1
+				VALUE = var:OW_lilian
+				var:OW_lilian >= OW_Base_lilian_max_1
+			}
+		}
+		trigger_if = {
+			limit = { var:OW_xinjing = 2 }
+			custom_description = {
+				text = OW_XZ_xinjing_tupo_decision_ganwu2
+				VALUE = var:OW_ganwu
+				var:OW_ganwu >= OW_Base_ganwu_max_2
+			}
+			custom_description = {
+				text = OW_XZ_xinjing_tupo_decision_lilian2
+				VALUE = var:OW_lilian
+				var:OW_lilian >= OW_Base_lilian_max_2
+			}
+		}
+		trigger_if = {
+			limit = { var:OW_xinjing = 3 }
+			custom_description = {
+				text = OW_XZ_xinjing_tupo_decision_ganwu3
+				VALUE = var:OW_ganwu
+				var:OW_ganwu >= OW_Base_ganwu_max_3
+			}
+			custom_description = {
+				text = OW_XZ_xinjing_tupo_decision_lilian3
+				VALUE = var:OW_lilian
+				var:OW_lilian >= OW_Base_lilian_max_3
+			}
+		}
+		trigger_if = {
+			limit = { var:OW_xinjing = 4 }
+			custom_description = {
+				text = OW_XZ_xinjing_tupo_decision_ganwu4
+				VALUE = var:OW_ganwu
+				var:OW_ganwu >= OW_Base_ganwu_max_4
+			}
+			custom_description = {
+				text = OW_XZ_xinjing_tupo_decision_lilian4
+				VALUE = var:OW_lilian
+				var:OW_lilian >= OW_Base_lilian_max_4
+			}
+		}
+		trigger_if = {
+			limit = { var:OW_xinjing = 5 }
+			custom_description = {
+				text = OW_XZ_xinjing_tupo_decision_ganwu5
+				VALUE = var:OW_ganwu
+				var:OW_ganwu >= OW_Base_ganwu_max_5
+			}
+			custom_description = {
+				text = OW_XZ_xinjing_tupo_decision_lilian5
+				VALUE = var:OW_lilian
+				var:OW_lilian >= OW_Base_lilian_max_5
+			}
+		}
+		trigger_if = {
+			limit = { var:OW_xinjing = 6 }
+			custom_description = {
+				text = OW_XZ_xinjing_tupo_decision_ganwu6
+				VALUE = var:OW_ganwu
+				var:OW_ganwu >= OW_Base_ganwu_max_6
+			}
+			custom_description = {
+				text = OW_XZ_xinjing_tupo_decision_lilian6
+				VALUE = var:OW_lilian
+				var:OW_lilian >= OW_Base_lilian_max_6
+			}
+		}
+		trigger_if = {
+			limit = { var:OW_xinjing = 7 }
+			custom_description = {
+				text = OW_XZ_xinjing_tupo_decision_ganwu7
+				VALUE = var:OW_ganwu
+				var:OW_ganwu >= OW_Base_ganwu_max_7
+			}
+			custom_description = {
+				text = OW_XZ_xinjing_tupo_decision_lilian7
+				VALUE = var:OW_lilian
+				var:OW_lilian >= OW_Base_lilian_max_7
+			}
+		}
+		trigger_if = {
+			limit = { var:OW_xinjing = 8 }
+			custom_description = {
+				text = OW_XZ_xinjing_tupo_decision_ganwu8
+				VALUE = var:OW_ganwu
+				var:OW_ganwu >= OW_Base_ganwu_max_8
+			}
+			custom_description = {
+				text = OW_XZ_xinjing_tupo_decision_lilian8
+				VALUE = var:OW_lilian
+				var:OW_lilian >= OW_Base_lilian_max_8
+			}
+		}
+		trigger_if = {
+			limit = { var:OW_xinjing = 9 }
+			custom_description = {
+				text = OW_XZ_xinjing_tupo_decision_ganwu9
+				VALUE = var:OW_ganwu
+				var:OW_ganwu >= OW_Base_ganwu_max_9
+			}
+			custom_description = {
+				text = OW_XZ_xinjing_tupo_decision_lilian9
+				VALUE = var:OW_lilian
+				var:OW_lilian >= OW_Base_lilian_max_9
+			}
+		}
+	}
+	effect = {
+		trigger_event = OW_XZ_tupofankui.0001
+	}
+	
+	ai_will_do = {
+		base = 0
+	}
+}
+
+OW_XZ_jingjie_tupo_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_recruitment.dds"
+	desc = OW_XZ_jingjie_tupo_decision_desc
+	major = yes
+	ai_check_interval = 0
+	is_shown = {
+		is_ai = no
+		has_character_flag = OW_xiuzhenzhe
+	}
+	is_valid = {
+		is_imprisoned = no
+		is_alive = yes
+		trigger_if = {
+			limit = { var:OW_jingjie = 1 }
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_lingli1
+				VALUE = var:OW_lingli
+				var:OW_lingli >= OW_Beas_jingjie_lingli_max_1
+			}
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_linglimax1
+				VALUE = var:OW_lingli_max
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_1
+			}
+		}
+		trigger_if = {
+			limit = { var:OW_jingjie = 2 }
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_lingli2
+				VALUE = var:OW_lingli
+				var:OW_lingli >= OW_Beas_jingjie_lingli_max_2
+			}
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_linglimax2
+				VALUE = var:OW_lingli_max
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_2
+			}
+		}
+		trigger_if = {
+			limit = { var:OW_jingjie = 3 }
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_lingli3
+				VALUE = var:OW_lingli
+				var:OW_lingli >= OW_Beas_jingjie_lingli_max_3
+			}
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_linglimax3
+				VALUE = var:OW_lingli_max
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_3
+			}
+		}
+		trigger_if = {
+			limit = { var:OW_jingjie = 4 }
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_lingli4
+				VALUE = var:OW_lingli
+				var:OW_lingli >= OW_Beas_jingjie_lingli_max_4
+			}
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_linglimax4
+				VALUE = var:OW_lingli_max
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_4
+			}
+		}
+		trigger_if = {
+			limit = { var:OW_jingjie = 5 }
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_lingli5
+				VALUE = var:OW_lingli
+				var:OW_lingli >= OW_Beas_jingjie_lingli_max_5
+			}
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_linglimax5
+				VALUE = var:OW_lingli_max
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_5
+			}
+		}
+		trigger_if = {
+			limit = { var:OW_jingjie = 6 }
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_lingli6
+				VALUE = var:OW_lingli
+				var:OW_lingli >= OW_Beas_jingjie_lingli_max_6
+			}
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_linglimax6
+				VALUE = var:OW_lingli_max
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_6
+			}
+		}
+		trigger_if = {
+			limit = { var:OW_jingjie = 7 }
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_lingli7
+				VALUE = var:OW_lingli
+				var:OW_lingli >= OW_Beas_jingjie_lingli_max_7
+			}
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_linglimax7
+				VALUE = var:OW_lingli_max
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_7
+			}
+		}
+		trigger_if = {
+			limit = { var:OW_jingjie = 8 }
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_lingli8
+				VALUE = var:OW_lingli
+				var:OW_lingli >= OW_Beas_jingjie_lingli_max_8
+			}
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_linglimax8
+				VALUE = var:OW_lingli_max
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_8
+			}
+		}
+		trigger_if = {
+			limit = { var:OW_jingjie = 9 }
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_lingli9
+				VALUE = var:OW_lingli
+				var:OW_lingli >= OW_Beas_jingjie_lingli_max_9
+			}
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_linglimax9
+				VALUE = var:OW_lingli_max
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_9
+			}
+		}
+		trigger_if = {
+			limit = { var:OW_jingjie = 10 }
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_lingli10
+				VALUE = var:OW_lingli
+				var:OW_lingli >= OW_Beas_jingjie_lingli_max_10
+			}
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_linglimax10
+				VALUE = var:OW_lingli_max
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_10
+			}
+		}
+		trigger_if = {
+			limit = { var:OW_jingjie = 11 }
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_lingli11
+				VALUE = var:OW_lingli
+				var:OW_lingli >= OW_Beas_jingjie_lingli_max_11
+			}
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_linglimax11
+				VALUE = var:OW_lingli_max
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_11
+			}
+		}
+		trigger_if = {
+			limit = { var:OW_jingjie = 12 }
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_lingli12
+				VALUE = var:OW_lingli
+				var:OW_lingli >= OW_Beas_jingjie_lingli_max_12
+			}
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_linglimax12
+				VALUE = var:OW_lingli_max
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_12
+			}
+		}
+		trigger_if = {
+			limit = { var:OW_jingjie = 13 }
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_lingli13
+				VALUE = var:OW_lingli
+				var:OW_lingli >= OW_Beas_jingjie_lingli_max_13
+			}
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_linglimax13
+				VALUE = var:OW_lingli_max
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_13
+			}
+		}
+		trigger_if = {
+			limit = { var:OW_jingjie = 14 }
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_lingli14
+				VALUE = var:OW_lingli
+				var:OW_lingli >= OW_Beas_jingjie_lingli_max_14
+			}
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_linglimax14
+				VALUE = var:OW_lingli_max
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_14
+			}
+		}
+		trigger_if = {
+			limit = { var:OW_jingjie = 15 }
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_lingli15
+				VALUE = var:OW_lingli
+				var:OW_lingli >= OW_Beas_jingjie_lingli_max_15
+			}
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_linglimax15
+				VALUE = var:OW_lingli_max
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_15
+			}
+		}
+		trigger_if = {
+			limit = { var:OW_jingjie = 16 }
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_lingli16
+				VALUE = var:OW_lingli
+				var:OW_lingli >= OW_Beas_jingjie_lingli_max_16
+			}
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_linglimax16
+				VALUE = var:OW_lingli_max
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_16
+			}
+		}
+		trigger_if = {
+			limit = { var:OW_jingjie = 17 }
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_lingli17
+				VALUE = var:OW_lingli
+				var:OW_lingli >= OW_Beas_jingjie_lingli_max_17
+			}
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_linglimax17
+				VALUE = var:OW_lingli_max
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_17
+			}
+		}
+		trigger_if = {
+			limit = { var:OW_jingjie = 18 }
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_lingli18
+				VALUE = var:OW_lingli
+				var:OW_lingli >= OW_Beas_jingjie_lingli_max_18
+			}
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_linglimax18
+				VALUE = var:OW_lingli_max
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_18
+			}
+		}
+		trigger_if = {
+			limit = { var:OW_jingjie = 19 }
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_lingli19
+				VALUE = var:OW_lingli
+				var:OW_lingli >= OW_Beas_jingjie_lingli_max_19
+			}
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_linglimax19
+				VALUE = var:OW_lingli_max
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_19
+			}
+		}
+		trigger_if = {
+			limit = { var:OW_jingjie = 20 }
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_lingli20
+				VALUE = var:OW_lingli
+				var:OW_lingli >= OW_Beas_jingjie_lingli_max_20
+			}
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_linglimax20
+				VALUE = var:OW_lingli_max
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_20
+			}
+		}
+		trigger_if = {
+			limit = { var:OW_jingjie = 21 }
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_lingli21
+				VALUE = var:OW_lingli
+				var:OW_lingli >= OW_Beas_jingjie_lingli_max_21
+			}
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_linglimax21
+				VALUE = var:OW_lingli_max
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_21
+			}
+		}
+		trigger_if = {
+			limit = { var:OW_jingjie = 22 }
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_lingli22
+				VALUE = var:OW_lingli
+				var:OW_lingli >= OW_Beas_jingjie_lingli_max_22
+			}
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_linglimax22
+				VALUE = var:OW_lingli_max
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_22
+			}
+		}
+		trigger_if = {
+			limit = { var:OW_jingjie = 23 }
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_lingli23
+				VALUE = var:OW_lingli
+				var:OW_lingli >= OW_Beas_jingjie_lingli_max_23
+			}
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_linglimax23
+				VALUE = var:OW_lingli_max
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_23
+			}
+		}
+		trigger_if = {
+			limit = { var:OW_jingjie = 24 }
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_lingli24
+				VALUE = var:OW_lingli
+				var:OW_lingli >= OW_Beas_jingjie_lingli_max_24
+			}
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_linglimax24
+				VALUE = var:OW_lingli_max
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_24
+			}
+		}
+		trigger_if = {
+			limit = { var:OW_jingjie = 25 }
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_lingli25
+				VALUE = var:OW_lingli
+				var:OW_lingli >= OW_Beas_jingjie_lingli_max_25
+			}
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_linglimax25
+				VALUE = var:OW_lingli_max
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_25
+			}
+		}
+		trigger_if = {
+			limit = { var:OW_jingjie = 26 }
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_lingli26
+				VALUE = var:OW_lingli
+				var:OW_lingli >= OW_Beas_jingjie_lingli_max_26
+			}
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_linglimax26
+				VALUE = var:OW_lingli_max
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_26
+			}
+		}
+		trigger_if = {
+			limit = { var:OW_jingjie = 27 }
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_lingli27
+				VALUE = var:OW_lingli
+				var:OW_lingli >= OW_Beas_jingjie_lingli_max_27
+			}
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_linglimax27
+				VALUE = var:OW_lingli_max
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_27
+			}
+		}
+		trigger_if = {
+			limit = { var:OW_jingjie = 28 }
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_lingli28
+				VALUE = var:OW_lingli
+				var:OW_lingli >= OW_Beas_jingjie_lingli_max_28
+			}
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_linglimax28
+				VALUE = var:OW_lingli_max
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_28
+			}
+		}
+		trigger_if = {
+			limit = { var:OW_jingjie = 29 }
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_lingli29
+				VALUE = var:OW_lingli
+				var:OW_lingli >= OW_Beas_jingjie_lingli_max_29
+			}
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_linglimax29
+				VALUE = var:OW_lingli_max
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_29
+			}
+		}
+		trigger_if = {
+			limit = { var:OW_jingjie = 30 }
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_lingli30
+				VALUE = var:OW_lingli
+				var:OW_lingli >= OW_Beas_jingjie_lingli_max_30
+			}
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_linglimax30
+				VALUE = var:OW_lingli_max
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_30
+			}
+		}
+		trigger_if = {
+			limit = { var:OW_jingjie = 31 }
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_lingli31
+				VALUE = var:OW_lingli
+				var:OW_lingli >= OW_Beas_jingjie_lingli_max_31
+			}
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_linglimax31
+				VALUE = var:OW_lingli_max
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_31
+			}
+		}
+		trigger_if = {
+			limit = { var:OW_jingjie = 32 }
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_lingli32
+				VALUE = var:OW_lingli
+				var:OW_lingli >= OW_Beas_jingjie_lingli_max_32
+			}
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_linglimax32
+				VALUE = var:OW_lingli_max
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_32
+			}
+		}
+		trigger_if = {
+			limit = { var:OW_jingjie = 33 }
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_lingli33
+				VALUE = var:OW_lingli
+				var:OW_lingli >= OW_Beas_jingjie_lingli_max_33
+			}
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_linglimax33
+				VALUE = var:OW_lingli_max
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_33
+			}
+		}
+		trigger_if = {
+			limit = { var:OW_jingjie = 34 }
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_lingli34
+				VALUE = var:OW_lingli
+				var:OW_lingli >= OW_Beas_jingjie_lingli_max_34
+			}
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_linglimax34
+				VALUE = var:OW_lingli_max
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_34
+			}
+		}
+		trigger_if = {
+			limit = { var:OW_jingjie = 35 }
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_lingli35
+				VALUE = var:OW_lingli
+				var:OW_lingli >= OW_Beas_jingjie_lingli_max_35
+			}
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_linglimax35
+				VALUE = var:OW_lingli_max
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_35
+			}
+		}
+		trigger_if = {
+			limit = { var:OW_jingjie = 36 }
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_lingli36
+				VALUE = var:OW_lingli
+				var:OW_lingli >= OW_Beas_jingjie_lingli_max_36
+			}
+			custom_description = {
+				text = OW_XZ_jingjie_tupo_decision_linglimax36
+				VALUE = var:OW_lingli_max
+				var:OW_lingli_max >= OW_Beas_jingjie_lingli_max_36
+			}
+		}
+	}
+	effect = {
+		trigger_event = OW_XZ_tupofankui.0003
+	}
+	ai_will_do = {
+		base = 0
+	}
+}

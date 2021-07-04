@@ -1,0 +1,409 @@
+﻿lifestyle_tizhi50 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_50
+	}
+	xp_per_level = 3000
+}
+lifestyle_tizhi49 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_49
+	}
+	xp_per_level = 3000
+}
+
+lifestyle_tizhi48 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_48
+	}
+	xp_per_level = 3000
+}
+
+lifestyle_tizhi47 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_47
+	}
+	xp_per_level = 3000
+}
+
+lifestyle_tizhi46 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_46
+	}
+	xp_per_level = 3000
+}
+
+lifestyle_tizhi45 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_45
+	}
+	xp_per_level = 3000
+}
+
+lifestyle_tizhi44 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_44
+	}
+	xp_per_level = 3000
+}
+
+lifestyle_tizhi43 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_43
+	}
+	xp_per_level = 3000
+}
+
+lifestyle_tizhi42 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_42
+	}
+	xp_per_level = 3000
+}
+
+lifestyle_tizhi41 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_41
+	}
+	xp_per_level = 3000
+}
+
+lifestyle_tizhi40 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_40
+	}
+	xp_per_level = 3000
+}
+lifestyle_tizhi39 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_39
+	}
+	xp_per_level = 3000
+}
+lifestyle_tizhi38 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_38
+	}
+	xp_per_level = 3000
+}
+lifestyle_tizhi37 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_37
+	}
+	xp_per_level = 3000
+}
+lifestyle_tizhi36 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_36
+	}
+	xp_per_level = 3000
+}
+lifestyle_tizhi35 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_35
+	}
+	xp_per_level = 3000
+}
+lifestyle_tizhi34 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_34
+	}
+	xp_per_level = 3000
+}
+lifestyle_tizhi33 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_33
+	}
+	xp_per_level = 3000
+}
+lifestyle_tizhi32 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_32
+	}
+	xp_per_level = 3000
+}
+lifestyle_tizhi31 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_31
+	}
+	xp_per_level = 3000
+}
+lifestyle_tizhi30 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_30
+	}
+	xp_per_level = 3000
+}
+lifestyle_tizhi29 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_29
+	}
+	xp_per_level = 3000
+}
+lifestyle_tizhi28 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_28
+	}
+	xp_per_level = 3000
+}
+lifestyle_tizhi27 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_27
+	}
+	xp_per_level = 3000
+}
+lifestyle_tizhi26 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_26
+	}
+	xp_per_level = 3000
+}
+lifestyle_tizhi25 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_25
+	}
+	xp_per_level = 3000
+}
+lifestyle_tizhi24 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_24
+	}
+	xp_per_level = 3000
+}
+lifestyle_tizhi23 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_23
+	}
+	xp_per_level = 3000
+}
+lifestyle_tizhi22 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_22
+	}
+	xp_per_level = 3000
+}
+lifestyle_tizhi21 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_21
+	}
+	xp_per_level = 3000
+}
+lifestyle_tizhi20 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_20
+	}
+	xp_per_level = 3000
+}
+lifestyle_tizhi19 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_19
+	}
+	xp_per_level = 3000
+}
+lifestyle_tizhi18 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_18
+	}
+	xp_per_level = 3000
+}
+lifestyle_tizhi17 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_17
+	}
+	xp_per_level = 3000
+}
+lifestyle_tizhi16 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_16
+	}
+	xp_per_level = 3000
+}
+lifestyle_tizhi15 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_15
+	}
+	xp_per_level = 3000
+}
+lifestyle_tizhi14 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_14
+	}
+	xp_per_level = 3000
+}
+lifestyle_tizhi13 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_13
+	}
+	xp_per_level = 3000
+}
+lifestyle_tizhi12 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_12
+	}
+	xp_per_level = 3000
+}
+lifestyle_tizhi11 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_11
+	}
+	xp_per_level = 3000
+}
+lifestyle_tizhi10 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_10
+	}
+	xp_per_level = 3000
+}
+lifestyle_tizhi9 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_9
+	}
+	xp_per_level = 3000
+}
+lifestyle_tizhi8 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_8
+	}
+	xp_per_level = 3000
+}
+lifestyle_tizhi7 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_7
+	}
+	xp_per_level = 3000
+}
+lifestyle_tizhi6 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_6
+	}
+	xp_per_level = 3000
+}
+lifestyle_tizhi5 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_5
+	}
+	xp_per_level = 3000
+}
+lifestyle_tizhi4 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_4
+	}
+	xp_per_level = 3000
+}
+lifestyle_tizhi3 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_3
+	}
+	xp_per_level = 3000
+}
+lifestyle_tizhi2 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_2
+	}
+	xp_per_level = 3000
+}
+lifestyle_tizhi1 = {
+	
+	is_valid = {
+		has_character_flag = OW_xiuzhenzhe
+		has_character_flag = OW_XZ_tizhi_1
+	}
+	xp_per_level = 3000
+}

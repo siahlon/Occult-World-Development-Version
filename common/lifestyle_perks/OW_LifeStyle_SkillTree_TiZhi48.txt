@@ -1,0 +1,53 @@
+﻿#####体质扩展包#########
+#####byH#####
+########################
+#1~4练气境
+#5~8筑基境
+#9~12结丹境
+#13~16金丹境
+#17~20元婴境
+#21~24出窍境
+#25~28分神境
+#29~32合体境
+#33~36大乘境
+#37地仙镜（渡劫期）
+
+OW_XZ_TZ_48_MingQing_perk = {
+	lifestyle = lifestyle_tizhi48
+	tree = yunshi_tree_tizhi_48
+	position = { 0 3 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+	}
+	effect = {
+		add_OW_SkillPerk_AttributeEffect = { 
+			OW_XZ_TZ_KEY = OW_XZ_TZ_48_MingQing_perk
+			OW_XZ_CT_KEY = OW_wuxing
+			OW_XZ_TZ_YUNSHI = 2
+			OW_XZ_TZ_VALUE = 0.1
+		}
+	}
+}
+
+OW_XZ_TZ_48_RuYuan_perk = {
+	lifestyle = lifestyle_tizhi48
+	tree = yunshi_tree_tizhi_48
+	position = { 2 3 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+	}
+	effect = {
+		add_OW_SkillPerk_AttributeEffect = { 
+			OW_XZ_TZ_KEY = OW_XZ_TZ_48_RuYuan_perk
+			OW_XZ_CT_KEY = OW_shenshi_exp
+			OW_XZ_TZ_YUNSHI = 2
+			OW_XZ_TZ_VALUE = 1
+		}
+	}
+}

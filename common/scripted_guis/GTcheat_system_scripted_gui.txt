@@ -1,0 +1,31 @@
+﻿OW_XZ_GUI_KG = {
+	scope = character
+	is_shown = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+}
+
+OW_DFFR_GUI_KG = {
+	scope = character
+	is_shown = {
+		NOT = { has_character_flag = OW_xiuzhenzhe }
+	}
+}
+
+GTcheat_dventure ={
+	scope = character
+	is_shown = {
+		always = yes
+	}
+	effect = {
+		root={
+			add_character_modifier ={
+				modifier = dventure_modifier
+				days = 15
+			}
+			ROOT={						
+				trigger_event = OW.0004
+			}						
+		}	
+	}
+}

@@ -1,0 +1,1049 @@
+﻿###############################################################################################################################################################
+################################## ############################################################################################################################
+#################################        ######################################################################################################################
+###################################        ####################################################################################################################
+####################################         ##################################################################################################################
+######################                                                    #####################################################################################
+#############                       ###            ######################   ######################  ###########################################################
+########################################    ######################################################     ########################################################
+########################################     ########                      ############  ###########     ######################################################
+#######################################     ########                         #########  ###########     #######################################################
+#######################################     ########## ###################  ##########  ###########    ########################################################
+#######################################     ############################## ###########  ##########    #########################################################
+######################################      #############################  ############  ########     ##          #############################################
+#####################################               #####################  ############  ######                  ##############################################
+#####################################             #######################  ############             #################                      ####################
+############################################      ##### #################   ########       #####   ###########     #####    ##########       ##################
+##########################################     ####    ################           ####    ###     ############   #######      ######       ####################
+######################################              ##################         ########          ##############  #####         #####    #######################
+####################################   ##########################            ##########################  ####### ######        ####    ########################
+##################################  ##################             ########   ###########################   ##########           ##   #########################
+##############################################          ####################   ###########################   #####                   ##########################
+#####################################          ##############################     ##############       ####  #####                  ###########################
+###################################     ######################################                      ###############                ############################
+#################################################################################                 #################           #################################
+#################################################################################################################           ###################################
+##############################################################################################################          ##                #####################
+##########################################################################################################          ##################           ##############
+#######################################################################################################         #########################          ############
+###################################################################################################          ####################################    ##########
+############# ##  #########  ########  ####  ##############  ####        #######################       ###################        #################   #########
+############          ## ##  #######  #####         ######  ##### ###### #####################     ###########   #########         ##################  ########
+###########  ###  ###### ##  ######   ######  ###########  ##  ## ###### ###################   ###############     #######        ####################  #######
+################  ###### ##  #####        ##  ##########      ###        ################## ####################  ########        ##################### #######
+###########            # ##  ##### ##  #####       ########  #### ###### ########################################  #######       ##############################
+################  ###### ##  ########  #####  ############  ##### ###### ######################################### ######       ###############################
+############          ## ##  ########  #####  ##########      ###        ###############################################       ################################
+############ ###  ### ## ##  ########  #####        ############# ###### ##############################################       #################################
+############ ###  ### #####  ########  #####  ############    ### ###### #############################################      ###################################
+############ ###  ### ####   ########  #####  #########    ####            #########################################    #######################################
+################  ######## ##########  #####  #######   ##################   ######################################   #########################################
+################################################################################################################## ############################################
+OW_JB_XZ_shuxingshezhi = {
+	########数据面板显示变量用于WINDOWS#####
+	set_variable = { name = OW_ganwu_tupo value = 0 }
+	set_variable = { name = OW_lilian_tupo value = 0 }
+	##########修真属性#######
+	set_variable = { name = OW_lingshi value = 0 }
+	set_variable = { name = OW_yezhang value = 0 }
+	set_variable = { name = OW_jingjie value = 0 }
+	set_variable = { name = OW_lingli value = 0 }
+	set_variable = { name = OW_lingli_max value = 0 }
+	set_variable = { name = OW_mingli value = 0 }
+	set_variable = { name = OW_lingqiang value = 0 }
+	set_variable = { name = OW_xinjing value = 0 }
+	set_variable = { name = OW_ganwu value = 0 }
+	set_variable = { name = OW_lilian value = 0 }
+	set_variable = { name = OW_ganwu_exp value = 0 }
+	set_variable = { name = OW_lilian_exp value = 0 }
+	set_variable = { name = OW_wuxing value = 0 }
+	set_variable = { name = OW_duanti value = 0 }
+	set_variable = { name = OW_shihai value = 0 }
+	set_variable = { name = OW_shenshi value = 0 }
+	set_variable = { name = OW_duanti_exp value = 0 }
+	set_variable = { name = OW_shihai_exp value = 0 }
+	set_variable = { name = OW_shenshi_exp value = 0 }
+	set_variable = { name = OW_Age_Max value = 0 }
+	#######属性加成##########
+	set_variable = { name = OW_years_lingli value = 0 }
+	set_variable = { name = OW_years_lingli_max value = 0 }
+	set_variable = { name = OW_years_mingli value = 0 }
+	set_variable = { name = OW_months_ganwu_exp value = 0 }
+	set_variable = { name = OW_months_lilian_exp value = 0 }
+	set_variable = { name = OW_years_ganwu_exp value = 0 }
+	set_variable = { name = OW_years_lilian_exp value = 0 }
+	set_variable = { name = OW_months_duanti_exp value = 0 }
+	set_variable = { name = OW_years_duanti_exp value = 0 }
+	set_variable = { name = OW_months_shihai_exp value = 0 }
+	set_variable = { name = OW_years_shihai_exp value = 0 }
+	set_variable = { name = OW_months_shenshi_exp value = 0 }
+	set_variable = { name = OW_years_shenshi_exp value = 0 }
+	#######战斗属性#########
+
+	########数据面板显示变量用于WINDOWS#####
+	change_variable = { name = OW_ganwu_tupo add = 8 }
+	change_variable = { name = OW_lilian_tupo add = 80 }
+	##########修真属性#######
+	change_variable = { name = OW_jingjie add = 1 }
+	change_variable = { name = OW_xinjing add = 1 }
+	change_variable = { name = OW_lingli add = 1 }
+	change_variable = { name = OW_lingli_max add = { 1 5 } }
+	change_variable = { name = OW_mingli add = { 50 100 } }
+	change_variable = { name = OW_lingqiang add = { 10 20 } }
+	change_variable = { name = OW_wuxing add = { 5 20 } }
+	change_variable = { name = OW_shihai add = { 5 20 } }
+	change_variable = { name = OW_shenshi add = { 5 20 } }
+	change_variable = { name = OW_years_lingli add = { 6 12 } }
+	change_variable = { name = OW_years_mingli add = { 6 12 } }
+	change_variable = { name = OW_months_ganwu_exp add = { 1 4 } }
+	change_variable = { name = OW_months_lilian_exp add = { 1 4 } }
+	change_variable = { name = OW_years_ganwu_exp add = { 6 12 } }
+	change_variable = { name = OW_years_lilian_exp add = {6 12 } }
+	change_variable = { name = OW_months_duanti_exp add = { 10 20 } }
+	change_variable = { name = OW_years_duanti_exp add = { 60 120 } }
+	change_variable = { name = OW_months_shihai_exp add = { 1 4 } }
+	change_variable = { name = OW_years_shihai_exp add = { 60 120 } }
+	change_variable = { name = OW_months_shenshi_exp add = { 1 4 } }
+	change_variable = { name = OW_years_shenshi_exp add = { 6 12 } }
+	change_variable = { name = OW_Age_Max add = 100 }
+
+	OW_XZ_Effect_jinjie = yes
+	###########删除凡人信息
+	remove_OW_FRXZ_XinXi_Variable = yes
+}
+
+###每年给修真者的加成
+OW_JB_XZ_years_jiacheng = {
+	if = {
+		limit = { var:OW_jingjie = 1 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xiulian_lingli_1 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xinjing_lingli_1 }
+	}
+	if = {
+		limit = { var:OW_jingjie = 2 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xiulian_lingli_2 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xinjing_lingli_2 }
+	}
+	if = {
+		limit = { var:OW_jingjie = 3 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xiulian_lingli_3 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xinjing_lingli_3 }
+	}
+	if = {
+		limit = { var:OW_jingjie = 4 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xiulian_lingli_4 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xinjing_lingli_4 }
+	}
+	if = {
+		limit = { var:OW_jingjie = 5 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xiulian_lingli_5 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xinjing_lingli_5 }
+	}
+	if = {
+		limit = { var:OW_jingjie = 6 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xiulian_lingli_6 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xinjing_lingli_6 }
+	}
+	if = {
+		limit = { var:OW_jingjie = 7 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xiulian_lingli_7 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xinjing_lingli_7 }
+	}
+	if = {
+		limit = { var:OW_jingjie = 8 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xiulian_lingli_8 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xinjing_lingli_8 }
+	}
+	if = {
+		limit = { var:OW_jingjie = 9 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xiulian_lingli_9 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xinjing_lingli_9 }
+	}
+	if = {
+		limit = { var:OW_jingjie = 10 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xiulian_lingli_10 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xinjing_lingli_10 }
+	}
+	if = {
+		limit = { var:OW_jingjie = 11 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xiulian_lingli_11 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xinjing_lingli_11 }
+	}
+	if = {
+		limit = { var:OW_jingjie = 12 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xiulian_lingli_12 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xinjing_lingli_12 }
+	}
+	if = {
+		limit = { var:OW_jingjie = 13 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xiulian_lingli_13 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xinjing_lingli_13 }
+	}
+	if = {
+		limit = { var:OW_jingjie = 14 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xiulian_lingli_14 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xinjing_lingli_14 }
+	}
+	if = {
+		limit = { var:OW_jingjie = 15 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xiulian_lingli_15 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xinjing_lingli_15 }
+	}
+	if = {
+		limit = { var:OW_jingjie = 16 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xiulian_lingli_16 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xinjing_lingli_16 }
+	}
+	if = {
+		limit = { var:OW_jingjie = 17 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xiulian_lingli_17 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xinjing_lingli_17 }
+	}
+	if = {
+		limit = { var:OW_jingjie = 18 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xiulian_lingli_18 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xinjing_lingli_18 }
+	}
+	if = {
+		limit = { var:OW_jingjie = 19 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xiulian_lingli_19 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xinjing_lingli_19 }
+	}
+	if = {
+		limit = { var:OW_jingjie = 20 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xiulian_lingli_20 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xinjing_lingli_20 }
+	}
+	if = {
+		limit = { var:OW_jingjie = 21 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xiulian_lingli_21 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xinjing_lingli_21 }
+	}
+	if = {
+		limit = { var:OW_jingjie = 22 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xiulian_lingli_22 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xinjing_lingli_22 }
+	}
+	if = {
+		limit = { var:OW_jingjie = 23 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xiulian_lingli_23 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xinjing_lingli_23 }
+	}
+	if = {
+		limit = { var:OW_jingjie = 24 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xiulian_lingli_24 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xinjing_lingli_24 }
+	}
+	if = {
+		limit = { var:OW_jingjie = 25 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xiulian_lingli_26 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xinjing_lingli_25 }
+	}
+	if = {
+		limit = { var:OW_jingjie = 26 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xiulian_lingli_26 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xinjing_lingli_26 }
+	}
+	if = {
+		limit = { var:OW_jingjie = 27 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xiulian_lingli_27 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xinjing_lingli_27 }
+	}
+	if = {
+		limit = { var:OW_jingjie = 28 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xiulian_lingli_28 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xinjing_lingli_28 }
+	}
+	if = {
+		limit = { var:OW_jingjie = 29 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xiulian_lingli_29 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xinjing_lingli_29 }
+	}
+	if = {
+		limit = { var:OW_jingjie = 30 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xiulian_lingli_30 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xinjing_lingli_30 }
+	}
+	if = {
+		limit = { var:OW_jingjie = 31 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xiulian_lingli_31 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xinjing_lingli_31 }
+	}
+	if = {
+		limit = { var:OW_jingjie = 32 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xiulian_lingli_32 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xinjing_lingli_32 }
+	}
+	if = {
+		limit = { var:OW_jingjie = 33 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xiulian_lingli_33 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xinjing_lingli_33 }
+	}
+	if = {
+		limit = { var:OW_jingjie = 34 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xiulian_lingli_34 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xinjing_lingli_34 }
+	}
+	if = {
+		limit = { var:OW_jingjie = 35 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xiulian_lingli_35 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xinjing_lingli_35 }
+	}
+	if = {
+		limit = { var:OW_jingjie = 36 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xiulian_lingli_36 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xinjing_lingli_36 }
+	}
+	if = {
+		limit = { var:OW_jingjie = 37 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xiulian_lingli_37 }
+		change_variable = { name = OW_lingli_max add = OW_Beas_xinjing_lingli_37 }
+	}
+	if = {
+		limit = { var:OW_xinjing = 1 }
+		change_variable = { name = OW_ganwu add = OW_Base_ganwu_1 }
+		change_variable = { name = OW_lilian add = OW_Base_lilian_1 }
+	}
+	if = {
+		limit = { var:OW_xinjing = 2 }
+		change_variable = { name = OW_ganwu add = OW_Base_ganwu_2 }
+		change_variable = { name = OW_lilian add = OW_Base_lilian_2 }
+	}
+	if = {
+		limit = { var:OW_xinjing = 3 }
+		change_variable = { name = OW_ganwu add = OW_Base_ganwu_3 }
+		change_variable = { name = OW_lilian add = OW_Base_lilian_3 }
+	}
+	if = {
+		limit = { var:OW_xinjing = 4 }
+		change_variable = { name = OW_ganwu add = OW_Base_ganwu_4 }
+		change_variable = { name = OW_lilian add = OW_Base_lilian_4 }
+	}
+	if = {
+		limit = { var:OW_xinjing = 5 }
+		change_variable = { name = OW_ganwu add = OW_Base_ganwu_5 }
+		change_variable = { name = OW_lilian add = OW_Base_lilian_5 }
+	}
+	if = {
+		limit = { var:OW_xinjing = 6 }
+		change_variable = { name = OW_ganwu add = OW_Base_ganwu_6 }
+		change_variable = { name = OW_lilian add = OW_Base_lilian_6 }
+	}
+	if = {
+		limit = { var:OW_xinjing = 7 }
+		change_variable = { name = OW_ganwu add = OW_Base_ganwu_7 }
+		change_variable = { name = OW_lilian add = OW_Base_lilian_7 }
+	}
+	if = {
+		limit = { var:OW_xinjing = 8 }
+		change_variable = { name = OW_ganwu add = OW_Base_ganwu_8 }
+		change_variable = { name = OW_lilian add = OW_Base_lilian_8 }
+	}
+	if = {
+		limit = { var:OW_xinjing = 9 }
+		change_variable = { name = OW_ganwu add = OW_Base_ganwu_9 }
+		change_variable = { name = OW_lilian add = OW_Base_lilian_9 }
+	}
+	change_variable = { name = OW_lingli_max add = var:OW_years_lingli_max }
+	change_variable = { name = OW_lingli add = var:OW_years_lingli }
+	change_variable = { name = OW_mingli add = var:OW_years_mingli }
+	change_variable = { name = OW_lilian_exp add = var:OW_years_lilian_exp }
+	change_variable = { name = OW_ganwu_exp add = var:OW_years_ganwu_exp }
+	change_variable = { name = OW_duanti_exp add = var:OW_years_duanti_exp }
+	change_variable = { name = OW_shihai_exp add = var:OW_years_shihai_exp }
+	change_variable = { name = OW_shenshi_exp add = var:OW_years_shenshi_exp }
+	########下限处理
+	OW_CT_MIN_CHECK = yes
+	##########上限处理
+	OW_CT_MAX_CHECK = yes
+}
+
+###每月给修真者的加成
+OW_JB_XZ_months_jiacheng = {
+		change_variable = { name = OW_lilian_exp add = var:OW_months_lilian_exp }
+		change_variable = { name = OW_ganwu_exp add = var:OW_months_ganwu_exp }
+		change_variable = { name = OW_duanti_exp add = var:OW_months_duanti_exp }
+		change_variable = { name = OW_shihai_exp add = var:OW_months_shihai_exp }
+		change_variable = { name = OW_shenshi_exp add = var:OW_months_shenshi_exp }
+		########下限处理
+		OW_CT_MIN_CHECK = yes
+		##########上限处理
+		OW_CT_MAX_CHECK = yes
+}
+
+#技能树功法双运行系统
+OW_JB_XZ_GF_shuangyunxing = {
+	if = {
+		limit = { has_character_flag = OW_XZ_GF_ZengShaShu }
+		add_lifestyle_zengshashu_xp = 36
+		add_lifestyle_zengshashu_xp = var:OW_wuxing
+	}
+}
+#技能树体质双运行系统
+OW_JB_XZ_TZ_shuangyunxing = {
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_50 }
+		add_lifestyle_tizhi50_xp = 50
+		add_lifestyle_tizhi50_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_49 }
+		add_lifestyle_tizhi49_xp = 50
+		add_lifestyle_tizhi49_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_48 }
+		add_lifestyle_tizhi48_xp = 50
+		add_lifestyle_tizhi48_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_47 }
+		add_lifestyle_tizhi47_xp = 50
+		add_lifestyle_tizhi47_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_46 }
+		add_lifestyle_tizhi46_xp = 50
+		add_lifestyle_tizhi46_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_45 }
+		add_lifestyle_tizhi45_xp = 50
+		add_lifestyle_tizhi45_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_44 }
+		add_lifestyle_tizhi44_xp = 50
+		add_lifestyle_tizhi44_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_43 }
+		add_lifestyle_tizhi43_xp = 50
+		add_lifestyle_tizhi43_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_42 }
+		add_lifestyle_tizhi42_xp = 50
+		add_lifestyle_tizhi42_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_41 }
+		add_lifestyle_tizhi41_xp = 50
+		add_lifestyle_tizhi41_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_40 }
+		add_lifestyle_tizhi40_xp = 50
+		add_lifestyle_tizhi40_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_39 }
+		add_lifestyle_tizhi39_xp = 50
+		add_lifestyle_tizhi39_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_38 }
+		add_lifestyle_tizhi38_xp = 50
+		add_lifestyle_tizhi38_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_37 }
+		add_lifestyle_tizhi37_xp = 50
+		add_lifestyle_tizhi37_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_36 }
+		add_lifestyle_tizhi36_xp = 50
+		add_lifestyle_tizhi36_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_35 }
+		add_lifestyle_tizhi35_xp = 50
+		add_lifestyle_tizhi35_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_34 }
+		add_lifestyle_tizhi34_xp = 50
+		add_lifestyle_tizhi34_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_33 }
+		add_lifestyle_tizhi33_xp = 50
+		add_lifestyle_tizhi33_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_32 }
+		add_lifestyle_tizhi32_xp = 50
+		add_lifestyle_tizhi32_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_31 }
+		add_lifestyle_tizhi31_xp = 50
+		add_lifestyle_tizhi31_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_30 }
+		add_lifestyle_tizhi30_xp = 50
+		add_lifestyle_tizhi30_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_29 }
+		add_lifestyle_tizhi29_xp = 50
+		add_lifestyle_tizhi29_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_28 }
+		add_lifestyle_tizhi28_xp = 50
+		add_lifestyle_tizhi28_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_27 }
+		add_lifestyle_tizhi27_xp = 50
+		add_lifestyle_tizhi27_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_26 }
+		add_lifestyle_tizhi26_xp = 50
+		add_lifestyle_tizhi26_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_25 }
+		add_lifestyle_tizhi25_xp = 50
+		add_lifestyle_tizhi25_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_24 }
+		add_lifestyle_tizhi24_xp = 50
+		add_lifestyle_tizhi24_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_23 }
+		add_lifestyle_tizhi23_xp = 50
+		add_lifestyle_tizhi23_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_22 }
+		add_lifestyle_tizhi22_xp = 50
+		add_lifestyle_tizhi22_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_21 }
+		add_lifestyle_tizhi21_xp = 50
+		add_lifestyle_tizhi21_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_20 }
+		add_lifestyle_tizhi20_xp = 50
+		add_lifestyle_tizhi20_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_19 }
+		add_lifestyle_tizhi19_xp = 50
+		add_lifestyle_tizhi19_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_18 }
+		add_lifestyle_tizhi18_xp = 50
+		add_lifestyle_tizhi18_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_17 }
+		add_lifestyle_tizhi17_xp = 50
+		add_lifestyle_tizhi17_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_16 }
+		add_lifestyle_tizhi16_xp = 50
+		add_lifestyle_tizhi16_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_15 }
+		add_lifestyle_tizhi15_xp = 50
+		add_lifestyle_tizhi15_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_14 }
+		add_lifestyle_tizhi14_xp = 50
+		add_lifestyle_tizhi14_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_13 }
+		add_lifestyle_tizhi13_xp = 50
+		add_lifestyle_tizhi13_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_12 }
+		add_lifestyle_tizhi12_xp = 50
+		add_lifestyle_tizhi12_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_11 }
+		add_lifestyle_tizhi11_xp = 50
+		add_lifestyle_tizhi11_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_10 }
+		add_lifestyle_tizhi10_xp = 50
+		add_lifestyle_tizhi10_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_9 }
+		add_lifestyle_tizhi9_xp = 50
+		add_lifestyle_tizhi9_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_8 }
+		add_lifestyle_tizhi8_xp = 50
+		add_lifestyle_tizhi8_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_7 }
+		add_lifestyle_tizhi7_xp = 50
+		add_lifestyle_tizhi7_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_6 }
+		add_lifestyle_tizhi6_xp = 50
+		add_lifestyle_tizhi6_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_5 }
+		add_lifestyle_tizhi5_xp = 50
+		add_lifestyle_tizhi5_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_4 }
+		add_lifestyle_tizhi4_xp = 50
+		add_lifestyle_tizhi4_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_3 }
+		add_lifestyle_tizhi3_xp = 50
+		add_lifestyle_tizhi3_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_2 }
+		add_lifestyle_tizhi2_xp = 50
+		add_lifestyle_tizhi2_xp = var:OW_duanti
+	}
+	if = {
+		limit = { has_character_flag = OW_XZ_tizhi_1 }
+		add_lifestyle_tizhi1_xp = 50
+		add_lifestyle_tizhi1_xp = var:OW_duanti
+	}
+}
+#################重写健康和寿命，建立修真寿命。
+add_OW_Age_Max = {
+	save_scope_value_as = {
+		name = OW_AGE_MAX
+		value = { 
+			add = { $MIN$ $MAX$ }
+			round = yes
+		}
+	}
+	change_variable = { name = OW_Age_Max add = scope:OW_AGE_MAX }
+}
+OW_AGE_PanDuan_DATA = {
+	if = {
+		limit = { has_character_modifier = OW_XZ_health }
+		if = {
+			limit = {
+				has_variable = OW_Age_Max
+				age >= var:OW_Age_Max
+			}
+			if = {
+				limit = {
+					has_variable = OW_mingli
+					var:OW_mingli <= 0
+				}
+				remove_character_modifier = OW_XZ_health
+			}
+			else = {
+				change_variable = { name = OW_mingli subtract = OW_JINGJIE_MINGLI_SUANJIAN_DATA_VALUE }
+				if = {
+					limit = {
+						has_variable = OW_mingli
+						var:OW_mingli <= 0
+					}
+					remove_character_modifier = OW_XZ_health
+				}
+			}
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				has_variable = OW_Age_Max
+				age < var:OW_Age_Max
+			}
+			add_character_modifier = OW_XZ_health
+		}
+		else = {
+			if = {
+				limit = {
+					has_variable = OW_mingli
+					var:OW_mingli > 0
+				}
+				add_character_modifier = OW_XZ_health
+			}
+		}
+	}
+}
+###################################################开局数据库生成器
+OW_JB_KaiJu_GetVar_One = {#开局
+	OW_SET_GLOBAL_VAR = yes
+	every_living_character = {
+		if = {#体质算法
+			limit = {
+				NOT = {
+					has_character_flag = OW_XZ_tizhi_0
+					has_character_flag = OW_XZ_tizhi_1
+					has_character_flag = OW_XZ_tizhi_2
+					has_character_flag = OW_XZ_tizhi_3
+					has_character_flag = OW_XZ_tizhi_4
+					has_character_flag = OW_XZ_tizhi_5
+					has_character_flag = OW_XZ_tizhi_6
+					has_character_flag = OW_XZ_tizhi_7
+					has_character_flag = OW_XZ_tizhi_8
+					has_character_flag = OW_XZ_tizhi_9
+					has_character_flag = OW_XZ_tizhi_10
+					has_character_flag = OW_XZ_tizhi_11
+					has_character_flag = OW_XZ_tizhi_12
+					has_character_flag = OW_XZ_tizhi_13
+					has_character_flag = OW_XZ_tizhi_14
+					has_character_flag = OW_XZ_tizhi_15
+					has_character_flag = OW_XZ_tizhi_16
+					has_character_flag = OW_XZ_tizhi_17
+					has_character_flag = OW_XZ_tizhi_18
+					has_character_flag = OW_XZ_tizhi_19
+					has_character_flag = OW_XZ_tizhi_20
+					has_character_flag = OW_XZ_tizhi_21
+					has_character_flag = OW_XZ_tizhi_22
+					has_character_flag = OW_XZ_tizhi_23
+					has_character_flag = OW_XZ_tizhi_24
+					has_character_flag = OW_XZ_tizhi_25
+					has_character_flag = OW_XZ_tizhi_26
+					has_character_flag = OW_XZ_tizhi_27
+					has_character_flag = OW_XZ_tizhi_28
+					has_character_flag = OW_XZ_tizhi_29
+					has_character_flag = OW_XZ_tizhi_30
+					has_character_flag = OW_XZ_tizhi_31
+					has_character_flag = OW_XZ_tizhi_32
+					has_character_flag = OW_XZ_tizhi_33
+					has_character_flag = OW_XZ_tizhi_34
+					has_character_flag = OW_XZ_tizhi_35
+					has_character_flag = OW_XZ_tizhi_36
+					has_character_flag = OW_XZ_tizhi_37
+					has_character_flag = OW_XZ_tizhi_38
+					has_character_flag = OW_XZ_tizhi_39
+					has_character_flag = OW_XZ_tizhi_40
+					has_character_flag = OW_XZ_tizhi_41
+					has_character_flag = OW_XZ_tizhi_42
+					has_character_flag = OW_XZ_tizhi_43
+					has_character_flag = OW_XZ_tizhi_44
+					has_character_flag = OW_XZ_tizhi_45
+					has_character_flag = OW_XZ_tizhi_46
+					has_character_flag = OW_XZ_tizhi_47
+					has_character_flag = OW_XZ_tizhi_48
+					has_character_flag = OW_XZ_tizhi_49
+					has_character_flag = OW_XZ_tizhi_50
+				}
+			}
+			OW_JB_XZ_tizhihuoqu = yes
+		}
+		OW_SET_FRXZ_XINXI_VAR = yes #添加凡人探索框架所需
+		trigger_event = OW_JB_XZ_jiaocheng.01  #教程
+	}
+}
+OW_JB_KaiJu_GetVar_Years = {
+	if = {#体质算法
+		limit = {
+			NOT = {
+				has_character_flag = OW_XZ_tizhi_0
+				has_character_flag = OW_XZ_tizhi_1
+				has_character_flag = OW_XZ_tizhi_2
+				has_character_flag = OW_XZ_tizhi_3
+				has_character_flag = OW_XZ_tizhi_4
+				has_character_flag = OW_XZ_tizhi_5
+				has_character_flag = OW_XZ_tizhi_6
+				has_character_flag = OW_XZ_tizhi_7
+				has_character_flag = OW_XZ_tizhi_8
+				has_character_flag = OW_XZ_tizhi_9
+				has_character_flag = OW_XZ_tizhi_10
+				has_character_flag = OW_XZ_tizhi_11
+				has_character_flag = OW_XZ_tizhi_12
+				has_character_flag = OW_XZ_tizhi_13
+				has_character_flag = OW_XZ_tizhi_14
+				has_character_flag = OW_XZ_tizhi_15
+				has_character_flag = OW_XZ_tizhi_16
+				has_character_flag = OW_XZ_tizhi_17
+				has_character_flag = OW_XZ_tizhi_18
+				has_character_flag = OW_XZ_tizhi_19
+				has_character_flag = OW_XZ_tizhi_20
+				has_character_flag = OW_XZ_tizhi_21
+				has_character_flag = OW_XZ_tizhi_22
+				has_character_flag = OW_XZ_tizhi_23
+				has_character_flag = OW_XZ_tizhi_24
+				has_character_flag = OW_XZ_tizhi_25
+				has_character_flag = OW_XZ_tizhi_26
+				has_character_flag = OW_XZ_tizhi_27
+				has_character_flag = OW_XZ_tizhi_28
+				has_character_flag = OW_XZ_tizhi_29
+				has_character_flag = OW_XZ_tizhi_30
+				has_character_flag = OW_XZ_tizhi_31
+				has_character_flag = OW_XZ_tizhi_32
+				has_character_flag = OW_XZ_tizhi_33
+				has_character_flag = OW_XZ_tizhi_34
+				has_character_flag = OW_XZ_tizhi_35
+				has_character_flag = OW_XZ_tizhi_36
+				has_character_flag = OW_XZ_tizhi_37
+				has_character_flag = OW_XZ_tizhi_38
+				has_character_flag = OW_XZ_tizhi_39
+				has_character_flag = OW_XZ_tizhi_40
+				has_character_flag = OW_XZ_tizhi_41
+				has_character_flag = OW_XZ_tizhi_42
+				has_character_flag = OW_XZ_tizhi_43
+				has_character_flag = OW_XZ_tizhi_44
+				has_character_flag = OW_XZ_tizhi_45
+				has_character_flag = OW_XZ_tizhi_46
+				has_character_flag = OW_XZ_tizhi_47
+				has_character_flag = OW_XZ_tizhi_48
+				has_character_flag = OW_XZ_tizhi_49
+				has_character_flag = OW_XZ_tizhi_50
+			}
+		}
+		OW_JB_XZ_tizhihuoqu = yes
+	}
+	if = {
+		limit = { NOT = { has_character_flag = OW_xiuzhenzhe } }
+		OW_SET_FRXZ_XINXI_VAR = yes #添加凡人探索框架所需
+	}
+	####添加特殊词条
+	if = {
+		limit = { NOT = { has_variable = OW_shouyuan } }
+		set_variable = { name = OW_shouyuan value = 0 }
+	}
+	if = {
+		limit = { NOT = { has_variable = OW_health } }
+		set_variable = { name = OW_health value = 0 }
+	}
+}
+
+
+
+###########体质算法
+OW_JB_XZ_tizhihuoqu = {
+	random_list = {
+		50 = { add_character_flag = OW_XZ_tizhi_0 }
+		20 = {
+			random_list = {
+				24 = { add_character_flag = OW_XZ_tizhi_50 }
+				20 = { add_character_flag = OW_XZ_tizhi_49 }
+				16 = { add_character_flag = OW_XZ_tizhi_48 }
+				12 = { add_character_flag = OW_XZ_tizhi_47 }
+				10 = { add_character_flag = OW_XZ_tizhi_46 }
+				8 = { add_character_flag = OW_XZ_tizhi_45 }
+				4 = { 
+					random_list = {
+						50 = { add_character_flag = OW_XZ_tizhi_44 }
+						30 = { add_character_flag = OW_XZ_tizhi_43 }
+						10 = { add_character_flag = OW_XZ_tizhi_42 }
+						7 = { add_character_flag = OW_XZ_tizhi_41 }
+						3 = { add_character_flag = OW_XZ_tizhi_40 }
+					}
+				}
+				3 = {
+					random_list = {
+						50 = { add_character_flag = OW_XZ_tizhi_39 }
+						30 = { add_character_flag = OW_XZ_tizhi_38 }
+						10 = { add_character_flag = OW_XZ_tizhi_37 }
+						7 = { add_character_flag = OW_XZ_tizhi_36 }
+						3 = { add_character_flag = OW_XZ_tizhi_35 }
+					}
+				}
+				2 = {
+					random_list = {
+						50 = { add_character_flag = OW_XZ_tizhi_34 }
+						30 = { add_character_flag = OW_XZ_tizhi_33 }
+						10 = { add_character_flag = OW_XZ_tizhi_32 }
+						7 = { add_character_flag = OW_XZ_tizhi_31 }
+						3 = { add_character_flag = OW_XZ_tizhi_30 }
+					}
+				}
+				1 = {
+					random_list = {
+						50 = { add_character_flag = OW_XZ_tizhi_29 }
+						30 = { add_character_flag = OW_XZ_tizhi_28 }
+						10 = { add_character_flag = OW_XZ_tizhi_27 }
+						7 = { add_character_flag = OW_XZ_tizhi_26 }
+						3 = { add_character_flag = OW_XZ_tizhi_25 }
+					}
+				}
+			}
+		}
+		15 = {
+			random_list = {
+				24 = { add_character_flag = OW_XZ_tizhi_40 }
+				20 = { add_character_flag = OW_XZ_tizhi_39 }
+				16 = { add_character_flag = OW_XZ_tizhi_38 }
+				12 = { add_character_flag = OW_XZ_tizhi_37 }
+				10 = { add_character_flag = OW_XZ_tizhi_36 }
+				8 = { add_character_flag = OW_XZ_tizhi_35 }
+				4 = { 
+					random_list = {
+						50 = { add_character_flag = OW_XZ_tizhi_34 }
+						30 = { add_character_flag = OW_XZ_tizhi_33 }
+						10 = { add_character_flag = OW_XZ_tizhi_32 }
+						7 = { add_character_flag = OW_XZ_tizhi_31 }
+						3 = { add_character_flag = OW_XZ_tizhi_30 }
+					}
+				}
+				3 = {
+					random_list = {
+						50 = { add_character_flag = OW_XZ_tizhi_29 }
+						30 = { add_character_flag = OW_XZ_tizhi_28 }
+						10 = { add_character_flag = OW_XZ_tizhi_27 }
+						7 = { add_character_flag = OW_XZ_tizhi_26 }
+						3 = { add_character_flag = OW_XZ_tizhi_25 }
+					}
+				}
+				2 = {
+					random_list = {
+						50 = { add_character_flag = OW_XZ_tizhi_24 }
+						30 = { add_character_flag = OW_XZ_tizhi_23 }
+						10 = { add_character_flag = OW_XZ_tizhi_22 }
+						7 = { add_character_flag = OW_XZ_tizhi_21 }
+						3 = { add_character_flag = OW_XZ_tizhi_20 }
+					}
+				}
+				1 = {
+					random_list = {
+						50 = { add_character_flag = OW_XZ_tizhi_19 }
+						30 = { add_character_flag = OW_XZ_tizhi_18 }
+						10 = { add_character_flag = OW_XZ_tizhi_17 }
+						7 = { add_character_flag = OW_XZ_tizhi_16 }
+						3 = { add_character_flag = OW_XZ_tizhi_15 }
+					}
+				}
+			}
+		}
+		10 = {
+			random_list = {
+				60 = {
+					random_list = {
+						24 = { add_character_flag = OW_XZ_tizhi_30 }
+						20 = { add_character_flag = OW_XZ_tizhi_29 }
+						16 = { add_character_flag = OW_XZ_tizhi_28 }
+						12 = { add_character_flag = OW_XZ_tizhi_27 }
+						10 = { add_character_flag = OW_XZ_tizhi_26 }
+						8 = { add_character_flag = OW_XZ_tizhi_25 }
+						4 = { 
+							random_list = {
+								70 = { add_character_flag = OW_XZ_tizhi_24 }
+								25 = { add_character_flag = OW_XZ_tizhi_23 }
+								5 = { add_character_flag = OW_XZ_tizhi_22 }
+							}
+						}
+						3 = {
+							random_list = {
+								70 = { add_character_flag = OW_XZ_tizhi_21 }
+								25 = { add_character_flag = OW_XZ_tizhi_20 }
+								5 = { add_character_flag = OW_XZ_tizhi_19 }
+							}
+						}
+						2 = {
+							random_list = {
+								70 = { add_character_flag = OW_XZ_tizhi_18 }
+								25 = { add_character_flag = OW_XZ_tizhi_17 }
+								5 = { add_character_flag = OW_XZ_tizhi_16 }
+							}
+						}
+						1 = {
+							random_list = {
+								70 = { add_character_flag = OW_XZ_tizhi_15 }
+								25 = { add_character_flag = OW_XZ_tizhi_14 }
+								5 = { add_character_flag = OW_XZ_tizhi_13 }
+							}
+						}
+					}
+				}
+				40 = {
+					random_list = {
+						24 = { add_character_flag = OW_XZ_tizhi_20 }
+						20 = { add_character_flag = OW_XZ_tizhi_19 }
+						16 = { add_character_flag = OW_XZ_tizhi_18 }
+						12 = { add_character_flag = OW_XZ_tizhi_17 }
+						10 = { add_character_flag = OW_XZ_tizhi_16 }
+						8 = { add_character_flag = OW_XZ_tizhi_15 }
+						4 = { 
+							random_list = {
+								70 = { add_character_flag = OW_XZ_tizhi_14 }
+								25 = { add_character_flag = OW_XZ_tizhi_13 }
+								5 = { add_character_flag = OW_XZ_tizhi_12 }
+							}
+						}
+						3 = {
+							random_list = {
+								70 = { add_character_flag = OW_XZ_tizhi_11 }
+								25 = { add_character_flag = OW_XZ_tizhi_10 }
+								5 = { add_character_flag = OW_XZ_tizhi_9 }
+							}
+						}
+						2 = {
+							random_list = {
+								70 = { add_character_flag = OW_XZ_tizhi_8 }
+								25 = { add_character_flag = OW_XZ_tizhi_7 }
+								5 = { add_character_flag = OW_XZ_tizhi_6 }
+							}
+						}
+						1 = {
+							random_list = {
+								70 = { add_character_flag = OW_XZ_tizhi_5 }
+								25 = { add_character_flag = OW_XZ_tizhi_4 }
+								5 = { add_character_flag = OW_XZ_tizhi_3 }
+							}
+						}
+					}
+				}
+			}
+		}
+		5 = {
+			random_list = {
+				50 = {
+					random_list = {
+						50 = { add_character_flag = OW_XZ_tizhi_10 }
+						30 = { add_character_flag = OW_XZ_tizhi_9 }
+						10 = { add_character_flag = OW_XZ_tizhi_8 }
+						7 = { add_character_flag = OW_XZ_tizhi_7 }
+						3 = { add_character_flag = OW_XZ_tizhi_6 }
+					}
+				}
+				30 = {
+					random_list = {
+						50 = { add_character_flag = OW_XZ_tizhi_7 }
+						30 = { add_character_flag = OW_XZ_tizhi_6 }
+						10 = { add_character_flag = OW_XZ_tizhi_5 }
+						7 = { add_character_flag = OW_XZ_tizhi_4 }
+						3 = { add_character_flag = OW_XZ_tizhi_3 }
+					}
+				}
+				15 = {
+					random_list = {
+						50 = { add_character_flag = OW_XZ_tizhi_5 }
+						30 = { add_character_flag = OW_XZ_tizhi_4 }
+						10 = { add_character_flag = OW_XZ_tizhi_3 }
+						7 = { add_character_flag = OW_XZ_tizhi_2 }
+						3 = { add_character_flag = OW_XZ_tizhi_1 }
+					}
+				}
+				5 = {
+					random_list = {
+						50 = { add_character_flag = OW_XZ_tizhi_3 }
+						30 = { add_character_flag = OW_XZ_tizhi_2 }
+						20 = { add_character_flag = OW_XZ_tizhi_1 }
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,177 @@
+﻿#交易所获取固定数量
+add_OW_FRXZ_XinXi = {
+	if = {
+		limit = { has_variable = $OW_CT_KEY$ }
+		change_variable = { name = $OW_CT_KEY$ add = $VALUE$ }
+		change_global_variable = { name = $OW_CT_KEY$_global subtract = $VALUE$ }
+	}
+	save_scope_value_as = {
+		name = $OW_CT_KEY$_AS_VALUE
+		value = $VALUE$
+	}
+	OW_FRXZ_XinXi_JiaGeChuLi = {
+		OW_FRXZ_XinXi_KEY = $OW_CT_KEY$
+	}
+	if = {
+		limit = { global_var:$OW_CT_KEY$_global = { compare_value <= 0 } }
+		set_global_variable = { name = $OW_CT_KEY$_global value = 0 }
+	}
+	custom_description_no_bullet = {
+		text = add_$OW_CT_KEY$_desc
+		value = $VALUE$
+	}
+}
+######其他方法获取固定数信息碎片
+add_OW_FRXZ_XinXi_Value = {
+	if = {
+		limit = { has_variable = $OW_CT_KEY$ }
+		change_variable = { name = $OW_CT_KEY$ add = $VALUE$ }
+	}
+	if = {
+		limit = { var:$OW_CT_KEY$ <= 0 }
+		remove_variable = $OW_CT_KEY$
+		set_variable = { name = $OW_CT_KEY$ value = 0 }
+	}
+	custom_description_no_bullet = {
+		text = add_$OW_CT_KEY$_desc
+		value = $VALUE$
+	}
+}
+######其他方法获取随机数信息碎片
+add_OW_FRXZ_XinXi_Random = {
+	if = {#参数大小检查与交换
+		limit = { $MAX$ < $MIN$ }
+		save_scope_value_as = {
+			name = $OW_CT_KEY$_AS_VALUE
+			value = {
+				add = { $MAX$ $MIN$ }
+				round = yes
+			}
+		}
+	}
+	else = {
+		save_scope_value_as = {
+			name = $OW_CT_KEY$_AS_VALUE
+			value = {
+				add = { $MIN$ $MAX$ }
+				round = yes
+			}
+		}
+	}
+	if = {
+		limit = { has_variable = $OW_CT_KEY$ }
+		change_variable = { name = $OW_CT_KEY$ add = scope:$OW_CT_KEY$_AS_VALUE }
+	}
+	if = {
+		limit = { 
+			has_variable = $OW_CT_KEY$
+			var:$OW_CT_KEY$ <= 0 
+		}
+		remove_variable = $OW_CT_KEY$
+		set_variable = { name = $OW_CT_KEY$ value = 0 }
+	}
+	custom_description_no_bullet = {
+		text = add_$OW_CT_KEY$_desc
+		value = scope:$OW_CT_KEY$_AS_VALUE
+	}
+}
+
+get_OW_FRXZ_XinXi_Global_Variable = {
+	set_variable = { name = OW_FRXZ_XinXi_1_MR value = global_var:OW_FRXZ_XinXi_1_global_MR }
+	set_variable = { name = OW_FRXZ_XinXi_2_MR value = global_var:OW_FRXZ_XinXi_2_global_MR }
+	set_variable = { name = OW_FRXZ_XinXi_3_MR value = global_var:OW_FRXZ_XinXi_3_global_MR }
+	set_variable = { name = OW_FRXZ_XinXi_4_MR value = global_var:OW_FRXZ_XinXi_4_global_MR }
+	set_variable = { name = OW_FRXZ_XinXi_5_MR value = global_var:OW_FRXZ_XinXi_5_global_MR }
+	set_variable = { name = OW_FRXZ_XinXi_6_MR value = global_var:OW_FRXZ_XinXi_6_global_MR }
+	set_variable = { name = OW_FRXZ_XinXi_7_MR value = global_var:OW_FRXZ_XinXi_7_global_MR }
+	set_variable = { name = OW_FRXZ_XinXi_8_MR value = global_var:OW_FRXZ_XinXi_8_global_MR }
+	set_variable = { name = OW_FRXZ_XinXi_9_MR value = global_var:OW_FRXZ_XinXi_9_global_MR }
+	set_variable = { name = OW_FRXZ_XinXi_10_MR value = global_var:OW_FRXZ_XinXi_10_global_MR }
+	set_variable = { name = OW_FRXZ_XinXi_1_MC value = global_var:OW_FRXZ_XinXi_1_global_MC }
+	set_variable = { name = OW_FRXZ_XinXi_2_MC value = global_var:OW_FRXZ_XinXi_2_global_MC }
+	set_variable = { name = OW_FRXZ_XinXi_3_MC value = global_var:OW_FRXZ_XinXi_3_global_MC }
+	set_variable = { name = OW_FRXZ_XinXi_4_MC value = global_var:OW_FRXZ_XinXi_4_global_MC }
+	set_variable = { name = OW_FRXZ_XinXi_5_MC value = global_var:OW_FRXZ_XinXi_5_global_MC }
+	set_variable = { name = OW_FRXZ_XinXi_6_MC value = global_var:OW_FRXZ_XinXi_6_global_MC }
+	set_variable = { name = OW_FRXZ_XinXi_7_MC value = global_var:OW_FRXZ_XinXi_7_global_MC }
+	set_variable = { name = OW_FRXZ_XinXi_8_MC value = global_var:OW_FRXZ_XinXi_8_global_MC }
+	set_variable = { name = OW_FRXZ_XinXi_9_MC value = global_var:OW_FRXZ_XinXi_9_global_MC }
+	set_variable = { name = OW_FRXZ_XinXi_10_MC value = global_var:OW_FRXZ_XinXi_10_global_MC }
+	set_variable = { name = OW_FRXZ_XinXi_1_global_txt value = global_var:OW_FRXZ_XinXi_1_global }
+	set_variable = { name = OW_FRXZ_XinXi_2_global_txt value = global_var:OW_FRXZ_XinXi_2_global }
+	set_variable = { name = OW_FRXZ_XinXi_3_global_txt value = global_var:OW_FRXZ_XinXi_3_global }
+	set_variable = { name = OW_FRXZ_XinXi_4_global_txt value = global_var:OW_FRXZ_XinXi_4_global }
+	set_variable = { name = OW_FRXZ_XinXi_5_global_txt value = global_var:OW_FRXZ_XinXi_5_global }
+	set_variable = { name = OW_FRXZ_XinXi_6_global_txt value = global_var:OW_FRXZ_XinXi_6_global }
+	set_variable = { name = OW_FRXZ_XinXi_7_global_txt value = global_var:OW_FRXZ_XinXi_7_global }
+	set_variable = { name = OW_FRXZ_XinXi_8_global_txt value = global_var:OW_FRXZ_XinXi_8_global }
+	set_variable = { name = OW_FRXZ_XinXi_9_global_txt value = global_var:OW_FRXZ_XinXi_9_global }
+	set_variable = { name = OW_FRXZ_XinXi_10_global_txt value = global_var:OW_FRXZ_XinXi_10_global }
+}
+
+remove_OW_FRXZ_XinXi_Variable = {
+	remove_character_flag = OW_XZ_XINXI1
+	remove_character_flag = OW_XZ_XINXI2
+	remove_character_flag = OW_XZ_XINXI3
+	remove_character_flag = OW_XZ_XINXI4
+	remove_character_flag = OW_XZ_XINXI5
+	remove_character_flag = OW_XZ_XINXI6
+	remove_character_flag = OW_XZ_XINXI7
+	remove_character_flag = OW_XZ_XINXI8
+	remove_character_flag = OW_XZ_XINXI9
+	remove_character_flag = OW_XZ_XINXI10
+	remove_character_flag = OW_XZ_XINXI11
+	remove_character_flag = OW_XZ_XINXI12
+	remove_character_flag = OW_XZ_XINXI13
+	remove_character_flag = OW_XZ_XINXI14
+	remove_character_flag = OW_XZ_XINXI15
+	remove_character_flag = OW_XZ_XINXI16
+	remove_character_flag = OW_XZ_XINXI17
+	remove_character_flag = OW_XZ_XINXI18
+	remove_character_flag = OW_XZ_XINXI19
+	remove_character_flag = OW_XZ_XINXI20
+	remove_variable = OW_FRXZ_XinXi_1
+	remove_variable = OW_FRXZ_XinXi_2
+	remove_variable = OW_FRXZ_XinXi_3
+	remove_variable = OW_FRXZ_XinXi_4
+	remove_variable = OW_FRXZ_XinXi_5
+	remove_variable = OW_FRXZ_XinXi_6
+	remove_variable = OW_FRXZ_XinXi_7
+	remove_variable = OW_FRXZ_XinXi_8
+	remove_variable = OW_FRXZ_XinXi_9
+	remove_variable = OW_FRXZ_XinXi_10
+	remove_variable = OW_FRXZ_XinXi_1_MR
+	remove_variable = OW_FRXZ_XinXi_2_MR
+	remove_variable = OW_FRXZ_XinXi_3_MR
+	remove_variable = OW_FRXZ_XinXi_4_MR
+	remove_variable = OW_FRXZ_XinXi_5_MR
+	remove_variable = OW_FRXZ_XinXi_6_MR
+	remove_variable = OW_FRXZ_XinXi_7_MR
+	remove_variable = OW_FRXZ_XinXi_8_MR
+	remove_variable = OW_FRXZ_XinXi_9_MR
+	remove_variable = OW_FRXZ_XinXi_10_MR
+	remove_variable = OW_FRXZ_XinXi_1_MC
+	remove_variable = OW_FRXZ_XinXi_2_MC
+	remove_variable = OW_FRXZ_XinXi_3_MC
+	remove_variable = OW_FRXZ_XinXi_4_MC
+	remove_variable = OW_FRXZ_XinXi_5_MC
+	remove_variable = OW_FRXZ_XinXi_6_MC
+	remove_variable = OW_FRXZ_XinXi_7_MC
+	remove_variable = OW_FRXZ_XinXi_8_MC
+	remove_variable = OW_FRXZ_XinXi_9_MC
+	remove_variable = OW_FRXZ_XinXi_10_MC
+	remove_variable = OW_FRXZ_XinXi_1_global_txt
+	remove_variable = OW_FRXZ_XinXi_2_global_txt
+	remove_variable = OW_FRXZ_XinXi_3_global_txt
+	remove_variable = OW_FRXZ_XinXi_4_global_txt
+	remove_variable = OW_FRXZ_XinXi_5_global_txt
+	remove_variable = OW_FRXZ_XinXi_6_global_txt
+	remove_variable = OW_FRXZ_XinXi_7_global_txt
+	remove_variable = OW_FRXZ_XinXi_8_global_txt
+	remove_variable = OW_FRXZ_XinXi_9_global_txt
+	remove_variable = OW_FRXZ_XinXi_10_global_txt
+	OW_FRXZ_TANSHUO_REMOVE = yes
+}
+
+
+#测试

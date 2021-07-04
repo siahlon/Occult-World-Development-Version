@@ -1,0 +1,60 @@
+﻿#随即数词条写法
+#ADD_OW_CT_RANDOM_GF = #{
+#	OW_JINGJIE = 境界数据表
+#	OW_CT_KEY = 关键词条表
+#	MAX = 最大常量正负整数
+#	MIN = 最小常量正负整数
+#}
+ADD_OW_CT_RANDOM_GF = {
+	if = {
+		limit = { exists = var:OW_jingjie }
+		if = {
+			limit = { var:OW_jingjie >= $OW_JINGJIE$ }
+			custom_description_no_bullet = { text = OW_XZ_jingjie_0 }
+		}
+		else = {
+			custom_description_no_bullet = { text = OW_XZ_jingjie_$OW_JINGJIE$ }
+		}
+	}
+	if = {#参数大小检查与交换
+		limit = { $MAX$ < $MIN$ }
+		save_scope_value_as = {
+			name = $OW_CT_KEY$_TEMP
+			value = {
+				add = { $MAX$ $MIN$ }
+				round = yes
+			}
+		}
+	}
+	else = {
+		save_scope_value_as = {
+			name = $OW_CT_KEY$_TEMP
+			value = {
+				add = { $MIN$ $MAX$ }
+				round = yes
+			}
+		}
+	}
+	if = {
+		limit = { has_variable = $OW_CT_KEY$ }
+		change_variable = { name = $OW_CT_KEY$ add = scope:$OW_CT_KEY$_TEMP }
+	}
+	OW_CT_MIN_CHECK = yes
+	OW_CT_MAX_CHECK = yes
+	custom_description_no_bullet = {
+		text = add_$OW_CT_KEY$_desc
+		value = scope:$OW_CT_KEY$_TEMP
+	}
+}
+ADD_OW_CT_ST = {
+	if = {
+		limit = { exists = var:OW_jingjie }
+		if = {
+			limit = { var:OW_jingjie >= $OW_JINGJIE$ }
+			custom_description_no_bullet = { text = OW_XZ_jingjie_0 }
+		}
+		else = {
+			custom_description_no_bullet = { text = OW_XZ_jingjie_$OW_JINGJIE$ }
+		}
+	}
+}

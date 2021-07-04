@@ -1,0 +1,3 @@
+﻿dventure_modifier={
+icon = diplomacy_negative
+}

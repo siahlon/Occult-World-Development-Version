@@ -1,0 +1,633 @@
+﻿OW_SET_FRXZ_XINXI_VAR = {
+	if = {
+		limit = { NOT = { has_variable = OW_FRXZ_XinXi_1 } }
+		set_variable = { name = OW_FRXZ_XinXi_1 value = 0 }
+	}
+	if = {
+		limit = { NOT = { has_variable = OW_FRXZ_XinXi_2 } }
+		set_variable = { name = OW_FRXZ_XinXi_2 value = 0 }
+	}
+	if = {
+		limit = { NOT = { has_variable = OW_FRXZ_XinXi_3 } }
+		set_variable = { name = OW_FRXZ_XinXi_3 value = 0 }
+	}
+	if = {
+		limit = { NOT = { has_variable = OW_FRXZ_XinXi_4 } }
+		set_variable = { name = OW_FRXZ_XinXi_4 value = 0 }
+	}
+	if = {
+		limit = { NOT = { has_variable = OW_FRXZ_XinXi_5 } }
+		set_variable = { name = OW_FRXZ_XinXi_5 value = 0 }
+	}
+	if = {
+		limit = { NOT = { has_variable = OW_FRXZ_XinXi_6 } }
+		set_variable = { name = OW_FRXZ_XinXi_6 value = 0 }
+	}
+	if = {
+		limit = { NOT = { has_variable = OW_FRXZ_XinXi_7 } }
+		set_variable = { name = OW_FRXZ_XinXi_7 value = 0 }
+	}
+	if = {
+		limit = { NOT = { has_variable = OW_FRXZ_XinXi_8 } }
+		set_variable = { name = OW_FRXZ_XinXi_8 value = 0 }
+	}
+	if = {
+		limit = { NOT = { has_variable = OW_FRXZ_XinXi_9 } }
+		set_variable = { name = OW_FRXZ_XinXi_9 value = 0 }
+	}
+	if = {
+		limit = { NOT = { has_variable = OW_FRXZ_XinXi_10 } }
+		set_variable = { name = OW_FRXZ_XinXi_10 value = 0 }
+	}
+	if = {
+		limit = { is_ai = no }
+		if = {
+			limit = {
+				NOT = { has_variable = OW_FRXZ_XinXi_1_MR }
+				NOT = { has_variable = OW_FRXZ_XinXi_1_MR }
+				NOT = { has_variable = OW_FRXZ_XinXi_2_MR }
+				NOT = { has_variable = OW_FRXZ_XinXi_3_MR }
+				NOT = { has_variable = OW_FRXZ_XinXi_4_MR }
+				NOT = { has_variable = OW_FRXZ_XinXi_5_MR }
+				NOT = { has_variable = OW_FRXZ_XinXi_6_MR }
+				NOT = { has_variable = OW_FRXZ_XinXi_7_MR }
+				NOT = { has_variable = OW_FRXZ_XinXi_8_MR }
+				NOT = { has_variable = OW_FRXZ_XinXi_9_MR }
+				NOT = { has_variable = OW_FRXZ_XinXi_10_MR }
+				NOT = { has_variable = OW_FRXZ_XinXi_1_MC }
+				NOT = { has_variable = OW_FRXZ_XinXi_2_MC }
+				NOT = { has_variable = OW_FRXZ_XinXi_3_MC }
+				NOT = { has_variable = OW_FRXZ_XinXi_4_MC }
+				NOT = { has_variable = OW_FRXZ_XinXi_5_MC }
+				NOT = { has_variable = OW_FRXZ_XinXi_6_MC }
+				NOT = { has_variable = OW_FRXZ_XinXi_7_MC }
+				NOT = { has_variable = OW_FRXZ_XinXi_8_MC }
+				NOT = { has_variable = OW_FRXZ_XinXi_9_MC }
+				NOT = { has_variable = OW_FRXZ_XinXi_10_MC }
+				NOT = { has_variable = OW_FRXZ_XinXi_1_global_txt }
+				NOT = { has_variable = OW_FRXZ_XinXi_2_global_txt }
+				NOT = { has_variable = OW_FRXZ_XinXi_3_global_txt }
+				NOT = { has_variable = OW_FRXZ_XinXi_4_global_txt }
+				NOT = { has_variable = OW_FRXZ_XinXi_5_global_txt }
+				NOT = { has_variable = OW_FRXZ_XinXi_6_global_txt }
+				NOT = { has_variable = OW_FRXZ_XinXi_7_global_txt }
+				NOT = { has_variable = OW_FRXZ_XinXi_8_global_txt }
+				NOT = { has_variable = OW_FRXZ_XinXi_9_global_txt }
+				NOT = { has_variable = OW_FRXZ_XinXi_10_global_txt }
+			}
+			set_variable = { name = OW_FRXZ_XinXi_1_MR value = global_var:OW_FRXZ_XinXi_1_global_MR }
+			set_variable = { name = OW_FRXZ_XinXi_2_MR value = global_var:OW_FRXZ_XinXi_2_global_MR }
+			set_variable = { name = OW_FRXZ_XinXi_3_MR value = global_var:OW_FRXZ_XinXi_3_global_MR }
+			set_variable = { name = OW_FRXZ_XinXi_4_MR value = global_var:OW_FRXZ_XinXi_4_global_MR }
+			set_variable = { name = OW_FRXZ_XinXi_5_MR value = global_var:OW_FRXZ_XinXi_5_global_MR }
+			set_variable = { name = OW_FRXZ_XinXi_6_MR value = global_var:OW_FRXZ_XinXi_6_global_MR }
+			set_variable = { name = OW_FRXZ_XinXi_7_MR value = global_var:OW_FRXZ_XinXi_7_global_MR }
+			set_variable = { name = OW_FRXZ_XinXi_8_MR value = global_var:OW_FRXZ_XinXi_8_global_MR }
+			set_variable = { name = OW_FRXZ_XinXi_9_MR value = global_var:OW_FRXZ_XinXi_9_global_MR }
+			set_variable = { name = OW_FRXZ_XinXi_10_MR value = global_var:OW_FRXZ_XinXi_10_global_MR }
+			set_variable = { name = OW_FRXZ_XinXi_1_MC value = global_var:OW_FRXZ_XinXi_1_global_MC }
+			set_variable = { name = OW_FRXZ_XinXi_2_MC value = global_var:OW_FRXZ_XinXi_2_global_MC }
+			set_variable = { name = OW_FRXZ_XinXi_3_MC value = global_var:OW_FRXZ_XinXi_3_global_MC }
+			set_variable = { name = OW_FRXZ_XinXi_4_MC value = global_var:OW_FRXZ_XinXi_4_global_MC }
+			set_variable = { name = OW_FRXZ_XinXi_5_MC value = global_var:OW_FRXZ_XinXi_5_global_MC }
+			set_variable = { name = OW_FRXZ_XinXi_6_MC value = global_var:OW_FRXZ_XinXi_6_global_MC }
+			set_variable = { name = OW_FRXZ_XinXi_7_MC value = global_var:OW_FRXZ_XinXi_7_global_MC }
+			set_variable = { name = OW_FRXZ_XinXi_8_MC value = global_var:OW_FRXZ_XinXi_8_global_MC }
+			set_variable = { name = OW_FRXZ_XinXi_9_MC value = global_var:OW_FRXZ_XinXi_9_global_MC }
+			set_variable = { name = OW_FRXZ_XinXi_10_MC value = global_var:OW_FRXZ_XinXi_10_global_MC }
+			set_variable = { name = OW_FRXZ_XinXi_1_global_txt value = global_var:OW_FRXZ_XinXi_1_global }
+			set_variable = { name = OW_FRXZ_XinXi_2_global_txt value = global_var:OW_FRXZ_XinXi_2_global }
+			set_variable = { name = OW_FRXZ_XinXi_3_global_txt value = global_var:OW_FRXZ_XinXi_3_global }
+			set_variable = { name = OW_FRXZ_XinXi_4_global_txt value = global_var:OW_FRXZ_XinXi_4_global }
+			set_variable = { name = OW_FRXZ_XinXi_5_global_txt value = global_var:OW_FRXZ_XinXi_5_global }
+			set_variable = { name = OW_FRXZ_XinXi_6_global_txt value = global_var:OW_FRXZ_XinXi_6_global }
+			set_variable = { name = OW_FRXZ_XinXi_7_global_txt value = global_var:OW_FRXZ_XinXi_7_global }
+			set_variable = { name = OW_FRXZ_XinXi_8_global_txt value = global_var:OW_FRXZ_XinXi_8_global }
+			set_variable = { name = OW_FRXZ_XinXi_9_global_txt value = global_var:OW_FRXZ_XinXi_9_global }
+			set_variable = { name = OW_FRXZ_XinXi_10_global_txt value = global_var:OW_FRXZ_XinXi_10_global }
+		}
+	}
+}
+OW_SET_GLOBAL_VAR = {
+	set_global_variable = { name = OW_FRXZ_XinXi_1_global value = 10 }
+	set_global_variable = { name = OW_FRXZ_XinXi_2_global value = 10 }
+	set_global_variable = { name = OW_FRXZ_XinXi_3_global value = 10 }
+	set_global_variable = { name = OW_FRXZ_XinXi_4_global value = 10 }
+	set_global_variable = { name = OW_FRXZ_XinXi_5_global value = 10 }
+	set_global_variable = { name = OW_FRXZ_XinXi_6_global value = 10 }
+	set_global_variable = { name = OW_FRXZ_XinXi_7_global value = 10 }
+	set_global_variable = { name = OW_FRXZ_XinXi_8_global value = 10 }
+	set_global_variable = { name = OW_FRXZ_XinXi_9_global value = 10 }
+	set_global_variable = { name = OW_FRXZ_XinXi_10_global value = 10 }
+	set_global_variable = { name = OW_FRXZ_XinXi_1_global_MC value = { 1 5 } }
+	set_global_variable = { name = OW_FRXZ_XinXi_2_global_MC value = { 1 5 } }
+	set_global_variable = { name = OW_FRXZ_XinXi_3_global_MC value = { 1 5 } }
+	set_global_variable = { name = OW_FRXZ_XinXi_4_global_MC value = { 1 5 } }
+	set_global_variable = { name = OW_FRXZ_XinXi_5_global_MC value = { 1 5 } }
+	set_global_variable = { name = OW_FRXZ_XinXi_6_global_MC value = { 1 5 } }
+	set_global_variable = { name = OW_FRXZ_XinXi_7_global_MC value = { 1 5 } }
+	set_global_variable = { name = OW_FRXZ_XinXi_8_global_MC value = { 1 5 } }
+	set_global_variable = { name = OW_FRXZ_XinXi_9_global_MC value = { 1 5 } }
+	set_global_variable = { name = OW_FRXZ_XinXi_10_global_MC value = { 1 5 } }
+	set_global_variable = { name = OW_FRXZ_XinXi_1_global_MR value = { 5 10 } }
+	set_global_variable = { name = OW_FRXZ_XinXi_2_global_MR value = { 5 10 } }
+	set_global_variable = { name = OW_FRXZ_XinXi_3_global_MR value = { 5 10 } }
+	set_global_variable = { name = OW_FRXZ_XinXi_4_global_MR value = { 5 10 } }
+	set_global_variable = { name = OW_FRXZ_XinXi_5_global_MR value = { 5 10 } }
+	set_global_variable = { name = OW_FRXZ_XinXi_6_global_MR value = { 5 10 } }
+	set_global_variable = { name = OW_FRXZ_XinXi_7_global_MR value = { 5 10 } }
+	set_global_variable = { name = OW_FRXZ_XinXi_8_global_MR value = { 5 10 } }
+	set_global_variable = { name = OW_FRXZ_XinXi_9_global_MR value = { 5 10 } }
+	set_global_variable = { name = OW_FRXZ_XinXi_10_global_MR value = { 5 10 } }
+}
+
+OW_MONTHS_XINXISHIXIAO = {
+	if = {
+		limit = {
+			has_variable = OW_FRXZ_XinXi_1
+			var:OW_FRXZ_XinXi_1 >= 1
+		}
+		set_variable = {
+			name = OW_FRXZ_XinXi_1 
+			value = {
+				value = var:OW_FRXZ_XinXi_1
+				multiply = { 0.9 0.99 }
+				floor = yes
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_variable = OW_FRXZ_XinXi_2
+			var:OW_FRXZ_XinXi_2 >= 1
+		}
+		set_variable = {
+			name = OW_FRXZ_XinXi_2
+			value = {
+				value = var:OW_FRXZ_XinXi_2
+				multiply = { 0.9 0.99 }
+				floor = yes
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_variable = OW_FRXZ_XinXi_3
+			var:OW_FRXZ_XinXi_3 >= 1
+		}
+		set_variable = {
+			name = OW_FRXZ_XinXi_3
+			value = {
+				value = var:OW_FRXZ_XinXi_3
+				multiply = { 0.9 0.99 }
+				floor = yes
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_variable = OW_FRXZ_XinXi_4
+			var:OW_FRXZ_XinXi_4 >= 1
+		}
+		set_variable = {
+			name = OW_FRXZ_XinXi_4
+			value = {
+				value = var:OW_FRXZ_XinXi_4
+				multiply = { 0.9 0.99 }
+				floor = yes
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_variable = OW_FRXZ_XinXi_5
+			var:OW_FRXZ_XinXi_5 >= 1
+		}
+		set_variable = {
+			name = OW_FRXZ_XinXi_5
+			value = {
+				value = var:OW_FRXZ_XinXi_5
+				multiply = { 0.9 0.99 }
+				floor = yes
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_variable = OW_FRXZ_XinXi_6
+			var:OW_FRXZ_XinXi_6 >= 1
+		}
+		set_variable = {
+			name = OW_FRXZ_XinXi_6
+			value = {
+				value = var:OW_FRXZ_XinXi_6
+				multiply = { 0.9 0.99 }
+				floor = yes
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_variable = OW_FRXZ_XinXi_7
+			var:OW_FRXZ_XinXi_7 >= 1
+		}
+		set_variable = {
+			name = OW_FRXZ_XinXi_7
+			value = {
+				value = var:OW_FRXZ_XinXi_7
+				multiply = { 0.9 0.99 }
+				floor = yes
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_variable = OW_FRXZ_XinXi_8
+			var:OW_FRXZ_XinXi_8 >= 1
+		}
+		set_variable = {
+			name = OW_FRXZ_XinXi_8
+			value = {
+				value = var:OW_FRXZ_XinXi_8
+				multiply = { 0.9 0.99 }
+				floor = yes
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_variable = OW_FRXZ_XinXi_9
+			var:OW_FRXZ_XinXi_9 >= 1
+		}
+		set_variable = {
+			name = OW_FRXZ_XinXi_9
+			value = {
+				value = var:OW_FRXZ_XinXi_9
+				multiply = { 0.9 0.99 }
+				floor = yes
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_variable = OW_FRXZ_XinXi_10
+			var:OW_FRXZ_XinXi_10 >= 1
+		}
+		set_variable = {
+			name = OW_FRXZ_XinXi_10
+			value = {
+				value = var:OW_FRXZ_XinXi_10
+				multiply = { 0.9 0.99 }
+				floor = yes
+			}
+		}
+	}
+}
+#获取随机不等量碎片
+add_OW_FRXZ_Random_XinXi_Random_Value = {
+	random_list = {
+		1 = { trigger_event = OW_FRJQ_XXSP_ADD_DESC.01 }
+		1 = { trigger_event = OW_FRJQ_XXSP_ADD_DESC.02 }
+		1 = { trigger_event = OW_FRJQ_XXSP_ADD_DESC.03 }
+		1 = { trigger_event = OW_FRJQ_XXSP_ADD_DESC.04 }
+		1 = { trigger_event = OW_FRJQ_XXSP_ADD_DESC.05 }
+		1 = { trigger_event = OW_FRJQ_XXSP_ADD_DESC.06 }
+		1 = { trigger_event = OW_FRJQ_XXSP_ADD_DESC.07 }
+		1 = { trigger_event = OW_FRJQ_XXSP_ADD_DESC.08 }
+		1 = { trigger_event = OW_FRJQ_XXSP_ADD_DESC.09 }
+		1 = { trigger_event = OW_FRJQ_XXSP_ADD_DESC.10 }
+	}
+}
+
+
+#信息碎片的价格处理
+#OW_FRXZ_XinXi_KEY = OW_FRXZ_XinXi_1
+OW_FRXZ_XinXi_JiaGeChuLi = {
+	if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global = { compare_value >= 1000 } }
+		OW_FRXZ_XinXi_JiaGeChuLi_MC_subtract = {
+			OW_FRXZ_XinXi_KEY = $OW_FRXZ_XinXi_KEY$
+		}
+		OW_FRXZ_XinXi_JiaGeChuLi_MR_subtract = {
+			OW_FRXZ_XinXi_KEY = $OW_FRXZ_XinXi_KEY$
+		}
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global = { compare_value >= 10 } }
+		OW_FRXZ_XinXi_JiaGeChuLi_MC_add = {
+			OW_FRXZ_XinXi_KEY = $OW_FRXZ_XinXi_KEY$
+		}
+		OW_FRXZ_XinXi_JiaGeChuLi_MR_add = {
+			OW_FRXZ_XinXi_KEY = $OW_FRXZ_XinXi_KEY$
+		}
+	}
+	else = {
+		OW_FRXZ_XinXi_JiaGeChuLi_MC_add10 = {
+			OW_FRXZ_XinXi_KEY = $OW_FRXZ_XinXi_KEY$
+		}
+		OW_FRXZ_XinXi_JiaGeChuLi_MR_add10 = {
+			OW_FRXZ_XinXi_KEY = $OW_FRXZ_XinXi_KEY$
+		}
+	}
+	OW_FRXZ_XinXi_JiaGeChuLi_ShangXiaXian = {
+		OW_CT_KEY = $OW_FRXZ_XinXi_KEY$
+	}
+}
+#OW_CT_KEY = OW_FRXZ_XinXi_1
+OW_FRXZ_XinXi_JiaGeChuLi_ShangXiaXian = {
+	if = {
+		limit = { global_var:$OW_CT_KEY$_global_MC = { compare_value <= 0.1 } }
+		set_global_variable = { name = $OW_CT_KEY$_global_MC value = 0.1 }
+	}
+	if = {
+		limit = { global_var:$OW_CT_KEY$_global_MR = { compare_value <= 1 } }
+		set_global_variable = { name = $OW_CT_KEY$_global_MR value = 1 }
+	}
+}
+OW_FRXZ_XinXi_JiaGeChuLi_MC_subtract = {
+	if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MC >= 50 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MC subtract = { 0.10 0.50 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MC >= 40 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MC subtract = { 0.09 0.45 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MC >= 30 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MC subtract = { 0.08 0.40 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MC >= 20 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MC subtract = { 0.07 0.35 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MC >= 10 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MC subtract = { 0.06 0.30 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MC >= 8 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MC subtract = { 0.05 0.25 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MC >= 6 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MC subtract = { 0.04 0.20 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MC >= 4 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MC subtract = { 0.03 0.15 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MC >= 2 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MC subtract = { 0.02 0.10 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MC >= 1 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MC subtract = { 0.01 0.05 } }
+	}
+	else = {
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MC add = { 0.01 0.99 } }
+	}
+}
+OW_FRXZ_XinXi_JiaGeChuLi_MR_subtract = {
+	if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MR >= 250 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MR subtract = { 1.00 2.50 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MR >= 200 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MR subtract = { 0.80 2.00 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MR >= 150 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MR subtract = { 0.60 1.5 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MR >= 100 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MR subtract = { 0.40 1.00 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MR >= 80 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MR subtract = { 0.20 0.75 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MR >= 60 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MR subtract = { 0.15 0.50 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MR >= 40 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MR subtract = { 0.10 0.40 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MR >= 20 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MR subtract = { 0.05 0.30 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MR >= 10 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MR subtract = { 0.02 0.20 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MR >= 5 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MR subtract = { 0.01 0.10 } }
+	}
+	else = {
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MR add = { 0.01 0.99 } }
+	}
+}
+
+OW_FRXZ_XinXi_JiaGeChuLi_MC_add = {
+	if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MC >= 100 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MC subtract = { 1 50 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MC >= 50 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MC add = 0.01 }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MC >= 40 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MC add = { 0.01 0.05 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MC >= 30 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MC add = { 0.02 0.10 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MC >= 20 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MC add = { 0.04 0.15 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MC >= 10 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MC add = { 0.06 0.20 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MC >= 8 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MC add = { 0.08 0.25 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MC >= 6 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MC add = { 0.10 0.30 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MC >= 4 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MC add = { 0.12 0.35 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MC >= 2 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MC add = { 0.15 0.40 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MC >= 1 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MC add = { 0.20 0.50 } }
+	}
+	else = {
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MC add = { 0.50 1.00 } }
+	}
+}
+OW_FRXZ_XinXi_JiaGeChuLi_MR_add = {
+	if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MR >= 500 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MR subtract = { 10 250 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MR >= 250 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MR add = { 0.01 0.05 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MR >= 200 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MR add = { 0.05 0.10 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MR >= 150 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MR add = { 0.10 0.20 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MR >= 100 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MR add = { 0.15 0.30 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MR >= 80 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MR add = { 0.20 0.40 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MR >= 60 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MR add = { 0.25 0.50 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MR >= 40 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MR add = { 0.30 1.00 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MR >= 20 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MR add = { 0.35 1.00 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MR >= 10 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MR add = { 0.40 1.00 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MR >= 5 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MR add = { 0.50 1.00 } }
+	}
+	else = {
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MR add = { 1.00 2.00 } }
+	}
+}
+OW_FRXZ_XinXi_JiaGeChuLi_MC_add10 = {
+	if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MC >= 500 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MC subtract = { 400 450 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MC >= 50 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MC add = 0.05 }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MC >= 40 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MC add = { 0.10 1.00 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MC >= 30 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MC add = { 0.20 1.00 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MC >= 20 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MC add = { 0.30 1.00 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MC >= 10 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MC add = { 0.40 1.00 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MC >= 8 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MC add = { 0.50 1.00 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MC >= 6 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MC add = { 0.60 2.00 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MC >= 4 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MC add = { 0.70 2.00 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MC >= 2 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MC add = { 0.80 2.00 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MC >= 1 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MC add = { 0.90 2.00 } }
+	}
+	else = {
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MC add = 2.00 }
+	}
+}
+OW_FRXZ_XinXi_JiaGeChuLi_MR_add10 = {
+	if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MR >= 2500 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MR add = { 2000 2250} }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MR >= 250 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MR add = 0.01 }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MR >= 200 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MR add = 0.02 }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MR >= 150 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MR add = 0.04 }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MR >= 100 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MR add = 0.08 }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MR >= 80 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MR add = { 0.1 0.16 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MR >= 60 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MR add = { 0.1 0.32 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MR >= 40 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MR add = { 0.1 0.64 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MR >= 20 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MR add = { 0.1 1.28 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MR >= 10 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MR add = { 0.1 2.56 } }
+	}
+	else_if = {
+		limit = { global_var:$OW_FRXZ_XinXi_KEY$_global_MR >= 5 }
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MR add = { 0.1 5.12 } }
+	}
+	else = {
+		change_global_variable = { name = $OW_FRXZ_XinXi_KEY$_global_MR add = { 0.1 10.24 } }
+	}
+}

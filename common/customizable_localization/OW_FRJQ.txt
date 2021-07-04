@@ -1,0 +1,641 @@
+﻿OW_DFFR_XiuZhenZhiLu_TIP_NOT = {
+	type = character
+	text = {
+		trigger = {
+			has_character_flag = OW_XZ_xiuzhenzhilu_CD
+			is_imprisoned = yes
+		}
+		localization_key = OW_DFFR_XiuZhenZhiLu_TIP_NO1
+	}
+	text = {
+		trigger = {
+			has_character_flag = OW_XZ_xiuzhenzhilu_CD
+		}
+		localization_key = OW_DFFR_XiuZhenZhiLu_TIP_NO2
+	}
+	text = {
+		trigger = {
+			is_imprisoned = yes
+		}
+		localization_key = OW_DFFR_XiuZhenZhiLu_TIP_NO3
+	}
+	text = {
+		localization_key = OW_DFFR_XiuZhenZhiLu_TIP_YES
+	}
+}
+OW_DFFR_TANSUO_TIP_NOT = {
+	type = character
+	text = {
+		trigger = { has_character_flag = OW_FRJQ_TanSuo_CD }
+		localization_key = OW_DFFR_TANSUO_TIP_NO
+	}
+	text = {
+		localization_key = OW_DFFR_TANSUO_TIP_YES
+	}
+}
+##########################################
+OW_FRXZ_JYCK_ZS_TXT_1 = {
+	type = character
+	text = {
+		trigger = {
+			var:OW_FRXZ_XinXi_1_global_txt <= 0
+		}
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_NOT
+	}
+	text = {
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_1_YES
+	}
+}
+OW_FRXZ_JYCK_ZS_TXT_2 = {
+	type = character
+	text = {
+		trigger = {
+			var:OW_FRXZ_XinXi_2_global_txt <= 0
+		}
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_NOT
+	}
+	text = {
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_2_YES
+	}
+}
+OW_FRXZ_JYCK_ZS_TXT_3 = {
+	type = character
+	text = {
+		trigger = {
+			var:OW_FRXZ_XinXi_3_global_txt <= 0
+		}
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_NOT
+	}
+	text = {
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_3_YES
+	}
+}
+OW_FRXZ_JYCK_ZS_TXT_4 = {
+	type = character
+	text = {
+		trigger = {
+			var:OW_FRXZ_XinXi_4_global_txt <= 0
+		}
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_NOT
+	}
+	text = {
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_4_YES
+	}
+}
+OW_FRXZ_JYCK_ZS_TXT_5 = {
+	type = character
+	text = {
+		trigger = {
+			var:OW_FRXZ_XinXi_5_global_txt <= 0
+		}
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_NOT
+	}
+	text = {
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_5_YES
+	}
+}
+OW_FRXZ_JYCK_ZS_TXT_6 = {
+	type = character
+	text = {
+		trigger = {
+			var:OW_FRXZ_XinXi_6_global_txt <= 0
+		}
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_NOT
+	}
+	text = {
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_6_YES
+	}
+}
+OW_FRXZ_JYCK_ZS_TXT_7 = {
+	type = character
+	text = {
+		trigger = {
+			var:OW_FRXZ_XinXi_7_global_txt <= 0
+		}
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_NOT
+	}
+	text = {
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_7_YES
+	}
+}
+OW_FRXZ_JYCK_ZS_TXT_8 = {
+	type = character
+	text = {
+		trigger = {
+			var:OW_FRXZ_XinXi_8_global_txt <= 0
+		}
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_NOT
+	}
+	text = {
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_8_YES
+	}
+}
+OW_FRXZ_JYCK_ZS_TXT_9 = {
+	type = character
+	text = {
+		trigger = {
+			var:OW_FRXZ_XinXi_9_global_txt <= 0
+		}
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_NOT
+	}
+	text = {
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_9_YES
+	}
+}
+OW_FRXZ_JYCK_ZS_TXT_10 = {
+	type = character
+	text = {
+		trigger = {
+			var:OW_FRXZ_XinXi_10_global_txt <= 0
+		}
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_NOT
+	}
+	text = {
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_10_YES
+	}
+}
+###############################################
+OW_FRXZ_JYCK_ZS_MC_TXT_1 = {
+	type = character
+	text = {
+		trigger = {
+			var:OW_FRXZ_XinXi_1 <= 0
+		}
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_MC_NO
+	}
+	text = {
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_1_MC_YES
+	}
+}
+OW_FRXZ_JYCK_ZS_MC_TXT_2 = {
+	type = character
+	text = {
+		trigger = {
+			var:OW_FRXZ_XinXi_2 <= 0
+		}
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_MC_NO
+	}
+	text = {
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_2_MC_YES
+	}
+}
+OW_FRXZ_JYCK_ZS_MC_TXT_3 = {
+	type = character
+	text = {
+		trigger = {
+			var:OW_FRXZ_XinXi_3 <= 0
+		}
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_MC_NO
+	}
+	text = {
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_3_MC_YES
+	}
+}
+OW_FRXZ_JYCK_ZS_MC_TXT_4 = {
+	type = character
+	text = {
+		trigger = {
+			var:OW_FRXZ_XinXi_4 <= 0
+		}
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_MC_NO
+	}
+	text = {
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_4_MC_YES
+	}
+}
+OW_FRXZ_JYCK_ZS_MC_TXT_5 = {
+	type = character
+	text = {
+		trigger = {
+			var:OW_FRXZ_XinXi_5 <= 0
+		}
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_MC_NO
+	}
+	text = {
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_5_MC_YES
+	}
+}
+OW_FRXZ_JYCK_ZS_MC_TXT_6 = {
+	type = character
+	text = {
+		trigger = {
+			var:OW_FRXZ_XinXi_6 <= 0
+		}
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_MC_NO
+	}
+	text = {
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_6_MC_YES
+	}
+}
+OW_FRXZ_JYCK_ZS_MC_TXT_7 = {
+	type = character
+	text = {
+		trigger = {
+			var:OW_FRXZ_XinXi_7 <= 0
+		}
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_MC_NO
+	}
+	text = {
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_7_MC_YES
+	}
+}
+OW_FRXZ_JYCK_ZS_MC_TXT_8 = {
+	type = character
+	text = {
+		trigger = {
+			var:OW_FRXZ_XinXi_8 <= 0
+		}
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_MC_NO
+	}
+	text = {
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_8_MC_YES
+	}
+}
+OW_FRXZ_JYCK_ZS_MC_TXT_9 = {
+	type = character
+	text = {
+		trigger = {
+			var:OW_FRXZ_XinXi_9 <= 0
+		}
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_MC_NO
+	}
+	text = {
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_9_MC_YES
+	}
+}
+OW_FRXZ_JYCK_ZS_MC_TXT_10 = {
+	type = character
+	text = {
+		trigger = {
+			var:OW_FRXZ_XinXi_10 <= 0
+		}
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_MC_NO
+	}
+	text = {
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_10_MC_YES
+	}
+}
+
+##################
+OW_FRXZ_JYCK_ZS_MR_TXT_1 = {
+	type = character
+	text = {
+		trigger = {
+			gold < var:OW_FRXZ_XinXi_1_MC
+		}
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_MR_NO
+	}
+	text = {
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_1_MR_YES
+	}
+}
+OW_FRXZ_JYCK_ZS_MR_TXT_2 = {
+	type = character
+	text = {
+		trigger = {
+			gold < var:OW_FRXZ_XinXi_2_MC
+		}
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_MR_NO
+	}
+	text = {
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_2_MR_YES
+	}
+}
+OW_FRXZ_JYCK_ZS_MR_TXT_3 = {
+	type = character
+	text = {
+		trigger = {
+			gold < var:OW_FRXZ_XinXi_3_MC
+		}
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_MR_NO
+	}
+	text = {
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_3_MR_YES
+	}
+}
+OW_FRXZ_JYCK_ZS_MR_TXT_4 = {
+	type = character
+	text = {
+		trigger = {
+			gold < var:OW_FRXZ_XinXi_4_MC
+		}
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_MR_NO
+	}
+	text = {
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_4_MR_YES
+	}
+}
+OW_FRXZ_JYCK_ZS_MR_TXT_5 = {
+	type = character
+	text = {
+		trigger = {
+			gold < var:OW_FRXZ_XinXi_5_MC
+		}
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_MR_NO
+	}
+	text = {
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_5_MR_YES
+	}
+}
+OW_FRXZ_JYCK_ZS_MR_TXT_6 = {
+	type = character
+	text = {
+		trigger = {
+			gold < var:OW_FRXZ_XinXi_6_MC
+		}
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_MR_NO
+	}
+	text = {
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_6_MR_YES
+	}
+}
+OW_FRXZ_JYCK_ZS_MR_TXT_7 = {
+	type = character
+	text = {
+		trigger = {
+			gold < var:OW_FRXZ_XinXi_7_MC
+		}
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_MR_NO
+	}
+	text = {
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_7_MR_YES
+	}
+}
+OW_FRXZ_JYCK_ZS_MR_TXT_8 = {
+	type = character
+	text = {
+		trigger = {
+			gold < var:OW_FRXZ_XinXi_8_MC
+		}
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_MR_NO
+	}
+	text = {
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_8_MR_YES
+	}
+}
+OW_FRXZ_JYCK_ZS_MR_TXT_9 = {
+	type = character
+	text = {
+		trigger = {
+			gold < var:OW_FRXZ_XinXi_9_MC
+		}
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_MR_NO
+	}
+	text = {
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_9_MR_YES
+	}
+}
+OW_FRXZ_JYCK_ZS_MR_TXT_10 = {
+	type = character
+	text = {
+		trigger = {
+			gold < var:OW_FRXZ_XinXi_10_MC
+		}
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_MR_NO
+	}
+	text = {
+		localization_key = OW_FRXZ_JYCK_ZS_TXT_10_MR_YES
+	}
+}
+###############################
+OW_DFFR_XZ_XinXi_TXT_D_1 = {
+	type = character
+	text = {
+		trigger = {
+			var:OW_FRXZ_XinXi_1 < 100
+		}
+		localization_key = OW_DFFR_XZ_XinXi_TXT_D_NO
+	}
+	text = {
+		localization_key = OW_DFFR_XZ_XinXi_TXT_1_D_YES
+	}
+}
+OW_DFFR_XZ_XinXi_TXT_D_2 = {
+	type = character
+	text = {
+		trigger = {
+			var:OW_FRXZ_XinXi_2 < 100
+		}
+		localization_key = OW_DFFR_XZ_XinXi_TXT_D_NO
+	}
+	text = {
+		localization_key = OW_DFFR_XZ_XinXi_TXT_2_D_YES
+	}
+}
+OW_DFFR_XZ_XinXi_TXT_D_3 = {
+	type = character
+	text = {
+		trigger = {
+			var:OW_FRXZ_XinXi_3 < 100
+		}
+		localization_key = OW_DFFR_XZ_XinXi_TXT_D_NO
+	}
+	text = {
+		localization_key = OW_DFFR_XZ_XinXi_TXT_3_D_YES
+	}
+}
+OW_DFFR_XZ_XinXi_TXT_D_4 = {
+	type = character
+	text = {
+		trigger = {
+			var:OW_FRXZ_XinXi_4 < 100
+		}
+		localization_key = OW_DFFR_XZ_XinXi_TXT_D_NO
+	}
+	text = {
+		localization_key = OW_DFFR_XZ_XinXi_TXT_4_D_YES
+	}
+}
+OW_DFFR_XZ_XinXi_TXT_D_5 = {
+	type = character
+	text = {
+		trigger = {
+			var:OW_FRXZ_XinXi_5 < 100
+		}
+		localization_key = OW_DFFR_XZ_XinXi_TXT_D_NO
+	}
+	text = {
+		localization_key = OW_DFFR_XZ_XinXi_TXT_5_D_YES
+	}
+}
+OW_DFFR_XZ_XinXi_TXT_D_6 = {
+	type = character
+	text = {
+		trigger = {
+			var:OW_FRXZ_XinXi_6 < 100
+		}
+		localization_key = OW_DFFR_XZ_XinXi_TXT_D_NO
+	}
+	text = {
+		localization_key = OW_DFFR_XZ_XinXi_TXT_6_D_YES
+	}
+}
+OW_DFFR_XZ_XinXi_TXT_D_7 = {
+	type = character
+	text = {
+		trigger = {
+			var:OW_FRXZ_XinXi_7 < 100
+		}
+		localization_key = OW_DFFR_XZ_XinXi_TXT_D_NO
+	}
+	text = {
+		localization_key = OW_DFFR_XZ_XinXi_TXT_7_D_YES
+	}
+}
+OW_DFFR_XZ_XinXi_TXT_D_8 = {
+	type = character
+	text = {
+		trigger = {
+			var:OW_FRXZ_XinXi_8 < 100
+		}
+		localization_key = OW_DFFR_XZ_XinXi_TXT_D_NO
+	}
+	text = {
+		localization_key = OW_DFFR_XZ_XinXi_TXT_8_D_YES
+	}
+}
+OW_DFFR_XZ_XinXi_TXT_D_9 = {
+	type = character
+	text = {
+		trigger = {
+			var:OW_FRXZ_XinXi_9 < 100
+		}
+		localization_key = OW_DFFR_XZ_XinXi_TXT_D_NO
+	}
+	text = {
+		localization_key = OW_DFFR_XZ_XinXi_TXT_9_D_YES
+	}
+}
+OW_DFFR_XZ_XinXi_TXT_D_10 = {
+	type = character
+	text = {
+		trigger = {
+			var:OW_FRXZ_XinXi_10 < 100
+		}
+		localization_key = OW_DFFR_XZ_XinXi_TXT_D_NO
+	}
+	text = {
+		localization_key = OW_DFFR_XZ_XinXi_TXT_10_D_YES
+	}
+}
+###############
+OW_DFFR_XZ_XinXi_TXT_J_1 = {
+	type = character
+	text = {
+		trigger = {
+			var:OW_FRXZ_XinXi_1 < 10
+		}
+		localization_key = OW_DFFR_XZ_XinXi_TXT_J_NO
+	}
+	text = {
+		localization_key = OW_DFFR_XZ_XinXi_TXT_1_J_YES
+	}
+}
+OW_DFFR_XZ_XinXi_TXT_J_2 = {
+	type = character
+	text = {
+		trigger = {
+			var:OW_FRXZ_XinXi_2 < 10
+		}
+		localization_key = OW_DFFR_XZ_XinXi_TXT_J_NO
+	}
+	text = {
+		localization_key = OW_DFFR_XZ_XinXi_TXT_2_J_YES
+	}
+}
+OW_DFFR_XZ_XinXi_TXT_J_3 = {
+	type = character
+	text = {
+		trigger = {
+			var:OW_FRXZ_XinXi_3 < 10
+		}
+		localization_key = OW_DFFR_XZ_XinXi_TXT_J_NO
+	}
+	text = {
+		localization_key = OW_DFFR_XZ_XinXi_TXT_3_J_YES
+	}
+}
+OW_DFFR_XZ_XinXi_TXT_J_4 = {
+	type = character
+	text = {
+		trigger = {
+			var:OW_FRXZ_XinXi_4 < 10
+		}
+		localization_key = OW_DFFR_XZ_XinXi_TXT_J_NO
+	}
+	text = {
+		localization_key = OW_DFFR_XZ_XinXi_TXT_4_J_YES
+	}
+}
+OW_DFFR_XZ_XinXi_TXT_J_5 = {
+	type = character
+	text = {
+		trigger = {
+			var:OW_FRXZ_XinXi_5 < 10
+		}
+		localization_key = OW_DFFR_XZ_XinXi_TXT_J_NO
+	}
+	text = {
+		localization_key = OW_DFFR_XZ_XinXi_TXT_5_J_YES
+	}
+}
+OW_DFFR_XZ_XinXi_TXT_J_6 = {
+	type = character
+	text = {
+		trigger = {
+			var:OW_FRXZ_XinXi_6 < 10
+		}
+		localization_key = OW_DFFR_XZ_XinXi_TXT_J_NO
+	}
+	text = {
+		localization_key = OW_DFFR_XZ_XinXi_TXT_6_J_YES
+	}
+}
+OW_DFFR_XZ_XinXi_TXT_J_7 = {
+	type = character
+	text = {
+		trigger = {
+			var:OW_FRXZ_XinXi_7 < 10
+		}
+		localization_key = OW_DFFR_XZ_XinXi_TXT_J_NO
+	}
+	text = {
+		localization_key = OW_DFFR_XZ_XinXi_TXT_7_J_YES
+	}
+}
+OW_DFFR_XZ_XinXi_TXT_J_8 = {
+	type = character
+	text = {
+		trigger = {
+			var:OW_FRXZ_XinXi_8 < 10
+		}
+		localization_key = OW_DFFR_XZ_XinXi_TXT_J_NO
+	}
+	text = {
+		localization_key = OW_DFFR_XZ_XinXi_TXT_8_J_YES
+	}
+}
+OW_DFFR_XZ_XinXi_TXT_J_9 = {
+	type = character
+	text = {
+		trigger = {
+			var:OW_FRXZ_XinXi_9 < 10
+		}
+		localization_key = OW_DFFR_XZ_XinXi_TXT_J_NO
+	}
+	text = {
+		localization_key = OW_DFFR_XZ_XinXi_TXT_9_J_YES
+	}
+}
+OW_DFFR_XZ_XinXi_TXT_J_10 = {
+	type = character
+	text = {
+		trigger = {
+			var:OW_FRXZ_XinXi_10 < 10
+		}
+		localization_key = OW_DFFR_XZ_XinXi_TXT_J_NO
+	}
+	text = {
+		localization_key = OW_DFFR_XZ_XinXi_TXT_10_J_YES
+	}
+}

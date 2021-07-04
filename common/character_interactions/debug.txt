@@ -1,0 +1,66 @@
+﻿test_wo_interaction = {
+#測試
+	category = interaction_debug_main
+	desc = test_wo_interaction_desc
+	common_interaction = yes
+	auto_accept = yes
+	use_diplomatic_range = no
+	ignores_pending_interaction_block = yes
+	
+	is_shown = {
+		debug_only = yes
+		scope:recipient	={
+		    is_ai = no
+			NOT = { has_character_flag = OW_xiuzhenzhe }					 			    
+		}
+		scope:actor = {
+			is_ai = no
+			NOT = { has_character_flag = OW_xiuzhenzhe }
+		}
+	}
+	is_valid_showing_failures_only = {
+		scope:actor = { 
+			is_ai = no 
+			NOT = { has_character_flag = OW_xiuzhenzhe }
+		}
+	}
+	on_send = {
+		scope:actor = {
+			trigger_event = OW.0001
+		}
+	}
+}
+
+OW_XZ_xiuzhenzhilu1 = {
+	category = interaction_debug_main
+	desc = OW_XZ_xiuzhenzhilu1_desc
+	is_shown = {
+		debug_only = yes
+	}
+	auto_accept = yes
+	on_accept = {
+	}
+}
+OW_XZ_xiuzhenzhilu2 = {
+	category = interaction_debug_main
+	desc = OW_XZ_xiuzhenzhilu2_desc
+	is_shown = {
+		debug_only = yes
+	}
+	auto_accept = yes
+	on_accept = {
+	}
+}
+OW_XZ_xiuzhenzhilu3 = {
+	category = interaction_debug_main
+	desc = OW_XZ_xiuzhenzhilu3_desc
+		is_shown = {
+		debug_only = yes
+	}
+	auto_accept = yes
+	on_accept = {#条件是不能拥有flag=OW_KO_WAR才能执行
+		scope:actor = {
+			trigger_event = OW.0003
+		}
+	}
+}

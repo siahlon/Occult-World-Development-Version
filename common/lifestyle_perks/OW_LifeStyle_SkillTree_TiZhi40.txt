@@ -1,0 +1,94 @@
+﻿#####体质扩展包#########
+#####by：H#####
+#####correct：狗头######
+########################
+#1~4练气境
+#5~8筑基境
+#9~12结丹境
+#13~16金丹境
+#17~20元婴境
+#21~24出窍境
+#25~28分神境
+#29~32合体境
+#33~36大乘境
+#37地仙镜（渡劫期）
+
+OW_XZ_TZ_40_ShenGe_perk = {
+	lifestyle = lifestyle_tizhi40
+	tree = yunshi_tree_tizhi_40
+	position = { 0 3 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+	}
+	effect = {
+		add_OW_SkillPerk_AttributeEffect = { 
+			OW_XZ_TZ_KEY = OW_XZ_TZ_40_ShenGe_perk
+			OW_XZ_CT_KEY = OW_years_lingli
+			OW_XZ_TZ_YUNSHI = 5
+			OW_XZ_TZ_VALUE = 1
+		}
+	}
+}
+
+OW_XZ_TZ_40_MoGe_perk = {
+	lifestyle = lifestyle_tizhi40
+	tree = yunshi_tree_tizhi_40
+	position = { 2 3 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+	}
+	effect = {
+		add_OW_SkillPerk_AttributeEffect = { 
+			OW_XZ_TZ_KEY = OW_XZ_TZ_40_MoGe_perk
+			OW_XZ_CT_KEY = OW_years_mingli
+			OW_XZ_TZ_YUNSHI = 5
+			OW_XZ_TZ_VALUE = 10
+		}
+	}
+}
+
+OW_XZ_TZ_40_ShenTi_perk = {
+	lifestyle = lifestyle_tizhi40
+	tree = yunshi_tree_tizhi_40
+	position = { 4 3 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+	}
+	effect = {
+		add_OW_SkillPerk_AttributeEffect = { 
+			OW_XZ_TZ_KEY = OW_XZ_TZ_40_ShenTi_perk
+			OW_XZ_CT_KEY = OW_lingli_max
+			OW_XZ_TZ_YUNSHI = 5
+			OW_XZ_TZ_VALUE = 1
+		}
+	}
+}
+
+OW_XZ_TZ_40_MoGe_perk = {
+	lifestyle = lifestyle_tizhi40
+	tree = yunshi_tree_tizhi_40
+	position = { 6 3 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+	}
+	effect = {
+		add_OW_SkillPerk_AttributeEffect = { 
+			OW_XZ_TZ_KEY = OW_XZ_TZ_40_MoGe_perk
+			OW_XZ_CT_KEY = OW_mingli
+			OW_XZ_TZ_YUNSHI = 5
+			OW_XZ_TZ_VALUE = 100
+		}
+	}
+}

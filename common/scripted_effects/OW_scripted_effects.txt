@@ -1,0 +1,1780 @@
+﻿#关键词条表：
+#OW_yezhang：业障
+#OW_lingshi：灵石
+#OW_jingjie：境界
+#OW_lingli：灵力
+#OW_lingli_max：灵力上限
+#OW_mingli：命理
+#OW_lingqiang：灵强
+#OW_xinjing：心境
+#OW_ganwu：感悟
+#OW_lilian：历练
+#OW_ganwu_exp：感悟经验
+#OW_lilian_exp：历练经验
+#OW_years_lingli：每年灵力
+#OW_years_lingli_max：每年灵力上限
+#OW_years_mingli：每年命理
+#OW_months_ganwu_exp：每月感悟经验
+#OW_months_lilian_exp：每月历练经验
+#OW_years_ganwu_exp：每年感悟经验
+#OW_years_lilian_exp：每年历练经验
+#OW_wuxing：悟性
+#OW_duanti：锻体
+#OW_shenshi：神识
+#OW_shihai：识海
+#OW_duanti_exp：锻体经验
+#OW_shenshi_exp：神识经验
+#OW_shihai_exp：识海经验
+#OW_months_duanti_exp：每月锻体经验
+#OW_months_shenshi_exp：每月神识经验
+#OW_years_shihai_exp：每年识海经验
+#
+##############################
+
+
+#固定数词条写法
+#ADD_OW_CT = #{
+#	OW_CT_KEY = 关键词条表
+#	VALUE = 常量正负整数
+#}
+ADD_OW_CT = {
+	if = {
+		limit = { has_variable = $OW_CT_KEY$ }
+		change_variable = { name = $OW_CT_KEY$ add = $VALUE$ }
+	}
+	OW_CT_MIN_CHECK = yes
+	OW_CT_MAX_CHECK = yes
+	custom_description_no_bullet = {
+		text = add_$OW_CT_KEY$_desc
+		value = $VALUE$
+	}
+	OW_AGE_PanDuan_DATA = yes
+}
+#随即数词条写法
+#ADD_OW_CT_RANDOM = #{
+#	OW_CT_KEY = 关键词条表
+#	MAX = 最大常量正负整数
+#	MIN = 最小常量正负整数
+#}
+ADD_OW_CT_RANDOM = {
+	if = {#参数大小检查与交换
+		limit = { $MAX$ < $MIN$ }
+		save_scope_value_as = {
+			name = $OW_CT_KEY$_TEMP
+			value = { 
+				add = { $MAX$ $MIN$ }
+				round = yes
+			}
+		}
+	}
+	else = {
+		save_scope_value_as = {
+			name = $OW_CT_KEY$_TEMP
+			value = {
+				add = { $MIN$ $MAX$ }
+				round = yes
+			}
+		}
+	}
+	if = {
+		limit = { has_variable = $OW_CT_KEY$ }
+		change_variable = { name = $OW_CT_KEY$ add = scope:$OW_CT_KEY$_TEMP }
+	}
+	OW_CT_MIN_CHECK = yes
+	OW_CT_MAX_CHECK = yes
+	OW_AGE_PanDuan_DATA = yes
+	custom_description_no_bullet = {
+		text = add_$OW_CT_KEY$_desc
+		value = scope:$OW_CT_KEY$_TEMP
+	}
+}
+#根据心境判定词条写法
+#ADD_OW_CT_XJ = #{
+#	OW_CT_KEY = 关键词条表
+#	VALUE = 常量基数
+#}
+ADD_OW_CT_XJ = {
+	if = {
+		limit = { has_variable = $OW_CT_KEY$ }
+		if = {
+			limit = { var:OW_xinjing = 1 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 1.1
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_xinjing = 2 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 1.2
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_xinjing = 3 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 1.4
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_xinjing = 4 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 1.6
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_xinjing = 5 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 1.8
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_xinjing = 6 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 2.0
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_xinjing = 7 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 2.5
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_xinjing = 8 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 3.0
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_xinjing = 9 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 4.0
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_xinjing = 10 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 5.0
+				}
+			}
+		}
+	}
+	OW_CT_MIN_CHECK = yes
+	OW_CT_MAX_CHECK = yes
+	custom_description_no_bullet = {
+		text = add_$OW_CT_KEY$_desc
+		value = scope:$OW_CT_KEY$_TEMP
+	}
+}
+#根据境界判定词条写法
+#ADD_OW_CT_JJ = #{
+#	OW_CT_KEY = 关键词条表
+#	VALUE = 常量基数
+#}
+ADD_OW_CT_JJ = {
+	if = {
+		limit = { has_variable = $OW_CT_KEY$ }
+		if = {
+			limit = { var:OW_jingjie = 1 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 1.1
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_jingjie = 2 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 1.2
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_jingjie = 3 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 1.3
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_jingjie = 4 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 1.4
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_jingjie = 5 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 1.5
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_jingjie = 6 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 1.6
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_jingjie = 7 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 1.7
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_jingjie = 8 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 1.8
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_jingjie = 9 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 1.9
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_jingjie = 10 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 2.0
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_jingjie = 11 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 2.1
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_jingjie = 12 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 2.2
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_jingjie = 13 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 2.3
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_jingjie = 14 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 2.4
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_jingjie = 15 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 2.5
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_jingjie = 16 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 2.6
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_jingjie = 17 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 2.7
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_jingjie = 18 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 2.8
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_jingjie = 19 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 2.9
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_jingjie = 20 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 3.0
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_jingjie = 21 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 3.1
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_jingjie = 22 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 3.2
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_jingjie = 23 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 3.3
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_jingjie = 24 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 3.4
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_jingjie = 25 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 3.5
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_jingjie = 26 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 3.6
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_jingjie = 27 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 3.7
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_jingjie = 28 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 3.8
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_jingjie = 29 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 3.9
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_jingjie = 30 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 4.0
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_jingjie = 31 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 4.2
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_jingjie = 32 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 4.4
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_jingjie = 33 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 4.6
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_jingjie = 34 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 4.8
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_jingjie = 35 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 5.0
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_jingjie = 36 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 7.5
+				}
+			}
+		}
+		if = {
+			limit = { var:OW_jingjie = 37 }
+			save_scope_value_as = {
+				name = $OW_CT_KEY$_TEMP
+				value = {
+					add = $VALUE$
+					multiply = 10
+				}
+			}
+		}
+		change_variable = { name = $OW_CT_KEY$ add = scope:$OW_CT_KEY$_TEMP }
+	}
+	OW_CT_MIN_CHECK = yes
+	OW_CT_MAX_CHECK = yes
+	custom_description_no_bullet = {
+		text = add_$OW_CT_KEY$_desc
+		value = scope:$OW_CT_KEY$_TEMP
+	}
+}
+
+
+
+OW_CT_MIN_CHECK = {
+	if = {
+		limit = { has_variable = OW_lingshi var:OW_lingshi < 0 }
+		remove_variable = OW_lingshi
+		set_variable = { name = OW_lingshi value = 0 }
+	}
+	if = {
+		limit = { has_variable = OW_yezhang var:OW_yezhang < 0 }
+		remove_variable = OW_yezhang
+		set_variable = { name = OW_yezhang value = 0 }
+	}
+	if = {
+		limit = { has_variable = OW_lingli var:OW_lingli < 0 }
+		remove_variable = OW_lingli
+		set_variable = { name = OW_lingli value = 0 }
+	}
+	if = {
+		limit = { has_variable = OW_mingli var:OW_mingli < 0 }
+		remove_variable = OW_mingli
+		set_variable = { name = OW_mingli value = 0 }
+	}
+	if = {
+		limit = { has_variable = OW_lingli_max var:OW_lingli_max < 0 }
+		remove_variable = OW_lingli_max
+		set_variable = { name = OW_lingli_max value = 0 }
+	}
+	if = {
+		limit = { has_variable = OW_lingqiang var:OW_lingqiang < 0 }
+		remove_variable = OW_lingqiang
+		set_variable = { name = OW_lingqiang value = 0 }
+	}
+	if = {
+		limit = { has_variable = OW_ganwu var:OW_ganwu < 0 }
+		remove_variable = OW_ganwu
+		set_variable = { name = OW_ganwu value = 0 }
+	}
+	if = {
+		limit = { has_variable = OW_lilian var:OW_lilian < 0 }
+		remove_variable = OW_lilian
+		set_variable = { name = OW_lilian value = 0 }
+	}
+	if = {
+		limit = { has_variable = OW_lilian_exp var:OW_lilian_exp < 0 }
+		remove_variable = OW_lilian_exp
+		set_variable = { name = OW_lilian_exp value = 0 }
+	}
+	if = {
+		limit = { has_variable = OW_ganwu_exp var:OW_ganwu_exp < 0 }
+		remove_variable = OW_ganwu_exp
+		set_variable = { name = OW_ganwu_exp value = 0 }
+	}
+	if = {
+		limit = { has_variable = OW_years_lingli var:OW_years_lingli < 0 }
+		remove_variable = OW_years_lingli
+		set_variable = { name = OW_years_lingli value = 0 }
+	}
+	if = {
+		limit = { has_variable = OW_years_lingli_max var:OW_years_lingli_max < 0 }
+		remove_variable = OW_years_lingli_max
+		set_variable = { name = OW_years_lingli_max value = 0 }
+	}
+	if = {
+		limit = { has_variable = OW_years_mingli var:OW_years_mingli < 0 }
+		remove_variable = OW_years_mingli
+		set_variable = { name = OW_years_mingli value = 0 }
+	}
+	if = {
+		limit = { has_variable = OW_years_lilian_exp var:OW_years_lilian_exp < 0 }
+		remove_variable = OW_years_lilian_exp
+		set_variable = { name = OW_years_lilian_exp value = 0 }
+	}
+	if = {
+		limit = { has_variable = OW_years_ganwu_exp var:OW_years_ganwu_exp < 0 }
+		remove_variable = OW_years_ganwu_exp
+		set_variable = { name = OW_years_ganwu_exp value = 0 }
+	}
+	if = {
+		limit = { has_variable = OW_months_lilian_exp var:OW_months_lilian_exp < 0 }
+		remove_variable = OW_months_lilian_exp
+		set_variable = { name = OW_months_lilian_exp value = 0 }
+	}
+	if = {
+		limit = { has_variable = OW_months_ganwu_exp var:OW_months_ganwu_exp < 0 }
+		remove_variable = OW_months_ganwu_exp
+		set_variable = { name = OW_months_ganwu_exp value = 0 }
+	}
+	if = {
+		limit = { has_variable = OW_wuxing var:OW_wuxing < 0 }
+		remove_variable = OW_wuxing
+		set_variable = { name = OW_wuxing value = 0 }
+	}
+	if = {
+		limit = { has_variable = OW_duanti var:OW_duanti < 0 }
+		remove_variable = OW_duanti
+		set_variable = { name = OW_duanti value = 0 }
+	}
+	if = {
+		limit = { has_variable = OW_shenshi var:OW_shenshi < 0 }
+		remove_variable = OW_shenshi
+		set_variable = { name = OW_shenshi value = 0 }
+	}
+	if = {
+		limit = { has_variable = OW_shihai var:OW_shihai < 0 }
+		remove_variable = OW_shihai
+		set_variable = { name = OW_shihai value = 0 }
+	}
+	if = {
+		limit = { has_variable = OW_duanti_exp var:OW_duanti_exp < 0 }
+		remove_variable = OW_duanti_exp
+		set_variable = { name = OW_duanti_exp value = 0 }
+	}
+	if = {
+		limit = { has_variable = OW_shenshi_exp var:OW_shenshi_exp < 0 }
+		remove_variable = OW_shenshi_exp
+		set_variable = { name = OW_shenshi_exp value = 0 }
+	}
+	if = {
+		limit = { has_variable = OW_shihai_exp var:OW_shihai_exp < 0 }
+		remove_variable = OW_shihai_exp
+		set_variable = { name = OW_shihai_exp value = 0 }
+	}
+	if = {
+		limit = { has_variable = OW_months_duanti_exp var:OW_months_duanti_exp < 0 }
+		remove_variable = OW_months_duanti_exp
+		set_variable = { name = OW_months_duanti_exp value = 0 }
+	}
+	if = {
+		limit = { has_variable = OW_months_shenshi_exp var:OW_months_shenshi_exp < 0 }
+		remove_variable = OW_months_shenshi_exp
+		set_variable = { name = OW_months_shenshi_exp value = 0 }
+	}
+	if = {
+		limit = { has_variable = OW_months_shihai_exp var:OW_months_shihai_exp < 0 }
+		remove_variable = OW_months_shihai_exp
+		set_variable = { name = OW_months_shihai_exp value = 0 }
+	}
+	if = {
+		limit = { has_variable = OW_years_duanti_exp var:OW_years_duanti_exp < 0 }
+		remove_variable = OW_years_duanti_exp
+		set_variable = { name = OW_years_duanti_exp value = 0 }
+	}
+	if = {
+		limit = { has_variable = OW_years_shenshi_exp var:OW_years_shenshi_exp < 0 }
+		remove_variable = OW_years_shenshi_exp
+		set_variable = { name = OW_years_shenshi_exp value = 0 }
+	}
+	if = {
+		limit = { has_variable = OW_years_shihai_exp var:OW_years_shihai_exp < 0 }
+		remove_variable = OW_years_shihai_exp
+		set_variable = { name = OW_years_shihai_exp value = 0 }
+	}
+}
+
+OW_CT_MAX_CHECK = {
+	if = {
+		limit = { has_variable = OW_lingli var:OW_lingli > OW_lingli_max_value }
+		remove_variable = OW_lingli
+		set_variable = { name = OW_lingli value = OW_lingli_max_value }
+	}
+	if = {
+		limit = { has_variable = OW_wuxing var:OW_wuxing > 100 }
+		remove_variable = OW_lingli
+		set_variable = { name = OW_wuxing value = 50 }
+	}
+	if = {
+		limit = { has_variable = OW_lilian_exp var:OW_lilian_exp > 1000 }
+		remove_variable = OW_lilian_exp
+		set_variable = { name = OW_lilian_exp value = 0 }
+		change_variable = { name = OW_lilian add = OW_lilian_exp_value_sjk }
+	}
+	if = {
+		limit = { has_variable = OW_ganwu_exp var:OW_ganwu_exp > 1000 }
+		remove_variable = OW_ganwu_exp
+		set_variable = { name = OW_ganwu_exp value = 0 }
+		change_variable = { name = OW_ganwu add = OW_ganwu_exp_value_sjk }
+	}
+	if = {
+		limit = { has_variable = OW_duanti var:OW_duanti > 400 }
+		remove_variable = OW_duanti
+		set_variable = { name = OW_duanti value = 200 }
+	}
+	if = {
+		limit = { has_variable = OW_duanti_exp var:OW_duanti_exp > 1000 }
+		remove_variable = OW_duanti_exp
+		set_variable = { name = OW_duanti_exp value = 0 }
+		change_variable = { name = OW_duanti add = OW_duanti_exp_value_sjk }
+	}
+	if = {
+		limit = { has_variable = OW_shenshi_exp var:OW_shenshi_exp > 1000 }
+		remove_variable = OW_shenshi_exp
+		set_variable = { name = OW_shenshi_exp value = 0 }
+		change_variable = { name = OW_shenshi add = OW_shenshi_exp_value_sjk }
+	}
+	if = {
+		limit = { has_variable = OW_shihai_exp var:OW_shihai_exp > 1000 }
+		remove_variable = OW_shihai_exp
+		set_variable = { name = OW_shihai_exp value = 0 }
+		change_variable = { name = OW_shihai add = OW_shihai_exp_value_sjk }
+	}
+}
+
+
+
+####################################################
+###############旧词条，尽量不用的数据###############
+####################################################
+add_OW_lingshi = {
+	if = {
+		limit = {
+			exists = var:OW_lingshi
+		}
+		change_variable = {
+			name = OW_lingshi
+			add = $VALUE$
+		}
+	}
+	if = {###下限检查
+		limit = { exists = var:OW_lingshi }
+		if = {
+			limit = { var:OW_lingshi < 0 }
+			remove_variable = OW_lingshi
+			set_variable = {
+				name = OW_lingshi
+				value = 0
+			}
+		}
+	}
+	custom_description_no_bullet = {
+		text = add_OW_lingshi_desc
+		value = $VALUE$
+	}
+}
+
+add_OW_yezhang = {
+	if = {
+		limit = {
+			exists = var:OW_yezhang
+		}
+		change_variable = {
+			name = OW_yezhang
+			add = $VALUE$
+		}
+	}
+	if = {###下限检查
+		limit = { exists = var:OW_yezhang }
+		if = {
+			limit = { var:OW_yezhang < 0 }
+			remove_variable = OW_yezhang
+			set_variable = {
+				name = OW_yezhang
+				value = 0
+			}
+		}
+	}
+	custom_description_no_bullet = {
+		text = add_OW_yezhang_desc
+		value = $VALUE$
+	}
+}
+add_OW_jingjie = {
+	if = {
+		limit = {
+			exists = var:OW_jingjie
+		}
+		change_variable = {
+			name = OW_jingjie
+			add = $VALUE$
+		}
+	}
+	if = {###下限检查
+		limit = { exists = var:OW_jingjie }
+		if = {
+			limit = { var:OW_jingjie < 0 }
+			remove_variable = OW_jingjie
+			set_variable = {
+				name = OW_jingjie
+				value = 0
+			}
+		}
+	}
+	custom_description_no_bullet = {
+		text = add_OW_jingjie_desc
+		value = $VALUE$
+	}
+}
+add_OW_lingli = {
+	if = {
+		limit = {
+			exists = var:OW_lingli
+		}
+		change_variable = {
+			name = OW_lingli
+			add = $VALUE$
+		}
+	}
+	if = {###上限检查
+		limit = { exists = var:OW_lingli}
+		if = {
+			limit = { var:OW_lingli > OW_lingli_max_value }
+			remove_variable = OW_lingli
+			set_variable = {
+				name = OW_lingli
+				value = OW_lingli_max_value
+			}
+		}
+		limit = {
+			###var:OW_lingli > OW_lingli_value_max
+			var:OW_lingli > OW_lingli_max_value
+		}
+		remove_variable = OW_lingli
+		set_variable = {
+			name = OW_lingli
+			###value = OW_lingli_value_max
+			value = OW_lingli_max_value
+		}
+	}
+	if = {###下限检查
+		limit = { exists = var:OW_lingli }
+		if = {
+			limit = { var:OW_lingli < 0 }
+			remove_variable = OW_lingli
+			set_variable = {
+				name = OW_lingli
+				value = 0
+			}
+		}
+	}
+	custom_description_no_bullet = {
+		text = add_OW_lingli_desc
+		value = $VALUE$
+	}
+}
+add_OW_lingli_max = {
+	if = {
+		limit = {
+			exists = var:OW_lingli_max
+		}
+		change_variable = {
+			name = OW_lingli_max
+			add = $VALUE$
+		}
+	}
+	if = {###下限检查
+		limit = { exists = var:OW_lingli_max }
+		if = {
+			limit = { var:OW_lingli_max < 0 }
+			remove_variable = OW_lingli_max
+			set_variable = {
+				name = OW_lingli_max
+				value = 0
+			}
+		}
+	}
+	custom_description_no_bullet = {
+		text = add_OW_lingli_max_desc
+		value = $VALUE$
+	}
+}
+add_OW_mingli = {
+	if = {
+		limit = {
+			exists = var:OW_mingli
+		}
+		change_variable = {
+			name = OW_mingli
+			add = $VALUE$
+		}
+	}
+	if = {###下限检查
+		limit = { exists = var:OW_mingli }
+		if = {
+			limit = { var:OW_mingli < 0 }
+			remove_variable = OW_mingli
+			set_variable = {
+				name = OW_mingli
+				value = 0
+			}
+		}
+	}
+	custom_description_no_bullet = {
+		text = add_OW_mingli_desc
+		value = $VALUE$
+	}
+}
+add_OW_lingqiang = {
+	if = {
+		limit = {
+			exists = var:OW_lingqiang
+		}
+		change_variable = {
+			name = OW_lingqiang
+			add = $VALUE$
+		}
+	}
+	if = {###下限检查
+		limit = { exists = var:OW_lingqiang }
+		if = {
+			limit = { var:OW_lingqiang < 0 }
+			remove_variable = OW_lingqiang
+			set_variable = {
+				name = OW_lingqiang
+				value = 0
+			}
+		}
+	}
+	custom_description_no_bullet = {
+		text = add_OW_lingqiang_desc
+		value = $VALUE$
+	}
+}
+add_OW_xinjing = {
+	if = {
+		limit = {
+			exists = var:OW_xinjing
+		}
+		change_variable = {
+			name = OW_xinjing
+			add = $VALUE$
+		}
+	}
+	if = {###下限检查
+		limit = { exists = var:OW_xinjing }
+		if = {
+			limit = { var:OW_xinjing < 0 }
+			remove_variable = OW_xinjing
+			set_variable = {
+				name = OW_xinjing
+				value = 0
+			}
+		}
+	}
+	custom_description_no_bullet = {
+		text = add_OW_xinjing_desc
+		value = $VALUE$
+	}
+}
+add_OW_ganwu = {
+	if = {
+		limit = {
+			exists = var:OW_ganwu
+		}
+		change_variable = {
+			name = OW_ganwu
+			add = $VALUE$
+		}
+	}
+	if = {###下限检查
+		limit = { exists = var:OW_ganwu }
+		if = {
+			limit = { var:OW_ganwu < 0 }
+			remove_variable = OW_ganwu
+			set_variable = {
+				name = OW_ganwu
+				value = 0
+			}
+		}
+	}
+	custom_description_no_bullet = {
+		text = add_OW_ganwu_desc
+		value = $VALUE$
+	}
+}
+add_OW_lilian = {
+	if = {
+		limit = {
+			exists = var:OW_lilian
+		}
+		change_variable = {
+			name = OW_lilian
+			add = $VALUE$
+		}
+	}
+	if = {###下限检查
+		limit = { exists = var:OW_lilian }
+		if = {
+			limit = { var:OW_lilian < 0 }
+			remove_variable = OW_lilian
+			set_variable = {
+				name = OW_lilian
+				value = 0
+			}
+		}
+	}
+	custom_description_no_bullet = {
+		text = add_OW_lilian_desc
+		value = $VALUE$
+	}
+}
+add_OW_ganwu_exp = {
+	if = {
+		limit = {
+			exists = var:OW_ganwu_exp 
+		}
+		change_variable = {
+			name = OW_ganwu_exp 
+			add = $VALUE$
+		}
+	}
+	if = {###下限检查
+		limit = { exists = var:OW_ganwu_exp }
+		if = {
+			limit = { var:OW_ganwu_exp < 0 }
+			remove_variable = OW_ganwu_exp
+			set_variable = {
+				name = OW_ganwu_exp
+				value = 0
+			}
+		}
+	}
+	if = {###上限检查
+		limit = { 
+			exists = var:OW_ganwu_exp 
+			exists = var:OW_ganwu
+		}
+		if = {
+			limit = { var:OW_ganwu_exp > 1000 }
+			change_variable = {
+				name = OW_ganwu_exp
+				add = -1000
+			}
+			change_variable = {
+				name = OW_ganwu
+				add = 2
+			}
+		}
+	}
+	custom_description_no_bullet = {
+		text = add_OW_ganwu_exp_desc
+		value = $VALUE$
+	}
+}
+add_OW_lilian_exp = {
+	if = {
+		limit = {
+			exists = var:OW_lilian_exp
+		}
+		change_variable = {
+			name = OW_lilian_exp
+			add = $VALUE$
+		}
+	}
+	if = {###下限检查
+		limit = { exists = var:OW_lilian_exp }
+		if = {
+			limit = { var:OW_lilian_exp < 0 }
+			remove_variable = OW_lilian_exp
+			set_variable = {
+				name = OW_lilian_exp
+				value = 0
+			}
+		}
+	}
+	if = {###上限检查
+		limit = { 
+			exists = var:OW_lilian_exp 
+			exists = var:OW_lilian
+		}
+		if = {
+			limit = { var:OW_lilian_exp > 1000 }
+			change_variable = {
+				name = OW_lilian_exp
+				add = -1000
+			}
+			change_variable = {
+				name = OW_lilian
+				add = 10
+			}
+		}
+	}
+	custom_description_no_bullet = {
+		text = add_OW_lilian_exp_desc
+		value = $VALUE$
+	}
+}
+################################
+add_OW_years_lingli = {
+	if = {
+		limit = {
+			exists = var:OW_years_lingli
+		}
+		change_variable = {
+			name = OW_years_lingli
+			add = $VALUE$
+		}
+	}
+	if = {###下限检查
+		limit = { exists = var:OW_years_lingli }
+		if = {
+			limit = { var:OW_years_lingli < 0 }
+			remove_variable = OW_years_lingli
+			set_variable = {
+				name = OW_years_lingli
+				value = 0
+			}
+		}
+	}
+	custom_description_no_bullet = {
+		text = add_OW_years_lingli_desc
+		value = $VALUE$
+	}
+}
+add_OW_years_lingli_max = {
+	if = {
+		limit = {
+			exists = var:OW_years_lingli_max
+		}
+		change_variable = {
+			name = OW_years_lingli_max
+			add = $VALUE$
+		}
+	}
+	if = {###下限检查
+		limit = { exists = var:OW_years_lingli_max }
+		if = {
+			limit = { var:OW_years_lingli_max < 0 }
+			remove_variable = OW_years_lingli_max
+			set_variable = {
+				name = OW_years_lingli_max
+				value = 0
+			}
+		}
+	}
+	custom_description_no_bullet = {
+		text = add_OW_years_lingli_max_desc
+		value = $VALUE$
+	}
+}
+add_OW_years_mingli = {
+	if = {
+		limit = {
+			exists = var:OW_years_mingli
+		}
+		change_variable = {
+			name = OW_years_mingli
+			add = $VALUE$
+		}
+	}
+	if = {###下限检查
+		limit = { exists = var:OW_years_mingli }
+		if = {
+			limit = { var:OW_years_mingli < 0 }
+			remove_variable = OW_years_mingli
+			set_variable = {
+				name = OW_years_mingli
+				value = 0
+			}
+		}
+	}
+	custom_description_no_bullet = {
+		text = add_OW_years_mingli_desc
+		value = $VALUE$
+	}
+}
+add_OW_months_ganwu_exp = {
+	if = {
+		limit = {
+			exists = var:OW_months_ganwu_exp
+		}
+		change_variable = {
+			name = OW_months_ganwu_exp
+			add = $VALUE$
+		}
+	}
+	if = {###下限检查
+		limit = { exists = var:OW_months_ganwu_exp }
+		if = {
+			limit = { var:OW_months_ganwu_exp < 0 }
+			remove_variable = OW_months_ganwu_exp
+			set_variable = {
+				name = OW_months_ganwu_exp
+				value = 0
+			}
+		}
+	}
+	custom_description_no_bullet = {
+		text = add_OW_months_ganwu_exp_desc
+		value = $VALUE$
+	}
+}
+add_OW_months_lilian_exp = {
+	if = {
+		limit = {
+			exists = var:OW_months_lilian_exp
+		}
+		change_variable = {
+			name = OW_months_lilian_exp
+			add = $VALUE$
+		}
+	}
+	if = {###下限检查
+		limit = { exists = var:OW_months_lilian_exp }
+		if = {
+			limit = { var:OW_months_lilian_exp < 0 }
+			remove_variable = OW_months_lilian_exp
+			set_variable = {
+				name = OW_months_lilian_exp
+				value = 0
+			}
+		}
+	}
+	custom_description_no_bullet = {
+		text = add_OW_months_lilian_exp_desc
+		value = $VALUE$
+	}
+}
+add_OW_years_ganwu_exp = {
+	if = {
+		limit = {
+			exists = var:OW_years_ganwu_exp
+		}
+		change_variable = {
+			name = OW_years_ganwu_exp
+			add = $VALUE$
+		}
+	}
+	if = {###下限检查
+		limit = { exists = var:OW_years_ganwu_exp }
+		if = {
+			limit = { var:OW_years_ganwu_exp < 0 }
+			remove_variable = OW_years_ganwu_exp
+			set_variable = {
+				name = OW_years_ganwu_exp
+				value = 0
+			}
+		}
+	}
+	custom_description_no_bullet = {
+		text = add_OW_years_ganwu_exp_desc
+		value = $VALUE$
+	}
+}
+add_OW_years_lilian_exp = {
+	if = {
+		limit = {
+			exists = var:OW_years_lilian_exp
+		}
+		change_variable = {
+			name = OW_years_lilian_exp
+			add = $VALUE$
+		}
+	}
+	if = {###下限检查
+		limit = { exists = var:OW_years_lilian_exp }
+		if = {
+			limit = { var:OW_years_lilian_exp < 0 }
+			remove_variable = OW_years_lilian_exp
+			set_variable = {
+				name = OW_years_lilian_exp
+				value = 0
+			}
+		}
+	}
+	custom_description_no_bullet = {
+		text = add_OW_years_lilian_exp_desc
+		value = $VALUE$
+	}
+}
+
+add_OW_wuxing = {
+	if = {
+		limit = {
+			exists = var:OW_wuxing
+		}
+		change_variable = {
+			name = OW_wuxing
+			add = $VALUE$
+		}
+	}
+	if = {###下限检查
+		limit = { exists = var:OW_wuxing }
+		if = {
+			limit = { var:OW_wuxing < 0 }
+			remove_variable = OW_wuxing
+			set_variable = {
+				name = OW_wuxing
+				value = 0
+			}
+		}
+	}
+	custom_description_no_bullet = {
+		text = add_OW_wuxing_desc
+		value = $VALUE$
+	}
+}
+########锻体
+add_OW_duanti = {
+	if = {
+		limit = {
+			exists = var:OW_duanti
+		}
+		change_variable = {
+			name = OW_duanti
+			add = $VALUE$
+		}
+	}
+	if = {###下限检查
+		limit = { exists = var:OW_duanti }
+		if = {
+			limit = { var:OW_duanti < 0 }
+			remove_variable = OW_duanti
+			set_variable = {
+				name = OW_duanti
+				value = 0
+			}
+		}
+	}
+	if = {###上限检查
+		limit = { exists = var:OW_duanti }
+		if = {
+			limit = { var:OW_duanti >= 400 }
+			change_variable = {
+				name = OW_duanti
+				add = -100
+			}
+			####执行灵力淬体
+		}
+	}
+	custom_description_no_bullet = {
+		text = add_OW_duanti_desc
+		value = $VALUE$
+	}
+}
+add_OW_shenshi = {
+	if = {
+		limit = {
+			exists = var:OW_shenshi
+		}
+		change_variable = {
+			name = OW_shenshi
+			add = $VALUE$
+		}
+	}
+	if = {###下限检查
+		limit = { exists = var:OW_shenshi }
+		if = {
+			limit = { var:OW_shenshi < 0 }
+			remove_variable = OW_shenshi
+			set_variable = {
+				name = OW_shenshi
+				value = 0
+			}
+		}
+	}
+	custom_description_no_bullet = {
+		text = add_OW_shenshi_desc
+		value = $VALUE$
+	}
+}
+add_OW_shihai = {
+	if = {
+		limit = {
+			exists = var:OW_shihai
+		}
+		change_variable = {
+			name = OW_shihai
+			add = $VALUE$
+		}
+	}
+	if = {###下限检查
+		limit = { exists = var:OW_shihai }
+		if = {
+			limit = { var:OW_shihai < 0 }
+			remove_variable = OW_shihai
+			set_variable = {
+				name = OW_shihai
+				value = 0
+			}
+		}
+	}
+	custom_description_no_bullet = {
+		text = add_OW_shihai_desc
+		value = $VALUE$
+	}
+}
+#######锻体经验
+add_OW_duanti_exp = {
+	if = {
+		limit = {
+			exists = var:OW_duanti_exp
+		}
+		change_variable = {
+			name = OW_duanti_exp
+			add = $VALUE$
+		}
+	}
+	if = {###下限检查
+		limit = { exists = var:OW_duanti_exp }
+		if = {
+			limit = { var:OW_duanti_exp < 0 }
+			remove_variable = OW_duanti_exp
+			set_variable = {
+				name = OW_duanti_exp
+				value = 0
+			}
+		}
+	}
+	if = {###上限检查
+		limit = { exists = var:OW_duanti_exp }
+		if = {
+			limit = { var:OW_duanti_exp >= 10000 }
+			change_variable = {
+				name = OW_duanti_exp
+				add = -10000
+			}
+			change_variable = {
+				name = OW_duanti
+				add = 10
+			}
+		}
+		else_if = {
+			limit = { var:OW_duanti_exp >= 5000 }
+			change_variable = {
+				name = OW_duanti_exp
+				add = -5000
+			}
+			change_variable = {
+				name = OW_duanti
+				add = 5
+			}
+		}
+		else_if = {
+			limit = { var:OW_duanti_exp >= 2000 }
+			change_variable = {
+				name = OW_duanti_exp
+				add = -2000
+			}
+			change_variable = {
+				name = OW_duanti
+				add = 2
+			}
+		}
+		else_if = {
+			limit = { var:OW_duanti_exp >= 1000 }
+			change_variable = {
+				name = OW_duanti_exp
+				add = -1000
+			}
+			change_variable = {
+				name = OW_duanti
+				add = 1
+			}
+		}
+	}
+	custom_description_no_bullet = {
+		text = add_OW_duanti_exp_desc
+		value = $VALUE$
+	}
+}
+add_OW_shenshi_exp = {
+	if = {
+		limit = {
+			exists = var:OW_shenshi_exp
+		}
+		change_variable = {
+			name = OW_shenshi_exp
+			add = $VALUE$
+		}
+	}
+	if = {###下限检查
+		limit = { exists = var:OW_shenshi_exp }
+		if = {
+			limit = { var:OW_shenshi_exp < 0 }
+			remove_variable = OW_shenshi_exp
+			set_variable = {
+				name = OW_shenshi_exp
+				value = 0
+			}
+		}
+	}
+	if = {###上限检查
+		limit = { exists = var:OW_shenshi_exp }
+		if = {
+			limit = { var:OW_shenshi_exp >= 1000 }
+			change_variable = {
+				name = OW_shenshi_exp
+				add = -1000
+			}
+			change_variable = {
+				name = OW_shenshi
+				add = 1
+			}
+		}
+	}
+	custom_description_no_bullet = {
+		text = add_OW_shenshi_exp_desc
+		value = $VALUE$
+	}
+}
+add_OW_shihai_exp = {
+	if = {
+		limit = {
+			exists = var:OW_shihai_exp
+		}
+		change_variable = {
+			name = OW_shihai_exp
+			add = $VALUE$
+		}
+	}
+	if = {###下限检查
+		limit = { exists = var:OW_shihai_exp }
+		if = {
+			limit = { var:OW_shihai_exp < 0 }
+			remove_variable = OW_shihai_exp
+			set_variable = {
+				name = OW_shihai_exp
+				value = 0
+			}
+		}
+	}
+	if = {###上限检查
+		limit = { exists = var:OW_shihai_exp }
+		if = {
+			limit = { var:OW_shihai_exp >= 1000 }
+			change_variable = {
+				name = OW_shihai_exp
+				add = -1000
+			}
+			change_variable = {
+				name = OW_shihai
+				add = 1
+			}
+		}
+	}
+	custom_description_no_bullet = {
+		text = add_OW_shihai_exp_desc
+		value = $VALUE$
+	}
+}
+add_OW_months_duanti_exp = {
+	if = {
+		limit = {
+			exists = var:OW_months_duanti_exp
+		}
+		change_variable = {
+			name = OW_months_duanti_exp
+			add = $VALUE$
+		}
+	}
+	if = {###下限检查
+		limit = { exists = var:OW_months_duanti_exp }
+		if = {
+			limit = { var:OW_months_duanti_exp < 0 }
+			remove_variable = OW_months_duanti_exp
+			set_variable = {
+				name = OW_months_duanti_exp
+				value = 0
+			}
+		}
+	}
+	custom_description_no_bullet = {
+		text = add_OW_months_duanti_exp_desc
+		value = $VALUE$
+	}
+}
+add_OW_months_shenshi_exp = {
+	if = {
+		limit = {
+			exists = var:OW_months_shenshi_exp
+		}
+		change_variable = {
+			name = OW_months_shenshi_exp
+			add = $VALUE$
+		}
+	}
+	if = {###下限检查
+		limit = { exists = var:OW_months_shenshi_exp }
+		if = {
+			limit = { var:OW_months_shenshi_exp < 0 }
+			remove_variable = OW_months_shenshi_exp
+			set_variable = {
+				name = OW_months_shenshi_exp
+				value = 0
+			}
+		}
+	}
+	custom_description_no_bullet = {
+		text = add_OW_months_shenshi_exp_desc
+		value = $VALUE$
+	}
+}
+add_OW_months_shihai_exp = {
+	if = {
+		limit = {
+			exists = var:OW_months_shihai_exp
+		}
+		change_variable = {
+			name = OW_months_shihai_exp
+			add = $VALUE$
+		}
+	}
+	if = {###下限检查
+		limit = { exists = var:OW_months_shihai_exp }
+		if = {
+			limit = { var:OW_months_shihai_exp < 0 }
+			remove_variable = OW_months_shihai_exp
+			set_variable = {
+				name = OW_months_shihai_exp
+				value = 0
+			}
+		}
+	}
+	custom_description_no_bullet = {
+		text = add_OW_months_shihai_exp_desc
+		value = $VALUE$
+	}
+}
+add_OW_years_duanti_exp = {
+	if = {
+		limit = {
+			exists = var:OW_years_duanti_exp
+		}
+		change_variable = {
+			name = OW_years_duanti_exp
+			add = $VALUE$
+		}
+	}
+	if = {###下限检查
+		limit = { exists = var:OW_years_duanti_exp }
+		if = {
+			limit = { var:OW_years_duanti_exp < 0 }
+			remove_variable = OW_years_duanti_exp
+			set_variable = {
+				name = OW_years_duanti_exp
+				value = 0
+			}
+		}
+	}
+	custom_description_no_bullet = {
+		text = add_OW_years_duanti_exp_desc
+		value = $VALUE$
+	}
+}
+add_OW_years_shenshi_exp = {
+	if = {
+		limit = {
+			exists = var:OW_years_shenshi_exp
+		}
+		change_variable = {
+			name = OW_years_shenshi_exp
+			add = $VALUE$
+		}
+	}
+	if = {###下限检查
+		limit = { exists = var:OW_years_shenshi_exp }
+		if = {
+			limit = { var:OW_years_shenshi_exp < 0 }
+			remove_variable = OW_years_shenshi_exp
+			set_variable = {
+				name = OW_years_shenshi_exp
+				value = 0
+			}
+		}
+	}
+	custom_description_no_bullet = {
+		text = add_OW_years_shenshi_exp_desc
+		value = $VALUE$
+	}
+}
+add_OW_years_shihai_exp = {
+	if = {
+		limit = {
+			exists = var:OW_years_shihai_exp
+		}
+		change_variable = {
+			name = OW_years_shihai_exp
+			add = $VALUE$
+		}
+	}
+	if = {###下限检查
+		limit = { exists = var:OW_years_shihai_exp }
+		if = {
+			limit = { var:OW_years_shihai_exp < 0 }
+			remove_variable = OW_years_shihai_exp
+			set_variable = {
+				name = OW_years_shihai_exp
+				value = 0
+			}
+		}
+	}
+	custom_description_no_bullet = {
+		text = add_OW_years_shihai_exp_desc
+		value = $VALUE$
+	}
+}

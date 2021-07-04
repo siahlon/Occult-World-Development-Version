@@ -1,0 +1,72 @@
+﻿#####体质扩展包#########
+#####by狗头#####
+########################
+#1~4练气境
+#5~8筑基境
+#9~12结丹境
+#13~16金丹境
+#17~20元婴境
+#21~24出窍境
+#25~28分神境
+#29~32合体境
+#33~36大乘境
+#37地仙镜（渡劫期）
+
+OW_XZ_TZ_41_KaiDi_perk = {
+	lifestyle = lifestyle_tizhi41
+	tree = mingge_tree_tizhi_41
+	position = { 0 0 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+		domain_limit = 4.00
+	}
+	effect = {
+		SET_OW_XZ_TZ_EFFECT = {
+			OW_XZ_TZ_KEY = OW_XZ_TZ_41_KaiDi_perk
+			OW_XZ_TZ_VALUE = 64
+		}
+	}
+}
+
+OW_XZ_TZ_41_JingTian_perk = {
+	lifestyle = lifestyle_tizhi41
+	tree = yunshi_tree_tizhi_41
+	position = { 0 3 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+	}
+	effect = {
+		add_OW_SkillPerk_AttributeEffect = { 
+			OW_XZ_TZ_KEY = OW_XZ_TZ_41_JingTian_perk
+			OW_XZ_CT_KEY = OW_months_ganwu_exp
+			OW_XZ_TZ_YUNSHI = 2
+			OW_XZ_TZ_VALUE = 2
+		}
+	}
+}
+
+OW_XZ_TZ_41_WeiDi_perk = {
+	lifestyle = lifestyle_tizhi41
+	tree = yunshi_tree_tizhi_41
+	position = { 2 3 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+	}
+	effect = {
+		add_OW_SkillPerk_AttributeEffect = { 
+			OW_XZ_TZ_KEY = OW_XZ_TZ_41_WeiDi_perk
+			OW_XZ_CT_KEY = OW_months_lilian_exp
+			OW_XZ_TZ_YUNSHI = 2
+			OW_XZ_TZ_VALUE = 2
+		}
+	}
+}

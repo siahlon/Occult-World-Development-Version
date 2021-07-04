@@ -1,0 +1,225 @@
+﻿#####体质扩展包#########
+#####byH#####
+########################
+#1~4练气境
+#5~8筑基境
+#9~12结丹境
+#13~16金丹境
+#17~20元婴境
+#21~24出窍境
+#25~28分神境
+#29~32合体境
+#33~36大乘境
+#37地仙镜（渡劫期）
+
+OW_XZ_TZ_4_ZhenLongTianZi_perk = {
+	lifestyle = lifestyle_tizhi4
+	tree = mingge_tree_tizhi_4
+	position = { 0 0 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+		domain_limit = 10
+	}
+	effect = {
+		SET_OW_XZ_TZ_EFFECT = {
+			OW_XZ_TZ_KEY = OW_XZ_TZ_4_ZhenLongTianZi_perk
+			OW_XZ_TZ_VALUE = 49
+		}
+	}
+}
+
+OW_XZ_TZ_4_LongYuQunChen_perk = {
+	lifestyle = lifestyle_tizhi4
+	tree = mingge_tree_tizhi_4
+	position = { 2 0 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+		vassal_limit = 10
+	}
+	effect = {
+		SET_OW_XZ_TZ_EFFECT = {
+			OW_XZ_TZ_KEY = OW_XZ_TZ_4_LongYuQunChen_perk
+			OW_XZ_TZ_VALUE = 49
+		}
+	}
+}
+
+OW_XZ_TZ_4_GuanLiDeDang_perk = {
+	lifestyle = lifestyle_tizhi4
+	tree = mingge_tree_tizhi_4
+	position = { 4 0 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+		tax_mult = 5
+	}
+	effect = {
+		SET_OW_XZ_TZ_EFFECT = {
+			OW_XZ_TZ_KEY = OW_XZ_TZ_4_GuanLiDeDang_perk
+			OW_XZ_TZ_VALUE = 72
+		}
+	}
+}
+
+OW_XZ_TZ_4_DiZhiWeiMing_perk = {
+	lifestyle = lifestyle_tizhi4
+	tree = mingge_tree_tizhi_4
+	position = { 6 0 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+		happy_powerful_vassal_tax_contribution_mult = 5
+	}
+	effect = {
+		SET_OW_XZ_TZ_EFFECT = {
+			OW_XZ_TZ_KEY = OW_XZ_TZ_4_DiZhiWeiMing_perk
+			OW_XZ_TZ_VALUE = 63
+		}
+	}
+}
+
+OW_XZ_TZ_4_QiYunJiaShen_perk = {
+	lifestyle = lifestyle_tizhi4
+	tree = mingge_tree_tizhi_4
+	position = { 8 0 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+		development_growth_factor = 1
+	}
+	effect = {
+		SET_OW_XZ_TZ_EFFECT = {
+			OW_XZ_TZ_KEY = OW_XZ_TZ_4_QiYunJiaShen_perk
+			OW_XZ_TZ_VALUE = 43
+		}
+	}
+}
+
+OW_XZ_TZ_4_LianCai_perk = {
+	lifestyle = lifestyle_tizhi4
+	tree = mingge_tree_tizhi_4
+	position = { 10 0 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+		monthly_income = 500
+	}
+	effect = {
+		SET_OW_XZ_TZ_EFFECT = {
+			OW_XZ_TZ_KEY = OW_XZ_TZ_4_LianCai_perk
+			OW_XZ_TZ_VALUE = 99
+		}
+	}
+}
+
+OW_XZ_TZ_4_ZhongShiXinTu_perk = {
+	lifestyle = lifestyle_tizhi4
+	tree = mingge_tree_tizhi_5
+	position = { 12 0 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+		monthly_piety = 200
+	}
+	effect = {
+		SET_OW_XZ_TZ_EFFECT = {
+			OW_XZ_TZ_KEY = OW_XZ_TZ_4_ZhongShiXinTu_perk
+			OW_XZ_TZ_VALUE = 99
+		}
+	}
+}
+
+OW_XZ_TZ_4_MingShengXianHe_perk = {
+	lifestyle = lifestyle_tizhi4
+	tree = mingge_tree_tizhi_4
+	position = { 14 0 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+		monthly_prestige = 200
+	}
+	effect = {
+		SET_OW_XZ_TZ_EFFECT = {
+			OW_XZ_TZ_KEY = OW_XZ_TZ_4_MingShengXianHe_perk
+			OW_XZ_TZ_VALUE = 99
+		}
+	}
+}
+
+OW_XZ_TZ_4_YiGanTian_perk = {
+	lifestyle = lifestyle_tizhi4
+	tree = yunshi_tree_tizhi_4
+	position = { 0 3 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+	}
+	effect = {
+		add_OW_SkillPerk_AttributeEffect = { 
+			OW_XZ_TZ_KEY = OW_XZ_TZ_4_YiGanTian_perk
+			OW_XZ_CT_KEY = OW_lingli_max
+			OW_XZ_TZ_YUNSHI = 8
+			OW_XZ_TZ_VALUE = 9
+		}
+	}
+}
+
+OW_XZ_TZ_4_ErZaoHua_perk = {
+	lifestyle = lifestyle_tizhi4
+	tree = yunshi_tree_tizhi_4
+	position = { 2 3 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+	}
+	effect = {
+		add_OW_SkillPerk_AttributeEffect = { 
+			OW_XZ_TZ_KEY = OW_XZ_TZ_4_ErZaoHua_perk
+			OW_XZ_CT_KEY = OW_years_lingli
+			OW_XZ_TZ_YUNSHI = 8
+			OW_XZ_TZ_VALUE = 9
+		}
+	}
+}
+
+OW_XZ_TZ_4_WanWuZao_perk = {
+	lifestyle = lifestyle_tizhi4
+	tree = yunshi_tree_tizhi_4
+	position = { 4 3 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+	}
+	effect = {
+		add_OW_SkillPerk_AttributeEffect = { 
+			OW_XZ_TZ_KEY = OW_XZ_TZ_4_WanWuZao_perk
+			OW_XZ_CT_KEY = OW_wuxing
+			OW_XZ_TZ_YUNSHI = 8
+			OW_XZ_TZ_VALUE = 0.9
+		}
+	}
+}

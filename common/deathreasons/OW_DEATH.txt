@@ -1,0 +1,19 @@
+﻿death_TianYu = {
+	icon = "death_murder.dds"
+}
+
+death_OW_XZ_WAR_KO = {
+	icon = "death_murder.dds"
+}
+
+death_OW_XZ_WAR_MJ = {
+	icon = "death_murder.dds"
+}
+
+death_OW_JIEFEI = {
+	icon = "death_murder.dds"
+}
+
+death_OW_ZHUISI = {
+	icon = "death_murder.dds"
+}

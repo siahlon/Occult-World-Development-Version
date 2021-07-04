@@ -1,0 +1,4 @@
+﻿OW_XZ_TZ_46_ChangTian_perk_modifier = {
+	icon = love_negative
+	health = 9999
+}

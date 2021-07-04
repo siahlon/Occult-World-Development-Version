@@ -1,0 +1,31 @@
+﻿OW_lingli_value = {
+	VALUE = var:OW_lingli
+}
+OW_lingli_max_value = {
+	VALUE = var:OW_lingli_max
+}
+OW_mingli_value = {
+	VALUE = var:OW_mingli
+}
+OW_shihai_value = {
+	VALUE = var:OW_shihai
+}
+OW_lingqiang_value = {
+	VALUE = var:OW_lingqiang
+}
+OW_mingli_value_can = {
+	VALUE = var:OW_mingli
+	divide = 10
+}
+OW_WUXING_VALUE_SJK = {
+	VALUE = var:OW_wuxing
+	divide = 10
+	add = 1
+}
+OW_jingjie_value = {
+	VALUE = var:OW_jingjie
+}
+OW_FRJQ_JiuGuan_Value = {
+	VALUE = gold
+	divide = 10
+}

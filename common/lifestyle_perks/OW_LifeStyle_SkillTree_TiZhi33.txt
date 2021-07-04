@@ -1,0 +1,109 @@
+﻿#####体质扩展包#########
+#####byH#####
+########################
+#1~4练气境
+#5~8筑基境
+#9~12结丹境
+#13~16金丹境
+#17~20元婴境
+#21~24出窍境
+#25~28分神境
+#29~32合体境
+#33~36大乘境
+#37地仙镜（渡劫期）
+
+OW_XZ_TZ_33_QuanChen_perk = {
+	lifestyle = lifestyle_tizhi33
+	tree = mingge_tree_tizhi_33
+	position = { 0 0 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+		vassal_limit = 9
+	}
+	effect = {
+		SET_OW_XZ_TZ_EFFECT = {
+			OW_XZ_TZ_KEY = OW_XZ_TZ_33_QuanChen_perk
+			OW_XZ_TZ_VALUE = 76
+		}
+	}
+}
+
+OW_XZ_TZ_33_GuanXia_perk = {
+	lifestyle = lifestyle_tizhi33
+	tree = mingge_tree_tizhi_33
+	position = { 2 0 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+		domain_limit = 6
+	}
+	effect = {
+		SET_OW_XZ_TZ_EFFECT = {
+			OW_XZ_TZ_KEY = OW_XZ_TZ_33_GuanXia_perk
+			OW_XZ_TZ_VALUE = 59
+		}
+	}
+}
+
+OW_XZ_TZ_33_JiangLing_perk = {
+	lifestyle = lifestyle_tizhi33
+	tree = mingge_tree_tizhi_33
+	position = { 4 0 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+		knight_limit = 12
+	}
+	effect = {
+		SET_OW_XZ_TZ_EFFECT = {
+			OW_XZ_TZ_KEY = OW_XZ_TZ_33_JiangLing_perk
+			OW_XZ_TZ_VALUE = 93
+		}
+	}
+}
+
+OW_XZ_TZ_33_QiYi_perk = {
+	lifestyle = lifestyle_tizhi33
+	tree = mingge_tree_tizhi_33
+	position = { 6 0 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+		levy_size = 500
+	}
+	effect = {
+		SET_OW_XZ_TZ_EFFECT = {
+			OW_XZ_TZ_KEY = OW_XZ_TZ_33_QiYi_perk
+			OW_XZ_TZ_VALUE = 144
+		}
+	}
+}
+
+OW_XZ_TZ_33_DiZhiHuang_perk = {
+	lifestyle = lifestyle_tizhi33
+	tree = yunshi_tree_tizhi_33
+	position = { 0 3 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+	}
+	effect = {
+		add_OW_SkillPerk_AttributeEffect = { 
+			OW_XZ_TZ_KEY = OW_XZ_TZ_33_DiZhiHuang_perk
+			OW_XZ_CT_KEY = OW_lingli_max
+			OW_XZ_TZ_YUNSHI = 3
+			OW_XZ_TZ_VALUE = 5
+		}
+	}
+}

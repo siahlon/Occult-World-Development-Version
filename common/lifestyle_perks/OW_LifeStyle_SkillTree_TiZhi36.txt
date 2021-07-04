@@ -1,0 +1,110 @@
+﻿#####体质扩展包#########
+#####byH#####
+########################
+#1~4练气境
+#5~8筑基境
+#9~12结丹境
+#13~16金丹境
+#17~20元婴境
+#21~24出窍境
+#25~28分神境
+#29~32合体境
+#33~36大乘境
+#37地仙镜（渡劫期）
+
+OW_XZ_TZ_36_TianShen_perk = {
+	lifestyle = lifestyle_tizhi36
+	tree = mingge_tree_tizhi_36
+	position = { 0 0 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+		negate_health_penalty_add = 4
+	}
+	effect = {
+		SET_OW_XZ_TZ_EFFECT = {
+			OW_XZ_TZ_KEY = OW_XZ_TZ_36_TianShen_perk
+			OW_XZ_TZ_VALUE = 44
+		}
+	}
+}
+
+OW_XZ_TZ_36_ChangSi_perk = {
+	lifestyle = lifestyle_tizhi36
+	tree = mingge_tree_tizhi_36
+	position = { 2 0 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+		stress_loss_mult = 1
+	}
+	effect = {
+		SET_OW_XZ_TZ_EFFECT = {
+			OW_XZ_TZ_KEY = OW_XZ_TZ_36_ChangSi_perk
+			OW_XZ_TZ_VALUE = 26
+		}
+	}
+}
+
+OW_XZ_TZ_36_GanMing_perk = {
+	lifestyle = lifestyle_tizhi36
+	tree = mingge_tree_tizhi_36
+	position = { 4 0 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+		monthly_piety_gain_mult = 1
+	}
+	effect = {
+		SET_OW_XZ_TZ_EFFECT = {
+			OW_XZ_TZ_KEY = OW_XZ_TZ_36_GanMing_perk
+			OW_XZ_TZ_VALUE = 26
+		}
+	}
+}
+
+OW_XZ_TZ_36_MingTongYuTian_perk = {
+	lifestyle = lifestyle_tizhi36
+	tree = yunshi_tree_tizhi_36
+	position = { 0 3 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+	}
+	effect = {
+		add_OW_SkillPerk_AttributeEffect = { 
+			OW_XZ_TZ_KEY = OW_XZ_TZ_36_MingTongYuTian_perk
+			OW_XZ_CT_KEY = OW_mingli
+			OW_XZ_TZ_YUNSHI = 2
+			OW_XZ_TZ_VALUE = 400
+		}
+	}
+}
+
+OW_XZ_TZ_36_ChangShengTi_perk = {
+	lifestyle = lifestyle_tizhi36
+	tree = yunshi_tree_tizhi_36
+	position = { 2 3 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+	}
+	effect = {
+		add_OW_SkillPerk_AttributeEffect = { 
+			OW_XZ_TZ_KEY = OW_XZ_TZ_36_ChangShengTi_perk
+			OW_XZ_CT_KEY = OW_shihai
+			OW_XZ_TZ_YUNSHI = 4
+			OW_XZ_TZ_VALUE = 2
+		}
+	}
+}

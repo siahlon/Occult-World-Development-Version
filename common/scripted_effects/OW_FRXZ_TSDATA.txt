@@ -1,0 +1,173 @@
+﻿#酒馆接口
+OW_FRXZ_TANSHUO_JiuGuan = {
+	random_list = {
+		100 = { trigger_event = OW_FRJQ_JiuGuan.0001 }
+		100 = { trigger_event = OW_FRJQ_TanSuo_jiuguan1.1 }
+	}
+}
+#村子接口
+OW_FRXZ_TANSHUO_ChunZi = {
+	random_list = {
+		100 = { trigger_event = OW_FRJQ_TanSuo_ChunZi.7 }
+		100 = { trigger_event = OW_FRJQ_TanSuo_ChunZi.15 }
+		100 = { trigger_event = OW_FRJQ_TanSuo_ChunZi1.1 }
+		100 = { trigger_event = OW_FRJQ_TanSuo_CunZi_fouxiang.1 }
+	}
+}
+#城镇接口，以接入窗口UI，勿动
+OW_FRXZ_TANSHUO_ChengZhen = {
+	add_character_flag = OW_FRXZ_CHENGZHENJIAOYI_KG
+	get_OW_FRXZ_XinXi_Global_Variable = yes
+}
+#森林接口
+OW_FRXZ_TANSHUO_SenLin = {
+	random_list = {
+		100 = { trigger_event = OW_FRJQ_TanSuo_ShanDon_shandon_1.1 }
+		100 = { trigger_event = OW_FRJQ_TanSuo_SenLin_milinyeshou_event.1 }
+		100 = { trigger_event = OW_FRJQ_TanSuo_SenLin_smalltol_event_1.1 }
+		100 = { trigger_event = OW_FRJQ_TanSuo_SenLin_smalltol_event_2.1 }
+		100 = { trigger_event = OW_FRJQ_TanSuo_SenLin_smalltol_event_3.1 }
+		100 = { trigger_event = OW_FRJQ_TanSuo_SenLin_smalltol_event_4.1 }
+		100 = { trigger_event = OW_FRJQ_TanSuo_SenLin_smalltol_event_5.1 }
+	}
+}
+#石碑接口
+OW_FRXZ_TANSHUO_ShiBei = {
+	random_list = {
+		100 = { trigger_event = OW_FRJQ_ShiBei_Start.1 }
+		100 = { trigger_event = OW_FRJQ_TanSuo_ShiBei_1.1 }
+	}
+}
+#山洞接口
+OW_FRXZ_TANSHUO_ShanDong = {
+	random_list = {
+		100 = { trigger_event = OW_FRJQ_TanSuo_Event_shandong.1 }
+	}
+}
+#随机事件接口
+OW_FRXZ_TANSHUO_WeiZhi = {
+	random_list = {
+		100 = { trigger_event = OW_FRJQ_TanSuo.0001 }
+		100 = { trigger_event = OW_FRJQ_TanSuo_WeiZhi_YunShi.1 }
+		100 = { trigger_event = OW_FRJQ_TanSuo_WeiZhi_QiYu.1 }
+		100 = { trigger_event = OW_FRJQ_TanSuo_WeiZhi_ShenMiYiSheng.1 }
+	}
+}
+##########################
+##########探索DATA########
+##########################
+
+OW_FRXZ_TANSHUO_REMOVE = {
+	remove_variable = OW_FRXZ_BUSHU
+	remove_variable = OW_FRXZ_WEIZHI
+}
+OW_FRXZ_TANSHUO_KAISHI = {
+	if = {
+		limit = { NOT = { has_variable = OW_FRXZ_WEIZHI } }
+		set_variable = {
+			name = OW_FRXZ_WEIZHI 
+			value = {
+				value = { 0 100 }
+				round = yes
+			}
+		}
+	}
+	if = {
+		limit = { NOT = { has_variable = OW_FRXZ_BUSHU } }
+		set_variable = {
+			name = OW_FRXZ_BUSHU
+			value = {
+				add = diplomacy
+				add = martial
+				add = stewardship
+				add = intrigue
+				add = learning
+				add = prowess
+				divide = 6
+				add = 1
+				round = yes
+			}
+		}
+	}
+}
+
+OW_FRXZ_TANSHUO_ZUO = {
+	change_variable = { name = OW_FRXZ_BUSHU subtract = 1 }
+	change_variable = { name = OW_FRXZ_WEIZHI subtract = 1 }
+	if = {
+		limit = { var:OW_FRXZ_WEIZHI <= 0 }
+		change_variable = { name = OW_FRXZ_WEIZHI add = { 25 75 } }
+	}
+	if = {
+		limit = { var:OW_FRXZ_BUSHU <= 0 }
+		add_character_flag = {
+			flag = OW_FRJQ_TanSuo_CD
+			months = 1
+		}
+		remove_variable = OW_FRXZ_BUSHU
+	}
+	if = {
+		limit = { has_character_flag = OW_FRJQ_TanSuo_CD }
+		remove_variable = OW_FRXZ_WEIZHI
+	}
+}
+OW_FRXZ_TANSHUO_QIAN = {
+	change_variable = { name = OW_FRXZ_BUSHU subtract = 1 }
+	change_variable = { name = OW_FRXZ_WEIZHI add = 10 }
+	if = {
+		limit = { var:OW_FRXZ_WEIZHI > 100 }
+		change_variable = { name = OW_FRXZ_WEIZHI subtract = { 25 75 } }
+	}
+	if = {
+		limit = { var:OW_FRXZ_BUSHU <= 0 }
+		add_character_flag = {
+			flag = OW_FRJQ_TanSuo_CD
+			months = 1
+		}
+		remove_variable = OW_FRXZ_BUSHU
+	}
+	if = {
+		limit = { has_character_flag = OW_FRJQ_TanSuo_CD }
+		remove_variable = OW_FRXZ_WEIZHI
+	}
+}
+OW_FRXZ_TANSHUO_HOU = {
+	change_variable = { name = OW_FRXZ_BUSHU subtract = 1 }
+	change_variable = { name = OW_FRXZ_WEIZHI subtract = 10 }
+	if = {
+		limit = { var:OW_FRXZ_WEIZHI <= 0 }
+		change_variable = { name = OW_FRXZ_WEIZHI add = { 25 75 } }
+	}
+	if = {
+		limit = { var:OW_FRXZ_BUSHU <= 0 }
+		add_character_flag = {
+			flag = OW_FRJQ_TanSuo_CD
+			months = 6
+		}
+		remove_variable = OW_FRXZ_BUSHU
+	}
+	if = {
+		limit = { has_character_flag = OW_FRJQ_TanSuo_CD }
+		remove_variable = OW_FRXZ_WEIZHI
+	}
+}
+OW_FRXZ_TANSHUO_YOU = {
+	change_variable = { name = OW_FRXZ_BUSHU subtract = 1 }
+	change_variable = { name = OW_FRXZ_WEIZHI add = 1 }
+	if = {
+		limit = { var:OW_FRXZ_WEIZHI > 100 }
+		change_variable = { name = OW_FRXZ_WEIZHI subtract = { 25 75 } }
+	}
+	if = {
+		limit = { var:OW_FRXZ_BUSHU <= 0 }
+		add_character_flag = {
+			flag = OW_FRJQ_TanSuo_CD
+			months = 1
+		}
+		remove_variable = OW_FRXZ_BUSHU
+	}
+	if = {
+		limit = { has_character_flag = OW_FRJQ_TanSuo_CD }
+		remove_variable = OW_FRXZ_WEIZHI
+	}
+}

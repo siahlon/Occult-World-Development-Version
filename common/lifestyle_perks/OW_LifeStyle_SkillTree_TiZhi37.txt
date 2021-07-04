@@ -1,0 +1,93 @@
+﻿#####体质扩展包#########
+#####byH#####
+########################
+#1~4练气境
+#5~8筑基境
+#9~12结丹境
+#13~16金丹境
+#17~20元婴境
+#21~24出窍境
+#25~28分神境
+#29~32合体境
+#33~36大乘境
+#37地仙镜（渡劫期）
+
+OW_XZ_TZ_37_MoTai_perk = {
+	lifestyle = lifestyle_tizhi37
+	tree = yunshi_tree_tizhi_37
+	position = { 0 3 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+	}
+	effect = {
+		add_OW_SkillPerk_AttributeEffect = { 
+			OW_XZ_TZ_KEY = OW_XZ_TZ_37_MoTai_perk
+			OW_XZ_CT_KEY = OW_shihai
+			OW_XZ_TZ_YUNSHI = 4
+			OW_XZ_TZ_VALUE = 2
+		}
+	}
+}
+
+OW_XZ_TZ_37_MoTi_perk = {
+	lifestyle = lifestyle_tizhi37
+	tree = yunshi_tree_tizhi_37
+	position = { 2 3 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+	}
+	effect = {
+		add_OW_SkillPerk_AttributeEffect = { 
+			OW_XZ_TZ_KEY = OW_XZ_TZ_37_MoTi_perk
+			OW_XZ_CT_KEY = OW_mingli
+			OW_XZ_TZ_YUNSHI = 4
+			OW_XZ_TZ_VALUE = 200
+		}
+	}
+}
+
+OW_XZ_TZ_37_MoQi_perk = {
+	lifestyle = lifestyle_tizhi37
+	tree = yunshi_tree_tizhi_37
+	position = { 4 3 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+	}
+	effect = {
+		add_OW_SkillPerk_AttributeEffect = { 
+			OW_XZ_TZ_KEY = OW_XZ_TZ_37_MoQi_perk
+			OW_XZ_CT_KEY = OW_shenshi
+			OW_XZ_TZ_YUNSHI = 4
+			OW_XZ_TZ_VALUE = 2
+		}
+	}
+}
+
+OW_XZ_TZ_37_ZaiSheng_perk = {
+	lifestyle = lifestyle_tizhi37
+	tree = yunshi_tree_tizhi_37
+	position = { 6 3 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+	}
+	effect = {
+		add_OW_SkillPerk_AttributeEffect = { 
+			OW_XZ_TZ_KEY = OW_XZ_TZ_37_ZaiSheng_perk
+			OW_XZ_CT_KEY = OW_years_mingli
+			OW_XZ_TZ_YUNSHI = 4
+			OW_XZ_TZ_VALUE = 20
+		}
+	}
+}

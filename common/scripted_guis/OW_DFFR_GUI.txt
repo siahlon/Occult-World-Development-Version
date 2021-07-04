@@ -1,0 +1,3447 @@
+﻿OW_DFFR_XZ_XinXi_KG_TanSuo = {
+	scope = character
+	is_shown = {
+		OR = {
+			NOT = { has_character_flag = OW_XZ_XINXI1 }
+			NOT = { has_character_flag = OW_XZ_XINXI2 }
+			NOT = { has_character_flag = OW_XZ_XINXI3 }
+			NOT = { has_character_flag = OW_XZ_XINXI4 }
+			NOT = { has_character_flag = OW_XZ_XINXI5 }
+			NOT = { has_character_flag = OW_XZ_XINXI6 }
+			NOT = { has_character_flag = OW_XZ_XINXI7 }
+			NOT = { has_character_flag = OW_XZ_XINXI8 }
+			NOT = { has_character_flag = OW_XZ_XINXI9 }
+			NOT = { has_character_flag = OW_XZ_XINXI10 }
+			NOT = { has_character_flag = OW_XZ_XINXI11 }
+			NOT = { has_character_flag = OW_XZ_XINXI12 }
+			NOT = { has_character_flag = OW_XZ_XINXI13 }
+			NOT = { has_character_flag = OW_XZ_XINXI14 }
+			NOT = { has_character_flag = OW_XZ_XINXI15 }
+			NOT = { has_character_flag = OW_XZ_XINXI16 }
+			NOT = { has_character_flag = OW_XZ_XINXI17 }
+			NOT = { has_character_flag = OW_XZ_XINXI18 }
+			NOT = { has_character_flag = OW_XZ_XINXI19 }
+			NOT = { has_character_flag = OW_XZ_XINXI20 }
+		}
+	}
+	is_valid = {
+		NOT = { has_character_flag = OW_FRJQ_TanSuo_CD }
+	}
+	effect = {
+		OW_FRXZ_TANSHUO_KAISHI = yes
+	}
+}
+OW_DFFR_XZ_XinXi_KG_XiuZhenZhiLu = {
+	scope = character
+	is_shown = {
+		has_character_flag = OW_XZ_XINXI1
+		has_character_flag = OW_XZ_XINXI2
+		has_character_flag = OW_XZ_XINXI3
+		has_character_flag = OW_XZ_XINXI4
+		has_character_flag = OW_XZ_XINXI5
+		has_character_flag = OW_XZ_XINXI6
+		has_character_flag = OW_XZ_XINXI7
+		has_character_flag = OW_XZ_XINXI8
+		has_character_flag = OW_XZ_XINXI9
+		has_character_flag = OW_XZ_XINXI10
+		has_character_flag = OW_XZ_XINXI11
+		has_character_flag = OW_XZ_XINXI12
+		has_character_flag = OW_XZ_XINXI13
+		has_character_flag = OW_XZ_XINXI14
+		has_character_flag = OW_XZ_XINXI15
+		has_character_flag = OW_XZ_XINXI16
+		has_character_flag = OW_XZ_XINXI17
+		has_character_flag = OW_XZ_XINXI18
+		has_character_flag = OW_XZ_XINXI19
+		has_character_flag = OW_XZ_XINXI20
+	}
+	is_valid = {
+		NOT = { has_character_flag = OW_XZ_xiuzhenzhilu_CD }
+		is_imprisoned = no
+	}
+	effect = {
+		add_character_flag = {
+			flag = OW_XZ_xiuzhenzhilu_CD
+			years = 1
+		}
+		remove_character_flag = OW_XZ_XINXI1
+		remove_character_flag = OW_XZ_XINXI2
+		remove_character_flag = OW_XZ_XINXI3
+		remove_character_flag = OW_XZ_XINXI4
+		remove_character_flag = OW_XZ_XINXI5
+		remove_character_flag = OW_XZ_XINXI6
+		remove_character_flag = OW_XZ_XINXI7
+		remove_character_flag = OW_XZ_XINXI8
+		remove_character_flag = OW_XZ_XINXI9
+		remove_character_flag = OW_XZ_XINXI10
+		remove_character_flag = OW_XZ_XINXI11
+		remove_character_flag = OW_XZ_XINXI12
+		remove_character_flag = OW_XZ_XINXI13
+		remove_character_flag = OW_XZ_XINXI14
+		remove_character_flag = OW_XZ_XINXI15
+		remove_character_flag = OW_XZ_XINXI16
+		remove_character_flag = OW_XZ_XINXI17
+		remove_character_flag = OW_XZ_XINXI18
+		remove_character_flag = OW_XZ_XINXI19
+		remove_character_flag = OW_XZ_XINXI20
+		trigger_event = OW_JB_XZ_qishi.9999
+	}
+}
+
+OW_DFFR_XZ_XinXi_KG_1 = {
+	scope = character
+	is_shown = {
+		has_character_flag = OW_XZ_XINXI1
+	}
+}
+OW_DFFR_XZ_XinXi_KG_2 = {
+	scope = character
+	is_shown = {
+		has_character_flag = OW_XZ_XINXI2
+	}
+}
+OW_DFFR_XZ_XinXi_KG_3 = {
+	scope = character
+	is_shown = {
+		has_character_flag = OW_XZ_XINXI3
+	}
+}
+OW_DFFR_XZ_XinXi_KG_4 = {
+	scope = character
+	is_shown = {
+		has_character_flag = OW_XZ_XINXI4
+	}
+}
+OW_DFFR_XZ_XinXi_KG_5 = {
+	scope = character
+	is_shown = {
+		has_character_flag = OW_XZ_XINXI5
+	}
+}
+OW_DFFR_XZ_XinXi_KG_6 = {
+	scope = character
+	is_shown = {
+		has_character_flag = OW_XZ_XINXI6
+	}
+}
+OW_DFFR_XZ_XinXi_KG_7 = {
+	scope = character
+	is_shown = {
+		has_character_flag = OW_XZ_XINXI7
+	}
+}
+OW_DFFR_XZ_XinXi_KG_8 = {
+	scope = character
+	is_shown = {
+		has_character_flag = OW_XZ_XINXI8
+	}
+}
+OW_DFFR_XZ_XinXi_KG_9 = {
+	scope = character
+	is_shown = {
+		has_character_flag = OW_XZ_XINXI9
+	}
+}
+OW_DFFR_XZ_XinXi_KG_10 = {
+	scope = character
+	is_shown = {
+		has_character_flag = OW_XZ_XINXI10
+	}
+}
+OW_DFFR_XZ_XinXi_KG_11 = {
+	scope = character
+	is_shown = {
+		has_character_flag = OW_XZ_XINXI11
+	}
+}
+OW_DFFR_XZ_XinXi_KG_12 = {
+	scope = character
+	is_shown = {
+		has_character_flag = OW_XZ_XINXI12
+	}
+}
+OW_DFFR_XZ_XinXi_KG_13 = {
+	scope = character
+	is_shown = {
+		has_character_flag = OW_XZ_XINXI13
+	}
+}
+OW_DFFR_XZ_XinXi_KG_14 = {
+	scope = character
+	is_shown = {
+		has_character_flag = OW_XZ_XINXI14
+	}
+}
+OW_DFFR_XZ_XinXi_KG_15 = {
+	scope = character
+	is_shown = {
+		has_character_flag = OW_XZ_XINXI15
+	}
+}
+OW_DFFR_XZ_XinXi_KG_16 = {
+	scope = character
+	is_shown = {
+		has_character_flag = OW_XZ_XINXI16
+	}
+}
+OW_DFFR_XZ_XinXi_KG_17 = {
+	scope = character
+	is_shown = {
+		has_character_flag = OW_XZ_XINXI17
+	}
+}
+OW_DFFR_XZ_XinXi_KG_18 = {
+	scope = character
+	is_shown = {
+		has_character_flag = OW_XZ_XINXI18
+	}
+}
+OW_DFFR_XZ_XinXi_KG_19 = {
+	scope = character
+	is_shown = {
+		has_character_flag = OW_XZ_XINXI19
+	}
+}
+OW_DFFR_XZ_XinXi_KG_20 = {
+	scope = character
+	is_shown = {
+		has_character_flag = OW_XZ_XINXI20
+	}
+}
+
+###########买入
+OW_FRXZ_JYCK_window_KG_MR_1 = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_XinXi_1
+	}
+	is_valid = {
+		has_variable = OW_FRXZ_XinXi_1
+		gold >= global_var:OW_FRXZ_XinXi_1_global_MR
+	}
+	effect = {
+		remove_short_term_gold = global_var:OW_FRXZ_XinXi_1_global_MR
+		add_OW_FRXZ_XinXi = {
+			OW_CT_KEY = OW_FRXZ_XinXi_1
+			VALUE = 1
+		}
+		get_OW_FRXZ_XinXi_Global_Variable = yes
+	}
+}
+OW_FRXZ_JYCK_window_KG_MR_2 = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_XinXi_2
+	}
+	is_valid = {
+		has_variable = OW_FRXZ_XinXi_2
+		gold >= global_var:OW_FRXZ_XinXi_2_global_MR
+	}
+	effect = {
+		remove_short_term_gold = global_var:OW_FRXZ_XinXi_2_global_MR
+		add_OW_FRXZ_XinXi = {
+			OW_CT_KEY = OW_FRXZ_XinXi_2
+			VALUE = 1
+		}
+		get_OW_FRXZ_XinXi_Global_Variable = yes
+	}
+}
+OW_FRXZ_JYCK_window_KG_MR_3 = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_XinXi_3
+	}
+	is_valid = {
+		has_variable = OW_FRXZ_XinXi_3
+		gold >= global_var:OW_FRXZ_XinXi_3_global_MR
+	}
+	effect = {
+		remove_short_term_gold = global_var:OW_FRXZ_XinXi_3_global_MR
+		add_OW_FRXZ_XinXi = {
+			OW_CT_KEY = OW_FRXZ_XinXi_3
+			VALUE = 1
+		}
+		get_OW_FRXZ_XinXi_Global_Variable = yes
+	}
+}
+OW_FRXZ_JYCK_window_KG_MR_4 = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_XinXi_4
+	}
+	is_valid = {
+		has_variable = OW_FRXZ_XinXi_4
+		gold >= global_var:OW_FRXZ_XinXi_4_global_MR
+	}
+	effect = {
+		remove_short_term_gold = global_var:OW_FRXZ_XinXi_4_global_MR
+		add_OW_FRXZ_XinXi = {
+			OW_CT_KEY = OW_FRXZ_XinXi_4
+			VALUE = 1
+		}
+		get_OW_FRXZ_XinXi_Global_Variable = yes
+	}
+}
+OW_FRXZ_JYCK_window_KG_MR_5 = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_XinXi_5
+	}
+	is_valid = {
+		has_variable = OW_FRXZ_XinXi_5
+		gold >= global_var:OW_FRXZ_XinXi_5_global_MR
+	}
+	effect = {
+		remove_short_term_gold = global_var:OW_FRXZ_XinXi_5_global_MR
+		add_OW_FRXZ_XinXi = {
+			OW_CT_KEY = OW_FRXZ_XinXi_5
+			VALUE = 1
+		}
+		get_OW_FRXZ_XinXi_Global_Variable = yes
+	}
+}
+OW_FRXZ_JYCK_window_KG_MR_6 = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_XinXi_6
+	}
+	is_valid = {
+		has_variable = OW_FRXZ_XinXi_6
+		gold >= global_var:OW_FRXZ_XinXi_6_global_MR
+	}
+	effect = {
+		remove_short_term_gold = global_var:OW_FRXZ_XinXi_6_global_MR
+		add_OW_FRXZ_XinXi = {
+			OW_CT_KEY = OW_FRXZ_XinXi_6
+			VALUE = 1
+		}
+		get_OW_FRXZ_XinXi_Global_Variable = yes
+	}
+}
+OW_FRXZ_JYCK_window_KG_MR_7 = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_XinXi_7
+	}
+	is_valid = {
+		has_variable = OW_FRXZ_XinXi_7
+		gold >= global_var:OW_FRXZ_XinXi_7_global_MR
+	}
+	effect = {
+		remove_short_term_gold = global_var:OW_FRXZ_XinXi_7_global_MR
+		add_OW_FRXZ_XinXi = {
+			OW_CT_KEY = OW_FRXZ_XinXi_7
+			VALUE = 1
+		}
+		get_OW_FRXZ_XinXi_Global_Variable = yes
+	}
+}
+OW_FRXZ_JYCK_window_KG_MR_8 = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_XinXi_8
+	}
+	is_valid = {
+		has_variable = OW_FRXZ_XinXi_8
+		gold >= global_var:OW_FRXZ_XinXi_8_global_MR
+	}
+	effect = {
+		remove_short_term_gold = global_var:OW_FRXZ_XinXi_8_global_MR
+		add_OW_FRXZ_XinXi = {
+			OW_CT_KEY = OW_FRXZ_XinXi_8
+			VALUE = 1
+		}
+		get_OW_FRXZ_XinXi_Global_Variable = yes
+	}
+}
+OW_FRXZ_JYCK_window_KG_MR_9 = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_XinXi_9
+	}
+	is_valid = {
+		has_variable = OW_FRXZ_XinXi_9
+		gold >= global_var:OW_FRXZ_XinXi_9_global_MR
+	}
+	effect = {
+		remove_short_term_gold = global_var:OW_FRXZ_XinXi_9_global_MR
+		add_OW_FRXZ_XinXi = {
+			OW_CT_KEY = OW_FRXZ_XinXi_9
+			VALUE = 1
+		}
+		get_OW_FRXZ_XinXi_Global_Variable = yes
+	}
+}
+OW_FRXZ_JYCK_window_KG_MR_10 = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_XinXi_10
+	}
+	is_valid = {
+		has_variable = OW_FRXZ_XinXi_10
+		gold >= global_var:OW_FRXZ_XinXi_10_global_MR
+	}
+	effect = {
+		remove_short_term_gold = global_var:OW_FRXZ_XinXi_10_global_MR
+		add_OW_FRXZ_XinXi = {
+			OW_CT_KEY = OW_FRXZ_XinXi_10
+			VALUE = 1
+		}
+		get_OW_FRXZ_XinXi_Global_Variable = yes
+	}
+}
+############################################卖出
+OW_FRXZ_JYCK_window_KG_MC_1 = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_XinXi_1
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_1 > 0
+	}
+	effect = {
+		add_gold = global_var:OW_FRXZ_XinXi_1_global_MC
+		add_OW_FRXZ_XinXi = {
+			OW_CT_KEY = OW_FRXZ_XinXi_1
+			VALUE = -1
+		}
+		get_OW_FRXZ_XinXi_Global_Variable = yes
+	}
+}
+OW_FRXZ_JYCK_window_KG_MC_2 = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_XinXi_2
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_2 > 0
+	}
+	effect = {
+		add_gold = global_var:OW_FRXZ_XinXi_2_global_MC
+		add_OW_FRXZ_XinXi = {
+			OW_CT_KEY = OW_FRXZ_XinXi_2
+			VALUE = -1
+		}
+		get_OW_FRXZ_XinXi_Global_Variable = yes
+	}
+}
+OW_FRXZ_JYCK_window_KG_MC_3 = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_XinXi_3
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_3 > 0
+	}
+	effect = {
+		add_gold = global_var:OW_FRXZ_XinXi_3_global_MC
+		add_OW_FRXZ_XinXi = {
+			OW_CT_KEY = OW_FRXZ_XinXi_3
+			VALUE = -1
+		}
+		get_OW_FRXZ_XinXi_Global_Variable = yes
+	}
+}
+OW_FRXZ_JYCK_window_KG_MC_4 = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_XinXi_4
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_4 > 0
+	}
+	effect = {
+		add_gold = global_var:OW_FRXZ_XinXi_4_global_MC
+		add_OW_FRXZ_XinXi = {
+			OW_CT_KEY = OW_FRXZ_XinXi_4
+			VALUE = -1
+		}
+		get_OW_FRXZ_XinXi_Global_Variable = yes
+	}
+}
+OW_FRXZ_JYCK_window_KG_MC_5 = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_XinXi_5
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_5 > 0
+	}
+	effect = {
+		add_gold = global_var:OW_FRXZ_XinXi_5_global_MC
+		add_OW_FRXZ_XinXi = {
+			OW_CT_KEY = OW_FRXZ_XinXi_5
+			VALUE = -1
+		}
+		get_OW_FRXZ_XinXi_Global_Variable = yes
+	}
+}
+OW_FRXZ_JYCK_window_KG_MC_6 = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_XinXi_6
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_6 > 0
+	}
+	effect = {
+		add_gold = global_var:OW_FRXZ_XinXi_6_global_MC
+		add_OW_FRXZ_XinXi = {
+			OW_CT_KEY = OW_FRXZ_XinXi_6
+			VALUE = -1
+		}
+		get_OW_FRXZ_XinXi_Global_Variable = yes
+	}
+}
+OW_FRXZ_JYCK_window_KG_MC_7 = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_XinXi_7
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_7 > 0
+	}
+	effect = {
+		add_gold = global_var:OW_FRXZ_XinXi_7_global_MC
+		add_OW_FRXZ_XinXi = {
+			OW_CT_KEY = OW_FRXZ_XinXi_7
+			VALUE = -1
+		}
+		get_OW_FRXZ_XinXi_Global_Variable = yes
+	}
+}
+OW_FRXZ_JYCK_window_KG_MC_8 = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_XinXi_8
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_8 > 0
+	}
+	effect = {
+		add_gold = global_var:OW_FRXZ_XinXi_8_global_MC
+		add_OW_FRXZ_XinXi = {
+			OW_CT_KEY = OW_FRXZ_XinXi_8
+			VALUE = -1
+		}
+		get_OW_FRXZ_XinXi_Global_Variable = yes
+	}
+}
+OW_FRXZ_JYCK_window_KG_MC_9 = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_XinXi_9
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_9 > 0
+	}
+	effect = {
+		add_gold = global_var:OW_FRXZ_XinXi_9_global_MC
+		add_OW_FRXZ_XinXi = {
+			OW_CT_KEY = OW_FRXZ_XinXi_9
+			VALUE = -1
+		}
+		get_OW_FRXZ_XinXi_Global_Variable = yes
+	}
+}
+OW_FRXZ_JYCK_window_KG_MC_10 = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_XinXi_10
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_10 > 0
+	}
+	effect = {
+		add_gold = global_var:OW_FRXZ_XinXi_10_global_MC
+		add_OW_FRXZ_XinXi = {
+			OW_CT_KEY = OW_FRXZ_XinXi_10
+			VALUE = -1
+		}
+		get_OW_FRXZ_XinXi_Global_Variable = yes
+	}
+}
+######################
+OW_DFFR_XZ_XinXi_KG_1_MC = {
+	scope = character
+	is_shown = {
+		NOT = { has_character_flag = OW_XZ_XINXI1 }
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_1 > 10
+	}
+	effect = {
+		add_OW_FRXZ_XinXi_Value = {
+			OW_CT_KEY = OW_FRXZ_XinXi_1
+			VALUE = -10
+		}
+		random_list = {
+			25 = {
+				add_character_flag = OW_XZ_XINXI1
+				modifier = {
+					add = 3
+					diplomacy >= 20
+				}
+				modifier = {
+					add = 3
+					martial >= 20
+				}
+				modifier = {
+					add = 3
+					stewardship >= 20
+				}
+				modifier = {
+					add = 3
+					intrigue >= 20
+				}
+				modifier = {
+					add = 3
+					learning >= 20
+				}
+				modifier = {
+					add = 3
+					prowess >= 20
+				}
+				modifier = {
+					add = 2
+					diplomacy >= 15
+				}
+				modifier = {
+					add = 2
+					martial >= 15
+				}
+				modifier = {
+					add = 2
+					stewardship >= 15
+				}
+				modifier = {
+					add = 2
+					intrigue >= 15
+				}
+				modifier = {
+					add = 2
+					learning >= 15
+				}
+				modifier = {
+					add = 2
+					prowess >= 15
+				}
+			}
+			75 = {
+				modifier = {
+					add = -3
+					diplomacy >= 20
+				}
+				modifier = {
+					add = -3
+					martial >= 20
+				}
+				modifier = {
+					add = -3
+					stewardship >= 20
+				}
+				modifier = {
+					add = -3
+					intrigue >= 20
+				}
+				modifier = {
+					add = -3
+					learning >= 20
+				}
+				modifier = {
+					add = -3
+					prowess >= 20
+				}
+				modifier = {
+					add = -2
+					diplomacy >= 15
+				}
+				modifier = {
+					add = -2
+					martial >= 15
+				}
+				modifier = {
+					add = -2
+					stewardship >= 15
+				}
+				modifier = {
+					add = -2
+					intrigue >= 15
+				}
+				modifier = {
+					add = -2
+					learning >= 15
+				}
+				modifier = {
+					add = -2
+					prowess >= 15
+				}
+			}
+		}
+	}
+}
+OW_DFFR_XZ_XinXi_KG_2_MC = {
+	scope = character
+	is_shown = {
+		NOT = { has_character_flag = OW_XZ_XINXI2 }
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_2 > 10
+	}
+	effect = {
+		add_OW_FRXZ_XinXi_Value = {
+			OW_CT_KEY = OW_FRXZ_XinXi_2
+			VALUE = -10
+		}
+		random_list = {
+			25 = {
+				add_character_flag = OW_XZ_XINXI2
+				modifier = {
+					add = 3
+					diplomacy >= 20
+				}
+				modifier = {
+					add = 3
+					martial >= 20
+				}
+				modifier = {
+					add = 3
+					stewardship >= 20
+				}
+				modifier = {
+					add = 3
+					intrigue >= 20
+				}
+				modifier = {
+					add = 3
+					learning >= 20
+				}
+				modifier = {
+					add = 3
+					prowess >= 20
+				}
+				modifier = {
+					add = 2
+					diplomacy >= 15
+				}
+				modifier = {
+					add = 2
+					martial >= 15
+				}
+				modifier = {
+					add = 2
+					stewardship >= 15
+				}
+				modifier = {
+					add = 2
+					intrigue >= 15
+				}
+				modifier = {
+					add = 2
+					learning >= 15
+				}
+				modifier = {
+					add = 2
+					prowess >= 15
+				}
+			}
+			75 = {
+				modifier = {
+					add = -3
+					diplomacy >= 20
+				}
+				modifier = {
+					add = -3
+					martial >= 20
+				}
+				modifier = {
+					add = -3
+					stewardship >= 20
+				}
+				modifier = {
+					add = -3
+					intrigue >= 20
+				}
+				modifier = {
+					add = -3
+					learning >= 20
+				}
+				modifier = {
+					add = -3
+					prowess >= 20
+				}
+				modifier = {
+					add = -2
+					diplomacy >= 15
+				}
+				modifier = {
+					add = -2
+					martial >= 15
+				}
+				modifier = {
+					add = -2
+					stewardship >= 15
+				}
+				modifier = {
+					add = -2
+					intrigue >= 15
+				}
+				modifier = {
+					add = -2
+					learning >= 15
+				}
+				modifier = {
+					add = -2
+					prowess >= 15
+				}
+			}
+		}
+	}
+}
+OW_DFFR_XZ_XinXi_KG_3_MC = {
+	scope = character
+	is_shown = {
+		NOT = { has_character_flag = OW_XZ_XINXI3 }
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_3 > 10
+	}
+	effect = {
+		add_OW_FRXZ_XinXi_Value = {
+			OW_CT_KEY = OW_FRXZ_XinXi_3
+			VALUE = -10
+		}
+		random_list = {
+			25 = {
+				add_character_flag = OW_XZ_XINXI3
+				modifier = {
+					add = 3
+					diplomacy >= 20
+				}
+				modifier = {
+					add = 3
+					martial >= 20
+				}
+				modifier = {
+					add = 3
+					stewardship >= 20
+				}
+				modifier = {
+					add = 3
+					intrigue >= 20
+				}
+				modifier = {
+					add = 3
+					learning >= 20
+				}
+				modifier = {
+					add = 3
+					prowess >= 20
+				}
+				modifier = {
+					add = 2
+					diplomacy >= 15
+				}
+				modifier = {
+					add = 2
+					martial >= 15
+				}
+				modifier = {
+					add = 2
+					stewardship >= 15
+				}
+				modifier = {
+					add = 2
+					intrigue >= 15
+				}
+				modifier = {
+					add = 2
+					learning >= 15
+				}
+				modifier = {
+					add = 2
+					prowess >= 15
+				}
+			}
+			75 = {
+				modifier = {
+					add = -3
+					diplomacy >= 20
+				}
+				modifier = {
+					add = -3
+					martial >= 20
+				}
+				modifier = {
+					add = -3
+					stewardship >= 20
+				}
+				modifier = {
+					add = -3
+					intrigue >= 20
+				}
+				modifier = {
+					add = -3
+					learning >= 20
+				}
+				modifier = {
+					add = -3
+					prowess >= 20
+				}
+				modifier = {
+					add = -2
+					diplomacy >= 15
+				}
+				modifier = {
+					add = -2
+					martial >= 15
+				}
+				modifier = {
+					add = -2
+					stewardship >= 15
+				}
+				modifier = {
+					add = -2
+					intrigue >= 15
+				}
+				modifier = {
+					add = -2
+					learning >= 15
+				}
+				modifier = {
+					add = -2
+					prowess >= 15
+				}
+			}
+		}
+	}
+}
+OW_DFFR_XZ_XinXi_KG_4_MC = {
+	scope = character
+	is_shown = {
+		NOT = { has_character_flag = OW_XZ_XINXI4 }
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_4 > 10
+	}
+	effect = {
+		add_OW_FRXZ_XinXi_Value = {
+			OW_CT_KEY = OW_FRXZ_XinXi_4
+			VALUE = -10
+		}
+		random_list = {
+			25 = {
+				add_character_flag = OW_XZ_XINXI4
+				modifier = {
+					add = 3
+					diplomacy >= 20
+				}
+				modifier = {
+					add = 3
+					martial >= 20
+				}
+				modifier = {
+					add = 3
+					stewardship >= 20
+				}
+				modifier = {
+					add = 3
+					intrigue >= 20
+				}
+				modifier = {
+					add = 3
+					learning >= 20
+				}
+				modifier = {
+					add = 3
+					prowess >= 20
+				}
+				modifier = {
+					add = 2
+					diplomacy >= 15
+				}
+				modifier = {
+					add = 2
+					martial >= 15
+				}
+				modifier = {
+					add = 2
+					stewardship >= 15
+				}
+				modifier = {
+					add = 2
+					intrigue >= 15
+				}
+				modifier = {
+					add = 2
+					learning >= 15
+				}
+				modifier = {
+					add = 2
+					prowess >= 15
+				}
+			}
+			75 = {
+				modifier = {
+					add = -3
+					diplomacy >= 20
+				}
+				modifier = {
+					add = -3
+					martial >= 20
+				}
+				modifier = {
+					add = -3
+					stewardship >= 20
+				}
+				modifier = {
+					add = -3
+					intrigue >= 20
+				}
+				modifier = {
+					add = -3
+					learning >= 20
+				}
+				modifier = {
+					add = -3
+					prowess >= 20
+				}
+				modifier = {
+					add = -2
+					diplomacy >= 15
+				}
+				modifier = {
+					add = -2
+					martial >= 15
+				}
+				modifier = {
+					add = -2
+					stewardship >= 15
+				}
+				modifier = {
+					add = -2
+					intrigue >= 15
+				}
+				modifier = {
+					add = -2
+					learning >= 15
+				}
+				modifier = {
+					add = -2
+					prowess >= 15
+				}
+			}
+		}
+	}
+}
+OW_DFFR_XZ_XinXi_KG_5_MC = {
+	scope = character
+	is_shown = {
+		NOT = { has_character_flag = OW_XZ_XINXI5 }
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_5 > 10
+	}
+	effect = {
+		add_OW_FRXZ_XinXi_Value = {
+			OW_CT_KEY = OW_FRXZ_XinXi_5
+			VALUE = -10
+		}
+		random_list = {
+			25 = {
+				add_character_flag = OW_XZ_XINXI5
+				modifier = {
+					add = 3
+					diplomacy >= 20
+				}
+				modifier = {
+					add = 3
+					martial >= 20
+				}
+				modifier = {
+					add = 3
+					stewardship >= 20
+				}
+				modifier = {
+					add = 3
+					intrigue >= 20
+				}
+				modifier = {
+					add = 3
+					learning >= 20
+				}
+				modifier = {
+					add = 3
+					prowess >= 20
+				}
+				modifier = {
+					add = 2
+					diplomacy >= 15
+				}
+				modifier = {
+					add = 2
+					martial >= 15
+				}
+				modifier = {
+					add = 2
+					stewardship >= 15
+				}
+				modifier = {
+					add = 2
+					intrigue >= 15
+				}
+				modifier = {
+					add = 2
+					learning >= 15
+				}
+				modifier = {
+					add = 2
+					prowess >= 15
+				}
+			}
+			75 = {
+				modifier = {
+					add = -3
+					diplomacy >= 20
+				}
+				modifier = {
+					add = -3
+					martial >= 20
+				}
+				modifier = {
+					add = -3
+					stewardship >= 20
+				}
+				modifier = {
+					add = -3
+					intrigue >= 20
+				}
+				modifier = {
+					add = -3
+					learning >= 20
+				}
+				modifier = {
+					add = -3
+					prowess >= 20
+				}
+				modifier = {
+					add = -2
+					diplomacy >= 15
+				}
+				modifier = {
+					add = -2
+					martial >= 15
+				}
+				modifier = {
+					add = -2
+					stewardship >= 15
+				}
+				modifier = {
+					add = -2
+					intrigue >= 15
+				}
+				modifier = {
+					add = -2
+					learning >= 15
+				}
+				modifier = {
+					add = -2
+					prowess >= 15
+				}
+			}
+		}
+	}
+}
+OW_DFFR_XZ_XinXi_KG_6_MC = {
+	scope = character
+	is_shown = {
+		NOT = { has_character_flag = OW_XZ_XINXI6 }
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_6 > 10
+	}
+	effect = {
+		add_OW_FRXZ_XinXi_Value = {
+			OW_CT_KEY = OW_FRXZ_XinXi_6
+			VALUE = -10
+		}
+		random_list = {
+			25 = {
+				add_character_flag = OW_XZ_XINXI6
+				modifier = {
+					add = 3
+					diplomacy >= 20
+				}
+				modifier = {
+					add = 3
+					martial >= 20
+				}
+				modifier = {
+					add = 3
+					stewardship >= 20
+				}
+				modifier = {
+					add = 3
+					intrigue >= 20
+				}
+				modifier = {
+					add = 3
+					learning >= 20
+				}
+				modifier = {
+					add = 3
+					prowess >= 20
+				}
+				modifier = {
+					add = 2
+					diplomacy >= 15
+				}
+				modifier = {
+					add = 2
+					martial >= 15
+				}
+				modifier = {
+					add = 2
+					stewardship >= 15
+				}
+				modifier = {
+					add = 2
+					intrigue >= 15
+				}
+				modifier = {
+					add = 2
+					learning >= 15
+				}
+				modifier = {
+					add = 2
+					prowess >= 15
+				}
+			}
+			75 = {
+				modifier = {
+					add = -3
+					diplomacy >= 20
+				}
+				modifier = {
+					add = -3
+					martial >= 20
+				}
+				modifier = {
+					add = -3
+					stewardship >= 20
+				}
+				modifier = {
+					add = -3
+					intrigue >= 20
+				}
+				modifier = {
+					add = -3
+					learning >= 20
+				}
+				modifier = {
+					add = -3
+					prowess >= 20
+				}
+				modifier = {
+					add = -2
+					diplomacy >= 15
+				}
+				modifier = {
+					add = -2
+					martial >= 15
+				}
+				modifier = {
+					add = -2
+					stewardship >= 15
+				}
+				modifier = {
+					add = -2
+					intrigue >= 15
+				}
+				modifier = {
+					add = -2
+					learning >= 15
+				}
+				modifier = {
+					add = -2
+					prowess >= 15
+				}
+			}
+		}
+	}
+}
+OW_DFFR_XZ_XinXi_KG_7_MC = {
+	scope = character
+	is_shown = {
+		NOT = { has_character_flag = OW_XZ_XINXI6 }
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_7 > 10
+	}
+	effect = {
+		add_OW_FRXZ_XinXi_Value = {
+			OW_CT_KEY = OW_FRXZ_XinXi_7
+			VALUE = -10
+		}
+		random_list = {
+			25 = {
+				add_character_flag = OW_XZ_XINXI7
+				modifier = {
+					add = 3
+					diplomacy >= 20
+				}
+				modifier = {
+					add = 3
+					martial >= 20
+				}
+				modifier = {
+					add = 3
+					stewardship >= 20
+				}
+				modifier = {
+					add = 3
+					intrigue >= 20
+				}
+				modifier = {
+					add = 3
+					learning >= 20
+				}
+				modifier = {
+					add = 3
+					prowess >= 20
+				}
+				modifier = {
+					add = 2
+					diplomacy >= 15
+				}
+				modifier = {
+					add = 2
+					martial >= 15
+				}
+				modifier = {
+					add = 2
+					stewardship >= 15
+				}
+				modifier = {
+					add = 2
+					intrigue >= 15
+				}
+				modifier = {
+					add = 2
+					learning >= 15
+				}
+				modifier = {
+					add = 2
+					prowess >= 15
+				}
+			}
+			75 = {
+				modifier = {
+					add = -3
+					diplomacy >= 20
+				}
+				modifier = {
+					add = -3
+					martial >= 20
+				}
+				modifier = {
+					add = -3
+					stewardship >= 20
+				}
+				modifier = {
+					add = -3
+					intrigue >= 20
+				}
+				modifier = {
+					add = -3
+					learning >= 20
+				}
+				modifier = {
+					add = -3
+					prowess >= 20
+				}
+				modifier = {
+					add = -2
+					diplomacy >= 15
+				}
+				modifier = {
+					add = -2
+					martial >= 15
+				}
+				modifier = {
+					add = -2
+					stewardship >= 15
+				}
+				modifier = {
+					add = -2
+					intrigue >= 15
+				}
+				modifier = {
+					add = -2
+					learning >= 15
+				}
+				modifier = {
+					add = -2
+					prowess >= 15
+				}
+			}
+		}
+	}
+}
+OW_DFFR_XZ_XinXi_KG_8_MC = {
+	scope = character
+	is_shown = {
+		NOT = { has_character_flag = OW_XZ_XINXI8 }
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_8 > 10
+	}
+	effect = {
+		add_OW_FRXZ_XinXi_Value = {
+			OW_CT_KEY = OW_FRXZ_XinXi_8
+			VALUE = -10
+		}
+		random_list = {
+			25 = {
+				add_character_flag = OW_XZ_XINXI8
+				modifier = {
+					add = 3
+					diplomacy >= 20
+				}
+				modifier = {
+					add = 3
+					martial >= 20
+				}
+				modifier = {
+					add = 3
+					stewardship >= 20
+				}
+				modifier = {
+					add = 3
+					intrigue >= 20
+				}
+				modifier = {
+					add = 3
+					learning >= 20
+				}
+				modifier = {
+					add = 3
+					prowess >= 20
+				}
+				modifier = {
+					add = 2
+					diplomacy >= 15
+				}
+				modifier = {
+					add = 2
+					martial >= 15
+				}
+				modifier = {
+					add = 2
+					stewardship >= 15
+				}
+				modifier = {
+					add = 2
+					intrigue >= 15
+				}
+				modifier = {
+					add = 2
+					learning >= 15
+				}
+				modifier = {
+					add = 2
+					prowess >= 15
+				}
+			}
+			75 = {
+				modifier = {
+					add = -3
+					diplomacy >= 20
+				}
+				modifier = {
+					add = -3
+					martial >= 20
+				}
+				modifier = {
+					add = -3
+					stewardship >= 20
+				}
+				modifier = {
+					add = -3
+					intrigue >= 20
+				}
+				modifier = {
+					add = -3
+					learning >= 20
+				}
+				modifier = {
+					add = -3
+					prowess >= 20
+				}
+				modifier = {
+					add = -2
+					diplomacy >= 15
+				}
+				modifier = {
+					add = -2
+					martial >= 15
+				}
+				modifier = {
+					add = -2
+					stewardship >= 15
+				}
+				modifier = {
+					add = -2
+					intrigue >= 15
+				}
+				modifier = {
+					add = -2
+					learning >= 15
+				}
+				modifier = {
+					add = -2
+					prowess >= 15
+				}
+			}
+		}
+	}
+}
+OW_DFFR_XZ_XinXi_KG_9_MC = {
+	scope = character
+	is_shown = {
+		NOT = { has_character_flag = OW_XZ_XINXI9 }
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_9 > 10
+	}
+	effect = {
+		add_OW_FRXZ_XinXi_Value = {
+			OW_CT_KEY = OW_FRXZ_XinXi_9
+			VALUE = -10
+		}
+		random_list = {
+			25 = {
+				add_character_flag = OW_XZ_XINXI9
+				modifier = {
+					add = 3
+					diplomacy >= 20
+				}
+				modifier = {
+					add = 3
+					martial >= 20
+				}
+				modifier = {
+					add = 3
+					stewardship >= 20
+				}
+				modifier = {
+					add = 3
+					intrigue >= 20
+				}
+				modifier = {
+					add = 3
+					learning >= 20
+				}
+				modifier = {
+					add = 3
+					prowess >= 20
+				}
+				modifier = {
+					add = 2
+					diplomacy >= 15
+				}
+				modifier = {
+					add = 2
+					martial >= 15
+				}
+				modifier = {
+					add = 2
+					stewardship >= 15
+				}
+				modifier = {
+					add = 2
+					intrigue >= 15
+				}
+				modifier = {
+					add = 2
+					learning >= 15
+				}
+				modifier = {
+					add = 2
+					prowess >= 15
+				}
+			}
+			75 = {
+				modifier = {
+					add = -3
+					diplomacy >= 20
+				}
+				modifier = {
+					add = -3
+					martial >= 20
+				}
+				modifier = {
+					add = -3
+					stewardship >= 20
+				}
+				modifier = {
+					add = -3
+					intrigue >= 20
+				}
+				modifier = {
+					add = -3
+					learning >= 20
+				}
+				modifier = {
+					add = -3
+					prowess >= 20
+				}
+				modifier = {
+					add = -2
+					diplomacy >= 15
+				}
+				modifier = {
+					add = -2
+					martial >= 15
+				}
+				modifier = {
+					add = -2
+					stewardship >= 15
+				}
+				modifier = {
+					add = -2
+					intrigue >= 15
+				}
+				modifier = {
+					add = -2
+					learning >= 15
+				}
+				modifier = {
+					add = -2
+					prowess >= 15
+				}
+			}
+		}
+	}
+}
+OW_DFFR_XZ_XinXi_KG_10_MC = {
+	scope = character
+	is_shown = {
+		NOT = { has_character_flag = OW_XZ_XINXI10 }
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_10 > 10
+	}
+	effect = {
+		add_OW_FRXZ_XinXi_Value = {
+			OW_CT_KEY = OW_FRXZ_XinXi_10
+			VALUE = -10
+		}
+		random_list = {
+			25 = {
+				add_character_flag = OW_XZ_XINXI10
+				modifier = {
+					add = 3
+					diplomacy >= 20
+				}
+				modifier = {
+					add = 3
+					martial >= 20
+				}
+				modifier = {
+					add = 3
+					stewardship >= 20
+				}
+				modifier = {
+					add = 3
+					intrigue >= 20
+				}
+				modifier = {
+					add = 3
+					learning >= 20
+				}
+				modifier = {
+					add = 3
+					prowess >= 20
+				}
+				modifier = {
+					add = 2
+					diplomacy >= 15
+				}
+				modifier = {
+					add = 2
+					martial >= 15
+				}
+				modifier = {
+					add = 2
+					stewardship >= 15
+				}
+				modifier = {
+					add = 2
+					intrigue >= 15
+				}
+				modifier = {
+					add = 2
+					learning >= 15
+				}
+				modifier = {
+					add = 2
+					prowess >= 15
+				}
+			}
+			75 = {
+				modifier = {
+					add = -3
+					diplomacy >= 20
+				}
+				modifier = {
+					add = -3
+					martial >= 20
+				}
+				modifier = {
+					add = -3
+					stewardship >= 20
+				}
+				modifier = {
+					add = -3
+					intrigue >= 20
+				}
+				modifier = {
+					add = -3
+					learning >= 20
+				}
+				modifier = {
+					add = -3
+					prowess >= 20
+				}
+				modifier = {
+					add = -2
+					diplomacy >= 15
+				}
+				modifier = {
+					add = -2
+					martial >= 15
+				}
+				modifier = {
+					add = -2
+					stewardship >= 15
+				}
+				modifier = {
+					add = -2
+					intrigue >= 15
+				}
+				modifier = {
+					add = -2
+					learning >= 15
+				}
+				modifier = {
+					add = -2
+					prowess >= 15
+				}
+			}
+		}
+	}
+}
+OW_DFFR_XZ_XinXi_KG_11_MC = {
+	scope = character
+	is_shown = {
+		NOT = { has_character_flag = OW_XZ_XINXI11 }
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_1 > 10
+	}
+	effect = {
+		add_OW_FRXZ_XinXi_Value = {
+			OW_CT_KEY = OW_FRXZ_XinXi_1
+			VALUE = -10
+		}
+		random_list = {
+			25 = {
+				add_character_flag = OW_XZ_XINXI11
+				modifier = {
+					add = diplomacy
+					diplomacy >= 10
+				}
+				modifier = {
+					add = martial
+					martial >= 10
+				}
+				modifier = {
+					add = stewardship
+					stewardship >= 10
+				}
+				modifier = {
+					add = intrigue
+					intrigue >= 10
+				}
+				modifier = {
+					add = learning
+					learning >= 10
+				}
+				modifier = {
+					add = prowess
+					prowess >= 10
+				}
+			}
+			75 = {
+				modifier = {
+					add = diplomacy
+					diplomacy < 10
+				}
+				modifier = {
+					add = martial
+					martial < 10
+				}
+				modifier = {
+					add = stewardship
+					stewardship < 10
+				}
+				modifier = {
+					add = intrigue
+					intrigue < 10
+				}
+				modifier = {
+					add = learning
+					learning < 10
+				}
+				modifier = {
+					add = prowess
+					prowess < 10
+				}
+			}
+		}
+	}
+}
+OW_DFFR_XZ_XinXi_KG_12_MC = {
+	scope = character
+	is_shown = {
+		NOT = { has_character_flag = OW_XZ_XINXI12 }
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_2 > 10
+	}
+	effect = {
+		add_OW_FRXZ_XinXi_Value = {
+			OW_CT_KEY = OW_FRXZ_XinXi_2
+			VALUE = -10
+		}
+		random_list = {
+			25 = {
+				add_character_flag = OW_XZ_XINXI12
+				modifier = {
+					add = diplomacy
+					diplomacy >= 10
+				}
+				modifier = {
+					add = martial
+					martial >= 10
+				}
+				modifier = {
+					add = stewardship
+					stewardship >= 10
+				}
+				modifier = {
+					add = intrigue
+					intrigue >= 10
+				}
+				modifier = {
+					add = learning
+					learning >= 10
+				}
+				modifier = {
+					add = prowess
+					prowess >= 10
+				}
+			}
+			75 = {
+				modifier = {
+					add = diplomacy
+					diplomacy < 10
+				}
+				modifier = {
+					add = martial
+					martial < 10
+				}
+				modifier = {
+					add = stewardship
+					stewardship < 10
+				}
+				modifier = {
+					add = intrigue
+					intrigue < 10
+				}
+				modifier = {
+					add = learning
+					learning < 10
+				}
+				modifier = {
+					add = prowess
+					prowess < 10
+				}
+			}
+		}
+	}
+}
+OW_DFFR_XZ_XinXi_KG_13_MC = {
+	scope = character
+	is_shown = {
+		NOT = { has_character_flag = OW_XZ_XINXI13 }
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_3 > 10
+	}
+	effect = {
+		add_OW_FRXZ_XinXi_Value = {
+			OW_CT_KEY = OW_FRXZ_XinXi_3
+			VALUE = -10
+		}
+		random_list = {
+			25 = {
+				add_character_flag = OW_XZ_XINXI13
+				modifier = {
+					add = diplomacy
+					diplomacy >= 10
+				}
+				modifier = {
+					add = martial
+					martial >= 10
+				}
+				modifier = {
+					add = stewardship
+					stewardship >= 10
+				}
+				modifier = {
+					add = intrigue
+					intrigue >= 10
+				}
+				modifier = {
+					add = learning
+					learning >= 10
+				}
+				modifier = {
+					add = prowess
+					prowess >= 10
+				}
+			}
+			75 = {
+				modifier = {
+					add = diplomacy
+					diplomacy < 10
+				}
+				modifier = {
+					add = martial
+					martial < 10
+				}
+				modifier = {
+					add = stewardship
+					stewardship < 10
+				}
+				modifier = {
+					add = intrigue
+					intrigue < 10
+				}
+				modifier = {
+					add = learning
+					learning < 10
+				}
+				modifier = {
+					add = prowess
+					prowess < 10
+				}
+			}
+		}
+	}
+}
+OW_DFFR_XZ_XinXi_KG_14_MC = {
+	scope = character
+	is_shown = {
+		NOT = { has_character_flag = OW_XZ_XINXI14 }
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_4 > 10
+	}
+	effect = {
+		add_OW_FRXZ_XinXi_Value = {
+			OW_CT_KEY = OW_FRXZ_XinXi_4
+			VALUE = -10
+		}
+		random_list = {
+			25 = {
+				add_character_flag = OW_XZ_XINXI14
+				modifier = {
+					add = diplomacy
+					diplomacy >= 10
+				}
+				modifier = {
+					add = martial
+					martial >= 10
+				}
+				modifier = {
+					add = stewardship
+					stewardship >= 10
+				}
+				modifier = {
+					add = intrigue
+					intrigue >= 10
+				}
+				modifier = {
+					add = learning
+					learning >= 10
+				}
+				modifier = {
+					add = prowess
+					prowess >= 10
+				}
+			}
+			75 = {
+				modifier = {
+					add = diplomacy
+					diplomacy < 10
+				}
+				modifier = {
+					add = martial
+					martial < 10
+				}
+				modifier = {
+					add = stewardship
+					stewardship < 10
+				}
+				modifier = {
+					add = intrigue
+					intrigue < 10
+				}
+				modifier = {
+					add = learning
+					learning < 10
+				}
+				modifier = {
+					add = prowess
+					prowess < 10
+				}
+			}
+		}
+	}
+}
+OW_DFFR_XZ_XinXi_KG_15_MC = {
+	scope = character
+	is_shown = {
+		NOT = { has_character_flag = OW_XZ_XINXI15 }
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_5 > 10
+	}
+	effect = {
+		add_OW_FRXZ_XinXi_Value = {
+			OW_CT_KEY = OW_FRXZ_XinXi_5
+			VALUE = -10
+		}
+		random_list = {
+			25 = {
+				add_character_flag = OW_XZ_XINXI15
+				modifier = {
+					add = diplomacy
+					diplomacy >= 10
+				}
+				modifier = {
+					add = martial
+					martial >= 10
+				}
+				modifier = {
+					add = stewardship
+					stewardship >= 10
+				}
+				modifier = {
+					add = intrigue
+					intrigue >= 10
+				}
+				modifier = {
+					add = learning
+					learning >= 10
+				}
+				modifier = {
+					add = prowess
+					prowess >= 10
+				}
+			}
+			75 = {
+				modifier = {
+					add = diplomacy
+					diplomacy < 10
+				}
+				modifier = {
+					add = martial
+					martial < 10
+				}
+				modifier = {
+					add = stewardship
+					stewardship < 10
+				}
+				modifier = {
+					add = intrigue
+					intrigue < 10
+				}
+				modifier = {
+					add = learning
+					learning < 10
+				}
+				modifier = {
+					add = prowess
+					prowess < 10
+				}
+			}
+		}
+	}
+}
+OW_DFFR_XZ_XinXi_KG_16_MC = {
+	scope = character
+	is_shown = {
+		NOT = { has_character_flag = OW_XZ_XINXI16 }
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_6 > 10
+	}
+	effect = {
+		add_OW_FRXZ_XinXi_Value = {
+			OW_CT_KEY = OW_FRXZ_XinXi_6
+			VALUE = -10
+		}
+		random_list = {
+			25 = {
+				add_character_flag = OW_XZ_XINXI16
+				modifier = {
+					add = diplomacy
+					diplomacy >= 10
+				}
+				modifier = {
+					add = martial
+					martial >= 10
+				}
+				modifier = {
+					add = stewardship
+					stewardship >= 10
+				}
+				modifier = {
+					add = intrigue
+					intrigue >= 10
+				}
+				modifier = {
+					add = learning
+					learning >= 10
+				}
+				modifier = {
+					add = prowess
+					prowess >= 10
+				}
+			}
+			75 = {
+				modifier = {
+					add = diplomacy
+					diplomacy < 10
+				}
+				modifier = {
+					add = martial
+					martial < 10
+				}
+				modifier = {
+					add = stewardship
+					stewardship < 10
+				}
+				modifier = {
+					add = intrigue
+					intrigue < 10
+				}
+				modifier = {
+					add = learning
+					learning < 10
+				}
+				modifier = {
+					add = prowess
+					prowess < 10
+				}
+			}
+		}
+	}
+}
+OW_DFFR_XZ_XinXi_KG_17_MC = {
+	scope = character
+	is_shown = {
+		NOT = { has_character_flag = OW_XZ_XINXI17 }
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_7 > 10
+	}
+	effect = {
+		add_OW_FRXZ_XinXi_Value = {
+			OW_CT_KEY = OW_FRXZ_XinXi_7
+			VALUE = -10
+		}
+		random_list = {
+			25 = {
+				add_character_flag = OW_XZ_XINXI17
+				modifier = {
+					add = diplomacy
+					diplomacy >= 10
+				}
+				modifier = {
+					add = martial
+					martial >= 10
+				}
+				modifier = {
+					add = stewardship
+					stewardship >= 10
+				}
+				modifier = {
+					add = intrigue
+					intrigue >= 10
+				}
+				modifier = {
+					add = learning
+					learning >= 10
+				}
+				modifier = {
+					add = prowess
+					prowess >= 10
+				}
+			}
+			75 = {
+				modifier = {
+					add = diplomacy
+					diplomacy < 10
+				}
+				modifier = {
+					add = martial
+					martial < 10
+				}
+				modifier = {
+					add = stewardship
+					stewardship < 10
+				}
+				modifier = {
+					add = intrigue
+					intrigue < 10
+				}
+				modifier = {
+					add = learning
+					learning < 10
+				}
+				modifier = {
+					add = prowess
+					prowess < 10
+				}
+			}
+		}
+	}
+}
+OW_DFFR_XZ_XinXi_KG_18_MC = {
+	scope = character
+	is_shown = {
+		NOT = { has_character_flag = OW_XZ_XINXI18 }
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_8 > 10
+	}
+	effect = {
+		add_OW_FRXZ_XinXi_Value = {
+			OW_CT_KEY = OW_FRXZ_XinXi_8
+			VALUE = -10
+		}
+		random_list = {
+			25 = {
+				add_character_flag = OW_XZ_XINXI18
+				modifier = {
+					add = diplomacy
+					diplomacy >= 10
+				}
+				modifier = {
+					add = martial
+					martial >= 10
+				}
+				modifier = {
+					add = stewardship
+					stewardship >= 10
+				}
+				modifier = {
+					add = intrigue
+					intrigue >= 10
+				}
+				modifier = {
+					add = learning
+					learning >= 10
+				}
+				modifier = {
+					add = prowess
+					prowess >= 10
+				}
+			}
+			75 = {
+				modifier = {
+					add = diplomacy
+					diplomacy < 10
+				}
+				modifier = {
+					add = martial
+					martial < 10
+				}
+				modifier = {
+					add = stewardship
+					stewardship < 10
+				}
+				modifier = {
+					add = intrigue
+					intrigue < 10
+				}
+				modifier = {
+					add = learning
+					learning < 10
+				}
+				modifier = {
+					add = prowess
+					prowess < 10
+				}
+			}
+		}
+	}
+}
+OW_DFFR_XZ_XinXi_KG_19_MC = {
+	scope = character
+	is_shown = {
+		NOT = { has_character_flag = OW_XZ_XINXI19 }
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_9 > 10
+	}
+	effect = {
+		add_OW_FRXZ_XinXi_Value = {
+			OW_CT_KEY = OW_FRXZ_XinXi_9
+			VALUE = -10
+		}
+		random_list = {
+			25 = {
+				add_character_flag = OW_XZ_XINXI19
+				modifier = {
+					add = diplomacy
+					diplomacy >= 10
+				}
+				modifier = {
+					add = martial
+					martial >= 10
+				}
+				modifier = {
+					add = stewardship
+					stewardship >= 10
+				}
+				modifier = {
+					add = intrigue
+					intrigue >= 10
+				}
+				modifier = {
+					add = learning
+					learning >= 10
+				}
+				modifier = {
+					add = prowess
+					prowess >= 10
+				}
+			}
+			75 = {
+				modifier = {
+					add = diplomacy
+					diplomacy < 10
+				}
+				modifier = {
+					add = martial
+					martial < 10
+				}
+				modifier = {
+					add = stewardship
+					stewardship < 10
+				}
+				modifier = {
+					add = intrigue
+					intrigue < 10
+				}
+				modifier = {
+					add = learning
+					learning < 10
+				}
+				modifier = {
+					add = prowess
+					prowess < 10
+				}
+			}
+		}
+	}
+}
+OW_DFFR_XZ_XinXi_KG_20_MC = {
+	scope = character
+	is_shown = {
+		NOT = { has_character_flag = OW_XZ_XINXI20 }
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_10 > 10
+	}
+	effect = {
+		add_OW_FRXZ_XinXi_Value = {
+			OW_CT_KEY = OW_FRXZ_XinXi_10
+			VALUE = -10
+		}
+		random_list = {
+			25 = {
+				add_character_flag = OW_XZ_XINXI20
+				modifier = {
+					add = diplomacy
+					diplomacy >= 10
+				}
+				modifier = {
+					add = martial
+					martial >= 10
+				}
+				modifier = {
+					add = stewardship
+					stewardship >= 10
+				}
+				modifier = {
+					add = intrigue
+					intrigue >= 10
+				}
+				modifier = {
+					add = learning
+					learning >= 10
+				}
+				modifier = {
+					add = prowess
+					prowess >= 10
+				}
+			}
+			75 = {
+				modifier = {
+					add = diplomacy
+					diplomacy < 10
+				}
+				modifier = {
+					add = martial
+					martial < 10
+				}
+				modifier = {
+					add = stewardship
+					stewardship < 10
+				}
+				modifier = {
+					add = intrigue
+					intrigue < 10
+				}
+				modifier = {
+					add = learning
+					learning < 10
+				}
+				modifier = {
+					add = prowess
+					prowess < 10
+				}
+			}
+		}
+	}
+}
+######################
+OW_DFFR_XZ_XinXi_KG_1_MR = {
+	scope = character
+	is_shown = {
+		NOT = { has_character_flag = OW_XZ_XINXI1 }
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_1 > 100
+	}
+	effect = {
+		add_OW_FRXZ_XinXi_Value = {
+			OW_CT_KEY = OW_FRXZ_XinXi_1
+			VALUE = -100
+		}
+		add_character_flag = OW_XZ_XINXI1
+	}
+}
+OW_DFFR_XZ_XinXi_KG_2_MR = {
+	scope = character
+	is_shown = {
+		NOT = { has_character_flag = OW_XZ_XINXI2 }
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_2 > 100
+	}
+	effect = {
+		add_OW_FRXZ_XinXi_Value = {
+			OW_CT_KEY = OW_FRXZ_XinXi_2
+			VALUE = -100
+		}
+		add_character_flag = OW_XZ_XINXI2
+	}
+}
+OW_DFFR_XZ_XinXi_KG_3_MR = {
+	scope = character
+	is_shown = {
+		NOT = { has_character_flag = OW_XZ_XINXI3 }
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_3 > 100
+	}
+	effect = {
+		add_OW_FRXZ_XinXi_Value = {
+			OW_CT_KEY = OW_FRXZ_XinXi_3
+			VALUE = -100
+		}
+		add_character_flag = OW_XZ_XINXI3
+	}
+}
+OW_DFFR_XZ_XinXi_KG_4_MR = {
+	scope = character
+	is_shown = {
+		NOT = { has_character_flag = OW_XZ_XINXI4 }
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_4 > 100
+	}
+	effect = {
+		add_OW_FRXZ_XinXi_Value = {
+			OW_CT_KEY = OW_FRXZ_XinXi_4
+			VALUE = -100
+		}
+		add_character_flag = OW_XZ_XINXI4
+	}
+}
+OW_DFFR_XZ_XinXi_KG_5_MR = {
+	scope = character
+	is_shown = {
+		NOT = { has_character_flag = OW_XZ_XINXI5 }
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_5 > 100
+	}
+	effect = {
+		add_OW_FRXZ_XinXi_Value = {
+			OW_CT_KEY = OW_FRXZ_XinXi_5
+			VALUE = -100
+		}
+		add_character_flag = OW_XZ_XINXI5
+	}
+}
+OW_DFFR_XZ_XinXi_KG_6_MR = {
+	scope = character
+	is_shown = {
+		NOT = { has_character_flag = OW_XZ_XINXI6 }
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_6 > 100
+	}
+	effect = {
+		add_OW_FRXZ_XinXi_Value = {
+			OW_CT_KEY = OW_FRXZ_XinXi_6
+			VALUE = -100
+		}
+		add_character_flag = OW_XZ_XINXI6
+	}
+}
+OW_DFFR_XZ_XinXi_KG_7_MR = {
+	scope = character
+	is_shown = {
+		NOT = { has_character_flag = OW_XZ_XINXI6 }
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_7 > 100
+	}
+	effect = {
+		add_OW_FRXZ_XinXi_Value = {
+			OW_CT_KEY = OW_FRXZ_XinXi_7
+			VALUE = -100
+		}
+		add_character_flag = OW_XZ_XINXI7
+	}
+}
+OW_DFFR_XZ_XinXi_KG_8_MR = {
+	scope = character
+	is_shown = {
+		NOT = { has_character_flag = OW_XZ_XINXI8 }
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_8 > 100
+	}
+	effect = {
+		add_OW_FRXZ_XinXi_Value = {
+			OW_CT_KEY = OW_FRXZ_XinXi_8
+			VALUE = -100
+		}
+		add_character_flag = OW_XZ_XINXI8
+	}
+}
+OW_DFFR_XZ_XinXi_KG_9_MR = {
+	scope = character
+	is_shown = {
+		NOT = { has_character_flag = OW_XZ_XINXI9 }
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_9 > 100
+	}
+	effect = {
+		add_OW_FRXZ_XinXi_Value = {
+			OW_CT_KEY = OW_FRXZ_XinXi_9
+			VALUE = -100
+		}
+		add_character_flag = OW_XZ_XINXI9
+	}
+}
+OW_DFFR_XZ_XinXi_KG_10_MR = {
+	scope = character
+	is_shown = {
+		NOT = { has_character_flag = OW_XZ_XINXI10 }
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_10 > 100
+	}
+	effect = {
+		add_OW_FRXZ_XinXi_Value = {
+			OW_CT_KEY = OW_FRXZ_XinXi_10
+			VALUE = -100
+		}
+		add_character_flag = OW_XZ_XINXI10
+	}
+}
+OW_DFFR_XZ_XinXi_KG_11_MR = {
+	scope = character
+	is_shown = {
+		NOT = { has_character_flag = OW_XZ_XINXI11 }
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_1 > 100
+	}
+	effect = {
+		add_OW_FRXZ_XinXi_Value = {
+			OW_CT_KEY = OW_FRXZ_XinXi_1
+			VALUE = -100
+		}
+		add_character_flag = OW_XZ_XINXI11
+	}
+}
+OW_DFFR_XZ_XinXi_KG_12_MR = {
+	scope = character
+	is_shown = {
+		NOT = { has_character_flag = OW_XZ_XINXI12 }
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_2 > 100
+	}
+	effect = {
+		add_OW_FRXZ_XinXi_Value = {
+			OW_CT_KEY = OW_FRXZ_XinXi_2
+			VALUE = -100
+		}
+		add_character_flag = OW_XZ_XINXI12
+	}
+}
+OW_DFFR_XZ_XinXi_KG_13_MR = {
+	scope = character
+	is_shown = {
+		NOT = { has_character_flag = OW_XZ_XINXI13 }
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_3 > 100
+	}
+	effect = {
+		add_OW_FRXZ_XinXi_Value = {
+			OW_CT_KEY = OW_FRXZ_XinXi_3
+			VALUE = -100
+		}
+		add_character_flag = OW_XZ_XINXI13
+	}
+}
+OW_DFFR_XZ_XinXi_KG_14_MR = {
+	scope = character
+	is_shown = {
+		NOT = { has_character_flag = OW_XZ_XINXI14 }
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_4 > 100
+	}
+	effect = {
+		add_OW_FRXZ_XinXi_Value = {
+			OW_CT_KEY = OW_FRXZ_XinXi_4
+			VALUE = -100
+		}
+		add_character_flag = OW_XZ_XINXI14
+	}
+}
+OW_DFFR_XZ_XinXi_KG_15_MR = {
+	scope = character
+	is_shown = {
+		NOT = { has_character_flag = OW_XZ_XINXI15 }
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_5 > 100
+	}
+	effect = {
+		add_OW_FRXZ_XinXi_Value = {
+			OW_CT_KEY = OW_FRXZ_XinXi_5
+			VALUE = -100
+		}
+		add_character_flag = OW_XZ_XINXI15
+	}
+}
+OW_DFFR_XZ_XinXi_KG_16_MR = {
+	scope = character
+	is_shown = {
+		NOT = { has_character_flag = OW_XZ_XINXI16 }
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_6 > 100
+	}
+	effect = {
+		add_OW_FRXZ_XinXi_Value = {
+			OW_CT_KEY = OW_FRXZ_XinXi_6
+			VALUE = -100
+		}
+		add_character_flag = OW_XZ_XINXI16
+	}
+}
+OW_DFFR_XZ_XinXi_KG_17_MR = {
+	scope = character
+	is_shown = {
+		NOT = { has_character_flag = OW_XZ_XINXI17 }
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_7 > 100
+	}
+	effect = {
+		add_OW_FRXZ_XinXi_Value = {
+			OW_CT_KEY = OW_FRXZ_XinXi_7
+			VALUE = -100
+		}
+		add_character_flag = OW_XZ_XINXI17
+	}
+}
+OW_DFFR_XZ_XinXi_KG_18_MR = {
+	scope = character
+	is_shown = {
+		NOT = { has_character_flag = OW_XZ_XINXI18 }
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_8 > 100
+	}
+	effect = {
+		add_OW_FRXZ_XinXi_Value = {
+			OW_CT_KEY = OW_FRXZ_XinXi_8
+			VALUE = -100
+		}
+		add_character_flag = OW_XZ_XINXI18
+	}
+}
+OW_DFFR_XZ_XinXi_KG_19_MR = {
+	scope = character
+	is_shown = {
+		NOT = { has_character_flag = OW_XZ_XINXI19 }
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_9 > 100
+	}
+	effect = {
+		add_OW_FRXZ_XinXi_Value = {
+			OW_CT_KEY = OW_FRXZ_XinXi_9
+			VALUE = -100
+		}
+		add_character_flag = OW_XZ_XINXI19
+	}
+}
+OW_DFFR_XZ_XinXi_KG_20_MR = {
+	scope = character
+	is_shown = {
+		NOT = { has_character_flag = OW_XZ_XINXI20 }
+	}
+	is_valid = {
+		var:OW_FRXZ_XinXi_10 > 100
+	}
+	effect = {
+		add_OW_FRXZ_XinXi_Value = {
+			OW_CT_KEY = OW_FRXZ_XinXi_10
+			VALUE = -100
+		}
+		add_character_flag = OW_XZ_XINXI20
+	}
+}
+
+##############################################################################探索
+##############################################################################探索
+##############################################################################探索
+##############################################################################探索
+##############################################################################探索
+##############################################################################探索
+OW_FRXZ_JYCK_window_KG_DEBUG = {
+	effect = {
+		remove_character_flag = OW_FRXZ_CHENGZHENJIAOYI_KG
+	}
+}
+
+OW_FRXZ_TSCK_window_ZUO_KG_ShanDong = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_WEIZHI
+		OR = {
+			var:OW_FRXZ_WEIZHI = 36
+			var:OW_FRXZ_WEIZHI = 69
+			var:OW_FRXZ_WEIZHI = 72
+			var:OW_FRXZ_WEIZHI = 81
+		}
+	}
+	is_valid = {
+		has_variable = OW_FRXZ_BUSHU
+	}
+	effect = {
+		OW_FRXZ_TANSHUO_ZUO = yes
+		OW_FRXZ_TANSHUO_ShanDong = yes
+	}
+}
+OW_FRXZ_TSCK_window_ZUO_KG_ShiBei = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_WEIZHI
+		OR = {
+			var:OW_FRXZ_WEIZHI = 5
+			var:OW_FRXZ_WEIZHI = 13
+			var:OW_FRXZ_WEIZHI = 27
+			var:OW_FRXZ_WEIZHI = 32
+			var:OW_FRXZ_WEIZHI = 44
+			var:OW_FRXZ_WEIZHI = 61
+			var:OW_FRXZ_WEIZHI = 53
+			var:OW_FRXZ_WEIZHI = 79
+			var:OW_FRXZ_WEIZHI = 88
+		}
+	}
+	is_valid = {
+		has_variable = OW_FRXZ_BUSHU
+	}
+	effect = {
+		OW_FRXZ_TANSHUO_ZUO = yes
+		OW_FRXZ_TANSHUO_ShiBei = yes
+	}
+}
+OW_FRXZ_TSCK_window_ZUO_KG_SenLin = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_WEIZHI
+		OR = {
+			var:OW_FRXZ_WEIZHI = 16
+			var:OW_FRXZ_WEIZHI = 49
+			var:OW_FRXZ_WEIZHI = 59
+			var:OW_FRXZ_WEIZHI = 76
+			var:OW_FRXZ_WEIZHI = 91
+		}
+	}
+	is_valid = {
+		has_variable = OW_FRXZ_BUSHU
+	}
+	effect = {
+		OW_FRXZ_TANSHUO_ZUO = yes
+		OW_FRXZ_TANSHUO_SenLin = yes
+	}
+}
+OW_FRXZ_TSCK_window_ZUO_KG_ChengZhen = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_WEIZHI
+		OR = {
+			var:OW_FRXZ_WEIZHI = 9
+			var:OW_FRXZ_WEIZHI = 25
+			var:OW_FRXZ_WEIZHI = 37
+			var:OW_FRXZ_WEIZHI = 65
+		}
+	}
+	is_valid = {
+		has_variable = OW_FRXZ_BUSHU
+		NOT = { has_character_flag = OW_FRXZ_CHENGZHENJIAOYI_KG }
+	}
+	effect = {
+		OW_FRXZ_TANSHUO_ZUO = yes
+		OW_FRXZ_TANSHUO_ChengZhen = yes
+	}
+}
+OW_FRXZ_TSCK_window_ZUO_KG_ChunZi = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_WEIZHI
+		OR = {
+			var:OW_FRXZ_WEIZHI = 19
+			var:OW_FRXZ_WEIZHI = 41
+			var:OW_FRXZ_WEIZHI = 71
+		}
+	}
+	is_valid = {
+		has_variable = OW_FRXZ_BUSHU
+	}
+	effect = {
+		OW_FRXZ_TANSHUO_ZUO = yes
+		OW_FRXZ_TANSHUO_ChunZi = yes
+	}
+}
+OW_FRXZ_TSCK_window_ZUO_KG_JiuGuan = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_WEIZHI
+		OR = {
+			var:OW_FRXZ_WEIZHI = 10
+			var:OW_FRXZ_WEIZHI = 20
+			var:OW_FRXZ_WEIZHI = 30
+			var:OW_FRXZ_WEIZHI = 60
+			var:OW_FRXZ_WEIZHI = 50
+		}
+	}
+	is_valid = {
+		has_variable = OW_FRXZ_BUSHU
+	}
+	effect = {
+		OW_FRXZ_TANSHUO_ZUO = yes
+		OW_FRXZ_TANSHUO_JiuGuan = yes
+	}
+}
+OW_FRXZ_TSCK_window_ZUO_KG_WeiZhi = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_WEIZHI
+		NOT = { var:OW_FRXZ_WEIZHI = 36 }
+		NOT = { var:OW_FRXZ_WEIZHI = 69 }
+		NOT = { var:OW_FRXZ_WEIZHI = 72 }
+		NOT = { var:OW_FRXZ_WEIZHI = 81 }
+		NOT = { var:OW_FRXZ_WEIZHI = 5 }
+		NOT = { var:OW_FRXZ_WEIZHI = 13 }
+		NOT = { var:OW_FRXZ_WEIZHI = 27 }
+		NOT = { var:OW_FRXZ_WEIZHI = 32 }
+		NOT = { var:OW_FRXZ_WEIZHI = 44 }
+		NOT = { var:OW_FRXZ_WEIZHI = 61 }
+		NOT = { var:OW_FRXZ_WEIZHI = 53 }
+		NOT = { var:OW_FRXZ_WEIZHI = 79 }
+		NOT = { var:OW_FRXZ_WEIZHI = 88 }
+		NOT = { var:OW_FRXZ_WEIZHI = 16 }
+		NOT = { var:OW_FRXZ_WEIZHI = 49 }
+		NOT = { var:OW_FRXZ_WEIZHI = 59 }
+		NOT = { var:OW_FRXZ_WEIZHI = 76 }
+		NOT = { var:OW_FRXZ_WEIZHI = 91 }
+		NOT = { var:OW_FRXZ_WEIZHI = 9 }
+		NOT = { var:OW_FRXZ_WEIZHI = 25 }
+		NOT = { var:OW_FRXZ_WEIZHI = 37 }
+		NOT = { var:OW_FRXZ_WEIZHI = 65 }
+		NOT = { var:OW_FRXZ_WEIZHI = 19 }
+		NOT = { var:OW_FRXZ_WEIZHI = 41 }
+		NOT = { var:OW_FRXZ_WEIZHI = 71 }
+		NOT = { var:OW_FRXZ_WEIZHI = 10 }
+		NOT = { var:OW_FRXZ_WEIZHI = 20 }
+		NOT = { var:OW_FRXZ_WEIZHI = 30 }
+		NOT = { var:OW_FRXZ_WEIZHI = 60 }
+		NOT = { var:OW_FRXZ_WEIZHI = 50 }
+	}
+	is_valid = {
+		has_variable = OW_FRXZ_BUSHU
+	}
+	effect = {
+		OW_FRXZ_TANSHUO_ZUO = yes
+		OW_FRXZ_TANSHUO_WeiZhi = yes
+	}
+}
+########################
+
+
+OW_FRXZ_TSCK_window_QIAN_KG_ShanDong = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_WEIZHI
+		OR = {
+			var:OW_FRXZ_WEIZHI = 87
+			var:OW_FRXZ_WEIZHI = 41
+			var:OW_FRXZ_WEIZHI = 12
+		}
+	}
+	is_valid = {
+		has_variable = OW_FRXZ_BUSHU
+	}
+	effect = {
+		OW_FRXZ_TANSHUO_QIAN = yes
+		OW_FRXZ_TANSHUO_ShanDong = yes
+	}
+}
+OW_FRXZ_TSCK_window_QIAN_KG_ShiBei = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_WEIZHI
+		OR = {
+			var:OW_FRXZ_WEIZHI = 57
+			var:OW_FRXZ_WEIZHI = 54
+			var:OW_FRXZ_WEIZHI = 18
+			var:OW_FRXZ_WEIZHI = 26
+			var:OW_FRXZ_WEIZHI = 43
+			var:OW_FRXZ_WEIZHI = 23
+		}
+	}
+	is_valid = {
+		has_variable = OW_FRXZ_BUSHU
+	}
+	effect = {
+		OW_FRXZ_TANSHUO_QIAN = yes
+		OW_FRXZ_TANSHUO_ShiBei = yes
+	}
+}
+OW_FRXZ_TSCK_window_QIAN_KG_SenLin = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_WEIZHI
+		OR = {
+			var:OW_FRXZ_WEIZHI = 46
+			var:OW_FRXZ_WEIZHI = 77
+			var:OW_FRXZ_WEIZHI = 74
+			var:OW_FRXZ_WEIZHI = 20
+		}
+	}
+	is_valid = {
+		has_variable = OW_FRXZ_BUSHU
+	}
+	effect = {
+		OW_FRXZ_TANSHUO_QIAN = yes
+		OW_FRXZ_TANSHUO_SenLin = yes
+	}
+}
+OW_FRXZ_TSCK_window_QIAN_KG_ChengZhen = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_WEIZHI
+		OR = {
+			var:OW_FRXZ_WEIZHI = 28
+			var:OW_FRXZ_WEIZHI = 57
+			var:OW_FRXZ_WEIZHI = 34
+			var:OW_FRXZ_WEIZHI = 72
+			var:OW_FRXZ_WEIZHI = 79
+			var:OW_FRXZ_WEIZHI = 52
+			var:OW_FRXZ_WEIZHI = 95
+		}
+	}
+	is_valid = {
+		has_variable = OW_FRXZ_BUSHU
+		NOT = { has_character_flag = OW_FRXZ_CHENGZHENJIAOYI_KG }
+	}
+	effect = {
+		OW_FRXZ_TANSHUO_QIAN = yes
+		OW_FRXZ_TANSHUO_ChengZhen = yes
+	}
+}
+OW_FRXZ_TSCK_window_QIAN_KG_ChunZi = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_WEIZHI
+		OR = {
+			var:OW_FRXZ_WEIZHI = 55
+			var:OW_FRXZ_WEIZHI = 35
+			var:OW_FRXZ_WEIZHI = 81
+		}
+	}
+	is_valid = {
+		has_variable = OW_FRXZ_BUSHU
+	}
+	effect = {
+		OW_FRXZ_TANSHUO_QIAN = yes
+		OW_FRXZ_TANSHUO_ChunZi = yes
+	}
+}
+OW_FRXZ_TSCK_window_QIAN_KG_JiuGuan = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_WEIZHI
+		OR = {
+			var:OW_FRXZ_WEIZHI = 82
+			var:OW_FRXZ_WEIZHI = 38
+			var:OW_FRXZ_WEIZHI = 89
+			var:OW_FRXZ_WEIZHI = 47
+			var:OW_FRXZ_WEIZHI = 24
+			var:OW_FRXZ_WEIZHI = 65
+			var:OW_FRXZ_WEIZHI = 7
+		}
+	}
+	is_valid = {
+		has_variable = OW_FRXZ_BUSHU
+	}
+	effect = {
+		OW_FRXZ_TANSHUO_QIAN = yes
+		OW_FRXZ_TANSHUO_JiuGuan = yes
+	}
+}
+OW_FRXZ_TSCK_window_QIAN_KG_WeiZhi = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_WEIZHI
+		NOT = { var:OW_FRXZ_WEIZHI = 87 }
+		NOT = { var:OW_FRXZ_WEIZHI = 41 }
+		NOT = { var:OW_FRXZ_WEIZHI = 12 }
+		NOT = { var:OW_FRXZ_WEIZHI = 57 }
+		NOT = { var:OW_FRXZ_WEIZHI = 54 }
+		NOT = { var:OW_FRXZ_WEIZHI = 18 }
+		NOT = { var:OW_FRXZ_WEIZHI = 26 }
+		NOT = { var:OW_FRXZ_WEIZHI = 43 }
+		NOT = { var:OW_FRXZ_WEIZHI = 23 }
+		NOT = { var:OW_FRXZ_WEIZHI = 46 }
+		NOT = { var:OW_FRXZ_WEIZHI = 77 }
+		NOT = { var:OW_FRXZ_WEIZHI = 74 }
+		NOT = { var:OW_FRXZ_WEIZHI = 20 }
+		NOT = { var:OW_FRXZ_WEIZHI = 28 }
+		NOT = { var:OW_FRXZ_WEIZHI = 57 }
+		NOT = { var:OW_FRXZ_WEIZHI = 34 }
+		NOT = { var:OW_FRXZ_WEIZHI = 72 }
+		NOT = { var:OW_FRXZ_WEIZHI = 79 }
+		NOT = { var:OW_FRXZ_WEIZHI = 52 }
+		NOT = { var:OW_FRXZ_WEIZHI = 95 }
+		NOT = { var:OW_FRXZ_WEIZHI = 55 }
+		NOT = { var:OW_FRXZ_WEIZHI = 35 }
+		NOT = { var:OW_FRXZ_WEIZHI = 81 }
+		NOT = { var:OW_FRXZ_WEIZHI = 82 }
+		NOT = { var:OW_FRXZ_WEIZHI = 38 }
+		NOT = { var:OW_FRXZ_WEIZHI = 89 }
+		NOT = { var:OW_FRXZ_WEIZHI = 47 }
+		NOT = { var:OW_FRXZ_WEIZHI = 24 }
+		NOT = { var:OW_FRXZ_WEIZHI = 65 }
+		NOT = { var:OW_FRXZ_WEIZHI = 7 }
+	}
+	is_valid = {
+		has_variable = OW_FRXZ_BUSHU
+	}
+	effect = {
+		OW_FRXZ_TANSHUO_QIAN = yes
+		OW_FRXZ_TANSHUO_WeiZhi = yes
+	}
+}
+
+
+##################
+
+
+OW_FRXZ_TSCK_window_HOU_KG_ShanDong = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_WEIZHI
+		OR = {
+			var:OW_FRXZ_WEIZHI = 13
+			var:OW_FRXZ_WEIZHI = 76
+			var:OW_FRXZ_WEIZHI = 23
+		}
+	}
+	is_valid = {
+		has_variable = OW_FRXZ_BUSHU
+	}
+	effect = {
+		OW_FRXZ_TANSHUO_HOU = yes
+		OW_FRXZ_TANSHUO_ShanDong = yes
+	}
+}
+OW_FRXZ_TSCK_window_HOU_KG_ShiBei = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_WEIZHI
+		OR = {
+			var:OW_FRXZ_WEIZHI = 55
+			var:OW_FRXZ_WEIZHI = 70
+			var:OW_FRXZ_WEIZHI = 37
+			var:OW_FRXZ_WEIZHI = 14
+			var:OW_FRXZ_WEIZHI = 78
+			var:OW_FRXZ_WEIZHI = 89
+			var:OW_FRXZ_WEIZHI = 39
+			var:OW_FRXZ_WEIZHI = 74
+			var:OW_FRXZ_WEIZHI = 6
+		}
+	}
+	is_valid = {
+		has_variable = OW_FRXZ_BUSHU
+	}
+	effect = {
+		OW_FRXZ_TANSHUO_HOU = yes
+		OW_FRXZ_TANSHUO_ShiBei = yes
+	}
+}
+OW_FRXZ_TSCK_window_HOU_KG_SenLin = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_WEIZHI
+		OR = {
+			var:OW_FRXZ_WEIZHI = 67
+			var:OW_FRXZ_WEIZHI = 68
+			var:OW_FRXZ_WEIZHI = 20
+			var:OW_FRXZ_WEIZHI = 15
+			var:OW_FRXZ_WEIZHI = 43
+			var:OW_FRXZ_WEIZHI = 95
+			var:OW_FRXZ_WEIZHI = 58
+		}
+	}
+	is_valid = {
+		has_variable = OW_FRXZ_BUSHU
+	}
+	effect = {
+		OW_FRXZ_TANSHUO_HOU = yes
+		OW_FRXZ_TANSHUO_SenLin = yes
+	}
+}
+OW_FRXZ_TSCK_window_HOU_KG_ChengZhen = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_WEIZHI
+		OR = {
+			var:OW_FRXZ_WEIZHI = 22
+			var:OW_FRXZ_WEIZHI = 29
+			var:OW_FRXZ_WEIZHI = 64
+		}
+	}
+	is_valid = {
+		has_variable = OW_FRXZ_BUSHU
+		NOT = { has_character_flag = OW_FRXZ_CHENGZHENJIAOYI_KG }
+	}
+	effect = {
+		OW_FRXZ_TANSHUO_HOU = yes
+		OW_FRXZ_TANSHUO_ChengZhen = yes
+	}
+}
+OW_FRXZ_TSCK_window_HOU_KG_ChunZi = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_WEIZHI
+		OR = {
+			var:OW_FRXZ_WEIZHI = 56
+			var:OW_FRXZ_WEIZHI = 49
+			var:OW_FRXZ_WEIZHI = 36
+			var:OW_FRXZ_WEIZHI = 52
+			var:OW_FRXZ_WEIZHI = 87
+		}
+	}
+	is_valid = {
+		has_variable = OW_FRXZ_BUSHU
+	}
+	effect = {
+		OW_FRXZ_TANSHUO_HOU = yes
+		OW_FRXZ_TANSHUO_ChunZi = yes
+	}
+}
+OW_FRXZ_TSCK_window_HOU_KG_JiuGuan = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_WEIZHI
+		OR = {
+			var:OW_FRXZ_WEIZHI = 77
+			var:OW_FRXZ_WEIZHI = 53
+			var:OW_FRXZ_WEIZHI = 40
+		}
+	}
+	is_valid = {
+		has_variable = OW_FRXZ_BUSHU
+	}
+	effect = {
+		OW_FRXZ_TANSHUO_HOU = yes
+		OW_FRXZ_TANSHUO_JiuGuan = yes
+	}
+}
+OW_FRXZ_TSCK_window_HOU_KG_WeiZhi = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_WEIZHI
+		NOT = { var:OW_FRXZ_WEIZHI = 13 }
+		NOT = { var:OW_FRXZ_WEIZHI = 76 }
+		NOT = { var:OW_FRXZ_WEIZHI = 23 }
+		NOT = { var:OW_FRXZ_WEIZHI = 55 }
+		NOT = { var:OW_FRXZ_WEIZHI = 70 }
+		NOT = { var:OW_FRXZ_WEIZHI = 37 }
+		NOT = { var:OW_FRXZ_WEIZHI = 14 }
+		NOT = { var:OW_FRXZ_WEIZHI = 78 }
+		NOT = { var:OW_FRXZ_WEIZHI = 89 }
+		NOT = { var:OW_FRXZ_WEIZHI = 39 }
+		NOT = { var:OW_FRXZ_WEIZHI = 74 }
+		NOT = { var:OW_FRXZ_WEIZHI = 6 }
+		NOT = { var:OW_FRXZ_WEIZHI = 67 }
+		NOT = { var:OW_FRXZ_WEIZHI = 68 }
+		NOT = { var:OW_FRXZ_WEIZHI = 20 }
+		NOT = { var:OW_FRXZ_WEIZHI = 15 }
+		NOT = { var:OW_FRXZ_WEIZHI = 43 }
+		NOT = { var:OW_FRXZ_WEIZHI = 95 }
+		NOT = { var:OW_FRXZ_WEIZHI = 58 }
+		NOT = { var:OW_FRXZ_WEIZHI = 22 }
+		NOT = { var:OW_FRXZ_WEIZHI = 29 }
+		NOT = { var:OW_FRXZ_WEIZHI = 64 }
+		NOT = { var:OW_FRXZ_WEIZHI = 56 }
+		NOT = { var:OW_FRXZ_WEIZHI = 49 }
+		NOT = { var:OW_FRXZ_WEIZHI = 36 }
+		NOT = { var:OW_FRXZ_WEIZHI = 52 }
+		NOT = { var:OW_FRXZ_WEIZHI = 87 }
+		NOT = { var:OW_FRXZ_WEIZHI = 77 }
+		NOT = { var:OW_FRXZ_WEIZHI = 53 }
+		NOT = { var:OW_FRXZ_WEIZHI = 40 }
+	}
+	is_valid = {
+		has_variable = OW_FRXZ_BUSHU
+	}
+	effect = {
+		OW_FRXZ_TANSHUO_HOU = yes
+		OW_FRXZ_TANSHUO_WeiZhi = yes
+	}
+}
+
+
+################
+
+
+OW_FRXZ_TSCK_window_YOU_KG_ShanDong = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_WEIZHI
+		OR = {
+			var:OW_FRXZ_WEIZHI = 35
+			var:OW_FRXZ_WEIZHI = 27
+			var:OW_FRXZ_WEIZHI = 29
+			var:OW_FRXZ_WEIZHI = 54
+		}
+	}
+	is_valid = {
+		has_variable = OW_FRXZ_BUSHU
+	}
+	effect = {
+		OW_FRXZ_TANSHUO_YOU = yes
+		OW_FRXZ_TANSHUO_ShanDong = yes
+	}
+}
+OW_FRXZ_TSCK_window_YOU_KG_ShiBei = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_WEIZHI
+		OR = {
+			var:OW_FRXZ_WEIZHI = 24
+			var:OW_FRXZ_WEIZHI = 34
+		}
+	}
+	is_valid = {
+		has_variable = OW_FRXZ_BUSHU
+	}
+	effect = {
+		OW_FRXZ_TANSHUO_YOU = yes
+		OW_FRXZ_TANSHUO_ShiBei = yes
+	}
+}
+OW_FRXZ_TSCK_window_YOU_KG_SenLin = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_WEIZHI
+		OR = {
+			var:OW_FRXZ_WEIZHI = 15
+			var:OW_FRXZ_WEIZHI = 45
+			var:OW_FRXZ_WEIZHI = 12
+		}
+	}
+	is_valid = {
+		has_variable = OW_FRXZ_BUSHU
+	}
+	effect = {
+		OW_FRXZ_TANSHUO_YOU = yes
+		OW_FRXZ_TANSHUO_SenLin = yes
+	}
+}
+OW_FRXZ_TSCK_window_YOU_KG_ChengZhen = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_WEIZHI
+		OR = {
+			var:OW_FRXZ_WEIZHI = 87
+			var:OW_FRXZ_WEIZHI = 59
+			var:OW_FRXZ_WEIZHI = 39
+			var:OW_FRXZ_WEIZHI = 18
+			var:OW_FRXZ_WEIZHI = 20
+			var:OW_FRXZ_WEIZHI = 13
+			var:OW_FRXZ_WEIZHI = 83
+		}
+	}
+	is_valid = {
+		has_variable = OW_FRXZ_BUSHU
+		NOT = { has_character_flag = OW_FRXZ_CHENGZHENJIAOYI_KG }
+	}
+	effect = {
+		OW_FRXZ_TANSHUO_YOU = yes
+		OW_FRXZ_TANSHUO_ChengZhen = yes
+	}
+}
+OW_FRXZ_TSCK_window_YOU_KG_ChunZi = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_WEIZHI
+		OR = {
+			var:OW_FRXZ_WEIZHI = 11
+			var:OW_FRXZ_WEIZHI = 33
+			var:OW_FRXZ_WEIZHI = 42
+			var:OW_FRXZ_WEIZHI = 43
+			var:OW_FRXZ_WEIZHI = 68
+			var:OW_FRXZ_WEIZHI = 85
+		}
+	}
+	is_valid = {
+		has_variable = OW_FRXZ_BUSHU
+	}
+	effect = {
+		OW_FRXZ_TANSHUO_YOU = yes
+		OW_FRXZ_TANSHUO_ChunZi = yes
+	}
+}
+OW_FRXZ_TSCK_window_YOU_KG_JiuGuan = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_WEIZHI
+		OR = {
+			var:OW_FRXZ_WEIZHI = 90
+			var:OW_FRXZ_WEIZHI = 100
+			var:OW_FRXZ_WEIZHI = 31
+			var:OW_FRXZ_WEIZHI = 80
+			var:OW_FRXZ_WEIZHI = 66
+			var:OW_FRXZ_WEIZHI = 49
+			var:OW_FRXZ_WEIZHI = 37
+			var:OW_FRXZ_WEIZHI = 78
+		}
+	}
+	is_valid = {
+		has_variable = OW_FRXZ_BUSHU
+	}
+	effect = {
+		OW_FRXZ_TANSHUO_YOU = yes
+		OW_FRXZ_TANSHUO_JiuGuan = yes
+	}
+}
+OW_FRXZ_TSCK_window_YOU_KG_WeiZhi = {
+	scope = character
+	is_shown = {
+		has_variable = OW_FRXZ_WEIZHI
+		NOT = { var:OW_FRXZ_WEIZHI = 35 }
+		NOT = { var:OW_FRXZ_WEIZHI = 27 }
+		NOT = { var:OW_FRXZ_WEIZHI = 29 }
+		NOT = { var:OW_FRXZ_WEIZHI = 54 }
+		NOT = { var:OW_FRXZ_WEIZHI = 24 }
+		NOT = { var:OW_FRXZ_WEIZHI = 34 }
+		NOT = { var:OW_FRXZ_WEIZHI = 15 }
+		NOT = { var:OW_FRXZ_WEIZHI = 45 }
+		NOT = { var:OW_FRXZ_WEIZHI = 87 }
+		NOT = { var:OW_FRXZ_WEIZHI = 59 }
+		NOT = { var:OW_FRXZ_WEIZHI = 39 }
+		NOT = { var:OW_FRXZ_WEIZHI = 18 }
+		NOT = { var:OW_FRXZ_WEIZHI = 20 }
+		NOT = { var:OW_FRXZ_WEIZHI = 13 }
+		NOT = { var:OW_FRXZ_WEIZHI = 83 }
+		NOT = { var:OW_FRXZ_WEIZHI = 12 }
+		NOT = { var:OW_FRXZ_WEIZHI = 11 }
+		NOT = { var:OW_FRXZ_WEIZHI = 33 }
+		NOT = { var:OW_FRXZ_WEIZHI = 42 }
+		NOT = { var:OW_FRXZ_WEIZHI = 43 }
+		NOT = { var:OW_FRXZ_WEIZHI = 68 }
+		NOT = { var:OW_FRXZ_WEIZHI = 85 }
+		NOT = { var:OW_FRXZ_WEIZHI = 90 }
+		NOT = { var:OW_FRXZ_WEIZHI = 100 }
+		NOT = { var:OW_FRXZ_WEIZHI = 31 }
+		NOT = { var:OW_FRXZ_WEIZHI = 80 }
+		NOT = { var:OW_FRXZ_WEIZHI = 66 }
+		NOT = { var:OW_FRXZ_WEIZHI = 49 }
+		NOT = { var:OW_FRXZ_WEIZHI = 37 }
+		NOT = { var:OW_FRXZ_WEIZHI = 78 }
+	}
+	is_valid = {
+		has_variable = OW_FRXZ_BUSHU
+	}
+	effect = {
+		OW_FRXZ_TANSHUO_YOU = yes
+		OW_FRXZ_TANSHUO_WeiZhi = yes
+	}
+}

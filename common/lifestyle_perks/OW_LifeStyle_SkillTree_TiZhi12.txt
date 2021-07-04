@@ -1,0 +1,112 @@
+﻿#####体质扩展包#########
+#####byH#####
+########################
+#1~4练气境
+#5~8筑基境
+#9~12结丹境
+#13~16金丹境
+#17~20元婴境
+#21~24出窍境
+#25~28分神境
+#29~32合体境
+#33~36大乘境
+#37地仙镜（渡劫期）
+
+OW_XZ_TZ_12_ZhiHuiShi_perk = {
+	lifestyle = lifestyle_tizhi12
+	tree = mingge_tree_tizhi_12
+	position = { 0 0 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+		pursue_efficiency = 0.5
+		counter_efficiency = 0.5
+	}
+	effect = {
+		SET_OW_XZ_TZ_EFFECT = {
+			OW_XZ_TZ_KEY = OW_XZ_TZ_12_ZhiHuiShi_perk
+			OW_XZ_TZ_VALUE = 36
+		}
+	}
+}
+
+OW_XZ_TZ_12_YingLing_perk = {
+	lifestyle = lifestyle_tizhi12
+	tree = mingge_tree_tizhi_12
+	position = { 2 0 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+		knight_effectiveness_mult = 0.9
+	}
+	effect = {
+		SET_OW_XZ_TZ_EFFECT = {
+			OW_XZ_TZ_KEY = OW_XZ_TZ_12_YingLing_perk
+			OW_XZ_TZ_VALUE = 36
+		}
+	}
+}
+
+OW_XZ_TZ_12_LunZhuanLingHun_perk = {
+	lifestyle = lifestyle_tizhi12
+	tree = yunshi_tree_tizhi_12
+	position = { 0 3 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+	}
+	effect = {
+		add_OW_SkillPerk_AttributeEffect = { 
+			OW_XZ_TZ_KEY = OW_XZ_TZ_12_LunZhuanLingHun_perk
+			OW_XZ_CT_KEY = OW_lingli_max
+			OW_XZ_TZ_YUNSHI = 9
+			OW_XZ_TZ_VALUE = 5
+		}
+	}
+}
+
+OW_XZ_TZ_12_LingLunZhuan_perk = {
+	lifestyle = lifestyle_tizhi12
+	tree = yunshi_tree_tizhi_12
+	position = { 2 3 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+	}
+	effect = {
+		add_OW_SkillPerk_AttributeEffect = { 
+			OW_XZ_TZ_KEY = OW_XZ_TZ_12_LingLunZhuan_perk
+			OW_XZ_CT_KEY = OW_years_lingli
+			OW_XZ_TZ_YUNSHI = 9
+			OW_XZ_TZ_VALUE = 5
+		}
+	}
+}
+
+OW_XZ_TZ_12_LuoShengMen_perk = {
+	lifestyle = lifestyle_tizhi12
+	tree = yunshi_tree_tizhi_12
+	position = { 4 3 }
+	icon = trait_torturer
+	can_be_picked = {
+		has_character_flag = OW_xiuzhenzhe
+	}
+	character_modifier = {
+	}
+	effect = {
+		add_OW_SkillPerk_AttributeEffect = { 
+			OW_XZ_TZ_KEY = OW_XZ_TZ_12_LuoShengMen_perk
+			OW_XZ_CT_KEY = OW_shihai
+			OW_XZ_TZ_YUNSHI = 9
+			OW_XZ_TZ_VALUE = 5
+		}
+	}
+}
